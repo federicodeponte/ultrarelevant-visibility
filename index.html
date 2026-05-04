@@ -7,104 +7,174 @@
 <meta name="description" content="Measure how visible and how correct your product data is when buyers ask AI agents about it. Real procurement queries, ground-truth fact-checked, scored 0-100.">
 <meta property="og:title" content="UltraRelevant — Product Visibility for AI Agents">
 <meta property="og:description" content="How often do Claude / GPT / Gemini answer real procurement questions about your products correctly? Try a live demo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
 <style>
   :root {
-    --bg: #fafaf9;
+    --bg: #ffffff;
+    --bg-soft: #fafafa;
     --fg: #1a1a1a;
-    --muted: #6b6b6b;
-    --line: #e7e5e4;
+    --muted: #6b7280;
+    --line: #e5e7eb;
+    --line-soft: #f1f5f9;
     --card: #ffffff;
-    --accent: #0f172a;
+    --secondary: #3056ff;
+    --secondary-hover: #2a48d6;
+    --accent: #1a1a1a;
     --green: #16a34a;
     --amber: #d97706;
     --red: #dc2626;
     --gray: #94a3b8;
-    --indigo: #4f46e5;
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
   body {
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+    font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     background: var(--bg); color: var(--fg);
     font-size: 15px; line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
-  .wrap { max-width: 980px; margin: 0 auto; padding: 56px 32px 96px; }
-  header { margin-bottom: 36px; }
-  .logo {
-    font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase;
-    color: var(--muted); font-weight: 500;
+  code, .mono { font-family: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, monospace; }
+
+  .hero-bg {
+    position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+    width: 100vw; height: 720px; z-index: -1; pointer-events: none;
+    background: radial-gradient(125% 125% at 50% 10%, var(--bg) 40%, var(--secondary) 100%);
   }
+  .hero-bg::after {
+    content: ""; position: absolute; inset: 0;
+    background: radial-gradient(ellipse 60% 60% at 50% 38%, rgba(255,255,255,0.97) 0%, transparent 100%);
+  }
+  .hero-bg::before {
+    content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 160px;
+    background: linear-gradient(to top, var(--bg), transparent);
+  }
+
+  .wrap { position: relative; max-width: 1040px; margin: 0 auto; padding: 32px 32px 96px; }
+  header.site { display: flex; align-items: center; justify-content: space-between; margin-bottom: 56px; }
+  header.site .brand img { height: 32px; width: auto; display: block; }
+  header.site .nav-pill {
+    display: inline-flex; align-items: center; gap: 8px;
+    border: 1px solid var(--line); background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(8px);
+    border-radius: 999px; padding: 6px 14px; font-size: 13px; color: var(--muted);
+  }
+  header.site .nav-pill .dot-live {
+    width: 6px; height: 6px; border-radius: 50%; background: var(--secondary);
+    box-shadow: 0 0 0 4px rgba(48,86,255,0.15);
+  }
+
+  .hero { text-align: center; max-width: 760px; margin: 0 auto 36px; padding-top: 8px; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    border: 1px solid var(--line); background: #ffffff;
+    border-radius: 999px; padding: 0 12px; height: 28px;
+    font-size: 12px; font-weight: 500; color: var(--muted);
+    letter-spacing: 0.02em;
+    box-shadow: 0 1px 2px rgba(16,24,40,0.04);
+  }
+  .badge .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--secondary); }
+
   h1 {
-    font-size: 36px; line-height: 1.15; font-weight: 600;
-    margin: 12px 0 12px; letter-spacing: -0.02em;
+    font-size: clamp(40px, 6vw, 60px); line-height: 1.05; font-weight: 600;
+    margin: 20px 0 16px; letter-spacing: -0.025em;
+    text-wrap: balance;
   }
-  .subtitle { color: var(--muted); font-size: 17px; max-width: 640px; margin: 0; }
+  .subtitle {
+    color: var(--muted); font-size: 17px; max-width: 620px; margin: 0 auto;
+    text-wrap: balance; line-height: 1.5;
+  }
 
   .input-row {
-    display: flex; gap: 10px; margin: 32px 0 0;
+    display: flex; gap: 8px; margin: 32px auto 0; max-width: 640px;
     background: var(--card); padding: 8px;
-    border: 1px solid var(--line); border-radius: 12px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+    border: 1px solid var(--line); border-radius: 16px;
+    box-shadow: 0 1px 3px rgba(16,24,40,0.04), 0 1px 2px rgba(16,24,40,0.02);
   }
   input[type=text] {
     flex: 1; border: none; outline: none; background: transparent;
     font: inherit; padding: 12px 14px; font-size: 16px; color: var(--fg);
   }
+  input[type=text]::placeholder { color: #9ca3af; }
   button {
-    background: var(--accent); color: white; border: none;
-    padding: 12px 22px; border-radius: 8px; font: inherit; font-weight: 500;
-    cursor: pointer; transition: opacity 0.15s;
+    font: inherit; cursor: pointer; border: none;
+    transition: all 0.15s ease-out;
   }
-  button:hover { opacity: 0.85; }
   button:disabled { opacity: 0.5; cursor: not-allowed; }
-  .hint { color: var(--muted); font-size: 13px; margin-top: 10px; }
+  .btn-primary {
+    height: 44px; padding: 0 24px; border-radius: 999px;
+    background: linear-gradient(180deg, #3a63ff 0%, #2a48d6 100%);
+    color: #ffffff; font-size: 14px; font-weight: 600;
+    border: 1px solid rgba(255,255,255,0.12);
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,0.25),
+      0 4px 6px -2px rgba(16,24,40,0.10),
+      0 1px 2px rgba(16,24,40,0.08);
+  }
+  .btn-primary:hover { filter: brightness(1.05); }
+  .btn-primary:active { transform: scale(0.97); }
+  .btn-secondary {
+    height: 44px; padding: 0 24px; border-radius: 999px;
+    background: linear-gradient(180deg, #ffffff 0%, #f3f4f6 100%);
+    color: var(--fg); font-size: 14px; font-weight: 600;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 1px 2px rgba(16,24,40,0.05);
+  }
+  .btn-secondary:hover { background: linear-gradient(180deg, #ffffff 0%, #e9eaec 100%); }
+
+  .hint { color: var(--muted); font-size: 13px; margin: 14px auto 0; text-align: center; max-width: 640px; }
 
   .examples {
-    display: flex; gap: 8px; flex-wrap: wrap; margin-top: 18px;
+    display: flex; gap: 8px; flex-wrap: wrap; margin-top: 22px;
+    justify-content: center; max-width: 760px; margin-left: auto; margin-right: auto;
   }
   .example-btn {
-    background: var(--card); color: var(--fg);
+    display: inline-flex; align-items: center; gap: 8px;
+    background: #ffffff; color: var(--fg);
     border: 1px solid var(--line); padding: 7px 13px;
-    border-radius: 999px; font: inherit; font-size: 13px;
+    border-radius: 999px; font: inherit; font-size: 13px; font-weight: 500;
     cursor: pointer; transition: all 0.15s;
   }
-  .example-btn:hover { border-color: var(--accent); background: #f5f5f4; }
+  .example-btn:hover { border-color: var(--secondary); background: #f8faff; color: var(--secondary); }
   .example-btn .score-tag {
-    display: inline-block; margin-left: 8px;
+    display: inline-block;
     padding: 1px 8px; border-radius: 999px;
-    font-size: 11px; font-weight: 500;
+    font-size: 11px; font-weight: 600;
     background: #fef3c7; color: #92400e;
   }
   .example-btn .score-tag.green { background: #dcfce7; color: #166534; }
   .example-btn .score-tag.red { background: #fee2e2; color: #991b1b; }
 
   .status {
-    margin-top: 28px; padding: 18px 22px;
-    background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+    margin: 28px auto 0; max-width: 760px; padding: 18px 22px;
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
     color: var(--fg); font-size: 14px;
+    box-shadow: 0 1px 3px rgba(16,24,40,0.04);
   }
   .status.error { color: var(--red); }
   .status.info { color: var(--fg); }
   .status .row { display: flex; align-items: center; gap: 12px; }
 
-  .results { margin-top: 40px; }
+  .results { margin-top: 56px; }
   .score-card {
     display: flex; align-items: center; gap: 32px;
-    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
-    padding: 32px; margin-bottom: 32px;
+    background: var(--card); border: 1px solid var(--line); border-radius: 20px;
+    padding: 36px; margin-bottom: 24px;
+    box-shadow: 0 1px 3px rgba(16,24,40,0.04);
   }
   .score-num {
-    font-size: 72px; font-weight: 600; line-height: 1; letter-spacing: -0.04em;
+    font-size: 84px; font-weight: 600; line-height: 1; letter-spacing: -0.045em;
   }
   .score-num.green { color: var(--green); }
   .score-num.amber { color: var(--amber); }
   .score-num.red { color: var(--red); }
-  .score-meta { flex: 1; }
-  .score-meta h2 { margin: 0 0 6px; font-size: 17px; font-weight: 600; }
+  .score-meta { flex: 1; min-width: 0; }
+  .score-meta h2 { margin: 0 0 6px; font-size: 18px; font-weight: 600; letter-spacing: -0.01em; }
   .score-meta p { margin: 0; color: var(--muted); font-size: 14px; }
   .breakdown {
-    display: flex; gap: 18px; margin-top: 14px; flex-wrap: wrap;
+    display: flex; gap: 18px; margin-top: 16px; flex-wrap: wrap;
   }
   .pill {
     display: inline-flex; align-items: center; gap: 6px;
@@ -119,84 +189,105 @@
 
   table.matrix {
     width: 100%; border-collapse: collapse; background: var(--card);
-    border: 1px solid var(--line); border-radius: 12px; overflow: hidden;
+    border: 1px solid var(--line); border-radius: 16px; overflow: hidden;
+    box-shadow: 0 1px 3px rgba(16,24,40,0.04);
   }
   table.matrix th, table.matrix td {
-    text-align: left; padding: 14px 16px; border-bottom: 1px solid var(--line);
+    text-align: left; padding: 16px 18px; border-bottom: 1px solid var(--line);
     vertical-align: top; font-size: 14px;
   }
   table.matrix th {
-    font-weight: 500; color: var(--muted); background: #fbfaf8;
-    font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase;
+    font-weight: 500; color: var(--muted); background: var(--bg-soft);
+    font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase;
   }
   table.matrix tr:last-child td { border-bottom: none; }
-  table.matrix td.q { width: 34%; color: var(--fg); }
+  table.matrix td.q { width: 34%; color: var(--fg); font-weight: 500; }
   table.matrix td.cell {
-    cursor: pointer; transition: background 0.1s;
+    cursor: pointer; transition: background 0.12s;
   }
-  table.matrix td.cell:hover { background: #fbfaf8; }
+  table.matrix td.cell:hover { background: #f8faff; }
   .cell-tag {
     display: inline-block; padding: 4px 10px; border-radius: 999px;
-    font-size: 12px; font-weight: 500;
+    font-size: 12px; font-weight: 600;
   }
   .cell-tag.correct { background: #dcfce7; color: #166534; }
   .cell-tag.hallucination { background: #fee2e2; color: #991b1b; }
   .cell-tag.refused { background: #f1f5f9; color: #475569; }
   .cell-tag.wrong_spec { background: #fef3c7; color: #92400e; }
   .cell-tag.error { background: #f1f5f9; color: #64748b; }
-  .cell-rationale { display: block; margin-top: 6px; color: var(--muted); font-size: 12px; line-height: 1.4; }
+  .cell-rationale { display: block; margin-top: 6px; color: var(--muted); font-size: 12px; line-height: 1.45; }
 
   /* modal */
   .modal-backdrop {
-    position: fixed; inset: 0; background: rgba(0,0,0,0.4);
+    position: fixed; inset: 0; background: rgba(15,23,42,0.45);
+    backdrop-filter: blur(4px);
     display: none; align-items: center; justify-content: center; z-index: 100;
+    padding: 24px;
   }
   .modal-backdrop.open { display: flex; }
   .modal {
-    background: var(--card); border-radius: 14px; max-width: 760px; width: 92%;
-    max-height: 86vh; overflow: auto; padding: 32px;
+    background: var(--card); border: 1px solid var(--line); border-radius: 20px;
+    max-width: 760px; width: 100%;
+    max-height: 86vh; overflow: auto; padding: 36px;
+    box-shadow: 0 20px 50px -10px rgba(15,23,42,0.25);
   }
-  .modal h3 { margin: 0 0 4px; font-size: 13px; color: var(--muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; }
-  .modal h2 { margin: 0 0 20px; font-size: 20px; font-weight: 600; }
-  .modal section { margin-bottom: 20px; }
-  .modal section h4 { margin: 0 0 8px; font-size: 13px; color: var(--muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; }
-  .modal pre { white-space: pre-wrap; font-family: -apple-system, sans-serif; font-size: 14px; line-height: 1.5; margin: 0; color: var(--fg); }
-  .modal .sources { display: flex; flex-direction: column; gap: 4px; }
-  .modal .sources a { color: #1e40af; font-size: 13px; text-decoration: none; }
+  .modal h3 { margin: 0 0 4px; font-size: 12px; color: var(--muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; }
+  .modal h2 { margin: 0 0 24px; font-size: 22px; font-weight: 600; letter-spacing: -0.015em; }
+  .modal section { margin-bottom: 24px; }
+  .modal section h4 { margin: 0 0 10px; font-size: 11px; color: var(--muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; }
+  .modal pre {
+    white-space: pre-wrap;
+    font-family: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 13px; line-height: 1.55; margin: 0; color: var(--fg);
+    background: var(--bg-soft); border: 1px solid var(--line);
+    padding: 14px 16px; border-radius: 12px;
+  }
+  .modal .sources { display: flex; flex-direction: column; gap: 6px; }
+  .modal .sources a { color: var(--secondary); font-size: 13px; text-decoration: none; font-weight: 500; }
   .modal .sources a:hover { text-decoration: underline; }
   .modal-close {
-    float: right; background: none; color: var(--muted); padding: 4px 10px;
-    font-size: 18px; border-radius: 6px;
+    float: right; background: var(--bg-soft); color: var(--muted);
+    width: 32px; height: 32px; padding: 0; border-radius: 999px;
+    font-size: 18px; line-height: 1; border: 1px solid var(--line);
   }
   .modal-close:hover { background: #f1f5f9; color: var(--fg); }
 
   .meta-bar {
-    margin-top: 16px; padding: 12px 16px;
-    background: #fff; border: 1px solid var(--line); border-radius: 8px;
+    margin-top: 16px; padding: 14px 18px;
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
     font-size: 12px; color: var(--muted);
     display: flex; gap: 18px; flex-wrap: wrap; align-items: center;
+    box-shadow: 0 1px 3px rgba(16,24,40,0.04);
   }
-  .meta-bar strong { color: var(--fg); font-weight: 500; }
+  .meta-bar strong { color: var(--fg); font-weight: 600; }
 
-  footer { margin-top: 64px; text-align: center; color: var(--muted); font-size: 13px; line-height: 1.7; }
+  footer { margin-top: 80px; text-align: center; color: var(--muted); font-size: 13px; line-height: 1.7; }
   footer a { color: var(--muted); }
 </style>
 </head>
 <body>
+<div class="hero-bg"></div>
 <div class="wrap">
-<header>
-  <div class="logo">UltraRelevant</div>
-  <h1>How visible is your product data to AI agents?</h1>
-  <p class="subtitle">When a buyer asks Claude or Gemini for a real part number, do they get the right answer? Type a company. We run real procurement queries against frontier agents, fact-check against the manufacturer's catalog, and score 0&ndash;100.</p>
+<header class="site">
+  <a class="brand" href="/" aria-label="UltraRelevant">
+    <img src="/UltraRelevantLOGO.png" alt="UltraRelevant" />
+  </a>
+  <div class="nav-pill"><span class="dot-live"></span> Visibility v0</div>
 </header>
 
-<div class="input-row">
-  <input id="company" type="text" placeholder="Try igus, festo, bosch-rexroth&hellip;" autocomplete="off" />
-  <button id="go">Analyze</button>
-</div>
-<div class="hint">Live demo — pre-computed scores for the companies below load instantly. Other names show the methodology.</div>
+<section class="hero">
+  <span class="badge"><span class="dot"></span> Live demo</span>
+  <h1>How visible is your product data to AI agents?</h1>
+  <p class="subtitle">When a buyer asks Claude or Gemini for a real part number, do they get the right answer? Type a company. We run real procurement queries against frontier agents, fact-check against the manufacturer's catalog, and score 0&ndash;100.</p>
 
-<div id="examples" class="examples"></div>
+  <div class="input-row">
+    <input id="company" type="text" placeholder="Try igus, festo, bosch-rexroth&hellip;" autocomplete="off" />
+    <button id="go" class="btn-primary">Analyze</button>
+  </div>
+  <div class="hint">Pre-computed scores for the companies below load instantly. Other names show the methodology.</div>
+
+  <div id="examples" class="examples"></div>
+</section>
 
 <div id="status" class="status" style="display:none"></div>
 
