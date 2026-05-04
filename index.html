@@ -22,38 +22,40 @@
     --secondary: #3056ff;
     --secondary-hover: #2a48d6;
     --accent: #1a1a1a;
-    --green: #16a34a;
-    --amber: #d97706;
-    --red: #dc2626;
-    --gray: #94a3b8;
+    --green: #0ea371;
+    --amber: #ea8b22;
+    --red: #e11d48;
+    --gray: #8b95a8;
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
   body {
+    position: relative;
     font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     background: var(--bg); color: var(--fg);
     font-size: 15px; line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
   }
   code, .mono { font-family: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, monospace; }
 
   .hero-bg {
     position: absolute; top: 0; left: 50%; transform: translateX(-50%);
-    width: 100vw; height: 720px; z-index: -1; pointer-events: none;
-    background: radial-gradient(125% 125% at 50% 10%, var(--bg) 40%, var(--secondary) 100%);
+    width: 100vw; height: 1100px; z-index: -1; pointer-events: none;
+    background: radial-gradient(125% 125% at 50% 10%, var(--bg) 40%, rgba(48,86,255,0.55) 100%);
   }
   .hero-bg::after {
     content: ""; position: absolute; inset: 0;
     background: radial-gradient(ellipse 60% 60% at 50% 38%, rgba(255,255,255,0.97) 0%, transparent 100%);
   }
   .hero-bg::before {
-    content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 160px;
+    content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 200px;
     background: linear-gradient(to top, var(--bg), transparent);
   }
 
   .wrap { position: relative; max-width: 1040px; margin: 0 auto; padding: 32px 32px 96px; }
-  header.site { display: flex; align-items: center; justify-content: space-between; margin-bottom: 56px; }
+  header.site { display: flex; align-items: center; justify-content: space-between; margin-bottom: 96px; }
   header.site .brand img { height: 32px; width: auto; display: block; }
   header.site .nav-pill {
     display: inline-flex; align-items: center; gap: 8px;
@@ -66,7 +68,7 @@
     box-shadow: 0 0 0 4px rgba(48,86,255,0.15);
   }
 
-  .hero { text-align: center; max-width: 760px; margin: 0 auto 36px; padding-top: 8px; }
+  .hero { text-align: center; max-width: 760px; margin: 0 auto 36px; padding-top: 32px; }
   .badge {
     display: inline-flex; align-items: center; gap: 8px;
     border: 1px solid var(--line); background: #ffffff;
@@ -83,7 +85,7 @@
     text-wrap: balance;
   }
   .subtitle {
-    color: var(--muted); font-size: 17px; max-width: 620px; margin: 0 auto;
+    color: var(--muted); font-size: 17px; max-width: 920px; margin: 0 auto;
     text-wrap: balance; line-height: 1.5;
   }
 
@@ -142,10 +144,10 @@
     display: inline-block;
     padding: 1px 8px; border-radius: 999px;
     font-size: 11px; font-weight: 600;
-    background: #fef3c7; color: #92400e;
+    background: #fef0d4; color: #8a4a07;
   }
-  .example-btn .score-tag.green { background: #dcfce7; color: #166534; }
-  .example-btn .score-tag.red { background: #fee2e2; color: #991b1b; }
+  .example-btn .score-tag.green { background: #d1f5e4; color: #0a6b48; }
+  .example-btn .score-tag.red { background: #ffe4ec; color: #9f1239; }
 
   .status {
     margin: 28px auto 0; max-width: 760px; padding: 18px 22px;
@@ -210,11 +212,11 @@
     display: inline-block; padding: 4px 10px; border-radius: 999px;
     font-size: 12px; font-weight: 600;
   }
-  .cell-tag.correct { background: #dcfce7; color: #166534; }
-  .cell-tag.hallucination { background: #fee2e2; color: #991b1b; }
-  .cell-tag.refused { background: #f1f5f9; color: #475569; }
-  .cell-tag.wrong_spec { background: #fef3c7; color: #92400e; }
-  .cell-tag.error { background: #f1f5f9; color: #64748b; }
+  .cell-tag.correct { background: #d1f5e4; color: #0a6b48; }
+  .cell-tag.hallucination { background: #ffe4ec; color: #9f1239; }
+  .cell-tag.refused { background: #eaf0fb; color: #4a5878; }
+  .cell-tag.wrong_spec { background: #fef0d4; color: #8a4a07; }
+  .cell-tag.error { background: #eaf0fb; color: #5b6685; }
   .cell-rationale { display: block; margin-top: 6px; color: var(--muted); font-size: 12px; line-height: 1.45; }
 
   /* modal */
@@ -261,7 +263,7 @@
   }
   .meta-bar strong { color: var(--fg); font-weight: 600; }
 
-  footer { margin-top: 80px; text-align: center; color: var(--muted); font-size: 13px; line-height: 1.7; }
+  footer { margin-top: 80px; text-align: center; color: var(--muted); font-size: 11px; line-height: 1.6; opacity: 0.8; }
   footer a { color: var(--muted); }
 </style>
 </head>
@@ -277,14 +279,13 @@
 
 <section class="hero">
   <span class="badge"><span class="dot"></span> Live demo</span>
-  <h1>How visible is your product data to AI agents?</h1>
-  <p class="subtitle">When a buyer asks Claude or Gemini for a real part number, do they get the right answer? Type a company. We run real procurement queries against frontier agents, fact-check against the manufacturer's catalog, and score 0&ndash;100.</p>
+  <h1>Do AI agents understand your product correctly?</h1>
+  <p class="subtitle">When a buyer asks Claude or Gemini for a real part number, do they get the right answer? We run procurement queries against frontier agents, fact-check the catalog, and score 0&ndash;100.</p>
 
   <div class="input-row">
     <input id="company" type="text" placeholder="Try igus, festo, bosch-rexroth&hellip;" autocomplete="off" />
     <button id="go" class="btn-primary">Analyze</button>
   </div>
-  <div class="hint">Pre-computed scores for the companies below load instantly. Other names show the methodology.</div>
 
   <div id="examples" class="examples"></div>
 </section>
@@ -294,8 +295,7 @@
 <div id="results" class="results" style="display:none"></div>
 
 <footer>
-  <div>v0 demo &mdash; methodology: 5 procurement queries &times; 3 agents = 15 cells, fact-checked against Google-grounded ground truth.</div>
-  <div style="margin-top:6px">Built for the YC application. Cached results from runs Apr&ndash;May 2026.</div>
+  <div>Pre-computed scores for the companies below load instantly. Other names show the methodology. v0 demo &mdash; methodology: 5 procurement queries &times; 3 agents = 15 cells, fact-checked against Google-grounded ground truth. Built for the YC application. Cached results from runs Apr&ndash;May 2026.</div>
 </footer>
 </div>
 
