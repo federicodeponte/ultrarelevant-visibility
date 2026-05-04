@@ -1,0 +1,353 @@
+{
+  "input": "https://daw.de",
+  "host": "daw.de",
+  "brand": "daw",
+  "visibility_score": 100,
+  "source_authority_score": 0,
+  "total_queries": 5,
+  "correct_queries": 5,
+  "manufacturer_correct": 0,
+  "breakdown": {
+    "CORRECT": 5,
+    "HALLUCINATION": 0,
+    "REFUSED": 0,
+    "WRONG_SPEC": 0,
+    "ERROR": 0
+  },
+  "source_breakdown": {
+    "manufacturer": 0,
+    "distributor": 0,
+    "marketplace": 0,
+    "other": 5,
+    "none": 0
+  },
+  "rows": [
+    {
+      "query": "We are placing a material order for an industrial floor and need the exact Disbon part number for the two-component, solvent-free transparent epoxy primer. This is the specific polyamine-cured primer required for proper adhesion prior to applying the DisboPOX 230SF topcoat.",
+      "agent": {
+        "text": "The exact Disbon catalog product designation for the two-component, solvent-free, transparent polyamine-cured epoxy primer is **DisboPOX 210 SF** (often written as **DisboPOX 210SF**). \n\nAccording to Disbon/Caparol technical documentation, DisboPOX 210 SF is the specifically approved base coat designed to provide excellent penetration and adhesion on mineral and concrete floors prior to applying the DisboPOX 230 SF topcoat. \n\nWhile **DisboPOX 210 SF** is the correct catalog material identifier required for your floor coating system, I cannot provide a specific orderable numeric SKU (e.g., a 6-digit item number) for the purchase. The exact numeric SKU depends entirely on your required packaging volume (e.g., specific container sizes in kg or liters) and your regional distributor. \n\nYou should specify **DisboPOX 210 SF** on your procurement order and confirm the exact packaging-specific SKU with your supplier.",
+        "sources": [
+          {
+            "title": "caparol.ge",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHurMg4ItQS7eZekaTDjiW7KZrC30FBzvWD34etJtQ0svn3gSAvLpGUp1Bv64WP6GrGsjY8yi0aNtW5axe99y_pmpfgEtGgMwKkWgXVmljhkZCFARYsrCWwrK_FachO0No8Mh8Eez0n-rJzNXB2J1_Jk3F6wKMx4w=="
+          },
+          {
+            "title": "ropeweave.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGI8A9timU-5p-_v66e9bys35t0LK-la7AqJwLoyNkTPaDaNC10r480NYGMZkEAfGKTM7kUp5G6kDCWmGMmVPi-e4VjwfCVh-0GE19ln7Ymnb9Jhk8ONTqRfMwR9tQJRBkDK927dZMJxJ00jNzXQNdZ3VDYPPxN_Ckhpg0jHR67JRC9uQ=="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.caparol.ge",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHurMg4ItQS7eZekaTDjiW7KZrC30FBzvWD34etJtQ0svn3gSAvLpGUp1Bv64WP6GrGsjY8yi0aNtW5axe99y_pmpfgEtGgMwKkWgXVmljhkZCFARYsrCWwrK_FachO0No8Mh8Eez0n-rJzNXB2J1_Jk3F6wKMx4w==",
+            "title": "caparol.ge",
+            "class": "other"
+          },
+          {
+            "host": "www.ropeweave.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGI8A9timU-5p-_v66e9bys35t0LK-la7AqJwLoyNkTPaDaNC10r480NYGMZkEAfGKTM7kUp5G6kDCWmGMmVPi-e4VjwfCVh-0GE19ln7Ymnb9Jhk8ONTqRfMwR9tQJRBkDK927dZMJxJ00jNzXQNdZ3VDYPPxN_Ckhpg0jHR67JRC9uQ==",
+            "title": "ropeweave.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 2
+        },
+        "primary": "other",
+        "total_sources": 2
+      },
+      "category": "CORRECT",
+      "rationale": "The agent correctly identified DisboPOX 210 SF as the exact product name/identifier for the two-component, solvent-free transparent epoxy primer from DAW/Disbon. The agent also accurately noted that the specific numeric SKU varies based on packaging size and correctly provided the specific product designation to use for ordering."
+    },
+    {
+      "query": "Please provide the manufacturer SKU for the alsecco Alsitherm EPS 032 Carbon Elastifiziert insulation boards. We need the exact orderable part number for the butt-edged version used in bonded thermal insulation systems to finalize our purchase order.",
+      "agent": {
+        "text": "The manufacturer SKU (Artikelnummer) for the **alsecco Alsitherm EPS 032 Carbon Elastifiziert** insulation boards depends on the required board thickness. The elastified version of this board is manufactured exclusively with butt edges (stumpf) for bonded thermal insulation systems (ETICS/WDVS). \n\nBecause the exact orderable part number varies by thickness, you will need to select the SKU that matches your project's specifications. Based on alsecco's current *Fassadennavigator* catalog, here are the precise SKUs for the standard thicknesses:\n\n*   **80 mm:** 976147\n*   **100 mm:** 976148\n*   **120 mm:** 976149\n*   **140 mm:** 976150\n*   **160 mm:** 976151\n\nTo finalize your purchase order, please verify the exact insulation thickness required. If your project specifies a thickness greater than 160 mm, the SKU series continues sequentially in the alsecco catalog; you should consult your alsecco technical advisor for the exact number.",
+        "sources": [
+          {
+            "title": "alsecco.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG1XfNm0wVSca484RFFx2aem9hzlF44veZIhEDUxxqO3q_ONSFD-K7ROMAtnHa2DYmcJ6O0fyTwJUu0NMuRxcT8HPr5Oe5pV0F-5XvkKcQyozqUt2MwGCYnNyOD8qnHdIwoZVat8QJfwgrwFM6bhw1w0IsU_e1KLh1zl_jhOux3hdYFAMa1AOwAvOdwAKRDOEBfkdjsK6DmDl4Q"
+          },
+          {
+            "title": "alsecco.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE1YtaNNOLpf9JYtvY4Fa17_x_QB2hqoNZSWHQPFOGKdKo6cc-saF91JRuk5Dg8UmJ2_o70m9WSAL0_C7ADg5tqGbnpXBWVS0H41zabFBHCaVRrPGmEQfRPvRZhnTeixC61HfH2eQ-pKIZLscBctKACA6b9cDHPUiS9NTnXZxQmmOm3IcbsJ7Ynm9yx4zD1wr2DMA=="
+          },
+          {
+            "title": "alsecco.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF6Q4NFN27a9AS9QqAoog2PBHDQQ5-lKM-DI7gLyoNi38eXvv5HZCQ0RezhDuJwMHPi4xnjRSNGzh-O2nx-j_v3jkOTzPQCo_TOLfCZj4SjOKO594-lFQNJYdU-kALkjRPX76-7Qij2H5Msid2YXD-CMzXOUBdtl7YSbu3Sq45BrTFATuuUi2XZmEbV78kmVByKrAjcBbAjkQmc32C0vA=="
+          },
+          {
+            "title": "alsecco.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGA9escWPvrVDZ6s92SMGMtjnx-tSrksI-SZ0jDH6EaMVWj9SMenR7Yg8A9-cAiaNRKTHRjawBAgXXzBInWh4F__zigW2KKzCABwTgnNZQYW_CQCnyg4oeycvf72RpGoQ75GKn8tW89sMSx4h4fuboiFBLJkRnLiLmZ2PA0qImqLIR32y_gqLTCXzEJgQDd8DQcMWdnB6cZ8qoQ"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.alsecco.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF6Q4NFN27a9AS9QqAoog2PBHDQQ5-lKM-DI7gLyoNi38eXvv5HZCQ0RezhDuJwMHPi4xnjRSNGzh-O2nx-j_v3jkOTzPQCo_TOLfCZj4SjOKO594-lFQNJYdU-kALkjRPX76-7Qij2H5Msid2YXD-CMzXOUBdtl7YSbu3Sq45BrTFATuuUi2XZmEbV78kmVByKrAjcBbAjkQmc32C0vA==",
+            "title": "alsecco.de",
+            "class": "other"
+          },
+          {
+            "host": "www.alsecco.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE1YtaNNOLpf9JYtvY4Fa17_x_QB2hqoNZSWHQPFOGKdKo6cc-saF91JRuk5Dg8UmJ2_o70m9WSAL0_C7ADg5tqGbnpXBWVS0H41zabFBHCaVRrPGmEQfRPvRZhnTeixC61HfH2eQ-pKIZLscBctKACA6b9cDHPUiS9NTnXZxQmmOm3IcbsJ7Ynm9yx4zD1wr2DMA==",
+            "title": "alsecco.de",
+            "class": "other"
+          },
+          {
+            "host": "www.alsecco.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG1XfNm0wVSca484RFFx2aem9hzlF44veZIhEDUxxqO3q_ONSFD-K7ROMAtnHa2DYmcJ6O0fyTwJUu0NMuRxcT8HPr5Oe5pV0F-5XvkKcQyozqUt2MwGCYnNyOD8qnHdIwoZVat8QJfwgrwFM6bhw1w0IsU_e1KLh1zl_jhOux3hdYFAMa1AOwAvOdwAKRDOEBfkdjsK6DmDl4Q",
+            "title": "alsecco.de",
+            "class": "other"
+          },
+          {
+            "host": "www.alsecco.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGA9escWPvrVDZ6s92SMGMtjnx-tSrksI-SZ0jDH6EaMVWj9SMenR7Yg8A9-cAiaNRKTHRjawBAgXXzBInWh4F__zigW2KKzCABwTgnNZQYW_CQCnyg4oeycvf72RpGoQ75GKn8tW89sMSx4h4fuboiFBLJkRnLiLmZ2PA0qImqLIR32y_gqLTCXzEJgQDd8DQcMWdnB6cZ8qoQ",
+            "title": "alsecco.de",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 4
+        },
+        "primary": "other",
+        "total_sources": 4
+      },
+      "category": "CORRECT",
+      "rationale": "The SKUs provided by the agent (976147 for 80 mm through 976151 for 160 mm) perfectly match the official alsecco catalog for the Alsitherm EPS 032 Carbon Elastifiziert insulation boards."
+    },
+    {
+      "query": "What is the catalog number for the Alsifix PM-T hammer-in plugs with plastic nails? We also need the exact SKU for the VT 90 combination disk required to flush-mount these plugs into WAP-zg mineral wool boards.",
+      "agent": {
+        "text": "I cannot provide specific alphanumeric SKUs, as the manufacturer (Alsecco / DAW SE) does not publish standard order codes for these items in their public technical catalogs. \n\nInstead, these components must be ordered directly through distributors using their specific system names and dimensional requirements:\n\n* **Alsifix PM-T:** These hammer-in plugs with plastic nails are ordered simply by the product name **\"Alsifix PM-T\"** alongside the required plug length (which ranges from 90 mm to 230 mm). \n* **VT 90 Combination Disk:** Required for flush-mounting into WAP-zg mineral wool boards, this component is cataloged by Alsecco as the **Kombinationsteller VT 90**. Under their sister brand Caparol, the exact catalog identifier for this same combination disk is **153/VT90** (sold as the *Capatect D\u00fcbelscheibe 153/VT90*). \n\nTo procure these items, you must quote these specific product names, your required anchor lengths, and refer to their respective technical approvals (e.g., ETA-11/0192 for the PM-T plug) to your regional Alsecco or Caparol B2B supplier.",
+        "sources": [
+          {
+            "title": "alsecco.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQES_PqcwrDGUiXiKla4CYHYsmx-JM8-1aYW8h5jggWZqzkLOwx660GSBBlipXoxowtKH5JX1M-nqGJUKLOOZEGv5V7op4bU82-w9oMtW4f-uzuUDR7MoY7BFZkudTQ3y0I0dkxksUf0869hU--LQbZ7htO3a0UGCSY9Q8LzaCuSWiOhpRBf"
+          },
+          {
+            "title": "alsecco.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEwZsaSDU5wjdEifJ4JbutY3HSbC-W15foN3nuQ3yZYNgHYxJltHaJqqZqk_Zigc-Uztc_pjW1NPsP7qiPrQA7-wwhWHtHhIPM55nwU3176rzWpzdm1lwkK1LUsFJj7s1x0896xQyf-mQwS469D2dZnU5BH6waA43YuD4Qpphd_IL_B1700gWs="
+          },
+          {
+            "title": "caparol.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGeDDP57goxPFKREqpfpRtU23Q5f8H_PGW9SOKtbgqa4Pa7OVBDzXzM85eKjdZqi510KgqXkM2iIXkuRyltfO0jNxnj53_Nemns4dWGpjBAnd9I-GyBYOa5tiiERVC7ix3z5pyLoWoiGJbf73rOL5YBPk6KyMPr3ecWQ6YO5-JA53XgnaDgxwbkIL0nr_c5Y3d3GmOce053F2xK5_zJjqU7J6YQdXo3vH9tSYqmDXRMNmZU"
+          },
+          {
+            "title": "caparol.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGMgEVh-c1udr9IhFWmiSFsjvUxYrg8iD1PAJfDH6vvmxKNNECqOgI9TBZD68IshQWnQetPFqO2CMxDezC9VJKNu6wh7uguJKE8O0v0r7DJPHtH2ALvIde0IKhaemLE3JEVLdntLRE4VAg_NVTStrAk1aWnmanVayLHymV0m2LBAMZRQCrEntpMHE4kVX2vGGixYbAuaREhOBiWzQQ="
+          },
+          {
+            "title": "alsecco.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF4WLpupQ7oRSQtjnsTv34OaB4D02i3lTTNKmhFeDvlmYXN-Cn3qajP6etaDNK6LUANRdaVO_SDT3_WxtF33QH_y1se4X0y1PDUhCe-WzIn3ttJygFR18c9_b3CKwYzNQSEjB_0p2-QEl-CSD1prK9yvWiVXk2PvfUDB9gAnhulf3lEwqIbNxTZeyW85QH6RNGc88anCVQflkoV"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.caparol.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGMgEVh-c1udr9IhFWmiSFsjvUxYrg8iD1PAJfDH6vvmxKNNECqOgI9TBZD68IshQWnQetPFqO2CMxDezC9VJKNu6wh7uguJKE8O0v0r7DJPHtH2ALvIde0IKhaemLE3JEVLdntLRE4VAg_NVTStrAk1aWnmanVayLHymV0m2LBAMZRQCrEntpMHE4kVX2vGGixYbAuaREhOBiWzQQ=",
+            "title": "caparol.de",
+            "class": "other"
+          },
+          {
+            "host": "www.caparol.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGeDDP57goxPFKREqpfpRtU23Q5f8H_PGW9SOKtbgqa4Pa7OVBDzXzM85eKjdZqi510KgqXkM2iIXkuRyltfO0jNxnj53_Nemns4dWGpjBAnd9I-GyBYOa5tiiERVC7ix3z5pyLoWoiGJbf73rOL5YBPk6KyMPr3ecWQ6YO5-JA53XgnaDgxwbkIL0nr_c5Y3d3GmOce053F2xK5_zJjqU7J6YQdXo3vH9tSYqmDXRMNmZU",
+            "title": "caparol.de",
+            "class": "other"
+          },
+          {
+            "host": "www.alsecco.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQES_PqcwrDGUiXiKla4CYHYsmx-JM8-1aYW8h5jggWZqzkLOwx660GSBBlipXoxowtKH5JX1M-nqGJUKLOOZEGv5V7op4bU82-w9oMtW4f-uzuUDR7MoY7BFZkudTQ3y0I0dkxksUf0869hU--LQbZ7htO3a0UGCSY9Q8LzaCuSWiOhpRBf",
+            "title": "alsecco.de",
+            "class": "other"
+          },
+          {
+            "host": "www.alsecco.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEwZsaSDU5wjdEifJ4JbutY3HSbC-W15foN3nuQ3yZYNgHYxJltHaJqqZqk_Zigc-Uztc_pjW1NPsP7qiPrQA7-wwhWHtHhIPM55nwU3176rzWpzdm1lwkK1LUsFJj7s1x0896xQyf-mQwS469D2dZnU5BH6waA43YuD4Qpphd_IL_B1700gWs=",
+            "title": "alsecco.de",
+            "class": "other"
+          },
+          {
+            "host": "www.alsecco.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF4WLpupQ7oRSQtjnsTv34OaB4D02i3lTTNKmhFeDvlmYXN-Cn3qajP6etaDNK6LUANRdaVO_SDT3_WxtF33QH_y1se4X0y1PDUhCe-WzIn3ttJygFR18c9_b3CKwYzNQSEjB_0p2-QEl-CSD1prK9yvWiVXk2PvfUDB9gAnhulf3lEwqIbNxTZeyW85QH6RNGc88anCVQflkoV",
+            "title": "alsecco.de",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 5
+        },
+        "primary": "other",
+        "total_sources": 5
+      },
+      "category": "CORRECT",
+      "rationale": "The agent accurately explains that Alsecco typically uses system names rather than public alphanumeric SKUs, correctly identifying 'Alsifix PM-T' (ETA-11/0192) and 'Kombinationsteller VT 90' as the exact orderable designations. Furthermore, it accurately provides '153/VT90' as the precise catalog identifier used by DAW's sister brand Caparol for the combination disk required for WAP-zg mineral wool boards."
+    },
+    {
+      "query": "I need the specific Caparol product name and orderable part number for their clear exterior wood glaze that uses nanoscale titanium dioxide. We are procuring this to block UV light and prevent natural greying on exposed architectural timber without altering the wood color.",
+      "agent": {
+        "text": "The specific product you are looking for is **Caparol Capadur TwinProof**. \n\nCapadur TwinProof is a highly transparent exterior wood glaze that uses integrated nanoscale (micronized) titanium dioxide to act as a UV-blocking barrier. This nanotechnology prevents the natural greying of exposed architectural timber, retaining the original, bright wood color while also offering high moisture protection via a water-repellent \"hydropearl\" effect.\n\nYou can procure this product through standard B2B construction distributors using the following European Article Numbers (EANs) / orderable SKUs:\n\n*   **750 ml container:** EAN 4002381913937 (often cataloged by distributors as Artikelnummer 2723)\n*   **5 Liter container:** EAN 4002381807465\n\n*Procurement note: To completely avoid altering the wood color, Caparol recommends Capadur TwinProof primarily for light conifers (such as pine, spruce, and fir). For darker woods or oak, a small test application is advised, as dense application of nanoscale titanium dioxide can occasionally leave a slight whitish tint.*",
+        "sources": [
+          {
+            "title": "caparol.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFtR8GdSDlTi9Mqsn9TrstZEXClWFyAvyw2aSV2zjYTfI7GLoLsBwLCC8G6hdjxnUN26PocaKWWj4j56k5D6lYta31rAVngKouGJl8os67TEpo3i9t4zZkJs1PtSnV2umQSTpdGivoY_yvBWBZMysra1LCSaL9nJ6dS9UMY5IacdH_S8ydsXA2AdqYLtTEdccRo1_vl4sUVhdSH4Kl1bj5CUhXS_1iDBeAnIvTa1xXl"
+          },
+          {
+            "title": "caparol.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0PY012g2WXdNO9DVZEvm7fzz8xXe27bPRX0cVfiNtVZrO2Un2hYQ8i0vO_9-n44yj_vrBlfPCf7y_QI6ClCBVVnpF42TAjeHQQ-hyqMrfYRnpq3QvST508TAf6ZBuHo1HHCt_nHuESltMougAw_h-pswrtzfxCrgn_Jv6j85KYHb-AkYwGWzhJKrnmU_KzEgLq_cFSCSdqSRa"
+          },
+          {
+            "title": "farbenhit.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG6rlYH7z8DPxt70n0C0yNayMRJ2ct2osef6EhfAyuHQr5plRmZqknWJ7gqEgzl0tlRYKQqWMWf6qSNwRs8ldLhbPYOo83qazEev1HguOzQPlh7AAJQ3tQXY12k4Fgl5KoWoq0T40AvuZmr0-rOqL3aoYRWkKB2pdK734OUpkQf4Q=="
+          },
+          {
+            "title": "caparol.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF8g9YKlX24nmo2IXZiiGBhCo7V5rZMbxhv900cucIkmVLVOzYbX3E09OBEJLGYJBzBECZtzmkuMZGojGQPg4gNHdy4IgzM6PO8R2gcCw5W52263csmKeWUWLFjvbdaDDYnj41VUPCK1q4TXDry9nKzPe9PdBxKKuTkPwIZC8va8ePxDUXnNtegoa6zSpa_347ktAe3Z_B6yFjlVZmxP6GkwQwFCNmdNCkYeUM3VLA-Xp0-"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.caparol.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF8g9YKlX24nmo2IXZiiGBhCo7V5rZMbxhv900cucIkmVLVOzYbX3E09OBEJLGYJBzBECZtzmkuMZGojGQPg4gNHdy4IgzM6PO8R2gcCw5W52263csmKeWUWLFjvbdaDDYnj41VUPCK1q4TXDry9nKzPe9PdBxKKuTkPwIZC8va8ePxDUXnNtegoa6zSpa_347ktAe3Z_B6yFjlVZmxP6GkwQwFCNmdNCkYeUM3VLA-Xp0-",
+            "title": "caparol.de",
+            "class": "other"
+          },
+          {
+            "host": "www.caparol.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0PY012g2WXdNO9DVZEvm7fzz8xXe27bPRX0cVfiNtVZrO2Un2hYQ8i0vO_9-n44yj_vrBlfPCf7y_QI6ClCBVVnpF42TAjeHQQ-hyqMrfYRnpq3QvST508TAf6ZBuHo1HHCt_nHuESltMougAw_h-pswrtzfxCrgn_Jv6j85KYHb-AkYwGWzhJKrnmU_KzEgLq_cFSCSdqSRa",
+            "title": "caparol.de",
+            "class": "other"
+          },
+          {
+            "host": "www.caparol.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFtR8GdSDlTi9Mqsn9TrstZEXClWFyAvyw2aSV2zjYTfI7GLoLsBwLCC8G6hdjxnUN26PocaKWWj4j56k5D6lYta31rAVngKouGJl8os67TEpo3i9t4zZkJs1PtSnV2umQSTpdGivoY_yvBWBZMysra1LCSaL9nJ6dS9UMY5IacdH_S8ydsXA2AdqYLtTEdccRo1_vl4sUVhdSH4Kl1bj5CUhXS_1iDBeAnIvTa1xXl",
+            "title": "caparol.de",
+            "class": "other"
+          },
+          {
+            "host": "farbenhit.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG6rlYH7z8DPxt70n0C0yNayMRJ2ct2osef6EhfAyuHQr5plRmZqknWJ7gqEgzl0tlRYKQqWMWf6qSNwRs8ldLhbPYOo83qazEev1HguOzQPlh7AAJQ3tQXY12k4Fgl5KoWoq0T40AvuZmr0-rOqL3aoYRWkKB2pdK734OUpkQf4Q==",
+            "title": "farbenhit.de",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 4
+        },
+        "primary": "other",
+        "total_sources": 4
+      },
+      "category": "CORRECT",
+      "rationale": "The agent correctly identified Caparol Capadur TwinProof as the product using nanoscale titanium dioxide for UV protection. The provided EANs (4002381913937 for 750 ml and 4002381807465 for 5L) perfectly match distributor catalogs and manufacturer datasheets."
+    },
+    {
+      "query": "We are installing a Disbon WHG-AS New water protection system in an ATEX chemical facility and need the conductive intermediate coat. What is the exact product number for the 2-component epoxy layer that sits between the DisboXID 5011 WHG primer and the DisboXID 5033 WHG finish?",
+      "agent": {
+        "text": "The conductive intermediate coat required for the Disbon WHG-AS New water protection system is the **DisboPOX W 5022 WHG 2K-EP-Leitschicht**. \n\nFor procurement, the exact manufacturer article number for the standard 10 kg combi-packaging (pigmented black) is **305046** (EAN: **4002382072398**). \n\n**System Build-up Reminder for WHG-AS Neu:**\n1. **Primer:** DisboXID 5011 WHG\n2. **Grounding:** DisboADD 973 Copper Tape (must be placed before the conductive layer)\n3. **Conductive Intermediate Coat:** DisboPOX W 5022 WHG (Art.-Nr. 305046)\n4. **Finish:** DisboXID 5033 WHG, AS\n\nBe sure to order both components (A and B are typically included in the combi-packaging, but verify with your building materials distributor if buying bulk industrial containers).",
+        "sources": [
+          {
+            "title": "disbon.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG6VunLzB8BDiAljuttB-jhRZ_rGg9egfFHSG1PyOZ8Sulyg2-sqXcyY1Tz461P3uIl9dlu-Z8vC_M5FOXxStzOwiREHhD41t1cSVfPvRs0fwCBZs9tFVnVihJ69jkxtczQXu9yyd_xUW1DejbDUkZh96ExY2bBEx981Pbfy1RPZG9OPzqQei-5T5aYHYkOi0X5POJQCUC-KrRS3mZUttEMR5C-5QyQfnakiaDg"
+          },
+          {
+            "title": "disbon.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFMPxsTlkpRpDAM09Z-dyN5u_CuvirV0Pjs9Lky6ArpJAbwadP97aS-n3ap8u2qeriypFoeJidvmXfW7_c7OzDfFSoqKPslRqFlkrQDy8zMGJ07Ir7yR16jNcjAzZp2vaopyLNOoyJxwAnjJly6Z7GcLKaeNX1LWrAaEi2DnM0EtaZhitPly7us6Q=="
+          },
+          {
+            "title": "caparol.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPhoPSZP-rr71ntEodkROl2V6eKoVH_YuoGp0SnzojGJZQI704EtW6Wj_xOvVQSv0vVcozRWugjracNsL-ThGKYJiDX7lxb0kvjm_5mVBsnC5uc2wIl_MXtHUy1QQ0mXm7MDOdwoERqoaZe5d5WtrLf-xr_1CSkOC7uKcDe316RtVylqLQrW7RCrjCk348SX5ujPXQq7hAA82dWr2GFTidIdyAw5uv8VCTyo-Eb2CjlA1ZkagI-b6HM9o6KWBg0WqSrSsIvHD8fSkuFTKq5O242LBwfeX2AsH7zcmq3HpfLhc1ZDNbdYSC6NZ6Ixcc-8nJhtwh24WSwMPpnJzyDPfbeA=="
+          },
+          {
+            "title": "eurobau.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHkFFbh12jst5VcjPRDF4wIlP9dhpbB5d43ld4hJIbtVlOrEF1360Fdi2bniP6LIwFePWLZoRCjRhqMSt-RZykUAlX1g7n6tHnZ60FdBBPTfrtTQ1ekAPH-kUeYCqYvjDwJRqOyvnVs3gR6g3xYcERAgmQ="
+          },
+          {
+            "title": "industriedatenpool.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGS2bRAEKA3MPDh_zrfiHH0_ldtDx1d_uSqWinIfRRp5SosPpMGDc8e4k9iQ62qtMLo4uFima4ofepED4-DJI8CqgWtk0Moq9E2qBRwoeJY1yax5Si_-PWBP3ToRf0vrpMYnlbu9sDGG-Jcaeaaht1Y5uLxQKRDGN3P3l7gfgNlSFdITVi_EKhmRFAK"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.disbon.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFMPxsTlkpRpDAM09Z-dyN5u_CuvirV0Pjs9Lky6ArpJAbwadP97aS-n3ap8u2qeriypFoeJidvmXfW7_c7OzDfFSoqKPslRqFlkrQDy8zMGJ07Ir7yR16jNcjAzZp2vaopyLNOoyJxwAnjJly6Z7GcLKaeNX1LWrAaEi2DnM0EtaZhitPly7us6Q==",
+            "title": "disbon.de",
+            "class": "other"
+          },
+          {
+            "host": "www.disbon.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG6VunLzB8BDiAljuttB-jhRZ_rGg9egfFHSG1PyOZ8Sulyg2-sqXcyY1Tz461P3uIl9dlu-Z8vC_M5FOXxStzOwiREHhD41t1cSVfPvRs0fwCBZs9tFVnVihJ69jkxtczQXu9yyd_xUW1DejbDUkZh96ExY2bBEx981Pbfy1RPZG9OPzqQei-5T5aYHYkOi0X5POJQCUC-KrRS3mZUttEMR5C-5QyQfnakiaDg",
+            "title": "disbon.de",
+            "class": "other"
+          },
+          {
+            "host": "www.eurobau.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHkFFbh12jst5VcjPRDF4wIlP9dhpbB5d43ld4hJIbtVlOrEF1360Fdi2bniP6LIwFePWLZoRCjRhqMSt-RZykUAlX1g7n6tHnZ60FdBBPTfrtTQ1ekAPH-kUeYCqYvjDwJRqOyvnVs3gR6g3xYcERAgmQ=",
+            "title": "eurobau.com",
+            "class": "other"
+          },
+          {
+            "host": "api.industriedatenpool.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGS2bRAEKA3MPDh_zrfiHH0_ldtDx1d_uSqWinIfRRp5SosPpMGDc8e4k9iQ62qtMLo4uFima4ofepED4-DJI8CqgWtk0Moq9E2qBRwoeJY1yax5Si_-PWBP3ToRf0vrpMYnlbu9sDGG-Jcaeaaht1Y5uLxQKRDGN3P3l7gfgNlSFdITVi_EKhmRFAK",
+            "title": "industriedatenpool.com",
+            "class": "other"
+          },
+          {
+            "host": "www.caparol.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPhoPSZP-rr71ntEodkROl2V6eKoVH_YuoGp0SnzojGJZQI704EtW6Wj_xOvVQSv0vVcozRWugjracNsL-ThGKYJiDX7lxb0kvjm_5mVBsnC5uc2wIl_MXtHUy1QQ0mXm7MDOdwoERqoaZe5d5WtrLf-xr_1CSkOC7uKcDe316RtVylqLQrW7RCrjCk348SX5ujPXQq7hAA82dWr2GFTidIdyAw5uv8VCTyo-Eb2CjlA1ZkagI-b6HM9o6KWBg0WqSrSsIvHD8fSkuFTKq5O242LBwfeX2AsH7zcmq3HpfLhc1ZDNbdYSC6NZ6Ixcc-8nJhtwh24WSwMPpnJzyDPfbeA==",
+            "title": "caparol.de",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 5
+        },
+        "primary": "other",
+        "total_sources": 5
+      },
+      "category": "CORRECT",
+      "rationale": "Manufacturer documentation from Disbon/Caparol confirms that DisboPOX W 5022 WHG is the required conductive intermediate coat for the WHG-AS New system. Multiple building material distributor catalogs verify that the 10 kg black combi-packaging corresponds exactly to article number 305046 and EAN 4002382072398."
+    }
+  ],
+  "log": [
+    "[  0.0s] Stage 0: validated daw.de (brand=daw)",
+    "[  0.0s] Stage 1: generating queries (grounded against daw.de)",
+    "[ 40.5s]   Generated 5 queries",
+    "[ 40.5s] Stage 2: running 5 grounded queries against Gemini Pro",
+    "[ 72.7s] Stage 3: source attribution complete",
+    "[ 72.7s] Stage 4: categorizing answers",
+    "[136.2s] Stage 5: visibility=100 (5/5), source_authority=0 (0/5 manufacturer-sourced) in 136.2s"
+  ],
+  "elapsed_seconds": 136.2,
+  "slug": "daw",
+  "display_name": "DAW"
+}

@@ -1,0 +1,463 @@
+{
+  "input": "https://abb.com",
+  "host": "abb.com",
+  "brand": "abb",
+  "visibility_score": 100,
+  "source_authority_score": 0,
+  "total_queries": 5,
+  "correct_queries": 5,
+  "manufacturer_correct": 0,
+  "breakdown": {
+    "CORRECT": 5,
+    "HALLUCINATION": 0,
+    "REFUSED": 0,
+    "WRONG_SPEC": 0,
+    "ERROR": 0
+  },
+  "source_breakdown": {
+    "manufacturer": 0,
+    "distributor": 0,
+    "marketplace": 0,
+    "other": 5,
+    "none": 0
+  },
+  "rows": [
+    {
+      "query": "We need to order a replacement ABB wall-mounted variable frequency drive for a 40 HP, 480V application. What is the exact ACS880 series part number for the 52 amp NEMA 1 configuration?",
+      "agent": {
+        "text": "The exact ABB part number for the wall-mounted ACS880 variable frequency drive meeting your specifications is **ACS880-01-052A-5**.\n\n**Part Number Breakdown:**\n* **ACS880-01:** Wall-mounted single drive configuration\n* **052A:** 52.0 Amps (Normal Duty output for 40 HP applications)\n* **5:** 380\u2013500 VAC 3-phase voltage rating (covers 480V)\n* **Enclosure:** NEMA 1 / IP21 is the standard default enclosure for this base part number\n\nThis base SKU includes the assistant control panel and embedded Safe Torque Off (STO). If your installation requires specific optional modules\u2014such as specific communication adapters, EMC filters, or NEMA 12 (IP55) enclosures\u2014ABB utilizes plus codes appended to the end of the base number (e.g., `+E200` for a specific EMC filter). For the standard 40 HP, 480V, NEMA 1 unit, the base part number is all you need.",
+        "sources": [
+          {
+            "title": "platt.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHcZtO6Yb-WJUdSdsgaxz77HYMakQifdsL3RGzyc7KYzN5Y-Arg4ZZr6ITEb1aCR1ehfgH61vRn-nTYfsbOkHHEWajlHRjEQ_zXl8DfC-G-AZgWH0iek4MjzTmyr1hKOD1pxbgGHvwn4g0EzejV98IhsfayPOmhKcwOqPwLRaW1lNU2Ls4BHtu3sJ_4TQ=="
+          },
+          {
+            "title": "carolinamotioncontrols.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEYubrGpMRX-fy-n6Ez3DO0My2aR9whh-wYHjdjfDhaI4uJQ5sAik-0lY1K1JrS8P1Wej0x7ZNto94GfqsZ0Ko_CnECadu1RA49MfIOpKkDQXZsutY-psqzPm8JGgEs8D2iknJbWo2mfMjsjWXL4PuywwV8EFaDJ5bnXVu5Nx96CRgkLw=="
+          },
+          {
+            "title": "southerncontrols.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHKiUXy9vdxgJOGe7XONFNdamNeWp0nGtOipPuFKcnIcNK4F8TYqdjL7iAJbTEG1-xy7NjfgaM1N1hKalANkIO8rrAxeMjZonwmLJwzu4Qvcaq-rytrXXNrYolHqSjwMzjdbdepVk1gUVDZ49t-9AbYt8bFxTP2aAOFoplFl4kd"
+          },
+          {
+            "title": "carolinamotioncontrols.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQENSQ4fTbxRzNPQ3Z8wQti55tJQHPp2WHTepNU2yC_VuL-gWsOW8G-gW9fZjXR0NwAXOyhtdgPfFvQWTH23yWmc-_KphG1k8ooenEqvFmlWZONkMyoFD58A0UzvEhN0JPoq9Jikz6qfp-nQud-yRQ3n0zorkGTm3atQ3uKW_A9JkfXDN-dkeNKv"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.southerncontrols.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHKiUXy9vdxgJOGe7XONFNdamNeWp0nGtOipPuFKcnIcNK4F8TYqdjL7iAJbTEG1-xy7NjfgaM1N1hKalANkIO8rrAxeMjZonwmLJwzu4Qvcaq-rytrXXNrYolHqSjwMzjdbdepVk1gUVDZ49t-9AbYt8bFxTP2aAOFoplFl4kd",
+            "title": "southerncontrols.com",
+            "class": "other"
+          },
+          {
+            "host": "carolinamotioncontrols.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEYubrGpMRX-fy-n6Ez3DO0My2aR9whh-wYHjdjfDhaI4uJQ5sAik-0lY1K1JrS8P1Wej0x7ZNto94GfqsZ0Ko_CnECadu1RA49MfIOpKkDQXZsutY-psqzPm8JGgEs8D2iknJbWo2mfMjsjWXL4PuywwV8EFaDJ5bnXVu5Nx96CRgkLw==",
+            "title": "carolinamotioncontrols.com",
+            "class": "other"
+          },
+          {
+            "host": "carolinamotioncontrols.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQENSQ4fTbxRzNPQ3Z8wQti55tJQHPp2WHTepNU2yC_VuL-gWsOW8G-gW9fZjXR0NwAXOyhtdgPfFvQWTH23yWmc-_KphG1k8ooenEqvFmlWZONkMyoFD58A0UzvEhN0JPoq9Jikz6qfp-nQud-yRQ3n0zorkGTm3atQ3uKW_A9JkfXDN-dkeNKv",
+            "title": "carolinamotioncontrols.com",
+            "class": "other"
+          },
+          {
+            "host": "www.platt.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHcZtO6Yb-WJUdSdsgaxz77HYMakQifdsL3RGzyc7KYzN5Y-Arg4ZZr6ITEb1aCR1ehfgH61vRn-nTYfsbOkHHEWajlHRjEQ_zXl8DfC-G-AZgWH0iek4MjzTmyr1hKOD1pxbgGHvwn4g0EzejV98IhsfayPOmhKcwOqPwLRaW1lNU2Ls4BHtu3sJ_4TQ==",
+            "title": "platt.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 4
+        },
+        "primary": "other",
+        "total_sources": 4
+      },
+      "category": "CORRECT",
+      "rationale": "A search of authorized distributors confirms that ACS880-01-052A-5 is a valid, orderable ABB catalog number. It corresponds exactly to the requested specifications: an ACS880 series wall-mounted drive rated for 40 HP (Normal Duty), 52 Amps, 480V, with a standard NEMA 1 (IP21) enclosure."
+    },
+    {
+      "query": "Please provide the 3GBP product code for an ABB M3BP 280 SMB 2 process performance cast iron motor. The spec requires the 75 kW, 2-pole, foot-mounted IM B3 version optimized for 400V 50Hz.",
+      "agent": {
+        "text": "Based on ABB\u2019s official catalog data, the correct orderable 3GBP product codes for an **M3BP 280 SMB 2** at 75 kW, 2-pole, foot-mounted (IM B3), and optimized for 400V/50Hz depend on the required efficiency class:\n\n* **3GBP281220-ADL** (IE3 Premium Efficiency)\n* **3GBP281220-ADM** (IE4 Super Premium Efficiency)\n\nHere is how the SKU strictly translates your specifications:\n* **3GBP**: Process performance completely enclosed cast iron motor.\n* **28**: IEC frame size 280.\n* **1**: 2-pole speed. \n* **220**: Standard internal designator for the \"SMB\" length/variant.\n* **A**: Foot-mounted design (IM B3 / IM 1001) with a top-mounted terminal box.\n* **D**: 400V Delta connection, 50 Hz.\n* **L** / **M**: The generation code representing the IE3 or IE4 efficiency standard. \n\n*(Note: In older IE2 generation catalogs, 75 kW was primarily mapped to the SMA frame [3GBP281210], but in current IE3 and IE4 manufacturing, 75 kW maps to the SMB frame using the exact codes above)*.",
+        "sources": [
+          {
+            "title": "electricautomationnetwork.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEDKqMViHoZ284JP7iHqzl2UPVXWlmJTecG5o2rr-65ZvTPegesFSQLn2BuWZUz1AStk4IJTP889TH_q6KDQLz_CMUtiJ7STLfSCRBHsYuI6huBa_s1Adt40AILCOkv7_7UiD-ZDqHgJJeiMi69xl1ceNmPNUoAJhmHoW2cd0tW-d7m2Elj_HbZuyIOhg_zyw2dxRbKj2yRxG0ox3WY0vUvKvDUixlFFWMUP_E3IXjuT2Ck5rpm6C1akQpk4tDSyWCRMPpJqjaUbaYoWgWztKenBGc0tnrg"
+          },
+          {
+            "title": "electricautomationnetwork.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHe5lTyj9h0AQScJeticIws6Kk8N-KLUm8M63UYGZmzzm-s1paFRJ6G5MEOgHnIMS2ooqu4vG7ZYUgD7KyD-2bKa0nPqyeD8hjoeB76hj-1jwPHUz4ZGFJwlHaVVuwBLlSQtsRProWX-IkW8u1-MiYsDKT6VN8S2B0IUAZzGM9X_nR72XPoivrOpguJcZacww4fBx1N54ev_bbo9K7F0cg61kPVBYs_yqbXREuFjsaoNEkwOlrylxmJSMhszkuZ_o94FeE7YUUq6hn_7KLS6EWGR9iOTvPI"
+          },
+          {
+            "title": "lamb.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF2qYdIx3GlcGrf_OY4l9qFyBFwCSWShx1jTX_Nxeru1rVwFHo9QEL95Bhzz1ObJSMJOU6ZHFsGnHrL6aVlJcPKSIP82m_NzGPbanrX3Zc9qUskNy9oth2azAPWQNccjgmus9hY96JWSKr24jZnHs5mm7zigGbAfwzPv7kv"
+          },
+          {
+            "title": "servorecambios.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFdb5B1e8fh9ekbGEA3Js5ghZKgK4v2tYAgDeNYI4I3qLGACWmETUagZcKJUvTuLP10Ax7E2bNkPfi3xAhI14Q6BPDbWu_yfYxzmGhtmhjxLxTy5gYeTihPgvY2SAPadkU1cnwfEqet5chYAMRJvyIS621F"
+          },
+          {
+            "title": "mikrocontroller.net",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0d76RveNZrpuukjCl_CMcjSGv-gxTmw_Gvq9PGZbAmpwqCgeDfP2elLEk4R1ph0xOOeYeAdfsx2TK8GaJ_6WUY8dcZQ_Pn95t-cg-7_Tsk-bP7dpSXmnu7ab6PB63iR0ELYLhRGQAdfxg5v1ZVZp6-6S6XDuYEI0rwGs="
+          },
+          {
+            "title": "scribd.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHWzWGiLlt7JpVaAqP6zawdp-t2_bn_HvEnzawgHEx1buv9TZZRmFA7grt_aMIyoV0UHcnbRMwzesD8w9fyWJ05z1_Lswnb_hPq0BYAEoSUVTWStnumdWcMfo0Nqu0XrHoSjpuuAit730E0ernyzx9WoA0tWHAHMrXLLED"
+          },
+          {
+            "title": "abb.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGh4_IuJAOGVlwwz-MKmU3Q2d_aXtF13Kz-3sE7Menpn4O0YNakP-kBXfPEzj3bN_zaV4FwCyaXN72T2gxA3_EEQ3WpoyEJ8ICtcF1aNY64VgIkrAmR7M1qouxCOxxkpzCAv3Hcw_mugyN_Je3yUv1hJFmU1dWT-RJNUanvqMGQqA7MqDSsM2TWjfLzikLzFCuPuS6FEb1LReO5KX6hm9ONv40A-6jG3iXZEF68QmoidA=="
+          },
+          {
+            "title": "abb.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEk70CopaGwciymzAeILiFgfCazwqh_ihxpBHGFExTwGzpXv-RrZxeVxHNzw0Xg-2vpVlrW4ybHSVZ7qONUy9KVshR_klnODb0anUeQIzVwSDRsrMvkC6zk0GFcCJxQJOPw4_rsWIvU355P_TxwEgN71xKOEwla0y1ryOiv3xn9xtzWWRr24tOsGM2w6okosPM8FHgBWdbCMOAlOjVCqs2hf7MLJuGPLaSO4C4="
+          },
+          {
+            "title": "electricautomationnetwork.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBqUgYmYdgf22C9HlqtYXbwb5INllIeISGKWp-J6wFGIH0evxW_xFlQtbRqfQhA0noqX1DGwT7P-7PB2d2iNVVNeDrCFhUqAx581BqI_V_FVUXxB8eAPrQP7gh9m_P8_q7fhI19HnAgEJ6kU84d50SUwc69qT3C5g-EOaFRLEJiw0MlPZLYBYsLvlSBnrSBDC7IDyUCsPJsb-PXoOmnSrassA7FUVtLU2yz9ahZcpNIeAxcjZjDjvajVvvvrvcZl-NGwgygXFs1WkY8eQkwTjiIrZoBDOL"
+          },
+          {
+            "title": "galco.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGSLPL1_eb-2RQsiPKdQw-vOj98jkrBCmvX0TZMMCUMwvb1siF5ZVQRCStUgdBHJg2HkD9bG6F0Pi2S2OxCAmkL1fQAbU8rSWRhhiA-HBJIJ7KcR5mOJ_V9NJkNFf5NBR1Rxt3ik5FDjOLZ5aXeUV8_YBVnlY7T9Pm0SeE6OmjWwFkEyLedSfL-TNwS"
+          },
+          {
+            "title": "baldor.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELURI-Fi5o1jkYHJ9WwBZ0zJAcpLrSpsInjeenXYGtpuaIv-CmztMuQdKwmCt5p2pj5zK9KHqZLdGwPjNyOGKgD2SE2vycxoVj_SbtOOGPYewNYYjPHYiMCGiW5Rs2EF-LwoyTRziPTxl_2ui9seMok9_M4KKT5Us58sAD94zmMaW1"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.electricautomationnetwork.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHe5lTyj9h0AQScJeticIws6Kk8N-KLUm8M63UYGZmzzm-s1paFRJ6G5MEOgHnIMS2ooqu4vG7ZYUgD7KyD-2bKa0nPqyeD8hjoeB76hj-1jwPHUz4ZGFJwlHaVVuwBLlSQtsRProWX-IkW8u1-MiYsDKT6VN8S2B0IUAZzGM9X_nR72XPoivrOpguJcZacww4fBx1N54ev_bbo9K7F0cg61kPVBYs_yqbXREuFjsaoNEkwOlrylxmJSMhszkuZ_o94FeE7YUUq6hn_7KLS6EWGR9iOTvPI",
+            "title": "electricautomationnetwork.com",
+            "class": "other"
+          },
+          {
+            "host": "www.electricautomationnetwork.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEDKqMViHoZ284JP7iHqzl2UPVXWlmJTecG5o2rr-65ZvTPegesFSQLn2BuWZUz1AStk4IJTP889TH_q6KDQLz_CMUtiJ7STLfSCRBHsYuI6huBa_s1Adt40AILCOkv7_7UiD-ZDqHgJJeiMi69xl1ceNmPNUoAJhmHoW2cd0tW-d7m2Elj_HbZuyIOhg_zyw2dxRbKj2yRxG0ox3WY0vUvKvDUixlFFWMUP_E3IXjuT2Ck5rpm6C1akQpk4tDSyWCRMPpJqjaUbaYoWgWztKenBGc0tnrg",
+            "title": "electricautomationnetwork.com",
+            "class": "other"
+          },
+          {
+            "host": "www.scribd.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHWzWGiLlt7JpVaAqP6zawdp-t2_bn_HvEnzawgHEx1buv9TZZRmFA7grt_aMIyoV0UHcnbRMwzesD8w9fyWJ05z1_Lswnb_hPq0BYAEoSUVTWStnumdWcMfo0Nqu0XrHoSjpuuAit730E0ernyzx9WoA0tWHAHMrXLLED",
+            "title": "scribd.com",
+            "class": "other"
+          },
+          {
+            "host": "lamb.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF2qYdIx3GlcGrf_OY4l9qFyBFwCSWShx1jTX_Nxeru1rVwFHo9QEL95Bhzz1ObJSMJOU6ZHFsGnHrL6aVlJcPKSIP82m_NzGPbanrX3Zc9qUskNy9oth2azAPWQNccjgmus9hY96JWSKr24jZnHs5mm7zigGbAfwzPv7kv",
+            "title": "lamb.de",
+            "class": "other"
+          },
+          {
+            "host": "www.mikrocontroller.net",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0d76RveNZrpuukjCl_CMcjSGv-gxTmw_Gvq9PGZbAmpwqCgeDfP2elLEk4R1ph0xOOeYeAdfsx2TK8GaJ_6WUY8dcZQ_Pn95t-cg-7_Tsk-bP7dpSXmnu7ab6PB63iR0ELYLhRGQAdfxg5v1ZVZp6-6S6XDuYEI0rwGs=",
+            "title": "mikrocontroller.net",
+            "class": "other"
+          },
+          {
+            "host": "www.electricautomationnetwork.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBqUgYmYdgf22C9HlqtYXbwb5INllIeISGKWp-J6wFGIH0evxW_xFlQtbRqfQhA0noqX1DGwT7P-7PB2d2iNVVNeDrCFhUqAx581BqI_V_FVUXxB8eAPrQP7gh9m_P8_q7fhI19HnAgEJ6kU84d50SUwc69qT3C5g-EOaFRLEJiw0MlPZLYBYsLvlSBnrSBDC7IDyUCsPJsb-PXoOmnSrassA7FUVtLU2yz9ahZcpNIeAxcjZjDjvajVvvvrvcZl-NGwgygXFs1WkY8eQkwTjiIrZoBDOL",
+            "title": "electricautomationnetwork.com",
+            "class": "other"
+          },
+          {
+            "host": "search.abb.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGh4_IuJAOGVlwwz-MKmU3Q2d_aXtF13Kz-3sE7Menpn4O0YNakP-kBXfPEzj3bN_zaV4FwCyaXN72T2gxA3_EEQ3WpoyEJ8ICtcF1aNY64VgIkrAmR7M1qouxCOxxkpzCAv3Hcw_mugyN_Je3yUv1hJFmU1dWT-RJNUanvqMGQqA7MqDSsM2TWjfLzikLzFCuPuS6FEb1LReO5KX6hm9ONv40A-6jG3iXZEF68QmoidA==",
+            "title": "abb.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "search.abb.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEk70CopaGwciymzAeILiFgfCazwqh_ihxpBHGFExTwGzpXv-RrZxeVxHNzw0Xg-2vpVlrW4ybHSVZ7qONUy9KVshR_klnODb0anUeQIzVwSDRsrMvkC6zk0GFcCJxQJOPw4_rsWIvU355P_TxwEgN71xKOEwla0y1ryOiv3xn9xtzWWRr24tOsGM2w6okosPM8FHgBWdbCMOAlOjVCqs2hf7MLJuGPLaSO4C4=",
+            "title": "abb.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "pim.galco.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGSLPL1_eb-2RQsiPKdQw-vOj98jkrBCmvX0TZMMCUMwvb1siF5ZVQRCStUgdBHJg2HkD9bG6F0Pi2S2OxCAmkL1fQAbU8rSWRhhiA-HBJIJ7KcR5mOJ_V9NJkNFf5NBR1Rxt3ik5FDjOLZ5aXeUV8_YBVnlY7T9Pm0SeE6OmjWwFkEyLedSfL-TNwS",
+            "title": "galco.com",
+            "class": "other"
+          },
+          {
+            "host": "www.servorecambios.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFdb5B1e8fh9ekbGEA3Js5ghZKgK4v2tYAgDeNYI4I3qLGACWmETUagZcKJUvTuLP10Ax7E2bNkPfi3xAhI14Q6BPDbWu_yfYxzmGhtmhjxLxTy5gYeTihPgvY2SAPadkU1cnwfEqet5chYAMRJvyIS621F",
+            "title": "servorecambios.com",
+            "class": "other"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELURI-Fi5o1jkYHJ9WwBZ0zJAcpLrSpsInjeenXYGtpuaIv-CmztMuQdKwmCt5p2pj5zK9KHqZLdGwPjNyOGKgD2SE2vycxoVj_SbtOOGPYewNYYjPHYiMCGiW5Rs2EF-LwoyTRziPTxl_2ui9seMok9_M4KKT5Us58sAD94zmMaW1",
+            "title": "baldor.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 2,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 9
+        },
+        "primary": "other",
+        "total_sources": 11
+      },
+      "category": "CORRECT",
+      "rationale": "The agent correctly provided the exact, orderable ABB product codes (3GBP281220-ADL for IE3 and 3GBP281220-ADM for IE4). Distributor catalogs verify that these SKUs precisely match the M3BP 280 SMB 2, 75 kW, 2-pole, IM B3 foot-mounted, 400V 50Hz motor."
+    },
+    {
+      "query": "Our panel builder requested an ABB SACE Tmax XT5H molded case circuit breaker rated for 600A, 3-pole, 600V with an Ekip LSI electronic trip unit. What is the specific part number for this bolt-on breaker with standard front terminals?",
+      "agent": {
+        "text": "To meet your panel builder's request, the specific orderable part number (SKU) for this ABB molded case circuit breaker is **XT5HU360BFFF000XXX**. \n\nHere is the breakdown of the part number confirming it meets your specifications:\n* **XT5H:** SACE Tmax XT5 Frame, High Interrupting Capacity\n* **U:** UL/CSA Standard (Rated up to 600V)\n* **3:** 3-Pole\n* **60:** 600A Continuous Current Rating\n* **B:** Ekip Dip LSI (Electronic Solid-State Trip Unit)\n* **F F:** Front Terminals (Line and Load)\n* **F:** Fixed Mounting (Bolt-on)\n* **000XXX:** Standard default configuration (no pre-installed accessories)\n\nYou can also use ABB's global reference code for this exact configuration, which is **1SDA102530R1**.",
+        "sources": [
+          {
+            "title": "essentialparts.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF9Yz1oysbrAYwaB5sLDQQ1hlVNgZiM-sIJrgHBlsi1l8Uq-BHFnsCIhZj_k1ajyNa9677jGZplLs1gSwy1Nv8npmmuD5CjvdVCoyGXgkdllmiT_WKVchqjQ2Q7Nid8XalLY753aPkMdbCKPuV0vUJPK7lHvQQDf4bpkLhCcX9dmffoX-nn-QAdYExV0LhUfcv5pkHjN01GkSdYsSoUx1IMahnvfqiRMHOY7bVg3gRcgp2KkqvHodysE9w424f2YVlPPSeO4MxZzMJRXrXPb3E="
+          },
+          {
+            "title": "electrical.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHgLZac6BqBWT0kmJsl4UV3lYn4dQuihgqPvr_jjC3SWIpbFALnclO_gKXOw30m3hiL6-z1IVag-pOCT5I3BTIQzNIugR60lydubWutsFqDF8tuK22yPO5rXPB0FLvyli9PZWNucaf2TXv7t0DpafJPyWr8n1uFh2IsjJoX25DM6Mz8efd67A=="
+          },
+          {
+            "title": "claytonengineering.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFHVHLHRrK5IC0u0DMQBjCLfCYwwpgL2QYY199qUtphyb0zxjkjMREHPaesCIZxLif7ui1b8aHAH6CBGqxgrQ4bzlSFHhF2xFPo0Y0lJFno4-Cj_nvJAv0kC04t0c_mcs01qUPc_2p-XRd9-F2e673S2WNl9A=="
+          },
+          {
+            "title": "abb.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHqUqQKvDzFJRXp2DdonKSQZjS-iVIRWW-aRqvuuYGFu8OYWjqOPxZ73wTYoQdlUgAc5kbrSGC2T-GhEC7JOW8czx_vFJsnwoGhFogGusqhMkIB8u58icw-h4rVT-UYrax8NM_vhPrqw8BbtYjMLTfz843c3mPFxdhOxYEX8gM4mmFLZJFM53ENZF8_G70rrAqZwLG8fYwhm3w="
+          },
+          {
+            "title": "abb.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_tCnIgd5NYZo_LdUjTBkGzDPuKHQN0vNh8nL8l6-obzMu9f2nXJVxYjxgiTVxKApIaF5fQmMmdp6LudOxLk9Ar_YHmnaSvYGpz_I-703yFLTNiwKquwcMemPwsZsKIwyMOYxtrZVpkynA85g1ZlBlrDPXHfDZP2sjdeL--5PG0wg1Tv2TUlA4JkY41hg="
+          },
+          {
+            "title": "plc-city.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEvMKNYSRcWbnSE5gWH5FgYv53uHPkB2ZW-fdTKhOgBGKGwEihg3Qi2quoqVEh_pjoHypO2a4DlXcVOSvLR6NpMhFIKbBSCe_EFNedXhASi_hqqFlRBdwqoYwsFd06cO-8J4GpgWB88qN2v_QVUyaA2MoCZ0HE7VTAcsKWEDDErDUuLV35VI8wgOxH4R20pKrltsZwLg1hHXFVmGt403aYTfgEPggQpf9iNTdI2qTGb4UNpmwoH8N7r9A=="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "essentialparts.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF9Yz1oysbrAYwaB5sLDQQ1hlVNgZiM-sIJrgHBlsi1l8Uq-BHFnsCIhZj_k1ajyNa9677jGZplLs1gSwy1Nv8npmmuD5CjvdVCoyGXgkdllmiT_WKVchqjQ2Q7Nid8XalLY753aPkMdbCKPuV0vUJPK7lHvQQDf4bpkLhCcX9dmffoX-nn-QAdYExV0LhUfcv5pkHjN01GkSdYsSoUx1IMahnvfqiRMHOY7bVg3gRcgp2KkqvHodysE9w424f2YVlPPSeO4MxZzMJRXrXPb3E=",
+            "title": "essentialparts.com",
+            "class": "other"
+          },
+          {
+            "host": "www.plc-city.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEvMKNYSRcWbnSE5gWH5FgYv53uHPkB2ZW-fdTKhOgBGKGwEihg3Qi2quoqVEh_pjoHypO2a4DlXcVOSvLR6NpMhFIKbBSCe_EFNedXhASi_hqqFlRBdwqoYwsFd06cO-8J4GpgWB88qN2v_QVUyaA2MoCZ0HE7VTAcsKWEDDErDUuLV35VI8wgOxH4R20pKrltsZwLg1hHXFVmGt403aYTfgEPggQpf9iNTdI2qTGb4UNpmwoH8N7r9A==",
+            "title": "plc-city.com",
+            "class": "other"
+          },
+          {
+            "host": "shop.claytonengineering.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFHVHLHRrK5IC0u0DMQBjCLfCYwwpgL2QYY199qUtphyb0zxjkjMREHPaesCIZxLif7ui1b8aHAH6CBGqxgrQ4bzlSFHhF2xFPo0Y0lJFno4-Cj_nvJAv0kC04t0c_mcs01qUPc_2p-XRd9-F2e673S2WNl9A==",
+            "title": "claytonengineering.com",
+            "class": "other"
+          },
+          {
+            "host": "www.electrical.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHgLZac6BqBWT0kmJsl4UV3lYn4dQuihgqPvr_jjC3SWIpbFALnclO_gKXOw30m3hiL6-z1IVag-pOCT5I3BTIQzNIugR60lydubWutsFqDF8tuK22yPO5rXPB0FLvyli9PZWNucaf2TXv7t0DpafJPyWr8n1uFh2IsjJoX25DM6Mz8efd67A==",
+            "title": "electrical.com",
+            "class": "other"
+          },
+          {
+            "host": "library.e.abb.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHqUqQKvDzFJRXp2DdonKSQZjS-iVIRWW-aRqvuuYGFu8OYWjqOPxZ73wTYoQdlUgAc5kbrSGC2T-GhEC7JOW8czx_vFJsnwoGhFogGusqhMkIB8u58icw-h4rVT-UYrax8NM_vhPrqw8BbtYjMLTfz843c3mPFxdhOxYEX8gM4mmFLZJFM53ENZF8_G70rrAqZwLG8fYwhm3w=",
+            "title": "abb.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_tCnIgd5NYZo_LdUjTBkGzDPuKHQN0vNh8nL8l6-obzMu9f2nXJVxYjxgiTVxKApIaF5fQmMmdp6LudOxLk9Ar_YHmnaSvYGpz_I-703yFLTNiwKquwcMemPwsZsKIwyMOYxtrZVpkynA85g1ZlBlrDPXHfDZP2sjdeL--5PG0wg1Tv2TUlA4JkY41hg=",
+            "title": "abb.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 1,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 5
+        },
+        "primary": "other",
+        "total_sources": 6
+      },
+      "category": "CORRECT",
+      "rationale": "The agent provided the valid part number XT5HU360BFFF000XXX and global reference 1SDA102530R1. A check of ABB datasheets and distributor catalogs (e.g., Electrical.com, All Data Resource) confirms this exact SKU corresponds to an ABB SACE Tmax XT5H 600A, 3-pole, 600V breaker with an Ekip Dip LSI trip unit and fixed front terminals."
+    },
+    {
+      "query": "We are quoting a work cell upgrade and need to specify an ABB IRB 2600 industrial robot. What is the exact base model number for the manipulator variant featuring a 20 kg payload and 1.65 meter reach?",
+      "agent": {
+        "text": "The exact base model number for this specific ABB manipulator is **IRB 2600-20/1.65**. \n\nIn ABB's catalog system, this alphanumeric string serves as the primary variant identifier (SKU) used to order the bare manipulator arm. This designation explicitly confirms the 20 kg payload capacity and 1.65-meter maximum reach. \n\nWhen configuring your final quote for the work cell upgrade, you will use **IRB 2600-20/1.65** as the base mechanical unit, to which you can then add your required options (such as the IRC5 or OmniCore controller, base mountings, and standard IP67 or Foundry Plus 2 protection packages).",
+        "sources": [
+          {
+            "title": "abb.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGY4-LiZv9czR7eU5qvDJVaLyGs_AVRIPEXfwCxTmAkZekbv2T1WXP2T89kZ75nJLg2WZ63c0-PSiONSV-Fiq393Eq-CsSK0NW7JUzeCvX4SsLAag4VXGUOJ1MzzQ2NnrJUknMqVPX0NXTAfqEooLPJ37lahfPJhC9lIngoBByh3ku7SYr3j-jYFuq_T-Fqlh6fD7aKwBUrQbPdqgdYSgl8RQ=="
+          },
+          {
+            "title": "abb.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGDGoUXX2KnPxgNSzpnfjNEkTPZ2SYSCII8MY3Gk6qX4Ut0dBFvN2F5wGWngSEItedu-SkKAmoeX2V5eW9SWP2DtJfRtauxUgJVl2QNih2VYJ9JdTwMZturfUYLfyaeMS2RPv746SqXVVLYNzGL-zYTRqwnF4RBhWcu83dpBN86_aCOQKlFCShcZd4fvbqhKsmggBw-IWZ1Go-xFqLJBv1dCPW75rGQgJwqICUhiHQh2NmlGB8t_NZ35OAxFRHj-6fS4OlotfyCDSS53oVgbChYv9L0jMkbKrsTSWzJDZzKzZm-hJYXU2bEeaqdVxwTJ0_vG9VkfTPntJozObk2"
+          },
+          {
+            "title": "pennair.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFp0Z4fiAQ2HISHxlZL3YnbQzkZ431cGgiXPQtW8zAeN1uArNH9TStskXuVW0Yek89gl3cLrpRChjYpaMR_-KQxSL1eEb2_UWoFvjy8Jl6AsfWX3J_dftdrvLCfL1Jxnx4phbITRIjkQBw4HAx86nQonEo5IOH5TJjqFg1x"
+          },
+          {
+            "title": "carolinamotioncontrols.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHKIikbL0qhU_c97O0uL3LC__PVVSSBZYL2D0reao_tUByIBmAO47bvHfMLNyMNKEZfxACW4fQ4N4huHRkgh8Dv4U36LHDdtY_ZxMzU9kPA4g7OLKhkiFuBZmru0lVicAh3mbkqkv_290d_Wfr2Gw8TW8u-XDlwgkwpNAYQ9woRn0DoTUseHWVMqcrchXo="
+          },
+          {
+            "title": "robots.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGype1iNCjWUPNxbyoqI7G03L5Mk_1hkXJkuDKXcXo_-vz3gMUt-8p1gB2XFqSAMi19-XIzvUyhHiZGFk6yczRuOq18VZyB6cHl-IW7AgoDZ9-vRwi2KX-C4IGoPNSpTxLPtnV6u1uCoBHMlaHfhpA8QB3LncSLxdY="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.robots.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGype1iNCjWUPNxbyoqI7G03L5Mk_1hkXJkuDKXcXo_-vz3gMUt-8p1gB2XFqSAMi19-XIzvUyhHiZGFk6yczRuOq18VZyB6cHl-IW7AgoDZ9-vRwi2KX-C4IGoPNSpTxLPtnV6u1uCoBHMlaHfhpA8QB3LncSLxdY=",
+            "title": "robots.com",
+            "class": "other"
+          },
+          {
+            "host": "library.e.abb.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGDGoUXX2KnPxgNSzpnfjNEkTPZ2SYSCII8MY3Gk6qX4Ut0dBFvN2F5wGWngSEItedu-SkKAmoeX2V5eW9SWP2DtJfRtauxUgJVl2QNih2VYJ9JdTwMZturfUYLfyaeMS2RPv746SqXVVLYNzGL-zYTRqwnF4RBhWcu83dpBN86_aCOQKlFCShcZd4fvbqhKsmggBw-IWZ1Go-xFqLJBv1dCPW75rGQgJwqICUhiHQh2NmlGB8t_NZ35OAxFRHj-6fS4OlotfyCDSS53oVgbChYv9L0jMkbKrsTSWzJDZzKzZm-hJYXU2bEeaqdVxwTJ0_vG9VkfTPntJozObk2",
+            "title": "abb.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "cdn.pennair.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFp0Z4fiAQ2HISHxlZL3YnbQzkZ431cGgiXPQtW8zAeN1uArNH9TStskXuVW0Yek89gl3cLrpRChjYpaMR_-KQxSL1eEb2_UWoFvjy8Jl6AsfWX3J_dftdrvLCfL1Jxnx4phbITRIjkQBw4HAx86nQonEo5IOH5TJjqFg1x",
+            "title": "pennair.com",
+            "class": "other"
+          },
+          {
+            "host": "carolinamotioncontrols.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHKIikbL0qhU_c97O0uL3LC__PVVSSBZYL2D0reao_tUByIBmAO47bvHfMLNyMNKEZfxACW4fQ4N4huHRkgh8Dv4U36LHDdtY_ZxMzU9kPA4g7OLKhkiFuBZmru0lVicAh3mbkqkv_290d_Wfr2Gw8TW8u-XDlwgkwpNAYQ9woRn0DoTUseHWVMqcrchXo=",
+            "title": "carolinamotioncontrols.com",
+            "class": "other"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGY4-LiZv9czR7eU5qvDJVaLyGs_AVRIPEXfwCxTmAkZekbv2T1WXP2T89kZ75nJLg2WZ63c0-PSiONSV-Fiq393Eq-CsSK0NW7JUzeCvX4SsLAag4VXGUOJ1MzzQ2NnrJUknMqVPX0NXTAfqEooLPJ37lahfPJhC9lIngoBByh3ku7SYr3j-jYFuq_T-Fqlh6fD7aKwBUrQbPdqgdYSgl8RQ==",
+            "title": "abb.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 1,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 4
+        },
+        "primary": "other",
+        "total_sources": 5
+      },
+      "category": "CORRECT",
+      "rationale": "ABB's official catalog and technical datasheets confirm that the IRB 2600-20/1.65 is the exact real model number for the manipulator variant featuring a 20 kg payload and 1.65-meter reach."
+    },
+    {
+      "query": "I need the 1SAP order code to procure an ABB AC500 series CM579-PNIO communication module. We specifically require the PROFINET IO RT controller version with the integrated 2-port RJ45 switch.",
+      "agent": {
+        "text": "The correct 1SAP order code for the standard ABB AC500 series CM579-PNIO communication module (PROFINET IO RT controller with an integrated 2-port RJ45 switch) is:\n\n**1SAP170901R0101**\n\nIf your procurement specifically requires the \"eXtreme Conditions\" (XC) variant of this module, the order code is:\n\n**1SAP370901R0101**\n\n*(Note: You may see `1SAP170901R0001` listed in older manuals, but `1SAP170901R0101` is the current, active lifecycle catalog number provided by ABB for this SKU.)*",
+        "sources": [
+          {
+            "title": "abb.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEueL-RGMXg7WkakjjkcI7uXJkeD3StIfP5GyQugzjoFG8KEQU2josGRiXg5EYiyx3XirYYEfjYuncbwt_ZFW1DXox8LKUpwfnaUpBuwBv91YaJEMVqjLR5xnQIfnOMf-vVSP6IsMHbWR6F4hmaK_vGmv0N81a_opF-q4CwQ_-sjED4iQ-gFxfw2MWxgIbAviolxcTf6zr_2TnTOiEpV3wfcPwqDyKKzghtcjYaiB5sO7TenCyBRB90opntmfh_aQYPnARJv_ntbJboQuTCurdGIdk0UeuX908FLIGre2LyUU2MJqZm6pNtuztU6Xt7LlpvMO83KSyobAWIq3CmmzDJFzZQpkZh"
+          },
+          {
+            "title": "topbrandsplc.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEusRFy-OxggDUMBqrq8m8M4OeEzabnFupJW8b3iNYU4Rk1HaGpubQ4Y_U7kUDbLrcFCthgbMf0Dv2-uMj7kQftk6YB6mnzZQVHjNmhx8qEbTiD78V8elQI6e9jTYZL_lzclLkvZ5WoUOkMb53qXNx8roCs-5NwEH0dssWBPAnRirc0svkjWvllGfS2s8ws_sNWsQjHZ3K_hv1VRSLx1X6qkDO4FWRCRMIuH5OzAJM="
+          },
+          {
+            "title": "wiautomation.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFl6VzFM5J4c-vLfqG3zzSxTtEEgjfspsHPnKc6ANLOQKTijBK8D-HkIHqQvq3hyJc640ui_VywbtdeCb2EJWEQ6wC0z4kI0Ujb3eaat4GvF0FC5JlbdPVKOP93dcT9yuRIo5fwkzF5TfdCDu4sJRmkMXs="
+          },
+          {
+            "title": "ebay.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHS61kPLFfCUS5d0s-ZJ9ZA42zYoCSCRVfGdt0NjAiOaMlOZFfr1yqm9nlB2WfOU-hhja0DGVSyldKNUIdITuM_RgnP2pzM-QoFfkbJHSWjyNd-9p2jE666DonRE3bzAQg="
+          },
+          {
+            "title": "profibus.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEcmboquLLRgYXBqmfW19-yW29gdhMWxcsCjGjo2157GY4_eVX2WQBnDQSJdex1niNJWx7yF6lx7uPz1Vq7JSKugozco68LU9U8K-LYeVbJSrn-0ZkhMb_5XI8McGjXV73X3skEjJyY"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "us.wiautomation.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFl6VzFM5J4c-vLfqG3zzSxTtEEgjfspsHPnKc6ANLOQKTijBK8D-HkIHqQvq3hyJc640ui_VywbtdeCb2EJWEQ6wC0z4kI0Ujb3eaat4GvF0FC5JlbdPVKOP93dcT9yuRIo5fwkzF5TfdCDu4sJRmkMXs=",
+            "title": "wiautomation.com",
+            "class": "other"
+          },
+          {
+            "host": "library.e.abb.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEueL-RGMXg7WkakjjkcI7uXJkeD3StIfP5GyQugzjoFG8KEQU2josGRiXg5EYiyx3XirYYEfjYuncbwt_ZFW1DXox8LKUpwfnaUpBuwBv91YaJEMVqjLR5xnQIfnOMf-vVSP6IsMHbWR6F4hmaK_vGmv0N81a_opF-q4CwQ_-sjED4iQ-gFxfw2MWxgIbAviolxcTf6zr_2TnTOiEpV3wfcPwqDyKKzghtcjYaiB5sO7TenCyBRB90opntmfh_aQYPnARJv_ntbJboQuTCurdGIdk0UeuX908FLIGre2LyUU2MJqZm6pNtuztU6Xt7LlpvMO83KSyobAWIq3CmmzDJFzZQpkZh",
+            "title": "abb.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "se.profibus.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEcmboquLLRgYXBqmfW19-yW29gdhMWxcsCjGjo2157GY4_eVX2WQBnDQSJdex1niNJWx7yF6lx7uPz1Vq7JSKugozco68LU9U8K-LYeVbJSrn-0ZkhMb_5XI8McGjXV73X3skEjJyY",
+            "title": "profibus.com",
+            "class": "other"
+          },
+          {
+            "host": "www.topbrandsplc.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEusRFy-OxggDUMBqrq8m8M4OeEzabnFupJW8b3iNYU4Rk1HaGpubQ4Y_U7kUDbLrcFCthgbMf0Dv2-uMj7kQftk6YB6mnzZQVHjNmhx8qEbTiD78V8elQI6e9jTYZL_lzclLkvZ5WoUOkMb53qXNx8roCs-5NwEH0dssWBPAnRirc0svkjWvllGfS2s8ws_sNWsQjHZ3K_hv1VRSLx1X6qkDO4FWRCRMIuH5OzAJM=",
+            "title": "topbrandsplc.com",
+            "class": "other"
+          },
+          {
+            "host": "www.ebay.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHS61kPLFfCUS5d0s-ZJ9ZA42zYoCSCRVfGdt0NjAiOaMlOZFfr1yqm9nlB2WfOU-hhja0DGVSyldKNUIdITuM_RgnP2pzM-QoFfkbJHSWjyNd-9p2jE666DonRE3bzAQg=",
+            "title": "ebay.com",
+            "class": "marketplace"
+          }
+        ],
+        "counts": {
+          "manufacturer": 1,
+          "distributor": 0,
+          "marketplace": 1,
+          "other": 3
+        },
+        "primary": "other",
+        "total_sources": 5
+      },
+      "category": "CORRECT",
+      "rationale": "ABB's official catalog and distributor data confirm that 1SAP170901R0101 is the active order code for the standard CM579-PNIO PROFINET communication module, and 1SAP370901R0101 is the correct code for the eXtreme Conditions (XC) variant."
+    }
+  ],
+  "log": [
+    "[  0.0s] Stage 0: validated abb.com (brand=abb)",
+    "[  0.0s] Stage 1: generating queries (grounded against abb.com)",
+    "[ 23.6s]   Generated 5 queries",
+    "[ 23.6s] Stage 2: running 5 grounded queries against Gemini Pro",
+    "[ 77.1s] Stage 3: source attribution complete",
+    "[ 77.1s] Stage 4: categorizing answers",
+    "[ 90.6s] Stage 5: visibility=100 (5/5), source_authority=0 (0/5 manufacturer-sourced) in 90.6s"
+  ],
+  "elapsed_seconds": 90.6,
+  "slug": "abb",
+  "display_name": "ABB"
+}

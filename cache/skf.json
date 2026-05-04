@@ -1,0 +1,363 @@
+{
+  "input": "https://skf.com",
+  "host": "skf.com",
+  "brand": "skf",
+  "visibility_score": 100,
+  "source_authority_score": 20,
+  "total_queries": 5,
+  "correct_queries": 5,
+  "manufacturer_correct": 1,
+  "breakdown": {
+    "CORRECT": 5,
+    "HALLUCINATION": 0,
+    "REFUSED": 0,
+    "WRONG_SPEC": 0,
+    "ERROR": 0
+  },
+  "source_breakdown": {
+    "manufacturer": 1,
+    "distributor": 0,
+    "marketplace": 0,
+    "other": 4,
+    "none": 0
+  },
+  "rows": [
+    {
+      "query": "We need to source 50 SKF single-row deep groove ball bearings for a 12mm shaft, 32mm outer diameter, and 10mm width with contacting rubber seals on both sides. What is the exact SKF part number we should include on the PO?",
+      "agent": {
+        "text": "The exact SKF part number you should include on your PO is **6201-2RSH**. \n\nHere is a quick breakdown verifying how this part number meets your specifications:\n* **6201**: This base number identifies the standard series for a single-row deep groove ball bearing with a 12mm inner diameter (shaft), 32mm outer diameter, and 10mm width.\n* **-2RSH**: This is the SKF-specific suffix designating contacting rubber seals (made of NBR) on both sides of the bearing. *(Note: You may also see this listed under the older/alternative SKF suffix **6201-2RS1**, which is functionally identical)*.\n\nIf your application requires a stainless steel bearing rather than standard bearing steel, the correct SKU for the stainless variant is **W 6201-2RS1**. Otherwise, the standard **6201-2RSH** is the exact orderable part number you need.",
+        "sources": [
+          {
+            "title": "skf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE00fbGgd7pHCv2OSaoGp4V1tbpj1iEevnrXTMJYbHwGd6rNVMfXtZf3Y138tw08140h2R_izHQzBKHwtOsgr6riywRIeUXepb-ed3iobxfNot--BdeD-i0x5r1MRzelHEPb5H1y8suXNVQKWAcd9z1Ltt6FWF4W61WgIGTumI0oTykdeqh9OE7xRyB-tZyj6hOwTmk7beBeLSvHp3k4E0ycel9"
+          },
+          {
+            "title": "lily-bearing.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUJujeiWtpg1qg0-qOP1NfZEQORf4EXgSiVA4tAFwBtpJb0HmVDDxc4zLTMKWKLxHEJWBUkn1v1m1I1P7m3C5aA9SF513EwBBRTo51O1y7KQSXqAFhaqJ6lMZQP8cypxlupkxpoz96FHDj"
+          },
+          {
+            "title": "rs-online.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEszMLjXbdJ3K9gQqGmsP265uCCWvKQQSNKojJmZvzQPmg3c7DoRxggBcSWzBJkuXEBd_K6yKC4i5T0ILZA21qga9MOTn7eTEM2fZBSeO_isWjurgEv8N8fOqAb4sBlaQmFKlZrfYxNBDak7fLNXOOQ"
+          },
+          {
+            "title": "skf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1UGuvymjnuZkfaTqZQsQr50WxtdYwjHbkZ2xQSPQuSgrcmqXWbNbitRJ3Tf4emtbsv45ZINGIgQo2Jv9OhcA-bnAYvINt1kyGFk8Ugtbpzy-oGz7d_QSSkjxCCPF5CL8vKGg8ucjxZydpEyHkpjsMiS3g_LLJeGHMMZq3-pumOY90RF9Lbn1erM6KhxCVc5hEGs6KhVFZ-qCoxaKnphnrSKz-Fg=="
+          },
+          {
+            "title": "maedlernorthamerica.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEc4EJEXJ1aA1mFp3uEA3Mkyqv9TVFHMTITFkW2oVUFDu98wUzvEq61yd5vg5chjFRQoU0OMtxkaYsAWF2v871CLctQSuigqjtBL0B1EYCwQsCa4v2KNpOxw0azVXyR_GBj1_fUG31F9wa9cRh8fevSB0dAPuG0qhTzPmiT5Xs-j-6lzUk-6C9XqqURJRYopzu_bxud5G-nFd4NN2NqFWBStTe9SY4aBINESLda8At2iJ5Z30MQ802Yqe8Arb1hM6OX-4dw1xp8BTSdG_UiYcPwtcUiBpyyvHXX"
+          },
+          {
+            "title": "almabearings.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFE1FiKi5nAL5CiDVRM0BDYbIpB4qePt89Lx-qDCDfYvQKfefrzyf5Fi3mTv42i4M1ZMLUavC7E8Wy-tZCWRMs8Tkw8M_pio6MWOlbCc2mWYl3xDtWekAjQXHz8sEMVrmhMQmppngEHrbNbzjZtJknxrPtnkwDNbnJ5P2BcEVdphYFKOhaiQTneKifpL3XbJJFhcB6nQ6rzW5mO2MNiekcp52E="
+          },
+          {
+            "title": "skf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH7RcUzaJhQl3I5_DhB7wiadU0g8Kix7LyDY5b8YrFyiiZSceji6Bamgq-sSPuOuWw1H8VGHjwfHm_0oRqni82rsjC_0mjEE1Mh9b4JMnwsvVVWClM2IS28wmQdZKPVuU8GJLqgSIt4nnZHv-m7AOSHHxoRjOmlccZxTjykw146d4urivyEsNbEre06zSNTxt9Zs6vxvET18QsxEny10arhiGsgdwBv-g=="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.skf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1UGuvymjnuZkfaTqZQsQr50WxtdYwjHbkZ2xQSPQuSgrcmqXWbNbitRJ3Tf4emtbsv45ZINGIgQo2Jv9OhcA-bnAYvINt1kyGFk8Ugtbpzy-oGz7d_QSSkjxCCPF5CL8vKGg8ucjxZydpEyHkpjsMiS3g_LLJeGHMMZq3-pumOY90RF9Lbn1erM6KhxCVc5hEGs6KhVFZ-qCoxaKnphnrSKz-Fg==",
+            "title": "skf.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.lily-bearing.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUJujeiWtpg1qg0-qOP1NfZEQORf4EXgSiVA4tAFwBtpJb0HmVDDxc4zLTMKWKLxHEJWBUkn1v1m1I1P7m3C5aA9SF513EwBBRTo51O1y7KQSXqAFhaqJ6lMZQP8cypxlupkxpoz96FHDj",
+            "title": "lily-bearing.com",
+            "class": "other"
+          },
+          {
+            "host": "www.skf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH7RcUzaJhQl3I5_DhB7wiadU0g8Kix7LyDY5b8YrFyiiZSceji6Bamgq-sSPuOuWw1H8VGHjwfHm_0oRqni82rsjC_0mjEE1Mh9b4JMnwsvVVWClM2IS28wmQdZKPVuU8GJLqgSIt4nnZHv-m7AOSHHxoRjOmlccZxTjykw146d4urivyEsNbEre06zSNTxt9Zs6vxvET18QsxEny10arhiGsgdwBv-g==",
+            "title": "skf.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.skf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE00fbGgd7pHCv2OSaoGp4V1tbpj1iEevnrXTMJYbHwGd6rNVMfXtZf3Y138tw08140h2R_izHQzBKHwtOsgr6riywRIeUXepb-ed3iobxfNot--BdeD-i0x5r1MRzelHEPb5H1y8suXNVQKWAcd9z1Ltt6FWF4W61WgIGTumI0oTykdeqh9OE7xRyB-tZyj6hOwTmk7beBeLSvHp3k4E0ycel9",
+            "title": "skf.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "maedlernorthamerica.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEc4EJEXJ1aA1mFp3uEA3Mkyqv9TVFHMTITFkW2oVUFDu98wUzvEq61yd5vg5chjFRQoU0OMtxkaYsAWF2v871CLctQSuigqjtBL0B1EYCwQsCa4v2KNpOxw0azVXyR_GBj1_fUG31F9wa9cRh8fevSB0dAPuG0qhTzPmiT5Xs-j-6lzUk-6C9XqqURJRYopzu_bxud5G-nFd4NN2NqFWBStTe9SY4aBINESLda8At2iJ5Z30MQ802Yqe8Arb1hM6OX-4dw1xp8BTSdG_UiYcPwtcUiBpyyvHXX",
+            "title": "maedlernorthamerica.com",
+            "class": "other"
+          },
+          {
+            "host": "almabearings.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFE1FiKi5nAL5CiDVRM0BDYbIpB4qePt89Lx-qDCDfYvQKfefrzyf5Fi3mTv42i4M1ZMLUavC7E8Wy-tZCWRMs8Tkw8M_pio6MWOlbCc2mWYl3xDtWekAjQXHz8sEMVrmhMQmppngEHrbNbzjZtJknxrPtnkwDNbnJ5P2BcEVdphYFKOhaiQTneKifpL3XbJJFhcB6nQ6rzW5mO2MNiekcp52E=",
+            "title": "almabearings.com",
+            "class": "other"
+          },
+          {
+            "host": "twen.rs-online.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEszMLjXbdJ3K9gQqGmsP265uCCWvKQQSNKojJmZvzQPmg3c7DoRxggBcSWzBJkuXEBd_K6yKC4i5T0ILZA21qga9MOTn7eTEM2fZBSeO_isWjurgEv8N8fOqAb4sBlaQmFKlZrfYxNBDak7fLNXOOQ",
+            "title": "rs-online.com",
+            "class": "distributor"
+          }
+        ],
+        "counts": {
+          "manufacturer": 3,
+          "distributor": 1,
+          "marketplace": 0,
+          "other": 3
+        },
+        "primary": "manufacturer",
+        "total_sources": 7
+      },
+      "category": "CORRECT",
+      "rationale": "Google Search confirms that the SKF 6201 base number corresponds to a deep groove ball bearing with a 12mm inner diameter, 32mm outer diameter, and 10mm width. The -2RSH suffix accurately designates contacting rubber seals on both sides, making 6201-2RSH the exact verifiable part number."
+    },
+    {
+      "query": "What is the correct SKF metric radial shaft seal designation for a 55mm shaft, 72mm housing bore, and 8mm width utilizing the standard NBR lip material? Please provide the specific HMSA10 SKU so we can avoid ordering the fluoro rubber version by mistake.",
+      "agent": {
+        "text": "The correct SKF designation (SKU) for your specified dimensions and material is **55X72X8 HMSA10 RG**. \n\nHere is the breakdown of the part number to ensure it meets your requirements:\n*   **55X72X8**: Dimensions in millimeters (55mm shaft inner diameter x 72mm housing bore outer diameter x 8mm width).\n*   **HMSA10**: SKF's specific seal design featuring a rubber outside diameter, a conventional elastomeric sealing lip with a garter spring, and a non-contacting auxiliary dust lip.\n*   **RG**: SKF\u2019s material code for standard Nitrile Butadiene Rubber (NBR). \n\nTo successfully avoid the fluoro rubber (FKM/Viton) version, ensure the suffix is exactly **RG** and not **V** (which would be 55X72X8 HMSA10 V).",
+        "sources": [
+          {
+            "title": "skf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGoU0-Oxpcqea16gCTfDWP7EeAJ161JEgljTKluzRQJnguUWyNg0ZWVqVRrvy9sPzp2c5py_aRwBOxxYbLfvcuBXGz308oQzMUL4c4VYVJzIIMW6ud-Rj5VWFa4S026ghF6oREoHdm4y4YgI4BdKB9Lsa0ukgGsHrWNG_LP7eLbb_NaYz0Re7U8SXlPfXI26Ch48lb0wRNUkbGWpWcuNHq3spz9cq8jYMvIJ7StlWlOKfHF4hZKobrK9JpZbwmDUsNFzjEtich1VyNeir7kcekMyUeh9iaaEJLFcQ=="
+          },
+          {
+            "title": "industrofy.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFP_kddVSxRVwXgSBa-iGtTFbSQWqce9SNoYYtxJTJB0Bm2I1678YwZckXFQYQ4YHX9R4Div0ouxhF8KedDhrOS3O0SzeIKHCAljKcxBfa_NtFI0Pdi_3536fVcxI7of20IJ7qoUuPUNiyRw2wZFB4juV85LFwQf1fbnapQPOkn-2E="
+          },
+          {
+            "title": "prairiebearingshop.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFmXgZlMGj140Gll8U00YnA6HYs2hm4AcFbLIDypKrxapWwgced5h9c-Lzb41NXtyByf_ko_yUwgNYjSo7GQuAIeUHhgMuvI1zS02uqwRPVO6A1JtgnNMTFmaqBPEI05yk88p6-TcsAr_ugcJdoJO5m072RHXP1fgDvZ4sps2UXNRTKrChKRY51KerRCNTaXWPHo0BfDOkUOC0KTdzH4WECy0r7Is_v-hE="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.skf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGoU0-Oxpcqea16gCTfDWP7EeAJ161JEgljTKluzRQJnguUWyNg0ZWVqVRrvy9sPzp2c5py_aRwBOxxYbLfvcuBXGz308oQzMUL4c4VYVJzIIMW6ud-Rj5VWFa4S026ghF6oREoHdm4y4YgI4BdKB9Lsa0ukgGsHrWNG_LP7eLbb_NaYz0Re7U8SXlPfXI26Ch48lb0wRNUkbGWpWcuNHq3spz9cq8jYMvIJ7StlWlOKfHF4hZKobrK9JpZbwmDUsNFzjEtich1VyNeir7kcekMyUeh9iaaEJLFcQ==",
+            "title": "skf.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "industrofy.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFP_kddVSxRVwXgSBa-iGtTFbSQWqce9SNoYYtxJTJB0Bm2I1678YwZckXFQYQ4YHX9R4Div0ouxhF8KedDhrOS3O0SzeIKHCAljKcxBfa_NtFI0Pdi_3536fVcxI7of20IJ7qoUuPUNiyRw2wZFB4juV85LFwQf1fbnapQPOkn-2E=",
+            "title": "industrofy.com",
+            "class": "other"
+          },
+          {
+            "host": "prairiebearingshop.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFmXgZlMGj140Gll8U00YnA6HYs2hm4AcFbLIDypKrxapWwgced5h9c-Lzb41NXtyByf_ko_yUwgNYjSo7GQuAIeUHhgMuvI1zS02uqwRPVO6A1JtgnNMTFmaqBPEI05yk88p6-TcsAr_ugcJdoJO5m072RHXP1fgDvZ4sps2UXNRTKrChKRY51KerRCNTaXWPHo0BfDOkUOC0KTdzH4WECy0r7Is_v-hE=",
+            "title": "prairiebearingshop.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 1,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 2
+        },
+        "primary": "other",
+        "total_sources": 3
+      },
+      "category": "CORRECT",
+      "rationale": "Verified via the SKF catalog and distributors like Motion Industries that 55X72X8 HMSA10 RG is a valid, orderable SKU matching the requested 55x72x8mm dimensions and HMSA10 design in NBR material (designated by the RG suffix, differentiating it from the V suffix for fluoro rubber)."
+    },
+    {
+      "query": "We are outfitting our gearboxes with SKF vibration sensors and need the standard part number for an industrial accelerometer with a side-exit, 2-pin connector, and 100 mV/g sensitivity. What is the exact SKF CMSS designation for this low-profile sensor so we can issue the RFQ?",
+      "agent": {
+        "text": "The exact SKF part number you need for this RFQ is the **CMSS 2200**. \n\nThe **SKF CMSS 2200** is specifically designated as their \"General Purpose, Low Profile, Side Exit Industrial Accelerometer\". It perfectly matches your technical requirements:\n* **Sensitivity:** 100 mV/g\n* **Form Factor:** Low-profile, side-exit (ideal for gearboxes with limited clearance)\n* **Connection:** 2-pin MIL-C-5015 connector\n\n**Ordering Variations:**\nDepending on your gearbox's specific mounting thread requirements, you should specify one of the following on your RFQ:\n* **CMSS 2200**: Comes with 1/4-28 and M6 \u00d7 1.00 mounting studs.\n* **CMSS 2200-M8**: Comes with an M8 \u00d7 1.25 metric mounting stud. \n\nIf you also need the mating cable assembly for the 2-pin connector, SKF recommends the **CMSS 932** series cables.",
+        "sources": [
+          {
+            "title": "tequipment.net",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE4NJOGcxOpEDqhtaezpeJPPn4i3OzKsdMiVQeKq_FVS5m4y79Ljcwquh0L5-KbyfCrrvHccop6J9hLDMKA-VahhTDbqoASCGAt1t0gaZxs0BQH67g88EsDZdAnIULjg0JbUK7M_ThgFP-Zn01CQd2dSPufOvO_8n0="
+          },
+          {
+            "title": "propribory.ru",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGo-hgIFXPNyVdshbMn95vMiKAxXmC85-Ez6Yu5gu01JchG3bdYElsdFBB387f42agtb_YT_0SrLKvp9u_ChBDvDPsqmhadgymKHfbyqVkMjuU6lVE2YLWMlEynCH0z5B0ZUb8mPGKWG218AVxeR7lVQsz5LODk0QpF84vAPg3ixXT_vaVkwdZOQA=="
+          },
+          {
+            "title": "scribd.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFDNyaKRAvdW1xaujqhADmjjV3l4D1l2HQrNn3KUnteYE3K5h-2rv_qbXo-7QwJa36ZOcZuZbLRnVizy2kJFxkILh6cAz8tBtGPS9GNRIxQ9Oi_AWSwtJV9qEvv4CptQXiSZHwwtQ9WyyzidbkVvQEuQwUEE8o="
+          },
+          {
+            "title": "artisantg.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhlXikC-Dje0tyEN7PHMhuYcZrqhYUSZsHUaabKgyMp7MG-FXg075nJ2AvhEK0RHLaM-2LY9wDkJdefGQyCA3OkAm5l0dmYLMHjnmElGoW3BEYdIYqzLbYCd4s0kbAKnyr0FSBzyGs9o0yVDLJFnZZ2_VN5h0Ahhz6UJ27TQ-yNOAXIw=="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.scribd.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFDNyaKRAvdW1xaujqhADmjjV3l4D1l2HQrNn3KUnteYE3K5h-2rv_qbXo-7QwJa36ZOcZuZbLRnVizy2kJFxkILh6cAz8tBtGPS9GNRIxQ9Oi_AWSwtJV9qEvv4CptQXiSZHwwtQ9WyyzidbkVvQEuQwUEE8o=",
+            "title": "scribd.com",
+            "class": "other"
+          },
+          {
+            "host": "www.tequipment.net",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE4NJOGcxOpEDqhtaezpeJPPn4i3OzKsdMiVQeKq_FVS5m4y79Ljcwquh0L5-KbyfCrrvHccop6J9hLDMKA-VahhTDbqoASCGAt1t0gaZxs0BQH67g88EsDZdAnIULjg0JbUK7M_ThgFP-Zn01CQd2dSPufOvO_8n0=",
+            "title": "tequipment.net",
+            "class": "other"
+          },
+          {
+            "host": "propribory.ru",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGo-hgIFXPNyVdshbMn95vMiKAxXmC85-Ez6Yu5gu01JchG3bdYElsdFBB387f42agtb_YT_0SrLKvp9u_ChBDvDPsqmhadgymKHfbyqVkMjuU6lVE2YLWMlEynCH0z5B0ZUb8mPGKWG218AVxeR7lVQsz5LODk0QpF84vAPg3ixXT_vaVkwdZOQA==",
+            "title": "propribory.ru",
+            "class": "other"
+          },
+          {
+            "host": "www.artisantg.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhlXikC-Dje0tyEN7PHMhuYcZrqhYUSZsHUaabKgyMp7MG-FXg075nJ2AvhEK0RHLaM-2LY9wDkJdefGQyCA3OkAm5l0dmYLMHjnmElGoW3BEYdIYqzLbYCd4s0kbAKnyr0FSBzyGs9o0yVDLJFnZZ2_VN5h0Ahhz6UJ27TQ-yNOAXIw==",
+            "title": "artisantg.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 4
+        },
+        "primary": "other",
+        "total_sources": 4
+      },
+      "category": "CORRECT",
+      "rationale": "The SKF CMSS 2200 is a real, verifiable industrial accelerometer that matches the requested specifications (100 mV/g, side-exit, low-profile, 2-pin connector). The agent also correctly identified the specific mounting thread variations (CMSS 2200-M8) and the mating cable series (CMSS 932) as confirmed by SKF datasheets and distributor listings."
+    },
+    {
+      "query": "Our progressive lubrication system requires a replacement SKF Lincoln electrically operated 24V DC pump capable of driving up to three pump elements. What is the base SKF Lincoln model number for this compact pump series so we don't accidentally order a hydraulic tool lubricator?",
+      "agent": {
+        "text": "The base SKF Lincoln model number you are looking for is the **P203** (part of the Quicklub family). \n\nThe P203 is a versatile, compact, electrically operated 24V DC pump explicitly designed for progressive lubrication systems. It features a built-in motor and reservoir, and it allows you to install up to three separate pump elements to drive your primary metering devices. \n\n**Note on newer models:** SKF is currently transitioning from the classic P203 to the newer **PLP** (Progressive Lubrication Pump) series. The PLP shares the same dimensions, mounting patterns, and 3-element capacity but features updated smart connectivity. Ordering a **P203** or **PLP** base model guarantees you are getting the correct electrical progressive pump. \n\nTo ensure you do not accidentally order a hydraulic tool lubricator (which are driven by machine hydraulics rather than a 24V DC electric motor, such as the Lincoln HTL series), strictly use the **P203** or **PLP** prefix. When building your final SKU, confirm the configuration code specifies a 24V DC motor, your required reservoir size, and the correct number of K-series pump elements (e.g., K5, K6, or K7).",
+        "sources": [
+          {
+            "title": "skf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCXBhaHdn0i5RP3cuQNXAJj-rLb_QbohOUzd3JBs1uXveLfH8T2A_G8BzSPUgT1bQfE25R3avupQS2tG7nKMkjGLEGamywNC_awZAUnkiTV6m0CKL6w9xc4UkFkDrAralbDfUasPaDI-e5kDWvnimHT-h-e3CdkNdSipAnT4nh1IIGOr0NnK41g17aIqMDRSvT6gKtBZ-JKgVKs1fbbFRE"
+          },
+          {
+            "title": "hydrokit.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFb4TR4vYqil5_6qyWccjzkpLLOmQkxf1IvBrJU9VZN1tXDmz3IhL5msQZrfTkcYLrwof6hNa8s3edWU461_Un51rpYpVDubTCrQsDqG9nANgXN2LHgsTfGuQV-igfWQ4-tm9XB_br-kK6RWgWBov85E2LgYtDVocwixgWiftgUieo7R-cI4we_zQ=="
+          },
+          {
+            "title": "hennlich.pl",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFuHCYfVlZH_UuyeSYHlHQNqsJPoTXVXFfC30v8WDQbsc6XFhMlD4zSDKJ_cCJM_xGTffg4U4-tGrZFfm422gcTi7aOAlOxD9IJvKjkhgcMizpZZZqyL5nRsTUFzOjyYHchSkzul1Bs4DFtKbvuDiTDYUfLfNwGqChe6ZlfQ8KRPkeYUknpH6Ktxe56W7GSQ8GHCyY44HtlN2TDK3dfakSCfrn3eAQazZp9S5HrBJYXXRcuVjs="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.hennlich.pl",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFuHCYfVlZH_UuyeSYHlHQNqsJPoTXVXFfC30v8WDQbsc6XFhMlD4zSDKJ_cCJM_xGTffg4U4-tGrZFfm422gcTi7aOAlOxD9IJvKjkhgcMizpZZZqyL5nRsTUFzOjyYHchSkzul1Bs4DFtKbvuDiTDYUfLfNwGqChe6ZlfQ8KRPkeYUknpH6Ktxe56W7GSQ8GHCyY44HtlN2TDK3dfakSCfrn3eAQazZp9S5HrBJYXXRcuVjs=",
+            "title": "hennlich.pl",
+            "class": "other"
+          },
+          {
+            "host": "www.skf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCXBhaHdn0i5RP3cuQNXAJj-rLb_QbohOUzd3JBs1uXveLfH8T2A_G8BzSPUgT1bQfE25R3avupQS2tG7nKMkjGLEGamywNC_awZAUnkiTV6m0CKL6w9xc4UkFkDrAralbDfUasPaDI-e5kDWvnimHT-h-e3CdkNdSipAnT4nh1IIGOr0NnK41g17aIqMDRSvT6gKtBZ-JKgVKs1fbbFRE",
+            "title": "skf.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.hydrokit.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFb4TR4vYqil5_6qyWccjzkpLLOmQkxf1IvBrJU9VZN1tXDmz3IhL5msQZrfTkcYLrwof6hNa8s3edWU461_Un51rpYpVDubTCrQsDqG9nANgXN2LHgsTfGuQV-igfWQ4-tm9XB_br-kK6RWgWBov85E2LgYtDVocwixgWiftgUieo7R-cI4we_zQ==",
+            "title": "hydrokit.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 1,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 2
+        },
+        "primary": "other",
+        "total_sources": 3
+      },
+      "category": "CORRECT",
+      "rationale": "Verified via SKF's catalog that the Lincoln P203 is the correct 24V DC electrically operated progressive lubrication pump capable of driving up to three elements. The agent also accurately noted SKF's announced transition to the new PLP (Progressive Lubrication Pump) series and correctly identified the HTL series as the hydraulically driven tool lubricators to avoid."
+    },
+    {
+      "query": "Our maintenance crew needs a portable SKF induction heater capable of safely heating bearings up to 40 kg with a minimum bore diameter of 20 mm. What is the specific SKF equipment part number for this heater so we don't accidentally buy the much larger 120 kg capacity model?",
+      "agent": {
+        "text": "The specific SKF equipment you need is the **TIH 030m** series small portable induction heater. \n\nDepending on your facility's voltage requirements, the exact orderable part numbers are:\n* **TIH 030M/230V** (for 230V, 50/60Hz)\n* **TIH 030M/110V** (for 110V, 50/60Hz)\n\n**Key Specifications:**\n* **Heating Capacity:** Up to 40 kg (88 lb).\n* **Bore Diameter Minimum:** 20 mm (comes standard with three yokes, including a 14 x 14 x 215 mm yoke specifically for 20 mm and larger bores). \n* **Portability:** Weighs 20.9 kg (46 lb) and features a compact design.\n\nBy specifying the **TIH 030m**, you will get the correct 40 kg portable unit and avoid accidentally purchasing the much larger 120 kg capacity model (which is the SKF **TIH 100m**).",
+        "sources": [
+          {
+            "title": "skf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFRcZRTocTa4IugMxkaNh0jlwePtP-E_F9tfLSk_WtoWt82dYB5Nr-IIU7BESXYRWuPLpYp4qLxI3btBvwDnkp7ozjhHjoJ0j3HXEyBczYrUyeeh01nF7Ipm3shx0g4mtxeaqgIh1TLAfzLsMqg6f0gDece2cx1aiaaQPOkp2tbs9D5f5DQLjlpyFhXoIlxgHeGlmiPz9bqK_n5xl06FYUS6jp2rbOrbzJJbQ=="
+          },
+          {
+            "title": "rs-online.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHOXTzFGbiH3i0kRllFuole8UoNyBBf0K0Eb6AEA8Eik43SY1WYID2JATN8IaUyQ7HdOa-0jP5tEcgnFTIb62YYlbPxkryjjQE14prtiEJisKJ6308_UzhcRO3X-cs2H11hGkKLemAe5h_EwQpXww=="
+          },
+          {
+            "title": "reliabilitydirectstore.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF7B618zFC9F5VkIMMRUuSwrJgtZg4bO4NfzKEeiWr-Z_uhg83ODCzSG3sALL24qP8P3Y6G-CrgmkHut0gpDRce3ganTNgSo3rYsXnQYHdOzlb5nNX7njXHIY0JppvZNMgXAE2Qam8t5EnUIxVhrwvx9H2WTpMYv6HfE_KnS_DOvv3MiAIy0O3I0hb8OVjZbnAiFKJUJ86LFd-c0qrx0D7BI6BOPAIj"
+          },
+          {
+            "title": "reliabilitydirectstore.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFmBxXRXM-HN56UjBky10CX_x59coH15DqiHGGxO7XlD0AetX_G-vWJBYCwED-cPO-OY527vuJKxblK1IoOvsw2ztQTNWg0DZYH7sO9FLstSTqWfJpc2DPEA0vo8hVDvTBccOQBUsRk8TCwzdIw9Z7wX_XaiuyxUVBJD7uNmWOErI1W50EW_WntRg1Z8WLdrDbsnQYSvaSZeyNBsrSmuOR3pNboAqx6"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.skf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFRcZRTocTa4IugMxkaNh0jlwePtP-E_F9tfLSk_WtoWt82dYB5Nr-IIU7BESXYRWuPLpYp4qLxI3btBvwDnkp7ozjhHjoJ0j3HXEyBczYrUyeeh01nF7Ipm3shx0g4mtxeaqgIh1TLAfzLsMqg6f0gDece2cx1aiaaQPOkp2tbs9D5f5DQLjlpyFhXoIlxgHeGlmiPz9bqK_n5xl06FYUS6jp2rbOrbzJJbQ==",
+            "title": "skf.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.reliabilitydirectstore.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFmBxXRXM-HN56UjBky10CX_x59coH15DqiHGGxO7XlD0AetX_G-vWJBYCwED-cPO-OY527vuJKxblK1IoOvsw2ztQTNWg0DZYH7sO9FLstSTqWfJpc2DPEA0vo8hVDvTBccOQBUsRk8TCwzdIw9Z7wX_XaiuyxUVBJD7uNmWOErI1W50EW_WntRg1Z8WLdrDbsnQYSvaSZeyNBsrSmuOR3pNboAqx6",
+            "title": "reliabilitydirectstore.com",
+            "class": "other"
+          },
+          {
+            "host": "www.reliabilitydirectstore.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF7B618zFC9F5VkIMMRUuSwrJgtZg4bO4NfzKEeiWr-Z_uhg83ODCzSG3sALL24qP8P3Y6G-CrgmkHut0gpDRce3ganTNgSo3rYsXnQYHdOzlb5nNX7njXHIY0JppvZNMgXAE2Qam8t5EnUIxVhrwvx9H2WTpMYv6HfE_KnS_DOvv3MiAIy0O3I0hb8OVjZbnAiFKJUJ86LFd-c0qrx0D7BI6BOPAIj",
+            "title": "reliabilitydirectstore.com",
+            "class": "other"
+          },
+          {
+            "host": "docs.rs-online.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHOXTzFGbiH3i0kRllFuole8UoNyBBf0K0Eb6AEA8Eik43SY1WYID2JATN8IaUyQ7HdOa-0jP5tEcgnFTIb62YYlbPxkryjjQE14prtiEJisKJ6308_UzhcRO3X-cs2H11hGkKLemAe5h_EwQpXww==",
+            "title": "rs-online.com",
+            "class": "distributor"
+          }
+        ],
+        "counts": {
+          "manufacturer": 1,
+          "distributor": 1,
+          "marketplace": 0,
+          "other": 2
+        },
+        "primary": "other",
+        "total_sources": 4
+      },
+      "category": "CORRECT",
+      "rationale": "I verified via the manufacturer's catalog that the SKF TIH 030M series (TIH 030M/230V and TIH 030M/110V) is a portable induction heater that explicitly supports a maximum bearing weight of 40 kg and a minimum bore diameter of 20 mm. Additionally, SKF documentation confirms the TIH 100M is the larger 120 kg capacity model, perfectly aligning with the agent's response."
+    }
+  ],
+  "log": [
+    "[  0.0s] Stage 0: validated skf.com (brand=skf)",
+    "[  0.0s] Stage 1: generating queries (grounded against skf.com)",
+    "[ 28.8s]   Generated 5 queries",
+    "[ 28.8s] Stage 2: running 5 grounded queries against Gemini Pro",
+    "[ 53.8s] Stage 3: source attribution complete",
+    "[ 53.8s] Stage 4: categorizing answers",
+    "[ 69.9s] Stage 5: visibility=100 (5/5), source_authority=20 (1/5 manufacturer-sourced) in 69.9s"
+  ],
+  "elapsed_seconds": 69.9,
+  "slug": "skf",
+  "display_name": "SKF"
+}

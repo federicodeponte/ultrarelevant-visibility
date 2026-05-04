@@ -1,0 +1,413 @@
+{
+  "input": "https://basf.com",
+  "host": "basf.com",
+  "brand": "basf",
+  "visibility_score": 100,
+  "source_authority_score": 20,
+  "total_queries": 5,
+  "correct_queries": 5,
+  "manufacturer_correct": 1,
+  "breakdown": {
+    "CORRECT": 5,
+    "HALLUCINATION": 0,
+    "REFUSED": 0,
+    "WRONG_SPEC": 0,
+    "ERROR": 0
+  },
+  "source_breakdown": {
+    "manufacturer": 1,
+    "distributor": 0,
+    "marketplace": 0,
+    "other": 4,
+    "none": 0
+  },
+  "rows": [
+    {
+      "query": "We need to order an unreinforced, easy-flowing PA66 resin for injection molding electrical connectors. Which specific BASF Ultramid A grade is the standard recommendation for this application?",
+      "agent": {
+        "text": "For unreinforced, easy-flowing PA66 resin used to injection-mold electrical connectors, the standard BASF recommendation is **Ultramid\u00ae A3K**. \n\nIf the connectors will be subjected to elevated long-term temperatures, the heat-stabilized counterpart is **Ultramid\u00ae A3W**. \n\n*   **Ultramid\u00ae A3K**: This is the baseline unreinforced, easy-flowing PA66 grade. BASF\u2019s technical datasheets explicitly recommend it for fast-processing, highly stressed technical components and electrically insulating parts like terminals and cable connectors.\n*   **Ultramid\u00ae A3W**: This grade provides the identical unreinforced, easy-flowing injection-molding characteristics as A3K but includes a heat-aging resistant additive package. It is strictly recommended for coil formers, bearing cages, and cable connectors exposed to thermal stress.\n\nBoth are real, actively orderable SKUs in the Ultramid A (PA66) catalog. When ordering, you will need to specify the base grade alongside your desired color code (e.g., Natural, or BK464 for black).",
+        "sources": [
+          {
+            "title": "specialchem.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEuKYg1jLdFjB6qQNWSg2UYrXU1FYVirdRSQDJwxlnIwFziB2prZh4xAkADcvHyzxp2Q9nLqjXlXv3BnEecp4zMm83hbFCfCCKfB5ev65y2jvVxZKAKheJlJMsNx-p54KQRlQxofFq9xU3BKPZA-5wo_dAFaeixqeyb"
+          },
+          {
+            "title": "picoplast.nl",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHXm5h8bBkdsEjqRi4pod03EBbL_9Q8lK8jjGmjLjSXpRBBUn8yvHqVmCHc4D41I3GUNedHtkEllFRhHKifC5Hux1fTh8kL2NWEaWd_RR53QXfkd3trWeRPRKBPxddoj9rEAXSrhQbVqVNgETwq-JE="
+          },
+          {
+            "title": "basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGI7GhPaXQTZANXx_j1X_Bo5Jx78tvfX15sbN5peCRNOpPJyhPNQcP2feTBmmDlGQ10l13RiPk1d1fHH-je3Z_htvE3NrrCuH3NANMtOTOXtVf0aeMmcnJNvbl1RKNAjUI0FGKtcpFTjiQW6RM3c6Bm4taxg4tXvZWF0sGXYT4vGpYS9gyZqWL5qU2su1g35pTmWHRvLYW8ViCuv_apoj1MtElVXKauBqqmaXY_Dx1lYA=="
+          },
+          {
+            "title": "ulprospector.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHmhM63G8_MVXich2HEDh5S5nk8cccJzb6kFqub4Pc3fbGRS-yVQFacePBeXhG4KX_0kAajxYcFtK1UPxHXLSO04OgkExDY9rXtK5vK5qQvBOphRwP-pgNVmLvPdShtjKBhISE4-Y5PGvk8qTfX4KXGdkdtvDKvEQv0DgcEt5hDn2A="
+          },
+          {
+            "title": "ultrapolymers.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHO9m421HNBcSVps8LI_uvBullpUkmlrllK4ADTLPhmrVgsfdyjJrMNe0MYiWgHkJ5aEsRZnksPozn1UNwRJtmij2YeGw9evkI2sOEMveXM50W7WCtmaOuAtV5NzXk9ngnNfljxco2MiT6VcIKtO376RtvjxIXYTQ=="
+          },
+          {
+            "title": "ultrapolymers.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHpA26szmjnXp2cnJWg4gPwkCZvmtGU2zX9BiRtYa6ec6l7p7xss0TXfOs92NKfMIwfzhNm7bBQNcL1BXB3G-dNR91ZPMfZKzFeshdSWtvlwRNzCWGtaNZKi7Vbf1QOjT0-NdKx6RAMgZuu5GRqPSUlNGg8vd-B"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.specialchem.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEuKYg1jLdFjB6qQNWSg2UYrXU1FYVirdRSQDJwxlnIwFziB2prZh4xAkADcvHyzxp2Q9nLqjXlXv3BnEecp4zMm83hbFCfCCKfB5ev65y2jvVxZKAKheJlJMsNx-p54KQRlQxofFq9xU3BKPZA-5wo_dAFaeixqeyb",
+            "title": "specialchem.com",
+            "class": "other"
+          },
+          {
+            "host": "www.ulprospector.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHmhM63G8_MVXich2HEDh5S5nk8cccJzb6kFqub4Pc3fbGRS-yVQFacePBeXhG4KX_0kAajxYcFtK1UPxHXLSO04OgkExDY9rXtK5vK5qQvBOphRwP-pgNVmLvPdShtjKBhISE4-Y5PGvk8qTfX4KXGdkdtvDKvEQv0DgcEt5hDn2A=",
+            "title": "ulprospector.com",
+            "class": "other"
+          },
+          {
+            "host": "ultrapolymers.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHpA26szmjnXp2cnJWg4gPwkCZvmtGU2zX9BiRtYa6ec6l7p7xss0TXfOs92NKfMIwfzhNm7bBQNcL1BXB3G-dNR91ZPMfZKzFeshdSWtvlwRNzCWGtaNZKi7Vbf1QOjT0-NdKx6RAMgZuu5GRqPSUlNGg8vd-B",
+            "title": "ultrapolymers.com",
+            "class": "other"
+          },
+          {
+            "host": "ultrapolymers.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHO9m421HNBcSVps8LI_uvBullpUkmlrllK4ADTLPhmrVgsfdyjJrMNe0MYiWgHkJ5aEsRZnksPozn1UNwRJtmij2YeGw9evkI2sOEMveXM50W7WCtmaOuAtV5NzXk9ngnNfljxco2MiT6VcIKtO376RtvjxIXYTQ==",
+            "title": "ultrapolymers.com",
+            "class": "other"
+          },
+          {
+            "host": "www.picoplast.nl",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHXm5h8bBkdsEjqRi4pod03EBbL_9Q8lK8jjGmjLjSXpRBBUn8yvHqVmCHc4D41I3GUNedHtkEllFRhHKifC5Hux1fTh8kL2NWEaWd_RR53QXfkd3trWeRPRKBPxddoj9rEAXSrhQbVqVNgETwq-JE=",
+            "title": "picoplast.nl",
+            "class": "other"
+          },
+          {
+            "host": "download.basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGI7GhPaXQTZANXx_j1X_Bo5Jx78tvfX15sbN5peCRNOpPJyhPNQcP2feTBmmDlGQ10l13RiPk1d1fHH-je3Z_htvE3NrrCuH3NANMtOTOXtVf0aeMmcnJNvbl1RKNAjUI0FGKtcpFTjiQW6RM3c6Bm4taxg4tXvZWF0sGXYT4vGpYS9gyZqWL5qU2su1g35pTmWHRvLYW8ViCuv_apoj1MtElVXKauBqqmaXY_Dx1lYA==",
+            "title": "basf.com",
+            "class": "manufacturer"
+          }
+        ],
+        "counts": {
+          "manufacturer": 1,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 5
+        },
+        "primary": "other",
+        "total_sources": 6
+      },
+      "category": "CORRECT",
+      "rationale": "Verified via BASF manufacturer datasheets that Ultramid A3K is an unreinforced, easy-flowing PA66 injection molding grade used for connectors. Ultramid A3W is its heat-stabilized counterpart explicitly recommended for applications like coil formers and cable connectors."
+    },
+    {
+      "query": "We are switching our SBS hot-melt adhesive formulation and need a multifunctional phenolic antioxidant. What exact BASF Irganox part number should we issue the purchase order for to replace our current stabilizer?",
+      "agent": {
+        "text": "You should issue your purchase order for **BASF Irganox\u00ae 1726** (CAS: 110675-26-8).\n\nAccording to BASF's technical catalog data, Irganox 1726 is a multifunctional phenolic antioxidant explicitly optimized for stabilizing organic polymers, particularly hot-melt adhesives based on unsaturated block copolymers like SBS (styrene-butadiene-styrene) and SIS. It acts as a highly effective thermo-oxidative stabilizer, providing excellent viscosity retention and color stability during processing and high-temperature aging. It can be used alone at low concentrations (typically 0.1% \u2013 1.0%) without needing co-stabilizers.\n\n**Important Purchasing Notes:**\n*   **Irganox\u00ae 565:** This is another valid multifunctional phenolic antioxidant compatible with SBS. However, Irganox 1726 is typically the preferred industry standard for superior viscosity and color control in styrenic hot melts. \n*   **Irganox\u00ae 1520 L:** Do not order this SKU. Although it is also a multifunctional liquid phenolic antioxidant, BASF explicitly warns in their datasheets that 1520 L is *not recommended* for odor-sensitive hot-melt adhesives.\n\nSpecify **BASF Irganox 1726** on your PO to ensure the correct, formulation-compatible additive for your new SBS hot-melt line.",
+        "sources": [
+          {
+            "title": "basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEkU94baT2RDhf35-hlAByU8a1nFK7AwGjWfmjqr2ttOXITXHFBMv8FLS1LgZ3I7-Bd-LG0mtyvSN23iQaSmV6ij-O39eQn5ouU8bMZHmCGDDc-n4SGociuRkhWIOxL_GEDhqGMzy-38r32pT1NN7V_A99xVFH1UIWYr1FMxw62sYJPK_F-NZq3"
+          },
+          {
+            "title": "specialchem.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEpm_fdlh3nRS87fjEmMVo5ta3HcvpkfWJy1UyaeF7x-4Il2E3DytZbRlUyCtFX1PeHioJtkA2OJEJeztf3sLN3z77Rk4_4eJfvELvU4zpKKHFMWC5SX3QvzRv-W1P1Hs8K1vYNM1NyMxsZjlfpS6d-DsIBKUlkSC6j-A=="
+          },
+          {
+            "title": "scribd.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH7JuerQZljDK8LF5dqqvlyDmNyxwkf_axVi1BHiz94PBgYsLMVYKXo-PlyJNPefurkh-47aCFohmoY4KD4y3tnyQCAbCHdWJeyENLHUeHodoSvBC_Fpopx8gskIA-J1dEHbGoct4GR_qONet0QN79bxDrEyqE="
+          },
+          {
+            "title": "specialchem.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFs4iHqsCMFwIHP_-zyYOm1Ek7LmqfzrukqyZH1i6i9Q5IKfzKxtxoesyAGTZXGiUigqUlvkSBI6Ms79zrD9JFzsgh94LsAitzj7WqzXAugQaNjdFZm6UCpKHo0ZjJLhD0TgAW4otGZhw8Rm5j1_TtavL0Pwhx914k9"
+          },
+          {
+            "title": "uocatoo.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFEkKfminn_JuF-LDgtXEOA5KMWTNP6gY_3bgGN_ntLWHFWTn9kPAG4FOjwxvapTxITq_m2XA89GCbO29eGx5ffxbRvR-oetGGm02weOZAg_A60uzdn15pylqNy-iTiaZL90E-kgw08b-5xwxMp5At7OXmkDawf"
+          },
+          {
+            "title": "santplas.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG5UqFTB2oQfO5J9JJasenEh8MYuGhCeFWWlFu0FzqAPrdjFYgeUbUgcOXcOPKrGemYnIEGc_EJGOGc4C1yCrilZ9tllI74iCybZ5qFWNGh38PA2nAq34YS2rRYZccTEsy_QDaQswO95M3pW6yJMUdSyFOs-tun_LFl57woY2Q="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.scribd.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH7JuerQZljDK8LF5dqqvlyDmNyxwkf_axVi1BHiz94PBgYsLMVYKXo-PlyJNPefurkh-47aCFohmoY4KD4y3tnyQCAbCHdWJeyENLHUeHodoSvBC_Fpopx8gskIA-J1dEHbGoct4GR_qONet0QN79bxDrEyqE=",
+            "title": "scribd.com",
+            "class": "other"
+          },
+          {
+            "host": "www.specialchem.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEpm_fdlh3nRS87fjEmMVo5ta3HcvpkfWJy1UyaeF7x-4Il2E3DytZbRlUyCtFX1PeHioJtkA2OJEJeztf3sLN3z77Rk4_4eJfvELvU4zpKKHFMWC5SX3QvzRv-W1P1Hs8K1vYNM1NyMxsZjlfpS6d-DsIBKUlkSC6j-A==",
+            "title": "specialchem.com",
+            "class": "other"
+          },
+          {
+            "host": "www.specialchem.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFs4iHqsCMFwIHP_-zyYOm1Ek7LmqfzrukqyZH1i6i9Q5IKfzKxtxoesyAGTZXGiUigqUlvkSBI6Ms79zrD9JFzsgh94LsAitzj7WqzXAugQaNjdFZm6UCpKHo0ZjJLhD0TgAW4otGZhw8Rm5j1_TtavL0Pwhx914k9",
+            "title": "specialchem.com",
+            "class": "other"
+          },
+          {
+            "host": "download.basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEkU94baT2RDhf35-hlAByU8a1nFK7AwGjWfmjqr2ttOXITXHFBMv8FLS1LgZ3I7-Bd-LG0mtyvSN23iQaSmV6ij-O39eQn5ouU8bMZHmCGDDc-n4SGociuRkhWIOxL_GEDhqGMzy-38r32pT1NN7V_A99xVFH1UIWYr1FMxw62sYJPK_F-NZq3",
+            "title": "basf.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.uocatoo.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFEkKfminn_JuF-LDgtXEOA5KMWTNP6gY_3bgGN_ntLWHFWTn9kPAG4FOjwxvapTxITq_m2XA89GCbO29eGx5ffxbRvR-oetGGm02weOZAg_A60uzdn15pylqNy-iTiaZL90E-kgw08b-5xwxMp5At7OXmkDawf",
+            "title": "uocatoo.com",
+            "class": "other"
+          },
+          {
+            "host": "www.santplas.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG5UqFTB2oQfO5J9JJasenEh8MYuGhCeFWWlFu0FzqAPrdjFYgeUbUgcOXcOPKrGemYnIEGc_EJGOGc4C1yCrilZ9tllI74iCybZ5qFWNGh38PA2nAq34YS2rRYZccTEsy_QDaQswO95M3pW6yJMUdSyFOs-tun_LFl57woY2Q=",
+            "title": "santplas.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 1,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 5
+        },
+        "primary": "other",
+        "total_sources": 6
+      },
+      "category": "CORRECT",
+      "rationale": "The suggested SKU, BASF Irganox 1726 (CAS 110675-26-8), is verified by BASF technical datasheets as a real multifunctional phenolic antioxidant optimized for SBS hot-melt adhesives at the stated 0.1-1.0% concentration."
+    },
+    {
+      "query": "Our current TPU for pneumatic tubing is failing hydrolysis testing in high-humidity environments. Which specific polyether-based BASF Elastollan grade, with a Shore hardness of 85A, should we source for better moisture resistance?",
+      "agent": {
+        "text": "To resolve the hydrolysis failures in your pneumatic tubing, you should switch to a polyether-based TPU, which provides inherently superior moisture and hydrolysis resistance compared to polyester-based TPUs. \n\nFor your specific requirements from BASF, the correct orderable grade is **Elastollan 1185A**. For pneumatic tubing extrusion, you will specifically want to request **Elastollan 1185 A 10** (or **1185 A 10 W 000**) from your distributor. \n\n* **Manufacturer:** BASF\n* **Grade:** Elastollan 1185A (Extrusion grade: 1185 A 10)\n* **Chemistry:** Polyether-based\n* **Hardness:** 85 Shore A\n\nIn BASF's Elastollan nomenclature, the \"11\" series identifies their polyether-based TPUs. This formulation is designed specifically for excellent hydrolytic stability, low-temperature flexibility, and resistance to microbiological attack, making it the standard choice for pneumatic and spiral tubing used in high-humidity environments. \n\nWhen transitioning, keep in mind that you may need to adjust your extrusion temperature profiles, as polyether TPUs handle heat slightly differently than your current polyester material. Always ensure the resin is properly dried (moisture content < 0.03%) before extrusion to prevent bubbling and defects.",
+        "sources": [
+          {
+            "title": "hongrunplastics.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHS7OF0uKOUx8ERuhyLYXZrMDSJgTAAgYG07jHB0VC7Papw3H-ch06ETMsI0UK7uVaIEb-NTN7THSzUldhVyGXNa3yTYSD6TWRkBJ2s2ayvDKivUKTiQVIidX79JbpdTML9TgnVIjGwvdqkp6IUSj25Jq2W32JeKH2NYx_9nCvTZJdSnSCiJBu6XFtsZDQ7FMCMS705w5YZRaA="
+          },
+          {
+            "title": "scribd.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHvcjjrhx-wq2PUjZwF6_ofFYmB--IA4Q9YUEMKaJ_Nsa5E96guL8692p0M3PFAGZR5sYCSvnufZ5y6vrLBt_185CR_IGTedUbfBmNveFAd2-5bJ6ZlG6ZHo6nPagwRAW-t0D1KWRnGJTyk7YGnKYsigmTrutS3FA5M"
+          },
+          {
+            "title": "basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG1C9kA-c_GKFh9BDkH0LYXWm-7Coi9Fwj7psGCypGB1_Tm8ygbTmy0mVc9yZCZCe-wD8r08ps3bwma_PYeCEoVqKKlbfhKGIi4PewbwxEUMiP7pxTNu0RxVOKySN4LCT_qu_BVetqw2Oe38qt3K7wkm__63sewnFL4fKwP24MPI7FL_aKcGUhVxcD1d6GxHO6nCrjwwgFxBFnBnJE4PD-612eLifIwCScy9wQPdblu5VosqyR5JgH1U2iXozoost4qTRZMbGvbLntAW4tnNp0DDJsdKlWZhX_o9w=="
+          },
+          {
+            "title": "optica.org",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH0LZMqB4wax-cCTvHJrKSdujbKsJO2-1vAsy3DehV7nU-WpBKw5XYplkq96nM1hUMq0X5VHL2cbS40lDnw-tK847sxpoDuSIOcg7v_m7qi2BTr1DoMpsuAVLiMDrjVXMZnBy2Y7VCm9YkwA0ZBTg=="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.scribd.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHvcjjrhx-wq2PUjZwF6_ofFYmB--IA4Q9YUEMKaJ_Nsa5E96guL8692p0M3PFAGZR5sYCSvnufZ5y6vrLBt_185CR_IGTedUbfBmNveFAd2-5bJ6ZlG6ZHo6nPagwRAW-t0D1KWRnGJTyk7YGnKYsigmTrutS3FA5M",
+            "title": "scribd.com",
+            "class": "other"
+          },
+          {
+            "host": "www.basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG1C9kA-c_GKFh9BDkH0LYXWm-7Coi9Fwj7psGCypGB1_Tm8ygbTmy0mVc9yZCZCe-wD8r08ps3bwma_PYeCEoVqKKlbfhKGIi4PewbwxEUMiP7pxTNu0RxVOKySN4LCT_qu_BVetqw2Oe38qt3K7wkm__63sewnFL4fKwP24MPI7FL_aKcGUhVxcD1d6GxHO6nCrjwwgFxBFnBnJE4PD-612eLifIwCScy9wQPdblu5VosqyR5JgH1U2iXozoost4qTRZMbGvbLntAW4tnNp0DDJsdKlWZhX_o9w==",
+            "title": "basf.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "hongrunplastics.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHS7OF0uKOUx8ERuhyLYXZrMDSJgTAAgYG07jHB0VC7Papw3H-ch06ETMsI0UK7uVaIEb-NTN7THSzUldhVyGXNa3yTYSD6TWRkBJ2s2ayvDKivUKTiQVIidX79JbpdTML9TgnVIjGwvdqkp6IUSj25Jq2W32JeKH2NYx_9nCvTZJdSnSCiJBu6XFtsZDQ7FMCMS705w5YZRaA=",
+            "title": "hongrunplastics.com",
+            "class": "other"
+          },
+          {
+            "host": "validate.perfdrive.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH0LZMqB4wax-cCTvHJrKSdujbKsJO2-1vAsy3DehV7nU-WpBKw5XYplkq96nM1hUMq0X5VHL2cbS40lDnw-tK847sxpoDuSIOcg7v_m7qi2BTr1DoMpsuAVLiMDrjVXMZnBy2Y7VCm9YkwA0ZBTg==",
+            "title": "optica.org",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 1,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 3
+        },
+        "primary": "other",
+        "total_sources": 4
+      },
+      "category": "CORRECT",
+      "rationale": "A search of BASF's catalog and datasheets verifies that Elastollan 1185A (and specifically its extrusion grade 1185 A 10) is a real, polyether-based thermoplastic polyurethane. It is explicitly formulated for excellent hydrolysis resistance and features a Shore hardness of 85A, perfectly matching the agent's specific material recommendation."
+    },
+    {
+      "query": "We are sourcing a low-VOC hydroxyl functional acrylic polymer for a 2K polyurethane automotive refinish clearcoat. Which exact BASF Joncryl resin SKU is formulated specifically for high solids, low-viscosity solventborne systems?",
+      "agent": {
+        "text": "The exact BASF SKU that matches your requirements is **Joncryl\u00ae 500**. \n\nJoncryl 500 is an innovative hydroxyl-functional acrylic polymer designed specifically for high-solids, low-viscosity solventborne systems. When crosslinked in 2K polyurethane automotive refinish clearcoats, it enables exceptional flow, leveling, and durability while keeping Volatile Organic Compounds (VOCs) below 2.6 lbs/gallon without the need for exempt solvents.\n\nDepending on your specific regional VOC regulations and solvent requirements, BASF also offers exact alternate-solvent variations of this polymer within the same catalog family:\n* **Joncryl\u00ae 508**: The t-butyl acetate version, utilizing an exempt solvent for ultra-low-VOC applications.\n* **Joncryl\u00ae 507**: The n-butyl acetate version for low-odor and non-HAPs systems.\n* **Joncryl\u00ae 504**: The xylene version, optimized for electrostatic spray applications.\n\nFor a standard high-solids, low-viscosity formulation, **Joncryl 500** is the primary catalog part number, while **Joncryl 508** is the ideal choice if you specifically require an exempt-solvent carrier for stricter VOC compliance.",
+        "sources": [
+          {
+            "title": "basf.us",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFttI0lBtG9VxHAThf4blCNE947CF0pPun5w3DGuzyI7-6hcOYMbOPmWSHLSJigwdVSZv9I0c4Me_ZvhSZpYiiQd0UKAQjwi0q9gW3PZOlu1kS1nt_N7rOPL_rRXFUzwtHuHpEZ8wTSsjY3Uh82qvipxbrTdxsUyNCIv9w="
+          },
+          {
+            "title": "basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQECIs1BbET-KT_9QtHZro8uA4CgNoltnnIHbklZ4RMwablVs2nF08fgzZaq_HtXEFm4fI4vikXHLOq8hx2yURVl33rwc6UnthzjhU7eNnc5DMbxulxJzNBryIC4oyCQoj9KhUBw68Wqz80I5ViFEL98qjeo_jlG_HQ4KE3DFDmXYgK6Dti-g9M="
+          },
+          {
+            "title": "azelis.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCJsUg3UjHs0iNwpEjbkARQE9YPOShXjZFvoov8halYXDvlVoMK-QIN9lBfsBrP1OX9C-zuNVoFJr35StpTzEXw2vlYXphGzjX_9t2FvVYdcVsP3hPipRXFA1UOv9P8TF2PtxLQKWqBSr2t9GerH0="
+          },
+          {
+            "title": "basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG4fTdfzqNsVAYRTYL5YBCOkl01Fhb0FRSUxyypZqd9Bl0pWxOWlSblCtCW2NsGt70lVRhERk53_vTCmelz3FvLVvfI3qoctPZFRe8vINsWTXw8CXZJ94Flmz4vGZ3o56GNFcEwlYdCw7L6MbDLwYM9y8Ob_bKFwiJZpMSL4vtRhgZVAcaBCfHRCeRDsw=="
+          },
+          {
+            "title": "basf.us",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFPDwGvpw1GiFvpTczcU2t8N8p8kheipsCtLSn0NFSYW1eMDQhP-UH6xVPBjS2QmsxI2LnRob0Hh7m1ppQ29uPt332YLRJPMRZoJLsA9CEOdPvl5eXrlnjh6nRjNYAS0IZVHjBc0qmWYU1UxVOxu5G3D6HJ-J2BqlwsJ3k="
+          },
+          {
+            "title": "basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6lEQdsro46PL2ufLpCGjSFcv29wc29SmMJ_V7iEwF4LvcLFAaFd9b581daojFO4U7XkQ4dfS6szEBHldNXIbHf_gOyYYFPhuU-5Lb9Bqw5RiSx86LRvvid1IMCGQJgtZyBNsNlXFJ4kzLJjxyJ7UCn7j1V3U9oWd88uSMRKrSZ1lZclvbUj4="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "insights.basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG4fTdfzqNsVAYRTYL5YBCOkl01Fhb0FRSUxyypZqd9Bl0pWxOWlSblCtCW2NsGt70lVRhERk53_vTCmelz3FvLVvfI3qoctPZFRe8vINsWTXw8CXZJ94Flmz4vGZ3o56GNFcEwlYdCw7L6MbDLwYM9y8Ob_bKFwiJZpMSL4vtRhgZVAcaBCfHRCeRDsw==",
+            "title": "basf.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "download.basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6lEQdsro46PL2ufLpCGjSFcv29wc29SmMJ_V7iEwF4LvcLFAaFd9b581daojFO4U7XkQ4dfS6szEBHldNXIbHf_gOyYYFPhuU-5Lb9Bqw5RiSx86LRvvid1IMCGQJgtZyBNsNlXFJ4kzLJjxyJ7UCn7j1V3U9oWd88uSMRKrSZ1lZclvbUj4=",
+            "title": "basf.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "download.basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQECIs1BbET-KT_9QtHZro8uA4CgNoltnnIHbklZ4RMwablVs2nF08fgzZaq_HtXEFm4fI4vikXHLOq8hx2yURVl33rwc6UnthzjhU7eNnc5DMbxulxJzNBryIC4oyCQoj9KhUBw68Wqz80I5ViFEL98qjeo_jlG_HQ4KE3DFDmXYgK6Dti-g9M=",
+            "title": "basf.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "explore.azelis.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCJsUg3UjHs0iNwpEjbkARQE9YPOShXjZFvoov8halYXDvlVoMK-QIN9lBfsBrP1OX9C-zuNVoFJr35StpTzEXw2vlYXphGzjX_9t2FvVYdcVsP3hPipRXFA1UOv9P8TF2PtxLQKWqBSr2t9GerH0=",
+            "title": "azelis.com",
+            "class": "other"
+          },
+          {
+            "host": "dispersions-resins-products.basf.us",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFPDwGvpw1GiFvpTczcU2t8N8p8kheipsCtLSn0NFSYW1eMDQhP-UH6xVPBjS2QmsxI2LnRob0Hh7m1ppQ29uPt332YLRJPMRZoJLsA9CEOdPvl5eXrlnjh6nRjNYAS0IZVHjBc0qmWYU1UxVOxu5G3D6HJ-J2BqlwsJ3k=",
+            "title": "basf.us",
+            "class": "manufacturer"
+          },
+          {
+            "host": "dispersions-resins-products.basf.us",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFttI0lBtG9VxHAThf4blCNE947CF0pPun5w3DGuzyI7-6hcOYMbOPmWSHLSJigwdVSZv9I0c4Me_ZvhSZpYiiQd0UKAQjwi0q9gW3PZOlu1kS1nt_N7rOPL_rRXFUzwtHuHpEZ8wTSsjY3Uh82qvipxbrTdxsUyNCIv9w=",
+            "title": "basf.us",
+            "class": "manufacturer"
+          }
+        ],
+        "counts": {
+          "manufacturer": 5,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 1
+        },
+        "primary": "manufacturer",
+        "total_sources": 6
+      },
+      "category": "CORRECT",
+      "rationale": "BASF's technical data sheets confirm that Joncryl 500 is a hydroxyl-functional acrylic polymer used in high-solids, low-viscosity 2K polyurethane automotive refinish coatings with VOC capabilities below 2.6 lbs/gal. The catalog also verifies the exact solvent variations mentioned: Joncryl 504 (xylene), Joncryl 507 (n-butyl acetate), and Joncryl 508 (t-butyl acetate exempt solvent)."
+    },
+    {
+      "query": "We need a readily biodegradable nonionic surfactant to replace NP9 in our industrial degreasers. Which specific branched C10 alcohol ethoxylate from the BASF Lutensol series should we request on our next PO?",
+      "agent": {
+        "text": "To replace NP9 (Nonylphenol Ethoxylate, 9 moles EO) with a readily biodegradable alternative, you should request **Lutensol\u00ae XP 90** on your next PO. \n\n**Why Lutensol XP 90?**\n* **Chemistry:** It is a 100% active, branched C10-Guerbet alcohol ethoxylate. \n* **Direct Match:** The \"90\" indicates 9 moles of ethylene oxide (EO), making it the direct structural and functional counterpart to the 9 moles of EO in NP9.\n* **Performance:** It provides excellent dynamic wetting, fast action, and superior degreasing power specifically engineered by BASF to replace alkylphenol ethoxylates (APEOs) in hard surface and industrial cleaners.\n* **Biodegradability:** It is readily biodegradable according to OECD 301 test methods.\n\n**Important Procurement Note:**\nLutensol XP 90 is 100% active but can become a cloudy liquid or soft paste at room temperature (it becomes clear at 50\u00b0C). If your manufacturing floor requires a surfactant that is fully liquid and easy to pump at ambient temperatures without pre-heating, you should order its aqueous counterpart, **Lutensol\u00ae XP 99**. Lutensol XP 99 contains the exact same surfactant but is formulated as an 85% active solution in water for ease of handling.",
+        "sources": [
+          {
+            "title": "website-files.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFMQYfNW94OPaz8x4CM1tsGKY0pS7z7aLI5Gal4qXuhg7iuiTHLlW8n9T_rpOth2YzXA6Y88ME5LZPjx47X4IXLXU87tqMddBd_vTwhllTVRJE4MAw6IQ16pVNkztQ0FQbXbVYMCGwTTA8TP85CzjsFPogzmTblk4k3LkC-SiL__RDJAgOnwa9BDNtJlXLjanaZDZxpTtBZYOQs84Rut-8qK5XQ_utCgbERkLlcqrRMDAV55pw="
+          },
+          {
+            "title": "scribd.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZjf39rAcxeRZY6kJF99d8uWia9jkuRt8pNHCMcIqR1H9F_Gx1NnotqOJdEMaPOeabZEzjSEkARbnmkj40JiZspB-n7qZnIe8KPyOFq9QYJ5iDNA9D3fZ4iio8VArNXdFB4wq-Ya7t1-M2puWsg0aQHCqsYou_WoVyrX1H7w=="
+          },
+          {
+            "title": "imimg.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGfJWUhvbSXDgti8xTqd0wJri8qQoZ5g34w9OYE0_8Q56UaDGrOKqNZDnXxzKIzCLVWz_SQbiVYY69jtGh6zjvwONvmZLsH_DyPX4xAcSU9KCHp-CPUqiHaBxsNt9Hko3_vZuUbXB_fxhVEWSt4FxK2XsevrwsvtB4RXPB3UxYnwf8j2i5skITCNXXmSaXtmzKhwkcQU3og9w-cvFTS_mSsOUpG3xY="
+          },
+          {
+            "title": "basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGP7iJXF0pmlxd-wBcpTIa5XT-LBWSKmOUFHQ-g106mBlS1nOe2sqBrOJcKcY6wy6jKrmRKsXxshBUCw4gKuwHJ9DAgGWBh_0jcbxAGLlgV73Nlzx9mn0RF1-Dol__aWWyN8DhfF3IKG4Zc"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "ru.scribd.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZjf39rAcxeRZY6kJF99d8uWia9jkuRt8pNHCMcIqR1H9F_Gx1NnotqOJdEMaPOeabZEzjSEkARbnmkj40JiZspB-n7qZnIe8KPyOFq9QYJ5iDNA9D3fZ4iio8VArNXdFB4wq-Ya7t1-M2puWsg0aQHCqsYou_WoVyrX1H7w==",
+            "title": "scribd.com",
+            "class": "other"
+          },
+          {
+            "host": "assets-global.website-files.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFMQYfNW94OPaz8x4CM1tsGKY0pS7z7aLI5Gal4qXuhg7iuiTHLlW8n9T_rpOth2YzXA6Y88ME5LZPjx47X4IXLXU87tqMddBd_vTwhllTVRJE4MAw6IQ16pVNkztQ0FQbXbVYMCGwTTA8TP85CzjsFPogzmTblk4k3LkC-SiL__RDJAgOnwa9BDNtJlXLjanaZDZxpTtBZYOQs84Rut-8qK5XQ_utCgbERkLlcqrRMDAV55pw=",
+            "title": "website-files.com",
+            "class": "other"
+          },
+          {
+            "host": "5.imimg.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGfJWUhvbSXDgti8xTqd0wJri8qQoZ5g34w9OYE0_8Q56UaDGrOKqNZDnXxzKIzCLVWz_SQbiVYY69jtGh6zjvwONvmZLsH_DyPX4xAcSU9KCHp-CPUqiHaBxsNt9Hko3_vZuUbXB_fxhVEWSt4FxK2XsevrwsvtB4RXPB3UxYnwf8j2i5skITCNXXmSaXtmzKhwkcQU3og9w-cvFTS_mSsOUpG3xY=",
+            "title": "imimg.com",
+            "class": "other"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGP7iJXF0pmlxd-wBcpTIa5XT-LBWSKmOUFHQ-g106mBlS1nOe2sqBrOJcKcY6wy6jKrmRKsXxshBUCw4gKuwHJ9DAgGWBh_0jcbxAGLlgV73Nlzx9mn0RF1-Dol__aWWyN8DhfF3IKG4Zc",
+            "title": "basf.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 4
+        },
+        "primary": "other",
+        "total_sources": 4
+      },
+      "category": "CORRECT",
+      "rationale": "BASF catalog documentation confirms Lutensol XP 90 is a 100% active C10-Guerbet alcohol ethoxylate with 9 moles of EO. Additionally, the catalog verifies that Lutensol XP 99 is its exact 85% active aqueous counterpart designed to be a clear liquid at room temperature."
+    }
+  ],
+  "log": [
+    "[  0.0s] Stage 0: validated basf.com (brand=basf)",
+    "[  0.0s] Stage 1: generating queries (grounded against basf.com)",
+    "[ 26.5s]   Generated 5 queries",
+    "[ 26.5s] Stage 2: running 5 grounded queries against Gemini Pro",
+    "[ 63.2s] Stage 3: source attribution complete",
+    "[ 63.2s] Stage 4: categorizing answers",
+    "[ 75.1s] Stage 5: visibility=100 (5/5), source_authority=20 (1/5 manufacturer-sourced) in 75.1s"
+  ],
+  "elapsed_seconds": 75.1,
+  "slug": "basf",
+  "display_name": "BASF"
+}

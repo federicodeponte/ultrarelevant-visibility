@@ -1,0 +1,363 @@
+{
+  "input": "https://siemens.com",
+  "host": "siemens.com",
+  "brand": "siemens",
+  "visibility_score": 100,
+  "source_authority_score": 40,
+  "total_queries": 5,
+  "correct_queries": 5,
+  "manufacturer_correct": 2,
+  "breakdown": {
+    "CORRECT": 5,
+    "HALLUCINATION": 0,
+    "REFUSED": 0,
+    "WRONG_SPEC": 0,
+    "ERROR": 0
+  },
+  "source_breakdown": {
+    "manufacturer": 2,
+    "distributor": 0,
+    "marketplace": 0,
+    "other": 3,
+    "none": 0
+  },
+  "rows": [
+    {
+      "query": "We need the exact 6ES7 order number for a standard SIMATIC S7-1200 CPU 1214C DC/DC/DC controller with 14 digital inputs and 10 digital outputs. Please provide the precise SKU to avoid mistakenly ordering a SIPLUS extreme variant.",
+      "agent": {
+        "text": "The exact order number for the standard SIMATIC S7-1200 CPU 1214C DC/DC/DC controller is **6ES7214-1AG40-0XB0**. \n\nThis SKU directly matches your required specifications:\n* **Variant:** Standard industrial (ensured by the `6ES7` prefix, avoiding the `6AG1` SIPLUS extreme variants)\n* **Model:** CPU 1214C DC/DC/DC\n* **Onboard I/O:** 14 Digital Inputs (24 V DC) and 10 Digital Outputs (24 V DC). It also includes 2 Analog Inputs (0-10 V DC) as standard. \n\nWhen ordering, make sure to include the `-0XB0` suffix, which designates the current hardware generation (firmware V4.x) for this CPU module.",
+        "sources": [
+          {
+            "title": "siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZVW3DxiHyJ4lAC2VIHM0WcJYzBA1TejLErtMWtDS6_ORItAz_9Mznf-jsFIqIOxyswNRji2x8xA4oCw3AniBBcgi2lcIVUaV8ffm9yziYn4J8F_owqX4KSPDvmqQOA61GZSys3FvBEfxWZxC7pHZJj9AcUyi9Pe2CUPn3llqyVHGslEZ8JOrcnW1nOY3lJO8vjCaa71sGuNJT7d8uEQIJtFY9wc6N41-tbeYT41jyesqEuQcw1QGoxUWcOT6MUkk-uxc_AC39pfsZc34LaaUw3y8="
+          },
+          {
+            "title": "siemens-info.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFxrWbPucNj8z_z9DVLX4RQl1uORs9jo9ZD-3TESPyteI0NmbR9AzkWetK5DhIimjXWGvx7Gy06apoGS6FUckjRhqxJuF506j-8dnMiKFdPNWa-b-mQz6eTGH6zL1GF1ctAuxQKS4UhrR6AEGRyX5xREg8fUjOqXLZbNY3N51_p-enklSaxPeIOJVwudA1YM3A="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "support.industry.siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZVW3DxiHyJ4lAC2VIHM0WcJYzBA1TejLErtMWtDS6_ORItAz_9Mznf-jsFIqIOxyswNRji2x8xA4oCw3AniBBcgi2lcIVUaV8ffm9yziYn4J8F_owqX4KSPDvmqQOA61GZSys3FvBEfxWZxC7pHZJj9AcUyi9Pe2CUPn3llqyVHGslEZ8JOrcnW1nOY3lJO8vjCaa71sGuNJT7d8uEQIJtFY9wc6N41-tbeYT41jyesqEuQcw1QGoxUWcOT6MUkk-uxc_AC39pfsZc34LaaUw3y8=",
+            "title": "siemens.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.industry-mobile-support.siemens-info.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFxrWbPucNj8z_z9DVLX4RQl1uORs9jo9ZD-3TESPyteI0NmbR9AzkWetK5DhIimjXWGvx7Gy06apoGS6FUckjRhqxJuF506j-8dnMiKFdPNWa-b-mQz6eTGH6zL1GF1ctAuxQKS4UhrR6AEGRyX5xREg8fUjOqXLZbNY3N51_p-enklSaxPeIOJVwudA1YM3A=",
+            "title": "siemens-info.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 1,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 1
+        },
+        "primary": "manufacturer",
+        "total_sources": 2
+      },
+      "category": "CORRECT",
+      "rationale": "Siemens catalog data and authorized distributors confirm that 6ES7214-1AG40-0XB0 is the exact standard part number for the SIMATIC S7-1200 CPU 1214C DC/DC/DC with 14 digital inputs and 10 digital outputs."
+    },
+    {
+      "query": "I am sourcing a DIN-rail mounted SITOP PSU8200 24V DC power supply for a new cabinet, requiring a 20A output and a 3-phase 400-500V AC input. What is the correct Siemens part number for these exact specifications?",
+      "agent": {
+        "text": "The correct Siemens part number for your specifications is **6EP3436-8SB00-0AY0**. \n\nThis SKU specifically identifies the SITOP PSU8200 industrial power supply with the exact features you require:\n*   **Output:** 24V DC / 20A (adjustable up to 28V)\n*   **Input:** 3-phase 400-500V AC (wide-range 320-575V AC)\n*   **Mounting:** Standard DIN-rail mount (EN 60715)\n*   **Series:** SITOP PSU8200\n\nIt is an active product in the Siemens catalog. Be careful not to confuse it with the 1-phase version (6EP1336-3BA10), as the **-8SB00** designation is specifically the 3-phase model you are sourcing for your cabinet.",
+        "sources": [
+          {
+            "title": "classicautomation.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFCmiigdxKE6ZJ1HQdAZgLj6-4JqPvvvFW2LnFPO4WwePsPRCwR29Z9JSsffKeF2H3X-eDMYBqQmOnXwvk08R2arwMNF81cKrgXJGkZP81NwJIt2PRvzADYtRWTiH3e6oTbbNGralxr7-hHIocRBy4="
+          },
+          {
+            "title": "siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF_9gILJh-ZAK86ZeVZMc0O-_tD3S_IxFHUzgWwNx2ijig2dJ_3X8RDLY7rNL4l7kVGUe0QjJyyWTXhGhuHB7mLi7R3dXzkGpcAPa68MblitKiLStYMoY8VNWQqGQkw9rJudnvamCxov4KB0hQ4GGjjiiitQzcG7n3C_MkZ4zZEDHwtU5xNjs_Nc_w="
+          },
+          {
+            "title": "siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHOpyO0MIpJLqY6l68moJvop96zf-pcbF-8aBU4yLcvCETD9BbovLWAWELHU5Vyegt5IWzioGrETn0Lb9qTFLGulPwiCffO6qJzisaEocpRgd0oFGmcSsFfx-SijJYI5eqXGThOHpiKEn-hj0308nh3LWv-4ufypl0nUooKeCtGFdux6G9O94eEoXaHzL6kpvGWXUNN2BNYTnkmBN_nLXH1RvCochDj_xwyfSBaCmQ="
+          },
+          {
+            "title": "siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH2AqS27ZsaWNXQtqb1ds9Da3QM1Q9zFYDQgYlAdcyI-j-VCsglGnLhosR4qfeScYW_F1S8pLzkXVzxn2DMwdyfJim1_SOCzd85sAW1hF8VdOePLK_1JDYHI2eLIKMqNB4jmX9iBKiaH82ALPeSy1MXDZM9ZMOQR5805auk1ChjLYslWEPJJkwIq7zaxf8GXE9l8l06en3vLlqapo9hemrQ_XStFRXD7I3rUd861BozxBKbkj_uPfPjW1W9dENK"
+          },
+          {
+            "title": "siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHmCVxmrrsAp1uDPGYZ1Dvdh7zPmmFUdFMOmQ2oYQboLlUQRJfhAiz7si2SN7XioetNYcwQz4hXNQpskuIV8Ltj7WpdanuciJLfC8hKx3sP80LleCaZTqPKu62TJgw-QcroeBfPaP8tx1fb1Fg3HMwH_--VOee9ubk__wfZURpK5yvFA9UJTfNFw5F2kOhRPrsxsNC5SdFacMjiKPstK4uK0Mc_TN92MqjkD0odIJoWQX8GlKa6VR9h1_Y0a9TVU2ICIidd1DQ="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "support.industry.siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHmCVxmrrsAp1uDPGYZ1Dvdh7zPmmFUdFMOmQ2oYQboLlUQRJfhAiz7si2SN7XioetNYcwQz4hXNQpskuIV8Ltj7WpdanuciJLfC8hKx3sP80LleCaZTqPKu62TJgw-QcroeBfPaP8tx1fb1Fg3HMwH_--VOee9ubk__wfZURpK5yvFA9UJTfNFw5F2kOhRPrsxsNC5SdFacMjiKPstK4uK0Mc_TN92MqjkD0odIJoWQX8GlKa6VR9h1_Y0a9TVU2ICIidd1DQ=",
+            "title": "siemens.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "cache.industry.siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHOpyO0MIpJLqY6l68moJvop96zf-pcbF-8aBU4yLcvCETD9BbovLWAWELHU5Vyegt5IWzioGrETn0Lb9qTFLGulPwiCffO6qJzisaEocpRgd0oFGmcSsFfx-SijJYI5eqXGThOHpiKEn-hj0308nh3LWv-4ufypl0nUooKeCtGFdux6G9O94eEoXaHzL6kpvGWXUNN2BNYTnkmBN_nLXH1RvCochDj_xwyfSBaCmQ=",
+            "title": "siemens.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "mall.industry.siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH2AqS27ZsaWNXQtqb1ds9Da3QM1Q9zFYDQgYlAdcyI-j-VCsglGnLhosR4qfeScYW_F1S8pLzkXVzxn2DMwdyfJim1_SOCzd85sAW1hF8VdOePLK_1JDYHI2eLIKMqNB4jmX9iBKiaH82ALPeSy1MXDZM9ZMOQR5805auk1ChjLYslWEPJJkwIq7zaxf8GXE9l8l06en3vLlqapo9hemrQ_XStFRXD7I3rUd861BozxBKbkj_uPfPjW1W9dENK",
+            "title": "siemens.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.classicautomation.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFCmiigdxKE6ZJ1HQdAZgLj6-4JqPvvvFW2LnFPO4WwePsPRCwR29Z9JSsffKeF2H3X-eDMYBqQmOnXwvk08R2arwMNF81cKrgXJGkZP81NwJIt2PRvzADYtRWTiH3e6oTbbNGralxr7-hHIocRBy4=",
+            "title": "classicautomation.com",
+            "class": "other"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF_9gILJh-ZAK86ZeVZMc0O-_tD3S_IxFHUzgWwNx2ijig2dJ_3X8RDLY7rNL4l7kVGUe0QjJyyWTXhGhuHB7mLi7R3dXzkGpcAPa68MblitKiLStYMoY8VNWQqGQkw9rJudnvamCxov4KB0hQ4GGjjiiitQzcG7n3C_MkZ4zZEDHwtU5xNjs_Nc_w=",
+            "title": "siemens.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 3,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 2
+        },
+        "primary": "manufacturer",
+        "total_sources": 5
+      },
+      "category": "CORRECT",
+      "rationale": "Verified against the Siemens catalog and authorized distributors like RS and TME, the SKU 6EP3436-8SB00-0AY0 corresponds exactly to the SITOP PSU8200 power supply featuring a 3-phase 400-500V AC input and a 24V DC / 20A output."
+    },
+    {
+      "query": "Our facility requires a replacement SINAMICS G120C compact inverter rated for 15 kW with a PROFINET interface and an integrated Class A filter. What is the specific 6SL3210 order number we need to put on our purchase order to prevent an incompatible drive arriving?",
+      "agent": {
+        "text": "The specific Siemens order number you need for your purchase order is **6SL3210-1KE23-2AF1**. \n\nThis SKU directly corresponds to the exact configuration you require:\n* **Drive Family:** SINAMICS G120C compact inverter\n* **Rated Power:** 15 kW (Low Overload) / 11 kW (High Overload)\n* **Communication Interface:** PROFINET-PN\n* **EMC Filter:** Integrated Class A line filter\n* **Safety:** Safe Torque Off (STO) integrated\n* **Input Voltage:** 3-phase 380\u2013480V AC\n\n*Note: Be careful to include the **-2AF1** suffix. The similar part number ending in **-2UF1** (6SL3210-1KE23-2UF1) indicates an unfiltered drive and will not meet your facility's requirement for the integrated Class A filter.*",
+        "sources": [
+          {
+            "title": "turll.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGYutqP2FTxLk-yzsQF6Ov06mN8S8yUIziv8a8VBhLaxT8_DtGswYQ-eE0Q7zBqnlY9beNUiuahUj6wfKLlxYZc0hcp3D-Xm2FsqUlafaYRtlk7-6bcEA9F14FwU8owdlHQEp0hS4nkJ7XKiHMiPfcWJyEQdF785mC9Mw=="
+          },
+          {
+            "title": "ebay.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHdZL2BgQqBpofFLdoP4-JHpOVTLPi4WNlpc26XAYmB2QMIPrxfjuf7O6py3M4TRamwkDVNgkrkvUENYA01WHXGY0l6aZmxCWCT9Q1k1t1XAUVfcF_YDAQvI8XtRx4ZJUc="
+          },
+          {
+            "title": "acsotomasyon.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQElC_XZ62oJPGrCK6lcjsvQ-Wuzj6U_pGIW-RVrAuPJlDVdd8WO8d6Rd7uN1wm46pK3UXYI-yDcRCPpQIipZFkSxnICM7y6x8NnHYDyqwrTR4ltsMZAmXN1fnY_L3gU1cVJl88LDfvPgaIrMqPMF8n8ce4ydRjc3B0QLvXlsQOELGqwAdmplNd0yqZSzgl7H8bp0nricS6ihFqle4CqFMqA47hfAOOBVzVoqHdw0gSjLoGkZhdR9-q7aQOUHZVw1lLkUtpn5aBhyLrkKrlT3fwpNcdXSN8="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "turll.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGYutqP2FTxLk-yzsQF6Ov06mN8S8yUIziv8a8VBhLaxT8_DtGswYQ-eE0Q7zBqnlY9beNUiuahUj6wfKLlxYZc0hcp3D-Xm2FsqUlafaYRtlk7-6bcEA9F14FwU8owdlHQEp0hS4nkJ7XKiHMiPfcWJyEQdF785mC9Mw==",
+            "title": "turll.com",
+            "class": "other"
+          },
+          {
+            "host": "www.acsotomasyon.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQElC_XZ62oJPGrCK6lcjsvQ-Wuzj6U_pGIW-RVrAuPJlDVdd8WO8d6Rd7uN1wm46pK3UXYI-yDcRCPpQIipZFkSxnICM7y6x8NnHYDyqwrTR4ltsMZAmXN1fnY_L3gU1cVJl88LDfvPgaIrMqPMF8n8ce4ydRjc3B0QLvXlsQOELGqwAdmplNd0yqZSzgl7H8bp0nricS6ihFqle4CqFMqA47hfAOOBVzVoqHdw0gSjLoGkZhdR9-q7aQOUHZVw1lLkUtpn5aBhyLrkKrlT3fwpNcdXSN8=",
+            "title": "acsotomasyon.com",
+            "class": "other"
+          },
+          {
+            "host": "www.ebay.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHdZL2BgQqBpofFLdoP4-JHpOVTLPi4WNlpc26XAYmB2QMIPrxfjuf7O6py3M4TRamwkDVNgkrkvUENYA01WHXGY0l6aZmxCWCT9Q1k1t1XAUVfcF_YDAQvI8XtRx4ZJUc=",
+            "title": "ebay.com",
+            "class": "marketplace"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 1,
+          "other": 2
+        },
+        "primary": "other",
+        "total_sources": 3
+      },
+      "category": "CORRECT",
+      "rationale": "Search results confirm that 6SL3210-1KE23-2AF1 is a valid Siemens order number for the SINAMICS G120C drive with a 15 kW rated power, PROFINET communication, and an integrated Class A filter."
+    },
+    {
+      "query": "We are purchasing Siemens SIRIUS size S0 power contactors for switching motors up to 15 kW at 400V, requiring a 24V DC coil and standard screw terminals. Provide the exact 3RT2 part number so we do not accidentally receive the spring-loaded terminal version.",
+      "agent": {
+        "text": "To meet your exact specifications, the correct Siemens SIRIUS part number to order is:\n\n**3RT2027-1BB40**\n\nHere is the breakdown of why this matches your requirements:\n*   **3RT2027**: Designates a SIRIUS size S0 power contactor rated for 32 A, which corresponds to switching motors up to **15 kW at 400V**.\n*   **-1**: Crucially, the \"1\" after the hyphen specifies **standard screw terminals** for both the main and auxiliary circuits. (If you see a \"-2\" in this position, such as *3RT2027-2BB40*, that is the spring-loaded terminal version you want to avoid).\n*   **BB40**: Specifies the **24V DC control coil** and includes standard 1 NO + 1 NC built-in auxiliary contacts. \n\n*(Note: If your control circuit specifically requires 2 NO + 2 NC auxiliary contacts instead of the standard 1 NO + 1 NC, you can alternatively order **3RT2027-1BB44**, which maintains the 24V DC coil and standard screw terminals).*",
+        "sources": [
+          {
+            "title": "siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEMLOvrfxczKMeJN-KSlaFl2v1eKFTj9lUt74_qPD4wlXD7vMoKxsQFkqKxaDxGvZceIPMsEGL6nDlX5b5FHDeFpNxlFVXOIkHwVgSm0bLI_082v9Vlq6grdS0I4a1Q5b7Y-Tntr9Vdf6TpgVH07uHW12xnAhOy7JBwwUETMd8tXW0lYI864p2rm1ULRAFRgnVhPP1-SHc="
+          },
+          {
+            "title": "kemeri.ee",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGak2qFdiE5rZ3pey7dAoJTbAcBeKycPlcZ7xt4wFQq-ipf6xXWOCRbFhv1-OBwilMxshOu-TnL-gJiBKlaz0x2m7tJ79ivIl9Q-rzXXf3l_ACOlz0dl9CTQkKDgiQLwmfx280Fp35ybvhJ9mONCzE9UneqipSF9503awoVi_PfyJk03nVmROpTPjDYU3rVBMk8O6GnEUkbJ1if1nAouOPhNxfsevoY0QOahgN8qc5OlgO_22IVv5QCWMnIbw=="
+          },
+          {
+            "title": "turll.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQECpHb_SPn7G9BMe4PXPdXOTA9W7VRGPlEZ4VTv2mGQXvGoN7oBnYcq5rPl3JNQxdEwSAk7WCPfsdilvZxakKDrqNAxwy2RcvIKYJJ-t8bHOjsBo891tveINB_6UwHIrVN_lGSFkN6viF4_iof2WhQV0fYsnIfXr_Cg3g=="
+          },
+          {
+            "title": "rs-online.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHwc9OffJkb56ZwiZeTPAa3AZ--8ZZSogOP5u4Yref88x4hUd2soaJvCvO-OqElw2LDEaFyvox_K2W-Vlb3cIkd5KAiVA6POylQuhtnboa50FMZlsVVTWnXCCN-xt6HhGv5QEqhKoWxWWmv1ILM1Wi-QDsucGs39tFPUg=="
+          },
+          {
+            "title": "standardelectricsupply.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGph7EayHwHhrOwKEUQo1w2sTyIPvwuvcRAn27yClarTyLy2qOkuzhDputtY5mw1YGMA42O8Z6JPRwRBFkl8lt6R6wgx4w6s2Gc7q-jo-uKnIzT7nDAFgSuL7-2UCLmgFPi_M7ticKhS0icCszhcWDeRB4TnJRNya136mxlK2gFjTiqJzGjVpqJP1uTVaY="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "us.rs-online.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHwc9OffJkb56ZwiZeTPAa3AZ--8ZZSogOP5u4Yref88x4hUd2soaJvCvO-OqElw2LDEaFyvox_K2W-Vlb3cIkd5KAiVA6POylQuhtnboa50FMZlsVVTWnXCCN-xt6HhGv5QEqhKoWxWWmv1ILM1Wi-QDsucGs39tFPUg==",
+            "title": "rs-online.com",
+            "class": "distributor"
+          },
+          {
+            "host": "turll.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQECpHb_SPn7G9BMe4PXPdXOTA9W7VRGPlEZ4VTv2mGQXvGoN7oBnYcq5rPl3JNQxdEwSAk7WCPfsdilvZxakKDrqNAxwy2RcvIKYJJ-t8bHOjsBo891tveINB_6UwHIrVN_lGSFkN6viF4_iof2WhQV0fYsnIfXr_Cg3g==",
+            "title": "turll.com",
+            "class": "other"
+          },
+          {
+            "host": "kemeri.ee",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGak2qFdiE5rZ3pey7dAoJTbAcBeKycPlcZ7xt4wFQq-ipf6xXWOCRbFhv1-OBwilMxshOu-TnL-gJiBKlaz0x2m7tJ79ivIl9Q-rzXXf3l_ACOlz0dl9CTQkKDgiQLwmfx280Fp35ybvhJ9mONCzE9UneqipSF9503awoVi_PfyJk03nVmROpTPjDYU3rVBMk8O6GnEUkbJ1if1nAouOPhNxfsevoY0QOahgN8qc5OlgO_22IVv5QCWMnIbw==",
+            "title": "kemeri.ee",
+            "class": "other"
+          },
+          {
+            "host": "www.standardelectricsupply.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGph7EayHwHhrOwKEUQo1w2sTyIPvwuvcRAn27yClarTyLy2qOkuzhDputtY5mw1YGMA42O8Z6JPRwRBFkl8lt6R6wgx4w6s2Gc7q-jo-uKnIzT7nDAFgSuL7-2UCLmgFPi_M7ticKhS0icCszhcWDeRB4TnJRNya136mxlK2gFjTiqJzGjVpqJP1uTVaY=",
+            "title": "standardelectricsupply.com",
+            "class": "other"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEMLOvrfxczKMeJN-KSlaFl2v1eKFTj9lUt74_qPD4wlXD7vMoKxsQFkqKxaDxGvZceIPMsEGL6nDlX5b5FHDeFpNxlFVXOIkHwVgSm0bLI_082v9Vlq6grdS0I4a1Q5b7Y-Tntr9Vdf6TpgVH07uHW12xnAhOy7JBwwUETMd8tXW0lYI864p2rm1ULRAFRgnVhPP1-SHc=",
+            "title": "siemens.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 1,
+          "marketplace": 0,
+          "other": 4
+        },
+        "primary": "other",
+        "total_sources": 5
+      },
+      "category": "CORRECT",
+      "rationale": "The Siemens catalog confirms that 3RT2027-1BB40 is exactly a size S0 power contactor rated for 15 kW at 400V, featuring a 24V DC coil and standard screw terminals (indicated by the '-1' in the part number)."
+    },
+    {
+      "query": "What is the specific Siemens SKU for an unmanaged SCALANCE XB005G Industrial Ethernet switch with 5 RJ45 ports that supports Gigabit speeds? We must have the correct part number to ensure we do not stall the network installation by ordering the 10/100 Mbps model.",
+      "agent": {
+        "text": "The specific Siemens orderable part number (SKU) for the unmanaged SCALANCE XB005G Industrial Ethernet switch with 5 Gigabit RJ45 ports is **6GK5005-0GA10-1AB2**. \n\nThis is the current-generation active SKU and features:\n* 5 x 10/100/1000 Mbps RJ45 electrical ports\n* IP20-rated compact enclosure\n* 24 V DC power supply connection\n* Unmanaged plug-and-play operation with LED diagnostics\n\n*(Note: This SKU directly replaces the older legacy Gigabit version, `6GK5005-0GA00-1AB2`.)*\n\n**Crucial Procurement Warning:**\nTo ensure you do not stall the network installation by ordering the 10/100 Mbps model, **do not order `6GK5005-0BA10-1AB2` or `6GK5005-0BA00-1AB2`**. These `-0BA-` variants belong to the standard SCALANCE XB005 and are strictly limited to Fast Ethernet speeds (10/100 Mbps). Always verify that your purchase order contains the `-0GA10-` segment to guarantee Gigabit support.",
+        "sources": [
+          {
+            "title": "enrgtech.co.uk",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEIu5yYnFierfW_TTrm-YcpvwPYR3oXlKojY8PexTfXwzYvNuuz6BTmi98Z8XCxPxDCsx-tijnTdnd73cchh1yEYnaiCAyX0LRQOIaXKaEBIIRk7zTelUkLqCAUVyZ18r3QyBtIl1wQyIr8KDZ6BBlsagvFYz3hRmuAhzK3TMp7aw9dvla_B0hpd_3uyg=="
+          },
+          {
+            "title": "turll.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFxgsdxM1DXYfhz6sUEeo3E2STLYNsq7nLUbdHbj8k-_Iy8cWjjgyqfY-L-45xHbA0I9p2QlleNhHJ1BE-X8UeIuVet7Fx0gIoJFKYD0SOoz2tWgiOtC0VmtFn80peqLPVqFVWqcjuFmQ=="
+          },
+          {
+            "title": "ebay.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG-q9M3363pRHONnWJvSb2ycGARtIPrQyhUSnMx5372fRF1duNwGogyEpFpinZwyOTl3IUJmQ7swMonztCnxqhOBPKoaHprhGrrIZZeTggaLReJJm2XnL0HA4S6DHzjfxg="
+          },
+          {
+            "title": "southerncontrols.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGYCIJLMX9PNDnWWzX5JT7MHNy_meMrNqMVbq_3uE69CJX8Ao1BhZxMehM6ERcO7NOeJwAAaTqGx_uZKhKMqnnN2ukEXGhqNVpHMoMFr25SUndc54acS2k97uEmrgS1DvuXsHl0kfIo9rZMK8MJ5y5x_mAfFrIe0g=="
+          },
+          {
+            "title": "siemens-info.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFjf9MNQKHFu1oNI1CAvL8LBcSRmqs-a2ulxzdMdqmntCdMU39T-jUYnLPtEOYbjSqdHmPSuqsIkUYu0gRERh0btn8_0rBUGPVIY5rzVK_qjF7EDTo4fb2WPSagwhg4fW_3LK6rB5K9_MGI0EkhZlHPXM_wTOIIoQp4qOJraNkvH2ZaTpx_0iL-zhEh"
+          },
+          {
+            "title": "southerncontrols.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG5Cc5UDMJ4glgxAdRynBUg6uRlHGF4EDoaQ5wxOoGXRKFWQvkyADkYwYlpYHHOup-lvbjX8bWzX1fgJnUgQ5k3y1wTgQpUvCfnewtuliuRPcKdmjYSUtWotx5MtmMYy1-vERZ6ElG7JsHUUJhW0ZpFEvgj-aeW-w=="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "turll.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFxgsdxM1DXYfhz6sUEeo3E2STLYNsq7nLUbdHbj8k-_Iy8cWjjgyqfY-L-45xHbA0I9p2QlleNhHJ1BE-X8UeIuVet7Fx0gIoJFKYD0SOoz2tWgiOtC0VmtFn80peqLPVqFVWqcjuFmQ==",
+            "title": "turll.com",
+            "class": "other"
+          },
+          {
+            "host": "www.industry-mobile-support.siemens-info.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFjf9MNQKHFu1oNI1CAvL8LBcSRmqs-a2ulxzdMdqmntCdMU39T-jUYnLPtEOYbjSqdHmPSuqsIkUYu0gRERh0btn8_0rBUGPVIY5rzVK_qjF7EDTo4fb2WPSagwhg4fW_3LK6rB5K9_MGI0EkhZlHPXM_wTOIIoQp4qOJraNkvH2ZaTpx_0iL-zhEh",
+            "title": "siemens-info.com",
+            "class": "other"
+          },
+          {
+            "host": "www.southerncontrols.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGYCIJLMX9PNDnWWzX5JT7MHNy_meMrNqMVbq_3uE69CJX8Ao1BhZxMehM6ERcO7NOeJwAAaTqGx_uZKhKMqnnN2ukEXGhqNVpHMoMFr25SUndc54acS2k97uEmrgS1DvuXsHl0kfIo9rZMK8MJ5y5x_mAfFrIe0g==",
+            "title": "southerncontrols.com",
+            "class": "other"
+          },
+          {
+            "host": "www.southerncontrols.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG5Cc5UDMJ4glgxAdRynBUg6uRlHGF4EDoaQ5wxOoGXRKFWQvkyADkYwYlpYHHOup-lvbjX8bWzX1fgJnUgQ5k3y1wTgQpUvCfnewtuliuRPcKdmjYSUtWotx5MtmMYy1-vERZ6ElG7JsHUUJhW0ZpFEvgj-aeW-w==",
+            "title": "southerncontrols.com",
+            "class": "other"
+          },
+          {
+            "host": "www.enrgtech.co.uk",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEIu5yYnFierfW_TTrm-YcpvwPYR3oXlKojY8PexTfXwzYvNuuz6BTmi98Z8XCxPxDCsx-tijnTdnd73cchh1yEYnaiCAyX0LRQOIaXKaEBIIRk7zTelUkLqCAUVyZ18r3QyBtIl1wQyIr8KDZ6BBlsagvFYz3hRmuAhzK3TMp7aw9dvla_B0hpd_3uyg==",
+            "title": "enrgtech.co.uk",
+            "class": "other"
+          },
+          {
+            "host": "www.ebay.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG-q9M3363pRHONnWJvSb2ycGARtIPrQyhUSnMx5372fRF1duNwGogyEpFpinZwyOTl3IUJmQ7swMonztCnxqhOBPKoaHprhGrrIZZeTggaLReJJm2XnL0HA4S6DHzjfxg=",
+            "title": "ebay.com",
+            "class": "marketplace"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 1,
+          "other": 5
+        },
+        "primary": "other",
+        "total_sources": 6
+      },
+      "category": "CORRECT",
+      "rationale": "The agent provided the accurate SKU 6GK5005-0GA10-1AB2 for the Gigabit SCALANCE XB005G, which is verified by Siemens' catalog and distributor listings. The agent also accurately identified the legacy Gigabit SKU (6GK5005-0GA00-1AB2) and correctly warned against ordering the 10/100 Mbps Fast Ethernet models (6GK5005-0BA10-1AB2 and 6GK5005-0BA00-1AB2)."
+    }
+  ],
+  "log": [
+    "[  0.0s] Stage 0: validated siemens.com (brand=siemens)",
+    "[  0.0s] Stage 1: generating queries (grounded against siemens.com)",
+    "[ 18.5s]   Generated 5 queries",
+    "[ 18.5s] Stage 2: running 5 grounded queries against Gemini Pro",
+    "[ 60.1s] Stage 3: source attribution complete",
+    "[ 60.1s] Stage 4: categorizing answers",
+    "[ 73.8s] Stage 5: visibility=100 (5/5), source_authority=40 (2/5 manufacturer-sourced) in 73.8s"
+  ],
+  "elapsed_seconds": 73.8,
+  "slug": "siemens",
+  "display_name": "Siemens"
+}
