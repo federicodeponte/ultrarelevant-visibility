@@ -54,6 +54,14 @@ ROOT = Path(__file__).resolve().parent
 KEYS_PATH = Path.home() / ".config" / "ai-sidecar" / "keys.json"
 
 
+# ---------- Security helpers ----------
+def _safe_err(e: Exception) -> str:
+    """Return a sanitized error string with any API key values redacted."""
+    msg = str(e)
+    msg = re.sub(r"([?&])key=[^&\s]*", r"\1key=REDACTED", msg)
+    return f"{type(e).__name__}: {msg}"
+
+
 # ---------- Key loading ----------
 def _load_secret(name: str, *fallback_keys: str) -> str | None:
     if os.environ.get(name):
@@ -308,7 +316,7 @@ def query_agent(query: str) -> dict:
         result = call_gemini_pro(full, grounded=True, timeout=180)
         return {"text": result["text"], "sources": result["sources"], "error": None}
     except Exception as e:
-        return {"text": "", "sources": [], "error": f"{type(e).__name__}: {e}"}
+        return {"text": "", "sources": [], "error": _safe_err(e)}
 
 
 # ---------- Stage 3: Source attribution ----------
@@ -401,7 +409,7 @@ def categorize(host: str, q: str, agent_text: str) -> dict:
             cat = "ERROR"
         return {"category": cat, "rationale": d.get("rationale", "")}
     except Exception as e:
-        return {"category": "ERROR", "rationale": f"Judge failed: {type(e).__name__}: {e}"}
+        return {"category": "ERROR", "rationale": f"Judge failed: {_safe_err(e)}"}
 
 
 # ---------- Pipeline ----------
@@ -529,7 +537,7 @@ def _run_job(job_id: str, url_input: str) -> None:
         traceback.print_exc()
         with _jobs_lock:
             _jobs[job_id]["status"] = "error"
-            _jobs[job_id]["error"] = f"{type(e).__name__}: {e}"
+            _jobs[job_id]["error"] = _safe_err(e)
             _jobs[job_id]["updated_at"] = time.time()
 
 
