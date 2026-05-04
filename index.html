@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UltraRelevant — Product Visibility for AI Agents</title>
+<meta name="description" content="Measure how visible and how correct your product data is when buyers ask AI agents about it. Real procurement queries, ground-truth fact-checked, scored 0-100.">
+<meta property="og:title" content="UltraRelevant — Product Visibility for AI Agents">
+<meta property="og:description" content="How often do Claude / GPT / Gemini answer real procurement questions about your products correctly? Try a live demo.">
+<style>
+  :root {
+    --bg: #fafaf9;
+    --fg: #1a1a1a;
+    --muted: #6b6b6b;
+    --line: #e7e5e4;
+    --card: #ffffff;
+    --accent: #0f172a;
+    --green: #16a34a;
+    --amber: #d97706;
+    --red: #dc2626;
+    --gray: #94a3b8;
+    --indigo: #4f46e5;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+    background: var(--bg); color: var(--fg);
+    font-size: 15px; line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 56px 32px 96px; }
+  header { margin-bottom: 36px; }
+  .logo {
+    font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--muted); font-weight: 500;
+  }
+  h1 {
+    font-size: 36px; line-height: 1.15; font-weight: 600;
+    margin: 12px 0 12px; letter-spacing: -0.02em;
+  }
+  .subtitle { color: var(--muted); font-size: 17px; max-width: 640px; margin: 0; }
+
+  .input-row {
+    display: flex; gap: 10px; margin: 32px 0 0;
+    background: var(--card); padding: 8px;
+    border: 1px solid var(--line); border-radius: 12px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+  }
+  input[type=text] {
+    flex: 1; border: none; outline: none; background: transparent;
+    font: inherit; padding: 12px 14px; font-size: 16px; color: var(--fg);
+  }
+  button {
+    background: var(--accent); color: white; border: none;
+    padding: 12px 22px; border-radius: 8px; font: inherit; font-weight: 500;
+    cursor: pointer; transition: opacity 0.15s;
+  }
+  button:hover { opacity: 0.85; }
+  button:disabled { opacity: 0.5; cursor: not-allowed; }
+  .hint { color: var(--muted); font-size: 13px; margin-top: 10px; }
+
+  .examples {
+    display: flex; gap: 8px; flex-wrap: wrap; margin-top: 18px;
+  }
+  .example-btn {
+    background: var(--card); color: var(--fg);
+    border: 1px solid var(--line); padding: 7px 13px;
+    border-radius: 999px; font: inherit; font-size: 13px;
+    cursor: pointer; transition: all 0.15s;
+  }
+  .example-btn:hover { border-color: var(--accent); background: #f5f5f4; }
+  .example-btn .score-tag {
+    display: inline-block; margin-left: 8px;
+    padding: 1px 8px; border-radius: 999px;
+    font-size: 11px; font-weight: 500;
+    background: #fef3c7; color: #92400e;
+  }
+  .example-btn .score-tag.green { background: #dcfce7; color: #166534; }
+  .example-btn .score-tag.red { background: #fee2e2; color: #991b1b; }
+
+  .status {
+    margin-top: 28px; padding: 18px 22px;
+    background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+    color: var(--fg); font-size: 14px;
+  }
+  .status.error { color: var(--red); }
+  .status.info { color: var(--fg); }
+  .status .row { display: flex; align-items: center; gap: 12px; }
+
+  .results { margin-top: 40px; }
+  .score-card {
+    display: flex; align-items: center; gap: 32px;
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 32px; margin-bottom: 32px;
+  }
+  .score-num {
+    font-size: 72px; font-weight: 600; line-height: 1; letter-spacing: -0.04em;
+  }
+  .score-num.green { color: var(--green); }
+  .score-num.amber { color: var(--amber); }
+  .score-num.red { color: var(--red); }
+  .score-meta { flex: 1; }
+  .score-meta h2 { margin: 0 0 6px; font-size: 17px; font-weight: 600; }
+  .score-meta p { margin: 0; color: var(--muted); font-size: 14px; }
+  .breakdown {
+    display: flex; gap: 18px; margin-top: 14px; flex-wrap: wrap;
+  }
+  .pill {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 13px; color: var(--muted);
+  }
+  .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+  .dot.correct { background: var(--green); }
+  .dot.hallucination { background: var(--red); }
+  .dot.refused { background: var(--gray); }
+  .dot.wrong_spec { background: var(--amber); }
+  .dot.error { background: #cbd5e1; }
+
+  table.matrix {
+    width: 100%; border-collapse: collapse; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; overflow: hidden;
+  }
+  table.matrix th, table.matrix td {
+    text-align: left; padding: 14px 16px; border-bottom: 1px solid var(--line);
+    vertical-align: top; font-size: 14px;
+  }
+  table.matrix th {
+    font-weight: 500; color: var(--muted); background: #fbfaf8;
+    font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase;
+  }
+  table.matrix tr:last-child td { border-bottom: none; }
+  table.matrix td.q { width: 34%; color: var(--fg); }
+  table.matrix td.cell {
+    cursor: pointer; transition: background 0.1s;
+  }
+  table.matrix td.cell:hover { background: #fbfaf8; }
+  .cell-tag {
+    display: inline-block; padding: 4px 10px; border-radius: 999px;
+    font-size: 12px; font-weight: 500;
+  }
+  .cell-tag.correct { background: #dcfce7; color: #166534; }
+  .cell-tag.hallucination { background: #fee2e2; color: #991b1b; }
+  .cell-tag.refused { background: #f1f5f9; color: #475569; }
+  .cell-tag.wrong_spec { background: #fef3c7; color: #92400e; }
+  .cell-tag.error { background: #f1f5f9; color: #64748b; }
+  .cell-rationale { display: block; margin-top: 6px; color: var(--muted); font-size: 12px; line-height: 1.4; }
+
+  /* modal */
+  .modal-backdrop {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.4);
+    display: none; align-items: center; justify-content: center; z-index: 100;
+  }
+  .modal-backdrop.open { display: flex; }
+  .modal {
+    background: var(--card); border-radius: 14px; max-width: 760px; width: 92%;
+    max-height: 86vh; overflow: auto; padding: 32px;
+  }
+  .modal h3 { margin: 0 0 4px; font-size: 13px; color: var(--muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; }
+  .modal h2 { margin: 0 0 20px; font-size: 20px; font-weight: 600; }
+  .modal section { margin-bottom: 20px; }
+  .modal section h4 { margin: 0 0 8px; font-size: 13px; color: var(--muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; }
+  .modal pre { white-space: pre-wrap; font-family: -apple-system, sans-serif; font-size: 14px; line-height: 1.5; margin: 0; color: var(--fg); }
+  .modal .sources { display: flex; flex-direction: column; gap: 4px; }
+  .modal .sources a { color: #1e40af; font-size: 13px; text-decoration: none; }
+  .modal .sources a:hover { text-decoration: underline; }
+  .modal-close {
+    float: right; background: none; color: var(--muted); padding: 4px 10px;
+    font-size: 18px; border-radius: 6px;
+  }
+  .modal-close:hover { background: #f1f5f9; color: var(--fg); }
+
+  .meta-bar {
+    margin-top: 16px; padding: 12px 16px;
+    background: #fff; border: 1px solid var(--line); border-radius: 8px;
+    font-size: 12px; color: var(--muted);
+    display: flex; gap: 18px; flex-wrap: wrap; align-items: center;
+  }
+  .meta-bar strong { color: var(--fg); font-weight: 500; }
+
+  footer { margin-top: 64px; text-align: center; color: var(--muted); font-size: 13px; line-height: 1.7; }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="logo">UltraRelevant</div>
+  <h1>How visible is your product data to AI agents?</h1>
+  <p class="subtitle">When a buyer asks Claude or Gemini for a real part number, do they get the right answer? Type a company. We run real procurement queries against frontier agents, fact-check against the manufacturer's catalog, and score 0&ndash;100.</p>
+</header>
+
+<div class="input-row">
+  <input id="company" type="text" placeholder="Try igus, festo, bosch-rexroth&hellip;" autocomplete="off" />
+  <button id="go">Analyze</button>
+</div>
+<div class="hint">Live demo — pre-computed scores for the companies below load instantly. Other names show the methodology.</div>
+
+<div id="examples" class="examples"></div>
+
+<div id="status" class="status" style="display:none"></div>
+
+<div id="results" class="results" style="display:none"></div>
+
+<footer>
+  <div>v0 demo &mdash; methodology: 5 procurement queries &times; 3 agents = 15 cells, fact-checked against Google-grounded ground truth.</div>
+  <div style="margin-top:6px">Built for the YC application. Cached results from runs Apr&ndash;May 2026.</div>
+</footer>
+</div>
+
+<div class="modal-backdrop" id="modal">
+  <div class="modal" id="modal-body"></div>
+</div>
+
+<script>
+const $ = (id) => document.getElementById(id);
+
+function colorClass(score) {
+  if (score >= 70) return "green";
+  if (score >= 30) return "amber";
+  return "red";
+}
+function tagClass(cat) { return (cat || "error").toLowerCase(); }
+
+function escapeHtml(s) {
+  return String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
+}
+
+let lastResult = null;
+let availableCompanies = [];
+
+function setStatus(opts) {
+  const el = $("status");
+  el.style.display = "block";
+  if (opts.error) {
+    el.className = "status error";
+    el.innerHTML = "<strong>Couldn't load:</strong> " + escapeHtml(opts.error);
+    return;
+  }
+  if (opts.info) {
+    el.className = "status info";
+    el.innerHTML = opts.info;
+    return;
+  }
+  el.className = "status";
+  el.innerHTML = '<div class="row"><div>' + escapeHtml(opts.message || "Loading…") + '</div></div>';
+}
+
+function renderExamples() {
+  const el = $("examples");
+  if (!availableCompanies.length) { el.innerHTML = ""; return; }
+  el.innerHTML = availableCompanies.map(function(c){
+    const cls = c.score >= 70 ? "green" : (c.score >= 30 ? "" : "red");
+    return '<button class="example-btn" data-slug="' + escapeHtml(c.slug) + '">' +
+      escapeHtml(c.name) + ' <span class="score-tag ' + cls + '">' + c.score + '</span></button>';
+  }).join("");
+  el.querySelectorAll(".example-btn").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      $("company").value = btn.dataset.slug;
+      run();
+    });
+  });
+}
+
+function render(result) {
+  lastResult = result;
+  const cls = colorClass(result.score);
+  const b = result.breakdown || {};
+  const breakdownHtml =
+    '<span class="pill"><span class="dot correct"></span>' + (b.CORRECT||0) + ' correct</span>' +
+    '<span class="pill"><span class="dot hallucination"></span>' + (b.HALLUCINATION||0) + ' hallucinated</span>' +
+    '<span class="pill"><span class="dot wrong_spec"></span>' + (b.WRONG_SPEC||0) + ' wrong spec</span>' +
+    '<span class="pill"><span class="dot refused"></span>' + (b.REFUSED||0) + ' refused</span>' +
+    (b.ERROR ? '<span class="pill"><span class="dot error"></span>' + b.ERROR + ' error</span>' : "");
+
+  const agents = result.agents || [];
+  let rowsHtml = "";
+  (result.rows || []).forEach(function(row, ri){
+    let cellsHtml = "";
+    agents.forEach(function(agent){
+      const cell = (row.agents || {})[agent] || {};
+      const cat = (cell.category || "ERROR").toUpperCase();
+      cellsHtml += '<td class="cell" data-row="' + ri + '" data-agent="' + escapeHtml(agent) + '">' +
+        '<span class="cell-tag ' + tagClass(cat) + '">' + cat.toLowerCase().replace("_"," ") + '</span>' +
+        '<span class="cell-rationale">' + escapeHtml((cell.rationale || "").slice(0, 140)) + '</span>' +
+      '</td>';
+    });
+    rowsHtml += '<tr><td class="q">' + escapeHtml(row.query) + '</td>' + cellsHtml + '</tr>';
+  });
+
+  const html =
+    '<div class="score-card">' +
+      '<div class="score-num ' + cls + '">' + result.score + '</div>' +
+      '<div class="score-meta">' +
+        '<h2>' + escapeHtml(result.company) + ' visibility score</h2>' +
+        '<p>' + result.correct_cells + ' of ' + result.total_cells + ' agent answers were verifiably correct.</p>' +
+        '<div class="breakdown">' + breakdownHtml + '</div>' +
+      '</div>' +
+    '</div>' +
+    '<table class="matrix">' +
+      '<thead><tr><th>Procurement query</th>' +
+        agents.map(function(a){ return '<th>' + escapeHtml(a) + '</th>'; }).join("") +
+      '</tr></thead>' +
+      '<tbody>' + rowsHtml + '</tbody>' +
+    '</table>' +
+    '<div class="meta-bar">' +
+      '<span><strong>Run:</strong> ' + (result.run_date || "Apr-May 2026") + '</span>' +
+      '<span><strong>Wall time:</strong> ' + (result.elapsed_seconds || "?") + 's</span>' +
+      '<span><strong>Agents:</strong> ' + escapeHtml(agents.join(", ")) + '</span>' +
+      '<span style="margin-left:auto">Click any cell to see the full agent response and ground truth.</span>' +
+    '</div>';
+
+  $("results").innerHTML = html;
+  $("results").style.display = "block";
+
+  document.querySelectorAll(".cell").forEach(function(td){
+    td.addEventListener("click", function(){ openModal(parseInt(td.dataset.row), td.dataset.agent); });
+  });
+}
+
+function openModal(ri, agent) {
+  const row = lastResult.rows[ri];
+  const cell = (row.agents || {})[agent] || {};
+  const gt = row.ground_truth || {};
+  const sourcesHtml = (gt.sources && gt.sources.length)
+    ? '<div class="sources">' + gt.sources.map(function(s){
+        return '<a href="' + escapeHtml(s.uri) + '" target="_blank" rel="noopener">' + escapeHtml(s.title || s.uri) + '</a>';
+      }).join("") + '</div>'
+    : '<p style="color:var(--muted);font-size:13px">No sources returned.</p>';
+  const html =
+    '<button class="modal-close" onclick="closeModal()">&times;</button>' +
+    '<h3>' + escapeHtml(agent) + '</h3>' +
+    '<h2>' + escapeHtml(row.query) + '</h2>' +
+    '<section>' +
+      '<h4>Verdict</h4>' +
+      '<span class="cell-tag ' + tagClass(cell.category) + '">' + (cell.category || "ERROR").toLowerCase().replace("_"," ") + '</span>' +
+      '<p style="margin:8px 0 0;color:var(--muted);font-size:14px">' + escapeHtml(cell.rationale || "") + '</p>' +
+    '</section>' +
+    '<section>' +
+      '<h4>Agent response</h4>' +
+      '<pre>' + escapeHtml(cell.text || cell.error || "(no response)") + '</pre>' +
+    '</section>' +
+    '<section>' +
+      '<h4>Ground truth (Gemini search-grounded)</h4>' +
+      '<pre>' + escapeHtml(gt.text || gt.error || "(unavailable)") + '</pre>' +
+    '</section>' +
+    '<section>' +
+      '<h4>Sources</h4>' +
+      sourcesHtml +
+    '</section>';
+  $("modal-body").innerHTML = html;
+  $("modal").classList.add("open");
+}
+function closeModal() { $("modal").classList.remove("open"); }
+$("modal").addEventListener("click", function(e){ if (e.target.id === "modal") closeModal(); });
+
+async function run() {
+  const company = $("company").value.trim();
+  if (!company) return;
+  $("go").disabled = true;
+  $("results").style.display = "none";
+  setStatus({ message: "Loading " + company + "…" });
+  try {
+    const res = await fetch("/api/score?company=" + encodeURIComponent(company));
+    const data = await res.json();
+    if (!res.ok) {
+      if (data.available) {
+        setStatus({ info:
+          "<strong>No cached run for &quot;" + escapeHtml(company) + "&quot; yet.</strong>" +
+          "<div style=\"margin-top:8px;color:var(--muted)\">This is a v0 demo with pre-computed runs. " +
+          "A live run takes ~90 seconds and we haven't queued one for this company. Try one of: " +
+          data.available.map(function(c){ return '<button class="example-btn" style="margin:0 4px 4px 0" onclick="document.getElementById(\'company\').value=\'' + c.slug + '\';document.getElementById(\'go\').click();">' + escapeHtml(c.name) + '</button>'; }).join("") +
+          "</div>"
+        });
+      } else {
+        setStatus({ error: data.error || res.statusText });
+      }
+      $("go").disabled = false;
+      return;
+    }
+    $("status").style.display = "none";
+    render(data);
+  } catch (e) {
+    setStatus({ error: e.message });
+  } finally {
+    $("go").disabled = false;
+  }
+}
+
+$("go").addEventListener("click", run);
+$("company").addEventListener("keydown", function(e){ if (e.key === "Enter") run(); });
+
+// Load list of available cached companies
+fetch("/api/list").then(function(r){ return r.json(); }).then(function(data){
+  availableCompanies = data.companies || [];
+  renderExamples();
+  // Auto-load igus if URL has ?company=, else show landing
+  const params = new URLSearchParams(location.search);
+  const auto = params.get("company");
+  if (auto) {
+    $("company").value = auto;
+    run();
+  }
+}).catch(function(){});
+</script>
+</body>
+</html>
