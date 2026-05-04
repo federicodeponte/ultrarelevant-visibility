@@ -197,6 +197,16 @@
   footer { margin-top: 64px; text-align: center; color: var(--muted); font-size: 13px; line-height: 1.7; }
   footer a { color: var(--muted); }
   footer a:hover { color: var(--fg); }
+
+  .domain-preview {
+    display: none; align-items: center; gap: 10px;
+    margin-top: 10px; padding: 8px 12px;
+    background: var(--card); border: 1px solid var(--line); border-radius: 8px;
+    font-size: 13px; color: var(--muted);
+  }
+  .domain-preview.visible { display: flex; }
+  .domain-preview img { width: 20px; height: 20px; border-radius: 3px; flex-shrink: 0; }
+  .domain-preview strong { color: var(--fg); font-weight: 500; }
 </style>
 </head>
 <body>
@@ -210,6 +220,10 @@
 <div class="input-row">
   <input id="company" type="text" placeholder="https://igus.de  or  daw.de  or any manufacturer URL" autocomplete="off" />
   <button id="go">Analyze</button>
+</div>
+<div id="domain-preview" class="domain-preview">
+  <img id="preview-favicon" src="" alt="" />
+  <span>We'll analyze <strong id="preview-host"></strong></span>
 </div>
 <div class="hint">Live run takes 60-120 seconds. Or click a popular company below for an instant cached run.</div>
 
@@ -575,6 +589,32 @@ function run() {
 
 $("go").addEventListener("click", run);
 $("company").addEventListener("keydown", function(e){ if (e.key === "Enter") run(); });
+
+// ----- Favicon / resolved-host preview -----
+(function(){
+  var debounceTimer = null;
+  function resolveHost(raw) {
+    var s = raw.trim();
+    if (!s) return null;
+    if (!/^https?:\/\//i.test(s)) s = "https://" + s;
+    try {
+      var h = new URL(s).hostname;
+      return h.replace(/^www\./, "") || null;
+    } catch (_) { return null; }
+  }
+  function updatePreview() {
+    var host = resolveHost($("company").value);
+    var preview = $("domain-preview");
+    if (!host) { preview.classList.remove("visible"); return; }
+    $("preview-host").textContent = host;
+    $("preview-favicon").src = "https://www.google.com/s2/favicons?domain=" + encodeURIComponent(host) + "&sz=64";
+    preview.classList.add("visible");
+  }
+  $("company").addEventListener("input", function() {
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(updatePreview, 400);
+  });
+})();
 
 // ----- Load cached company list -----
 async function loadList() {
