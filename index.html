@@ -6,7 +6,7 @@
 <title>UltraRelevant — Product Visibility for AI Agents</title>
 <meta name="description" content="Paste a manufacturer URL. We run real procurement queries against grounded Gemini, verify the answers, and grade the citations: your own catalog, a distributor, a marketplace, or somewhere else.">
 <meta property="og:title" content="UltraRelevant — Product Visibility for AI Agents">
-<meta property="og:description" content="When AI gets your products right, who does it cite? Paste a manufacturer URL to find out.">
+<meta property="og:description" content="Do AI agents know your products? And where do they get that information? Paste a manufacturer URL to find out.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
@@ -285,7 +285,7 @@
 
 <section class="hero">
   <span class="badge"><span class="dot"></span> Live demo</span>
-  <h1>When AI gets your products right, who does it cite?</h1>
+  <h1>Do AI agents know your products? And where do they get that information?</h1>
   <p class="subtitle">Paste a manufacturer URL. We run five real procurement queries through grounded Gemini, verify the answers, and grade the citations: your own catalog, a distributor, a marketplace, or somewhere else. Most manufacturers score 0% on source authority. That's the wedge.</p>
 
   <div class="input-row">
@@ -436,7 +436,7 @@ function render(result) {
         '<div class="score-label">Source Authority</div>' +
         '<div class="score-num ' + saCls + '">' + sa + '<span class="denom">/100</span></div>' +
         '<div class="score-fraction">' + mfgCorrect + ' of ' + correct + ' correct answers cited the manufacturer\'s own domain.</div>' +
-        '<div class="score-explainer">When AI gets your products right, does it cite YOU or a distributor / marketplace? Most manufacturers score near zero. This is the wedge.</div>' +
+        '<div class="score-explainer">When AI answers questions about your products, does it pull from your own site, or from a distributor / marketplace? Most manufacturers score near zero.</div>' +
       '</div>' +
       '<div class="score-card">' +
         '<div class="score-label">Visibility</div>' +
