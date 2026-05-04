@@ -150,6 +150,34 @@
 
   .hint { color: var(--muted); font-size: 13px; margin: 14px auto 0; text-align: center; max-width: 640px; }
 
+  /* popular runs chips */
+  .popular-section {
+    margin: 28px auto 0; max-width: 640px; text-align: center;
+  }
+  .popular-label {
+    font-size: 12px; color: var(--muted); font-weight: 500; letter-spacing: 0.04em;
+    text-transform: uppercase; margin-bottom: 12px;
+  }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+  .chip {
+    display: inline-flex; align-items: center; gap: 7px;
+    padding: 7px 14px; border-radius: 999px; cursor: pointer;
+    background: linear-gradient(180deg, #ffffff 0%, #f3f4f6 100%);
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 1px 2px rgba(16,24,40,0.05);
+    font: inherit; font-size: 13px; font-weight: 500; color: var(--fg);
+    transition: all 0.15s ease-out;
+  }
+  .chip:hover { background: linear-gradient(180deg, #ffffff 0%, #e9eaec 100%); border-color: #d1d5db; }
+  .chip:active { transform: scale(0.97); }
+  .chip-scores { display: flex; gap: 5px; }
+  .chip-score {
+    font-size: 11px; font-weight: 600; padding: 1px 6px; border-radius: 999px;
+  }
+  .chip-score.vis { background: #dbeafe; color: #1e40af; }
+  .chip-score.sa { background: #d1f5e4; color: #0a6b48; }
+  .chips-loading { font-size: 13px; color: var(--muted); }
+
 .status {
     margin: 28px auto 0; max-width: 760px; padding: 18px 22px;
     background: var(--card); border: 1px solid var(--line); border-radius: 14px;
@@ -309,6 +337,11 @@
   </div>
   <p class="hint">Live run takes 60-120 seconds.</p>
 </section>
+
+<div class="popular-section" id="popular-section" style="display:none">
+  <div class="popular-label">Or try a pre-run example — results are instant</div>
+  <div class="chips" id="chips"><span class="chips-loading">Loading...</span></div>
+</div>
 
 <div id="status" class="status" style="display:none"></div>
 
@@ -640,6 +673,59 @@ $("company").addEventListener("keydown", function(e){ if (e.key === "Enter") run
     $("company").value = auto;
     run();
   }
+})();
+
+// ----- Popular runs chips -----
+(function(){
+  async function loadChips() {
+    try {
+      const res = await fetch(ENGINE_URL + "/api/list");
+      if (!res.ok) return;
+      const data = await res.json();
+      const companies = data.companies || [];
+      if (!companies.length) return;
+      const chipsEl = $("chips");
+      chipsEl.innerHTML = companies.map(function(c){
+        const visClass = c.visibility_score >= 70 ? "vis" : (c.visibility_score >= 30 ? "vis" : "vis");
+        const saClass = c.source_authority_score >= 70 ? "sa" : "sa";
+        return '<button class="chip" data-slug="' + escapeHtml(c.slug) + '" aria-label="' + escapeHtml(c.display_name) + '">' +
+          '<span>' + escapeHtml(c.display_name) + '</span>' +
+          '<span class="chip-scores">' +
+            '<span class="chip-score vis" title="Visibility score">' + c.visibility_score + '%</span>' +
+            '<span class="chip-score sa" title="Source authority score">' + c.source_authority_score + '%</span>' +
+          '</span>' +
+        '</button>';
+      }).join("");
+      $("popular-section").style.display = "block";
+      chipsEl.querySelectorAll(".chip").forEach(function(btn){
+        btn.addEventListener("click", function(){
+          loadCachedResult(btn.dataset.slug);
+        });
+      });
+    } catch(e) {
+      // silently fail — chips are non-critical
+    }
+  }
+
+  async function loadCachedResult(slug) {
+    $("results").style.display = "none";
+    setStatus({ message: "Loading...", percent: 80, meta: slug });
+    try {
+      const res = await fetch(ENGINE_URL + "/api/score?company=" + encodeURIComponent(slug));
+      if (!res.ok) {
+        const err = await res.json().catch(function(){ return {}; });
+        setStatus({ error: err.detail || "Could not load result for " + slug });
+        return;
+      }
+      const result = await res.json();
+      $("status").style.display = "none";
+      render(result);
+    } catch(e) {
+      setStatus({ error: "Failed to load: " + e.message });
+    }
+  }
+
+  if (ENGINE_URL) loadChips();
 })();
 </script>
 </body>
