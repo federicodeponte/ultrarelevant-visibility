@@ -26,8 +26,6 @@ Async polling protocol:
   POST /analyze     -> {job_id, status: "pending"}
   GET /status/<id>  -> {status, progress, result?}
   GET /             -> serves index.html
-  GET /api/list     -> cached "popular companies" demos
-  GET /api/score    -> cached single-company lookup (read-only)
   GET /health       -> {ok, keys}
 """
 from __future__ import annotations
@@ -580,53 +578,6 @@ def _run_job(job_id: str, url_input: str) -> None:
             _jobs[job_id]["updated_at"] = time.time()
 
 
-# ---------- Cache helpers (popular companies) ----------
-CACHE_DIR = ROOT / "cache"
-
-
-def _list_cached() -> list[dict]:
-    out: list[dict] = []
-    if not CACHE_DIR.exists():
-        return out
-    for p in sorted(CACHE_DIR.glob("*.json")):
-        try:
-            d = json.loads(p.read_text())
-        except Exception:
-            continue
-        out.append({
-            "slug": p.stem,
-            "name": d.get("company") or d.get("brand") or p.stem,
-            "host": d.get("host", ""),
-            "visibility_score": d.get("visibility_score", d.get("score", 0)),
-            "source_authority_score": d.get("source_authority_score", 0),
-            "engine_version": d.get("engine_version", "v1-multi-agent"),
-        })
-    return out
-
-
-def _load_cache(slug_or_host: str) -> dict | None:
-    if not CACHE_DIR.exists():
-        return None
-    s = slug_or_host.strip().lower().replace(" ", "-")
-    # try direct slug match
-    p = CACHE_DIR / f"{s}.json"
-    if p.exists():
-        try:
-            return json.loads(p.read_text())
-        except Exception:
-            return None
-    # try host-based: igus.de -> igus
-    if "." in s:
-        brand = s.split(".")[0]
-        p2 = CACHE_DIR / f"{brand}.json"
-        if p2.exists():
-            try:
-                return json.loads(p2.read_text())
-            except Exception:
-                return None
-    return None
-
-
 # ---------- FastAPI ----------
 app = FastAPI(
     title="UltraRelevant Visibility Tool",
@@ -716,23 +667,6 @@ def status(job_id: str) -> dict:
         "error": job.get("error"),
     }
 
-
-@app.get("/api/list")
-def api_list() -> dict:
-    """Cached "popular companies" demos. Static; loaded from cache/*.json."""
-    return {"companies": sorted(_list_cached(), key=lambda c: c.get("visibility_score", 0))}
-
-
-@app.get("/api/score")
-def api_score(company: str | None = None, host: str | None = None) -> JSONResponse:
-    """Look up a cached run by slug, brand, or host. Read-only."""
-    key = (company or host or "").strip()
-    if not key:
-        return JSONResponse({"error": "company or host required", "available": _list_cached()}, status_code=400)
-    d = _load_cache(key)
-    if not d:
-        return JSONResponse({"error": f"no cached run for '{key}'", "available": _list_cached()}, status_code=404)
-    return JSONResponse(d)
 
 
 # CORS for static frontends pointing at this engine
