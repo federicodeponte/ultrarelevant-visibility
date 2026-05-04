@@ -222,7 +222,36 @@
   .score-num.red { color: var(--red); }
   .score-num .denom { font-size: 24px; font-weight: 400; color: var(--muted); margin-left: 4px; }
   .score-fraction { color: var(--muted); font-size: 13px; margin: 8px 0 0; }
-  .score-explainer { color: var(--muted); font-size: 13px; line-height: 1.5; margin: 14px 0 0; }
+  .score-explainer { color: var(--fg); font-size: 14px; line-height: 1.5; margin: 14px 0 0; }
+  .score-explainer-sub { color: var(--muted); font-size: 12px; line-height: 1.5; margin: 6px 0 0; }
+
+  .result-header {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 24px;
+  }
+  .result-header-favicon {
+    width: 32px; height: 32px; border-radius: 6px; flex-shrink: 0;
+    border: 1px solid var(--line);
+  }
+  .result-header-host {
+    font-size: 22px; font-weight: 600; letter-spacing: -0.015em; color: var(--fg);
+    font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  .so-what-box {
+    background: #f0f3ff; border: 1px solid #d5deff; border-radius: 16px;
+    padding: 22px 26px; margin-bottom: 28px;
+  }
+  .so-what-box.positive {
+    background: #f0faf5; border-color: #b7e8d0;
+  }
+  .so-what-headline {
+    font-size: 15px; font-weight: 600; color: var(--fg); margin: 0 0 6px;
+    letter-spacing: -0.01em;
+  }
+  .so-what-body {
+    font-size: 13px; color: var(--muted); line-height: 1.55; margin: 0;
+  }
 
   .meta-row {
     background: var(--card); border: 1px solid var(--line); border-radius: 12px;
@@ -325,7 +354,7 @@
 <section class="hero">
   <span class="badge"><span class="dot"></span> Live demo</span>
   <h1>AI is the new buyer. Are you the source?</h1>
-  <p class="subtitle">Paste a manufacturer URL. We run five real procurement queries through grounded Gemini, verify the answers, and grade the citations: your own catalog, a distributor, a marketplace, or somewhere else. Most manufacturers score 0% on source authority. That's the wedge.</p>
+  <p class="subtitle">Paste your URL. We ask AI five real procurement questions about your products and check who AI cites: your site, a distributor, or a marketplace. Most manufacturers find their own site invisible.</p>
 
   <div class="input-row">
     <input id="company" type="text" placeholder="https://igus.de  or  daw.de  or any manufacturer URL" autocomplete="off" />
@@ -474,20 +503,42 @@ function render(result) {
       '</tr>';
   });
 
+  const otherCorrect = correct - mfgCorrect;
+  const faviconUrl = 'https://www.google.com/s2/favicons?domain=' + encodeURIComponent(host) + '&sz=64';
+
+  const soWhatPositive = sa >= 60;
+  const soWhatClass = soWhatPositive ? 'so-what-box positive' : 'so-what-box';
+  const soWhatHeadline = soWhatPositive
+    ? escapeHtml(host) + ' is mostly the source AI uses for its own products. That\'s rare.'
+    : escapeHtml(host) + ' doesn\'t control how AI describes its own products.';
+  const soWhatBody = soWhatPositive
+    ? 'Most manufacturers we test are at 0–20% — meaning third-parties speak for them to AI buyers. ' + escapeHtml(host) + ' stands out.'
+    : 'When AI answers buyer questions, it pulls from distributor catalogs, marketplaces, and third-party reviews. Those sites decide pricing, spec accuracy, and which competitors show up next to ' + escapeHtml(host) + '’s products.';
+
   const html =
+    '<div class="result-header">' +
+      '<img class="result-header-favicon" src="' + escapeHtml(faviconUrl) + '" alt="" />' +
+      '<span class="result-header-host">' + escapeHtml(host) + '</span>' +
+    '</div>' +
     '<div class="scores-row">' +
       '<div class="score-card primary">' +
         '<div class="score-label">Source Authority</div>' +
         '<div class="score-num ' + saCls + '">' + sa + '<span class="denom">/100</span></div>' +
         '<div class="score-fraction">' + mfgCorrect + ' of ' + correct + ' correct answers cited the manufacturer\'s own domain.</div>' +
-        '<div class="score-explainer">When AI answers questions about your products, does it pull from your own site, or from a distributor / marketplace? Most manufacturers score near zero.</div>' +
+        '<div class="score-explainer">Of those correct answers, ' + mfgCorrect + ' cited ' + escapeHtml(host) + '. ' + otherCorrect + ' came from distributors, marketplaces, or somewhere else.</div>' +
+        '<div class="score-explainer-sub">When this is low, third-party sites are the source AI uses for ' + escapeHtml(host) + '’s products.</div>' +
       '</div>' +
       '<div class="score-card">' +
         '<div class="score-label">Visibility</div>' +
         '<div class="score-num ' + visCls + '">' + vis + '<span class="denom">/100</span></div>' +
         '<div class="score-fraction">' + correct + ' of ' + total + ' procurement queries got a verifiable correct answer.</div>' +
-        '<div class="score-explainer">How often does grounded Gemini answer real procurement questions about your products correctly? Higher is better.</div>' +
+        '<div class="score-explainer">When buyers asked AI about ' + escapeHtml(host) + '’s products, AI got ' + correct + ' of ' + total + ' correct.</div>' +
+        '<div class="score-explainer-sub">100% means AI nailed every product question. Below 80% means buyers are getting wrong specs or made-up parts.</div>' +
       '</div>' +
+    '</div>' +
+    '<div class="' + soWhatClass + '">' +
+      '<p class="so-what-headline">' + soWhatHeadline + '</p>' +
+      '<p class="so-what-body">' + soWhatBody + '</p>' +
     '</div>' +
     '<div class="meta-row">' +
       '<span><strong>Domain:</strong> ' + escapeHtml(host) + '</span>' +
