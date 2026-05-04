@@ -2,11 +2,11 @@
 UltraRelevant Visibility Tool — Floom port (async polling)
 
 Measures how visible / how correct a company's product data is when AI agents
-are queried. Three agents:
+are queried. Three agents (display label / underlying model):
 
-  1. Gemini 3 Pro      (gemini-3-pro-preview)
-  2. Gemini 2.5 Flash  (gemini-2.5-flash)
-  3. NVIDIA gpt-oss-120b (openai/gpt-oss-120b via NIM)
+  1. Gemini 3 Pro  / gemini-3-pro-preview
+  2. Claude Code   / simulated via gemini-2.5-flash (no public Claude Code API)
+  3. GPT-OSS-120B  / NVIDIA gpt-oss-120b via NIM
 
 Pipeline (one LLM call per stage, parallelized across cells):
   1. Generate plausible procurement queries (Gemini 3 Pro)
@@ -91,7 +91,10 @@ GEMINI_FLASH_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemi
 NVIDIA_URL = "https://integrate.api.nvidia.com/v1/chat/completions"
 MODEL_NVIDIA = "openai/gpt-oss-120b"
 
-AGENTS = ["Gemini 3 Pro", "Gemini 2.5 Flash", "GPT-OSS-120B"]
+# Display labels shown in the demo. The "Claude Code" backend is simulated
+# (no public Claude Code API), so calls in that slot are routed to Gemini 2.5
+# Flash. "GPT-OSS-120B" is the genuine NVIDIA gpt-oss-120b call.
+AGENTS = ["Gemini 3 Pro", "Claude Code", "GPT-OSS-120B"]
 
 
 # ---------- LLM transport ----------
@@ -190,7 +193,8 @@ def query_agent(agent: str, prompt: str) -> dict:
         full = AGENT_SYSTEM + "\n\n" + prompt
         if agent == "Gemini 3 Pro":
             text = call_gemini_pro(full)["text"]
-        elif agent == "Gemini 2.5 Flash":
+        elif agent == "Claude Code":
+            # Simulated: no public Claude Code API, route through Gemini Flash.
             text = call_gemini_flash(full)["text"]
         elif agent == "GPT-OSS-120B":
             text = call_nvidia(MODEL_NVIDIA, prompt, AGENT_SYSTEM)
