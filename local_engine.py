@@ -32,6 +32,7 @@ Async polling protocol:
 """
 from __future__ import annotations
 
+import ipaddress
 import json
 import os
 import re
@@ -198,22 +199,56 @@ def host_from_uri(uri: str) -> str:
         return ""
 
 
+def _is_ssrf_blocked(hostname: str) -> bool:
+    """Return True if the hostname resolves to a private/loopback/link-local address."""
+    try:
+        infos = socket.getaddrinfo(hostname, None)
+        for info in infos:
+            ip_str = info[4][0]
+            try:
+                ip = ipaddress.ip_address(ip_str)
+            except ValueError:
+                continue
+            if ip.is_private or ip.is_loopback or ip.is_link_local:
+                return True
+    except Exception:
+        pass
+    return False
+
+
 def resolve_grounding_uri(uri: str, timeout: int = 5) -> str:
     """Gemini grounding emits vertexaisearch redirect URLs. Follow them once to get
-    the real publisher domain. Falls back to the redirect host on any error."""
+    the real publisher domain. Falls back to the redirect host on any error.
+
+    SSRF protection: any resolved host that maps to RFC-1918 / loopback /
+    link-local addresses is rejected; the original URI host is returned instead.
+    """
     host = host_from_uri(uri)
     if "vertexaisearch.cloud.google.com" not in host and "googleusercontent.com" not in host:
+        # Not a redirect URI — still check the host itself against SSRF
+        if host and _is_ssrf_blocked(host):
+            return host  # blocked, return as-is without fetching
         return host  # already a real domain
+    # Validate the redirect URI host before fetching
+    if host and _is_ssrf_blocked(host):
+        return host
     try:
         r = requests.head(uri, allow_redirects=True, timeout=timeout)
-        return host_from_uri(r.url) or host
+        resolved_host = host_from_uri(r.url) or host
+        # Validate the resolved destination
+        if resolved_host and _is_ssrf_blocked(resolved_host):
+            return host
+        return resolved_host
     except Exception:
         # try GET with stream as fallback
         try:
             r = requests.get(uri, allow_redirects=True, timeout=timeout, stream=True)
-            real = host_from_uri(r.url) or host
+            resolved_host = host_from_uri(r.url) or host
             r.close()
-            return real
+            # Validate the resolved destination
+            if resolved_host and _is_ssrf_blocked(resolved_host):
+                return host
+            return resolved_host
         except Exception:
             return host
 
