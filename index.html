@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>UltraRelevant — Product Visibility for AI Agents</title>
-<meta name="description" content="Measure how visible and how correct your product data is when buyers ask AI agents about it. Real procurement queries, ground-truth fact-checked, scored 0-100.">
+<meta name="description" content="Paste a manufacturer URL. We run real procurement queries against grounded Gemini, verify the answers, and grade the citations: your own catalog, a distributor, a marketplace, or somewhere else.">
 <meta property="og:title" content="UltraRelevant — Product Visibility for AI Agents">
-<meta property="og:description" content="How often do Claude / GPT / Gemini answer real procurement questions about your products correctly? Try a live demo.">
+<meta property="og:description" content="When AI gets your products right, who does it cite? Paste a manufacturer URL to find out.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
@@ -126,6 +126,17 @@
   }
   .btn-secondary:hover { background: linear-gradient(180deg, #ffffff 0%, #e9eaec 100%); }
 
+  /* favicon / domain preview (feat branch) */
+  #domain-preview {
+    display: none; align-items: center; gap: 10px;
+    margin: 10px auto 0; max-width: 640px; padding: 8px 12px;
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    font-size: 13px; color: var(--muted);
+  }
+  #domain-preview.visible { display: flex; }
+  .preview-favicon { width: 20px; height: 20px; border-radius: 3px; flex-shrink: 0; }
+  .preview-host { color: var(--fg); font-weight: 500; }
+
   .hint { color: var(--muted); font-size: 13px; margin: 14px auto 0; text-align: center; max-width: 640px; }
 
   .examples {
@@ -159,35 +170,49 @@
   .status.info { color: var(--fg); }
   .status .row { display: flex; align-items: center; gap: 12px; }
 
+  .progress { display: flex; flex-direction: column; gap: 8px; }
+  .progress-msg { font-size: 14px; }
+  .progress-meta { font-size: 12px; color: var(--muted); }
+  .progress-bar { height: 4px; background: var(--line); border-radius: 999px; overflow: hidden; }
+  .progress-bar-fill { height: 100%; background: var(--secondary); transition: width 0.3s; }
+
   .results { margin-top: 56px; }
+
+  .scores-row {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
+    margin-bottom: 28px;
+  }
+  @media (max-width: 720px) { .scores-row { grid-template-columns: 1fr; } }
+
   .score-card {
-    display: flex; align-items: center; gap: 32px;
     background: var(--card); border: 1px solid var(--line); border-radius: 20px;
-    padding: 36px; margin-bottom: 24px;
+    padding: 28px 28px 24px;
     box-shadow: 0 1px 3px rgba(16,24,40,0.04);
   }
+  .score-card.primary { border-color: var(--secondary); }
+  .score-label {
+    font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--muted); font-weight: 500; margin: 0 0 8px;
+  }
+  .score-card.primary .score-label { color: var(--secondary); }
   .score-num {
     font-size: 84px; font-weight: 600; line-height: 1; letter-spacing: -0.045em;
+    margin: 0;
   }
   .score-num.green { color: var(--green); }
   .score-num.amber { color: var(--amber); }
   .score-num.red { color: var(--red); }
-  .score-meta { flex: 1; min-width: 0; }
-  .score-meta h2 { margin: 0 0 6px; font-size: 18px; font-weight: 600; letter-spacing: -0.01em; }
-  .score-meta p { margin: 0; color: var(--muted); font-size: 14px; }
-  .breakdown {
-    display: flex; gap: 18px; margin-top: 16px; flex-wrap: wrap;
+  .score-num .denom { font-size: 24px; font-weight: 400; color: var(--muted); margin-left: 4px; }
+  .score-fraction { color: var(--muted); font-size: 13px; margin: 8px 0 0; }
+  .score-explainer { color: var(--muted); font-size: 13px; line-height: 1.5; margin: 14px 0 0; }
+
+  .meta-row {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 24px; font-size: 13px; color: var(--muted);
+    display: flex; gap: 24px; flex-wrap: wrap;
+    box-shadow: 0 1px 3px rgba(16,24,40,0.04);
   }
-  .pill {
-    display: inline-flex; align-items: center; gap: 6px;
-    font-size: 13px; color: var(--muted);
-  }
-  .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
-  .dot.correct { background: var(--green); }
-  .dot.hallucination { background: var(--red); }
-  .dot.refused { background: var(--gray); }
-  .dot.wrong_spec { background: var(--amber); }
-  .dot.error { background: #cbd5e1; }
+  .meta-row strong { color: var(--fg); font-weight: 600; }
 
   table.matrix {
     width: 100%; border-collapse: collapse; background: var(--card);
@@ -203,11 +228,10 @@
     font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase;
   }
   table.matrix tr:last-child td { border-bottom: none; }
-  table.matrix td.q { width: 34%; color: var(--fg); font-weight: 500; }
-  table.matrix td.cell {
-    cursor: pointer; transition: background 0.12s;
-  }
-  table.matrix td.cell:hover { background: #f8faff; }
+  table.matrix tr.row { cursor: pointer; transition: background 0.1s; }
+  table.matrix tr.row:hover { background: #f8faff; }
+  table.matrix td.q { width: 50%; color: var(--fg); font-weight: 500; }
+
   .cell-tag {
     display: inline-block; padding: 4px 10px; border-radius: 999px;
     font-size: 12px; font-weight: 600;
@@ -217,7 +241,18 @@
   .cell-tag.refused { background: #eaf0fb; color: #4a5878; }
   .cell-tag.wrong_spec { background: #fef0d4; color: #8a4a07; }
   .cell-tag.error { background: #eaf0fb; color: #5b6685; }
-  .cell-rationale { display: block; margin-top: 6px; color: var(--muted); font-size: 12px; line-height: 1.45; }
+
+  .source-badges { display: flex; gap: 6px; flex-wrap: wrap; }
+  .source-badge {
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 3px 9px; border-radius: 999px;
+    font-size: 11px; font-weight: 500;
+  }
+  .source-badge.manufacturer { background: #dbeafe; color: #1e40af; }
+  .source-badge.distributor { background: #fef0d4; color: #8a4a07; }
+  .source-badge.marketplace { background: #fce7f3; color: #9d174d; }
+  .source-badge.other { background: #eaf0fb; color: #4a5878; }
+  .source-badge.none { background: var(--bg-soft); color: var(--muted); }
 
   /* modal */
   .modal-backdrop {
@@ -245,7 +280,7 @@
     padding: 14px 16px; border-radius: 12px;
   }
   .modal .sources { display: flex; flex-direction: column; gap: 6px; }
-  .modal .sources a { color: var(--secondary); font-size: 13px; text-decoration: none; font-weight: 500; }
+  .modal .sources a { color: var(--secondary); font-size: 13px; text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 8px; }
   .modal .sources a:hover { text-decoration: underline; }
   .modal-close {
     float: right; background: var(--bg-soft); color: var(--muted);
@@ -254,17 +289,9 @@
   }
   .modal-close:hover { background: #f1f5f9; color: var(--fg); }
 
-  .meta-bar {
-    margin-top: 16px; padding: 14px 18px;
-    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
-    font-size: 12px; color: var(--muted);
-    display: flex; gap: 18px; flex-wrap: wrap; align-items: center;
-    box-shadow: 0 1px 3px rgba(16,24,40,0.04);
-  }
-  .meta-bar strong { color: var(--fg); font-weight: 600; }
-
   footer { margin-top: 80px; text-align: center; color: var(--muted); font-size: 11px; line-height: 1.6; opacity: 0.8; }
   footer a { color: var(--muted); }
+  footer a:hover { color: var(--fg); }
 </style>
 </head>
 <body>
@@ -274,18 +301,23 @@
   <a class="brand" href="/" aria-label="UltraRelevant">
     <img src="/UltraRelevantLOGO.png" alt="UltraRelevant" />
   </a>
-  <div class="nav-pill"><span class="dot-live"></span> Visibility v0</div>
+  <div class="nav-pill"><span class="dot-live"></span> Visibility v2</div>
 </header>
 
 <section class="hero">
   <span class="badge"><span class="dot"></span> Live demo</span>
-  <h1>Do AI agents understand your product correctly?</h1>
-  <p class="subtitle">When a buyer asks Claude or Gemini for a real part number, do they get the right answer? We run procurement queries against frontier agents, fact-check the catalog, and score 0&ndash;100.</p>
+  <h1>When AI gets your products right, who does it cite?</h1>
+  <p class="subtitle">Paste a manufacturer URL. We run five real procurement queries through grounded Gemini, verify the answers, and grade the citations: your own catalog, a distributor, a marketplace, or somewhere else. Most manufacturers score 0% on source authority. That's the wedge.</p>
 
   <div class="input-row">
-    <input id="company" type="text" placeholder="Try igus, festo, bosch-rexroth&hellip;" autocomplete="off" />
+    <input id="company" type="text" placeholder="https://igus.de  or  daw.de  or any manufacturer URL" autocomplete="off" />
     <button id="go" class="btn-primary">Analyze</button>
   </div>
+  <div id="domain-preview">
+    <img id="preview-favicon" class="preview-favicon" src="" alt="" />
+    <span>We'll analyze <strong id="preview-host" class="preview-host"></strong></span>
+  </div>
+  <p class="hint">Live run takes 60-120 seconds. Or click a popular company below for an instant cached run.</p>
 
   <div id="examples" class="examples"></div>
 </section>
@@ -295,7 +327,8 @@
 <div id="results" class="results" style="display:none"></div>
 
 <footer>
-  <div>Pre-computed scores for the companies below load instantly. Other names show the methodology. v0 demo &mdash; methodology: 5 procurement queries &times; 3 agents = 15 cells, fact-checked against Google-grounded ground truth. Built for the YC application. Cached results from runs Apr&ndash;May 2026.</div>
+  <div>v2 honest engine: 5 procurement queries, grounded Gemini Pro, source-attributed citations. Pre-computed scores load instantly.</div>
+  <div style="margin-top:6px"><a href="https://github.com/federicodeponte/ultrarelevant-visibility" target="_blank" rel="noopener">GitHub</a> &middot; one Gemini agent, no multi-model dressing &middot; built for the YC application</div>
 </footer>
 </div>
 
@@ -304,7 +337,19 @@
 </div>
 
 <script>
+// Live engine — AX41 + nginx + LetsEncrypt. Override via ?engine=https://... if needed.
+window.ULTRARELEVANT_ENGINE_URL = window.ULTRARELEVANT_ENGINE_URL || "https://visibility.fedeponte.com";
+try {
+  const _q = new URLSearchParams(window.location.search).get("engine");
+  if (_q) window.ULTRARELEVANT_ENGINE_URL = _q;
+} catch (_) {}
+</script>
+<script>
 const $ = (id) => document.getElementById(id);
+
+// Engine URL: where the live /analyze + /status live. Defaults to the AX41
+// public engine; override with ?engine=... in the query string.
+const ENGINE_URL = (window.ULTRARELEVANT_ENGINE_URL || "").replace(/\/$/, "");
 
 function colorClass(score) {
   if (score >= 70) return "green";
@@ -319,13 +364,14 @@ function escapeHtml(s) {
 
 let lastResult = null;
 let availableCompanies = [];
+let pollHandle = null;
 
 function setStatus(opts) {
   const el = $("status");
   el.style.display = "block";
   if (opts.error) {
     el.className = "status error";
-    el.innerHTML = "<strong>Couldn't load:</strong> " + escapeHtml(opts.error);
+    el.innerHTML = "<strong>Couldn't analyze:</strong> " + escapeHtml(opts.error);
     return;
   }
   if (opts.info) {
@@ -334,138 +380,264 @@ function setStatus(opts) {
     return;
   }
   el.className = "status";
-  el.innerHTML = '<div class="row"><div>' + escapeHtml(opts.message || "Loading…") + '</div></div>';
+  const pct = opts.percent != null ? opts.percent : 0;
+  el.innerHTML =
+    '<div class="progress">' +
+      '<div class="progress-msg">' + escapeHtml(opts.message || "Working...") + '</div>' +
+      '<div class="progress-bar"><div class="progress-bar-fill" style="width:' + pct + '%"></div></div>' +
+      '<div class="progress-meta">' + escapeHtml(opts.meta || "") + '</div>' +
+    '</div>';
 }
 
 function renderExamples() {
   const el = $("examples");
-  if (!availableCompanies.length) { el.innerHTML = ""; return; }
+  if (!availableCompanies.length) { el.innerHTML = '<div style="color:var(--muted);font-size:13px">Loading cached runs...</div>'; return; }
   el.innerHTML = availableCompanies.map(function(c){
-    const cls = c.score >= 70 ? "green" : (c.score >= 30 ? "" : "red");
-    return '<button class="example-btn" data-slug="' + escapeHtml(c.slug) + '">' +
-      escapeHtml(c.name) + ' <span class="score-tag ' + cls + '">' + c.score + '</span></button>';
+    const score = c.visibility_score != null ? c.visibility_score : (c.score || 0);
+    const cls = score >= 70 ? "green" : (score >= 30 ? "" : "red");
+    const slug = c.slug || c.host || c.name;
+    return '<button class="example-btn" data-slug="' + escapeHtml(slug) + '">' +
+      escapeHtml(c.name) + ' <span class="score-tag ' + cls + '">' + score + '</span></button>';
   }).join("");
   el.querySelectorAll(".example-btn").forEach(function(btn){
     btn.addEventListener("click", function(){
-      $("company").value = btn.dataset.slug;
-      run();
+      loadCached(btn.dataset.slug);
     });
   });
+}
+
+function pctFromProgress(msg) {
+  if (!msg) return 5;
+  const lower = msg.toLowerCase();
+  if (lower.indexOf("queued") >= 0) return 5;
+  if (lower.indexOf("stage 0") >= 0) return 10;
+  if (lower.indexOf("stage 1") >= 0) return 25;
+  if (lower.indexOf("stage 2") >= 0) return 50;
+  if (lower.indexOf("stage 3") >= 0) return 70;
+  if (lower.indexOf("stage 4") >= 0) return 85;
+  if (lower.indexOf("stage 5") >= 0 || lower.indexOf("done") >= 0) return 100;
+  return 50;
+}
+
+function fmtCounts(counts) {
+  if (!counts) return "";
+  const order = ["manufacturer", "distributor", "marketplace", "other"];
+  return order
+    .filter(function(k){ return (counts[k] || 0) > 0; })
+    .map(function(k){ return '<span class="source-badge ' + k + '">' + k + ' ' + counts[k] + '</span>'; })
+    .join(" ");
 }
 
 function render(result) {
   lastResult = result;
-  const cls = colorClass(result.score);
-  const b = result.breakdown || {};
-  const breakdownHtml =
-    '<span class="pill"><span class="dot correct"></span>' + (b.CORRECT||0) + ' correct</span>' +
-    '<span class="pill"><span class="dot hallucination"></span>' + (b.HALLUCINATION||0) + ' hallucinated</span>' +
-    '<span class="pill"><span class="dot wrong_spec"></span>' + (b.WRONG_SPEC||0) + ' wrong spec</span>' +
-    '<span class="pill"><span class="dot refused"></span>' + (b.REFUSED||0) + ' refused</span>' +
-    (b.ERROR ? '<span class="pill"><span class="dot error"></span>' + b.ERROR + ' error</span>' : "");
+  const vis = result.visibility_score != null ? result.visibility_score : (result.score || 0);
+  const sa = result.source_authority_score != null ? result.source_authority_score : 0;
+  const visCls = colorClass(vis);
+  const saCls = colorClass(sa);
 
-  const agents = result.agents || [];
+  const rows = result.rows || [];
+  const total = result.total_queries || rows.length;
+  const correct = result.correct_queries != null ? result.correct_queries : (result.correct_cells || 0);
+  const mfgCorrect = result.manufacturer_correct != null ? result.manufacturer_correct : 0;
+
+  const host = result.host || result.company || "(unknown)";
+
   let rowsHtml = "";
-  (result.rows || []).forEach(function(row, ri){
-    let cellsHtml = "";
-    agents.forEach(function(agent){
-      const cell = (row.agents || {})[agent] || {};
-      const cat = (cell.category || "ERROR").toUpperCase();
-      cellsHtml += '<td class="cell" data-row="' + ri + '" data-agent="' + escapeHtml(agent) + '">' +
-        '<span class="cell-tag ' + tagClass(cat) + '">' + cat.toLowerCase().replace("_"," ") + '</span>' +
-        '<span class="cell-rationale">' + escapeHtml((cell.rationale || "").slice(0, 140)) + '</span>' +
-      '</td>';
-    });
-    rowsHtml += '<tr><td class="q">' + escapeHtml(row.query) + '</td>' + cellsHtml + '</tr>';
+  rows.forEach(function(row, ri){
+    // Support both v2 schema (single agent) and legacy v1 (multi-agent matrix)
+    let cat, badges, summary;
+    if (row.category) {
+      // v2
+      cat = (row.category || "ERROR").toUpperCase();
+      const counts = row.attribution ? row.attribution.counts : {};
+      badges = fmtCounts(counts) || '<span class="source-badge none">no sources</span>';
+      summary = (row.rationale || "").slice(0, 160);
+    } else {
+      // v1 legacy: aggregate
+      const agentObj = row.agents || {};
+      const agentNames = Object.keys(agentObj);
+      const cats = agentNames.map(function(n){ return (agentObj[n].category || "ERROR").toUpperCase(); });
+      const correctCount = cats.filter(function(c){ return c === "CORRECT"; }).length;
+      cat = correctCount > 0 ? "CORRECT" : (cats.indexOf("HALLUCINATION") >= 0 ? "HALLUCINATION" : (cats[0] || "ERROR"));
+      badges = '<span class="source-badge other">' + correctCount + '/' + cats.length + ' agents</span>';
+      summary = "";
+    }
+
+    rowsHtml +=
+      '<tr class="row" data-ri="' + ri + '">' +
+        '<td class="q">' + escapeHtml(row.query) + '</td>' +
+        '<td><span class="cell-tag ' + tagClass(cat) + '">' + cat.toLowerCase().replace("_"," ") + '</span></td>' +
+        '<td><div class="source-badges">' + badges + '</div></td>' +
+      '</tr>';
   });
 
   const html =
-    '<div class="score-card">' +
-      '<div class="score-num ' + cls + '">' + result.score + '</div>' +
-      '<div class="score-meta">' +
-        '<h2>' + escapeHtml(result.company) + ' visibility score</h2>' +
-        '<p>' + result.correct_cells + ' of ' + result.total_cells + ' agent answers were verifiably correct.</p>' +
-        '<div class="breakdown">' + breakdownHtml + '</div>' +
+    '<div class="scores-row">' +
+      '<div class="score-card primary">' +
+        '<div class="score-label">Source Authority</div>' +
+        '<div class="score-num ' + saCls + '">' + sa + '<span class="denom">/100</span></div>' +
+        '<div class="score-fraction">' + mfgCorrect + ' of ' + correct + ' correct answers cited the manufacturer\'s own domain.</div>' +
+        '<div class="score-explainer">When AI gets your products right, does it cite YOU or a distributor / marketplace? Most manufacturers score near zero. This is the wedge.</div>' +
+      '</div>' +
+      '<div class="score-card">' +
+        '<div class="score-label">Visibility</div>' +
+        '<div class="score-num ' + visCls + '">' + vis + '<span class="denom">/100</span></div>' +
+        '<div class="score-fraction">' + correct + ' of ' + total + ' procurement queries got a verifiable correct answer.</div>' +
+        '<div class="score-explainer">How often does grounded Gemini answer real procurement questions about your products correctly? Higher is better.</div>' +
       '</div>' +
     '</div>' +
+    '<div class="meta-row">' +
+      '<span><strong>Domain:</strong> ' + escapeHtml(host) + '</span>' +
+      (result.elapsed_seconds ? '<span><strong>Run:</strong> ' + result.elapsed_seconds + 's</span>' : '') +
+      '<span><strong>Engine:</strong> ' + escapeHtml(result.engine_version || "v1-legacy") + '</span>' +
+      '<span style="margin-left:auto">Click any row for the agent\'s full response and source URLs</span>' +
+    '</div>' +
     '<table class="matrix">' +
-      '<thead><tr><th>Procurement query</th>' +
-        agents.map(function(a){ return '<th>' + escapeHtml(a) + '</th>'; }).join("") +
-      '</tr></thead>' +
+      '<thead><tr><th>Procurement query</th><th>Verdict</th><th>Sources cited</th></tr></thead>' +
       '<tbody>' + rowsHtml + '</tbody>' +
-    '</table>' +
-    '<div class="meta-bar">' +
-      '<span><strong>Run:</strong> ' + (result.run_date || "Apr-May 2026") + '</span>' +
-      '<span><strong>Wall time:</strong> ' + (result.elapsed_seconds || "?") + 's</span>' +
-      '<span><strong>Agents:</strong> ' + escapeHtml(agents.join(", ")) + '</span>' +
-      '<span style="margin-left:auto">Click any cell to see the full agent response and ground truth.</span>' +
-    '</div>';
+    '</table>';
 
   $("results").innerHTML = html;
   $("results").style.display = "block";
-
-  document.querySelectorAll(".cell").forEach(function(td){
-    td.addEventListener("click", function(){ openModal(parseInt(td.dataset.row), td.dataset.agent); });
+  document.querySelectorAll("table.matrix tr.row").forEach(function(tr){
+    tr.addEventListener("click", function(){ openModal(parseInt(tr.dataset.ri)); });
   });
 }
 
-function openModal(ri, agent) {
+function openModal(ri) {
   const row = lastResult.rows[ri];
-  const cell = (row.agents || {})[agent] || {};
+  // v2 path
+  if (row.category) {
+    const agent = row.agent || {};
+    const attr = row.attribution || {};
+    const domains = attr.domains || [];
+    const sourcesHtml = domains.length
+      ? '<div class="sources">' + domains.map(function(d){
+          return '<a href="' + escapeHtml(d.uri) + '" target="_blank" rel="noopener">' +
+            '<span class="source-badge ' + (d.class || "other") + '">' + (d["class"] || "other") + '</span>' +
+            escapeHtml(d.host || d.title || d.uri) +
+          '</a>';
+        }).join("") + '</div>'
+      : '<p style="color:var(--muted);font-size:13px">No sources returned by Gemini.</p>';
+    const html =
+      '<button class="modal-close" onclick="closeModal()">&times;</button>' +
+      '<h3>Procurement query</h3>' +
+      '<h2>' + escapeHtml(row.query) + '</h2>' +
+      '<section>' +
+        '<h4>Verdict</h4>' +
+        '<span class="cell-tag ' + tagClass(row.category) + '">' + (row.category || "").toLowerCase().replace("_"," ") + '</span>' +
+        '<p style="margin:10px 0 0;color:var(--muted);font-size:14px">' + escapeHtml(row.rationale || "") + '</p>' +
+      '</section>' +
+      '<section>' +
+        '<h4>Grounded Gemini response</h4>' +
+        '<pre>' + escapeHtml(agent.text || agent.error || "(no response)") + '</pre>' +
+      '</section>' +
+      '<section>' +
+        '<h4>Source URLs cited (' + domains.length + ')</h4>' +
+        sourcesHtml +
+      '</section>';
+    $("modal-body").innerHTML = html;
+    $("modal").classList.add("open");
+    return;
+  }
+  // v1 legacy modal
+  const agentObj = row.agents || {};
+  const agentNames = Object.keys(agentObj);
+  const sectionsHtml = agentNames.map(function(name){
+    const cell = agentObj[name];
+    const cat = (cell.category || "ERROR").toUpperCase();
+    return '<section>' +
+      '<h4>' + escapeHtml(name) + '</h4>' +
+      '<span class="cell-tag ' + tagClass(cat) + '">' + cat.toLowerCase().replace("_"," ") + '</span>' +
+      '<pre style="margin-top:10px">' + escapeHtml(cell.text || cell.error || "(no response)") + '</pre>' +
+    '</section>';
+  }).join("");
   const gt = row.ground_truth || {};
-  const sourcesHtml = (gt.sources && gt.sources.length)
-    ? '<div class="sources">' + gt.sources.map(function(s){
-        return '<a href="' + escapeHtml(s.uri) + '" target="_blank" rel="noopener">' + escapeHtml(s.title || s.uri) + '</a>';
-      }).join("") + '</div>'
-    : '<p style="color:var(--muted);font-size:13px">No sources returned.</p>';
   const html =
     '<button class="modal-close" onclick="closeModal()">&times;</button>' +
-    '<h3>' + escapeHtml(agent) + '</h3>' +
+    '<h3>Procurement query (legacy v1 cache)</h3>' +
     '<h2>' + escapeHtml(row.query) + '</h2>' +
-    '<section>' +
-      '<h4>Verdict</h4>' +
-      '<span class="cell-tag ' + tagClass(cell.category) + '">' + (cell.category || "ERROR").toLowerCase().replace("_"," ") + '</span>' +
-      '<p style="margin:8px 0 0;color:var(--muted);font-size:14px">' + escapeHtml(cell.rationale || "") + '</p>' +
-    '</section>' +
-    '<section>' +
-      '<h4>Agent response</h4>' +
-      '<pre>' + escapeHtml(cell.text || cell.error || "(no response)") + '</pre>' +
-    '</section>' +
-    '<section>' +
-      '<h4>Ground truth (Gemini search-grounded)</h4>' +
-      '<pre>' + escapeHtml(gt.text || gt.error || "(unavailable)") + '</pre>' +
-    '</section>' +
-    '<section>' +
-      '<h4>Sources</h4>' +
-      sourcesHtml +
-    '</section>';
+    sectionsHtml +
+    '<section><h4>Ground truth</h4><pre>' + escapeHtml(gt.text || "(unavailable)") + '</pre></section>';
   $("modal-body").innerHTML = html;
   $("modal").classList.add("open");
 }
 function closeModal() { $("modal").classList.remove("open"); }
 $("modal").addEventListener("click", function(e){ if (e.target.id === "modal") closeModal(); });
 
-async function run() {
-  const company = $("company").value.trim();
-  if (!company) return;
+// ----- Live run via /analyze + /status polling -----
+async function runLive(input) {
   $("go").disabled = true;
   $("results").style.display = "none";
-  setStatus({ message: "Loading " + company + "…" });
+  setStatus({ message: "Starting...", percent: 5, meta: input });
   try {
-    const res = await fetch("/api/score?company=" + encodeURIComponent(company));
+    const startRes = await fetch(ENGINE_URL + "/analyze", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ url: input })
+    });
+    const startData = await startRes.json();
+    if (!startRes.ok) {
+      setStatus({ error: startData.detail || startData.error || startRes.statusText });
+      $("go").disabled = false;
+      return;
+    }
+    const jobId = startData.job_id;
+    pollStatus(jobId);
+  } catch (e) {
+    setStatus({ error: "Engine offline: " + e.message + ". Try one of the cached examples below." });
+    $("go").disabled = false;
+  }
+}
+
+async function pollStatus(jobId) {
+  if (pollHandle) clearTimeout(pollHandle);
+  try {
+    const res = await fetch(ENGINE_URL + "/status/" + jobId);
     const data = await res.json();
-    if (!res.ok) {
-      if (data.available) {
-        setStatus({ info:
-          "<strong>No cached run for &quot;" + escapeHtml(company) + "&quot; yet.</strong>" +
-          "<div style=\"margin-top:8px;color:var(--muted)\">This is a v0 demo with pre-computed runs. " +
-          "A live run takes ~90 seconds and we haven't queued one for this company. Try one of: " +
-          data.available.map(function(c){ return '<button class="example-btn" style="margin:0 4px 4px 0" onclick="document.getElementById(\'company\').value=\'' + c.slug + '\';document.getElementById(\'go\').click();">' + escapeHtml(c.name) + '</button>'; }).join("") +
-          "</div>"
-        });
-      } else {
-        setStatus({ error: data.error || res.statusText });
-      }
+    if (data.status === "complete") {
+      $("status").style.display = "none";
+      render(data.result);
+      $("go").disabled = false;
+      return;
+    }
+    if (data.status === "error") {
+      setStatus({ error: data.error || "Unknown engine error" });
+      $("go").disabled = false;
+      return;
+    }
+    setStatus({
+      message: data.progress || "Working...",
+      percent: pctFromProgress(data.progress),
+      meta: "Elapsed " + (data.elapsed || 0) + "s. Live runs typically finish in 60-120s.",
+    });
+    pollHandle = setTimeout(function(){ pollStatus(jobId); }, 2000);
+  } catch (e) {
+    setStatus({ error: "Lost connection: " + e.message });
+    $("go").disabled = false;
+  }
+}
+
+// ----- Cached run lookup -----
+async function loadCached(slug) {
+  $("go").disabled = true;
+  $("results").style.display = "none";
+  setStatus({ message: "Loading " + slug + " (cached)...", percent: 50 });
+  try {
+    // Try the engine first if configured, else fall back to /api/score on the same origin
+    const path = "/api/score?company=" + encodeURIComponent(slug);
+    const tryUrls = ENGINE_URL ? [ENGINE_URL + path, path] : [path];
+    let data = null, ok = false;
+    for (const u of tryUrls) {
+      try {
+        const r = await fetch(u);
+        const d = await r.json();
+        if (r.ok) { data = d; ok = true; break; }
+        data = d;
+      } catch (e) { /* try next */ }
+    }
+    if (!ok) {
+      setStatus({ error: (data && (data.error || data.detail)) || "Cache miss" });
       $("go").disabled = false;
       return;
     }
@@ -478,21 +650,87 @@ async function run() {
   }
 }
 
+// ----- Top-level "Analyze" handler -----
+function run() {
+  const v = $("company").value.trim();
+  if (!v) return;
+  // If the user typed something that matches a cached company by slug, use cache.
+  const lower = v.toLowerCase().replace(/^https?:\/\//, "").replace(/\/.*$/, "").replace(/^www\./, "");
+  const brand = lower.split(".")[0];
+  const cached = availableCompanies.find(function(c){
+    const slug = (c.slug || "").toLowerCase();
+    const host = (c.host || "").toLowerCase();
+    return slug === lower || slug === brand || host === lower;
+  });
+  if (cached) { loadCached(cached.slug); return; }
+  // Otherwise live run
+  if (!ENGINE_URL) {
+    // No live engine configured. Tell user.
+    setStatus({ info:
+      "<strong>No cached run for &quot;" + escapeHtml(v) + "&quot; yet.</strong>" +
+      "<div style=\"margin-top:8px;color:var(--muted)\">This Vercel deploy is cache-only. " +
+      "Live runs are served by the Render engine (configure <code>ULTRARELEVANT_ENGINE_URL</code>). " +
+      "For now, try one of the cached companies above.</div>"
+    });
+    return;
+  }
+  runLive(v);
+}
+
 $("go").addEventListener("click", run);
 $("company").addEventListener("keydown", function(e){ if (e.key === "Enter") run(); });
 
-// Load list of available cached companies
-fetch("/api/list").then(function(r){ return r.json(); }).then(function(data){
-  availableCompanies = data.companies || [];
-  renderExamples();
-  // Auto-load igus if URL has ?company=, else show landing
+// ----- Favicon / resolved-host preview -----
+(function(){
+  var debounceTimer = null;
+  function resolveHost(raw) {
+    var s = raw.trim();
+    if (!s) return null;
+    if (!/^https?:\/\//i.test(s)) s = "https://" + s;
+    try {
+      var h = new URL(s).hostname;
+      return h.replace(/^www\./, "") || null;
+    } catch (_) { return null; }
+  }
+  function updatePreview() {
+    var host = resolveHost($("company").value);
+    var preview = $("domain-preview");
+    if (!host) { preview.classList.remove("visible"); return; }
+    $("preview-host").textContent = host;
+    $("preview-favicon").src = "https://www.google.com/s2/favicons?domain=" + encodeURIComponent(host) + "&sz=64";
+    preview.classList.add("visible");
+  }
+  $("company").addEventListener("input", function() {
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(updatePreview, 400);
+  });
+})();
+
+// ----- Load cached company list -----
+async function loadList() {
+  const tryUrls = ENGINE_URL ? [ENGINE_URL + "/api/list", "/api/list"] : ["/api/list"];
+  for (const u of tryUrls) {
+    try {
+      const r = await fetch(u);
+      if (!r.ok) continue;
+      const d = await r.json();
+      availableCompanies = d.companies || [];
+      renderExamples();
+      return;
+    } catch (e) { /* try next */ }
+  }
+  $("examples").innerHTML = '<div style="color:var(--muted);font-size:13px">Cached runs unavailable.</div>';
+}
+
+loadList().then(function(){
+  // Auto-load if URL has ?url= or ?company=
   const params = new URLSearchParams(location.search);
-  const auto = params.get("company");
+  const auto = params.get("url") || params.get("company");
   if (auto) {
     $("company").value = auto;
     run();
   }
-}).catch(function(){});
+});
 </script>
 </body>
 </html>
