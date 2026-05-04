@@ -6,3 +6,6 @@ __pycache__/
 .env
 .env.local
 .DS_Store
+.vercel
+.playwright-mcp/
+visibility-after-analyze.png
