@@ -141,8 +141,12 @@ def domain_root(host: str) -> str:
         return host
     two_part_tlds = {
         "co.uk", "co.jp", "co.kr", "co.in", "co.za", "co.nz",
+        "co.id", "co.th",
         "com.au", "com.br", "com.cn", "com.mx", "com.tr",
-        "ne.jp", "ac.uk", "gov.uk", "org.uk",
+        "com.sg", "com.my", "com.ph", "com.vn", "com.hk", "com.tw",
+        "or.jp", "ne.jp", "ac.jp", "ad.jp",
+        "or.kr", "re.kr",
+        "ac.uk", "gov.uk", "org.uk",
     }
     last_two = ".".join(parts[-2:])
     if last_two in two_part_tlds and len(parts) >= 3:
