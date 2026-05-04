@@ -732,10 +732,31 @@ def api_score(company: str | None = None, host: str | None = None) -> JSONRespon
 
 
 # CORS for static frontends pointing at this engine
+_CORS_ALLOWED_ORIGINS = {
+    "https://demo.ultrarelevant.com",
+    "https://ultrarelevant-visibility.vercel.app",
+}
+_CORS_VERCEL_PATTERN = re.compile(r"^https://[a-zA-Z0-9-]+-[a-zA-Z0-9-]+\.vercel\.app$")
+
+
+def _cors_origin(request) -> str | None:
+    origin = request.headers.get("origin", "")
+    if not origin:
+        return None
+    if origin in _CORS_ALLOWED_ORIGINS:
+        return origin
+    if _CORS_VERCEL_PATTERN.match(origin):
+        return origin
+    return None
+
+
 @app.middleware("http")
 async def cors_middleware(request, call_next):
+    allowed_origin = _cors_origin(request)
     response = await call_next(request)
-    response.headers["Access-Control-Allow-Origin"] = "*"
+    if allowed_origin:
+        response.headers["Access-Control-Allow-Origin"] = allowed_origin
+        response.headers["Vary"] = "Origin"
     response.headers["Access-Control-Allow-Methods"] = "GET, POST, OPTIONS"
     response.headers["Access-Control-Allow-Headers"] = "Content-Type"
     return response
