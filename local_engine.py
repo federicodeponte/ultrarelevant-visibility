@@ -98,7 +98,7 @@ DISTRIBUTOR_DOMAINS = {
     "grainger.com", "msc.com", "mscdirect.com", "fastenal.com",
     "wuerth.com", "wuerth.de", "hoffmann-group.com", "hahn-kolb.de",
     # Bearings / power transmission specialist distributors
-    "boca-bearings.com", "bearings-direct.com", "bearings.com.au", "skf.com",
+    "boca-bearings.com", "bearings-direct.com", "bearings.com.au",
     # German MRO
     "kaiser-kraft.de", "manomano.de", "schaefer-shop.de",
 }
