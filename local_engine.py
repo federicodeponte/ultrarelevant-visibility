@@ -1,44 +1,48 @@
 """
-UltraRelevant Visibility Tool — Floom port (async polling)
+UltraRelevant Visibility Tool — v2 (URL input, Gemini-grounded, source-attributed)
 
-Measures how visible / how correct a company's product data is when AI agents
-are queried. Three agents:
+Honest engine: ONE agent (Gemini 3 Pro with Google Search grounding). No multi-agent
+matrix dressing. The wedge is source attribution — when an AI gets the answer right,
+who did it cite? The manufacturer's own site, or a distributor / marketplace?
 
-  1. Gemini 3 Pro      (gemini-3-pro-preview)
-  2. Gemini 2.5 Flash  (gemini-2.5-flash)
-  3. NVIDIA gpt-oss-120b (openai/gpt-oss-120b via NIM)
+Pipeline:
+  1. URL in (e.g. https://igus.de). Extract canonical manufacturer domain.
+  2. Discover the company's products via grounded Gemini visiting the URL.
+  3. Generate 5 procurement-style queries.
+  4. Run each query through Gemini Pro WITH google_search grounding. Capture answer
+     text + grounding source URLs.
+  5. Source attribution per query: classify each source URL as
+     manufacturer / distributor / marketplace / other (against the input domain
+     and a maintained distributor list).
+  6. Categorize each answer: CORRECT / HALLUCINATION / REFUSED / WRONG_SPEC.
+     Judge is Gemini Pro grounded — uses search to verify the answer independently.
+  7. Score:
+       Visibility Score        = % of queries with CORRECT answers
+       Source Authority Score  = % of CORRECT answers where ALL/MAJORITY sources
+                                 were the manufacturer's own domain (not distributor /
+                                 marketplace).
 
-Pipeline (one LLM call per stage, parallelized across cells):
-  1. Generate plausible procurement queries (Gemini 3 Pro)
-  2. Query 3 agents per query (3 x 3 = 9 cells)
-  3. Fetch ground truth via Gemini search grounding (per query)
-  4. Categorize each cell vs ground truth (Gemini 2.5 Flash as judge)
-  5. Score: correct_count / total_cells * 100
-
-Async polling protocol (in-app, not Floom job queue):
-  - POST /analyze     -> {job_id, status: "pending"}             (<1s)
-  - GET /status/<id>  -> {status, progress, result?}             (poll every 2s)
-  - GET /             -> serves index.html
-  - GET /health       -> {ok, keys: {gemini, nvidia}}
-
-Run locally:
-  python3 floom_app.py
-  # or: uvicorn floom_app:app --host 0.0.0.0 --port 8766
-
-The Floom runtime exposes secrets as env vars; reading via context.get_secret()
-when available, else direct os.environ + ~/.config/ai-sidecar/keys.json fallback
-for local dev.
+Async polling protocol:
+  POST /analyze     -> {job_id, status: "pending"}
+  GET /status/<id>  -> {status, progress, result?}
+  GET /             -> serves index.html
+  GET /api/list     -> cached "popular companies" demos
+  GET /api/score    -> cached single-company lookup (read-only)
+  GET /health       -> {ok, keys}
 """
 from __future__ import annotations
 
 import json
 import os
+import re
+import socket
 import threading
 import time
 import traceback
 import uuid
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
+from urllib.parse import urlparse
 
 import requests
 import uvicorn
@@ -52,26 +56,8 @@ KEYS_PATH = Path.home() / ".config" / "ai-sidecar" / "keys.json"
 
 # ---------- Key loading ----------
 def _load_secret(name: str, *fallback_keys: str) -> str | None:
-    """Resolve a secret from (in order):
-    1. floom context.get_secret if running inside Floom runtime
-    2. environment variable
-    3. ~/.config/ai-sidecar/keys.json (local dev)
-    """
-    # 1) floom SDK
-    try:
-        from floom import context as _ctx  # type: ignore
-        try:
-            return _ctx.get_secret(name)
-        except Exception:
-            pass
-    except Exception:
-        pass
-
-    # 2) env
     if os.environ.get(name):
         return os.environ[name]
-
-    # 3) local keys file
     if KEYS_PATH.exists():
         try:
             data = json.loads(KEYS_PATH.read_text())
@@ -84,18 +70,148 @@ def _load_secret(name: str, *fallback_keys: str) -> str | None:
 
 
 GEMINI_KEY = _load_secret("GEMINI_API_KEY", "gemini_paid", "gemini")
-NVIDIA_KEY = _load_secret("NVIDIA_API_KEY", "nvidia")
-
 GEMINI_PRO_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-preview:generateContent"
-GEMINI_FLASH_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
-NVIDIA_URL = "https://integrate.api.nvidia.com/v1/chat/completions"
-MODEL_NVIDIA = "openai/gpt-oss-120b"
 
-AGENTS = ["Gemini 3 Pro", "Gemini 2.5 Flash", "GPT-OSS-120B"]
+
+# ---------- Domain handling ----------
+# Common B2B distributors / marketplaces. Source domains classified against this list.
+DISTRIBUTOR_DOMAINS = {
+    # Industrial / electronics distributors
+    "tme.eu", "tme.com", "rs-online.com", "rsdelivers.com", "rs-components.com",
+    "misumi.com", "misumi-ec.com", "misumiusa.com", "mouser.com", "mouser.de",
+    "digikey.com", "digikey.de", "farnell.com", "uk.farnell.com", "newark.com",
+    "element14.com", "octopart.com", "findchips.com",
+    "cebeo.be", "rexel.com", "rexel.de", "sonepar.com", "sonepar.de",
+    "hennlich.com", "hennlich.de", "conrad.com", "conrad.de", "voelkner.de",
+    "reichelt.com", "reichelt.de", "distrelec.com", "buerklin.com",
+    "automation24.com", "automation24.de",
+    # Industrial wholesalers
+    "grainger.com", "msc.com", "mscdirect.com", "fastenal.com",
+    "wuerth.com", "wuerth.de", "hoffmann-group.com", "hahn-kolb.de",
+    # Bearings / power transmission specialist distributors
+    "boca-bearings.com", "bearings-direct.com", "bearings.com.au", "skf.com",
+    # German MRO
+    "kaiser-kraft.de", "manomano.de", "schaefer-shop.de",
+}
+
+MARKETPLACE_DOMAINS = {
+    "amazon.com", "amazon.de", "amazon.co.uk", "amazon.fr", "amazon.it", "amazon.es",
+    "alibaba.com", "1688.com", "aliexpress.com", "ebay.com", "ebay.de",
+    "tradeindia.com", "indiamart.com", "made-in-china.com",
+    "globalsources.com", "thomasnet.com",
+}
+
+
+def normalize_input_to_domain(value: str) -> str:
+    """Accept a URL or bare domain. Return canonical lowercase host (no www., no path)."""
+    v = value.strip()
+    if not v:
+        raise ValueError("empty input")
+    # If user typed a domain without scheme, add one for urlparse.
+    if "://" not in v:
+        v = "https://" + v
+    parsed = urlparse(v)
+    host = (parsed.hostname or "").lower()
+    if not host:
+        raise ValueError(f"could not extract host from: {value}")
+    if host.startswith("www."):
+        host = host[4:]
+    # Sanity: must look like a domain
+    if not re.match(r"^[a-z0-9.-]+\.[a-z]{2,}$", host):
+        raise ValueError(f"invalid domain: {host}")
+    return host
+
+
+def domain_root(host: str) -> str:
+    """Reduce 'shop.igus.com' -> 'igus.com'. Naive registrable-domain heuristic.
+
+    Handles common 2-part TLDs (co.uk, com.au, co.jp, etc.).
+    """
+    parts = host.split(".")
+    if len(parts) <= 2:
+        return host
+    two_part_tlds = {
+        "co.uk", "co.jp", "co.kr", "co.in", "co.za", "co.nz",
+        "com.au", "com.br", "com.cn", "com.mx", "com.tr",
+        "ne.jp", "ac.uk", "gov.uk", "org.uk",
+    }
+    last_two = ".".join(parts[-2:])
+    if last_two in two_part_tlds and len(parts) >= 3:
+        return ".".join(parts[-3:])
+    return ".".join(parts[-2:])
+
+
+def manufacturer_domain_variants(canonical_host: str) -> set[str]:
+    """Given igus.de, return {igus.de, igus.com, igus.eu, ...} — siblings of the
+    same brand on different TLDs. We use the registrable-domain *label* (igus)
+    and accept any TLD."""
+    root = domain_root(canonical_host)
+    # extract brand label (first part of root)
+    brand = root.split(".")[0]
+    return {brand}
+
+
+def classify_source(source_host: str, manufacturer_brand: str) -> str:
+    """Return one of: manufacturer | distributor | marketplace | other."""
+    if not source_host:
+        return "other"
+    host = source_host.lower()
+    if host.startswith("www."):
+        host = host[4:]
+    root = domain_root(host)
+    label = root.split(".")[0]
+
+    # Manufacturer match: brand label (e.g. 'igus' matches igus.de, igus.com, shop.igus.eu)
+    if label == manufacturer_brand:
+        return "manufacturer"
+    # Strip vertexaisearch redirect wrappers
+    if root in DISTRIBUTOR_DOMAINS or host in DISTRIBUTOR_DOMAINS:
+        return "distributor"
+    if root in MARKETPLACE_DOMAINS or host in MARKETPLACE_DOMAINS:
+        return "marketplace"
+    # check distributors at the registrable-domain level (handles subdomains)
+    for d in DISTRIBUTOR_DOMAINS:
+        if root == d or host.endswith("." + d):
+            return "distributor"
+    for m in MARKETPLACE_DOMAINS:
+        if root == m or host.endswith("." + m):
+            return "marketplace"
+    return "other"
+
+
+def host_from_uri(uri: str) -> str:
+    """Extract host from a URI. Gemini grounding gives vertexaisearch.cloud.google.com
+    redirect URLs — we follow them with HEAD to recover the real domain."""
+    if not uri:
+        return ""
+    try:
+        return urlparse(uri).hostname or ""
+    except Exception:
+        return ""
+
+
+def resolve_grounding_uri(uri: str, timeout: int = 5) -> str:
+    """Gemini grounding emits vertexaisearch redirect URLs. Follow them once to get
+    the real publisher domain. Falls back to the redirect host on any error."""
+    host = host_from_uri(uri)
+    if "vertexaisearch.cloud.google.com" not in host and "googleusercontent.com" not in host:
+        return host  # already a real domain
+    try:
+        r = requests.head(uri, allow_redirects=True, timeout=timeout)
+        return host_from_uri(r.url) or host
+    except Exception:
+        # try GET with stream as fallback
+        try:
+            r = requests.get(uri, allow_redirects=True, timeout=timeout, stream=True)
+            real = host_from_uri(r.url) or host
+            r.close()
+            return real
+        except Exception:
+            return host
 
 
 # ---------- LLM transport ----------
-def _gemini_call(url: str, prompt: str, grounded: bool = False, timeout: int = 120) -> dict:
+def _gemini_call(url: str, prompt: str, grounded: bool = False, timeout: int = 180) -> dict:
     """Returns {text, sources?: [{title, uri}]}"""
     if not GEMINI_KEY:
         raise RuntimeError("GEMINI_API_KEY missing")
@@ -121,139 +237,154 @@ def _gemini_call(url: str, prompt: str, grounded: bool = False, timeout: int = 1
     return {"text": text, "sources": sources}
 
 
-def call_gemini_pro(prompt: str, grounded: bool = False, timeout: int = 120) -> dict:
+def call_gemini_pro(prompt: str, grounded: bool = False, timeout: int = 180) -> dict:
     return _gemini_call(GEMINI_PRO_URL, prompt, grounded=grounded, timeout=timeout)
 
 
-def call_gemini_flash(prompt: str, grounded: bool = False, timeout: int = 120) -> dict:
-    return _gemini_call(GEMINI_FLASH_URL, prompt, grounded=grounded, timeout=timeout)
-
-
-def call_nvidia(model: str, prompt: str, system: str = "", timeout: int = 90) -> str:
-    if not NVIDIA_KEY:
-        raise RuntimeError("NVIDIA_API_KEY missing")
-    msgs = []
-    if system:
-        msgs.append({"role": "system", "content": system})
-    msgs.append({"role": "user", "content": prompt})
-    r = requests.post(
-        NVIDIA_URL,
-        headers={"Authorization": f"Bearer {NVIDIA_KEY}", "Content-Type": "application/json"},
-        json={"model": model, "messages": msgs, "max_tokens": 800, "temperature": 0.2},
-        timeout=timeout,
-    )
-    r.raise_for_status()
-    data = r.json()
-    return data["choices"][0]["message"]["content"]
+# ---------- Stage 0: Validate URL ----------
+def validate_url(url: str) -> dict:
+    """Resolve the host and confirm it answers."""
+    host = normalize_input_to_domain(url)
+    try:
+        socket.gethostbyname(host)
+    except Exception as e:
+        raise ValueError(f"could not resolve {host}: {e}")
+    return {"host": host, "url": f"https://{host}/"}
 
 
 # ---------- Stage 1: Generate queries ----------
-QUERY_GEN_PROMPT = """You are simulating a B2B procurement engineer who uses AI assistants to find the right industrial product.
+QUERY_GEN_PROMPT = """You are a B2B procurement engineer choosing real industrial products.
 
-Generate 3 plausible procurement-style queries someone would ask Claude/GPT/Gemini about products from the company "{company}".
+Visit {url} (use Google Search to learn what {host} sells — product families, catalog structure, typical part-number formats). Then generate 5 plausible procurement-style queries a buyer would ask Claude / GPT / Gemini about products from this manufacturer.
 
 Each query must:
-- Specify enough constraints that a correct answer would name a real, orderable SKU or part number from {company}
-- Be the kind of question where a wrong/hallucinated SKU would actually cost money in a real procurement workflow
-- Cover different product families if {company} has multiple lines
-- Be 1-2 sentences each. No preambles.
+- Cover a different product family if {host} has multiple lines (energy chains, bearings, motors, sensors, fasteners — whatever is real for this manufacturer).
+- Be specific enough that the right answer would name a real, orderable SKU or part number from {host}.
+- Be the kind of question where a hallucinated answer would actually cost real money (wrong part ordered, project delayed).
+- Be 1-2 sentences, plain procurement language. No preambles, no markdown.
 
-Return ONLY a JSON array of 3 strings, no commentary:
-["query 1", "query 2", "query 3"]
+Return ONLY a JSON array of 5 strings, no commentary:
+["query 1", "query 2", "query 3", "query 4", "query 5"]
 """
 
 
-def generate_queries(company: str) -> list[str]:
-    raw = call_gemini_pro(QUERY_GEN_PROMPT.format(company=company))["text"]
+def generate_queries(host: str) -> list[str]:
+    url = f"https://{host}/"
+    raw = call_gemini_pro(
+        QUERY_GEN_PROMPT.format(host=host, url=url),
+        grounded=True,
+        timeout=180,
+    )["text"]
     txt = raw.strip()
     if txt.startswith("```"):
         txt = txt.split("```")[1]
         if txt.startswith("json"):
             txt = txt[4:]
         txt = txt.strip()
+    # Pull the first JSON array out of the text in case of preamble.
+    start = txt.find("[")
+    end = txt.rfind("]")
+    if start >= 0 and end > start:
+        txt = txt[start : end + 1]
     queries = json.loads(txt)
     if not isinstance(queries, list) or len(queries) < 1:
         raise ValueError("Bad query list from Gemini")
-    return queries[:3]
+    return [str(q).strip() for q in queries[:5] if str(q).strip()]
 
 
-# ---------- Stage 2: Query agents ----------
+# ---------- Stage 2: Run grounded query ----------
 AGENT_SYSTEM = (
-    "You are answering a procurement question. If a real, orderable part number "
-    "from the manufacturer's catalog is the right answer, give it. If you cannot "
-    "answer with a specific SKU, say so plainly. Be concise (under 200 words)."
+    "You are answering a B2B procurement question. If a real, orderable part number "
+    "from a manufacturer's catalog is the right answer, give it. Use Google Search to "
+    "ground your answer in real catalog data. If you cannot answer with a specific SKU, "
+    "say so plainly. Be concise (under 200 words). Do NOT invent part numbers."
 )
 
 
-def query_agent(agent: str, prompt: str) -> dict:
+def query_agent(query: str) -> dict:
+    """Run one query through Gemini Pro with grounding. Returns text + sources."""
     try:
-        full = AGENT_SYSTEM + "\n\n" + prompt
-        if agent == "Gemini 3 Pro":
-            text = call_gemini_pro(full)["text"]
-        elif agent == "Gemini 2.5 Flash":
-            text = call_gemini_flash(full)["text"]
-        elif agent == "GPT-OSS-120B":
-            text = call_nvidia(MODEL_NVIDIA, prompt, AGENT_SYSTEM)
-        else:
-            raise ValueError(f"Unknown agent {agent}")
-        return {"agent": agent, "text": text, "error": None}
-    except Exception as e:
-        return {"agent": agent, "text": "", "error": f"{type(e).__name__}: {e}"}
-
-
-# ---------- Stage 3: Ground truth ----------
-GT_PROMPT = """You are a fact-checker. Use Google Search to find the answer to this B2B procurement question, citing the manufacturer's official catalog or authorized distributors (TME, RS, Mouser, Misumi, Octopart, etc.).
-
-Question: {q}
-
-Return:
-- The most likely correct answer (or "Unanswerable as posed" if the question is missing required inputs)
-- The real SKU/part number if applicable, with format verified against the catalog
-- A 1-2 sentence rationale
-- Source URLs
-
-Be brutally honest: if the question is under-specified or has no single correct SKU, say so. Do not invent answers."""
-
-
-def fetch_ground_truth(q: str) -> dict:
-    try:
-        result = call_gemini_pro(GT_PROMPT.format(q=q), grounded=True, timeout=180)
+        full = AGENT_SYSTEM + "\n\nQuestion: " + query
+        result = call_gemini_pro(full, grounded=True, timeout=180)
         return {"text": result["text"], "sources": result["sources"], "error": None}
     except Exception as e:
         return {"text": "", "sources": [], "error": f"{type(e).__name__}: {e}"}
 
 
+# ---------- Stage 3: Source attribution ----------
+def attribute_sources(sources: list[dict], manufacturer_brand: str) -> dict:
+    """For each source, resolve its real domain and classify it.
+
+    Returns:
+      {
+        "domains": [{"host": str, "uri": str, "title": str, "class": str}, ...],
+        "counts": {"manufacturer": n, "distributor": n, "marketplace": n, "other": n},
+        "primary": "manufacturer" | "distributor" | "marketplace" | "other" | "none",
+      }
+    """
+    domains = []
+    counts = {"manufacturer": 0, "distributor": 0, "marketplace": 0, "other": 0}
+
+    # Resolve in parallel — vertex redirect URLs need HEAD requests.
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        futs = {pool.submit(resolve_grounding_uri, s["uri"]): s for s in sources}
+        for fut in as_completed(futs):
+            s = futs[fut]
+            try:
+                real_host = fut.result()
+            except Exception:
+                real_host = host_from_uri(s["uri"])
+            cls = classify_source(real_host, manufacturer_brand)
+            counts[cls] = counts.get(cls, 0) + 1
+            domains.append({
+                "host": real_host or host_from_uri(s["uri"]),
+                "uri": s["uri"],
+                "title": s.get("title", ""),
+                "class": cls,
+            })
+    total = sum(counts.values())
+    if total == 0:
+        primary = "none"
+    else:
+        # Manufacturer wins ties. Then distributor. Then marketplace. Then other.
+        priority = ["manufacturer", "distributor", "marketplace", "other"]
+        primary = max(priority, key=lambda c: counts.get(c, 0))
+        if counts.get(primary, 0) == 0:
+            primary = "none"
+    return {"domains": domains, "counts": counts, "primary": primary, "total_sources": total}
+
+
 # ---------- Stage 4: Categorize ----------
 CATEGORIES = ["CORRECT", "HALLUCINATION", "REFUSED", "WRONG_SPEC", "ERROR"]
 
-JUDGE_SYSTEM = """You are a strict procurement judge. Given a query, an agent response, and the ground truth, classify the agent response into EXACTLY one category:
+JUDGE_SYSTEM = """You are a strict procurement judge with Google Search access. Given a query and an agent's response, independently verify whether the answer is correct.
 
-- CORRECT: The agent gave a verifiable, real, orderable SKU/answer that matches the ground truth.
-- HALLUCINATION: The agent gave a confident specific SKU/part number that does not exist in the manufacturer's catalog (wrong format, invalid concatenation, made up).
+Use Google Search to check the manufacturer's catalog and authoritative distributors (TME, RS, Mouser, Misumi, Octopart, etc.). Then classify the agent response into EXACTLY one category:
+
+- CORRECT: The agent gave a verifiable, real, orderable SKU/answer that you confirmed against the manufacturer's catalog or an authoritative distributor.
+- HALLUCINATION: The agent gave a confident specific SKU/part number that you cannot verify exists (wrong format, invalid concatenation, made up).
 - REFUSED: The agent declined to answer, deflected to "check the website", or gave only generic advice with no specific SKU.
-- WRONG_SPEC: The agent gave a number/spec that contradicts the ground truth datasheet (off by 25%+, wrong temperature point, wrong units).
+- WRONG_SPEC: The agent gave a number/spec that contradicts the catalog datasheet (off by 25%+, wrong temperature point, wrong units).
 
-Return ONLY a JSON object: {"category": "CORRECT|HALLUCINATION|REFUSED|WRONG_SPEC", "rationale": "1-2 sentences"}"""
+Return ONLY a JSON object: {"category": "CORRECT|HALLUCINATION|REFUSED|WRONG_SPEC", "rationale": "1-2 sentences citing what you found"}"""
 
-JUDGE_PROMPT_TEMPLATE = """Query: {q}
+JUDGE_PROMPT_TEMPLATE = """Manufacturer: {host}
+
+Query: {q}
 
 Agent response:
 {a}
 
-Ground truth:
-{gt}
-
-Classify. Return JSON only."""
+Independently verify the answer with Google Search. Classify. Return JSON only."""
 
 
-def categorize(q: str, agent_text: str, gt_text: str) -> dict:
+def categorize(host: str, q: str, agent_text: str) -> dict:
     if not agent_text:
         return {"category": "ERROR", "rationale": "No agent response"}
     try:
-        prompt = JUDGE_SYSTEM + "\n\n" + JUDGE_PROMPT_TEMPLATE.format(
-            q=q, a=agent_text, gt=gt_text or "(ground truth unavailable)"
-        )
-        raw = call_gemini_flash(prompt)["text"]
+        prompt = JUDGE_SYSTEM + "\n\n" + JUDGE_PROMPT_TEMPLATE.format(host=host, q=q, a=agent_text)
+        result = call_gemini_pro(prompt, grounded=True, timeout=180)
+        raw = result["text"]
         txt = raw.strip()
         if txt.startswith("```"):
             txt = txt.split("```")[1]
@@ -274,7 +405,7 @@ def categorize(q: str, agent_text: str, gt_text: str) -> dict:
 
 
 # ---------- Pipeline ----------
-def analyze_pipeline(company: str, progress_cb=None) -> dict:
+def analyze_pipeline(url_input: str, progress_cb=None) -> dict:
     started = time.time()
     log: list[str] = []
 
@@ -285,93 +416,94 @@ def analyze_pipeline(company: str, progress_cb=None) -> dict:
             progress_cb(msg)
         print(line, flush=True)
 
-    step(f"Stage 1: Generating queries for {company}")
-    queries = generate_queries(company)
+    # Stage 0: validate URL
+    info = validate_url(url_input)
+    host = info["host"]
+    brand = host.split(".")[0]  # 'igus' from 'igus.de'
+    # Strip subdomains: 'shop.igus' becomes wrong — use registrable root label
+    brand = domain_root(host).split(".")[0]
+    step(f"Stage 0: validated {host} (brand={brand})")
+
+    # Stage 1: generate queries
+    step(f"Stage 1: generating queries (grounded against {host})")
+    queries = generate_queries(host)
     step(f"  Generated {len(queries)} queries")
 
-    rows = []
-    with ThreadPoolExecutor(max_workers=12) as pool:
-        # Submit all agent calls + ground-truth fetches in parallel
-        agent_futs = {}  # fut -> (qi, agent)
-        gt_futs = {}  # fut -> qi
-        for qi, q in enumerate(queries):
-            for a in AGENTS:
-                fut = pool.submit(query_agent, a, q)
-                agent_futs[fut] = (qi, a)
-            gt_futs[pool.submit(fetch_ground_truth, q)] = qi
-
-        # Collect agent results
-        agent_results = {qi: {} for qi in range(len(queries))}
-        for fut in as_completed(agent_futs):
-            qi, a = agent_futs[fut]
-            agent_results[qi][a] = fut.result()
-        step(f"Stage 2: Collected {len(queries) * len(AGENTS)} agent responses")
-
-        # Collect ground truth
-        gt_results = {}
-        for fut in as_completed(gt_futs):
-            qi = gt_futs[fut]
-            gt_results[qi] = fut.result()
-        step(f"Stage 3: Collected {len(gt_results)} ground-truth fetches")
-
-    for qi, q in enumerate(queries):
-        rows.append(
-            {
+    # Stage 2 + 3: run grounded query, attribute sources (parallel across queries)
+    step(f"Stage 2: running {len(queries)} grounded queries against Gemini Pro")
+    rows: list[dict] = [None] * len(queries)  # type: ignore
+    with ThreadPoolExecutor(max_workers=5) as pool:
+        futs = {pool.submit(query_agent, q): (i, q) for i, q in enumerate(queries)}
+        for fut in as_completed(futs):
+            i, q = futs[fut]
+            agent_resp = fut.result()
+            attribution = attribute_sources(agent_resp.get("sources", []), brand)
+            rows[i] = {
                 "query": q,
-                "agents": agent_results[qi],
-                "ground_truth": gt_results[qi],
+                "agent": agent_resp,
+                "attribution": attribution,
             }
-        )
+    step(f"Stage 3: source attribution complete")
 
-    # Stage 4: categorize each cell
-    step("Stage 4: Categorizing cells")
-    with ThreadPoolExecutor(max_workers=9) as pool:
+    # Stage 4: categorize each row
+    step(f"Stage 4: categorizing answers")
+    with ThreadPoolExecutor(max_workers=5) as pool:
         cat_futs = {}
-        for ri, row in enumerate(rows):
-            for agent in AGENTS:
-                ar = row["agents"][agent]
-                if ar["error"]:
-                    row["agents"][agent]["category"] = "ERROR"
-                    row["agents"][agent]["rationale"] = ar["error"]
-                else:
-                    fut = pool.submit(
-                        categorize, row["query"], ar["text"], row["ground_truth"]["text"]
-                    )
-                    cat_futs[fut] = (ri, agent)
+        for i, row in enumerate(rows):
+            ar = row["agent"]
+            if ar["error"]:
+                row["category"] = "ERROR"
+                row["rationale"] = ar["error"]
+            else:
+                cat_futs[pool.submit(categorize, host, row["query"], ar["text"])] = i
         for fut in as_completed(cat_futs):
-            ri, agent = cat_futs[fut]
+            i = cat_futs[fut]
             res = fut.result()
-            rows[ri]["agents"][agent]["category"] = res["category"]
-            rows[ri]["agents"][agent]["rationale"] = res["rationale"]
+            rows[i]["category"] = res["category"]
+            rows[i]["rationale"] = res["rationale"]
 
-    # Stage 5: score
-    total = len(rows) * len(AGENTS)
-    correct = 0
+    # Stage 5: scores
+    total = len(rows)
+    correct_rows = [r for r in rows if r["category"] == "CORRECT"]
+    correct = len(correct_rows)
+    visibility = round((correct / total) * 100) if total else 0
+
+    # Source authority: of the CORRECT rows, what % had primary=manufacturer?
+    manufacturer_correct = sum(1 for r in correct_rows if r["attribution"]["primary"] == "manufacturer")
+    if correct == 0:
+        source_authority = 0
+    else:
+        source_authority = round((manufacturer_correct / correct) * 100)
+
     breakdown = {c: 0 for c in CATEGORIES}
-    per_agent = {a: {c: 0 for c in CATEGORIES} for a in AGENTS}
-    for row in rows:
-        for agent in AGENTS:
-            cat = row["agents"][agent]["category"]
-            breakdown[cat] = breakdown.get(cat, 0) + 1
-            per_agent[agent][cat] = per_agent[agent].get(cat, 0) + 1
-            if cat == "CORRECT":
-                correct += 1
-    score = round((correct / total) * 100) if total else 0
+    source_breakdown = {"manufacturer": 0, "distributor": 0, "marketplace": 0, "other": 0, "none": 0}
+    for r in rows:
+        breakdown[r["category"]] = breakdown.get(r["category"], 0) + 1
+        primary = r["attribution"]["primary"]
+        source_breakdown[primary] = source_breakdown.get(primary, 0) + 1
 
     elapsed = round(time.time() - started, 1)
-    step(f"Stage 5: Score = {score}/100 ({correct}/{total}) in {elapsed}s")
+    step(
+        f"Stage 5: visibility={visibility} ({correct}/{total}), "
+        f"source_authority={source_authority} ({manufacturer_correct}/{correct} manufacturer-sourced) "
+        f"in {elapsed}s"
+    )
 
     return {
-        "company": company,
-        "score": score,
+        "input": url_input,
+        "host": host,
+        "brand": brand,
+        "visibility_score": visibility,
+        "source_authority_score": source_authority,
+        "total_queries": total,
+        "correct_queries": correct,
+        "manufacturer_correct": manufacturer_correct,
         "breakdown": breakdown,
-        "per_agent": per_agent,
-        "total_cells": total,
-        "correct_cells": correct,
+        "source_breakdown": source_breakdown,
         "rows": rows,
-        "agents": AGENTS,
         "log": log,
         "elapsed_seconds": elapsed,
+        "engine_version": "v2-url-gemini-grounded",
     }
 
 
@@ -380,20 +512,20 @@ _jobs: dict[str, dict] = {}
 _jobs_lock = threading.Lock()
 
 
-def _run_job(job_id: str, company: str) -> None:
+def _run_job(job_id: str, url_input: str) -> None:
     def progress_cb(msg: str) -> None:
         with _jobs_lock:
             _jobs[job_id]["progress"] = msg
             _jobs[job_id]["updated_at"] = time.time()
 
     try:
-        result = analyze_pipeline(company, progress_cb=progress_cb)
+        result = analyze_pipeline(url_input, progress_cb=progress_cb)
         with _jobs_lock:
             _jobs[job_id]["status"] = "complete"
             _jobs[job_id]["result"] = result
             _jobs[job_id]["progress"] = "Done"
             _jobs[job_id]["updated_at"] = time.time()
-    except Exception as e:  # noqa: BLE001
+    except Exception as e:
         traceback.print_exc()
         with _jobs_lock:
             _jobs[job_id]["status"] = "error"
@@ -401,14 +533,60 @@ def _run_job(job_id: str, company: str) -> None:
             _jobs[job_id]["updated_at"] = time.time()
 
 
+# ---------- Cache helpers (popular companies) ----------
+CACHE_DIR = ROOT / "cache"
+
+
+def _list_cached() -> list[dict]:
+    out: list[dict] = []
+    if not CACHE_DIR.exists():
+        return out
+    for p in sorted(CACHE_DIR.glob("*.json")):
+        try:
+            d = json.loads(p.read_text())
+        except Exception:
+            continue
+        out.append({
+            "slug": p.stem,
+            "name": d.get("company") or d.get("brand") or p.stem,
+            "host": d.get("host", ""),
+            "visibility_score": d.get("visibility_score", d.get("score", 0)),
+            "source_authority_score": d.get("source_authority_score", 0),
+            "engine_version": d.get("engine_version", "v1-multi-agent"),
+        })
+    return out
+
+
+def _load_cache(slug_or_host: str) -> dict | None:
+    if not CACHE_DIR.exists():
+        return None
+    s = slug_or_host.strip().lower().replace(" ", "-")
+    # try direct slug match
+    p = CACHE_DIR / f"{s}.json"
+    if p.exists():
+        try:
+            return json.loads(p.read_text())
+        except Exception:
+            return None
+    # try host-based: igus.de -> igus
+    if "." in s:
+        brand = s.split(".")[0]
+        p2 = CACHE_DIR / f"{brand}.json"
+        if p2.exists():
+            try:
+                return json.loads(p2.read_text())
+            except Exception:
+                return None
+    return None
+
+
 # ---------- FastAPI ----------
 app = FastAPI(
     title="UltraRelevant Visibility Tool",
-    version="1.0.0",
+    version="2.0.0",
     description=(
-        "Score how visible and how correct a company's product data is when AI agents "
-        "are asked real procurement questions. Async polling: POST /analyze returns a "
-        "job_id; GET /status/<job_id> returns progress/result."
+        "URL in. Honest visibility + source-authority scores out. "
+        "Async polling: POST /analyze returns a job_id; GET /status/<job_id> returns progress/result."
     ),
     openapi_url="/openapi.json",
     docs_url="/docs",
@@ -416,17 +594,18 @@ app = FastAPI(
 
 
 class AnalyzeRequest(BaseModel):
-    company_name: str = Field(..., description="Company to analyze (e.g. 'igus', 'festo').", min_length=1, max_length=120)
+    url: str = Field(..., description="Manufacturer URL or domain (e.g. https://igus.de or igus.de).", min_length=3, max_length=400)
 
 
 class AnalyzeResponse(BaseModel):
     job_id: str
     status: str = "pending"
+    host: str | None = None
 
 
 class StatusResponse(BaseModel):
     job_id: str
-    status: str  # pending | complete | error
+    status: str
     progress: str | None = None
     elapsed: float | None = None
     result: dict | None = None
@@ -437,11 +616,8 @@ class StatusResponse(BaseModel):
 def health() -> dict:
     return {
         "ok": True,
-        "keys": {
-            "gemini": bool(GEMINI_KEY),
-            "nvidia": bool(NVIDIA_KEY),
-        },
-        "agents": AGENTS,
+        "engine": "v2-url-gemini-grounded",
+        "keys": {"gemini": bool(GEMINI_KEY)},
     }
 
 
@@ -452,20 +628,20 @@ def root() -> FileResponse:
 
 @app.post("/analyze", response_model=AnalyzeResponse)
 def analyze(body: AnalyzeRequest) -> dict:
-    company = body.company_name.strip()
-    if not company:
-        raise HTTPException(status_code=400, detail="company_name required")
     if not GEMINI_KEY:
         raise HTTPException(status_code=500, detail="GEMINI_API_KEY missing in runtime")
-    if not NVIDIA_KEY:
-        raise HTTPException(status_code=500, detail="NVIDIA_API_KEY missing in runtime")
+    try:
+        info = validate_url(body.url)
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
 
     job_id = f"job_{uuid.uuid4().hex[:12]}"
     started = time.time()
     with _jobs_lock:
         _jobs[job_id] = {
             "status": "pending",
-            "company": company,
+            "input": body.url,
+            "host": info["host"],
             "started_at": started,
             "updated_at": started,
             "progress": "Queued",
@@ -473,8 +649,8 @@ def analyze(body: AnalyzeRequest) -> dict:
             "error": None,
         }
 
-    threading.Thread(target=_run_job, args=(job_id, company), daemon=True).start()
-    return {"job_id": job_id, "status": "pending"}
+    threading.Thread(target=_run_job, args=(job_id, body.url), daemon=True).start()
+    return {"job_id": job_id, "status": "pending", "host": info["host"]}
 
 
 @app.get("/status/{job_id}", response_model=StatusResponse)
@@ -494,9 +670,41 @@ def status(job_id: str) -> dict:
     }
 
 
+@app.get("/api/list")
+def api_list() -> dict:
+    """Cached "popular companies" demos. Static; loaded from cache/*.json."""
+    return {"companies": sorted(_list_cached(), key=lambda c: c.get("visibility_score", 0))}
+
+
+@app.get("/api/score")
+def api_score(company: str | None = None, host: str | None = None) -> JSONResponse:
+    """Look up a cached run by slug, brand, or host. Read-only."""
+    key = (company or host or "").strip()
+    if not key:
+        return JSONResponse({"error": "company or host required", "available": _list_cached()}, status_code=400)
+    d = _load_cache(key)
+    if not d:
+        return JSONResponse({"error": f"no cached run for '{key}'", "available": _list_cached()}, status_code=404)
+    return JSONResponse(d)
+
+
+# CORS for static frontends pointing at this engine
+@app.middleware("http")
+async def cors_middleware(request, call_next):
+    response = await call_next(request)
+    response.headers["Access-Control-Allow-Origin"] = "*"
+    response.headers["Access-Control-Allow-Methods"] = "GET, POST, OPTIONS"
+    response.headers["Access-Control-Allow-Headers"] = "Content-Type"
+    return response
+
+
+@app.options("/{full_path:path}")
+def options_handler(full_path: str) -> JSONResponse:
+    return JSONResponse({}, status_code=200)
+
+
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", "8766"))
     print(f"GEMINI_API_KEY: {'set' if GEMINI_KEY else 'MISSING'}")
-    print(f"NVIDIA_API_KEY: {'set' if NVIDIA_KEY else 'MISSING'}")
-    print(f"Server starting on http://0.0.0.0:{port}/")
+    print(f"Engine v2 starting on http://0.0.0.0:{port}/")
     uvicorn.run(app, host="0.0.0.0", port=port, log_level="info")

@@ -1,27 +1,27 @@
-# Render.com deploy config — alternative to Vercel.
-# Use this if you want live runs (Render web services have no per-request timeout).
-# Bring your own keys via Render env vars.
+# Render.com deploy config — UltraRelevant Visibility v2 (URL input, grounded Gemini).
+#
+# This is the LIVE engine. Render web services have no per-request timeout, so the
+# 60-120s grounded pipeline finishes inside one HTTP cycle with the async polling
+# protocol (POST /analyze -> GET /status/<id>).
 #
 # To deploy:
-#   1. Create a new Render account / project from this repo (private).
-#   2. Add env vars: GEMINI_API_KEY, NVIDIA_API_KEY (and OPENROUTER_API_KEY if needed).
-#   3. Render auto-builds and deploys. URL will be https://ultrarelevant-visibility.onrender.com.
+#   1. Push this branch to the public repo.
+#   2. In Render dashboard, create a new Web Service from this repo.
+#   3. Add env var GEMINI_API_KEY (read from ~/.config/ai-sidecar/keys.json -> gemini_paid).
+#   4. Render builds and deploys. Default URL: https://ultrarelevant-visibility.onrender.com.
+#   5. Optional: add ultrarelevant.com subdomain via Render custom domains.
 #
-# Note: this serves the FastAPI engine at local_engine.py (the live pipeline).
-# The current Vercel deploy (cache-only) lives in vercel.json + api/.
+# The Vercel deploy at ultrarelevant-visibility.vercel.app remains for the static UI
+# and cached "popular companies" lookups. Live URL inputs hit this Render engine.
 services:
   - type: web
     name: ultrarelevant-visibility
     runtime: python
-    plan: starter
+    plan: free
     region: frankfurt
     buildCommand: pip install fastapi uvicorn requests pydantic
     startCommand: uvicorn local_engine:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: GEMINI_API_KEY
-        sync: false
-      - key: NVIDIA_API_KEY
-        sync: false
-      - key: OPENROUTER_API_KEY
         sync: false
     healthCheckPath: /health
