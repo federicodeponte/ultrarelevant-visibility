@@ -667,6 +667,52 @@ def status(job_id: str) -> dict:
     }
 
 
+# ---------- Cache endpoints ----------
+_list_cache: dict | None = None
+_list_cache_lock = threading.Lock()
+
+
+@app.get("/api/list")
+def api_list() -> dict:
+    """Return lightweight summary of all cached company runs for chip rendering."""
+    global _list_cache
+    with _list_cache_lock:
+        if _list_cache is not None:
+            return _list_cache
+    cache_dir = ROOT / "cache"
+    companies = []
+    if cache_dir.is_dir():
+        for p in sorted(cache_dir.glob("*.json")):
+            try:
+                d = json.loads(p.read_text())
+                companies.append({
+                    "slug": d.get("slug", p.stem),
+                    "display_name": d.get("display_name", p.stem),
+                    "host": d.get("host", ""),
+                    "visibility_score": d.get("visibility_score", 0),
+                    "source_authority_score": d.get("source_authority_score", 0),
+                })
+            except Exception:
+                pass
+    result = {"companies": companies}
+    with _list_cache_lock:
+        _list_cache = result
+    return result
+
+
+@app.get("/api/score")
+def api_score(company: str) -> dict:
+    """Return full cached result for a given company slug."""
+    if not re.match(r"^[a-z0-9-]+$", company):
+        raise HTTPException(status_code=400, detail="invalid slug")
+    cache_file = ROOT / "cache" / f"{company}.json"
+    if not cache_file.exists():
+        raise HTTPException(status_code=404, detail=f"no cached result for: {company}")
+    try:
+        return json.loads(cache_file.read_text())
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"cache read error: {_safe_err(e)}")
+
 
 # CORS for static frontends pointing at this engine
 _CORS_ALLOWED_ORIGINS = {
