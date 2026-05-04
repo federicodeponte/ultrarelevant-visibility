@@ -548,7 +548,6 @@ def analyze_pipeline(url_input: str, progress_cb=None) -> dict:
         "rows": rows,
         "log": log,
         "elapsed_seconds": elapsed,
-        "engine_version": "v2-url-gemini-grounded",
     }
 
 
@@ -614,7 +613,7 @@ class StatusResponse(BaseModel):
 def health() -> dict:
     return {
         "ok": True,
-        "engine": "v2-url-gemini-grounded",
+        "engine": "ultrarelevant",
         "keys": {"gemini": bool(GEMINI_KEY)},
     }
 
@@ -708,5 +707,5 @@ def options_handler(full_path: str) -> JSONResponse:
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", "8766"))
     print(f"GEMINI_API_KEY: {'set' if GEMINI_KEY else 'MISSING'}")
-    print(f"Engine v2 starting on http://0.0.0.0:{port}/")
+    print(f"Engine starting on http://0.0.0.0:{port}/")
     uvicorn.run(app, host="0.0.0.0", port=port, log_level="info")
