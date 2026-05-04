@@ -139,28 +139,7 @@
 
   .hint { color: var(--muted); font-size: 13px; margin: 14px auto 0; text-align: center; max-width: 640px; }
 
-  .examples {
-    display: flex; gap: 8px; flex-wrap: wrap; margin-top: 22px;
-    justify-content: center; max-width: 760px; margin-left: auto; margin-right: auto;
-  }
-  .example-btn {
-    display: inline-flex; align-items: center; gap: 8px;
-    background: #ffffff; color: var(--fg);
-    border: 1px solid var(--line); padding: 7px 13px;
-    border-radius: 999px; font: inherit; font-size: 13px; font-weight: 500;
-    cursor: pointer; transition: all 0.15s;
-  }
-  .example-btn:hover { border-color: var(--secondary); background: #f8faff; color: var(--secondary); }
-  .example-btn .score-tag {
-    display: inline-block;
-    padding: 1px 8px; border-radius: 999px;
-    font-size: 11px; font-weight: 600;
-    background: #fef0d4; color: #8a4a07;
-  }
-  .example-btn .score-tag.green { background: #d1f5e4; color: #0a6b48; }
-  .example-btn .score-tag.red { background: #ffe4ec; color: #9f1239; }
-
-  .status {
+.status {
     margin: 28px auto 0; max-width: 760px; padding: 18px 22px;
     background: var(--card); border: 1px solid var(--line); border-radius: 14px;
     color: var(--fg); font-size: 14px;
@@ -317,9 +296,7 @@
     <img id="preview-favicon" class="preview-favicon" src="" alt="" />
     <span>We'll analyze <strong id="preview-host" class="preview-host"></strong></span>
   </div>
-  <p class="hint">Live run takes 60-120 seconds. Or click a popular company below for an instant cached run.</p>
-
-  <div id="examples" class="examples"></div>
+  <p class="hint">Live run takes 60-120 seconds.</p>
 </section>
 
 <div id="status" class="status" style="display:none"></div>
@@ -327,7 +304,7 @@
 <div id="results" class="results" style="display:none"></div>
 
 <footer>
-  <div>v2 honest engine: 5 procurement queries, grounded Gemini Pro, source-attributed citations. Pre-computed scores load instantly.</div>
+  <div>v2 honest engine: 5 procurement queries, grounded Gemini Pro, source-attributed citations.</div>
   <div style="margin-top:6px"><a href="https://github.com/federicodeponte/ultrarelevant-visibility" target="_blank" rel="noopener">GitHub</a> &middot; one Gemini agent, no multi-model dressing &middot; built for the YC application</div>
 </footer>
 </div>
@@ -363,7 +340,6 @@ function escapeHtml(s) {
 }
 
 let lastResult = null;
-let availableCompanies = [];
 let pollHandle = null;
 
 function setStatus(opts) {
@@ -387,23 +363,6 @@ function setStatus(opts) {
       '<div class="progress-bar"><div class="progress-bar-fill" style="width:' + pct + '%"></div></div>' +
       '<div class="progress-meta">' + escapeHtml(opts.meta || "") + '</div>' +
     '</div>';
-}
-
-function renderExamples() {
-  const el = $("examples");
-  if (!availableCompanies.length) { el.innerHTML = '<div style="color:var(--muted);font-size:13px">Loading cached runs...</div>'; return; }
-  el.innerHTML = availableCompanies.map(function(c){
-    const score = c.visibility_score != null ? c.visibility_score : (c.score || 0);
-    const cls = score >= 70 ? "green" : (score >= 30 ? "" : "red");
-    const slug = c.slug || c.host || c.name;
-    return '<button class="example-btn" data-slug="' + escapeHtml(slug) + '">' +
-      escapeHtml(c.name) + ' <span class="score-tag ' + cls + '">' + score + '</span></button>';
-  }).join("");
-  el.querySelectorAll(".example-btn").forEach(function(btn){
-    btn.addEventListener("click", function(){
-      loadCached(btn.dataset.slug);
-    });
-  });
 }
 
 function pctFromProgress(msg) {
@@ -555,7 +514,7 @@ function openModal(ri) {
   const gt = row.ground_truth || {};
   const html =
     '<button class="modal-close" onclick="closeModal()">&times;</button>' +
-    '<h3>Procurement query (legacy v1 cache)</h3>' +
+    '<h3>Procurement query (legacy v1)</h3>' +
     '<h2>' + escapeHtml(row.query) + '</h2>' +
     sectionsHtml +
     '<section><h4>Ground truth</h4><pre>' + escapeHtml(gt.text || "(unavailable)") + '</pre></section>';
@@ -585,7 +544,7 @@ async function runLive(input) {
     const jobId = startData.job_id;
     pollStatus(jobId);
   } catch (e) {
-    setStatus({ error: "Engine offline: " + e.message + ". Try one of the cached examples below." });
+    setStatus({ error: "Engine offline: " + e.message + ". Visit https://ultrarelevant-visibility.vercel.app to try again." });
     $("go").disabled = false;
   }
 }
@@ -618,59 +577,16 @@ async function pollStatus(jobId) {
   }
 }
 
-// ----- Cached run lookup -----
-async function loadCached(slug) {
-  $("go").disabled = true;
-  $("results").style.display = "none";
-  setStatus({ message: "Loading " + slug + " (cached)...", percent: 50 });
-  try {
-    // Try the engine first if configured, else fall back to /api/score on the same origin
-    const path = "/api/score?company=" + encodeURIComponent(slug);
-    const tryUrls = ENGINE_URL ? [ENGINE_URL + path, path] : [path];
-    let data = null, ok = false;
-    for (const u of tryUrls) {
-      try {
-        const r = await fetch(u);
-        const d = await r.json();
-        if (r.ok) { data = d; ok = true; break; }
-        data = d;
-      } catch (e) { /* try next */ }
-    }
-    if (!ok) {
-      setStatus({ error: (data && (data.error || data.detail)) || "Cache miss" });
-      $("go").disabled = false;
-      return;
-    }
-    $("status").style.display = "none";
-    render(data);
-  } catch (e) {
-    setStatus({ error: e.message });
-  } finally {
-    $("go").disabled = false;
-  }
-}
-
 // ----- Top-level "Analyze" handler -----
 function run() {
   const v = $("company").value.trim();
   if (!v) return;
-  // If the user typed something that matches a cached company by slug, use cache.
-  const lower = v.toLowerCase().replace(/^https?:\/\//, "").replace(/\/.*$/, "").replace(/^www\./, "");
-  const brand = lower.split(".")[0];
-  const cached = availableCompanies.find(function(c){
-    const slug = (c.slug || "").toLowerCase();
-    const host = (c.host || "").toLowerCase();
-    return slug === lower || slug === brand || host === lower;
-  });
-  if (cached) { loadCached(cached.slug); return; }
-  // Otherwise live run
+  // Live run
   if (!ENGINE_URL) {
     // No live engine configured. Tell user.
     setStatus({ info:
-      "<strong>No cached run for &quot;" + escapeHtml(v) + "&quot; yet.</strong>" +
-      "<div style=\"margin-top:8px;color:var(--muted)\">This Vercel deploy is cache-only. " +
-      "Live runs are served by the Render engine (configure <code>ULTRARELEVANT_ENGINE_URL</code>). " +
-      "For now, try one of the cached companies above.</div>"
+      "<strong>No live engine configured.</strong>" +
+      "<div style=\"margin-top:8px;color:var(--muted)\">Configure <code>ULTRARELEVANT_ENGINE_URL</code> to point at the live engine.</div>"
     });
     return;
   }
@@ -706,31 +622,15 @@ $("company").addEventListener("keydown", function(e){ if (e.key === "Enter") run
   });
 })();
 
-// ----- Load cached company list -----
-async function loadList() {
-  const tryUrls = ENGINE_URL ? [ENGINE_URL + "/api/list", "/api/list"] : ["/api/list"];
-  for (const u of tryUrls) {
-    try {
-      const r = await fetch(u);
-      if (!r.ok) continue;
-      const d = await r.json();
-      availableCompanies = d.companies || [];
-      renderExamples();
-      return;
-    } catch (e) { /* try next */ }
-  }
-  $("examples").innerHTML = '<div style="color:var(--muted);font-size:13px">Cached runs unavailable.</div>';
-}
-
-loadList().then(function(){
-  // Auto-load if URL has ?url= or ?company=
+// Auto-load if URL has ?url= or ?company=
+(function(){
   const params = new URLSearchParams(location.search);
   const auto = params.get("url") || params.get("company");
   if (auto) {
     $("company").value = auto;
     run();
   }
-});
+})();
 </script>
 </body>
 </html>
