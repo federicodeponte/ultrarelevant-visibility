@@ -47,7 +47,7 @@ from fastapi.responses import FileResponse, JSONResponse
 from pydantic import BaseModel, Field
 
 ROOT = Path(__file__).resolve().parent
-KEYS_PATH = Path("/root/.config/ai-sidecar/keys.json")
+KEYS_PATH = Path.home() / ".config" / "ai-sidecar" / "keys.json"
 
 
 # ---------- Key loading ----------
