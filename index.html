@@ -233,11 +233,18 @@
 </div>
 
 <script>
+// Live engine — AX41 + nginx + LetsEncrypt. Override via ?engine=https://... if needed.
+window.ULTRARELEVANT_ENGINE_URL = window.ULTRARELEVANT_ENGINE_URL || "https://visibility.fedeponte.com";
+try {
+  const _q = new URLSearchParams(window.location.search).get("engine");
+  if (_q) window.ULTRARELEVANT_ENGINE_URL = _q;
+} catch (_) {}
+</script>
+<script>
 const $ = (id) => document.getElementById(id);
 
-// Engine URL: where the live /analyze + /status live. If empty, calls go to the
-// same origin (single-host deploy). For Vercel-hosted UI + Render-hosted engine,
-// set this to the Render URL.
+// Engine URL: where the live /analyze + /status live. Defaults to the AX41
+// public engine; override with ?engine=... in the query string.
 const ENGINE_URL = (window.ULTRARELEVANT_ENGINE_URL || "").replace(/\/$/, "");
 
 function colorClass(score) {
