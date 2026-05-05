@@ -298,17 +298,64 @@ def validate_url(url: str) -> dict:
 
 
 # ---------- Stage 1: Generate queries ----------
-QUERY_GEN_PROMPT = """You are a B2B procurement engineer choosing real industrial products.
+# We explicitly generate a DIVERSE 5-query mix that exposes different AI failure
+# modes — not just narrow SKU lookups (which Gemini grounding handles too well
+# and gives an artificially clean Visibility score). Real procurement is messier:
+# AI doesn't know the full catalog, hallucinates specs, invents products the
+# vendor doesn't make, and falls back to distributor/marketplace summaries.
+QUERY_GEN_PROMPT = """You are a B2B procurement engineer evaluating how reliably
+AI assistants answer real buyer questions about a single manufacturer.
 
-Visit {url} (use Google Search to learn what {host} sells — product families, catalog structure, typical part-number formats). Then generate 5 plausible procurement-style queries a buyer would ask Claude / GPT / Gemini about products from this manufacturer.
+Manufacturer: {host}
+Use Google Search to learn what {host} actually sells — product families, catalog
+structure, flagship product lines, typical part-number formats, AND what they do
+NOT sell (adjacent categories that look like theirs but aren't in their catalog).
+Also note who their main competitor(s) are.
 
-Each query must:
-- Cover a different product family if {host} has multiple lines (energy chains, bearings, motors, sensors, fasteners — whatever is real for this manufacturer).
-- Be specific enough that the right answer would name a real, orderable SKU or part number from {host}.
-- Be the kind of question where a hallucinated answer would actually cost real money (wrong part ordered, project delayed).
-- Be 1-2 sentences, plain procurement language. No preambles, no markdown.
+Generate EXACTLY 5 queries, ONE per category below, IN THIS ORDER. Each query is
+a single procurement-style question (1-2 sentences, plain language, no markdown,
+no preamble) — written as if a buyer were typing it into Claude / GPT / Gemini.
 
-Return ONLY a JSON array of 5 strings, no commentary:
+CATEGORIES (one query each, in this exact order):
+
+1. PRECISION_SKU — "I need a {{specific product type with real constraints}} from
+   {host}. Give me the part number." Tight enough that the correct answer is one
+   real, orderable SKU from {host}. This measures whether AI can pull the right
+   part number under constraints.
+
+2. CATALOG_DISCOVERY — "What categories of products does {host} offer? List the
+   main product families with one example each." This measures whether AI knows
+   the full breadth of the catalog (not just the famous flagship SKU).
+
+3. SPEC_DEEP — "What is the exact {{maximum operating pressure / temperature /
+   load / IP rating / accuracy / etc., pick a realistic one for a flagship
+   product line of {host}}}?" Ask for a precise number on a specific named
+   product or product line. This measures whether AI hallucinates specs vs.
+   cites real datasheets.
+
+4. OUT_OF_CATALOG — "Does {host} sell {{a product category close to but NOT in
+   their catalog — choose something a non-expert buyer might plausibly assume
+   they make, but they don't}}? If yes, give me a part number; if no, say so
+   plainly." THIS IS THE KILLER QUERY: it exposes whether AI fabricates a SKU
+   for something the manufacturer does not make. The right answer is "no" with
+   no SKU. A confident SKU here is a real procurement risk.
+
+5. COMPETITIVE — "I'm comparing {host}'s {{flagship product line}} vs.
+   {{a real competitor's equivalent}}. What are the key differentiators and
+   which one is recommended for {{a specific use case}}?" This measures whether
+   AI defaults to distributor / marketplace summaries vs. the manufacturer's
+   own positioning.
+
+Rules:
+- Use real product families, real flagship lines, real competitors that you
+  verified via search. Do NOT invent product categories.
+- Each query must be answerable (or honestly refusable) by an AI assistant —
+  not a riddle.
+- Plain procurement language only. No preamble. No category labels in the query
+  text. No markdown.
+
+Return ONLY a JSON array of 5 strings in the order above (PRECISION_SKU first,
+COMPETITIVE last), no commentary:
 ["query 1", "query 2", "query 3", "query 4", "query 5"]
 """
 
@@ -400,18 +447,26 @@ def attribute_sources(sources: list[dict], manufacturer_brand: str) -> dict:
 
 
 # ---------- Stage 4: Categorize ----------
-CATEGORIES = ["CORRECT", "HALLUCINATION", "REFUSED", "WRONG_SPEC", "ERROR"]
+CATEGORIES = ["CORRECT", "HALLUCINATION", "OUT_OF_CATALOG_HALLUCINATION", "REFUSED", "WRONG_SPEC", "ERROR"]
 
-JUDGE_SYSTEM = """You are a strict procurement judge with Google Search access. Given a query and an agent's response, independently verify whether the answer is correct.
+JUDGE_SYSTEM = """You are a strict procurement judge with Google Search access. Given a query and an agent's response about a specific manufacturer, independently verify whether the answer is correct.
 
 Use Google Search to check the manufacturer's catalog and authoritative distributors (TME, RS, Mouser, Misumi, Octopart, etc.). Then classify the agent response into EXACTLY one category:
 
-- CORRECT: The agent gave a verifiable, real, orderable SKU/answer that you confirmed against the manufacturer's catalog or an authoritative distributor.
-- HALLUCINATION: The agent gave a confident specific SKU/part number that you cannot verify exists (wrong format, invalid concatenation, made up).
-- REFUSED: The agent declined to answer, deflected to "check the website", or gave only generic advice with no specific SKU.
-- WRONG_SPEC: The agent gave a number/spec that contradicts the catalog datasheet (off by 25%+, wrong temperature point, wrong units).
+- CORRECT: The agent gave a verifiable, real, orderable answer (SKU, product family list, spec, or accurate comparison) that you confirmed against the manufacturer's catalog or an authoritative distributor. For "does company X sell Y?" questions, a correct honest "no, they don't sell Y" — with no fabricated SKU — is also CORRECT.
+- HALLUCINATION: The agent gave a confident specific SKU / part number / model name that you cannot verify exists in the manufacturer's catalog (wrong format, invalid concatenation, no search hits, or matches a different manufacturer).
+- OUT_OF_CATALOG_HALLUCINATION: The query asked whether the manufacturer sells a product category they do NOT actually make, and the agent confidently said yes and/or invented a SKU. This is a sub-class of hallucination specific to fabricating coverage of an out-of-catalog category. Use this category ONLY when the underlying product category is genuinely outside the manufacturer's catalog AND the agent claimed otherwise.
+- REFUSED: The agent declined to answer, deflected to "check the website", or gave only generic advice with no specific information when specific information was both available and asked for.
+- WRONG_SPEC: The agent gave a number / spec / fact that contradicts the catalog datasheet (off by 25%+, wrong unit, wrong product attribute) — not just a missing SKU.
 
-Return ONLY a JSON object: {"category": "CORRECT|HALLUCINATION|REFUSED|WRONG_SPEC", "rationale": "1-2 sentences citing what you found"}"""
+Tie-breakers:
+- If the query is OUT_OF_CATALOG style and the agent invents a SKU → OUT_OF_CATALOG_HALLUCINATION.
+- If the query is OUT_OF_CATALOG style and the agent says "no, they don't sell that" and the manufacturer indeed doesn't → CORRECT.
+- If the query is precision-SKU and the agent gave a vague non-answer → REFUSED.
+- If the agent gave a real SKU but with a wrong spec attribute → WRONG_SPEC.
+
+Return ONLY a JSON object:
+{"category": "CORRECT|HALLUCINATION|OUT_OF_CATALOG_HALLUCINATION|REFUSED|WRONG_SPEC", "rationale": "1-2 sentences citing what you verified via search"}"""
 
 JUDGE_PROMPT_TEMPLATE = """Manufacturer: {host}
 
