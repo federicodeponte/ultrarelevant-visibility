@@ -3,57 +3,46 @@
   "host": "skf.com",
   "brand": "skf",
   "visibility_score": 100,
-  "source_authority_score": 20,
+  "source_authority_score": 60,
   "total_queries": 5,
   "correct_queries": 5,
-  "manufacturer_correct": 1,
+  "manufacturer_correct": 3,
   "breakdown": {
     "CORRECT": 5,
     "HALLUCINATION": 0,
+    "OUT_OF_CATALOG_HALLUCINATION": 0,
     "REFUSED": 0,
     "WRONG_SPEC": 0,
     "ERROR": 0
   },
   "source_breakdown": {
-    "manufacturer": 1,
+    "manufacturer": 3,
     "distributor": 0,
     "marketplace": 0,
-    "other": 4,
+    "other": 2,
     "none": 0
   },
   "rows": [
     {
-      "query": "We need to source 50 SKF single-row deep groove ball bearings for a 12mm shaft, 32mm outer diameter, and 10mm width with contacting rubber seals on both sides. What is the exact SKF part number we should include on the PO?",
+      "query": "I need a single row deep groove ball bearing from skf.com with a 25mm inner diameter, 52mm outer diameter, 15mm width, and contact seals on both sides. Give me the part number.",
       "agent": {
-        "text": "The exact SKF part number you should include on your PO is **6201-2RSH**. \n\nHere is a quick breakdown verifying how this part number meets your specifications:\n* **6201**: This base number identifies the standard series for a single-row deep groove ball bearing with a 12mm inner diameter (shaft), 32mm outer diameter, and 10mm width.\n* **-2RSH**: This is the SKF-specific suffix designating contacting rubber seals (made of NBR) on both sides of the bearing. *(Note: You may also see this listed under the older/alternative SKF suffix **6201-2RS1**, which is functionally identical)*.\n\nIf your application requires a stainless steel bearing rather than standard bearing steel, the correct SKU for the stainless variant is **W 6201-2RS1**. Otherwise, the standard **6201-2RSH** is the exact orderable part number you need.",
+        "text": "The correct SKF part number for your requirements is **6205-2RSH**. \n\nHere is the breakdown of the SKU:\n* **6205**: The industry-standard designation for a single row deep groove ball bearing with a 25mm inner diameter, 52mm outer diameter, and 15mm width.\n* **-2RSH** (or **-2RS1**): The SKF-specific suffix indicating the bearing is equipped with contact seals (typically NBR rubber) on both sides to keep lubricants in and contaminants out.\n\n*Procurement note: If your specific application requires an internal clearance greater than standard (e.g., for higher operating temperatures or press fits), you should order the **6205-2RSH/C3** variant. Otherwise, the standard 6205-2RSH will fulfill your exact specifications.*",
         "sources": [
           {
             "title": "skf.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE00fbGgd7pHCv2OSaoGp4V1tbpj1iEevnrXTMJYbHwGd6rNVMfXtZf3Y138tw08140h2R_izHQzBKHwtOsgr6riywRIeUXepb-ed3iobxfNot--BdeD-i0x5r1MRzelHEPb5H1y8suXNVQKWAcd9z1Ltt6FWF4W61WgIGTumI0oTykdeqh9OE7xRyB-tZyj6hOwTmk7beBeLSvHp3k4E0ycel9"
-          },
-          {
-            "title": "lily-bearing.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUJujeiWtpg1qg0-qOP1NfZEQORf4EXgSiVA4tAFwBtpJb0HmVDDxc4zLTMKWKLxHEJWBUkn1v1m1I1P7m3C5aA9SF513EwBBRTo51O1y7KQSXqAFhaqJ6lMZQP8cypxlupkxpoz96FHDj"
-          },
-          {
-            "title": "rs-online.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEszMLjXbdJ3K9gQqGmsP265uCCWvKQQSNKojJmZvzQPmg3c7DoRxggBcSWzBJkuXEBd_K6yKC4i5T0ILZA21qga9MOTn7eTEM2fZBSeO_isWjurgEv8N8fOqAb4sBlaQmFKlZrfYxNBDak7fLNXOOQ"
-          },
-          {
-            "title": "skf.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1UGuvymjnuZkfaTqZQsQr50WxtdYwjHbkZ2xQSPQuSgrcmqXWbNbitRJ3Tf4emtbsv45ZINGIgQo2Jv9OhcA-bnAYvINt1kyGFk8Ugtbpzy-oGz7d_QSSkjxCCPF5CL8vKGg8ucjxZydpEyHkpjsMiS3g_LLJeGHMMZq3-pumOY90RF9Lbn1erM6KhxCVc5hEGs6KhVFZ-qCoxaKnphnrSKz-Fg=="
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFxhDL6E8kkSgMznDHG7KBXpfMrVpNtOgBQtobEk7Fdl2L_WnkyCYPnOhz9TrYjgAL8lQtXasxLUMfBmE_cVMINQL9Y7fQBnw-KqvIv6p96LfB7NHR5iAA2hNp1AUbeP3YDtlqNiStjAC5DrYReGsCNYYV8jtc4ScdMIIql4dVkrWCe1cwayaHCR77ICeHipgg_0MZDLtHf1_LUcN7YcWC3qG6IlC-n7w=="
           },
           {
             "title": "maedlernorthamerica.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEc4EJEXJ1aA1mFp3uEA3Mkyqv9TVFHMTITFkW2oVUFDu98wUzvEq61yd5vg5chjFRQoU0OMtxkaYsAWF2v871CLctQSuigqjtBL0B1EYCwQsCa4v2KNpOxw0azVXyR_GBj1_fUG31F9wa9cRh8fevSB0dAPuG0qhTzPmiT5Xs-j-6lzUk-6C9XqqURJRYopzu_bxud5G-nFd4NN2NqFWBStTe9SY4aBINESLda8At2iJ5Z30MQ802Yqe8Arb1hM6OX-4dw1xp8BTSdG_UiYcPwtcUiBpyyvHXX"
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGIHzz2HGP6CQVuWNaJXOokFcX_rdokZ1xIkFnXROz9diJQmeuEfkMqD6SHkhnxGOAY1XyGYgRTda4hXRfGvQTQqT9B-h5C9qKe_5R6YJMZcwgrcqW1KFw2emGKgKawLEpkHrItIG2OLRVBFUZp0Fo5N13oPIrqK4_IJWLHvCbJTNbD3zurynl2iBNttvgzf25d0yj15f8H3a9aw4Fo_tjijImqUVhK5AUa5YAqw-ZWX5Q1Y-MDpIX5EBfbWRf2vLu-Q5Ye9IiAt8iRCXNYBlw7zXvRR0XqHX1Ifrk8qcsmwiDHFy2GgA=="
           },
           {
-            "title": "almabearings.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFE1FiKi5nAL5CiDVRM0BDYbIpB4qePt89Lx-qDCDfYvQKfefrzyf5Fi3mTv42i4M1ZMLUavC7E8Wy-tZCWRMs8Tkw8M_pio6MWOlbCc2mWYl3xDtWekAjQXHz8sEMVrmhMQmppngEHrbNbzjZtJknxrPtnkwDNbnJ5P2BcEVdphYFKOhaiQTneKifpL3XbJJFhcB6nQ6rzW5mO2MNiekcp52E="
+            "title": "mrosupply.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGN7OsJQv7106zMipPBG_jcYI5nYYXz__tN2aesl2QcRzs9M4e3w_yMpCM8No_GOuW6I4rNtANHX03fpBmXP6_P-33zMuMkhrDFk31nnVxc-kolAabIIB5rhrM65Q_lrT9P98Qwu6jqtXVlLVukUOcdut-7pDF9QTm9GAkg-g=="
           },
           {
             "title": "skf.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH7RcUzaJhQl3I5_DhB7wiadU0g8Kix7LyDY5b8YrFyiiZSceji6Bamgq-sSPuOuWw1H8VGHjwfHm_0oRqni82rsjC_0mjEE1Mh9b4JMnwsvVVWClM2IS28wmQdZKPVuU8GJLqgSIt4nnZHv-m7AOSHHxoRjOmlccZxTjykw146d4urivyEsNbEre06zSNTxt9Zs6vxvET18QsxEny10arhiGsgdwBv-g=="
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHyDHiC17iPuqu5xnRII7yHssgGXWBdtYtGz0gOwdAKpGi6NhpQhMfTaW0I7aF_MILJR4yi2ah6HD3IkH6RsHsQuVN9FRqp9SnJ_lveYOpJ4y87iNszqiKn3wx_r0b5Pkf6wlerFByKvV-CEW8Pyg7FFi9mIXve"
           }
         ],
         "error": null
@@ -62,75 +51,81 @@
         "domains": [
           {
             "host": "www.skf.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1UGuvymjnuZkfaTqZQsQr50WxtdYwjHbkZ2xQSPQuSgrcmqXWbNbitRJ3Tf4emtbsv45ZINGIgQo2Jv9OhcA-bnAYvINt1kyGFk8Ugtbpzy-oGz7d_QSSkjxCCPF5CL8vKGg8ucjxZydpEyHkpjsMiS3g_LLJeGHMMZq3-pumOY90RF9Lbn1erM6KhxCVc5hEGs6KhVFZ-qCoxaKnphnrSKz-Fg==",
-            "title": "skf.com",
-            "class": "manufacturer"
-          },
-          {
-            "host": "www.lily-bearing.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUJujeiWtpg1qg0-qOP1NfZEQORf4EXgSiVA4tAFwBtpJb0HmVDDxc4zLTMKWKLxHEJWBUkn1v1m1I1P7m3C5aA9SF513EwBBRTo51O1y7KQSXqAFhaqJ6lMZQP8cypxlupkxpoz96FHDj",
-            "title": "lily-bearing.com",
-            "class": "other"
-          },
-          {
-            "host": "www.skf.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH7RcUzaJhQl3I5_DhB7wiadU0g8Kix7LyDY5b8YrFyiiZSceji6Bamgq-sSPuOuWw1H8VGHjwfHm_0oRqni82rsjC_0mjEE1Mh9b4JMnwsvVVWClM2IS28wmQdZKPVuU8GJLqgSIt4nnZHv-m7AOSHHxoRjOmlccZxTjykw146d4urivyEsNbEre06zSNTxt9Zs6vxvET18QsxEny10arhiGsgdwBv-g==",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFxhDL6E8kkSgMznDHG7KBXpfMrVpNtOgBQtobEk7Fdl2L_WnkyCYPnOhz9TrYjgAL8lQtXasxLUMfBmE_cVMINQL9Y7fQBnw-KqvIv6p96LfB7NHR5iAA2hNp1AUbeP3YDtlqNiStjAC5DrYReGsCNYYV8jtc4ScdMIIql4dVkrWCe1cwayaHCR77ICeHipgg_0MZDLtHf1_LUcN7YcWC3qG6IlC-n7w==",
             "title": "skf.com",
             "class": "manufacturer"
           },
           {
             "host": "www.skf.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE00fbGgd7pHCv2OSaoGp4V1tbpj1iEevnrXTMJYbHwGd6rNVMfXtZf3Y138tw08140h2R_izHQzBKHwtOsgr6riywRIeUXepb-ed3iobxfNot--BdeD-i0x5r1MRzelHEPb5H1y8suXNVQKWAcd9z1Ltt6FWF4W61WgIGTumI0oTykdeqh9OE7xRyB-tZyj6hOwTmk7beBeLSvHp3k4E0ycel9",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHyDHiC17iPuqu5xnRII7yHssgGXWBdtYtGz0gOwdAKpGi6NhpQhMfTaW0I7aF_MILJR4yi2ah6HD3IkH6RsHsQuVN9FRqp9SnJ_lveYOpJ4y87iNszqiKn3wx_r0b5Pkf6wlerFByKvV-CEW8Pyg7FFi9mIXve",
             "title": "skf.com",
             "class": "manufacturer"
           },
           {
             "host": "maedlernorthamerica.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEc4EJEXJ1aA1mFp3uEA3Mkyqv9TVFHMTITFkW2oVUFDu98wUzvEq61yd5vg5chjFRQoU0OMtxkaYsAWF2v871CLctQSuigqjtBL0B1EYCwQsCa4v2KNpOxw0azVXyR_GBj1_fUG31F9wa9cRh8fevSB0dAPuG0qhTzPmiT5Xs-j-6lzUk-6C9XqqURJRYopzu_bxud5G-nFd4NN2NqFWBStTe9SY4aBINESLda8At2iJ5Z30MQ802Yqe8Arb1hM6OX-4dw1xp8BTSdG_UiYcPwtcUiBpyyvHXX",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGIHzz2HGP6CQVuWNaJXOokFcX_rdokZ1xIkFnXROz9diJQmeuEfkMqD6SHkhnxGOAY1XyGYgRTda4hXRfGvQTQqT9B-h5C9qKe_5R6YJMZcwgrcqW1KFw2emGKgKawLEpkHrItIG2OLRVBFUZp0Fo5N13oPIrqK4_IJWLHvCbJTNbD3zurynl2iBNttvgzf25d0yj15f8H3a9aw4Fo_tjijImqUVhK5AUa5YAqw-ZWX5Q1Y-MDpIX5EBfbWRf2vLu-Q5Ye9IiAt8iRCXNYBlw7zXvRR0XqHX1Ifrk8qcsmwiDHFy2GgA==",
             "title": "maedlernorthamerica.com",
             "class": "other"
           },
           {
-            "host": "almabearings.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFE1FiKi5nAL5CiDVRM0BDYbIpB4qePt89Lx-qDCDfYvQKfefrzyf5Fi3mTv42i4M1ZMLUavC7E8Wy-tZCWRMs8Tkw8M_pio6MWOlbCc2mWYl3xDtWekAjQXHz8sEMVrmhMQmppngEHrbNbzjZtJknxrPtnkwDNbnJ5P2BcEVdphYFKOhaiQTneKifpL3XbJJFhcB6nQ6rzW5mO2MNiekcp52E=",
-            "title": "almabearings.com",
+            "host": "www.mrosupply.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGN7OsJQv7106zMipPBG_jcYI5nYYXz__tN2aesl2QcRzs9M4e3w_yMpCM8No_GOuW6I4rNtANHX03fpBmXP6_P-33zMuMkhrDFk31nnVxc-kolAabIIB5rhrM65Q_lrT9P98Qwu6jqtXVlLVukUOcdut-7pDF9QTm9GAkg-g==",
+            "title": "mrosupply.com",
             "class": "other"
-          },
-          {
-            "host": "twen.rs-online.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEszMLjXbdJ3K9gQqGmsP265uCCWvKQQSNKojJmZvzQPmg3c7DoRxggBcSWzBJkuXEBd_K6yKC4i5T0ILZA21qga9MOTn7eTEM2fZBSeO_isWjurgEv8N8fOqAb4sBlaQmFKlZrfYxNBDak7fLNXOOQ",
-            "title": "rs-online.com",
-            "class": "distributor"
           }
         ],
         "counts": {
-          "manufacturer": 3,
-          "distributor": 1,
+          "manufacturer": 2,
+          "distributor": 0,
           "marketplace": 0,
-          "other": 3
+          "other": 2
         },
         "primary": "manufacturer",
-        "total_sources": 7
+        "total_sources": 4
       },
       "category": "CORRECT",
-      "rationale": "Google Search confirms that the SKF 6201 base number corresponds to a deep groove ball bearing with a 12mm inner diameter, 32mm outer diameter, and 10mm width. The -2RSH suffix accurately designates contacting rubber seals on both sides, making 6201-2RSH the exact verifiable part number."
+      "rationale": "Verified via SKF catalog and authorized distributors that the 6205 bearing series is a deep groove ball bearing with a 25mm inner diameter, 52mm outer diameter, and 15mm width. The suffix '-2RSH' (or '-2RS1') correctly designates contact seals on both sides of the bearing, validating the agent's provided part number."
     },
     {
-      "query": "What is the correct SKF metric radial shaft seal designation for a 55mm shaft, 72mm housing bore, and 8mm width utilizing the standard NBR lip material? Please provide the specific HMSA10 SKU so we can avoid ordering the fluoro rubber version by mistake.",
+      "query": "What categories of products does skf.com offer? List the main product families with one example each.",
       "agent": {
-        "text": "The correct SKF designation (SKU) for your specified dimensions and material is **55X72X8 HMSA10 RG**. \n\nHere is the breakdown of the part number to ensure it meets your requirements:\n*   **55X72X8**: Dimensions in millimeters (55mm shaft inner diameter x 72mm housing bore outer diameter x 8mm width).\n*   **HMSA10**: SKF's specific seal design featuring a rubber outside diameter, a conventional elastomeric sealing lip with a garter spring, and a non-contacting auxiliary dust lip.\n*   **RG**: SKF\u2019s material code for standard Nitrile Butadiene Rubber (NBR). \n\nTo successfully avoid the fluoro rubber (FKM/Viton) version, ensure the suffix is exactly **RG** and not **V** (which would be 55X72X8 HMSA10 V).",
+        "text": "SKF is a global industrial manufacturer specializing in several core product categories. Here are the main product families along with a real, orderable example part number for each:\n\n**1. Rolling Bearings**\nThe core of SKF’s catalog includes deep groove ball bearings, spherical roller bearings, tapered roller bearings, and mounted units used to reduce friction and support rotating shafts.\n*Example SKU:* **6205** (Single row deep groove ball bearing)\n\n**2. Seals**\nIndustrial and automotive sealing solutions designed to keep lubricants in and contaminants out, such as radial shaft seals, heavy-duty seals, and V-rings.\n*Example SKU:* **9304** (CR Seals single wave lip oil seal)\n\n**3. Lubrication Solutions**\nIndustrial greases, manual lubrication tools, and automated centralized lubrication systems (pumps, distributors, and pinions) to extend bearing life.\n*Example SKU:* **LAGF 1-F** (Bearing lubrication filler pump accessory)\n\n**4. Condition Monitoring Systems**\nHardware and software tools, including vibration sensors, temperature probes, and handheld analyzers, used for predictive machine maintenance. \n*Example SKU:* **CMWA 6100** (Enlight Collect IMx-1 wireless vibration and temperature monitoring sensor)",
         "sources": [
           {
             "title": "skf.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGoU0-Oxpcqea16gCTfDWP7EeAJ161JEgljTKluzRQJnguUWyNg0ZWVqVRrvy9sPzp2c5py_aRwBOxxYbLfvcuBXGz308oQzMUL4c4VYVJzIIMW6ud-Rj5VWFa4S026ghF6oREoHdm4y4YgI4BdKB9Lsa0ukgGsHrWNG_LP7eLbb_NaYz0Re7U8SXlPfXI26Ch48lb0wRNUkbGWpWcuNHq3spz9cq8jYMvIJ7StlWlOKfHF4hZKobrK9JpZbwmDUsNFzjEtich1VyNeir7kcekMyUeh9iaaEJLFcQ=="
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF3bI8wo02LHv-4ZjkCZoGMc-4D2T2Z4MEYODSQ0ouX9Cjxzx3wPeWNj_0LA8cMwMcWexrO5def6SjjAiqmNj9EmjJe0xRgdf4OB8Ny8euMCjmilifLNweoDomuPmj1ZeR_1af_Y_PumYZz0aWp4lD1OBxwmvHMan4-Mhd1oc9g7UeL48-L7TL92qB5Mn86v6xelFkwUIgH7m-hSgRleLyCnTpe7w=="
           },
           {
-            "title": "industrofy.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFP_kddVSxRVwXgSBa-iGtTFbSQWqce9SNoYYtxJTJB0Bm2I1678YwZckXFQYQ4YHX9R4Div0ouxhF8KedDhrOS3O0SzeIKHCAljKcxBfa_NtFI0Pdi_3536fVcxI7of20IJ7qoUuPUNiyRw2wZFB4juV85LFwQf1fbnapQPOkn-2E="
+            "title": "skf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvv-lH_S9m5EEK-PXPYklNkKJoMhTBbrih0fUEt5IvI1KYYMOqpULQtZV6ifSuDdBU64npYLmPOHKecpuKaxCM6HFOdms4ylTfiUtS8cxBbU41VRpBlfEDiAjaVd0CEOHUfgrd84oQ2LwsaGxfA21WgsJypUjTdlSaJlXKjtJ8FEOzU-ljqUiDubWT8o9p9BBYAoiKcqRg9Y6W4CtGFRGKmA=="
           },
           {
-            "title": "prairiebearingshop.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFmXgZlMGj140Gll8U00YnA6HYs2hm4AcFbLIDypKrxapWwgced5h9c-Lzb41NXtyByf_ko_yUwgNYjSo7GQuAIeUHhgMuvI1zS02uqwRPVO6A1JtgnNMTFmaqBPEI05yk88p6-TcsAr_ugcJdoJO5m072RHXP1fgDvZ4sps2UXNRTKrChKRY51KerRCNTaXWPHo0BfDOkUOC0KTdzH4WECy0r7Is_v-hE="
+            "title": "skf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF237PWClo1CQSAqcIsgO1Ho5Rsr2B1W6-pP7RTZgP8fVw1mOeO9VM9JeRX1IRMokBnzac1PJ2-r7dbqwg4t48V0_oeAfSBEanqZDqRwKvuRRsZS3VmFPh8-UlvBT3hSufgho8Wgh0LjtQnDxOK6CB4IEwgrii5fuAGbLoo0DmR6y0nAgjmn1kGBqgUvjo2zyvRF1cH98bu0PNY49--P-ugA6pHkQ=="
+          },
+          {
+            "title": "skf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTBNlWdEG4HfgyD-Wq6BbxftznFlQ4e8Cht2yTJKRH5lPL_UIbuDqBEoYzRCd6Io7srzmaC_tM4aV2BLoYa3jXFyfLn84gAY5WHMXCOtub7eTFLCEz9cHzzDO7EUjEI3OEIugu5-uwLEvQkJGWmfCW5HJJHRJ2EgZ4Vr5mIDg2ME13CWa6SEmWUGQf7G_v52-O9e9S7RidRmzjZv8GEFADOQ=="
+          },
+          {
+            "title": "motion.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNCMInEuFyy4miLsX5OXd2WI8avM6v0sZmT8ZUZWsMTSA9vqxk6NuimVxXRz7uTTsa9uEGZFCqVdnwbLaoKPTWEOUv1TPu43tDy_xjIiyrQ_UzdCDH6EDgI86vQ6pWFcA3UkHlL7M="
+          },
+          {
+            "title": "skf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0TARdlig1j9QWmL7M-DWFLjjMvTkyIZ_n491VNg236K-y3JRWrvVKaGeC8Y86kR6K0JaFL_N60uVLFQqjzKdPfJtj0icLekrSlR01R3S4vjIkquCG8JfKYflDzAfaa8PIlZV0zQje8D1uGLHlRIH4KhdTsf6lNw27tCde3rpZE5ANdj1V9BQfIMpBVP2nBgKsWfNimjb0w8Cx4EiWNYN4NUJ4cAU="
+          },
+          {
+            "title": "rs-online.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGGleFrcbXmp1f8BjWEbxixnNuTBuBQZlvzk6Q1wy8pfzUCo5dpGNUjrmM0NdinpRXfIrWYzFzSAuINi49sNgeOcZduzVaBFxIXZfVTIqFkPzur-aECGoySTU7pX7zpLv63ufVmj3RFY4bvn7krginyGA=="
+          },
+          {
+            "title": "tequipment.net",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFB-IGVC-RFowu4EeeAJUqfL4Eo46HJtN5bnfsH2uqgJBYIn29ct2G3q0Cz_Rj3cn41QxaX6IhlqSlBzL9UPpKB1b62iYK-DM-QKss6pOtaKYX7QxcL4InzKA9l7r3xBp5r3vNVwBKKzohgZCAHLsrzSr1Kjvqz"
+          },
+          {
+            "title": "skf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZOG_BKpoiStOVAzE5POgI79b4lG3puC3LxEy6K_XK8Cy80K2kxeTdqADBbf0oskViJcaqpW-EJbGW0X1RCv5mlDTNzLezVzppLwUvARTV6WUhO8INJao_UfyY8UIUc3Kx4UA2tvM30Kz0xd6Gm1zlr2t_2LtimnTfkFJjf8r-FSEBMJCIz_Vrcj7wZbXNmywDnju8QohGMqbEleXhBQ63vfP2ZAseKbsbaNszBw=="
           }
         ],
         "error": null
@@ -139,55 +134,87 @@
         "domains": [
           {
             "host": "www.skf.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGoU0-Oxpcqea16gCTfDWP7EeAJ161JEgljTKluzRQJnguUWyNg0ZWVqVRrvy9sPzp2c5py_aRwBOxxYbLfvcuBXGz308oQzMUL4c4VYVJzIIMW6ud-Rj5VWFa4S026ghF6oREoHdm4y4YgI4BdKB9Lsa0ukgGsHrWNG_LP7eLbb_NaYz0Re7U8SXlPfXI26Ch48lb0wRNUkbGWpWcuNHq3spz9cq8jYMvIJ7StlWlOKfHF4hZKobrK9JpZbwmDUsNFzjEtich1VyNeir7kcekMyUeh9iaaEJLFcQ==",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvv-lH_S9m5EEK-PXPYklNkKJoMhTBbrih0fUEt5IvI1KYYMOqpULQtZV6ifSuDdBU64npYLmPOHKecpuKaxCM6HFOdms4ylTfiUtS8cxBbU41VRpBlfEDiAjaVd0CEOHUfgrd84oQ2LwsaGxfA21WgsJypUjTdlSaJlXKjtJ8FEOzU-ljqUiDubWT8o9p9BBYAoiKcqRg9Y6W4CtGFRGKmA==",
             "title": "skf.com",
             "class": "manufacturer"
           },
           {
-            "host": "industrofy.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFP_kddVSxRVwXgSBa-iGtTFbSQWqce9SNoYYtxJTJB0Bm2I1678YwZckXFQYQ4YHX9R4Div0ouxhF8KedDhrOS3O0SzeIKHCAljKcxBfa_NtFI0Pdi_3536fVcxI7of20IJ7qoUuPUNiyRw2wZFB4juV85LFwQf1fbnapQPOkn-2E=",
-            "title": "industrofy.com",
+            "host": "us.rs-online.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGGleFrcbXmp1f8BjWEbxixnNuTBuBQZlvzk6Q1wy8pfzUCo5dpGNUjrmM0NdinpRXfIrWYzFzSAuINi49sNgeOcZduzVaBFxIXZfVTIqFkPzur-aECGoySTU7pX7zpLv63ufVmj3RFY4bvn7krginyGA==",
+            "title": "rs-online.com",
+            "class": "distributor"
+          },
+          {
+            "host": "www.skf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0TARdlig1j9QWmL7M-DWFLjjMvTkyIZ_n491VNg236K-y3JRWrvVKaGeC8Y86kR6K0JaFL_N60uVLFQqjzKdPfJtj0icLekrSlR01R3S4vjIkquCG8JfKYflDzAfaa8PIlZV0zQje8D1uGLHlRIH4KhdTsf6lNw27tCde3rpZE5ANdj1V9BQfIMpBVP2nBgKsWfNimjb0w8Cx4EiWNYN4NUJ4cAU=",
+            "title": "skf.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.skf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTBNlWdEG4HfgyD-Wq6BbxftznFlQ4e8Cht2yTJKRH5lPL_UIbuDqBEoYzRCd6Io7srzmaC_tM4aV2BLoYa3jXFyfLn84gAY5WHMXCOtub7eTFLCEz9cHzzDO7EUjEI3OEIugu5-uwLEvQkJGWmfCW5HJJHRJ2EgZ4Vr5mIDg2ME13CWa6SEmWUGQf7G_v52-O9e9S7RidRmzjZv8GEFADOQ==",
+            "title": "skf.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.skf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF237PWClo1CQSAqcIsgO1Ho5Rsr2B1W6-pP7RTZgP8fVw1mOeO9VM9JeRX1IRMokBnzac1PJ2-r7dbqwg4t48V0_oeAfSBEanqZDqRwKvuRRsZS3VmFPh8-UlvBT3hSufgho8Wgh0LjtQnDxOK6CB4IEwgrii5fuAGbLoo0DmR6y0nAgjmn1kGBqgUvjo2zyvRF1cH98bu0PNY49--P-ugA6pHkQ==",
+            "title": "skf.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.skf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF3bI8wo02LHv-4ZjkCZoGMc-4D2T2Z4MEYODSQ0ouX9Cjxzx3wPeWNj_0LA8cMwMcWexrO5def6SjjAiqmNj9EmjJe0xRgdf4OB8Ny8euMCjmilifLNweoDomuPmj1ZeR_1af_Y_PumYZz0aWp4lD1OBxwmvHMan4-Mhd1oc9g7UeL48-L7TL92qB5Mn86v6xelFkwUIgH7m-hSgRleLyCnTpe7w==",
+            "title": "skf.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.tequipment.net",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFB-IGVC-RFowu4EeeAJUqfL4Eo46HJtN5bnfsH2uqgJBYIn29ct2G3q0Cz_Rj3cn41QxaX6IhlqSlBzL9UPpKB1b62iYK-DM-QKss6pOtaKYX7QxcL4InzKA9l7r3xBp5r3vNVwBKKzohgZCAHLsrzSr1Kjvqz",
+            "title": "tequipment.net",
             "class": "other"
           },
           {
-            "host": "prairiebearingshop.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFmXgZlMGj140Gll8U00YnA6HYs2hm4AcFbLIDypKrxapWwgced5h9c-Lzb41NXtyByf_ko_yUwgNYjSo7GQuAIeUHhgMuvI1zS02uqwRPVO6A1JtgnNMTFmaqBPEI05yk88p6-TcsAr_ugcJdoJO5m072RHXP1fgDvZ4sps2UXNRTKrChKRY51KerRCNTaXWPHo0BfDOkUOC0KTdzH4WECy0r7Is_v-hE=",
-            "title": "prairiebearingshop.com",
+            "host": "www.motion.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNCMInEuFyy4miLsX5OXd2WI8avM6v0sZmT8ZUZWsMTSA9vqxk6NuimVxXRz7uTTsa9uEGZFCqVdnwbLaoKPTWEOUv1TPu43tDy_xjIiyrQ_UzdCDH6EDgI86vQ6pWFcA3UkHlL7M=",
+            "title": "motion.com",
             "class": "other"
+          },
+          {
+            "host": "www.skf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZOG_BKpoiStOVAzE5POgI79b4lG3puC3LxEy6K_XK8Cy80K2kxeTdqADBbf0oskViJcaqpW-EJbGW0X1RCv5mlDTNzLezVzppLwUvARTV6WUhO8INJao_UfyY8UIUc3Kx4UA2tvM30Kz0xd6Gm1zlr2t_2LtimnTfkFJjf8r-FSEBMJCIz_Vrcj7wZbXNmywDnju8QohGMqbEleXhBQ63vfP2ZAseKbsbaNszBw==",
+            "title": "skf.com",
+            "class": "manufacturer"
           }
         ],
         "counts": {
-          "manufacturer": 1,
-          "distributor": 0,
+          "manufacturer": 6,
+          "distributor": 1,
           "marketplace": 0,
           "other": 2
         },
-        "primary": "other",
-        "total_sources": 3
+        "primary": "manufacturer",
+        "total_sources": 9
       },
       "category": "CORRECT",
-      "rationale": "Verified via the SKF catalog and distributors like Motion Industries that 55X72X8 HMSA10 RG is a valid, orderable SKU matching the requested 55x72x8mm dimensions and HMSA10 design in NBR material (designated by the RG suffix, differentiating it from the V suffix for fluoro rubber)."
+      "rationale": "All four provided SKUs (6205, 9304, LAGF 1-F, and CMWA 6100) were verified through the SKF catalog and authorized distributors. They perfectly match the described product families, representing a deep groove ball bearing, a wave lip oil seal, a grease filler pump accessory, and a wireless condition monitoring sensor respectively."
     },
     {
-      "query": "We are outfitting our gearboxes with SKF vibration sensors and need the standard part number for an industrial accelerometer with a side-exit, 2-pin connector, and 100 mV/g sensitivity. What is the exact SKF CMSS designation for this low-profile sensor so we can issue the RFQ?",
+      "query": "What is the exact basic dynamic load rating in kN for an SKF Explorer 22210 E spherical roller bearing?",
       "agent": {
-        "text": "The exact SKF part number you need for this RFQ is the **CMSS 2200**. \n\nThe **SKF CMSS 2200** is specifically designated as their \"General Purpose, Low Profile, Side Exit Industrial Accelerometer\". It perfectly matches your technical requirements:\n* **Sensitivity:** 100 mV/g\n* **Form Factor:** Low-profile, side-exit (ideal for gearboxes with limited clearance)\n* **Connection:** 2-pin MIL-C-5015 connector\n\n**Ordering Variations:**\nDepending on your gearbox's specific mounting thread requirements, you should specify one of the following on your RFQ:\n* **CMSS 2200**: Comes with 1/4-28 and M6 \u00d7 1.00 mounting studs.\n* **CMSS 2200-M8**: Comes with an M8 \u00d7 1.25 metric mounting stud. \n\nIf you also need the mating cable assembly for the 2-pin connector, SKF recommends the **CMSS 932** series cables.",
+        "text": "The exact basic dynamic load rating for the SKF Explorer spherical roller bearing is **107 kN**. \n\nThe real, orderable manufacturer part number (SKU) from the SKF catalog for this exact bearing is **22210 E**.",
         "sources": [
           {
-            "title": "tequipment.net",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE4NJOGcxOpEDqhtaezpeJPPn4i3OzKsdMiVQeKq_FVS5m4y79Ljcwquh0L5-KbyfCrrvHccop6J9hLDMKA-VahhTDbqoASCGAt1t0gaZxs0BQH67g88EsDZdAnIULjg0JbUK7M_ThgFP-Zn01CQd2dSPufOvO_8n0="
+            "title": "apollousa.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHa3A2-w_-qtLj4i8ofGVEzrB-R39ab785dhWOX9s8rk6qJhu-TsihLX-iSaTrobEs3vu7tukyHojaTjFEFYqC1RN6Kr6YmEonijMq86vCjhXxDYLTqabVu0e1rvue-t7BfubxfK7j_CyaSspzwMq1K4OVKblGXxLmql3LlxzYVFb7S9XZ1uTBtEDQA3n2mvC7H1Bd_Qo5RTWCg50v0fuX6MreXLHXWuwk0EA=="
           },
           {
-            "title": "propribory.ru",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGo-hgIFXPNyVdshbMn95vMiKAxXmC85-Ez6Yu5gu01JchG3bdYElsdFBB387f42agtb_YT_0SrLKvp9u_ChBDvDPsqmhadgymKHfbyqVkMjuU6lVE2YLWMlEynCH0z5B0ZUb8mPGKWG218AVxeR7lVQsz5LODk0QpF84vAPg3ixXT_vaVkwdZOQA=="
+            "title": "rs-online.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGVo3VkJzMUTKntatMh5L5xnaTgExzRn5Palnm98L3bA6Pu1nkl6FkyQ-YMEXEKBZN7cPjAoQEZC0FsbqtQ9HB94yc4hNFILkFCtz5DggrOLJQ7RQYJHM9-7waOyeqY-4aJVSZ9ZMPJjIVr90nnV8c="
           },
           {
-            "title": "scribd.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFDNyaKRAvdW1xaujqhADmjjV3l4D1l2HQrNn3KUnteYE3K5h-2rv_qbXo-7QwJa36ZOcZuZbLRnVizy2kJFxkILh6cAz8tBtGPS9GNRIxQ9Oi_AWSwtJV9qEvv4CptQXiSZHwwtQ9WyyzidbkVvQEuQwUEE8o="
-          },
-          {
-            "title": "artisantg.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhlXikC-Dje0tyEN7PHMhuYcZrqhYUSZsHUaabKgyMp7MG-FXg075nJ2AvhEK0RHLaM-2LY9wDkJdefGQyCA3OkAm5l0dmYLMHjnmElGoW3BEYdIYqzLbYCd4s0kbAKnyr0FSBzyGs9o0yVDLJFnZZ2_VN5h0Ahhz6UJ27TQ-yNOAXIw=="
+            "title": "skf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFFbX5Ahh6P64ma3vXVfYEekGWwCSAAhmCgMW3C0NH0UFMPIovoF6Nh5N5s5uBS_lb-Rctm4Zx3xqxfa6IXnnEZ6OaXxsk20NsaZHEjIyYrQ9X1taROOVjS9kFKcWyqM3Xa__cuWrhUkN4q5zXDK60YbeVuW_sH-UZmrYUpteFzPnyV2v9m5Juub1IMj-I1RodO-wlpKHx0FbvGP4i4HQDvG8WJW4czPJei"
           }
         ],
         "error": null
@@ -195,27 +222,84 @@
       "attribution": {
         "domains": [
           {
-            "host": "www.scribd.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFDNyaKRAvdW1xaujqhADmjjV3l4D1l2HQrNn3KUnteYE3K5h-2rv_qbXo-7QwJa36ZOcZuZbLRnVizy2kJFxkILh6cAz8tBtGPS9GNRIxQ9Oi_AWSwtJV9qEvv4CptQXiSZHwwtQ9WyyzidbkVvQEuQwUEE8o=",
-            "title": "scribd.com",
+            "host": "www.skf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFFbX5Ahh6P64ma3vXVfYEekGWwCSAAhmCgMW3C0NH0UFMPIovoF6Nh5N5s5uBS_lb-Rctm4Zx3xqxfa6IXnnEZ6OaXxsk20NsaZHEjIyYrQ9X1taROOVjS9kFKcWyqM3Xa__cuWrhUkN4q5zXDK60YbeVuW_sH-UZmrYUpteFzPnyV2v9m5Juub1IMj-I1RodO-wlpKHx0FbvGP4i4HQDvG8WJW4czPJei",
+            "title": "skf.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "apollousa.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHa3A2-w_-qtLj4i8ofGVEzrB-R39ab785dhWOX9s8rk6qJhu-TsihLX-iSaTrobEs3vu7tukyHojaTjFEFYqC1RN6Kr6YmEonijMq86vCjhXxDYLTqabVu0e1rvue-t7BfubxfK7j_CyaSspzwMq1K4OVKblGXxLmql3LlxzYVFb7S9XZ1uTBtEDQA3n2mvC7H1Bd_Qo5RTWCg50v0fuX6MreXLHXWuwk0EA==",
+            "title": "apollousa.com",
             "class": "other"
           },
           {
-            "host": "www.tequipment.net",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE4NJOGcxOpEDqhtaezpeJPPn4i3OzKsdMiVQeKq_FVS5m4y79Ljcwquh0L5-KbyfCrrvHccop6J9hLDMKA-VahhTDbqoASCGAt1t0gaZxs0BQH67g88EsDZdAnIULjg0JbUK7M_ThgFP-Zn01CQd2dSPufOvO_8n0=",
-            "title": "tequipment.net",
+            "host": "docs.rs-online.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGVo3VkJzMUTKntatMh5L5xnaTgExzRn5Palnm98L3bA6Pu1nkl6FkyQ-YMEXEKBZN7cPjAoQEZC0FsbqtQ9HB94yc4hNFILkFCtz5DggrOLJQ7RQYJHM9-7waOyeqY-4aJVSZ9ZMPJjIVr90nnV8c=",
+            "title": "rs-online.com",
+            "class": "distributor"
+          }
+        ],
+        "counts": {
+          "manufacturer": 1,
+          "distributor": 1,
+          "marketplace": 0,
+          "other": 1
+        },
+        "primary": "manufacturer",
+        "total_sources": 3
+      },
+      "category": "CORRECT",
+      "rationale": "I verified through multiple distributor datasheets (such as RS and Apollo) and SKF catalog specs that the SKU 22210 E is a genuine SKF Explorer spherical roller bearing with a basic dynamic load rating of exactly 107 kN."
+    },
+    {
+      "query": "Does skf.com sell complete 3-phase AC induction motors? If yes, give me a part number; if no, say so plainly.",
+      "agent": {
+        "text": "No, SKF (skf.com) does not sell complete 3-phase AC induction motors. \n\nWhile SKF is heavily involved in the electric motor industry, they operate strictly as a component, maintenance, and solutions supplier rather than a manufacturer of complete motors. Their catalog focuses on parts and tools designed *for* electric motors, including:\n\n*   **Bearings:** Deep groove ball bearings, hybrid bearings, INSOCOAT (electrically insulated) bearings, and magnetic bearings.\n*   **Seals and Lubrication:** Motor seals and automated lubrication systems.\n*   **Testing & Maintenance:** Condition monitoring sensors and diagnostic equipment (such as SKF motor testing instruments).\n\nIf you need to purchase a complete 3-phase AC induction motor, you will need to source it from a dedicated electric motor manufacturer or distributor, such as ABB, WEG, Siemens, or Baldor (Regal Rexnord).",
+        "sources": [
+          {
+            "title": "ato.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE4DVoJdUdKWlmwSYuZELyYalJHGrBthWvpEUXgkoGG8cWeYEIQnCRvTiFuK8VhgPvMVxsHROD6MLHkRuwt2zH2Sq5z64pkhIXAjSeWFSA_Dn_EHmji_2oRc8dEViOM0A=="
+          },
+          {
+            "title": "regalrexnord.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUOz_St52RNHeKnyySC4PUlIddjGxlkVV60ynxSmsim3xtcCC4znPLiSPSmYtcHoGTtDnpwSFh2Hq7SzVNY-e7wRkY1GccNGa9xNxsbboZ8uN1y_RwSQRgFIsDIw3CwYshDqgO3spkyx-cUqeUmjlO"
+          },
+          {
+            "title": "st.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFhtwsMT1DEfS7NfxEM7gAc-686UZji-G5YdtLJplqGfcYaY4M3FrnBICRP3GVoXODnyPdTEsMoKg6LznPsyxEDfE_268HmOAiu1kDeTD_P-s2OzkGvyCx_okazs6HGxukf0l9pdpPU_hKinC0G1hneh2BrbVntu7fB-cWGpV3GOL6IMnBOxHG6hGXsHGGK851-cNg="
+          },
+          {
+            "title": "wegelectric.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHLr2ozSlECm9U0CIrpNLVAgFFGnmXqiEiOhcAW6F-5bnhs8hgstPE2fY6mm_WQCnMJ-_ATza4GAXPJrAS6mIqqYVEkh1QAV0TOqM9qj6GWLp9Is6yNIr3X2Vo="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.regalrexnord.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUOz_St52RNHeKnyySC4PUlIddjGxlkVV60ynxSmsim3xtcCC4znPLiSPSmYtcHoGTtDnpwSFh2Hq7SzVNY-e7wRkY1GccNGa9xNxsbboZ8uN1y_RwSQRgFIsDIw3CwYshDqgO3spkyx-cUqeUmjlO",
+            "title": "regalrexnord.com",
             "class": "other"
           },
           {
-            "host": "propribory.ru",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGo-hgIFXPNyVdshbMn95vMiKAxXmC85-Ez6Yu5gu01JchG3bdYElsdFBB387f42agtb_YT_0SrLKvp9u_ChBDvDPsqmhadgymKHfbyqVkMjuU6lVE2YLWMlEynCH0z5B0ZUb8mPGKWG218AVxeR7lVQsz5LODk0QpF84vAPg3ixXT_vaVkwdZOQA==",
-            "title": "propribory.ru",
+            "host": "www.ato.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE4DVoJdUdKWlmwSYuZELyYalJHGrBthWvpEUXgkoGG8cWeYEIQnCRvTiFuK8VhgPvMVxsHROD6MLHkRuwt2zH2Sq5z64pkhIXAjSeWFSA_Dn_EHmji_2oRc8dEViOM0A==",
+            "title": "ato.com",
             "class": "other"
           },
           {
-            "host": "www.artisantg.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhlXikC-Dje0tyEN7PHMhuYcZrqhYUSZsHUaabKgyMp7MG-FXg075nJ2AvhEK0RHLaM-2LY9wDkJdefGQyCA3OkAm5l0dmYLMHjnmElGoW3BEYdIYqzLbYCd4s0kbAKnyr0FSBzyGs9o0yVDLJFnZZ2_VN5h0Ahhz6UJ27TQ-yNOAXIw==",
-            "title": "artisantg.com",
+            "host": "catalog.wegelectric.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHLr2ozSlECm9U0CIrpNLVAgFFGnmXqiEiOhcAW6F-5bnhs8hgstPE2fY6mm_WQCnMJ-_ATza4GAXPJrAS6mIqqYVEkh1QAV0TOqM9qj6GWLp9Is6yNIr3X2Vo=",
+            "title": "wegelectric.com",
+            "class": "other"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFhtwsMT1DEfS7NfxEM7gAc-686UZji-G5YdtLJplqGfcYaY4M3FrnBICRP3GVoXODnyPdTEsMoKg6LznPsyxEDfE_268HmOAiu1kDeTD_P-s2OzkGvyCx_okazs6HGxukf0l9pdpPU_hKinC0G1hneh2BrbVntu7fB-cWGpV3GOL6IMnBOxHG6hGXsHGGK851-cNg=",
+            "title": "st.com",
             "class": "other"
           }
         ],
@@ -229,24 +313,48 @@
         "total_sources": 4
       },
       "category": "CORRECT",
-      "rationale": "The SKF CMSS 2200 is a real, verifiable industrial accelerometer that matches the requested specifications (100 mV/g, side-exit, low-profile, 2-pin connector). The agent also correctly identified the specific mounting thread variations (CMSS 2200-M8) and the mating cable series (CMSS 932) as confirmed by SKF datasheets and distributor listings."
+      "rationale": "Search results confirm that SKF is a supplier of electric motor components (such as bearings, seals, and lubrication systems) and condition monitoring tools, but they do not manufacture or sell complete 3-phase AC induction motors. The agent correctly answered 'no' and accurately described SKF's actual product scope in the electric motor industry."
     },
     {
-      "query": "Our progressive lubrication system requires a replacement SKF Lincoln electrically operated 24V DC pump capable of driving up to three pump elements. What is the base SKF Lincoln model number for this compact pump series so we don't accidentally order a hydraulic tool lubricator?",
+      "query": "I'm comparing skf.com's CARB toroidal roller bearings vs. Timken's spherical roller bearings. What are the key differentiators and which one is recommended for accommodating thermal shaft expansion in a paper drying cylinder?",
       "agent": {
-        "text": "The base SKF Lincoln model number you are looking for is the **P203** (part of the Quicklub family). \n\nThe P203 is a versatile, compact, electrically operated 24V DC pump explicitly designed for progressive lubrication systems. It features a built-in motor and reservoir, and it allows you to install up to three separate pump elements to drive your primary metering devices. \n\n**Note on newer models:** SKF is currently transitioning from the classic P203 to the newer **PLP** (Progressive Lubrication Pump) series. The PLP shares the same dimensions, mounting patterns, and 3-element capacity but features updated smart connectivity. Ordering a **P203** or **PLP** base model guarantees you are getting the correct electrical progressive pump. \n\nTo ensure you do not accidentally order a hydraulic tool lubricator (which are driven by machine hydraulics rather than a 24V DC electric motor, such as the Lincoln HTL series), strictly use the **P203** or **PLP** prefix. When building your final SKU, confirm the configuration code specifies a 24V DC motor, your required reservoir size, and the correct number of K-series pump elements (e.g., K5, K6, or K7).",
+        "text": "**Key Differentiators:**\nThe primary differentiator is how they handle axial thermal expansion. \n\n*   **Timken Spherical Roller Bearings (SRBs):** Designed to accommodate heavy radial loads and shaft misalignment. However, to manage axial thermal expansion, an SRB must be used as a non-locating bearing where its outer ring physically slides within the housing bore. This sliding can cause stick-slip friction, induced axial loads, and fretting corrosion over time.\n*   **SKF CARB Toroidal Roller Bearings:** Specifically designed as a non-locating bearing that accommodates both misalignment and axial displacement *internally*. The rollers shift position within the raceways, allowing for frictionless axial movement without requiring the outer ring to slide in the housing. \n\n**Recommendation:**\nFor a paper machine drying cylinder experiencing significant thermal shaft expansion, the **SKF CARB bearing is highly recommended** for the non-locating side. (It is typically paired with a standard SRB on the locating side). \n\n**Orderable Part Number:**\nFor high-temperature steam drying cylinders (>170°C / 338°F) without journal insulation, SKF specifically recommends the **HA3** suffix (case-hardened inner ring). \n\nA real, orderable SKU for this application is **SKF C 3152 K/HA3C4** (or **C 3148 K/HA3C4** depending on shaft size). \n*   **C 3152**: CARB toroidal bearing series\n*   **K**: Tapered bore (1:12)\n*   **HA3**: Case-hardened inner ring for high heat\n*   **C4**: Extra radial internal clearance to account for thermal expansion",
         "sources": [
           {
+            "title": "promshop.info",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG80YJw7yQjVptT0T9-qQauBOoPcv4ix_deQ3_JQYlvBQcqVETQLytIGIKHxREuy58-xJglmsdusnpPon3BXSN6w8PWjjbqPgozPhwyCB-7C6Kd7cdwpNXmEM6D1UbXmEghRpmhpcg5yoIqcs93iOIT0qG0biTMuHkUF57mIF1iGLOqDchIbYEZLeLCk8rgJfnn_UHVB2Gn"
+          },
+          {
             "title": "skf.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCXBhaHdn0i5RP3cuQNXAJj-rLb_QbohOUzd3JBs1uXveLfH8T2A_G8BzSPUgT1bQfE25R3avupQS2tG7nKMkjGLEGamywNC_awZAUnkiTV6m0CKL6w9xc4UkFkDrAralbDfUasPaDI-e5kDWvnimHT-h-e3CdkNdSipAnT4nh1IIGOr0NnK41g17aIqMDRSvT6gKtBZ-JKgVKs1fbbFRE"
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5imSI9-H-dheayoegiZmB_pdke84tvyRYR07I84nPC2Q61jyqUm4HNmOJpqfn97z1wAhWD0BhAOMP10KNprrKQSEDC-aW_9eU_6Cb9-oCn0sRcX1GB2YJdO47Smx6q1mvYPU2hu2t7odZ9_4t1Qh54dPESydY7cUGSw=="
           },
           {
-            "title": "hydrokit.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFb4TR4vYqil5_6qyWccjzkpLLOmQkxf1IvBrJU9VZN1tXDmz3IhL5msQZrfTkcYLrwof6hNa8s3edWU461_Un51rpYpVDubTCrQsDqG9nANgXN2LHgsTfGuQV-igfWQ4-tm9XB_br-kK6RWgWBov85E2LgYtDVocwixgWiftgUieo7R-cI4we_zQ=="
+            "title": "skf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFzKp97-mCWeco-u8LsXzXM27GYq_qIMNZBrhZV95ahN0YwrJFaFsMKZqoIw48-c4tHYHjA1BwZEkA70U18SevUeRIHG25BaM--NOh4jV1pCjV3ffOrNvR44QmvUAeg-Idcgpeh04Wlb49KSAOj0d1trVWQ_ilix5J4NuvXP44Ir2xnj0XtEKb1Z9Kh_XWRaA9k9JI9OcQ0nZYxxCvFQNP7EB04Xkglg3Xi4VNuZ-zhVwQ="
           },
           {
-            "title": "hennlich.pl",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFuHCYfVlZH_UuyeSYHlHQNqsJPoTXVXFfC30v8WDQbsc6XFhMlD4zSDKJ_cCJM_xGTffg4U4-tGrZFfm422gcTi7aOAlOxD9IJvKjkhgcMizpZZZqyL5nRsTUFzOjyYHchSkzul1Bs4DFtKbvuDiTDYUfLfNwGqChe6ZlfQ8KRPkeYUknpH6Ktxe56W7GSQ8GHCyY44HtlN2TDK3dfakSCfrn3eAQazZp9S5HrBJYXXRcuVjs="
+            "title": "vwimpex.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjnDqFaG4MpOvjjQ_2M0R-WrZRdVtq5AMFs_idybkBzts-BF3zsnlIRkNJUK-IqAhRsT-BixyPYjAUe7gFXMN8lkDP9FS7sHWYSvTGpsybYQzKMMEeTEyFV6C1GFZpwoivatb72hhuZfFWdkDze0FKsDoOfk0="
+          },
+          {
+            "title": "skf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0hy1C33SbkzB2lwkmJ7MmsRZ5ctlNLJdhlHGLI_tE13LZDrqMOTVYnY35SQ57Vum4TV_MQ8NHzG_TG4cDh6gFXtH-JfIKNVJyp-3uxkvDob2y80GKbTqDNVIPjxnG8FU0Y7slCDmb-I4EvdI4abxTcBjxUZdMv24skA=="
+          },
+          {
+            "title": "skf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF-BLVchD3IZuesbj85AsuvYsS8vRJy3emP4cjIHy_FxgtH2i11HRBoh3ozxJAAMX9SXGJxaxpO6M2KLEOmZk4DuvvJPp6A5s0S7U5vamnT5hXHj7QQyNZOJQiIaIt0XZq3qNav2LwEE1tIAvbiY0EiJS1SxF8Hj7rGsKMHbG93IF6Zd0fNPBeAO7GcgQQwyC7-7AG-Eggns7R-u4XTOTJ2aqjaIxNylhcJ0NMFYMB-6w=="
+          },
+          {
+            "title": "scribd.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGuLFx486qyDoxEbWBvH-8fHuFn8c2gbfNNGBCWEUW3To3cr4QKckRgBf6-rRgBP9tM7LLOQKWD4gjs-MdatsBKKMxCjArR6CI-gFVVlI78mRdtjxwVuVutBuV-w8y_NRs65yw9FE2jAUjDJRFE6v2n0GRCS5eQpdWowZvIBiOMCaJz"
+          },
+          {
+            "title": "abf.store",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH24bFip9bqEnvZu1yFAUh42rTCCC2mNrbfuhSd_wLSHdi1SIxVposo43_RtQdKAjClB8DT16_khnFZcCJ1-HKiM8Ln-SstrYSg6KcQOV5nRfNS53QXTWUk8QH1jAg0qv9fXze4CrJik7ztASxQJ2AfJHQ7JSA="
+          },
+          {
+            "title": "abf.store",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEGUM9cabXVwl8kqfyAQYRHKtTrFNvDeaDhhnRZXzErYSKsWUqaKVyXWKWQPEsKD4s9jwSt0e4vBHay70EBEsJN-3aDRgy2OP8LdpNdocjEy2cw5DIX15sirx6NtFu_sbtTA8wIcK6z10dbJJPyYGe9EylVQMc="
           }
         ],
         "error": null
@@ -254,110 +362,83 @@
       "attribution": {
         "domains": [
           {
-            "host": "www.hennlich.pl",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFuHCYfVlZH_UuyeSYHlHQNqsJPoTXVXFfC30v8WDQbsc6XFhMlD4zSDKJ_cCJM_xGTffg4U4-tGrZFfm422gcTi7aOAlOxD9IJvKjkhgcMizpZZZqyL5nRsTUFzOjyYHchSkzul1Bs4DFtKbvuDiTDYUfLfNwGqChe6ZlfQ8KRPkeYUknpH6Ktxe56W7GSQ8GHCyY44HtlN2TDK3dfakSCfrn3eAQazZp9S5HrBJYXXRcuVjs=",
-            "title": "hennlich.pl",
+            "host": "www.scribd.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGuLFx486qyDoxEbWBvH-8fHuFn8c2gbfNNGBCWEUW3To3cr4QKckRgBf6-rRgBP9tM7LLOQKWD4gjs-MdatsBKKMxCjArR6CI-gFVVlI78mRdtjxwVuVutBuV-w8y_NRs65yw9FE2jAUjDJRFE6v2n0GRCS5eQpdWowZvIBiOMCaJz",
+            "title": "scribd.com",
             "class": "other"
           },
           {
             "host": "www.skf.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCXBhaHdn0i5RP3cuQNXAJj-rLb_QbohOUzd3JBs1uXveLfH8T2A_G8BzSPUgT1bQfE25R3avupQS2tG7nKMkjGLEGamywNC_awZAUnkiTV6m0CKL6w9xc4UkFkDrAralbDfUasPaDI-e5kDWvnimHT-h-e3CdkNdSipAnT4nh1IIGOr0NnK41g17aIqMDRSvT6gKtBZ-JKgVKs1fbbFRE",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5imSI9-H-dheayoegiZmB_pdke84tvyRYR07I84nPC2Q61jyqUm4HNmOJpqfn97z1wAhWD0BhAOMP10KNprrKQSEDC-aW_9eU_6Cb9-oCn0sRcX1GB2YJdO47Smx6q1mvYPU2hu2t7odZ9_4t1Qh54dPESydY7cUGSw==",
             "title": "skf.com",
             "class": "manufacturer"
           },
           {
-            "host": "www.hydrokit.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFb4TR4vYqil5_6qyWccjzkpLLOmQkxf1IvBrJU9VZN1tXDmz3IhL5msQZrfTkcYLrwof6hNa8s3edWU461_Un51rpYpVDubTCrQsDqG9nANgXN2LHgsTfGuQV-igfWQ4-tm9XB_br-kK6RWgWBov85E2LgYtDVocwixgWiftgUieo7R-cI4we_zQ==",
-            "title": "hydrokit.com",
+            "host": "www.skf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0hy1C33SbkzB2lwkmJ7MmsRZ5ctlNLJdhlHGLI_tE13LZDrqMOTVYnY35SQ57Vum4TV_MQ8NHzG_TG4cDh6gFXtH-JfIKNVJyp-3uxkvDob2y80GKbTqDNVIPjxnG8FU0Y7slCDmb-I4EvdI4abxTcBjxUZdMv24skA==",
+            "title": "skf.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.abf.store",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH24bFip9bqEnvZu1yFAUh42rTCCC2mNrbfuhSd_wLSHdi1SIxVposo43_RtQdKAjClB8DT16_khnFZcCJ1-HKiM8Ln-SstrYSg6KcQOV5nRfNS53QXTWUk8QH1jAg0qv9fXze4CrJik7ztASxQJ2AfJHQ7JSA=",
+            "title": "abf.store",
+            "class": "other"
+          },
+          {
+            "host": "cdn.skfmediahub.skf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFzKp97-mCWeco-u8LsXzXM27GYq_qIMNZBrhZV95ahN0YwrJFaFsMKZqoIw48-c4tHYHjA1BwZEkA70U18SevUeRIHG25BaM--NOh4jV1pCjV3ffOrNvR44QmvUAeg-Idcgpeh04Wlb49KSAOj0d1trVWQ_ilix5J4NuvXP44Ir2xnj0XtEKb1Z9Kh_XWRaA9k9JI9OcQ0nZYxxCvFQNP7EB04Xkglg3Xi4VNuZ-zhVwQ=",
+            "title": "skf.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "cdn.skfmediahub.skf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF-BLVchD3IZuesbj85AsuvYsS8vRJy3emP4cjIHy_FxgtH2i11HRBoh3ozxJAAMX9SXGJxaxpO6M2KLEOmZk4DuvvJPp6A5s0S7U5vamnT5hXHj7QQyNZOJQiIaIt0XZq3qNav2LwEE1tIAvbiY0EiJS1SxF8Hj7rGsKMHbG93IF6Zd0fNPBeAO7GcgQQwyC7-7AG-Eggns7R-u4XTOTJ2aqjaIxNylhcJ0NMFYMB-6w==",
+            "title": "skf.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.abf.store",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEGUM9cabXVwl8kqfyAQYRHKtTrFNvDeaDhhnRZXzErYSKsWUqaKVyXWKWQPEsKD4s9jwSt0e4vBHay70EBEsJN-3aDRgy2OP8LdpNdocjEy2cw5DIX15sirx6NtFu_sbtTA8wIcK6z10dbJJPyYGe9EylVQMc=",
+            "title": "abf.store",
+            "class": "other"
+          },
+          {
+            "host": "promshop.info",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG80YJw7yQjVptT0T9-qQauBOoPcv4ix_deQ3_JQYlvBQcqVETQLytIGIKHxREuy58-xJglmsdusnpPon3BXSN6w8PWjjbqPgozPhwyCB-7C6Kd7cdwpNXmEM6D1UbXmEghRpmhpcg5yoIqcs93iOIT0qG0biTMuHkUF57mIF1iGLOqDchIbYEZLeLCk8rgJfnn_UHVB2Gn",
+            "title": "promshop.info",
+            "class": "other"
+          },
+          {
+            "host": "vwimpex.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjnDqFaG4MpOvjjQ_2M0R-WrZRdVtq5AMFs_idybkBzts-BF3zsnlIRkNJUK-IqAhRsT-BixyPYjAUe7gFXMN8lkDP9FS7sHWYSvTGpsybYQzKMMEeTEyFV6C1GFZpwoivatb72hhuZfFWdkDze0FKsDoOfk0=",
+            "title": "vwimpex.com",
             "class": "other"
           }
         ],
         "counts": {
-          "manufacturer": 1,
+          "manufacturer": 4,
           "distributor": 0,
           "marketplace": 0,
-          "other": 2
+          "other": 5
         },
         "primary": "other",
-        "total_sources": 3
+        "total_sources": 9
       },
       "category": "CORRECT",
-      "rationale": "Verified via SKF's catalog that the Lincoln P203 is the correct 24V DC electrically operated progressive lubrication pump capable of driving up to three elements. The agent also accurately noted SKF's announced transition to the new PLP (Progressive Lubrication Pump) series and correctly identified the HTL series as the hydraulically driven tool lubricators to avoid."
-    },
-    {
-      "query": "Our maintenance crew needs a portable SKF induction heater capable of safely heating bearings up to 40 kg with a minimum bore diameter of 20 mm. What is the specific SKF equipment part number for this heater so we don't accidentally buy the much larger 120 kg capacity model?",
-      "agent": {
-        "text": "The specific SKF equipment you need is the **TIH 030m** series small portable induction heater. \n\nDepending on your facility's voltage requirements, the exact orderable part numbers are:\n* **TIH 030M/230V** (for 230V, 50/60Hz)\n* **TIH 030M/110V** (for 110V, 50/60Hz)\n\n**Key Specifications:**\n* **Heating Capacity:** Up to 40 kg (88 lb).\n* **Bore Diameter Minimum:** 20 mm (comes standard with three yokes, including a 14 x 14 x 215 mm yoke specifically for 20 mm and larger bores). \n* **Portability:** Weighs 20.9 kg (46 lb) and features a compact design.\n\nBy specifying the **TIH 030m**, you will get the correct 40 kg portable unit and avoid accidentally purchasing the much larger 120 kg capacity model (which is the SKF **TIH 100m**).",
-        "sources": [
-          {
-            "title": "skf.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFRcZRTocTa4IugMxkaNh0jlwePtP-E_F9tfLSk_WtoWt82dYB5Nr-IIU7BESXYRWuPLpYp4qLxI3btBvwDnkp7ozjhHjoJ0j3HXEyBczYrUyeeh01nF7Ipm3shx0g4mtxeaqgIh1TLAfzLsMqg6f0gDece2cx1aiaaQPOkp2tbs9D5f5DQLjlpyFhXoIlxgHeGlmiPz9bqK_n5xl06FYUS6jp2rbOrbzJJbQ=="
-          },
-          {
-            "title": "rs-online.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHOXTzFGbiH3i0kRllFuole8UoNyBBf0K0Eb6AEA8Eik43SY1WYID2JATN8IaUyQ7HdOa-0jP5tEcgnFTIb62YYlbPxkryjjQE14prtiEJisKJ6308_UzhcRO3X-cs2H11hGkKLemAe5h_EwQpXww=="
-          },
-          {
-            "title": "reliabilitydirectstore.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF7B618zFC9F5VkIMMRUuSwrJgtZg4bO4NfzKEeiWr-Z_uhg83ODCzSG3sALL24qP8P3Y6G-CrgmkHut0gpDRce3ganTNgSo3rYsXnQYHdOzlb5nNX7njXHIY0JppvZNMgXAE2Qam8t5EnUIxVhrwvx9H2WTpMYv6HfE_KnS_DOvv3MiAIy0O3I0hb8OVjZbnAiFKJUJ86LFd-c0qrx0D7BI6BOPAIj"
-          },
-          {
-            "title": "reliabilitydirectstore.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFmBxXRXM-HN56UjBky10CX_x59coH15DqiHGGxO7XlD0AetX_G-vWJBYCwED-cPO-OY527vuJKxblK1IoOvsw2ztQTNWg0DZYH7sO9FLstSTqWfJpc2DPEA0vo8hVDvTBccOQBUsRk8TCwzdIw9Z7wX_XaiuyxUVBJD7uNmWOErI1W50EW_WntRg1Z8WLdrDbsnQYSvaSZeyNBsrSmuOR3pNboAqx6"
-          }
-        ],
-        "error": null
-      },
-      "attribution": {
-        "domains": [
-          {
-            "host": "www.skf.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFRcZRTocTa4IugMxkaNh0jlwePtP-E_F9tfLSk_WtoWt82dYB5Nr-IIU7BESXYRWuPLpYp4qLxI3btBvwDnkp7ozjhHjoJ0j3HXEyBczYrUyeeh01nF7Ipm3shx0g4mtxeaqgIh1TLAfzLsMqg6f0gDece2cx1aiaaQPOkp2tbs9D5f5DQLjlpyFhXoIlxgHeGlmiPz9bqK_n5xl06FYUS6jp2rbOrbzJJbQ==",
-            "title": "skf.com",
-            "class": "manufacturer"
-          },
-          {
-            "host": "www.reliabilitydirectstore.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFmBxXRXM-HN56UjBky10CX_x59coH15DqiHGGxO7XlD0AetX_G-vWJBYCwED-cPO-OY527vuJKxblK1IoOvsw2ztQTNWg0DZYH7sO9FLstSTqWfJpc2DPEA0vo8hVDvTBccOQBUsRk8TCwzdIw9Z7wX_XaiuyxUVBJD7uNmWOErI1W50EW_WntRg1Z8WLdrDbsnQYSvaSZeyNBsrSmuOR3pNboAqx6",
-            "title": "reliabilitydirectstore.com",
-            "class": "other"
-          },
-          {
-            "host": "www.reliabilitydirectstore.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF7B618zFC9F5VkIMMRUuSwrJgtZg4bO4NfzKEeiWr-Z_uhg83ODCzSG3sALL24qP8P3Y6G-CrgmkHut0gpDRce3ganTNgSo3rYsXnQYHdOzlb5nNX7njXHIY0JppvZNMgXAE2Qam8t5EnUIxVhrwvx9H2WTpMYv6HfE_KnS_DOvv3MiAIy0O3I0hb8OVjZbnAiFKJUJ86LFd-c0qrx0D7BI6BOPAIj",
-            "title": "reliabilitydirectstore.com",
-            "class": "other"
-          },
-          {
-            "host": "docs.rs-online.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHOXTzFGbiH3i0kRllFuole8UoNyBBf0K0Eb6AEA8Eik43SY1WYID2JATN8IaUyQ7HdOa-0jP5tEcgnFTIb62YYlbPxkryjjQE14prtiEJisKJ6308_UzhcRO3X-cs2H11hGkKLemAe5h_EwQpXww==",
-            "title": "rs-online.com",
-            "class": "distributor"
-          }
-        ],
-        "counts": {
-          "manufacturer": 1,
-          "distributor": 1,
-          "marketplace": 0,
-          "other": 2
-        },
-        "primary": "other",
-        "total_sources": 4
-      },
-      "category": "CORRECT",
-      "rationale": "I verified via the manufacturer's catalog that the SKF TIH 030M series (TIH 030M/230V and TIH 030M/110V) is a portable induction heater that explicitly supports a maximum bearing weight of 40 kg and a minimum bore diameter of 20 mm. Additionally, SKF documentation confirms the TIH 100M is the larger 120 kg capacity model, perfectly aligning with the agent's response."
+      "rationale": "Search results confirm that SKF's CARB toroidal roller bearings are explicitly designed to internally accommodate axial thermal expansion for the non-locating side of paper machine drying cylinders. The provided SKUs (C 3152 K/HA3C4 and C 3148 K/HA3C4) are real, orderable parts verified through authoritative distributors like Motion Industries and RS Online, and the agent correctly identified all suffix definitions (K for tapered bore, HA3 for case-hardened inner ring, C4 for radial clearance)."
     }
   ],
   "log": [
     "[  0.0s] Stage 0: validated skf.com (brand=skf)",
     "[  0.0s] Stage 1: generating queries (grounded against skf.com)",
-    "[ 28.8s]   Generated 5 queries",
-    "[ 28.8s] Stage 2: running 5 grounded queries against Gemini Pro",
-    "[ 53.8s] Stage 3: source attribution complete",
-    "[ 53.8s] Stage 4: categorizing answers",
-    "[ 69.9s] Stage 5: visibility=100 (5/5), source_authority=20 (1/5 manufacturer-sourced) in 69.9s"
+    "[ 14.4s]   Generated 5 queries",
+    "[ 14.4s] Stage 2: running 5 grounded queries against Gemini Pro",
+    "[ 45.8s] Stage 3: source attribution complete",
+    "[ 45.8s] Stage 4: categorizing answers",
+    "[ 58.7s] Stage 5: visibility=100 (5/5), source_authority=60 (3/5 manufacturer-sourced) in 58.7s"
   ],
-  "elapsed_seconds": 69.9,
+  "elapsed_seconds": 58.7,
   "slug": "skf",
   "display_name": "SKF"
 }

@@ -2,46 +2,47 @@
   "input": "https://boschrexroth.com",
   "host": "boschrexroth.com",
   "brand": "boschrexroth",
-  "visibility_score": 80,
-  "source_authority_score": 0,
+  "visibility_score": 100,
+  "source_authority_score": 20,
   "total_queries": 5,
-  "correct_queries": 4,
-  "manufacturer_correct": 0,
+  "correct_queries": 5,
+  "manufacturer_correct": 1,
   "breakdown": {
-    "CORRECT": 4,
-    "HALLUCINATION": 1,
+    "CORRECT": 5,
+    "HALLUCINATION": 0,
+    "OUT_OF_CATALOG_HALLUCINATION": 0,
     "REFUSED": 0,
     "WRONG_SPEC": 0,
     "ERROR": 0
   },
   "source_breakdown": {
-    "manufacturer": 0,
+    "manufacturer": 1,
     "distributor": 0,
     "marketplace": 0,
-    "other": 5,
+    "other": 4,
     "none": 0
   },
   "rows": [
     {
-      "query": "Please verify if the Rexroth R162349420 ball runner block is a size 45 slimline format with N accuracy. Ordering the wrong block means it won't fit our existing gantry rails and will stall the entire automation build.",
+      "query": "I need a size 6 direct-actuated directional spool valve from boschrexroth.com with 4 ports, 2 positions, spool symbol WA, and a 24 VDC solenoid. Give me the part number.",
       "agent": {
-        "text": "Yes, your specifications are perfectly correct. The **Bosch Rexroth R162349420** (catalog code: KWD-045-SLS-C0-N-1) exactly matches the requirements you listed. \n\nBased on manufacturer catalog data, the specifications for this specific part number are:\n*   **Size:** 45\n*   **Format:** SLS (Slimline width, Long length, Standard height)\n*   **Accuracy:** Class N (Standard/Normal accuracy)\n*   **Preload:** C0 (Preload-free / Clearance)\n*   **Material:** Carbon Steel (CS)\n\nOrdering the **R162349420** will ensure you receive the size 45, slimline, N-accuracy runner block you need. Because Rexroth linear blocks feature limitless interchangeability within the same accuracy class, this block will successfully fit your existing size 45 gantry guide rails. You can safely proceed with this exact SKU for your automation build.",
+        "text": "Based on the Bosch Rexroth catalog, a standard orderable part number that matches your exact specifications is **R900552338**. \n\nThe corresponding manufacturer type code (model code) is **4WE 6 WA6X/EG24N9K4**.\n\nHere is the breakdown of the designation:\n* **4WE**: 4-port directional spool valve, direct actuated\n* **6**: Size 6 (CETOP 3 / NG6)\n* **WA**: Spool symbol WA (2 positions)\n* **6X**: Component series (generation)\n* **E**: High-power wet-pin solenoid\n* **G24**: 24 VDC solenoid\n* **N9**: With concealed manual override\n* **K4**: Electrical connector according to DIN EN 175301-803\n\n*(Note: This standard SKU uses NBR seals. If your hydraulic fluid or operating temperature requires FKM/Viton seals, you can order part number **R978028325**, which corresponds to model code 4WE 6 WA6X/EG24N9K4/V.)*",
         "sources": [
           {
+            "title": "boschrexroth.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhs8zUtDOQIf64v1NovPIzFuv4_Z4rmePcBW0F2lYzMNuT3CMzLdOuSHYT8nCiANiMcW8ICpDsvwGqGLnwGQMSY8miy5dO893pX7AoZ7lJ4MqBknQEzwNvJrula9QI-ajycaLHa08P9QJeDYi-uaHqNQti3PuDoYDZls8nHF3l-JirSrbLinWN"
+          },
+          {
+            "title": "ebay.com.au",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFy9mMAPcCmZDi5kTx2cuUmz9KrzVMaJN5SZWUFJg2_Ob5qKS-dMseudTgNxZ_PsQF1xO-wnRnWfQFwMWRo9Op-bv3hwGBaRuVCTrEOt2Nn0_G8iAQ5ZyYzmEvcxxCnRX_QTw=="
+          },
+          {
+            "title": "livhaven.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJv_gcrqLKG8vDOj0d92AKUW416Hp8QdRcCuZHpOOIjv1U8rs5nsjv6meyqYEcYnzNJXPDsF5NmGhF4ixtdseHEenj2BKH-j88fwGc8CJUge5gMjqylHvo_LRin2Zf9k7bEJe8ebU28_UZ8RHU9IT-4ZUFYD3x0g83S4_nGGvtBbfcrnBAdsNZxgOWtMsxn3BF"
+          },
+          {
             "title": "buyrexroth.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHpv5zyWAoKdlUDHKGTca3PeaKGlKettGMxT7T-2eYDKcb2Byz2kC3vz89rf_jESCc5eJmFyHMPH7yG8gnkPGDXxA1EnwEoQaNjn-MtxOJQin74ocjQY8HRgsdNkLemceb2h3k="
-          },
-          {
-            "title": "sp-spareparts.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHpY_b4ZSK9vzZlPm7KTwoqXy5-fEH7ykL-jtmtLeJYNK5PqDHhWAU9KT62CUVaN0r0GhbQVTXY2HghJYOjqBD6WLYJPG85L58B-HJ4fISzReC_5rH5z2i3X7dfUo3tuv_MGSqGGOcBVzxVxzeLmht-3554m9Y="
-          },
-          {
-            "title": "rexroth-parts.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGsSzCuv1XA6TYnKOks3OOexXRpYPX7Dx6R4-ukqtTUu_-IUXo9fJjvu_4ildtAXdQSClLeObpe0JNi26urqdzC99Xvn9rtcvkcWRgPsaq-c12XLjMmZZKDA_2E61uOsw9YOv6lSPexwg4ZKFdSmvDffKFWtd5HSa0EHqHhHqpD8JAntDg="
-          },
-          {
-            "title": "rs-online.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1VR9xesMPxe5y5YCAIguezqiypK0LWmV3PBrWdsaml1kJHMY1K9IMc-lLf29A70MLgbgRPcDEFow5SQGWkBEods9ZwkrFED413Tq9JX6z1CSjfpt8-BwdiGx2ZYDfX72ygrOudA8WVVoReqoDkrgU8aaXwjG65OivXjN0tOjv9ZfAb8vMnVKdSDAQX4cChN4UOOY7Krs="
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHeIOCpfZaO2TZ6MjKe-Gk4ZfyEgPqk3JUei6AetxLF8UUraFiaU16linQAK19ce6N6Oe-aQW8yS1kXSG__I4gb5zFlVDOjvWDzO4FEAPQ5jgKxmSfMfZRgOX4owjv78eIEdow="
           }
         ],
         "error": null
@@ -49,33 +50,33 @@
       "attribution": {
         "domains": [
           {
-            "host": "us.rs-online.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1VR9xesMPxe5y5YCAIguezqiypK0LWmV3PBrWdsaml1kJHMY1K9IMc-lLf29A70MLgbgRPcDEFow5SQGWkBEods9ZwkrFED413Tq9JX6z1CSjfpt8-BwdiGx2ZYDfX72ygrOudA8WVVoReqoDkrgU8aaXwjG65OivXjN0tOjv9ZfAb8vMnVKdSDAQX4cChN4UOOY7Krs=",
-            "title": "rs-online.com",
-            "class": "distributor"
+            "host": "store.livhaven.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJv_gcrqLKG8vDOj0d92AKUW416Hp8QdRcCuZHpOOIjv1U8rs5nsjv6meyqYEcYnzNJXPDsF5NmGhF4ixtdseHEenj2BKH-j88fwGc8CJUge5gMjqylHvo_LRin2Zf9k7bEJe8ebU28_UZ8RHU9IT-4ZUFYD3x0g83S4_nGGvtBbfcrnBAdsNZxgOWtMsxn3BF",
+            "title": "livhaven.com",
+            "class": "other"
+          },
+          {
+            "host": "www.ebay.com.au",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFy9mMAPcCmZDi5kTx2cuUmz9KrzVMaJN5SZWUFJg2_Ob5qKS-dMseudTgNxZ_PsQF1xO-wnRnWfQFwMWRo9Op-bv3hwGBaRuVCTrEOt2Nn0_G8iAQ5ZyYzmEvcxxCnRX_QTw==",
+            "title": "ebay.com.au",
+            "class": "other"
+          },
+          {
+            "host": "store.boschrexroth.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhs8zUtDOQIf64v1NovPIzFuv4_Z4rmePcBW0F2lYzMNuT3CMzLdOuSHYT8nCiANiMcW8ICpDsvwGqGLnwGQMSY8miy5dO893pX7AoZ7lJ4MqBknQEzwNvJrula9QI-ajycaLHa08P9QJeDYi-uaHqNQti3PuDoYDZls8nHF3l-JirSrbLinWN",
+            "title": "boschrexroth.com",
+            "class": "manufacturer"
           },
           {
             "host": "buyrexroth.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHpv5zyWAoKdlUDHKGTca3PeaKGlKettGMxT7T-2eYDKcb2Byz2kC3vz89rf_jESCc5eJmFyHMPH7yG8gnkPGDXxA1EnwEoQaNjn-MtxOJQin74ocjQY8HRgsdNkLemceb2h3k=",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHeIOCpfZaO2TZ6MjKe-Gk4ZfyEgPqk3JUei6AetxLF8UUraFiaU16linQAK19ce6N6Oe-aQW8yS1kXSG__I4gb5zFlVDOjvWDzO4FEAPQ5jgKxmSfMfZRgOX4owjv78eIEdow=",
             "title": "buyrexroth.com",
-            "class": "other"
-          },
-          {
-            "host": "www.sp-spareparts.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHpY_b4ZSK9vzZlPm7KTwoqXy5-fEH7ykL-jtmtLeJYNK5PqDHhWAU9KT62CUVaN0r0GhbQVTXY2HghJYOjqBD6WLYJPG85L58B-HJ4fISzReC_5rH5z2i3X7dfUo3tuv_MGSqGGOcBVzxVxzeLmht-3554m9Y=",
-            "title": "sp-spareparts.com",
-            "class": "other"
-          },
-          {
-            "host": "rexroth-parts.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGsSzCuv1XA6TYnKOks3OOexXRpYPX7Dx6R4-ukqtTUu_-IUXo9fJjvu_4ildtAXdQSClLeObpe0JNi26urqdzC99Xvn9rtcvkcWRgPsaq-c12XLjMmZZKDA_2E61uOsw9YOv6lSPexwg4ZKFdSmvDffKFWtd5HSa0EHqHhHqpD8JAntDg=",
-            "title": "rexroth-parts.com",
             "class": "other"
           }
         ],
         "counts": {
-          "manufacturer": 0,
-          "distributor": 1,
+          "manufacturer": 1,
+          "distributor": 0,
           "marketplace": 0,
           "other": 3
         },
@@ -83,16 +84,44 @@
         "total_sources": 4
       },
       "category": "CORRECT",
-      "rationale": "Search results from Bosch Rexroth and authorized distributors like RS verify that part number R162349420 is indeed the KWD-045-SLS-C0-N-1 ball runner block. The specifications accurately reflect a size 45, SLS (slimline, long, standard height) format with C0 clearance/preload and N accuracy class."
+      "rationale": "Google search confirmed that part number R900552338 perfectly matches the Bosch Rexroth model code 4WE 6 WA6X/EG24N9K4, which fits all requested specifications (Size 6, 4-port direct-actuated spool valve, WA spool, 24 VDC). The alternative part number R978028325 for FKM/Viton seals was also successfully verified against distributor catalogs."
     },
     {
-      "query": "What are the exact T-slot dimensions and moment of inertia for the Bosch Rexroth 3842557211 90x90 aluminum strut profile? If the load calculations are off due to hallucinated specs, our custom machine frames will sag and fail safety inspections.",
+      "query": "What categories of products does boschrexroth.com offer? List the main product families with one example each.",
       "agent": {
-        "text": "Based on the Bosch Rexroth aluminum framing catalog, the strut profile with part number **3842557211** (a 90x90 mm heavy-duty profile, sold as a 6070 mm single stick) has the following exact specifications:\n\n*   **T-Slot Dimension:** 10 mm\n*   **Moment of Inertia ($I_x$):** 299.8 cm\u2074\n*   **Moment of Inertia ($I_y$):** 299.8 cm\u2074\n\nFor your structural and safety calculations, you may also need the following related catalog values:\n*   **Moment of Resistance / Section Modulus ($W_x, W_y$):** 66.7 cm\u00b3\n*   **Torsion Index ($I_t$):** 118.6 cm\u2074\n*   **Cross-Sectional Area:** 38.4 cm\u00b2\n*   **Weight:** 10.4 kg/m\n\nUsing these verified manufacturer values will ensure your load and deflection calculations are completely accurate so your custom machine frames pass safety inspections.",
+        "text": "Bosch Rexroth (boschrexroth.com) specializes in drive and control technologies for factory automation, industrial machinery, and mobile applications. Their main product categories and examples include:\n\n*   **Industrial Hydraulics:** Pumps, motors, and control valves for heavy industrial equipment. \n    *   *Example:* Directional Spool Valve (Part Number: **R901330938**, Model: 5-4WE10U10B5X/EG24K4QM0G24/M).\n*   **Electric Drives and Controls:** Automation platforms, servo drives, motors, and frequency converters. \n    *   *Example:* ctrlX DRIVE compact servo drive.\n*   **Linear Motion Technology:** Rail systems, linear axes, ball transfer units, and smart actuators.\n    *   *Example:* Electromechanical Cylinder (EMC).\n*   **Assembly Technology:** Aluminum structural framing, conveyor networks, and material handling systems.\n    *   *Example:* TS 2plus Transfer System.\n*   **Mobile Hydraulics and Electronics:** High-performance components for off-highway mobile machines and mobile robotics.\n    *   *Example:* Hägglunds radial piston motors.\n*   **Tightening Technology & Resistance Welding:** Precision fastening and joining solutions for high-volume manufacturing. \n\nBecause Bosch Rexroth products are highly configurable (like structural framing or built-to-order linear rails), many lines rely on product series names rather than single, universal SKUs. However, standard components like the hydraulic directional valve mentioned above can be ordered via direct catalog part numbers.",
         "sources": [
           {
-            "title": "livhaven.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE4FxKzdWXBMKLR6aZxWi2algMQeHZpRyGcab6VZ8qeP3KYrnBWHyzaZeV1t2p8ibfQZPrWO_TFxTZxZyjbjHAhKPvamxB1TNX6ViupbnIwEyekjIPoeJvH5EvsZjXM6VyTkzW2BHZwjtQaBdJHOZsoe8C194XrOtXYF1laeCmAS-pkMLs="
+            "title": "automate.org",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUgYAAAupuTS0SsIjdE9fyATCV90J5ng_I7MBsctkqRaq4aHcBPMJM9K8b57D1YUuuq4AkmCoI19zyNp0SLEd8YK9CduqPu-g8p7XkfBSTEFUS8cCydXRooEordi1biTv7yTzP6wzYd-vwmHRm7eX3awvRP_p6oLgLnWeA7Kxf9O9lwZ1-CB_7spc8gupGdcrYaplxbCi4e-sZV4N71MBKgxLaFwLlpS6OZhBXr_fN-FaqHpY="
+          },
+          {
+            "title": "boschrexroth.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG4De-E-3Uo6YVuy8xT0l02LiI9EVabkdPFGJ44_3Yb94Fu0IRd3Q6VZKhQwdBDUzfgHXQLK-zCImvIflkHedbnXAlvPP-0gx8H_GmPuhchpFpqN9ILaZV2FNY3A92ggiELCdnTGZQ="
+          },
+          {
+            "title": "boschrexroth.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFYZUI-bbY5YuGeWvzFABcar7x6OeT7AtPwsggFzwOmuLPZ8RqEvrYeoIKKkm9gmvWIIvhG6vlohWc8L30GR_FhoA43Gh35jtkDmfMEyO38uninFdh2k8DmiWR34AgAnt_JYDrrs2g="
+          },
+          {
+            "title": "boschrexroth.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHpAz_zPNgK-qauYID0WY8rplmdNpEU8WUG9GDa2P12JBt3EE_LzQixPrsfe9zUR3WAffIJbLsICkpizgCbP4bZRNOXk-KG5zQ4i1skitO0AyY1jvwvnqvlqj_X1ZxC_w=="
+          },
+          {
+            "title": "boschrexroth.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHf1PPzQ8XiCyBzoCQPl8VAof6UNiAgLKMglttYmKBFH4pLkcCLTyhico-QYiGowiLDYd4hXNmScl8vbYdmqX7D_1jA33BfeHpYaIYJyqtt2yGKEAD-6laMG_WVOKc="
+          },
+          {
+            "title": "hydro-funk.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFu_kN8XueB_TRqbiS9YPmNwTnSVg2CkIqunpzcYM5GdA95cEjixJUojQKKLye7Af-Aj3W2LYAnJQ9k_jRCcRFZ0U9CRfMkWlnoWvkAVChd72NtFQhWCETYjFPfi5lnCsMh4xMmQk-_RzM="
+          },
+          {
+            "title": "boschrexroth.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGsBROWP57oMnHjXWt1uCPYR1e9jTUFQU_O_Rvb8nQajySLXa3whn38fsTuimKEFm2zKTZZxLr7OjRk0hHwWF0-ybY37r0g7wc9D2danQ7rBGQT9hQqOPoeovDym-AibrQ17xwBI52kzs_xiHt6ObSz55PHggRkC57PktUUt3tE8kTO-pSIAtWi9CGReMkHZs8BzUhUSsne5g=="
+          },
+          {
+            "title": "wikipedia.org",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE--oiOK70D-3cUqLbEV1dhrR_xRA0spjUfIewMzSRXW-FVmgdUeJfxuVx5LmvXujm4s_2llfibpdOwfLCwZZpwJ26wow1y86Doxg9h0uHr0SUPaHvXkGH38q5059vof4aZVR9NWw=="
           }
         ],
         "error": null
@@ -100,56 +129,151 @@
       "attribution": {
         "domains": [
           {
+            "host": "en.wikipedia.org",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE--oiOK70D-3cUqLbEV1dhrR_xRA0spjUfIewMzSRXW-FVmgdUeJfxuVx5LmvXujm4s_2llfibpdOwfLCwZZpwJ26wow1y86Doxg9h0uHr0SUPaHvXkGH38q5059vof4aZVR9NWw==",
+            "title": "wikipedia.org",
+            "class": "other"
+          },
+          {
+            "host": "www.automate.org",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUgYAAAupuTS0SsIjdE9fyATCV90J5ng_I7MBsctkqRaq4aHcBPMJM9K8b57D1YUuuq4AkmCoI19zyNp0SLEd8YK9CduqPu-g8p7XkfBSTEFUS8cCydXRooEordi1biTv7yTzP6wzYd-vwmHRm7eX3awvRP_p6oLgLnWeA7Kxf9O9lwZ1-CB_7spc8gupGdcrYaplxbCi4e-sZV4N71MBKgxLaFwLlpS6OZhBXr_fN-FaqHpY=",
+            "title": "automate.org",
+            "class": "other"
+          },
+          {
+            "host": "hydro-funk.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFu_kN8XueB_TRqbiS9YPmNwTnSVg2CkIqunpzcYM5GdA95cEjixJUojQKKLye7Af-Aj3W2LYAnJQ9k_jRCcRFZ0U9CRfMkWlnoWvkAVChd72NtFQhWCETYjFPfi5lnCsMh4xMmQk-_RzM=",
+            "title": "hydro-funk.com",
+            "class": "other"
+          },
+          {
+            "host": "www.boschrexroth.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG4De-E-3Uo6YVuy8xT0l02LiI9EVabkdPFGJ44_3Yb94Fu0IRd3Q6VZKhQwdBDUzfgHXQLK-zCImvIflkHedbnXAlvPP-0gx8H_GmPuhchpFpqN9ILaZV2FNY3A92ggiELCdnTGZQ=",
+            "title": "boschrexroth.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.boschrexroth.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFYZUI-bbY5YuGeWvzFABcar7x6OeT7AtPwsggFzwOmuLPZ8RqEvrYeoIKKkm9gmvWIIvhG6vlohWc8L30GR_FhoA43Gh35jtkDmfMEyO38uninFdh2k8DmiWR34AgAnt_JYDrrs2g=",
+            "title": "boschrexroth.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "store.boschrexroth.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHpAz_zPNgK-qauYID0WY8rplmdNpEU8WUG9GDa2P12JBt3EE_LzQixPrsfe9zUR3WAffIJbLsICkpizgCbP4bZRNOXk-KG5zQ4i1skitO0AyY1jvwvnqvlqj_X1ZxC_w==",
+            "title": "boschrexroth.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.boschrexroth.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGsBROWP57oMnHjXWt1uCPYR1e9jTUFQU_O_Rvb8nQajySLXa3whn38fsTuimKEFm2zKTZZxLr7OjRk0hHwWF0-ybY37r0g7wc9D2danQ7rBGQT9hQqOPoeovDym-AibrQ17xwBI52kzs_xiHt6ObSz55PHggRkC57PktUUt3tE8kTO-pSIAtWi9CGReMkHZs8BzUhUSsne5g==",
+            "title": "boschrexroth.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.boschrexroth.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHf1PPzQ8XiCyBzoCQPl8VAof6UNiAgLKMglttYmKBFH4pLkcCLTyhico-QYiGowiLDYd4hXNmScl8vbYdmqX7D_1jA33BfeHpYaIYJyqtt2yGKEAD-6laMG_WVOKc=",
+            "title": "boschrexroth.com",
+            "class": "manufacturer"
+          }
+        ],
+        "counts": {
+          "manufacturer": 5,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 3
+        },
+        "primary": "manufacturer",
+        "total_sources": 8
+      },
+      "category": "CORRECT",
+      "rationale": "Search results confirm that R901330938 is a valid, orderable Bosch Rexroth part number for a Directional Spool Valve (model 5-4WE10U10B5X/EG24K4QM0G24/M). Furthermore, the official Bosch Rexroth catalog verifies the other listed product families and examples, such as the ctrlX DRIVE, TS 2plus Transfer System, and Electromechanical Cylinders (EMC)."
+    },
+    {
+      "query": "What is the exact maximum operating pressure for the Bosch Rexroth A10VSO Series 31 axial piston variable pump?",
+      "agent": {
+        "text": "According to the manufacturer's official technical datasheet, the Bosch Rexroth A10VSO Series 31 axial piston variable pump has the following pressure ratings:\n\n*   **Nominal Operating Pressure:** 280 bar (4,000 psi)\n*   **Maximum / Peak Operating Pressure:** 350 bar (5,100 psi)\n\nBecause \"A10VSO Series 31\" designates an entire series of customizable pumps (with varying displacements from 18 to 140 cc/rev, control types, and flanges), I cannot answer with a single specific SKU. An orderable part number requires a fully configured code (an example of a real part number in this series is **R910946057** for the model *A10VSO140DR/31R-VPB12N00*). Regardless of the specific configuration or displacement size, the maximum peak pressure of 350 bar (5,100 psi) applies uniformly across the entire Series 31 product line.",
+        "sources": [
+          {
+            "title": "livhaven.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQErG0cJuBntTeZff1tWN9yb-ES4WgHMUuS7v-6TcYG89yPUW8hqRqbwfI1ZFOwAeMUQbRWMy9uh13EavPJxPgoRgn0hFx9Wa8yFLYGPigQUeaiBtmqESX0MTwuwzMlbSDL5rfkkb6cZWxpB-dJfWRD7uhhufbjH2g=="
+          },
+          {
+            "title": "scribd.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHkNiCQeMb9HtKZg1MN3SrhIM4o8PqZUb064JGpHPrgQXELw-On31KD3rYh_vxEPEp9Y4eogAB8Exuo9fZUTk6HOct1jf1ToHTDwj1qj6dJog8GQ-HwdMWSgdvx6ov-H61bfr8Sb5226WarpQd1UOcsjbe0EQ=="
+          },
+          {
+            "title": "indiamart.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFnJ5GVXsPFOfm6z5KEnlu3aFUoIBrDvhI84wea6Xt2RAv_bYtba5eh6yxpJ3rJ_pXVunswGBR396xjkYiL1VtT_B43x1Qy2a9-EgBMGOZKrEH9697RsDJubyGM8F6Nkw6-0W_SFuNvo08JIaBnBnei8x39O4NsnOhiuDYlyGwuVhLMkGaB-HNLtmH495hb0CfKth6eVmYR1K2fIp94EghC489hTOozJA0VFQtbi5w="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.scribd.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHkNiCQeMb9HtKZg1MN3SrhIM4o8PqZUb064JGpHPrgQXELw-On31KD3rYh_vxEPEp9Y4eogAB8Exuo9fZUTk6HOct1jf1ToHTDwj1qj6dJog8GQ-HwdMWSgdvx6ov-H61bfr8Sb5226WarpQd1UOcsjbe0EQ==",
+            "title": "scribd.com",
+            "class": "other"
+          },
+          {
             "host": "store.livhaven.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE4FxKzdWXBMKLR6aZxWi2algMQeHZpRyGcab6VZ8qeP3KYrnBWHyzaZeV1t2p8ibfQZPrWO_TFxTZxZyjbjHAhKPvamxB1TNX6ViupbnIwEyekjIPoeJvH5EvsZjXM6VyTkzW2BHZwjtQaBdJHOZsoe8C194XrOtXYF1laeCmAS-pkMLs=",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQErG0cJuBntTeZff1tWN9yb-ES4WgHMUuS7v-6TcYG89yPUW8hqRqbwfI1ZFOwAeMUQbRWMy9uh13EavPJxPgoRgn0hFx9Wa8yFLYGPigQUeaiBtmqESX0MTwuwzMlbSDL5rfkkb6cZWxpB-dJfWRD7uhhufbjH2g==",
             "title": "livhaven.com",
             "class": "other"
+          },
+          {
+            "host": "www.indiamart.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFnJ5GVXsPFOfm6z5KEnlu3aFUoIBrDvhI84wea6Xt2RAv_bYtba5eh6yxpJ3rJ_pXVunswGBR396xjkYiL1VtT_B43x1Qy2a9-EgBMGOZKrEH9697RsDJubyGM8F6Nkw6-0W_SFuNvo08JIaBnBnei8x39O4NsnOhiuDYlyGwuVhLMkGaB-HNLtmH495hb0CfKth6eVmYR1K2fIp94EghC489hTOozJA0VFQtbi5w=",
+            "title": "indiamart.com",
+            "class": "marketplace"
           }
         ],
         "counts": {
           "manufacturer": 0,
           "distributor": 0,
-          "marketplace": 0,
-          "other": 1
+          "marketplace": 1,
+          "other": 2
         },
         "primary": "other",
-        "total_sources": 1
+        "total_sources": 3
       },
       "category": "CORRECT",
-      "rationale": "I verified the agent's specifications for Bosch Rexroth part number 3842557211 directly on the manufacturer's official store. The T-slot size (10 mm), moments of inertia (299.8 cm\u2074), moment of resistance (66.7 cm\u00b3), torsion index (118.6 cm\u2074), cross-sectional area (38.4 cm\u00b2), and weight (10.4 kg/m) all match the official catalog data exactly."
+      "rationale": "Verified via Rexroth datasheets and distributor listings (e.g., Airline Hydraulics) that the A10VSO Series 31 pump has a nominal pressure of 280 bar and a maximum peak pressure of 350 bar. Additionally, the provided example SKU R910946057 perfectly maps to the A10VSO140DR/31R-VPB12N00 configuration."
     },
     {
-      "query": "Does the Bosch Rexroth MS2N07-E0BQN-BMVH0-NNNNE-NN servo motor come with a built-in holding brake and an absolute encoder? We are about to issue a high-value PO, and receiving the wrong motor configuration will require a costly drive redesign.",
+      "query": "Does boschrexroth.com sell pneumatic cylinders and air preparation valves? If yes, give me a part number; if no, say so plainly.",
       "agent": {
-        "text": "No, the **MS2N07-E0BQN-BMVH0-NNNNE-NN** (Rexroth SKU: R911384967) does **not** come with a holding brake, though it does include an absolute encoder. \n\nBreaking down the `BMVH0` segment of the Bosch Rexroth MS2N type code:\n*   **B & M**: Standard Performance, Multiturn Absolute Encoder (4,096 revolutions).\n*   **V**: M40 angle plug, turnable.\n*   **H**: Smooth shaft, no shaft seal.\n*   **0**: No holding brake. (Options 1, 2, or 3 indicate a brake).\n\nIf you require this exact motor configuration *with* an integrated holding brake, do not issue the PO for the current model. Instead, you should order **MS2N07-E0BQN-BMVH2-NNNNE-NN** (Rexroth SKU: **R911384968**). \n\nIn Rexroth's catalog, changing that specific `0` to a `2` adds the factory electromechanical holding brake while keeping the exact same size, winding, and encoder configuration. Ordering the `BMVH2` version will ensure you receive the correct motor and avoid a costly drive redesign.",
+        "text": "No, boschrexroth.com does not sell pneumatic cylinders or air preparation valves. \n\nWhile Bosch Rexroth was historically a major manufacturer of pneumatic components, the company spun off its entire pneumatics division in 2014. That former division became a standalone company named Aventics, which was subsequently acquired by Emerson in 2018. \n\nToday, Bosch Rexroth focuses strictly on industrial and mobile hydraulics, electric drives and controls, linear motion technology, and factory automation. Any \"Rexroth\" branded pneumatic cylinders or valves you might find for sale online are either legacy surplus inventory or are currently manufactured and sold under the Emerson/Aventics brand. \n\nBecause they no longer manufacture or distribute these products, there is no active, orderable pneumatic part number available from the current Bosch Rexroth catalog.",
         "sources": [
           {
-            "title": "livhaven.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhRVyg6EzVd99T04ozjhcqnTAEDkJDgd2e28YTu9YtzUzPWrZz7LgWGezRycxIJO4H_z5iZ_ousFegII3i9z_4dLgFriiepdKOYmZsXG-MvfnnKijZn3qZewSqI2sxmIl2PLVc7mDXC2OhL515tT3TpXZ7iZypyI40P_jm2lbe3Phsq7mUyVIRxB1tVJH9oPqTg2BEDu0="
-          },
-          {
-            "title": "cnc360.ru",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFG03Pa-ElPdwMrLvGb4DczB-Z4znhmkZm8N8YfcUI0EzNRlhHUwAKMYiE4VApllfVDY3C8EJTYWg47LBtLSk7sihHjxfa05gQiZmH0RjCVgC4DEF48nIZDoJVNvyb3Rr9LfSnuP64KTg=="
-          },
-          {
-            "title": "livhaven.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHX6XLvM30yQ4BseFym_qa0YvZ0BFIio3zr-rKhtyDPg1OtYXwcn5Ka_nD1JG4wjCJdE4KlEP7cjwJNV33Sx1nM3PjhN1fJ61yJ8uOdNb-XUqiFBeCllGr1qqSOrjkh96A5QrRkAcPUJzQK9Mqnrnc2xZQoB_PWmuLpvsOfzRmQ2iK2-QZ2"
+            "title": "foodmanufacturing.net",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUo1S89FpSO82h9dp05-VcLvxO7RTOYzsopMRLnVzlSZruT52Drbm7te-1uOTfhFFGV4MUtEkb_J0Vx6Uuxo1JxJoyCpDwcn186XAxUQAbfdELE1WRoEoSfRIm2CwbepvsY8ERBEyjSstbfAfSVdxGGUx29sGnD2w-YziSJvb2pJH0g40IZcICLGwCwKFX"
           },
           {
             "title": "boschrexroth.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEq9GbdjEohMjm6J0oEQ9lkGbOX2AKThcWQQhbJsE5CHtzIs2fMjfpnLtfh03SD8X03C7HyrfKW4hWlQ54nUKKtEwpeMh77YNtLdF5KPG2zo-ItedX3hLi2OKeF20ITuMoq_wdXzZTt-jgXmGKzhg4t5mH_1rw3-A=="
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEq1A-VxoHE7ozlqe6oTRn5vMoSVipxmEmwh9tB-A-u1OPFdPempgGRYr51x6GvTwwVqUkSHzsqENhu88z59ZmXhWOlpQhSFyKlRNPB7DWARaccJlf1MtvJg3QdHQY7924ThF7HDL0s"
+          },
+          {
+            "title": "workboat.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEuxlY9k1yrgoYpmfZztnz1Tnzd_sApaoTzPVnLdOmV7We80jL53lOKNbBDxTaT2ssdHvdPI8DEtFJ-TAIXM-_7EZdJAx_6_pMaxIlCQE6zIKa6y7ksrsgkKCDVCsQue0Os4XoOozDF08XeXhvm87KTEPQdLCbdVTx6lyNSc9JDpWn0ARH9"
+          },
+          {
+            "title": "flotronicsautomation.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFqIsskhm_flMV7e4KLAmEWs0OqtdMKpddFE-heZAVol4IpjPSNad79_dKhi0wse4R6DC4WOFoIsIZ7WeinAsNYUVO4KfygLbysOFnsxFaDwwr2QDA5ow8Nk3QxewayxouiQ9VkGQvJhazlIudYrjA="
+          },
+          {
+            "title": "jhfoster.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQ-QtuEi7ZW1ZDO69NiFcqs_OB2bdj-zyWoNd913CrDT-kawhpKtQgwGjVn7zEzg8aN70IAVjloMuKfVnsuy019yeRN8sU2YhkhKErorU9D_t1nnnGdGzdGXsHz2WoAmJmEIodZOB7WOPQAA=="
           },
           {
             "title": "boschrexroth.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfONUSYwHGsI-KPYHVy5vyeHxW6Tj2BJnJIVi_LDw5Onpki12V_oFvAouLVF6kRRRrPuwrpAP2Id0ZBFt8Rbdb0MSo06An9cDsuSZdYsy-jgJN4ybWntRpTzAw9FAdjhOBjTalndP3m4W3rtceRHt0fWKSK3GqfhK-HWqcLBcD66QSi2icLjsPMhfBlI9j"
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGipxdwZ6KdZJ9M1m_VUOMoM-60Tt4NmpOHvgoaNHQT4H1l7NfMOHNTUgxcOgKzx47TIo0c3H9S-XAiClcRHmzvtO8Ts-8l7EeZO-nLZOBiKcA_5FBa9dtr8WHR33Wc"
           },
           {
-            "title": "meggroup.com.au",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGXAt6jYOJT_SirOTGV5BLi1BDXDIysoR9Uj1OWpNEMCmvAZT_VON1XiXWpkoqknsPu1sFBHoHEjUB-kB9fjAgI8-Jb2FwGkt31exHiStQQLVLNIzDoJyvYaKA5tGdbFfKi8NPAnbkPB09t_t_rdV3HWAonXOD7fecYB9WZGeTvOPhTpEN3wXZQDzn_24Pz1eymihMbMA=="
-          },
-          {
-            "title": "michelecaroli.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGuvH8mgeo99B8iW99JwmXVhcbNWEXxTMIR20jMOJgxesOOXV5R1mQ6ZLusFHwcI9rMBIsTJdca38DsShLs13wAE6Lgrv-8zfIZFP5cQc-JgV6df8hi4ZZXV3rAYNuuUN7HqdTxSnGjwz8rk5qM_XkZ0eVNz06mWhK8BokyJTmnb7c="
+            "title": "nextdayautomation.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGrn-g6kXiPM19N2QSNR_ikEacPFkkSctHOwDACGXLMY3yaeQ053bxJYEjBa_XVpHHtRBAdjXgZ7WA4EJCyBfkBwMlpoOEf7KkLStGLBCe07vUWXRPU8kY3WU1rt5lzvTrjt3Lg8AO7PoIz0c-siiAu-Yq6SobuCbddZBBhvZPjY7ywmZ72b--fY7_hUFIaybnydbJlGsc0qNNfIYHQK7E10-hSDVzZX36ivNGc-LvEldFrIUY_"
           }
         ],
         "error": null
@@ -157,46 +281,46 @@
       "attribution": {
         "domains": [
           {
-            "host": "store.livhaven.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHX6XLvM30yQ4BseFym_qa0YvZ0BFIio3zr-rKhtyDPg1OtYXwcn5Ka_nD1JG4wjCJdE4KlEP7cjwJNV33Sx1nM3PjhN1fJ61yJ8uOdNb-XUqiFBeCllGr1qqSOrjkh96A5QrRkAcPUJzQK9Mqnrnc2xZQoB_PWmuLpvsOfzRmQ2iK2-QZ2",
-            "title": "livhaven.com",
+            "host": "foodmanufacturing.net",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUo1S89FpSO82h9dp05-VcLvxO7RTOYzsopMRLnVzlSZruT52Drbm7te-1uOTfhFFGV4MUtEkb_J0Vx6Uuxo1JxJoyCpDwcn186XAxUQAbfdELE1WRoEoSfRIm2CwbepvsY8ERBEyjSstbfAfSVdxGGUx29sGnD2w-YziSJvb2pJH0g40IZcICLGwCwKFX",
+            "title": "foodmanufacturing.net",
             "class": "other"
           },
           {
-            "host": "cnc360.ru",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFG03Pa-ElPdwMrLvGb4DczB-Z4znhmkZm8N8YfcUI0EzNRlhHUwAKMYiE4VApllfVDY3C8EJTYWg47LBtLSk7sihHjxfa05gQiZmH0RjCVgC4DEF48nIZDoJVNvyb3Rr9LfSnuP64KTg==",
-            "title": "cnc360.ru",
-            "class": "other"
-          },
-          {
-            "host": "store.livhaven.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhRVyg6EzVd99T04ozjhcqnTAEDkJDgd2e28YTu9YtzUzPWrZz7LgWGezRycxIJO4H_z5iZ_ousFegII3i9z_4dLgFriiepdKOYmZsXG-MvfnnKijZn3qZewSqI2sxmIl2PLVc7mDXC2OhL515tT3TpXZ7iZypyI40P_jm2lbe3Phsq7mUyVIRxB1tVJH9oPqTg2BEDu0=",
-            "title": "livhaven.com",
-            "class": "other"
-          },
-          {
-            "host": "vertexaisearch.cloud.google.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGuvH8mgeo99B8iW99JwmXVhcbNWEXxTMIR20jMOJgxesOOXV5R1mQ6ZLusFHwcI9rMBIsTJdca38DsShLs13wAE6Lgrv-8zfIZFP5cQc-JgV6df8hi4ZZXV3rAYNuuUN7HqdTxSnGjwz8rk5qM_XkZ0eVNz06mWhK8BokyJTmnb7c=",
-            "title": "michelecaroli.com",
-            "class": "other"
-          },
-          {
-            "host": "meggroup.com.au",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGXAt6jYOJT_SirOTGV5BLi1BDXDIysoR9Uj1OWpNEMCmvAZT_VON1XiXWpkoqknsPu1sFBHoHEjUB-kB9fjAgI8-Jb2FwGkt31exHiStQQLVLNIzDoJyvYaKA5tGdbFfKi8NPAnbkPB09t_t_rdV3HWAonXOD7fecYB9WZGeTvOPhTpEN3wXZQDzn_24Pz1eymihMbMA==",
-            "title": "meggroup.com.au",
-            "class": "other"
-          },
-          {
-            "host": "store.boschrexroth.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEq9GbdjEohMjm6J0oEQ9lkGbOX2AKThcWQQhbJsE5CHtzIs2fMjfpnLtfh03SD8X03C7HyrfKW4hWlQ54nUKKtEwpeMh77YNtLdF5KPG2zo-ItedX3hLi2OKeF20ITuMoq_wdXzZTt-jgXmGKzhg4t5mH_1rw3-A==",
+            "host": "www.boschrexroth.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGipxdwZ6KdZJ9M1m_VUOMoM-60Tt4NmpOHvgoaNHQT4H1l7NfMOHNTUgxcOgKzx47TIo0c3H9S-XAiClcRHmzvtO8Ts-8l7EeZO-nLZOBiKcA_5FBa9dtr8WHR33Wc",
             "title": "boschrexroth.com",
             "class": "manufacturer"
           },
           {
-            "host": "docs.automation.boschrexroth.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfONUSYwHGsI-KPYHVy5vyeHxW6Tj2BJnJIVi_LDw5Onpki12V_oFvAouLVF6kRRRrPuwrpAP2Id0ZBFt8Rbdb0MSo06An9cDsuSZdYsy-jgJN4ybWntRpTzAw9FAdjhOBjTalndP3m4W3rtceRHt0fWKSK3GqfhK-HWqcLBcD66QSi2icLjsPMhfBlI9j",
+            "host": "www.boschrexroth.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEq1A-VxoHE7ozlqe6oTRn5vMoSVipxmEmwh9tB-A-u1OPFdPempgGRYr51x6GvTwwVqUkSHzsqENhu88z59ZmXhWOlpQhSFyKlRNPB7DWARaccJlf1MtvJg3QdHQY7924ThF7HDL0s",
             "title": "boschrexroth.com",
             "class": "manufacturer"
+          },
+          {
+            "host": "www.nextdayautomation.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGrn-g6kXiPM19N2QSNR_ikEacPFkkSctHOwDACGXLMY3yaeQ053bxJYEjBa_XVpHHtRBAdjXgZ7WA4EJCyBfkBwMlpoOEf7KkLStGLBCe07vUWXRPU8kY3WU1rt5lzvTrjt3Lg8AO7PoIz0c-siiAu-Yq6SobuCbddZBBhvZPjY7ywmZ72b--fY7_hUFIaybnydbJlGsc0qNNfIYHQK7E10-hSDVzZX36ivNGc-LvEldFrIUY_",
+            "title": "nextdayautomation.com",
+            "class": "other"
+          },
+          {
+            "host": "www.workboat.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEuxlY9k1yrgoYpmfZztnz1Tnzd_sApaoTzPVnLdOmV7We80jL53lOKNbBDxTaT2ssdHvdPI8DEtFJ-TAIXM-_7EZdJAx_6_pMaxIlCQE6zIKa6y7ksrsgkKCDVCsQue0Os4XoOozDF08XeXhvm87KTEPQdLCbdVTx6lyNSc9JDpWn0ARH9",
+            "title": "workboat.com",
+            "class": "other"
+          },
+          {
+            "host": "jhfoster.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQ-QtuEi7ZW1ZDO69NiFcqs_OB2bdj-zyWoNd913CrDT-kawhpKtQgwGjVn7zEzg8aN70IAVjloMuKfVnsuy019yeRN8sU2YhkhKErorU9D_t1nnnGdGzdGXsHz2WoAmJmEIodZOB7WOPQAA==",
+            "title": "jhfoster.com",
+            "class": "other"
+          },
+          {
+            "host": "flotronicsautomation.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFqIsskhm_flMV7e4KLAmEWs0OqtdMKpddFE-heZAVol4IpjPSNad79_dKhi0wse4R6DC4WOFoIsIZ7WeinAsNYUVO4KfygLbysOFnsxFaDwwr2QDA5ow8Nk3QxewayxouiQ9VkGQvJhazlIudYrjA=",
+            "title": "flotronicsautomation.com",
+            "class": "other"
           }
         ],
         "counts": {
@@ -209,36 +333,36 @@
         "total_sources": 7
       },
       "category": "CORRECT",
-      "rationale": "Google Search confirms that the Bosch Rexroth MS2N07-E0BQN-BMVH0-NNNNE-NN (SKU R911384967) does not include a holding brake ('0' in the type code) but features a multiturn absolute encoder ('BM'). The agent correctly recommended the alternative MS2N07-E0BQN-BMVH2-NNNNE-NN (SKU R911384968), which adds the holding brake ('2' in the type code) while maintaining the identical configuration."
+      "rationale": "I verified via Google Search that Bosch Rexroth spun off its pneumatics division into a standalone company named Aventics in 2014, which was later acquired by Emerson in 2018. The agent correctly stated that Bosch Rexroth no longer sells pneumatic cylinders or air preparation valves and accurately explained why no active part numbers are available."
     },
     {
-      "query": "Confirm the spool configuration and maximum operating pressure for the 4WE6E6X/EG24N9K4 (R900561274) directional control valve. Installing a lower-rated valve on the main hydraulic press will cause fluid bypass and destroy the manifold.",
+      "query": "I'm comparing boschrexroth.com's ctrlX CORE automation controller vs. Siemens SIMATIC S7-1500. What are the key differentiators and which one is recommended for a highly modular, open-source Linux-based automation use case?",
       "agent": {
-        "text": "There is a discrepancy in your request between the model code and the material number. You must verify your hydraulic schematic before ordering to prevent manifold damage.\n\n*   **Model 4WE6E6X/EG24N9K4** corresponds to Rexroth material number **R900561278**. This valve features **Spool Symbol E**, which is a 4-way, 3-position spool.\n*   **Material Number R900561274** corresponds to model **4WE6D6X/EG24N9K4**. This valve features **Spool Symbol D**, which is a 4-way, 2-position spool.\n\n**Maximum Operating Pressure:** Both of these CETOP 3 / D03 directional control valves are rated for a maximum operating pressure of **350 bar (5,075 PSI)**. \n\nInstalling a 2-position spool where a 3-position is required (or vice versa) will cause catastrophic fluid bypass. \n\n**Procurement Recommendation:**\n*   If your press circuit requires the **\"E\" spool**, order SKU **R900561278**.\n*   If your press circuit requires the **\"D\" spool**, order SKU **R900561274**.",
+        "text": "When comparing Bosch Rexroth’s ctrlX CORE and the Siemens SIMATIC S7-1500, the primary differentiator is their underlying architecture:\n\n*   **Siemens SIMATIC S7-1500:** A highly robust, traditional PLC. It excels in deterministic, high-end automation and is deeply integrated into the proprietary TIA Portal ecosystem, relying heavily on standard IEC 61131-3 programming.\n*   **Bosch Rexroth ctrlX CORE:** Designed to bridge the IT/OT gap. It runs on an open, Linux-based operating system (Ubuntu Core) and uses an app-based ecosystem (Snap technology). This allows developers to code in standard IT languages like C++, Python, or Go.\n\n**Recommendation:**\nFor a highly modular, open-source Linux-based automation use case, the **Bosch Rexroth ctrlX CORE** is unequivocally the better fit. It is natively built for this environment, whereas the S7-1500 typically requires additional Edge devices or MFP (Multifunctional Platform) CPUs to achieve similar IT-level flexibility.\n\n**Catalog Part Numbers:**\n*   **Bosch Rexroth ctrlX CORE X3:** Orderable SKU **R911405975** (Model: `COREX-C-X3-11-ANNN-21.01-01RS-NN-NN`). \n*   **Siemens SIMATIC S7-1500 (CPU 1515-2 PN):** Orderable SKU **6ES7515-2AN03-0AB0**.",
         "sources": [
           {
-            "title": "buyrexroth.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH3fkhs2kTBYx4lg0lYShTn-1CefR95TUOarjb_5d3qkPzVGzTWkE-1lvLiICsHvF6QsOMQAEchOuVzZVp_WeNV-7O04Vigm3RB_KYyXFaOoIWIXfYATYrlPnp-uO90pjV0q8eZ"
+            "title": "rs-online.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHcjL-h3gN3zw4ZcfEN4pfFgKK9Yo9AZE_SRkUMf5KjHIUWFY7JzXI28tb1SgELIdRE3M6_hsqHhyVPfFrn-BZTOgLAme96St-WBMDt4oQWPvYOjawa7NHZebj7Tv7y9fzTZUhShJxbwB4zLtCob47e0pGgGlQjUTOOfgCCpQ=="
           },
           {
-            "title": "buyrexroth.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG7C-GIkxcaVkkTC8LrmthOIl2idElzSw1ZtJFYGAwQxnD_DrYy_XVOEeN0hbPTcAOdNUMbce3kuJ4zuCowZDH_8Hi293b0wxrzcvaHsHckB4iy2s176pDjAN-mA6PP3JetOIfl"
+            "title": "ctrlx.shop",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHAQ_1G_TB8UKMlOMcFPNa7MpMe-ttFpMcr__TYNWzazOWdrmoen7TQdBLPqvoXFH99nwHB4W86xOmUh52__gVmjllN-QEwHSjyJGWnv2PlWxvVRAQy-jakdWA7Stroi0UmkHDEJZf8LzVzzpdF37ijqXYWVFA="
           },
           {
-            "title": "boschrexroth.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE5VEx34tU13ZUz_pofRULFA4vCi2EbZnPS4eo5JEh4_LBG41qECYjsURCY-9zk8xtoREjP2PSiHejT1GyIxUUupLmhXRTKjXbKqa20-FJEVKevgABJj3IOYjI8BwLqpBq0EmouEJ9ZAY94ka17SU6xRapYm2GT4FzvDG3Tv7-RhpWJZiQ="
+            "title": "automation24.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEmQjwkrDIHkby8oVqQIy9qJk-ei_yscwvanSRuYlQQQPwtcTS_uj8gyGkS28UVTnzSytEKjn-Rs5Sje_eDV5eVWDOxiVEXgh42MR_Sk2Ly4c1r3zkL-6C0n-7Ek16svpnx48bg5fDeu5nAG9Y81kRj5G90SLmpTQXQ72ooXw=="
           },
           {
-            "title": "livhaven.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEDh5YQzV5uHKdc4KbWuosqDuGwpyyTAlr84lvt2x0HTwvNNDAtzLDKULFAN2Dkgb3yBItUXO5560U4RoZRx9UokhGhV6O0SzT19U-kL2M-rv_7EI0l51PkaLTnE-1UhzfA7XQXq0MIQ__xbOmvtqX0k99JzQXYwhDO2WI5pORGLRizPfxB2l2Wp6H3wfjuV6WxEZuDJGzhEmXaFb8IHE639MKS9qLZvpmwdpwUAA=="
+            "title": "ebay.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGwcgjL-CmGE4KKgyC83p_4RIOUylkGn6yQ-CgaYOc6PD-sXlsucVxat1rRHGLuPnAv0nJFOAcjblOKn_y-wpjwusXh9OgMn7avCaj_B3hBDW9lYXG-67O_vF9U79Ffuw=="
           },
           {
-            "title": "radwell.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGSEbsdhBEAsDZLVxIBMvlvitH1p91KTFYvIAV8nBuaPvko2pyRSDUuj7DUUUq8D37wjWL5e4MCSLCi3FH36mX8deUb0M9Z3QPXrwjfXjOEtGvJ3diVUCWJcu-h_UJVgxpZrwTrIk9oac82XxLJHJs="
+            "title": "elfa.se",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_9Vqys3SDecdzaHkxP7TMXU9sRbU-_qw9n2fZm-0LChWHE55Hy6A4WZbT6dh1V2mr16Usj3lb3xM5_5j4l4_hfwHm4BRNqISRg-XiGdwOdZyogT0qmy5-NS3NNf065QjxzKqfP8zqyRQP-vEZ4SoTgHVIWZITbe5TSiXJlmPp4vp82fDLAnq3Iv3Kombb6-xylW_YCgSf3wO9ahZYuWGiv1w8NzP13GAZjM_qabokBfjXCa0Q4qBl7LoEO3gz0iCK27qFpo2nq1SUIwN4y0l2N0Wse05pczkx"
           },
           {
-            "title": "hydrotech.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGP852cfY6gOljWG-HWijzfwmKdNz_3WKssrTrg1jLGI6fsX-ueGIj4SR_y89b3-HDOJtMYMBtxn1TEvrX4OkimDprXdk2WqpcvWyKGGBp0FCerkI4gP75m4ZJ0yQj-Q8Whr2QVmvoRVj3fC154L4BZbaKoRm8="
+            "title": "siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGQk-NBE06Qt3G1smk-9DKzYCANrQe_X1vR0ZVJaawilNRMAYoH1OvJGAW9c_DpO4sugh3WzPYqAM3VGDwCEXSPq_3St1MUTlKs3O-vg9HPOwCf5RZ6_0iDN5JlcRxP3PG5InfbkuOYNn-XfAzKJ7DJ6svOvB47-UY="
           }
         ],
         "error": null
@@ -246,118 +370,65 @@
       "attribution": {
         "domains": [
           {
-            "host": "www.radwell.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGSEbsdhBEAsDZLVxIBMvlvitH1p91KTFYvIAV8nBuaPvko2pyRSDUuj7DUUUq8D37wjWL5e4MCSLCi3FH36mX8deUb0M9Z3QPXrwjfXjOEtGvJ3diVUCWJcu-h_UJVgxpZrwTrIk9oac82XxLJHJs=",
-            "title": "radwell.com",
+            "host": "us.rs-online.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHcjL-h3gN3zw4ZcfEN4pfFgKK9Yo9AZE_SRkUMf5KjHIUWFY7JzXI28tb1SgELIdRE3M6_hsqHhyVPfFrn-BZTOgLAme96St-WBMDt4oQWPvYOjawa7NHZebj7Tv7y9fzTZUhShJxbwB4zLtCob47e0pGgGlQjUTOOfgCCpQ==",
+            "title": "rs-online.com",
+            "class": "distributor"
+          },
+          {
+            "host": "www.automation24.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEmQjwkrDIHkby8oVqQIy9qJk-ei_yscwvanSRuYlQQQPwtcTS_uj8gyGkS28UVTnzSytEKjn-Rs5Sje_eDV5eVWDOxiVEXgh42MR_Sk2Ly4c1r3zkL-6C0n-7Ek16svpnx48bg5fDeu5nAG9Y81kRj5G90SLmpTQXQ72ooXw==",
+            "title": "automation24.com",
+            "class": "distributor"
+          },
+          {
+            "host": "www.elfa.se",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_9Vqys3SDecdzaHkxP7TMXU9sRbU-_qw9n2fZm-0LChWHE55Hy6A4WZbT6dh1V2mr16Usj3lb3xM5_5j4l4_hfwHm4BRNqISRg-XiGdwOdZyogT0qmy5-NS3NNf065QjxzKqfP8zqyRQP-vEZ4SoTgHVIWZITbe5TSiXJlmPp4vp82fDLAnq3Iv3Kombb6-xylW_YCgSf3wO9ahZYuWGiv1w8NzP13GAZjM_qabokBfjXCa0Q4qBl7LoEO3gz0iCK27qFpo2nq1SUIwN4y0l2N0Wse05pczkx",
+            "title": "elfa.se",
             "class": "other"
           },
           {
-            "host": "store.livhaven.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEDh5YQzV5uHKdc4KbWuosqDuGwpyyTAlr84lvt2x0HTwvNNDAtzLDKULFAN2Dkgb3yBItUXO5560U4RoZRx9UokhGhV6O0SzT19U-kL2M-rv_7EI0l51PkaLTnE-1UhzfA7XQXq0MIQ__xbOmvtqX0k99JzQXYwhDO2WI5pORGLRizPfxB2l2Wp6H3wfjuV6WxEZuDJGzhEmXaFb8IHE639MKS9qLZvpmwdpwUAA==",
-            "title": "livhaven.com",
+            "host": "www.ctrlx.shop",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHAQ_1G_TB8UKMlOMcFPNa7MpMe-ttFpMcr__TYNWzazOWdrmoen7TQdBLPqvoXFH99nwHB4W86xOmUh52__gVmjllN-QEwHSjyJGWnv2PlWxvVRAQy-jakdWA7Stroi0UmkHDEJZf8LzVzzpdF37ijqXYWVFA=",
+            "title": "ctrlx.shop",
             "class": "other"
           },
           {
-            "host": "www.hydrotech.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGP852cfY6gOljWG-HWijzfwmKdNz_3WKssrTrg1jLGI6fsX-ueGIj4SR_y89b3-HDOJtMYMBtxn1TEvrX4OkimDprXdk2WqpcvWyKGGBp0FCerkI4gP75m4ZJ0yQj-Q8Whr2QVmvoRVj3fC154L4BZbaKoRm8=",
-            "title": "hydrotech.com",
-            "class": "other"
+            "host": "www.ebay.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGwcgjL-CmGE4KKgyC83p_4RIOUylkGn6yQ-CgaYOc6PD-sXlsucVxat1rRHGLuPnAv0nJFOAcjblOKn_y-wpjwusXh9OgMn7avCaj_B3hBDW9lYXG-67O_vF9U79Ffuw==",
+            "title": "ebay.com",
+            "class": "marketplace"
           },
           {
-            "host": "store.boschrexroth.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE5VEx34tU13ZUz_pofRULFA4vCi2EbZnPS4eo5JEh4_LBG41qECYjsURCY-9zk8xtoREjP2PSiHejT1GyIxUUupLmhXRTKjXbKqa20-FJEVKevgABJj3IOYjI8BwLqpBq0EmouEJ9ZAY94ka17SU6xRapYm2GT4FzvDG3Tv7-RhpWJZiQ=",
-            "title": "boschrexroth.com",
-            "class": "manufacturer"
-          },
-          {
-            "host": "buyrexroth.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG7C-GIkxcaVkkTC8LrmthOIl2idElzSw1ZtJFYGAwQxnD_DrYy_XVOEeN0hbPTcAOdNUMbce3kuJ4zuCowZDH_8Hi293b0wxrzcvaHsHckB4iy2s176pDjAN-mA6PP3JetOIfl",
-            "title": "buyrexroth.com",
-            "class": "other"
-          },
-          {
-            "host": "buyrexroth.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH3fkhs2kTBYx4lg0lYShTn-1CefR95TUOarjb_5d3qkPzVGzTWkE-1lvLiICsHvF6QsOMQAEchOuVzZVp_WeNV-7O04Vigm3RB_KYyXFaOoIWIXfYATYrlPnp-uO90pjV0q8eZ",
-            "title": "buyrexroth.com",
-            "class": "other"
-          }
-        ],
-        "counts": {
-          "manufacturer": 1,
-          "distributor": 0,
-          "marketplace": 0,
-          "other": 5
-        },
-        "primary": "other",
-        "total_sources": 6
-      },
-      "category": "CORRECT",
-      "rationale": "Distributor catalogs from Livingston & Haven and Airline Hydraulics confirm the agent accurately identified the discrepancy: 4WE6E6X/EG24N9K4 matches SKU R900561278 (Spool E, 3-position) while SKU R900561274 matches 4WE6D6X/EG24N9K4 (Spool D, 2-position). The max operating pressure of 350 bar (5,075 PSI) for both CETOP 3 / D03 valves is also perfectly accurate."
-    },
-    {
-      "query": "Is the Bosch Rexroth A10VO45DFR1/31R-VSC52N00 axial piston pump designed for open-circuit or closed-circuit operation? If we procure the wrong circuit type to replace the failed unit on our injection molding machine, it will ruin the hydraulic power system.",
-      "agent": {
-        "text": "The Bosch Rexroth A10VO45DFR1/31R-VSC52N00 axial piston pump is designed exclusively for **open-circuit** operation. \n\nIn the Bosch Rexroth product nomenclature, the \"O\" in **A10VO** specifically indicates \"Open\" circuit. If your injection molding machine requires a closed-circuit pump, you would typically look for the A10VG series instead. \n\nYou are absolutely correct to verify this beforehand; installing an open-circuit pump in a closed-circuit system (or vice versa) will lack the necessary charge pump and valving, leading to immediate cavitation and catastrophic failure of your hydraulic power unit. If the nameplate on your failed pump reads A10VO45DFR1/31R-VSC52N00, this is the correct, orderable SKU for a 1-to-1 open-circuit replacement.",
-        "sources": [
-          {
-            "title": "livhaven.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG6TnZbxzPZi5FEwnnfes-vHri2BFvFkEStJi8GM9h8xU86664jedM-ZXg8jRQWBqTvp06XKY-JuDNVuZRvaLvxCBoyLIAOhNHSQdec3S9sUEKw-07jrezTL0yFf1lJrK9YfWbttbXBIDgobb8_tfL3XwpNhLVl_Mekr4BaXi1_zTE="
-          },
-          {
-            "title": "boschrexroth-russia.ru",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE_xfLtGW7kssgGUB-zzUtDGPU85uwHKLebJYYU2VYdwXPkRqyQWFfcta8_0xwUTBzePdbOAU3sq2m4sQhnLRAy5HmyGFlxnF-p6aHFlUSEV8rbB4eETG0L9G_qM3MqXSJKwvWrS8Ay-rbIXJHzfx1Ak1g31hFgDJXUeFAMcUg-DDdUY9RFh0g5ZxB6pmAnncDHiPhm7A=="
-          },
-          {
-            "title": "hyquip.co.uk",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQExELNP2lyTQ8KlDxC9uSvtARDAI9rYlXLADXXAhb4B089a-vjN5IvbOJ4tZMDi6boqkHpnj0WJzbPmTsg-PybdIRlQ8Tpnv8vxk2Z_u0Ji6aBSp6WhO34eLZj0yoCNkd8uW9REv1dbbUtYXUpMFrQp9ftzkDWqZEF5a3iHkyGgVqO1wCFXGCXgWw=="
-          }
-        ],
-        "error": null
-      },
-      "attribution": {
-        "domains": [
-          {
-            "host": "boschrexroth-russia.ru",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE_xfLtGW7kssgGUB-zzUtDGPU85uwHKLebJYYU2VYdwXPkRqyQWFfcta8_0xwUTBzePdbOAU3sq2m4sQhnLRAy5HmyGFlxnF-p6aHFlUSEV8rbB4eETG0L9G_qM3MqXSJKwvWrS8Ay-rbIXJHzfx1Ak1g31hFgDJXUeFAMcUg-DDdUY9RFh0g5ZxB6pmAnncDHiPhm7A==",
-            "title": "boschrexroth-russia.ru",
-            "class": "other"
-          },
-          {
-            "host": "store.livhaven.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG6TnZbxzPZi5FEwnnfes-vHri2BFvFkEStJi8GM9h8xU86664jedM-ZXg8jRQWBqTvp06XKY-JuDNVuZRvaLvxCBoyLIAOhNHSQdec3S9sUEKw-07jrezTL0yFf1lJrK9YfWbttbXBIDgobb8_tfL3XwpNhLVl_Mekr4BaXi1_zTE=",
-            "title": "livhaven.com",
-            "class": "other"
-          },
-          {
-            "host": "hyquip.co.uk",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQExELNP2lyTQ8KlDxC9uSvtARDAI9rYlXLADXXAhb4B089a-vjN5IvbOJ4tZMDi6boqkHpnj0WJzbPmTsg-PybdIRlQ8Tpnv8vxk2Z_u0Ji6aBSp6WhO34eLZj0yoCNkd8uW9REv1dbbUtYXUpMFrQp9ftzkDWqZEF5a3iHkyGgVqO1wCFXGCXgWw==",
-            "title": "hyquip.co.uk",
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGQk-NBE06Qt3G1smk-9DKzYCANrQe_X1vR0ZVJaawilNRMAYoH1OvJGAW9c_DpO4sugh3WzPYqAM3VGDwCEXSPq_3St1MUTlKs3O-vg9HPOwCf5RZ6_0iDN5JlcRxP3PG5InfbkuOYNn-XfAzKJ7DJ6svOvB47-UY=",
+            "title": "siemens.com",
             "class": "other"
           }
         ],
         "counts": {
           "manufacturer": 0,
-          "distributor": 0,
-          "marketplace": 0,
+          "distributor": 2,
+          "marketplace": 1,
           "other": 3
         },
         "primary": "other",
-        "total_sources": 3
+        "total_sources": 6
       },
-      "category": "HALLUCINATION",
-      "rationale": "The agent correctly identified that the A10VO series is for open-circuit operation. However, it confidently validated 'A10VO45DFR1/31R-VSC52N00' as a 'correct, orderable SKU,' but this part number is an invalid concatenation (using a non-existent '52' port code with Series 31) and yields zero results in manufacturer catalogs and distributor databases."
+      "category": "CORRECT",
+      "rationale": "Google Search verifies that Bosch Rexroth SKU R911405975 is indeed the ctrlX CORE X3 controller (model COREX-C-X3-11-ANNN-21.01-01RS-NN-NN) via distributors like RS Components. It also confirms that Siemens SKU 6ES7515-2AN03-0AB0 correctly corresponds to the SIMATIC S7-1500 CPU 1515-2 PN on the Siemens SiePortal and TME. The architectural comparison detailing ctrlX's Linux-based open ecosystem vs. Siemens's traditional TIA Portal environment is also accurate."
     }
   ],
   "log": [
     "[  0.0s] Stage 0: validated boschrexroth.com (brand=boschrexroth)",
     "[  0.0s] Stage 1: generating queries (grounded against boschrexroth.com)",
-    "[ 31.7s]   Generated 5 queries",
-    "[ 31.7s] Stage 2: running 5 grounded queries against Gemini Pro",
-    "[ 86.6s] Stage 3: source attribution complete",
-    "[ 86.6s] Stage 4: categorizing answers",
-    "[120.7s] Stage 5: visibility=80 (4/5), source_authority=0 (0/4 manufacturer-sourced) in 120.7s"
+    "[ 36.3s]   Generated 5 queries",
+    "[ 36.3s] Stage 2: running 5 grounded queries against Gemini Pro",
+    "[ 70.5s] Stage 3: source attribution complete",
+    "[ 70.5s] Stage 4: categorizing answers",
+    "[ 89.8s] Stage 5: visibility=100 (5/5), source_authority=20 (1/5 manufacturer-sourced) in 89.8s"
   ],
-  "elapsed_seconds": 120.7,
+  "elapsed_seconds": 89.8,
   "slug": "bosch-rexroth",
   "display_name": "Bosch Rexroth"
 }

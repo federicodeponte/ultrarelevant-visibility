@@ -2,42 +2,43 @@
   "input": "https://festo.com",
   "host": "festo.com",
   "brand": "festo",
-  "visibility_score": 80,
-  "source_authority_score": 25,
+  "visibility_score": 100,
+  "source_authority_score": 0,
   "total_queries": 5,
-  "correct_queries": 4,
-  "manufacturer_correct": 1,
+  "correct_queries": 5,
+  "manufacturer_correct": 0,
   "breakdown": {
-    "CORRECT": 4,
+    "CORRECT": 5,
     "HALLUCINATION": 0,
+    "OUT_OF_CATALOG_HALLUCINATION": 0,
     "REFUSED": 0,
-    "WRONG_SPEC": 1,
+    "WRONG_SPEC": 0,
     "ERROR": 0
   },
   "source_breakdown": {
-    "manufacturer": 2,
+    "manufacturer": 0,
     "distributor": 0,
     "marketplace": 0,
-    "other": 3,
+    "other": 5,
     "none": 0
   },
   "rows": [
     {
-      "query": "I need to order a Festo double-acting ISO 15552 pneumatic cylinder with a 50mm bore, 200mm stroke, and adjustable pneumatic cushioning at both ends. What is the correct DSBC series part number?",
+      "query": "I need a double-acting pneumatic profile cylinder based on ISO 15552 with a 32 mm bore, 50 mm stroke, and adjustable pneumatic cushioning at both ends from festo.com. Give me the part number.",
       "agent": {
-        "text": "The correct Festo part number for your specified cylinder is **1366955**, which corresponds to the ordering code **DSBC-50-200-PPVA-N3**.\n\nHere is the breakdown of the nomenclature to verify it meets your requirements:\n* **DSBC**: Standard profile cylinder, double-acting\n* **50**: 50 mm bore (piston diameter)\n* **200**: 200 mm stroke length\n* **PPV**: Pneumatic cushioning, adjustable at both ends\n* **A**: Prepared for position sensing (built-in magnet for proximity switches)\n* **N3**: Conforms to the ISO 15552 standard\n\nYou can use either the 7-digit numeric part number (**1366955**) or the full alphanumeric type code (**DSBC-50-200-PPVA-N3**) when placing an order with a Festo distributor.",
+        "text": "The correct Festo part number for a double-acting profile cylinder meeting your exact specifications (ISO 15552, 32 mm bore, 50 mm stroke, and adjustable pneumatic cushioning at both ends) is **1376424**. \n\nIts corresponding type code is **DSBC-32-50-PPVA-N3**.\n\nIf you are replacing an older legacy unit, the classic Festo equivalent from their previous series was part number **163307** (Type code: **DNC-32-50-PPV-A**). The DSBC line is Festo's current modern standard for ISO 15552 cylinders and acts as a direct, drop-in replacement for the older DNC series.",
         "sources": [
           {
             "title": "festo.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGmsl1CGzPvIAVvLtkoVYcGUGprU_qc4Jgdu7i4GJWh0LjVR596XoBeGRG17iwN03kLz2LwPZpX8dSuKe2Zm3xNUzJN2fNaeukLL86nZNx1wActroQPcm0fyhNe2ChdYHw00Cb8yivU0wAHQ_uvg5bBz5UdDm-Jz-K0tJkj7pWFQautBTmOHS5Nck8M-OWz"
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCOMP3FDTDRgq2K4-vxAACxr_uZo68t64vv3gEB9r4g48csdgVrkFRydrq7LHXRubOjfFmDoAdq4Dbpz4hNzND7gySDYd7Yl5LfHsOpmpuXnHTEhXCIEscdPUOLvJiSw_UU9RMXs4UfKiU7xkl7vMQ6-4zeiuKY5-99ou7v1XW_bOIbT8BOnvRX2EgIFPG"
           },
           {
-            "title": "motionworld.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFyYeOxJIavZ0tbAUaswLjRbIVuZL3KcilH6Z9moWkm929VNcX8xynkURbgerP6vpV1pOufphRfbOGrC6GtsXfyw5kpTlKn5lQXEaEDQfBi5sil5wUUKzRLY9hF96CxU3-96JnD9-kIuYjzP1BMQNDDentJa5QoM_PZ4F8afl6hJesyk0O28D9i0Pv0rngxthHAehWm8A=="
+            "title": "rubix.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEeSuPSobZa6BiCFuh9OovlijGt4Zr6TD00ML3zw7Cuc2tmgaReBqkGVOtBbwJoN1frIJlIKsq22O4k4kAnaPghkp_zdIRjzt1AGhkddEstDnXNmH84RkeoXUndxETiuHs1Qp3zmUgNoKgD7B1XGZZaMQI8SnpsgoIQQY1tWTTB1xWKslsT11LjloHWZ3yLJ-9MGu1SHMG36K-VDTkWJTObhcwh4qD9Mp4_SXgnHOB3vRmD6og="
           },
           {
-            "title": "affiliatedcontrol.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF8IRHmS9zuxDMoJcmXXNhQ-NUG1wTu_VDQumBaOSKgKrIUdKqXGwdxwhD1htkgCCGqOky1IQo3eS3BIgjhNfssfnrICaYf4E6W0uI2hmqZv8nWa7BbwQtzEUP87OSVMaGAAU5SdYKINurq_6GJmNASNZdrZdOyJfa0kg=="
+            "title": "coastpneumatics.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHbjcSx71Gs5ZGaNzOmCP0bSc8q7bGG5wu_ddGTctigTESY2SF0Tx7HPB_mnntR4fiJ3kdOn6xaAJ2R9oMFnWDujMsuWLBa7k6Lc41xyS3BUwJsMvAE0bI04nLAADB8hBrUI1AafMzufYMH"
           }
         ],
         "error": null
@@ -46,20 +47,20 @@
         "domains": [
           {
             "host": "ftp.festo.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGmsl1CGzPvIAVvLtkoVYcGUGprU_qc4Jgdu7i4GJWh0LjVR596XoBeGRG17iwN03kLz2LwPZpX8dSuKe2Zm3xNUzJN2fNaeukLL86nZNx1wActroQPcm0fyhNe2ChdYHw00Cb8yivU0wAHQ_uvg5bBz5UdDm-Jz-K0tJkj7pWFQautBTmOHS5Nck8M-OWz",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCOMP3FDTDRgq2K4-vxAACxr_uZo68t64vv3gEB9r4g48csdgVrkFRydrq7LHXRubOjfFmDoAdq4Dbpz4hNzND7gySDYd7Yl5LfHsOpmpuXnHTEhXCIEscdPUOLvJiSw_UU9RMXs4UfKiU7xkl7vMQ6-4zeiuKY5-99ou7v1XW_bOIbT8BOnvRX2EgIFPG",
             "title": "festo.com",
             "class": "manufacturer"
           },
           {
-            "host": "shop.affiliatedcontrol.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF8IRHmS9zuxDMoJcmXXNhQ-NUG1wTu_VDQumBaOSKgKrIUdKqXGwdxwhD1htkgCCGqOky1IQo3eS3BIgjhNfssfnrICaYf4E6W0uI2hmqZv8nWa7BbwQtzEUP87OSVMaGAAU5SdYKINurq_6GJmNASNZdrZdOyJfa0kg==",
-            "title": "affiliatedcontrol.com",
+            "host": "media-pim.rubix.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEeSuPSobZa6BiCFuh9OovlijGt4Zr6TD00ML3zw7Cuc2tmgaReBqkGVOtBbwJoN1frIJlIKsq22O4k4kAnaPghkp_zdIRjzt1AGhkddEstDnXNmH84RkeoXUndxETiuHs1Qp3zmUgNoKgD7B1XGZZaMQI8SnpsgoIQQY1tWTTB1xWKslsT11LjloHWZ3yLJ-9MGu1SHMG36K-VDTkWJTObhcwh4qD9Mp4_SXgnHOB3vRmD6og=",
+            "title": "rubix.com",
             "class": "other"
           },
           {
-            "host": "www.motionworld.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFyYeOxJIavZ0tbAUaswLjRbIVuZL3KcilH6Z9moWkm929VNcX8xynkURbgerP6vpV1pOufphRfbOGrC6GtsXfyw5kpTlKn5lQXEaEDQfBi5sil5wUUKzRLY9hF96CxU3-96JnD9-kIuYjzP1BMQNDDentJa5QoM_PZ4F8afl6hJesyk0O28D9i0Pv0rngxthHAehWm8A==",
-            "title": "motionworld.com",
+            "host": "www.coastpneumatics.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHbjcSx71Gs5ZGaNzOmCP0bSc8q7bGG5wu_ddGTctigTESY2SF0Tx7HPB_mnntR4fiJ3kdOn6xaAJ2R9oMFnWDujMsuWLBa7k6Lc41xyS3BUwJsMvAE0bI04nLAADB8hBrUI1AafMzufYMH",
+            "title": "coastpneumatics.com",
             "class": "other"
           }
         ],
@@ -73,28 +74,169 @@
         "total_sources": 3
       },
       "category": "CORRECT",
-      "rationale": "Google Search confirms via Festo documentation and authorized distributors like Newark that part number 1366955 corresponds exactly to the DSBC-50-200-PPVA-N3 cylinder, which meets all the requested specifications."
+      "rationale": "Google search confirms that Festo part number 1376424 corresponds to the DSBC-32-50-PPVA-N3, which is a double-acting ISO 15552 profile cylinder with a 32 mm bore, 50 mm stroke, and adjustable pneumatic cushioning at both ends. The legacy part number 163307 (DNC-32-50-PPV-A) mentioned by the agent is also a real and accurate match for the predecessor series."
     },
     {
-      "query": "We are replacing a pneumatic control valve and need the exact Festo VUVG series 5/2-way single solenoid valve with a 14mm width, G1/8 pneumatic connections, and a 24VDC coil. Please provide the orderable SKU.",
+      "query": "What categories of products does festo.com offer? List the main product families with one example each.",
       "agent": {
-        "text": "To replace your Festo VUVG valve with the exact specifications provided (5/2-way single solenoid, 14mm width, G1/8 connections, and a 24VDC coil), there are two standard SKUs. You will need to choose the one that matches your existing electrical connection type:\n\n**Option 1: Standard 2-Pin Plug**\n*   **SKU / Type Code:** VUVG-L14-M52-AT-G18-1P3\n*   **Festo Part Number:** 574371\n*   **Electrical Connection:** Standard 2-blade plug-in connector.\n\n**Option 2: M8 Circular Connector**\n*   **SKU / Type Code:** VUVG-LK14-M52-AT-G18-1R8L-S\n*   **Festo Part Number:** 8042567\n*   **Electrical Connection:** 3-pin M8 plug (A-coded).\n\n**Breakdown of the matching specs for both:**\n*   **-L14 / -LK14:** 14mm valve width (The \"K\" denotes Festo's core product line)\n*   **-M52-AT:** 5/2-way single solenoid with pneumatic spring return\n*   **-G18:** G1/8 threaded pneumatic connections\n*   **-1:** 24VDC coil voltage\n\nPlease check the electrical plug on the valve you are pulling out of the machine to determine whether you need the M8 connection (Part # 8042567) or the 2-pin rectangular plug (Part # 574371).",
+        "text": "Festo.com specializes in industrial automation and pneumatic systems. The main product families and real, orderable catalog examples include:\n\n1. **Pneumatic Cylinders and Actuators**: Linear and rotary actuators that convert compressed air into physical motion. \n   *Example*: **DSNU-25-80-PPV-A** (Part No. 19247) – Double-acting round cylinder.\n   \n2. **Valves and Valve Terminals**: Electrically and pneumatically actuated directional control valves.\n   *Example*: **VUVS-L20-M52-AD-G18-F7** (Part No. 575249) – 5/2-way monostable solenoid valve.\n\n3. **Compressed Air Preparation**: Filters, pressure regulators, and lubricators (FRL) to condition air supply.\n   *Example*: **MS4-LR-1/4-D6-AS** (Part No. 529417) – Directly actuated diaphragm pressure regulator.\n\n4. **Connection Technology**: Pneumatic tubing, couplings, and push-in fittings.\n   *Example*: **QS-1/8-6** (Part No. 153002) – Standard push-in fitting (1/8\" thread to 6mm tube).\n\n5. **Sensors**: Proximity, pressure, and flow sensors for automation feedback systems.\n   *Example*: **SMT-8M-A-PS-24V-E-2,5-OE** (Part No. 574335) – Magneto-resistive T-slot proximity sensor. \n\nIn addition to these core pneumatics categories, Festo also offers electric automation (stepper motors and drives) and process automation components.",
         "sources": [
           {
-            "title": "ebay.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFa6gwSjrHnXFj5lWp2diyqA9csX_KIaEaVLKTeDr6u4eaB-E7xahN0vhqhbUE-jifPfu6thM71qipTFoJQqkOG__b445BswAq3l__4o4kxC31EbkDCBjNUertlyN6TIA=="
+            "title": "cowandynamics.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHJBGMdrdQvzW9m1zehAqhQlZyfI0g1e5peLsovEbhd9Lm892AzfqtLuXI879upqKwC7mTyfsWdMQZ7ySmWT2Xt9qva5wZ6_WLBVzyM6cIyLNcqGNiXfcdh8dfHurB96WAaOBx4KUv13lVqX_kIz-ap-F5-_JOC"
+          },
+          {
+            "title": "wikipedia.org",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHls5nYKiMevt7yLoltipTC6_dEJ1xN5e4ZZq3DcuzCg1dBUdK_OQP3kBEYDB4yVVzPaWmQ0AFm0gIDZk1a4ZXUouYmD7o2nI5OiPIX4RMD4zorIV7OetmUxKkyaMhz-5dIeAr1szPlT00aA=="
+          },
+          {
+            "title": "affiliatedcontrol.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGlYBvF3GhMtLF4JQ6H6mmAui2dWRO5QCehnS5jCOh0gVG_KNPIe3Wp3veX0zKQ8fTP3CgxJQ-iFy4Zoj3bGmUxX3q8BBEwKRVsQP4lFa-KqbqbBDV_JO_eIiXKzBOPVfWRZ4aVKeiNX3z-sjnqP-y6Y_WrShYb_Q=="
+          },
+          {
+            "title": "affiliatedcontrol.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGQLs4EImn6U9IB82NnYDXeu9C-i-ga-HsKhMjTgJ_R2LXn7PUHGFYPDNcRXlJs9Ajqu7wtMOYKJp0ukzCqj_CnXnHN_24uOQWmTjAG2ctFHVd7v9I3NeIVEsN7crPufxV6f8LM3fwarXzuFGh9l1nxtkB7HR6sQNf7uiaxBw=="
           },
           {
             "title": "festo.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGv9WWE5EptcohCoBwWGKI1ugO9C6wKe7TXgrb8ZzaFHms1Ab-OawlbxvklrieF4MA7NIGBCQTjqz_fiDr7gs-yli65hm_IWfJAn_DaA_p2Mr6ZNUeBNRJoPLtvjZgV3A=="
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHX2Hb4eNrFRM3_JqQ9t64x4VaZxYD5UWWu5LrqtP01GFwnUakRbJhzyiua9NaUttc2N_IEdAMQWZu1mTVqJ_IzjnsI2zVpF-6wFV84bSvM-PAuERXlJ0nVT8bd3TiaQjLBTEhP9cZVXqv6fx81kKvXRVcBuOAHAZ20ChGA07yFo0hbarnHts8aV793C1g="
           },
           {
-            "title": "iautomation.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEypZcFdeoTOZgdgi2sqGkstD6-UIXGDOO-siYnmgDR7UQvzs-isCp8bzx-jJFEPOyg1Cn7YVsXzOozsCgk7z1X4v30Fc4KaBtGTCob53Cb-pqzuRTNXYLEoCVtMYQn4dq_EjAuHZlmOXY-_ZD9MsWhIgvBErigM-w5tno="
+            "title": "rankindirect.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGeHkgS8v5kmBgUGJpVmX5TaSYv8Qm_KVmc9IT3M7bqFBwoOiLpQfpFIZrAd9F6JBUjSFEytNHKLW7E3j2CcKSYtpNjTssFPakoA-cCtLd9IfV3BhyB_rAERTVUzvr0nYVTNrzXLjC3KjLHQ46G4-JXt7HF"
           },
           {
             "title": "rs-online.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEfiqdoimx3gCrUyun4KLLz2_6ZAb0Sp4ngA5hqvnB726DyiboJ66Tj4z9pAj4mBJMIpdSW6YAeyMDE8vomdoJnod_vbCOyKkVaDxfR7AD2i8UorLKFKjXA84j-dK1MEDQl46Pm8FgNriX3LwiSaCITXSiFWhFmAKkd9Y8LvYt-9bqm"
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_fLDT89THp0hByTOfj5ATP1BYK9a7NaP3CEFD3Or-3swMHRjngu9JrrgPAE_IE_Q5WKoMmwRbwhNcvjAv7RBTbSI_B5GMpc9N5zYJC1PaGD7S7rHJmLsCmWl3GwhfVZ647MUjPBC-isfT93_qmL0="
+          },
+          {
+            "title": "motionworld.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGbNq_2K3eXxyIwFtWZK5tCuTIJ-8GKsvjOsb51u206PSs4-SRgBNqvDPtlwohFX06j83PDQS6UQ7_wE10N6lU-TIFolO6d0sKZn1Tlu1z_libgzvJCTnkSHcQfqKC4hWy0c-gP14bVmISqE_49kuG_OEz9ji6aXtSfcg=="
+          },
+          {
+            "title": "rs-online.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvH4FrzwNatj5Z88GBD-cCOn0nuQcU7RqCCBTVlNckXIxj7HHJ7PjHWDOojtzXRhInoJodYuYDh-sOLPx9sXSe5HjUgxNfr_ZxQhP67iTnSSjLMV5CTTcyk87XRJj2vdIWW0l038OQH_XlhF_J8F4="
+          },
+          {
+            "title": "affiliatedcontrol.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG6x-7wfU0LipQ9IbNQcYE5wNVWlGJZyk1mqIeKVHItXad9SbvLlEJOhqvCRF4kj9oD_kwsljSBnWdTMQcRxPP1rRiCxOLlWp6zAhMFgCHnky-oLLhs8BCXv-DN4Dr4XGljAmTiOR_tPAtfHyPxbHsp-4PuPJhOb0QH48Z4fuEO"
+          },
+          {
+            "title": "rs-online.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFi0EDpI4eusaaL_gNrIuE6GqqXKb0QpTr6wh6gmbeD-8zsnDsuxTsZff6lFMJxSXfYfLXoqNwyKXhh9RISG5SaNiHvat4PJNWgMycujeQO7Z0HsY6LUHEvdKpP4MbXIGL4IgleX3dcsZ8UMNxLXryQ5pui4rkjCHlfYNQhHcDhiaZJkXU="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "en.wikipedia.org",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHls5nYKiMevt7yLoltipTC6_dEJ1xN5e4ZZq3DcuzCg1dBUdK_OQP3kBEYDB4yVVzPaWmQ0AFm0gIDZk1a4ZXUouYmD7o2nI5OiPIX4RMD4zorIV7OetmUxKkyaMhz-5dIeAr1szPlT00aA==",
+            "title": "wikipedia.org",
+            "class": "other"
+          },
+          {
+            "host": "www.rankindirect.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGeHkgS8v5kmBgUGJpVmX5TaSYv8Qm_KVmc9IT3M7bqFBwoOiLpQfpFIZrAd9F6JBUjSFEytNHKLW7E3j2CcKSYtpNjTssFPakoA-cCtLd9IfV3BhyB_rAERTVUzvr0nYVTNrzXLjC3KjLHQ46G4-JXt7HF",
+            "title": "rankindirect.com",
+            "class": "other"
+          },
+          {
+            "host": "ftp.festo.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHX2Hb4eNrFRM3_JqQ9t64x4VaZxYD5UWWu5LrqtP01GFwnUakRbJhzyiua9NaUttc2N_IEdAMQWZu1mTVqJ_IzjnsI2zVpF-6wFV84bSvM-PAuERXlJ0nVT8bd3TiaQjLBTEhP9cZVXqv6fx81kKvXRVcBuOAHAZ20ChGA07yFo0hbarnHts8aV793C1g=",
+            "title": "festo.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "shop.affiliatedcontrol.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGQLs4EImn6U9IB82NnYDXeu9C-i-ga-HsKhMjTgJ_R2LXn7PUHGFYPDNcRXlJs9Ajqu7wtMOYKJp0ukzCqj_CnXnHN_24uOQWmTjAG2ctFHVd7v9I3NeIVEsN7crPufxV6f8LM3fwarXzuFGh9l1nxtkB7HR6sQNf7uiaxBw==",
+            "title": "affiliatedcontrol.com",
+            "class": "other"
+          },
+          {
+            "host": "shop.affiliatedcontrol.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGlYBvF3GhMtLF4JQ6H6mmAui2dWRO5QCehnS5jCOh0gVG_KNPIe3Wp3veX0zKQ8fTP3CgxJQ-iFy4Zoj3bGmUxX3q8BBEwKRVsQP4lFa-KqbqbBDV_JO_eIiXKzBOPVfWRZ4aVKeiNX3z-sjnqP-y6Y_WrShYb_Q==",
+            "title": "affiliatedcontrol.com",
+            "class": "other"
+          },
+          {
+            "host": "us.rs-online.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFi0EDpI4eusaaL_gNrIuE6GqqXKb0QpTr6wh6gmbeD-8zsnDsuxTsZff6lFMJxSXfYfLXoqNwyKXhh9RISG5SaNiHvat4PJNWgMycujeQO7Z0HsY6LUHEvdKpP4MbXIGL4IgleX3dcsZ8UMNxLXryQ5pui4rkjCHlfYNQhHcDhiaZJkXU=",
+            "title": "rs-online.com",
+            "class": "distributor"
+          },
+          {
+            "host": "shop.affiliatedcontrol.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG6x-7wfU0LipQ9IbNQcYE5wNVWlGJZyk1mqIeKVHItXad9SbvLlEJOhqvCRF4kj9oD_kwsljSBnWdTMQcRxPP1rRiCxOLlWp6zAhMFgCHnky-oLLhs8BCXv-DN4Dr4XGljAmTiOR_tPAtfHyPxbHsp-4PuPJhOb0QH48Z4fuEO",
+            "title": "affiliatedcontrol.com",
+            "class": "other"
+          },
+          {
+            "host": "www.cowandynamics.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHJBGMdrdQvzW9m1zehAqhQlZyfI0g1e5peLsovEbhd9Lm892AzfqtLuXI879upqKwC7mTyfsWdMQZ7ySmWT2Xt9qva5wZ6_WLBVzyM6cIyLNcqGNiXfcdh8dfHurB96WAaOBx4KUv13lVqX_kIz-ap-F5-_JOC",
+            "title": "cowandynamics.com",
+            "class": "other"
+          },
+          {
+            "host": "www.motionworld.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGbNq_2K3eXxyIwFtWZK5tCuTIJ-8GKsvjOsb51u206PSs4-SRgBNqvDPtlwohFX06j83PDQS6UQ7_wE10N6lU-TIFolO6d0sKZn1Tlu1z_libgzvJCTnkSHcQfqKC4hWy0c-gP14bVmISqE_49kuG_OEz9ji6aXtSfcg==",
+            "title": "motionworld.com",
+            "class": "other"
+          },
+          {
+            "host": "docs.rs-online.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_fLDT89THp0hByTOfj5ATP1BYK9a7NaP3CEFD3Or-3swMHRjngu9JrrgPAE_IE_Q5WKoMmwRbwhNcvjAv7RBTbSI_B5GMpc9N5zYJC1PaGD7S7rHJmLsCmWl3GwhfVZ647MUjPBC-isfT93_qmL0=",
+            "title": "rs-online.com",
+            "class": "distributor"
+          },
+          {
+            "host": "docs.rs-online.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvH4FrzwNatj5Z88GBD-cCOn0nuQcU7RqCCBTVlNckXIxj7HHJ7PjHWDOojtzXRhInoJodYuYDh-sOLPx9sXSe5HjUgxNfr_ZxQhP67iTnSSjLMV5CTTcyk87XRJj2vdIWW0l038OQH_XlhF_J8F4=",
+            "title": "rs-online.com",
+            "class": "distributor"
+          }
+        ],
+        "counts": {
+          "manufacturer": 1,
+          "distributor": 3,
+          "marketplace": 0,
+          "other": 7
+        },
+        "primary": "other",
+        "total_sources": 11
+      },
+      "category": "CORRECT",
+      "rationale": "Verified all five provided examples (DSNU-25-80-PPV-A, VUVS-L20-M52-AD-G18-F7, MS4-LR-1/4-D6-AS, QS-1/8-6, and SMT-8M-A-PS-24V-E-2,5-OE) along with their Festo part numbers via Google Search. All SKUs are real, orderable items that perfectly match their listed descriptions and product families in the manufacturer's catalog."
+    },
+    {
+      "query": "What is the exact maximum flow rate in liters per minute for the high-flow subbase of the VTUX valve terminal from festo.com?",
+      "agent": {
+        "text": "The exact maximum flow rate for the 10 mm high-flow subbase of the Festo VTUX valve terminal is **730 liters per minute (l/min)** according to ISO 8778. The standard nominal flow rate is typically rated between 670 l/min and 690 l/min depending on the specific push-in fittings and tubing diameters utilized. Additionally, in 2026, Festo expanded the VTUX portfolio with a new 15 mm valve size that achieves an even higher maximum flow rate of up to **1,650 l/min**. \n\nBecause the VTUX is a highly modular, build-to-order pneumatic platform, I cannot answer with a single specific SKU for just the subbase. The subbases and valves are ordered together via Festo’s online configurator using base catalog numbers such as **8000800** or **8000810**. \n\nIf you are looking for standard, pre-configured multi-pin terminal blocks to expedite ordering, Festo offers base orderable part numbers like **23669607** (for a 4-way terminal) and **23669661** (for an 8-way terminal), which are then populated with your required valves and blanking plates.",
+        "sources": [
+          {
+            "title": "festo.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEFdaymqZZW7vTRafsFlNUDk7NA8imhi4z0DX8FNhRqA6A6W5HbG-fAihtEzjhhmi9rVc06v9ePg_llQT28agQxxIlhu6dRLMsiLcNrI8VGsXvcCAU5Avtve771D9_bA_Irr2FitbB-4Gf7ZGkvYo1vlLLsY_0="
+          },
+          {
+            "title": "electrozad.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUjfSJmMeGfy6hAa1kuteCLIGp6RTVkjZAfe6uyY8q-NVqQN5P4MCCDNp-7lUyIPc7fzKcOVWniXiE-NnyuDz9cLD2wkRPn8t3JyrmtswxqErKvByJYYJQkcq-OuD4FB17Qwq6vx5Br6M_679BLUPMSOmwrhQC-cu-fUM4VdC6pqfIdXMX1Amxna73LGLB6hMIzni3RlNqzdcejuL2kKrcrw28Z-vzbEgtF6CBznOiT6bGsc6CZCDx9-0QjQ=="
+          },
+          {
+            "title": "manuals.plus",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEFgZP-TLU5-z0kfQhFcZ2uDmoqhQcEWU66DnEEkekwDjDUtqW6nxmJm7e62U2WD4WY6P2fTVMyVzJdpq-b3S-ufeFdgsPUpc6F1e2ELVgyz9P1C_mSiYSFwNrDWfqYCOcpZr-yi_CJY_loDqpuCerILY3N9lXoZsTEkImTqlpFPWxVOeIe5e0SLrcOVthDls5bQw=="
+          },
+          {
+            "title": "manuals.plus",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG7fS0dQ-7ZdQYTjU3z4Wd1V1Iqw7A7obVh5sbSlTEtYC27OjfxNFWEpsaKdq452fnr1I-Lu_j1QK-vBq4pzm6Y2l23xgi3Jdv1wi4DjtlC0grGLv7cSDNoUEjlNvpEwMSKUuoAti0roTaAxhGODymTsfeb3lLCYAWNHlTw3ufiy1etbBoTtnaGksdlvLcBtFE6Cg=="
+          },
+          {
+            "title": "rockwellautomation.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUfMsWcvW4OGqqyCzgjwpspRqv_aAoHcAaMw_wPDHxpkDtq3opeEeXCXiOXcE9Xnl_fpqqxIUIlbgXMXFzjzGRGkKtC9L7Lg0hv5pi7G8J8Y-JKfxHfIU4RRKpMKsmMxJXzyQiKwdIBsGp06F20_yjOC-F8Pqth5yXifGUVE0HGYMWLQiRHlS6NLQeFsxUSy4KKP2olNK4Bh3X8jQ9n-YneTc1vgx7t9GiyfGH3soeBEcCM21LXEli6NwcR3tFQCF6IkVGW1TZrhtQcone59lk"
+          },
+          {
+            "title": "festo.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHJ2VC_uyoBVtBwwNlSyCj7CNpddrTSIIBgMK13_SWqr2UXza-oosP8aAgjT9-oeRF680XO6YjRz-W-GZ5ZTTDsK3TPg69jGmz-ENpYMV-KqAFS7f6k4vm_dkkeGJ2zPkbNd7A2R0C8jHpojGmLwivH6LcdQ6rmbJKBFgQKIrUEQOSbdrXRrUKaXI9ajmwakYAtIg=="
           }
         ],
         "error": null
@@ -103,201 +245,77 @@
         "domains": [
           {
             "host": "www.festo.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGv9WWE5EptcohCoBwWGKI1ugO9C6wKe7TXgrb8ZzaFHms1Ab-OawlbxvklrieF4MA7NIGBCQTjqz_fiDr7gs-yli65hm_IWfJAn_DaA_p2Mr6ZNUeBNRJoPLtvjZgV3A==",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHJ2VC_uyoBVtBwwNlSyCj7CNpddrTSIIBgMK13_SWqr2UXza-oosP8aAgjT9-oeRF680XO6YjRz-W-GZ5ZTTDsK3TPg69jGmz-ENpYMV-KqAFS7f6k4vm_dkkeGJ2zPkbNd7A2R0C8jHpojGmLwivH6LcdQ6rmbJKBFgQKIrUEQOSbdrXRrUKaXI9ajmwakYAtIg==",
             "title": "festo.com",
             "class": "manufacturer"
           },
           {
-            "host": "us.rs-online.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEfiqdoimx3gCrUyun4KLLz2_6ZAb0Sp4ngA5hqvnB726DyiboJ66Tj4z9pAj4mBJMIpdSW6YAeyMDE8vomdoJnod_vbCOyKkVaDxfR7AD2i8UorLKFKjXA84j-dK1MEDQl46Pm8FgNriX3LwiSaCITXSiFWhFmAKkd9Y8LvYt-9bqm",
-            "title": "rs-online.com",
-            "class": "distributor"
-          },
-          {
-            "host": "shop.iautomation.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEypZcFdeoTOZgdgi2sqGkstD6-UIXGDOO-siYnmgDR7UQvzs-isCp8bzx-jJFEPOyg1Cn7YVsXzOozsCgk7z1X4v30Fc4KaBtGTCob53Cb-pqzuRTNXYLEoCVtMYQn4dq_EjAuHZlmOXY-_ZD9MsWhIgvBErigM-w5tno=",
-            "title": "iautomation.com",
-            "class": "other"
-          },
-          {
-            "host": "www.ebay.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFa6gwSjrHnXFj5lWp2diyqA9csX_KIaEaVLKTeDr6u4eaB-E7xahN0vhqhbUE-jifPfu6thM71qipTFoJQqkOG__b445BswAq3l__4o4kxC31EbkDCBjNUertlyN6TIA==",
-            "title": "ebay.com",
-            "class": "marketplace"
-          }
-        ],
-        "counts": {
-          "manufacturer": 1,
-          "distributor": 1,
-          "marketplace": 1,
-          "other": 1
-        },
-        "primary": "manufacturer",
-        "total_sources": 4
-      },
-      "category": "WRONG_SPEC",
-      "rationale": "While Option 2 is correct, the agent provided mismatched specifications for Option 1. Festo part number 574371 corresponds to the 'MT' variant (VUVG-L14-M52-MT-G18-1P3) which has a mechanical spring return, not the 'AT' (pneumatic spring return) type code as claimed. The correct part number for the 'AT' variant is 566499."
-    },
-    {
-      "query": "What is the Festo part number for an SMT-8M solid-state T-slot proximity sensor that is PNP normally open and pre-wired with a 0.3 meter cable terminating in an M8 plug?",
-      "agent": {
-        "text": "The correct Festo part number that matches your exact specifications is **SMT-8M-A-PS-24V-E-0,3-M8D**. The direct manufacturer order code (SKU) for this part is **574334**. \n\nHere is how the part number breaks down to match your requirements:\n*   **SMT-8M-A:** Solid-state (magneto-resistive) proximity sensor designed for standard T-slot mounting.\n*   **PS:** PNP switching output, Normally Open (NO) function.\n*   **24V:** 24 VDC rated operating voltage.\n*   **E-0,3:** Pre-wired with a 0.3-meter cable (suitable for energy chains/robots).\n*   **M8D:** Terminates in an M8 plug (3-pin) with a rotatable thread. \n\nThis is a real, standard item actively available in the Festo catalog.",
-        "sources": [
-          {
-            "title": "rs-online.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHEIRc1elMtkM8Nj7LrCNGarjLXPWLpYY0SUotQosaKsDV5yjs3NurXOzyAD8zW38LCXnI8v-hoO5Qmb_hzQzDVsFd-I2R53up6au-dsYtyHrRsnCHIxavLvZCmJ136XXERA7Kh3UiW8jLY6IGvBhd-qLB9sqcVS_wbkD8q7K2C3tKudVvn"
-          },
-          {
-            "title": "ddpartssolution.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFOYRm6l4Cw_46ZAWCYFYl0V4KLpt8YwscDBYVZ3PTwd_BDLpiJK04aAh7Q29uETn_OizuGMIsVv506fEiuVexVKT4j-E6liiVxoUV6IzcnuZZE9lteIBBhIx3kcFGi_2FQWi1JvHm-smptwaA2KQwwbLMo7r6AAD4rlNORUFrRtpc9nk_mSQ0o_4JgJbPxpCCXeprVtpNLXVEksQsyNFfhrAT05A6s"
-          },
-          {
-            "title": "powermation.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHALcC5xfXyTOpyELW95AmejalH-M8ZFrExSna3MH62eADKkl711Dfaupj8jXHDtTvskoZL9Fc4mFNwO66heX6sk8hx1nyyKRnxJEU5EyHV7yhJqjhsgMgnD4YWSR9a922kNaXE8vNsGM_doQOQ5VaQ-DyFYgqR_6z71g=="
-          },
-          {
-            "title": "kempstoncontrols.co.uk",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFdEysUPu-xM-lltMssB527DZv3qzD0RfPX9LjDvJZHi_FvX-KCY5hJ2-pRmW67JClt2AOwk4W4nEHtW8frkPICMi7Uawj9MCNUjkOhQz2yxYCtF0beyA4e9Z_mVFUygCcxLYoBjHEGJbY6CwfJN9gnOgos1xCbI39OYMELIhm4PqBLlGFlj7cQ"
-          }
-        ],
-        "error": null
-      },
-      "attribution": {
-        "domains": [
-          {
-            "host": "us.rs-online.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHEIRc1elMtkM8Nj7LrCNGarjLXPWLpYY0SUotQosaKsDV5yjs3NurXOzyAD8zW38LCXnI8v-hoO5Qmb_hzQzDVsFd-I2R53up6au-dsYtyHrRsnCHIxavLvZCmJ136XXERA7Kh3UiW8jLY6IGvBhd-qLB9sqcVS_wbkD8q7K2C3tKudVvn",
-            "title": "rs-online.com",
-            "class": "distributor"
-          },
-          {
-            "host": "shop.powermation.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHALcC5xfXyTOpyELW95AmejalH-M8ZFrExSna3MH62eADKkl711Dfaupj8jXHDtTvskoZL9Fc4mFNwO66heX6sk8hx1nyyKRnxJEU5EyHV7yhJqjhsgMgnD4YWSR9a922kNaXE8vNsGM_doQOQ5VaQ-DyFYgqR_6z71g==",
-            "title": "powermation.com",
-            "class": "other"
-          },
-          {
-            "host": "www.kempstoncontrols.co.uk",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFdEysUPu-xM-lltMssB527DZv3qzD0RfPX9LjDvJZHi_FvX-KCY5hJ2-pRmW67JClt2AOwk4W4nEHtW8frkPICMi7Uawj9MCNUjkOhQz2yxYCtF0beyA4e9Z_mVFUygCcxLYoBjHEGJbY6CwfJN9gnOgos1xCbI39OYMELIhm4PqBLlGFlj7cQ",
-            "title": "kempstoncontrols.co.uk",
-            "class": "other"
-          },
-          {
-            "host": "ddpartssolution.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFOYRm6l4Cw_46ZAWCYFYl0V4KLpt8YwscDBYVZ3PTwd_BDLpiJK04aAh7Q29uETn_OizuGMIsVv506fEiuVexVKT4j-E6liiVxoUV6IzcnuZZE9lteIBBhIx3kcFGi_2FQWi1JvHm-smptwaA2KQwwbLMo7r6AAD4rlNORUFrRtpc9nk_mSQ0o_4JgJbPxpCCXeprVtpNLXVEksQsyNFfhrAT05A6s",
-            "title": "ddpartssolution.com",
-            "class": "other"
-          }
-        ],
-        "counts": {
-          "manufacturer": 0,
-          "distributor": 1,
-          "marketplace": 0,
-          "other": 3
-        },
-        "primary": "other",
-        "total_sources": 4
-      },
-      "category": "CORRECT",
-      "rationale": "Google search confirms that Festo part number 574334 (SMT-8M-A-PS-24V-E-0,3-M8D) is a real, orderable SKU that perfectly matches the requested specifications: an SMT-8M series solid-state T-slot proximity sensor, PNP normally open, with a 0.3m cable and an M8 plug."
-    },
-    {
-      "query": "Purchasing requires the exact Festo order code for a 50-meter coil of blue, hydrolysis-resistant polyurethane tubing with a 10mm outside diameter from the PUN-H family.",
-      "agent": {
-        "text": "The exact Festo order code for this specific tubing is **197386** (Type Designation: **PUN-H-10X1,5-BL**). \n\n**Product Specifications:**\n* **Order Code:** 197386\n* **Type Designation:** PUN-H-10X1,5-BL\n* **Product Family:** PUN-H (hydrolysis-resistant, microbe-resistant thermoplastic polyurethane)\n* **Outside Diameter (OD):** 10 mm\n* **Inside Diameter (ID):** 7 mm (indicating a 1.5 mm wall thickness)\n* **Color:** Blue\n* **Packaging:** Standard 50-meter coil/reel\n\n*Note: If your facility requires \"translucent blue\" rather than solid blue, the correct 50-meter order code for that variant is 8048701 (PUN-H-10X1,5-TBL).*",
-        "sources": [
-          {
-            "title": "festo.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGto4UM3Tbzle702uJWdq-uzpQj7VqrmGUZuuypjjg9Ugoj2y-fet_li5-KheBUm8MsYEbk3A7j7ax_QLJodY4DmrcVKXB9x3Zug9oxPLi95HUnzU-PeVNpGtO_641Jpif4GcmuZf9XM46fD46U4_sD1AJwU3PEB0kdf-kiAU-rQaultJvNA2UpvGxogN8="
-          },
-          {
-            "title": "rubix.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHAr-TdruDbbozfHb6obFgWpz42ri5fbA_Wudcy7Wv9_Pr76ps68w5mj5rpSpFVI53sypJHi3fl-LyxPwBkGePjj0J3ObpghMmzrjhpqulf5CBnZKSYSyglPLJKCaO0dStY8OMEUS25okriovwsQSM="
-          },
-          {
-            "title": "industrybuying.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFxtRL-id2r8cF1NjExFUVr6AOO67RijCaK9tLPvKgsWvmstbh8GCDmeiuivp3xRmbeld6pvR_gba1JC4RBDQ0r1WBFj5ohChzdzu41J7w0WprQ-FsKzdJuC35Tn05QERPs2KsTaVvTnee9tW03cXF1gpGKk6coHQxwFxhLew=="
-          },
-          {
-            "title": "allied-automation.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE2llVnMIVhLgNoUtWllDW3nScISRoywSZxVDGVrd8mkAG3FRfNymmmc72_ithSXGYkTZbXGtJaO6tD97oaB8gzNRdJRPZXC3as9at1JNza8UUUbl4i-2sV6rLD58UlHnnkhyjhdZoq8A=="
-          },
-          {
-            "title": "khinen-festo.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFnQ9DunkEb1o-90ac8HYGk30GY3WtPKjHyn6O1Yyz-uxzqEgDVt8et0cdvUMQMyjtDHPTmPugmBaSCdWHnYMNlEYYlp5QQpSUhr8Xq4WtgI5rPas1YWsXX3HdcL3QSNFwxwjPEk7jxKoWMeHw8kH6u7VvqWUnCAdy98nfQ2T4zb2RtDaHIcFafJC4uve8CM9OcalEIVcSsFLgZXlPDZQ=="
-          }
-        ],
-        "error": null
-      },
-      "attribution": {
-        "domains": [
-          {
-            "host": "www.allied-automation.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE2llVnMIVhLgNoUtWllDW3nScISRoywSZxVDGVrd8mkAG3FRfNymmmc72_ithSXGYkTZbXGtJaO6tD97oaB8gzNRdJRPZXC3as9at1JNza8UUUbl4i-2sV6rLD58UlHnnkhyjhdZoq8A==",
-            "title": "allied-automation.com",
-            "class": "other"
-          },
-          {
-            "host": "ftp.festo.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGto4UM3Tbzle702uJWdq-uzpQj7VqrmGUZuuypjjg9Ugoj2y-fet_li5-KheBUm8MsYEbk3A7j7ax_QLJodY4DmrcVKXB9x3Zug9oxPLi95HUnzU-PeVNpGtO_641Jpif4GcmuZf9XM46fD46U4_sD1AJwU3PEB0kdf-kiAU-rQaultJvNA2UpvGxogN8=",
+            "host": "www.festo.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEFdaymqZZW7vTRafsFlNUDk7NA8imhi4z0DX8FNhRqA6A6W5HbG-fAihtEzjhhmi9rVc06v9ePg_llQT28agQxxIlhu6dRLMsiLcNrI8VGsXvcCAU5Avtve771D9_bA_Irr2FitbB-4Gf7ZGkvYo1vlLLsY_0=",
             "title": "festo.com",
             "class": "manufacturer"
           },
           {
-            "host": "www.industrybuying.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFxtRL-id2r8cF1NjExFUVr6AOO67RijCaK9tLPvKgsWvmstbh8GCDmeiuivp3xRmbeld6pvR_gba1JC4RBDQ0r1WBFj5ohChzdzu41J7w0WprQ-FsKzdJuC35Tn05QERPs2KsTaVvTnee9tW03cXF1gpGKk6coHQxwFxhLew==",
-            "title": "industrybuying.com",
+            "host": "manuals.plus",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG7fS0dQ-7ZdQYTjU3z4Wd1V1Iqw7A7obVh5sbSlTEtYC27OjfxNFWEpsaKdq452fnr1I-Lu_j1QK-vBq4pzm6Y2l23xgi3Jdv1wi4DjtlC0grGLv7cSDNoUEjlNvpEwMSKUuoAti0roTaAxhGODymTsfeb3lLCYAWNHlTw3ufiy1etbBoTtnaGksdlvLcBtFE6Cg==",
+            "title": "manuals.plus",
             "class": "other"
           },
           {
-            "host": "ie.rubix.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHAr-TdruDbbozfHb6obFgWpz42ri5fbA_Wudcy7Wv9_Pr76ps68w5mj5rpSpFVI53sypJHi3fl-LyxPwBkGePjj0J3ObpghMmzrjhpqulf5CBnZKSYSyglPLJKCaO0dStY8OMEUS25okriovwsQSM=",
-            "title": "rubix.com",
+            "host": "manuals.plus",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEFgZP-TLU5-z0kfQhFcZ2uDmoqhQcEWU66DnEEkekwDjDUtqW6nxmJm7e62U2WD4WY6P2fTVMyVzJdpq-b3S-ufeFdgsPUpc6F1e2ELVgyz9P1C_mSiYSFwNrDWfqYCOcpZr-yi_CJY_loDqpuCerILY3N9lXoZsTEkImTqlpFPWxVOeIe5e0SLrcOVthDls5bQw==",
+            "title": "manuals.plus",
             "class": "other"
           },
           {
-            "host": "vertexaisearch.cloud.google.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFnQ9DunkEb1o-90ac8HYGk30GY3WtPKjHyn6O1Yyz-uxzqEgDVt8et0cdvUMQMyjtDHPTmPugmBaSCdWHnYMNlEYYlp5QQpSUhr8Xq4WtgI5rPas1YWsXX3HdcL3QSNFwxwjPEk7jxKoWMeHw8kH6u7VvqWUnCAdy98nfQ2T4zb2RtDaHIcFafJC4uve8CM9OcalEIVcSsFLgZXlPDZQ==",
-            "title": "khinen-festo.com",
+            "host": "blog.electrozad.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUjfSJmMeGfy6hAa1kuteCLIGp6RTVkjZAfe6uyY8q-NVqQN5P4MCCDNp-7lUyIPc7fzKcOVWniXiE-NnyuDz9cLD2wkRPn8t3JyrmtswxqErKvByJYYJQkcq-OuD4FB17Qwq6vx5Br6M_679BLUPMSOmwrhQC-cu-fUM4VdC6pqfIdXMX1Amxna73LGLB6hMIzni3RlNqzdcejuL2kKrcrw28Z-vzbEgtF6CBznOiT6bGsc6CZCDx9-0QjQ==",
+            "title": "electrozad.com",
+            "class": "other"
+          },
+          {
+            "host": "www.rockwellautomation.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUfMsWcvW4OGqqyCzgjwpspRqv_aAoHcAaMw_wPDHxpkDtq3opeEeXCXiOXcE9Xnl_fpqqxIUIlbgXMXFzjzGRGkKtC9L7Lg0hv5pi7G8J8Y-JKfxHfIU4RRKpMKsmMxJXzyQiKwdIBsGp06F20_yjOC-F8Pqth5yXifGUVE0HGYMWLQiRHlS6NLQeFsxUSy4KKP2olNK4Bh3X8jQ9n-YneTc1vgx7t9GiyfGH3soeBEcCM21LXEli6NwcR3tFQCF6IkVGW1TZrhtQcone59lk",
+            "title": "rockwellautomation.com",
             "class": "other"
           }
         ],
         "counts": {
-          "manufacturer": 1,
+          "manufacturer": 2,
           "distributor": 0,
           "marketplace": 0,
           "other": 4
         },
         "primary": "other",
-        "total_sources": 5
+        "total_sources": 6
       },
       "category": "CORRECT",
-      "rationale": "Search results from Festo's catalog and authorized distributors (like TME and Motion Industries) confirm that order code 197386 corresponds to the PUN-H-10X1,5-BL, which is a 50-meter coil of blue, 10mm OD, hydrolysis-resistant polyurethane tubing. The agent also accurately provided the alternate part number (8048701) for the translucent blue variant."
+      "rationale": "I verified via Festo's website that the VTUX 10mm high-flow subbase achieves a maximum flow rate of 730 l/min, with standard nominal rates around 670-690 l/min, and that the new 15mm size achieves 1,650 l/min. Additionally, all provided part numbers, including the base configurator numbers (8000800, 8000810) and the pre-configured 4-way (23669607) and 8-way (23669661) terminal blocks, exist and are accurate in the Festo catalog."
     },
     {
-      "query": "Please provide the part number for a Festo MS6 series filter regulator with G1/2 ports, a 40-micron filter element, and a fully automatic condensate drain.",
+      "query": "Does festo.com sell high-pressure industrial hydraulic pumps for 3000 PSI applications? If yes, give me a part number; if no, say so plainly.",
       "agent": {
-        "text": "Depending on your required pressure regulation range and bowl material, Festo offers a few standard, orderable part numbers that exactly match your specifications. \n\nHere are the most common standard part numbers for this configuration:\n\n**1. Part Number: 529190**\n*   **Type Code:** `MS6-LFR-1/2-D7-ERV-AS`\n*   **Specifications:** G1/2 ports, 40 \u03bcm filter element, fully automatic condensate drain, plastic bowl guard, **0.5 to 12 bar** pressure regulation range.\n\n**2. Part Number: 529182**\n*   **Type Code:** `MS6-LFR-1/2-D6-ERV-AS`\n*   **Specifications:** G1/2 ports, 40 \u03bcm filter element, fully automatic condensate drain, plastic bowl guard, **0.3 to 7 bar** pressure regulation range.\n\n**3. Part Number: 529194**\n*   **Type Code:** `MS6-LFR-1/2-D7-EUV-AS`\n*   **Specifications:** G1/2 ports, 40 \u03bcm filter element, fully automatic condensate drain, **metal bowl guard**, 0.5 to 12 bar pressure regulation range.\n\n*Note on Nomenclature:* In the Festo MS series, **1/2** denotes the G1/2 port, **E** denotes the 40-micron filter, and **V** denotes the fully automatic drain. The pressure range (D6 or D7) and bowl guard (R or U) dictate the exact 6-digit orderable SKU.",
+        "text": "**No.** Festo does not sell high-pressure industrial hydraulic pumps for 3000 PSI applications. \n\nFesto is a global manufacturer specializing in pneumatic, servo-pneumatic, and electromechanical automation systems (such as air cylinders, manifolds, and process valves). While their educational division (Festo Didactic) produces small, low-pressure hydraulic power packs for classroom training systems, they do not manufacture or supply high-pressure industrial hydraulics. \n\n*(Note: If you find search results or websites listing a \"Festo 165068 hydraulic pump,\" this is auto-generated SEO spam. The real Festo part number 165068 is a small pneumatic 3/2-way shut-off valve.)*\n\nIf you need a 3000 PSI industrial hydraulic pump, you will need to look at catalogs from dedicated hydraulics manufacturers such as Parker Hannifin, Bosch Rexroth, Eaton, or Danfoss.",
         "sources": [
           {
-            "title": "distrelec.ch",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHXU4sWNB42mivLX-_mIwDv_8qj6yoUATEb2mgVCQqhVREvbBGPE_AZeBuZjqtBnp4_iQrGsLU6zemyzpr-YPCpm5SKuYwKMd9eM4hmlxxfk9fXVZU6TV9j2o85YzoHRFFYEPKOtghbN5Wr2D0OxVN755VWxbAawp88IGjLgvcCmI9TG4-r-5Z6KPsBs-8P-VcZfayCdF6Mt3G1nUIhyWPtOr29yKI="
+            "title": "festo.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHSdtiJtUvIJoQQDGdpEZRe-E9Cqz7svy6S1LzwmLJdOB7t7As_v7uAUaA6pnefWTX-qc4u8wBn-SqqbjS3PDGAriiY--tT4QnLqUN5PU6Krdm-IPAmy2_nWk3bWOqTxiwFreSS-LEIDEnh0oOHxgBst7fX1_9VkmVa1ms2grieV1a2kxO-uGqGvadr773f2mduO7-bhG2ezPcIbJyCuRg0KQ=="
           },
           {
-            "title": "rsdelivers.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHEfJDt6Sm2uA4V5iDBTNOmLIlxQ2DNt-dY-gpLQ2E3P_bc2QS9sIJXASQhAM4jfGFtVvMX-niDS0xR56PPYHqhiUYxaSe6aOrGJRN-AUrZIZWifWNcL-mofJa75loa0A1SEVVeFrjmDK-xZWgva8pneU6-ygIAQjkzcXEx3qclGjZJRdS3l564yGyJid6jGf-JztA-IqWZnnMopUQb45qtkAZrn0Ezhha535bMbtY1r_HNZiOtuCTRQYBOvLM9GIJRwz5-y48="
+            "title": "festo-didactic.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZanysT5bCVBZlvgKIMVz80m4VIsSxMNzUJHOWs6SI5uuvdShzGlB9U91WNMszvYmXFGz9hVyFnsjPHSN3fmUu7vFJ9m3NL5sWPl6NMUx2XNPjSLLwWtE-ebwrDs2c6Z1skclgcMdEF7M6z_GzHd73KcyKo_6IspjIzD2NyLWXhv4z"
+          },
+          {
+            "title": "tameson.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHdU5o5ScI0IIPNCs9t22dTyugB3brs8vcsVEDxnqy4551BGqicEfDuwW7OfSbUmD0wQaDRnsh2htCmCOvDTdsmfX6VyKP_qPCsL32-9wEjlYgHnX_4a6wJiVkBdsMA846tZnkovKQdOOZrcU5yMhptusYjUzT9ZYqOZvVfYLlODPM="
           },
           {
             "title": "rs-online.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWymywiYHR-ylx8xk9FFamilPeN2wJK_8nIrs2YCIra8vg60aPRokRC8d5Ig-K6QR0qMZZJLJOJX26xqESn0Sh4laJGi9EUDnUbfECExIasRB_Vm8VeQ5C0o2i1y1og6ycX0K_Lmc76QsPsEmBrgPWteja9PI="
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFPQp26XMirj0shVwIhhmCkS0gHdqodLrTGSqAGI5icskX4W43pyLq5wHq0xaTbgJmsr3dhyx9cBytIjRJZy75ET917P-g0l61hoRlReuF6mGz064G3eTVkCRx8HKMciB2Vzp-mv_06234zPqivq0uAngjGwayha9RP0So1x-HCGQ=="
           },
           {
-            "title": "festo.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFlAP6_ojuocIqeuNQ9Fulai2X2RZXKbC1aEdz4a5J4tOU8tZTjpDN2vtVtNipmc0xjUllH0VoHxJClz_s68pSDQkQJeDSVzkR36qWDjkvbdAvoHbGpDKFM1gGYDyFmozC7OuSrpp_cA01oR-YfJ3f_0sMHMJtGNXYUPtY7Q_4IM1uMrslNDToiIa7U5AM="
-          },
-          {
-            "title": "festo.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHK3upl11TmdliEZs2xiiqBSbwMVrFuZO3G9O5pd84F9njnbZDZSZQuY7UAgDieIEYBbP9ERXI45zqci9uXROCiqqCyZC_5rSZYSNs_of7EChkBEN8qus7l1RFPcg9VGh51mCymPjoSG6zxaQu9MXiZsrSdK5Mvq1B-jciOP3tqleKvAlU0MqR9SryXS2br2DbjUHTGrgzCfrw="
+            "title": "rowse-pneumatics.co.uk",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGGzr-wagZDVhdVHFh4NhaFkQ6KWFFe1LmT47Bm42Yd6B0uLRuuGFd6d4xBKXlt_Iwtk8Z9JSYIFHNGicnqi5asMEQYLc1NDEWp54pMtvEYqT44lrG0fj_538jra2GUMdvSx7T4dBQZQ39bYueQKSJifQMImbt9QCPBzWc="
           }
         ],
         "error": null
@@ -305,59 +323,142 @@
       "attribution": {
         "domains": [
           {
-            "host": "ftp.festo.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFlAP6_ojuocIqeuNQ9Fulai2X2RZXKbC1aEdz4a5J4tOU8tZTjpDN2vtVtNipmc0xjUllH0VoHxJClz_s68pSDQkQJeDSVzkR36qWDjkvbdAvoHbGpDKFM1gGYDyFmozC7OuSrpp_cA01oR-YfJ3f_0sMHMJtGNXYUPtY7Q_4IM1uMrslNDToiIa7U5AM=",
-            "title": "festo.com",
-            "class": "manufacturer"
-          },
-          {
-            "host": "ftp.festo.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHK3upl11TmdliEZs2xiiqBSbwMVrFuZO3G9O5pd84F9njnbZDZSZQuY7UAgDieIEYBbP9ERXI45zqci9uXROCiqqCyZC_5rSZYSNs_of7EChkBEN8qus7l1RFPcg9VGh51mCymPjoSG6zxaQu9MXiZsrSdK5Mvq1B-jciOP3tqleKvAlU0MqR9SryXS2br2DbjUHTGrgzCfrw=",
-            "title": "festo.com",
-            "class": "manufacturer"
-          },
-          {
-            "host": "www.distrelec.ch",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHXU4sWNB42mivLX-_mIwDv_8qj6yoUATEb2mgVCQqhVREvbBGPE_AZeBuZjqtBnp4_iQrGsLU6zemyzpr-YPCpm5SKuYwKMd9eM4hmlxxfk9fXVZU6TV9j2o85YzoHRFFYEPKOtghbN5Wr2D0OxVN755VWxbAawp88IGjLgvcCmI9TG4-r-5Z6KPsBs-8P-VcZfayCdF6Mt3G1nUIhyWPtOr29yKI=",
-            "title": "distrelec.ch",
+            "host": "ip.festo-didactic.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZanysT5bCVBZlvgKIMVz80m4VIsSxMNzUJHOWs6SI5uuvdShzGlB9U91WNMszvYmXFGz9hVyFnsjPHSN3fmUu7vFJ9m3NL5sWPl6NMUx2XNPjSLLwWtE-ebwrDs2c6Z1skclgcMdEF7M6z_GzHd73KcyKo_6IspjIzD2NyLWXhv4z",
+            "title": "festo-didactic.com",
             "class": "other"
           },
           {
-            "host": "mt.rsdelivers.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHEfJDt6Sm2uA4V5iDBTNOmLIlxQ2DNt-dY-gpLQ2E3P_bc2QS9sIJXASQhAM4jfGFtVvMX-niDS0xR56PPYHqhiUYxaSe6aOrGJRN-AUrZIZWifWNcL-mofJa75loa0A1SEVVeFrjmDK-xZWgva8pneU6-ygIAQjkzcXEx3qclGjZJRdS3l564yGyJid6jGf-JztA-IqWZnnMopUQb45qtkAZrn0Ezhha535bMbtY1r_HNZiOtuCTRQYBOvLM9GIJRwz5-y48=",
-            "title": "rsdelivers.com",
-            "class": "distributor"
+            "host": "www.festo.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHSdtiJtUvIJoQQDGdpEZRe-E9Cqz7svy6S1LzwmLJdOB7t7As_v7uAUaA6pnefWTX-qc4u8wBn-SqqbjS3PDGAriiY--tT4QnLqUN5PU6Krdm-IPAmy2_nWk3bWOqTxiwFreSS-LEIDEnh0oOHxgBst7fX1_9VkmVa1ms2grieV1a2kxO-uGqGvadr773f2mduO7-bhG2ezPcIbJyCuRg0KQ==",
+            "title": "festo.com",
+            "class": "manufacturer"
           },
           {
-            "host": "twen.rs-online.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWymywiYHR-ylx8xk9FFamilPeN2wJK_8nIrs2YCIra8vg60aPRokRC8d5Ig-K6QR0qMZZJLJOJX26xqESn0Sh4laJGi9EUDnUbfECExIasRB_Vm8VeQ5C0o2i1y1og6ycX0K_Lmc76QsPsEmBrgPWteja9PI=",
+            "host": "www.rowse-pneumatics.co.uk",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGGzr-wagZDVhdVHFh4NhaFkQ6KWFFe1LmT47Bm42Yd6B0uLRuuGFd6d4xBKXlt_Iwtk8Z9JSYIFHNGicnqi5asMEQYLc1NDEWp54pMtvEYqT44lrG0fj_538jra2GUMdvSx7T4dBQZQ39bYueQKSJifQMImbt9QCPBzWc=",
+            "title": "rowse-pneumatics.co.uk",
+            "class": "other"
+          },
+          {
+            "host": "tameson.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHdU5o5ScI0IIPNCs9t22dTyugB3brs8vcsVEDxnqy4551BGqicEfDuwW7OfSbUmD0wQaDRnsh2htCmCOvDTdsmfX6VyKP_qPCsL32-9wEjlYgHnX_4a6wJiVkBdsMA846tZnkovKQdOOZrcU5yMhptusYjUzT9ZYqOZvVfYLlODPM=",
+            "title": "tameson.com",
+            "class": "other"
+          },
+          {
+            "host": "my.rs-online.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFPQp26XMirj0shVwIhhmCkS0gHdqodLrTGSqAGI5icskX4W43pyLq5wHq0xaTbgJmsr3dhyx9cBytIjRJZy75ET917P-g0l61hoRlReuF6mGz064G3eTVkCRx8HKMciB2Vzp-mv_06234zPqivq0uAngjGwayha9RP0So1x-HCGQ==",
             "title": "rs-online.com",
             "class": "distributor"
           }
         ],
         "counts": {
-          "manufacturer": 2,
-          "distributor": 2,
+          "manufacturer": 1,
+          "distributor": 1,
           "marketplace": 0,
-          "other": 1
+          "other": 3
         },
-        "primary": "manufacturer",
+        "primary": "other",
         "total_sources": 5
       },
       "category": "CORRECT",
-      "rationale": "Verified through authoritative distributors (RS, Tameson, TME) that part numbers 529190, 529182, and 529194 correspond exactly to Festo MS6-LFR series filter regulators with G1/2 ports, 40-micron elements, and fully automatic drains as described."
+      "rationale": "I verified via Google Search that Festo specializes in pneumatic and electromechanical automation and does not sell industrial 3000 PSI hydraulic pumps. The agent correctly answered 'no' to an out-of-catalog query without fabricating a SKU, and accurately identified part 165068 as a pneumatic shut-off valve."
+    },
+    {
+      "query": "I'm comparing festo.com's VTUX valve terminal vs. SMC's SY series valve manifolds. What are the key differentiators and which one is recommended for a lightweight end-of-arm tooling application requiring decentralized I/O?",
+      "agent": {
+        "text": "**Key Differentiators:**\n* **Festo VTUX:** Built from a rugged, lightweight, high-performance polymer. It natively leverages Festo’s AP (Automation Platform) for AP-I and IO-Link decentralized I/O. A major differentiator is its ability to seamlessly integrate advanced vacuum generation modules alongside standard directional valves on the same manifold. \n* **SMC SY Series:** A proven, highly versatile platform offering metal and resin sub-bases. It handles decentralized I/O via the compact EX260 (fieldbus/output) or the highly modular EX600 (comprehensive fieldbus input/output). \n\n**Recommendation for Lightweight EOAT:**\nThe **Festo VTUX** is highly recommended here due to its lightweight polymer build and integrated vacuum capabilities. However, if you prefer SMC, you should look at the **SMC JSY Series** rather than the standard SY. The JSY (specifically the JSY1000, measuring just 6.4mm wide) is SMC’s ultra-compact, lightweight solution expressly designed for robotic end-of-arm tooling, and it remains compatible with EX260/EX600 fieldbus nodes.\n\n**Part Numbers:**\nI cannot provide a specific SKU. Valve manifolds are highly customized, built-to-order assemblies. You must use the manufacturers' configurators to generate an identity code or part string (e.g., an SMC `SS5Y3-...` base number) based on your exact station count, protocol, and valve functions.",
+        "sources": [
+          {
+            "title": "remtron.com.au",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHL7MA1FjJUlRBaS3yKqXNubOC2cVveqAnzW73wLUuUUGbuh2ia7zWYumGgcIZVgqyGxPWwNZglNOuRPm3MKZtbHtUp8jF7Nzzw43V4s31vPWbWJic7REDL0XmzX-O7Vteyt8avFwZhr8KDhvMabL8CkZk="
+          },
+          {
+            "title": "assemblymag.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEJ-PPrHMMMecGb_BgDK_rmtD9vz9aW77JHK7ZU9ihyZ6vFBQ-ih1jsV46MJb-awI77PPdcddmDoGuV3ooM_3uq4rgrEC3BCx1ozPlI7mRq4fioWurajlwumls3pZBSnmF5yRVoaaUOT7iiAxCUsTXj1d-G3pZcTOBXEWZ8lKrY8DiVT14dNQ=="
+          },
+          {
+            "title": "youtube.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFqJKeaIAzx5mgGhfwrI2zYLaFjL1cILzSON2YnkqdpGF5ec_28yrDVjSsRhqj6aXkt_F4o0_xXROG0a9C7TC6y9AwA0sRr0Tihnbi7Pt3prV26f6tcjwyfgjgMv4Kp7jDQS7aDBQ=="
+          },
+          {
+            "title": "directindustry.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHFGyuv3kxnfSqS8uu4KPOq8d0nP2X3HbCfLDoyJHFmZYhoB5yuw0jcd2tHNBaqhPTvGgv4yCTOS1s8dIirRtp0wfBuIp1RxJr-2x_3N3ZtqoIP3_9AmgaD9B1WzkbQQPgQPLtTgqTDESPx7n5q7JfCLBKF82KM7mHBpQ=="
+          },
+          {
+            "title": "youtube.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGPqMQbZwk2JGXhr-EnSA30rLlPPk4I1d1Ptqp-blNyiOJ2ulIfCn9HsusEKYuL9IVck9-rQ57aebB1DbfRTkx97taQBTm-WyM8u0r86WkQ7VPVzuXuZgYtJ1D7Yu-x186yXg-wkuw="
+          },
+          {
+            "title": "airlinehyd.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEkewVDuxJ8dEVmICzm-Z-I8Bxsv2q4LSBBITkeEKQP0RLlLOw7p4oDXquXeEwMh8GUraxsctI17W_5NWhydv8TTC-2lwTMSUQzCB1lx-fPuZ3aLG3Z5kUO4gMudV8UPyj6ctOaOpSIFaA="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "pdf.directindustry.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHFGyuv3kxnfSqS8uu4KPOq8d0nP2X3HbCfLDoyJHFmZYhoB5yuw0jcd2tHNBaqhPTvGgv4yCTOS1s8dIirRtp0wfBuIp1RxJr-2x_3N3ZtqoIP3_9AmgaD9B1WzkbQQPgQPLtTgqTDESPx7n5q7JfCLBKF82KM7mHBpQ==",
+            "title": "directindustry.com",
+            "class": "other"
+          },
+          {
+            "host": "blog.airlinehyd.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEkewVDuxJ8dEVmICzm-Z-I8Bxsv2q4LSBBITkeEKQP0RLlLOw7p4oDXquXeEwMh8GUraxsctI17W_5NWhydv8TTC-2lwTMSUQzCB1lx-fPuZ3aLG3Z5kUO4gMudV8UPyj6ctOaOpSIFaA=",
+            "title": "airlinehyd.com",
+            "class": "other"
+          },
+          {
+            "host": "www.youtube.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGPqMQbZwk2JGXhr-EnSA30rLlPPk4I1d1Ptqp-blNyiOJ2ulIfCn9HsusEKYuL9IVck9-rQ57aebB1DbfRTkx97taQBTm-WyM8u0r86WkQ7VPVzuXuZgYtJ1D7Yu-x186yXg-wkuw=",
+            "title": "youtube.com",
+            "class": "other"
+          },
+          {
+            "host": "www.youtube.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFqJKeaIAzx5mgGhfwrI2zYLaFjL1cILzSON2YnkqdpGF5ec_28yrDVjSsRhqj6aXkt_F4o0_xXROG0a9C7TC6y9AwA0sRr0Tihnbi7Pt3prV26f6tcjwyfgjgMv4Kp7jDQS7aDBQ==",
+            "title": "youtube.com",
+            "class": "other"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHL7MA1FjJUlRBaS3yKqXNubOC2cVveqAnzW73wLUuUUGbuh2ia7zWYumGgcIZVgqyGxPWwNZglNOuRPm3MKZtbHtUp8jF7Nzzw43V4s31vPWbWJic7REDL0XmzX-O7Vteyt8avFwZhr8KDhvMabL8CkZk=",
+            "title": "remtron.com.au",
+            "class": "other"
+          },
+          {
+            "host": "www.assemblymag.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEJ-PPrHMMMecGb_BgDK_rmtD9vz9aW77JHK7ZU9ihyZ6vFBQ-ih1jsV46MJb-awI77PPdcddmDoGuV3ooM_3uq4rgrEC3BCx1ozPlI7mRq4fioWurajlwumls3pZBSnmF5yRVoaaUOT7iiAxCUsTXj1d-G3pZcTOBXEWZ8lKrY8DiVT14dNQ==",
+            "title": "assemblymag.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 6
+        },
+        "primary": "other",
+        "total_sources": 6
+      },
+      "category": "CORRECT",
+      "rationale": "The agent correctly identified the key features of the Festo VTUX, including its AP integration, high-performance polymer build, and integrated vacuum modules. The comparison with SMC's SY and the specific recommendation of the ultra-compact 6.4mm SMC JSY1000 for end-of-arm tooling are highly accurate and verifiable via SMC's catalog. The agent also appropriately explained that valve manifolds are built-to-order and require configurators to generate correct part strings."
     }
   ],
   "log": [
     "[  0.0s] Stage 0: validated festo.com (brand=festo)",
     "[  0.0s] Stage 1: generating queries (grounded against festo.com)",
-    "[ 31.6s]   Generated 5 queries",
-    "[ 31.6s] Stage 2: running 5 grounded queries against Gemini Pro",
-    "[ 64.1s] Stage 3: source attribution complete",
-    "[ 64.1s] Stage 4: categorizing answers",
-    "[ 89.8s] Stage 5: visibility=80 (4/5), source_authority=25 (1/4 manufacturer-sourced) in 89.8s"
+    "[ 34.8s]   Generated 5 queries",
+    "[ 34.8s] Stage 2: running 5 grounded queries against Gemini Pro",
+    "[ 68.1s] Stage 3: source attribution complete",
+    "[ 68.1s] Stage 4: categorizing answers",
+    "[101.2s] Stage 5: visibility=100 (5/5), source_authority=0 (0/5 manufacturer-sourced) in 101.2s"
   ],
-  "elapsed_seconds": 89.8,
+  "elapsed_seconds": 101.2,
   "slug": "festo",
   "display_name": "Festo"
 }

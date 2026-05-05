@@ -2,14 +2,15 @@
   "input": "https://daw.de",
   "host": "daw.de",
   "brand": "daw",
-  "visibility_score": 100,
+  "visibility_score": 80,
   "source_authority_score": 0,
   "total_queries": 5,
-  "correct_queries": 5,
+  "correct_queries": 4,
   "manufacturer_correct": 0,
   "breakdown": {
-    "CORRECT": 5,
-    "HALLUCINATION": 0,
+    "CORRECT": 4,
+    "HALLUCINATION": 1,
+    "OUT_OF_CATALOG_HALLUCINATION": 0,
     "REFUSED": 0,
     "WRONG_SPEC": 0,
     "ERROR": 0
@@ -23,17 +24,29 @@
   },
   "rows": [
     {
-      "query": "We are placing a material order for an industrial floor and need the exact Disbon part number for the two-component, solvent-free transparent epoxy primer. This is the specific polyamine-cured primer required for proper adhesion prior to applying the DisboPOX 230SF topcoat.",
+      "query": "I need a 12.5-liter bucket of Caparol Indeko-plus premium white interior wall paint from daw.de. Give me the part number.",
       "agent": {
-        "text": "The exact Disbon catalog product designation for the two-component, solvent-free, transparent polyamine-cured epoxy primer is **DisboPOX 210 SF** (often written as **DisboPOX 210SF**). \n\nAccording to Disbon/Caparol technical documentation, DisboPOX 210 SF is the specifically approved base coat designed to provide excellent penetration and adhesion on mineral and concrete floors prior to applying the DisboPOX 230 SF topcoat. \n\nWhile **DisboPOX 210 SF** is the correct catalog material identifier required for your floor coating system, I cannot provide a specific orderable numeric SKU (e.g., a 6-digit item number) for the purchase. The exact numeric SKU depends entirely on your required packaging volume (e.g., specific container sizes in kg or liters) and your regional distributor. \n\nYou should specify **DisboPOX 210 SF** on your procurement order and confirm the exact packaging-specific SKU with your supplier.",
+        "text": "The manufacturer part number (Herstellernummer) for a 12.5-liter bucket of Caparol Indeko-plus premium white interior wall paint from DAW SE is **992092**. \n\nWhen searching B2B procurement platforms or distributor catalogs, this specific 12.5L un-tinted white (Weiß) bucket is most commonly identified by the following European Article Numbers (EANs):\n* **EAN: 4002381925169** (Standard Caparol Indeko-plus 12.5L White)\n* **EAN: 4002382056442** (Often associated with the recent \"CapaGreen\" sustainability branding for the same Indeko-plus product line)\n\nYou can confidently use SKU **992092** or either EAN to place your order with a DAW/Caparol supplier.",
         "sources": [
           {
-            "title": "caparol.ge",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHurMg4ItQS7eZekaTDjiW7KZrC30FBzvWD34etJtQ0svn3gSAvLpGUp1Bv64WP6GrGsjY8yi0aNtW5axe99y_pmpfgEtGgMwKkWgXVmljhkZCFARYsrCWwrK_FachO0No8Mh8Eez0n-rJzNXB2J1_Jk3F6wKMx4w=="
+            "title": "color24.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG1kmbE1e5Gv8_zMNyR6ZaBN305zOUrebbQaRJgOFVrkfY1F6gPuOPXkBAOZVCy1710z37JG0--t96xdlcy-yN2bvZ_2eEwgjosIktyEZcxL8KSkpueXRHsxkGXecEAmn_5jTVXa9Gg-IcVZBT_BOkBt5WCL_UUfe9FO-prbi9IIt7rfWFPxFd8djRYWZazc7Uz"
           },
           {
-            "title": "ropeweave.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGI8A9timU-5p-_v66e9bys35t0LK-la7AqJwLoyNkTPaDaNC10r480NYGMZkEAfGKTM7kUp5G6kDCWmGMmVPi-e4VjwfCVh-0GE19ln7Ymnb9Jhk8ONTqRfMwR9tQJRBkDK927dZMJxJ00jNzXQNdZ3VDYPPxN_Ckhpg0jHR67JRC9uQ=="
+            "title": "prof.lv",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGgKYHN3KERWdwn6_xmKQM25qoFHwVmzdHaWYbXEjQFvIFIg_Y58Ucf9SAG6quAahJaf_qhX3bpSx2uShYh4d07BozBl_iryE2v7v9-F0JlE07xBtKoZ5DlaMDoe9MbwiJ_UfnhayS4cMCcRfI5LBUlRGpk6sfQnvPuIMVn-qL1Hait9DOrkQIi1uV6dxY_IzMoUVrSNqbS"
+          },
+          {
+            "title": "wohntrends-shop.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUgp4arP396Seg5-1DIeium4hqlGgRvz15PBp_iQnf16l074mm9JLEvDhBoe-b8hR5uMZRhdcNFEBj8mt49Cf-UWnx--nFNpdF5TDEvARwJEpKPzn7Eh4zWdW-xCGNSjAdTM1t5RMnExaDQ_nBb4xNZDUemyF4158MGqjRwG7ZL569QjMm"
+          },
+          {
+            "title": "mmfarben.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQECPDJalLZP2sWt76E_dqbTdlihDECJSaO57Cr6FpKzHY20CQt5GZ_iRwQoCZkUhPhRv6O8-ofSbTizKI01fmAydgKgET_NPQqUB7QiuSSQdwRilXExdiNkmaTlUR-drntFHZjNIdk11sizpg=="
+          },
+          {
+            "title": "prof.lv",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHKbIqZ87i66vZu04gAFQKJS3YTbzJ-Ol6iIAK2h6Bp6ipygiNbsvokwnKS2d2aX2SsOhYHWONbHlPvGy25Ex4XwvHLFN7jf7Ep8wqCvX07s9ET39Qmjrfe9Ggkq77HAy-dwuhIrJCIvS2jEFFwusQtk0tk1LR3AzmabbX6pR2nuJwthMmhuXham5PWdnjrrxe0MiKZQA1-Mw=="
           }
         ],
         "error": null
@@ -41,151 +54,33 @@
       "attribution": {
         "domains": [
           {
-            "host": "www.caparol.ge",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHurMg4ItQS7eZekaTDjiW7KZrC30FBzvWD34etJtQ0svn3gSAvLpGUp1Bv64WP6GrGsjY8yi0aNtW5axe99y_pmpfgEtGgMwKkWgXVmljhkZCFARYsrCWwrK_FachO0No8Mh8Eez0n-rJzNXB2J1_Jk3F6wKMx4w==",
-            "title": "caparol.ge",
+            "host": "mmfarben.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQECPDJalLZP2sWt76E_dqbTdlihDECJSaO57Cr6FpKzHY20CQt5GZ_iRwQoCZkUhPhRv6O8-ofSbTizKI01fmAydgKgET_NPQqUB7QiuSSQdwRilXExdiNkmaTlUR-drntFHZjNIdk11sizpg==",
+            "title": "mmfarben.de",
             "class": "other"
           },
           {
-            "host": "www.ropeweave.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGI8A9timU-5p-_v66e9bys35t0LK-la7AqJwLoyNkTPaDaNC10r480NYGMZkEAfGKTM7kUp5G6kDCWmGMmVPi-e4VjwfCVh-0GE19ln7Ymnb9Jhk8ONTqRfMwR9tQJRBkDK927dZMJxJ00jNzXQNdZ3VDYPPxN_Ckhpg0jHR67JRC9uQ==",
-            "title": "ropeweave.com",
-            "class": "other"
-          }
-        ],
-        "counts": {
-          "manufacturer": 0,
-          "distributor": 0,
-          "marketplace": 0,
-          "other": 2
-        },
-        "primary": "other",
-        "total_sources": 2
-      },
-      "category": "CORRECT",
-      "rationale": "The agent correctly identified DisboPOX 210 SF as the exact product name/identifier for the two-component, solvent-free transparent epoxy primer from DAW/Disbon. The agent also accurately noted that the specific numeric SKU varies based on packaging size and correctly provided the specific product designation to use for ordering."
-    },
-    {
-      "query": "Please provide the manufacturer SKU for the alsecco Alsitherm EPS 032 Carbon Elastifiziert insulation boards. We need the exact orderable part number for the butt-edged version used in bonded thermal insulation systems to finalize our purchase order.",
-      "agent": {
-        "text": "The manufacturer SKU (Artikelnummer) for the **alsecco Alsitherm EPS 032 Carbon Elastifiziert** insulation boards depends on the required board thickness. The elastified version of this board is manufactured exclusively with butt edges (stumpf) for bonded thermal insulation systems (ETICS/WDVS). \n\nBecause the exact orderable part number varies by thickness, you will need to select the SKU that matches your project's specifications. Based on alsecco's current *Fassadennavigator* catalog, here are the precise SKUs for the standard thicknesses:\n\n*   **80 mm:** 976147\n*   **100 mm:** 976148\n*   **120 mm:** 976149\n*   **140 mm:** 976150\n*   **160 mm:** 976151\n\nTo finalize your purchase order, please verify the exact insulation thickness required. If your project specifies a thickness greater than 160 mm, the SKU series continues sequentially in the alsecco catalog; you should consult your alsecco technical advisor for the exact number.",
-        "sources": [
-          {
-            "title": "alsecco.de",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG1XfNm0wVSca484RFFx2aem9hzlF44veZIhEDUxxqO3q_ONSFD-K7ROMAtnHa2DYmcJ6O0fyTwJUu0NMuRxcT8HPr5Oe5pV0F-5XvkKcQyozqUt2MwGCYnNyOD8qnHdIwoZVat8QJfwgrwFM6bhw1w0IsU_e1KLh1zl_jhOux3hdYFAMa1AOwAvOdwAKRDOEBfkdjsK6DmDl4Q"
-          },
-          {
-            "title": "alsecco.de",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE1YtaNNOLpf9JYtvY4Fa17_x_QB2hqoNZSWHQPFOGKdKo6cc-saF91JRuk5Dg8UmJ2_o70m9WSAL0_C7ADg5tqGbnpXBWVS0H41zabFBHCaVRrPGmEQfRPvRZhnTeixC61HfH2eQ-pKIZLscBctKACA6b9cDHPUiS9NTnXZxQmmOm3IcbsJ7Ynm9yx4zD1wr2DMA=="
-          },
-          {
-            "title": "alsecco.de",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF6Q4NFN27a9AS9QqAoog2PBHDQQ5-lKM-DI7gLyoNi38eXvv5HZCQ0RezhDuJwMHPi4xnjRSNGzh-O2nx-j_v3jkOTzPQCo_TOLfCZj4SjOKO594-lFQNJYdU-kALkjRPX76-7Qij2H5Msid2YXD-CMzXOUBdtl7YSbu3Sq45BrTFATuuUi2XZmEbV78kmVByKrAjcBbAjkQmc32C0vA=="
-          },
-          {
-            "title": "alsecco.de",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGA9escWPvrVDZ6s92SMGMtjnx-tSrksI-SZ0jDH6EaMVWj9SMenR7Yg8A9-cAiaNRKTHRjawBAgXXzBInWh4F__zigW2KKzCABwTgnNZQYW_CQCnyg4oeycvf72RpGoQ75GKn8tW89sMSx4h4fuboiFBLJkRnLiLmZ2PA0qImqLIR32y_gqLTCXzEJgQDd8DQcMWdnB6cZ8qoQ"
-          }
-        ],
-        "error": null
-      },
-      "attribution": {
-        "domains": [
-          {
-            "host": "www.alsecco.de",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF6Q4NFN27a9AS9QqAoog2PBHDQQ5-lKM-DI7gLyoNi38eXvv5HZCQ0RezhDuJwMHPi4xnjRSNGzh-O2nx-j_v3jkOTzPQCo_TOLfCZj4SjOKO594-lFQNJYdU-kALkjRPX76-7Qij2H5Msid2YXD-CMzXOUBdtl7YSbu3Sq45BrTFATuuUi2XZmEbV78kmVByKrAjcBbAjkQmc32C0vA==",
-            "title": "alsecco.de",
+            "host": "wohntrends-shop.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUgp4arP396Seg5-1DIeium4hqlGgRvz15PBp_iQnf16l074mm9JLEvDhBoe-b8hR5uMZRhdcNFEBj8mt49Cf-UWnx--nFNpdF5TDEvARwJEpKPzn7Eh4zWdW-xCGNSjAdTM1t5RMnExaDQ_nBb4xNZDUemyF4158MGqjRwG7ZL569QjMm",
+            "title": "wohntrends-shop.com",
             "class": "other"
           },
           {
-            "host": "www.alsecco.de",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE1YtaNNOLpf9JYtvY4Fa17_x_QB2hqoNZSWHQPFOGKdKo6cc-saF91JRuk5Dg8UmJ2_o70m9WSAL0_C7ADg5tqGbnpXBWVS0H41zabFBHCaVRrPGmEQfRPvRZhnTeixC61HfH2eQ-pKIZLscBctKACA6b9cDHPUiS9NTnXZxQmmOm3IcbsJ7Ynm9yx4zD1wr2DMA==",
-            "title": "alsecco.de",
+            "host": "www.color24.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG1kmbE1e5Gv8_zMNyR6ZaBN305zOUrebbQaRJgOFVrkfY1F6gPuOPXkBAOZVCy1710z37JG0--t96xdlcy-yN2bvZ_2eEwgjosIktyEZcxL8KSkpueXRHsxkGXecEAmn_5jTVXa9Gg-IcVZBT_BOkBt5WCL_UUfe9FO-prbi9IIt7rfWFPxFd8djRYWZazc7Uz",
+            "title": "color24.de",
             "class": "other"
           },
           {
-            "host": "www.alsecco.de",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG1XfNm0wVSca484RFFx2aem9hzlF44veZIhEDUxxqO3q_ONSFD-K7ROMAtnHa2DYmcJ6O0fyTwJUu0NMuRxcT8HPr5Oe5pV0F-5XvkKcQyozqUt2MwGCYnNyOD8qnHdIwoZVat8QJfwgrwFM6bhw1w0IsU_e1KLh1zl_jhOux3hdYFAMa1AOwAvOdwAKRDOEBfkdjsK6DmDl4Q",
-            "title": "alsecco.de",
+            "host": "prof.lv",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHKbIqZ87i66vZu04gAFQKJS3YTbzJ-Ol6iIAK2h6Bp6ipygiNbsvokwnKS2d2aX2SsOhYHWONbHlPvGy25Ex4XwvHLFN7jf7Ep8wqCvX07s9ET39Qmjrfe9Ggkq77HAy-dwuhIrJCIvS2jEFFwusQtk0tk1LR3AzmabbX6pR2nuJwthMmhuXham5PWdnjrrxe0MiKZQA1-Mw==",
+            "title": "prof.lv",
             "class": "other"
           },
           {
-            "host": "www.alsecco.de",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGA9escWPvrVDZ6s92SMGMtjnx-tSrksI-SZ0jDH6EaMVWj9SMenR7Yg8A9-cAiaNRKTHRjawBAgXXzBInWh4F__zigW2KKzCABwTgnNZQYW_CQCnyg4oeycvf72RpGoQ75GKn8tW89sMSx4h4fuboiFBLJkRnLiLmZ2PA0qImqLIR32y_gqLTCXzEJgQDd8DQcMWdnB6cZ8qoQ",
-            "title": "alsecco.de",
-            "class": "other"
-          }
-        ],
-        "counts": {
-          "manufacturer": 0,
-          "distributor": 0,
-          "marketplace": 0,
-          "other": 4
-        },
-        "primary": "other",
-        "total_sources": 4
-      },
-      "category": "CORRECT",
-      "rationale": "The SKUs provided by the agent (976147 for 80 mm through 976151 for 160 mm) perfectly match the official alsecco catalog for the Alsitherm EPS 032 Carbon Elastifiziert insulation boards."
-    },
-    {
-      "query": "What is the catalog number for the Alsifix PM-T hammer-in plugs with plastic nails? We also need the exact SKU for the VT 90 combination disk required to flush-mount these plugs into WAP-zg mineral wool boards.",
-      "agent": {
-        "text": "I cannot provide specific alphanumeric SKUs, as the manufacturer (Alsecco / DAW SE) does not publish standard order codes for these items in their public technical catalogs. \n\nInstead, these components must be ordered directly through distributors using their specific system names and dimensional requirements:\n\n* **Alsifix PM-T:** These hammer-in plugs with plastic nails are ordered simply by the product name **\"Alsifix PM-T\"** alongside the required plug length (which ranges from 90 mm to 230 mm). \n* **VT 90 Combination Disk:** Required for flush-mounting into WAP-zg mineral wool boards, this component is cataloged by Alsecco as the **Kombinationsteller VT 90**. Under their sister brand Caparol, the exact catalog identifier for this same combination disk is **153/VT90** (sold as the *Capatect D\u00fcbelscheibe 153/VT90*). \n\nTo procure these items, you must quote these specific product names, your required anchor lengths, and refer to their respective technical approvals (e.g., ETA-11/0192 for the PM-T plug) to your regional Alsecco or Caparol B2B supplier.",
-        "sources": [
-          {
-            "title": "alsecco.de",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQES_PqcwrDGUiXiKla4CYHYsmx-JM8-1aYW8h5jggWZqzkLOwx660GSBBlipXoxowtKH5JX1M-nqGJUKLOOZEGv5V7op4bU82-w9oMtW4f-uzuUDR7MoY7BFZkudTQ3y0I0dkxksUf0869hU--LQbZ7htO3a0UGCSY9Q8LzaCuSWiOhpRBf"
-          },
-          {
-            "title": "alsecco.de",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEwZsaSDU5wjdEifJ4JbutY3HSbC-W15foN3nuQ3yZYNgHYxJltHaJqqZqk_Zigc-Uztc_pjW1NPsP7qiPrQA7-wwhWHtHhIPM55nwU3176rzWpzdm1lwkK1LUsFJj7s1x0896xQyf-mQwS469D2dZnU5BH6waA43YuD4Qpphd_IL_B1700gWs="
-          },
-          {
-            "title": "caparol.de",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGeDDP57goxPFKREqpfpRtU23Q5f8H_PGW9SOKtbgqa4Pa7OVBDzXzM85eKjdZqi510KgqXkM2iIXkuRyltfO0jNxnj53_Nemns4dWGpjBAnd9I-GyBYOa5tiiERVC7ix3z5pyLoWoiGJbf73rOL5YBPk6KyMPr3ecWQ6YO5-JA53XgnaDgxwbkIL0nr_c5Y3d3GmOce053F2xK5_zJjqU7J6YQdXo3vH9tSYqmDXRMNmZU"
-          },
-          {
-            "title": "caparol.de",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGMgEVh-c1udr9IhFWmiSFsjvUxYrg8iD1PAJfDH6vvmxKNNECqOgI9TBZD68IshQWnQetPFqO2CMxDezC9VJKNu6wh7uguJKE8O0v0r7DJPHtH2ALvIde0IKhaemLE3JEVLdntLRE4VAg_NVTStrAk1aWnmanVayLHymV0m2LBAMZRQCrEntpMHE4kVX2vGGixYbAuaREhOBiWzQQ="
-          },
-          {
-            "title": "alsecco.de",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF4WLpupQ7oRSQtjnsTv34OaB4D02i3lTTNKmhFeDvlmYXN-Cn3qajP6etaDNK6LUANRdaVO_SDT3_WxtF33QH_y1se4X0y1PDUhCe-WzIn3ttJygFR18c9_b3CKwYzNQSEjB_0p2-QEl-CSD1prK9yvWiVXk2PvfUDB9gAnhulf3lEwqIbNxTZeyW85QH6RNGc88anCVQflkoV"
-          }
-        ],
-        "error": null
-      },
-      "attribution": {
-        "domains": [
-          {
-            "host": "www.caparol.de",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGMgEVh-c1udr9IhFWmiSFsjvUxYrg8iD1PAJfDH6vvmxKNNECqOgI9TBZD68IshQWnQetPFqO2CMxDezC9VJKNu6wh7uguJKE8O0v0r7DJPHtH2ALvIde0IKhaemLE3JEVLdntLRE4VAg_NVTStrAk1aWnmanVayLHymV0m2LBAMZRQCrEntpMHE4kVX2vGGixYbAuaREhOBiWzQQ=",
-            "title": "caparol.de",
-            "class": "other"
-          },
-          {
-            "host": "www.caparol.de",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGeDDP57goxPFKREqpfpRtU23Q5f8H_PGW9SOKtbgqa4Pa7OVBDzXzM85eKjdZqi510KgqXkM2iIXkuRyltfO0jNxnj53_Nemns4dWGpjBAnd9I-GyBYOa5tiiERVC7ix3z5pyLoWoiGJbf73rOL5YBPk6KyMPr3ecWQ6YO5-JA53XgnaDgxwbkIL0nr_c5Y3d3GmOce053F2xK5_zJjqU7J6YQdXo3vH9tSYqmDXRMNmZU",
-            "title": "caparol.de",
-            "class": "other"
-          },
-          {
-            "host": "www.alsecco.de",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQES_PqcwrDGUiXiKla4CYHYsmx-JM8-1aYW8h5jggWZqzkLOwx660GSBBlipXoxowtKH5JX1M-nqGJUKLOOZEGv5V7op4bU82-w9oMtW4f-uzuUDR7MoY7BFZkudTQ3y0I0dkxksUf0869hU--LQbZ7htO3a0UGCSY9Q8LzaCuSWiOhpRBf",
-            "title": "alsecco.de",
-            "class": "other"
-          },
-          {
-            "host": "www.alsecco.de",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEwZsaSDU5wjdEifJ4JbutY3HSbC-W15foN3nuQ3yZYNgHYxJltHaJqqZqk_Zigc-Uztc_pjW1NPsP7qiPrQA7-wwhWHtHhIPM55nwU3176rzWpzdm1lwkK1LUsFJj7s1x0896xQyf-mQwS469D2dZnU5BH6waA43YuD4Qpphd_IL_B1700gWs=",
-            "title": "alsecco.de",
-            "class": "other"
-          },
-          {
-            "host": "www.alsecco.de",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF4WLpupQ7oRSQtjnsTv34OaB4D02i3lTTNKmhFeDvlmYXN-Cn3qajP6etaDNK6LUANRdaVO_SDT3_WxtF33QH_y1se4X0y1PDUhCe-WzIn3ttJygFR18c9_b3CKwYzNQSEjB_0p2-QEl-CSD1prK9yvWiVXk2PvfUDB9gAnhulf3lEwqIbNxTZeyW85QH6RNGc88anCVQflkoV",
-            "title": "alsecco.de",
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGgKYHN3KERWdwn6_xmKQM25qoFHwVmzdHaWYbXEjQFvIFIg_Y58Ucf9SAG6quAahJaf_qhX3bpSx2uShYh4d07BozBl_iryE2v7v9-F0JlE07xBtKoZ5DlaMDoe9MbwiJ_UfnhayS4cMCcRfI5LBUlRGpk6sfQnvPuIMVn-qL1Hait9DOrkQIi1uV6dxY_IzMoUVrSNqbS",
+            "title": "prof.lv",
             "class": "other"
           }
         ],
@@ -199,28 +94,36 @@
         "total_sources": 5
       },
       "category": "CORRECT",
-      "rationale": "The agent accurately explains that Alsecco typically uses system names rather than public alphanumeric SKUs, correctly identifying 'Alsifix PM-T' (ETA-11/0192) and 'Kombinationsteller VT 90' as the exact orderable designations. Furthermore, it accurately provides '153/VT90' as the precise catalog identifier used by DAW's sister brand Caparol for the combination disk required for WAP-zg mineral wool boards."
+      "rationale": "Google search confirms that 992092 is the exact manufacturer part number for Caparol Indeko-plus 12.5L white paint. Furthermore, EANs 4002381925169 and 4002382056442 are verified to correspond perfectly to the standard and CapaGreen versions of this product."
     },
     {
-      "query": "I need the specific Caparol product name and orderable part number for their clear exterior wood glaze that uses nanoscale titanium dioxide. We are procuring this to block UV light and prevent natural greying on exposed architectural timber without altering the wood color.",
+      "query": "What categories of products does daw.de offer? List the main product families with one example each.",
       "agent": {
-        "text": "The specific product you are looking for is **Caparol Capadur TwinProof**. \n\nCapadur TwinProof is a highly transparent exterior wood glaze that uses integrated nanoscale (micronized) titanium dioxide to act as a UV-blocking barrier. This nanotechnology prevents the natural greying of exposed architectural timber, retaining the original, bright wood color while also offering high moisture protection via a water-repellent \"hydropearl\" effect.\n\nYou can procure this product through standard B2B construction distributors using the following European Article Numbers (EANs) / orderable SKUs:\n\n*   **750 ml container:** EAN 4002381913937 (often cataloged by distributors as Artikelnummer 2723)\n*   **5 Liter container:** EAN 4002381807465\n\n*Procurement note: To completely avoid altering the wood color, Caparol recommends Capadur TwinProof primarily for light conifers (such as pine, spruce, and fir). For darker woods or oak, a small test application is advised, as dense application of nanoscale titanium dioxide can occasionally leave a slight whitish tint.*",
+        "text": "**daw.de** is the corporate site for DAW SE, a holding group for major European construction material brands like Caparol, Alpina, and DISBON. Because DAW operates through these sub-brands, there is no single \"DAW-branded\" catalog; instead, products are ordered via brand-specific SKUs/EANs. \n\nTheir main product categories include:\n\n1. **Professional Paints & Enamels**\n*Example*: Caparol Indeko-plus (Premium interior paint).\n*Orderable EAN*: 4002382056442 (12.5L tub, White).\n\n2. **Floor Coatings & Building Protection**\n*Example*: Disbon 400 BodenFinish (1K acrylic floor paint).\n*Orderable EAN*: 4002381759740 (12.5L tub, Pebble Grey).\n\n3. **DIY Consumer Retail Paints**\n*Example*: Alpinaweiß Das Original.\n*Orderable EAN*: 4001244796441 (1L, Matte White).\n\n4. **Facade & Thermal Insulation Systems**\n*Example*: Caparol Capatect System Natur+ (Hemp-based thermal insulation). \n*Note*: As these are customized multi-component architectural systems, I cannot provide a single retail SKU.\n\n5. **Curtain-Wall Facades**\n*Example*: LITHODECOR natural stone/glass facade panels. \n*Note*: These are highly bespoke project-based installations and do not use standard retail part numbers.",
         "sources": [
           {
-            "title": "caparol.de",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFtR8GdSDlTi9Mqsn9TrstZEXClWFyAvyw2aSV2zjYTfI7GLoLsBwLCC8G6hdjxnUN26PocaKWWj4j56k5D6lYta31rAVngKouGJl8os67TEpo3i9t4zZkJs1PtSnV2umQSTpdGivoY_yvBWBZMysra1LCSaL9nJ6dS9UMY5IacdH_S8ydsXA2AdqYLtTEdccRo1_vl4sUVhdSH4Kl1bj5CUhXS_1iDBeAnIvTa1xXl"
+            "title": "daw.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFs4xSPDj60npisAyxQONOnDwLBlpAolV_6l7V3ToqDXfDwgjQejXsXnFBPXZBhh7l_d9V_n5KkkCqrN5AcsU2SVRVli9NkyHxKn5hvcNDAHGDDYCmluA27SH0DbpL1ZeY_8d8V_MXUseM-WBc60ctx"
           },
           {
-            "title": "caparol.de",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0PY012g2WXdNO9DVZEvm7fzz8xXe27bPRX0cVfiNtVZrO2Un2hYQ8i0vO_9-n44yj_vrBlfPCf7y_QI6ClCBVVnpF42TAjeHQQ-hyqMrfYRnpq3QvST508TAf6ZBuHo1HHCt_nHuESltMougAw_h-pswrtzfxCrgn_Jv6j85KYHb-AkYwGWzhJKrnmU_KzEgLq_cFSCSdqSRa"
+            "title": "coatingsworld.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHeRl1WJdXrwChS8Fj_kc-a6liXuCRh7wqmTfK0QB5txNIXuoSAl3dnCe-eGoTOE-2j7gl4Q_ZJ0WDlw6-E_JcSxlknORZRlGBRWTve3Nnjm13SqaRCSKaY2wp3R-vk1alDjgPPjQtU_R7CuM7cxCFN0QIKC_LSbsHL79ZSftiOKkP7CvaVXrofjg=="
           },
           {
-            "title": "farbenhit.de",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG6rlYH7z8DPxt70n0C0yNayMRJ2ct2osef6EhfAyuHQr5plRmZqknWJ7gqEgzl0tlRYKQqWMWf6qSNwRs8ldLhbPYOo83qazEev1HguOzQPlh7AAJQ3tQXY12k4Fgl5KoWoq0T40AvuZmr0-rOqL3aoYRWkKB2pdK734OUpkQf4Q=="
+            "title": "wohntrends-shop.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE6mW1G5RMHfDDYSZAtNiAak819SOK0e9hNXfkVhJc3vo6bSGXrKiZtcFWzsYv149rINzberuNtkgj6alUKjvIwg76W-F3grYDOueVDTjSazJ0cGspKAtORPNxzIfNdC8slJnqf82ppcxq8SAndV1WNNtReANJgMQE6LoSt1cHr5G2ZUP8="
           },
           {
-            "title": "caparol.de",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF8g9YKlX24nmo2IXZiiGBhCo7V5rZMbxhv900cucIkmVLVOzYbX3E09OBEJLGYJBzBECZtzmkuMZGojGQPg4gNHdy4IgzM6PO8R2gcCw5W52263csmKeWUWLFjvbdaDDYnj41VUPCK1q4TXDry9nKzPe9PdBxKKuTkPwIZC8va8ePxDUXnNtegoa6zSpa_347ktAe3Z_B6yFjlVZmxP6GkwQwFCNmdNCkYeUM3VLA-Xp0-"
+            "title": "cms-gruppe.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELvcVJep31hgKx1K0mjVPeE-0LInpk_EKtrnbw62eZDdItK8mDL8w9aawSgtLmkJct7A9B9-HHNcbvZH7DN-nCef0ADtVl4GSTCIGbyf1nzHce4P1yo4dZNqVWDgoVW8_N7ii49NWl5XYk8w1N7o9E4-TMQ3_Pf7dC4IqzGIp4pOc3ZulzLDS6K30cHjmD7_2-skNgueY="
+          },
+          {
+            "title": "obi.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGkDyOEvTSu-UXwYpjiFYxe5foz7OBtHMbDTQE8kOR-RAAcJu3-CQ4SRuCOxHXFrhwjAibYl8sGZ0VY0ovQkz-TmvuvZ8J7-oS9aDF8qhAE-nSeWtnzZQnPTsMYdmGNveat70va_MdGjeOYx58Ff98G0x7ptpq8u1cCJEw8"
+          },
+          {
+            "title": "daw.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFMumHfrRy7l2TCuKAnOWsGuQ1TrQzBlvqEC5AqjiW9H9ksn2EGCNhnzAWZcDnjknCHP9ZY6Z7RW3y1xAAaCRhCHeNeUu9JtBWisWhEsqBUA_-OfkvxXz912kpMPoG7mtODhtijUmV3n7LwchMyHPuw_5a9yvzRjeISBF1eiPEJGg4kT_cmS7MtT9_2SfogmRs79w=="
           }
         ],
         "error": null
@@ -228,100 +131,112 @@
       "attribution": {
         "domains": [
           {
-            "host": "www.caparol.de",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF8g9YKlX24nmo2IXZiiGBhCo7V5rZMbxhv900cucIkmVLVOzYbX3E09OBEJLGYJBzBECZtzmkuMZGojGQPg4gNHdy4IgzM6PO8R2gcCw5W52263csmKeWUWLFjvbdaDDYnj41VUPCK1q4TXDry9nKzPe9PdBxKKuTkPwIZC8va8ePxDUXnNtegoa6zSpa_347ktAe3Z_B6yFjlVZmxP6GkwQwFCNmdNCkYeUM3VLA-Xp0-",
-            "title": "caparol.de",
+            "host": "www.coatingsworld.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHeRl1WJdXrwChS8Fj_kc-a6liXuCRh7wqmTfK0QB5txNIXuoSAl3dnCe-eGoTOE-2j7gl4Q_ZJ0WDlw6-E_JcSxlknORZRlGBRWTve3Nnjm13SqaRCSKaY2wp3R-vk1alDjgPPjQtU_R7CuM7cxCFN0QIKC_LSbsHL79ZSftiOKkP7CvaVXrofjg==",
+            "title": "coatingsworld.com",
             "class": "other"
           },
           {
-            "host": "www.caparol.de",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0PY012g2WXdNO9DVZEvm7fzz8xXe27bPRX0cVfiNtVZrO2Un2hYQ8i0vO_9-n44yj_vrBlfPCf7y_QI6ClCBVVnpF42TAjeHQQ-hyqMrfYRnpq3QvST508TAf6ZBuHo1HHCt_nHuESltMougAw_h-pswrtzfxCrgn_Jv6j85KYHb-AkYwGWzhJKrnmU_KzEgLq_cFSCSdqSRa",
-            "title": "caparol.de",
+            "host": "www.obi.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGkDyOEvTSu-UXwYpjiFYxe5foz7OBtHMbDTQE8kOR-RAAcJu3-CQ4SRuCOxHXFrhwjAibYl8sGZ0VY0ovQkz-TmvuvZ8J7-oS9aDF8qhAE-nSeWtnzZQnPTsMYdmGNveat70va_MdGjeOYx58Ff98G0x7ptpq8u1cCJEw8",
+            "title": "obi.de",
             "class": "other"
           },
           {
-            "host": "www.caparol.de",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFtR8GdSDlTi9Mqsn9TrstZEXClWFyAvyw2aSV2zjYTfI7GLoLsBwLCC8G6hdjxnUN26PocaKWWj4j56k5D6lYta31rAVngKouGJl8os67TEpo3i9t4zZkJs1PtSnV2umQSTpdGivoY_yvBWBZMysra1LCSaL9nJ6dS9UMY5IacdH_S8ydsXA2AdqYLtTEdccRo1_vl4sUVhdSH4Kl1bj5CUhXS_1iDBeAnIvTa1xXl",
-            "title": "caparol.de",
+            "host": "www.daw.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFs4xSPDj60npisAyxQONOnDwLBlpAolV_6l7V3ToqDXfDwgjQejXsXnFBPXZBhh7l_d9V_n5KkkCqrN5AcsU2SVRVli9NkyHxKn5hvcNDAHGDDYCmluA27SH0DbpL1ZeY_8d8V_MXUseM-WBc60ctx",
+            "title": "daw.de",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.daw.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFMumHfrRy7l2TCuKAnOWsGuQ1TrQzBlvqEC5AqjiW9H9ksn2EGCNhnzAWZcDnjknCHP9ZY6Z7RW3y1xAAaCRhCHeNeUu9JtBWisWhEsqBUA_-OfkvxXz912kpMPoG7mtODhtijUmV3n7LwchMyHPuw_5a9yvzRjeISBF1eiPEJGg4kT_cmS7MtT9_2SfogmRs79w==",
+            "title": "daw.de",
+            "class": "manufacturer"
+          },
+          {
+            "host": "wohntrends-shop.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE6mW1G5RMHfDDYSZAtNiAak819SOK0e9hNXfkVhJc3vo6bSGXrKiZtcFWzsYv149rINzberuNtkgj6alUKjvIwg76W-F3grYDOueVDTjSazJ0cGspKAtORPNxzIfNdC8slJnqf82ppcxq8SAndV1WNNtReANJgMQE6LoSt1cHr5G2ZUP8=",
+            "title": "wohntrends-shop.com",
+            "class": "other"
+          },
+          {
+            "host": "www.cms-gruppe.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELvcVJep31hgKx1K0mjVPeE-0LInpk_EKtrnbw62eZDdItK8mDL8w9aawSgtLmkJct7A9B9-HHNcbvZH7DN-nCef0ADtVl4GSTCIGbyf1nzHce4P1yo4dZNqVWDgoVW8_N7ii49NWl5XYk8w1N7o9E4-TMQ3_Pf7dC4IqzGIp4pOc3ZulzLDS6K30cHjmD7_2-skNgueY=",
+            "title": "cms-gruppe.de",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 2,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 4
+        },
+        "primary": "other",
+        "total_sources": 6
+      },
+      "category": "HALLUCINATION",
+      "rationale": "The agent provided valid EANs and product names for Caparol Indeko-plus, Disbon 400, and Alpinaweiß, as well as the real Capatect Natur+ insulation system. However, the inclusion of LITHODECOR curtain-wall facades is a hallucination for this manufacturer; search results confirm that the Lithodecor brand separated from DAW SE in 2021 and is now owned by the Steinmann Group."
+    },
+    {
+      "query": "What is the exact wet scrub resistance class and typical consumption rate in ml/m² for daw.de's Caparol Indeko-plus interior paint on a smooth surface?",
+      "agent": {
+        "text": "For DAW's Caparol Indeko-plus interior paint applied to a smooth surface, the exact technical specifications are:\n\n*   **Wet Scrub Resistance Class:** Class 1 (Nassabriebklasse 1). This is the highest class, making it highly scrub-resistant and suitable for heavy-duty cleaning.\n*   **Typical Consumption Rate:** Approximately 125 ml/m² per coat (125 ml/m² pro Arbeitsgang auf glattem Untergrund).\n\nBecause you are asking for technical parameters of a product family rather than a specific packaged item, there is no single orderable part number for this answer. Caparol Indeko-plus has multiple active SKUs that vary based on the desired container volume (e.g., 2.5L, 5L, 12.5L buckets) and whether the paint is factory-white or custom-tinted via the ColorExpress system.",
+        "sources": [
+          {
+            "title": "farbenschupp-shop.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFx9AWmfXO7G2B9bFu8FEx650WZHgsvqgpUfKrTlf_XPByRH-DX68mE1kh74LNaSkwKdBdqFfGkVo0xmnMTPWmxvRkWNMSFrRqbvHKPF2lWebyq016O7Xv9iJdIwjO1nm375QQZ_WsCvLgDZx7yiHOwoksosQ=="
+          },
+          {
+            "title": "vietschi-farben.net",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGactiRJyf4oBr--6m-g9i2uTqES0EePheYO7qaSlR58BM8ITUBRc_xLfvloye-vDbRxXPJwURBj6CJM9u9992WS8N1L7q_PXTWRi9twAK-SHykbgRpFTDEjALbqKW_p2jdkAy6P0PFTqSMu9EqViKMaxPbM6kwvcVzpW4pXy38h7BV6i0DPV137-BAWAjgrR_iVAXj6jy9hpLVl7mL1J_irSeCI9YK1mAgx9arX5JMnQ=="
+          },
+          {
+            "title": "heimwerker-guide.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGGotDZ6li5J6SLJGSuXx7WDohAtu2yAPNTiLUDTkcDcVpGKxLC23FFxYSV3p45EzMh_uCjyeqjPFjCiU0o2s0X7sKy1LDVr0zGI2DGL2WrekDkCJZWBk5rnRGzMi9-ZXkL3G0="
+          },
+          {
+            "title": "proma-farben.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHsPlSrGP6KppjxptfGNWXnahuTZRoiyfqyKjd-_5yHB_Lq5vsXLnw2FyEpTY319q8D7FP-p6RjUmhXo0z9wA9orvxIn3oHjE-a2euh1DAKptdv9CrLIEj22SdrHnACClkP0m5wgD4ZQojOilxBtxo6QZS3aUDLgYLbtcu-GQ4nhn_YtN9loV6SPVRRGmv_CG4ykJJdLMjDLOEKqpOHRn0E4g=="
+          },
+          {
+            "title": "farbenhit.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFc20S0OMZkMp7fs69r64XzvuBe1BfXZFfon70RZOy_e_d7_Qz93U01sR12yfGtdP4wO3waCG5eJlBxa620yGCncDNdShN8JMv3VCQPTBHbm1j2_cmf-XB2uOZGHL4qGE4cbTjCqGT948W2yWtNXa9vy9JG0aBKLjQPP17u_uwe2gXkalAAqh8EfgQZw9F3GIhMo8xeX2nAL92llpDof4ci0xX7Iw3OSIcvce-xir9aMU_kj4TaT_-npsSb-LnNu5m4hbbJBFaCcJsvizJK1HMZFCru5C-o6GFTZ6Ge0Ov-tA=="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "heimwerker-guide.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGGotDZ6li5J6SLJGSuXx7WDohAtu2yAPNTiLUDTkcDcVpGKxLC23FFxYSV3p45EzMh_uCjyeqjPFjCiU0o2s0X7sKy1LDVr0zGI2DGL2WrekDkCJZWBk5rnRGzMi9-ZXkL3G0=",
+            "title": "heimwerker-guide.de",
+            "class": "other"
+          },
+          {
+            "host": "www.farbenschupp-shop.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFx9AWmfXO7G2B9bFu8FEx650WZHgsvqgpUfKrTlf_XPByRH-DX68mE1kh74LNaSkwKdBdqFfGkVo0xmnMTPWmxvRkWNMSFrRqbvHKPF2lWebyq016O7Xv9iJdIwjO1nm375QQZ_WsCvLgDZx7yiHOwoksosQ==",
+            "title": "farbenschupp-shop.de",
             "class": "other"
           },
           {
             "host": "farbenhit.de",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG6rlYH7z8DPxt70n0C0yNayMRJ2ct2osef6EhfAyuHQr5plRmZqknWJ7gqEgzl0tlRYKQqWMWf6qSNwRs8ldLhbPYOo83qazEev1HguOzQPlh7AAJQ3tQXY12k4Fgl5KoWoq0T40AvuZmr0-rOqL3aoYRWkKB2pdK734OUpkQf4Q==",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFc20S0OMZkMp7fs69r64XzvuBe1BfXZFfon70RZOy_e_d7_Qz93U01sR12yfGtdP4wO3waCG5eJlBxa620yGCncDNdShN8JMv3VCQPTBHbm1j2_cmf-XB2uOZGHL4qGE4cbTjCqGT948W2yWtNXa9vy9JG0aBKLjQPP17u_uwe2gXkalAAqh8EfgQZw9F3GIhMo8xeX2nAL92llpDof4ci0xX7Iw3OSIcvce-xir9aMU_kj4TaT_-npsSb-LnNu5m4hbbJBFaCcJsvizJK1HMZFCru5C-o6GFTZ6Ge0Ov-tA==",
             "title": "farbenhit.de",
             "class": "other"
-          }
-        ],
-        "counts": {
-          "manufacturer": 0,
-          "distributor": 0,
-          "marketplace": 0,
-          "other": 4
-        },
-        "primary": "other",
-        "total_sources": 4
-      },
-      "category": "CORRECT",
-      "rationale": "The agent correctly identified Caparol Capadur TwinProof as the product using nanoscale titanium dioxide for UV protection. The provided EANs (4002381913937 for 750 ml and 4002381807465 for 5L) perfectly match distributor catalogs and manufacturer datasheets."
-    },
-    {
-      "query": "We are installing a Disbon WHG-AS New water protection system in an ATEX chemical facility and need the conductive intermediate coat. What is the exact product number for the 2-component epoxy layer that sits between the DisboXID 5011 WHG primer and the DisboXID 5033 WHG finish?",
-      "agent": {
-        "text": "The conductive intermediate coat required for the Disbon WHG-AS New water protection system is the **DisboPOX W 5022 WHG 2K-EP-Leitschicht**. \n\nFor procurement, the exact manufacturer article number for the standard 10 kg combi-packaging (pigmented black) is **305046** (EAN: **4002382072398**). \n\n**System Build-up Reminder for WHG-AS Neu:**\n1. **Primer:** DisboXID 5011 WHG\n2. **Grounding:** DisboADD 973 Copper Tape (must be placed before the conductive layer)\n3. **Conductive Intermediate Coat:** DisboPOX W 5022 WHG (Art.-Nr. 305046)\n4. **Finish:** DisboXID 5033 WHG, AS\n\nBe sure to order both components (A and B are typically included in the combi-packaging, but verify with your building materials distributor if buying bulk industrial containers).",
-        "sources": [
-          {
-            "title": "disbon.de",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG6VunLzB8BDiAljuttB-jhRZ_rGg9egfFHSG1PyOZ8Sulyg2-sqXcyY1Tz461P3uIl9dlu-Z8vC_M5FOXxStzOwiREHhD41t1cSVfPvRs0fwCBZs9tFVnVihJ69jkxtczQXu9yyd_xUW1DejbDUkZh96ExY2bBEx981Pbfy1RPZG9OPzqQei-5T5aYHYkOi0X5POJQCUC-KrRS3mZUttEMR5C-5QyQfnakiaDg"
           },
           {
-            "title": "disbon.de",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFMPxsTlkpRpDAM09Z-dyN5u_CuvirV0Pjs9Lky6ArpJAbwadP97aS-n3ap8u2qeriypFoeJidvmXfW7_c7OzDfFSoqKPslRqFlkrQDy8zMGJ07Ir7yR16jNcjAzZp2vaopyLNOoyJxwAnjJly6Z7GcLKaeNX1LWrAaEi2DnM0EtaZhitPly7us6Q=="
-          },
-          {
-            "title": "caparol.de",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPhoPSZP-rr71ntEodkROl2V6eKoVH_YuoGp0SnzojGJZQI704EtW6Wj_xOvVQSv0vVcozRWugjracNsL-ThGKYJiDX7lxb0kvjm_5mVBsnC5uc2wIl_MXtHUy1QQ0mXm7MDOdwoERqoaZe5d5WtrLf-xr_1CSkOC7uKcDe316RtVylqLQrW7RCrjCk348SX5ujPXQq7hAA82dWr2GFTidIdyAw5uv8VCTyo-Eb2CjlA1ZkagI-b6HM9o6KWBg0WqSrSsIvHD8fSkuFTKq5O242LBwfeX2AsH7zcmq3HpfLhc1ZDNbdYSC6NZ6Ixcc-8nJhtwh24WSwMPpnJzyDPfbeA=="
-          },
-          {
-            "title": "eurobau.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHkFFbh12jst5VcjPRDF4wIlP9dhpbB5d43ld4hJIbtVlOrEF1360Fdi2bniP6LIwFePWLZoRCjRhqMSt-RZykUAlX1g7n6tHnZ60FdBBPTfrtTQ1ekAPH-kUeYCqYvjDwJRqOyvnVs3gR6g3xYcERAgmQ="
-          },
-          {
-            "title": "industriedatenpool.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGS2bRAEKA3MPDh_zrfiHH0_ldtDx1d_uSqWinIfRRp5SosPpMGDc8e4k9iQ62qtMLo4uFima4ofepED4-DJI8CqgWtk0Moq9E2qBRwoeJY1yax5Si_-PWBP3ToRf0vrpMYnlbu9sDGG-Jcaeaaht1Y5uLxQKRDGN3P3l7gfgNlSFdITVi_EKhmRFAK"
-          }
-        ],
-        "error": null
-      },
-      "attribution": {
-        "domains": [
-          {
-            "host": "www.disbon.de",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFMPxsTlkpRpDAM09Z-dyN5u_CuvirV0Pjs9Lky6ArpJAbwadP97aS-n3ap8u2qeriypFoeJidvmXfW7_c7OzDfFSoqKPslRqFlkrQDy8zMGJ07Ir7yR16jNcjAzZp2vaopyLNOoyJxwAnjJly6Z7GcLKaeNX1LWrAaEi2DnM0EtaZhitPly7us6Q==",
-            "title": "disbon.de",
+            "host": "vietschi-farben.net",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGactiRJyf4oBr--6m-g9i2uTqES0EePheYO7qaSlR58BM8ITUBRc_xLfvloye-vDbRxXPJwURBj6CJM9u9992WS8N1L7q_PXTWRi9twAK-SHykbgRpFTDEjALbqKW_p2jdkAy6P0PFTqSMu9EqViKMaxPbM6kwvcVzpW4pXy38h7BV6i0DPV137-BAWAjgrR_iVAXj6jy9hpLVl7mL1J_irSeCI9YK1mAgx9arX5JMnQ==",
+            "title": "vietschi-farben.net",
             "class": "other"
           },
           {
-            "host": "www.disbon.de",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG6VunLzB8BDiAljuttB-jhRZ_rGg9egfFHSG1PyOZ8Sulyg2-sqXcyY1Tz461P3uIl9dlu-Z8vC_M5FOXxStzOwiREHhD41t1cSVfPvRs0fwCBZs9tFVnVihJ69jkxtczQXu9yyd_xUW1DejbDUkZh96ExY2bBEx981Pbfy1RPZG9OPzqQei-5T5aYHYkOi0X5POJQCUC-KrRS3mZUttEMR5C-5QyQfnakiaDg",
-            "title": "disbon.de",
-            "class": "other"
-          },
-          {
-            "host": "www.eurobau.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHkFFbh12jst5VcjPRDF4wIlP9dhpbB5d43ld4hJIbtVlOrEF1360Fdi2bniP6LIwFePWLZoRCjRhqMSt-RZykUAlX1g7n6tHnZ60FdBBPTfrtTQ1ekAPH-kUeYCqYvjDwJRqOyvnVs3gR6g3xYcERAgmQ=",
-            "title": "eurobau.com",
-            "class": "other"
-          },
-          {
-            "host": "api.industriedatenpool.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGS2bRAEKA3MPDh_zrfiHH0_ldtDx1d_uSqWinIfRRp5SosPpMGDc8e4k9iQ62qtMLo4uFima4ofepED4-DJI8CqgWtk0Moq9E2qBRwoeJY1yax5Si_-PWBP3ToRf0vrpMYnlbu9sDGG-Jcaeaaht1Y5uLxQKRDGN3P3l7gfgNlSFdITVi_EKhmRFAK",
-            "title": "industriedatenpool.com",
-            "class": "other"
-          },
-          {
-            "host": "www.caparol.de",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPhoPSZP-rr71ntEodkROl2V6eKoVH_YuoGp0SnzojGJZQI704EtW6Wj_xOvVQSv0vVcozRWugjracNsL-ThGKYJiDX7lxb0kvjm_5mVBsnC5uc2wIl_MXtHUy1QQ0mXm7MDOdwoERqoaZe5d5WtrLf-xr_1CSkOC7uKcDe316RtVylqLQrW7RCrjCk348SX5ujPXQq7hAA82dWr2GFTidIdyAw5uv8VCTyo-Eb2CjlA1ZkagI-b6HM9o6KWBg0WqSrSsIvHD8fSkuFTKq5O242LBwfeX2AsH7zcmq3HpfLhc1ZDNbdYSC6NZ6Ixcc-8nJhtwh24WSwMPpnJzyDPfbeA==",
-            "title": "caparol.de",
+            "host": "proma-farben.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHsPlSrGP6KppjxptfGNWXnahuTZRoiyfqyKjd-_5yHB_Lq5vsXLnw2FyEpTY319q8D7FP-p6RjUmhXo0z9wA9orvxIn3oHjE-a2euh1DAKptdv9CrLIEj22SdrHnACClkP0m5wgD4ZQojOilxBtxo6QZS3aUDLgYLbtcu-GQ4nhn_YtN9loV6SPVRRGmv_CG4ykJJdLMjDLOEKqpOHRn0E4g==",
+            "title": "proma-farben.de",
             "class": "other"
           }
         ],
@@ -335,19 +250,155 @@
         "total_sources": 5
       },
       "category": "CORRECT",
-      "rationale": "Manufacturer documentation from Disbon/Caparol confirms that DisboPOX W 5022 WHG is the required conductive intermediate coat for the WHG-AS New system. Multiple building material distributor catalogs verify that the 10 kg black combi-packaging corresponds exactly to article number 305046 and EAN 4002382072398."
+      "rationale": "A review of the manufacturer's official technical datasheet and distributor listings confirms that Caparol Indeko-plus has a Wet Scrub Resistance Class of 1 (Nassabriebklasse 1) and a typical consumption rate of approximately 125 ml/m² per coat on a smooth surface. The agent correctly provided this technical data and accurately noted that the paint is sold under various SKUs depending on bucket volume (e.g., 2.5L, 5L, 12.5L) and ColorExpress tinting."
+    },
+    {
+      "query": "Does daw.de sell standard gypsum drywall boards (Gipskartonplatten)? If yes, give me a part number; if no, say so plainly.",
+      "agent": {
+        "text": "DAW SE (daw.de) does **not** sell standard gypsum drywall boards (Gipskartonplatten). \n\nDAW (Deutsche Amphibolin-Werke) and its professional brands—such as Caparol, Alligator, and Alsecco—specialize primarily in building paints, coatings, plasters, and thermal insulation composite systems (WDVS). While they offer specialized acoustic carrier panels and EPS/mineral wool insulation boards as part of their proprietary system solutions, standard gypsum drywall is completely outside of their product catalog. \n\nSince they do not manufacture or distribute this material, there is no DAW part number or SKU available for standard drywall. To procure standard Gipskartonplatten, you will need to source them from dedicated dry-construction manufacturers like Knauf, Rigips (Saint-Gobain), or Siniat.",
+        "sources": [
+          {
+            "title": "irbnet.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEAzUsr4hiA9kQUbaBv9-dPJ7xmJAxG8H77Hm771piiuRtyt2YizVtuDwFxGDZAm_r69uXHC9DOde4fHx4QEBcd4a8aXbz71gcDB5ITWfj1hhfr6DNUuskFleLNYNkCepCs3Ux7WUecbX7e-Q=="
+          },
+          {
+            "title": "alligator.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHxjTFLg1c0NtlGJd-mYJoyLrx35XcwZogFXgoCtqt2r9BJOcb7HsdGU2Btd29_zd9HFru4u6OE1EPwPysRa4sUnaK8XPLU_KJ_xPUidrD48QqBLaasrTOSovHloG-wOuoHt0Fbm65okKtMiXZMNKhDYzKQvR1Yoe0WKVuaaNcqgdz--woeZLKU5HXh3rLzvkv1Dcftw001pzIUyrPNcWvXERDDdaS9HeV9cIsEWIrqqPpLrPkkRIS0wAS4mG_J-k1gvvR72pkhZmy8T8Gs26x009r6b6SxEu1J"
+          },
+          {
+            "title": "siniat.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFKnCJwQ0Vsp_XEqOlLZWc9W76AHW87u3pjYvYqVFtsRXaLosvo8XDvbLCb_Vs3wb1IOGgS3_DXfgb8gNnUFwEAJlMnxwbb-FLQ1gh_bk2BdVy4W98aIo0wkwhhCKU40sAqPb1fpZfwpUQIOsIXFTfL-wwU6T1V3GNPR7YchgVW4lgP"
+          },
+          {
+            "title": "hagebau.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG4vG-KwiYiptxqnTqYpeF4lUS3g1AIH5uPZeKliKAMLwCzrC2NetE4yO4u-S7n_SrCVhj6amg6sHtiLbeqGMAupbynHIzDuQRLlAiLToD6DFr3jC9_mfHNZ0MzvvWFjReZIcsBcIgHvKUD2hQ0MIUzmEduKF0="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "alligator.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHxjTFLg1c0NtlGJd-mYJoyLrx35XcwZogFXgoCtqt2r9BJOcb7HsdGU2Btd29_zd9HFru4u6OE1EPwPysRa4sUnaK8XPLU_KJ_xPUidrD48QqBLaasrTOSovHloG-wOuoHt0Fbm65okKtMiXZMNKhDYzKQvR1Yoe0WKVuaaNcqgdz--woeZLKU5HXh3rLzvkv1Dcftw001pzIUyrPNcWvXERDDdaS9HeV9cIsEWIrqqPpLrPkkRIS0wAS4mG_J-k1gvvR72pkhZmy8T8Gs26x009r6b6SxEu1J",
+            "title": "alligator.de",
+            "class": "other"
+          },
+          {
+            "host": "www.siniat.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFKnCJwQ0Vsp_XEqOlLZWc9W76AHW87u3pjYvYqVFtsRXaLosvo8XDvbLCb_Vs3wb1IOGgS3_DXfgb8gNnUFwEAJlMnxwbb-FLQ1gh_bk2BdVy4W98aIo0wkwhhCKU40sAqPb1fpZfwpUQIOsIXFTfL-wwU6T1V3GNPR7YchgVW4lgP",
+            "title": "siniat.de",
+            "class": "other"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEAzUsr4hiA9kQUbaBv9-dPJ7xmJAxG8H77Hm771piiuRtyt2YizVtuDwFxGDZAm_r69uXHC9DOde4fHx4QEBcd4a8aXbz71gcDB5ITWfj1hhfr6DNUuskFleLNYNkCepCs3Ux7WUecbX7e-Q==",
+            "title": "irbnet.de",
+            "class": "other"
+          },
+          {
+            "host": "www.hagebau.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG4vG-KwiYiptxqnTqYpeF4lUS3g1AIH5uPZeKliKAMLwCzrC2NetE4yO4u-S7n_SrCVhj6amg6sHtiLbeqGMAupbynHIzDuQRLlAiLToD6DFr3jC9_mfHNZ0MzvvWFjReZIcsBcIgHvKUD2hQ0MIUzmEduKF0=",
+            "title": "hagebau.de",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 4
+        },
+        "primary": "other",
+        "total_sources": 4
+      },
+      "category": "CORRECT",
+      "rationale": "DAW SE and its brands (like Caparol) specialize in paints, coatings, and thermal insulation systems, not standard dry-construction materials. The agent correctly verified that standard gypsum drywall (Gipskartonplatten) is outside of their catalog and accurately provided a clear 'no' without inventing a fabricated SKU."
+    },
+    {
+      "query": "I'm comparing daw.de's Caparol Indeko-plus interior paint vs. Brillux Superlux ELF 3000. What are the key differentiators and which one is recommended for a high-traffic commercial office space?",
+      "agent": {
+        "text": "When comparing **Caparol Indeko-plus** and **Brillux Superlux ELF 3000**, the key differentiators are durability and application focus:\n\n*   **Durability (Scrub Resistance):** Caparol Indeko-plus features Class 1 Wet Scrub Resistance, making it highly durable and heavily washable. Brillux Superlux ELF 3000 is rated at Class 2.\n*   **Application Focus:** Superlux ELF 3000 is formulated with a long \"open time\". This makes it strictly optimized for large, continuous surfaces with critical grazing light (*Streiflicht*) to prevent visible roller marks. \n*   **Opacity:** Both deliver excellent Class 1 covering power and yield approximately 7–8 m²/l. Both are also emission-minimized and solvent-free (E.L.F.).\n\n**Recommendation:**\nFor a **high-traffic commercial office space**, **Caparol Indeko-plus** is the clear recommendation. Its Class 1 wet scrub rating provides the maximum surface durability and cleanability required for busy corridors and offices prone to scuffs. Brillux Superlux is better suited for executive boardrooms or large open ceilings where critical lighting conditions are the primary challenge.\n\n*(Note: Manufacturer part numbers depend dynamically on the color-mixing base and container size. For standard commercial volume, simply specify \"Standard White, 12.5 L\" for either product.)*",
+        "sources": [
+          {
+            "title": "farbenhit.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEM73r6w8VSNBPY60Qx3yb1oopll9xQl3IDMgraTjGLLjvGD0niZ2FO-qeTXXSLyt4YbKtaXwpkqIPJ2ibUTNt5IG8cwVXiW-a4TnwBbc-H6SfITu0jwC9lZLyss2cftuSnepoH9H5akCaoR2DcZeMZd84OAs8oQlz4DwyyMr_0S30m4mKyu7aghXrInNgtY9F_F4PAonsx2Kym7DriDrQndXQNipZ6bvBnXJS7_5gWKnpHIggXmyeWLjVntjJ2qKxTxQ=="
+          },
+          {
+            "title": "farbenschroeder.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGCkHxECVPUUTPKthc2Jz3nYbNvgAEAKdnxlB3id_VwZhvqMaM645vCKmE_tl_pim8c3wVaiUtWKVQsOltUlAXpTRPDgntDBEyv4KP_12lFaDoye014iEShwg-ZiCbdWnX_NyMF5mvCt0H0i46E9EtHdA=="
+          },
+          {
+            "title": "farben-willenborg.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFxde7F8m3IpVR3KHdsvh8h1Q6B8wRgC1HsnGJaksW0GIYfggv4JUtGdur60qEHT7AURUUPd2hGK4gl8pGHohevCN_N7X9LIfJZUbBYx7dSeTdXNE0lWaIsCZfFLQPxSOsnZwFv2qGA72ZDeIGYhJusFqsjQkYDi1M31DD2c3oCsuMAWA=="
+          },
+          {
+            "title": "xn--farbenknig-kcb.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHBYTACdBMZSrPejXpWCvTs0NoibjAmSriQIfoNlOAA0Vy6_x7W8xvGO7Si3IyltHIJxsmFoZt0s6QUvBIlKPD63tLoM2cR2WCQC5VO7N6FVfWGTKaOUWo4EztWyeyzXwIvAF-X-pXn2UWfgjzQCcBCYmDdA9xZPixPFRj8maHgIa4="
+          },
+          {
+            "title": "farbenguru24.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGla1mV8B-WnCzcPeIF93bRImXlJE341rLB0ox0pqnsemGNs22LSc8NKI-Sp7oy3CzgIr44T2hC9PsNp0hFhzlZBDGjtSdteFMzBYUKTL528X54ytnd5s6KorUxyDPXWIxs10vPdTECtSXyA2A7Rq9IgkO2ot7ZhJvlNiO14zbYrgz2Uw=="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "farbenguru24.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGla1mV8B-WnCzcPeIF93bRImXlJE341rLB0ox0pqnsemGNs22LSc8NKI-Sp7oy3CzgIr44T2hC9PsNp0hFhzlZBDGjtSdteFMzBYUKTL528X54ytnd5s6KorUxyDPXWIxs10vPdTECtSXyA2A7Rq9IgkO2ot7ZhJvlNiO14zbYrgz2Uw==",
+            "title": "farbenguru24.de",
+            "class": "other"
+          },
+          {
+            "host": "farben-willenborg.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFxde7F8m3IpVR3KHdsvh8h1Q6B8wRgC1HsnGJaksW0GIYfggv4JUtGdur60qEHT7AURUUPd2hGK4gl8pGHohevCN_N7X9LIfJZUbBYx7dSeTdXNE0lWaIsCZfFLQPxSOsnZwFv2qGA72ZDeIGYhJusFqsjQkYDi1M31DD2c3oCsuMAWA==",
+            "title": "farben-willenborg.de",
+            "class": "other"
+          },
+          {
+            "host": "farbenhit.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEM73r6w8VSNBPY60Qx3yb1oopll9xQl3IDMgraTjGLLjvGD0niZ2FO-qeTXXSLyt4YbKtaXwpkqIPJ2ibUTNt5IG8cwVXiW-a4TnwBbc-H6SfITu0jwC9lZLyss2cftuSnepoH9H5akCaoR2DcZeMZd84OAs8oQlz4DwyyMr_0S30m4mKyu7aghXrInNgtY9F_F4PAonsx2Kym7DriDrQndXQNipZ6bvBnXJS7_5gWKnpHIggXmyeWLjVntjJ2qKxTxQ==",
+            "title": "farbenhit.de",
+            "class": "other"
+          },
+          {
+            "host": "www.xn--farbenknig-kcb.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHBYTACdBMZSrPejXpWCvTs0NoibjAmSriQIfoNlOAA0Vy6_x7W8xvGO7Si3IyltHIJxsmFoZt0s6QUvBIlKPD63tLoM2cR2WCQC5VO7N6FVfWGTKaOUWo4EztWyeyzXwIvAF-X-pXn2UWfgjzQCcBCYmDdA9xZPixPFRj8maHgIa4=",
+            "title": "xn--farbenknig-kcb.de",
+            "class": "other"
+          },
+          {
+            "host": "www.farbenschroeder.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGCkHxECVPUUTPKthc2Jz3nYbNvgAEAKdnxlB3id_VwZhvqMaM645vCKmE_tl_pim8c3wVaiUtWKVQsOltUlAXpTRPDgntDBEyv4KP_12lFaDoye014iEShwg-ZiCbdWnX_NyMF5mvCt0H0i46E9EtHdA==",
+            "title": "farbenschroeder.de",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 5
+        },
+        "primary": "other",
+        "total_sources": 5
+      },
+      "category": "CORRECT",
+      "rationale": "Google Search confirms the technical specifications provided: Caparol Indeko-plus features Wet Scrub Resistance Class 1, while Brillux Superlux ELF 3000 is Class 2. Both achieve Class 1 Opacity, yield ~7-8 m²/l, and are solvent-free/emission-minimized (E.L.F.). The agent's note about Brillux Superlux being optimized for grazing light (Streiflicht) and long open time is also completely accurate."
     }
   ],
   "log": [
     "[  0.0s] Stage 0: validated daw.de (brand=daw)",
     "[  0.0s] Stage 1: generating queries (grounded against daw.de)",
-    "[ 40.5s]   Generated 5 queries",
-    "[ 40.5s] Stage 2: running 5 grounded queries against Gemini Pro",
-    "[ 72.7s] Stage 3: source attribution complete",
-    "[ 72.7s] Stage 4: categorizing answers",
-    "[136.2s] Stage 5: visibility=100 (5/5), source_authority=0 (0/5 manufacturer-sourced) in 136.2s"
+    "[ 50.4s]   Generated 5 queries",
+    "[ 50.4s] Stage 2: running 5 grounded queries against Gemini Pro",
+    "[ 87.1s] Stage 3: source attribution complete",
+    "[ 87.1s] Stage 4: categorizing answers",
+    "[127.4s] Stage 5: visibility=80 (4/5), source_authority=0 (0/4 manufacturer-sourced) in 127.4s"
   ],
-  "elapsed_seconds": 136.2,
+  "elapsed_seconds": 127.4,
   "slug": "daw",
   "display_name": "DAW"
 }

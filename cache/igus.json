@@ -2,54 +2,39 @@
   "input": "https://igus.de",
   "host": "igus.de",
   "brand": "igus",
-  "visibility_score": 100,
-  "source_authority_score": 20,
+  "visibility_score": 80,
+  "source_authority_score": 50,
   "total_queries": 5,
-  "correct_queries": 5,
-  "manufacturer_correct": 1,
+  "correct_queries": 4,
+  "manufacturer_correct": 2,
   "breakdown": {
-    "CORRECT": 5,
+    "CORRECT": 4,
     "HALLUCINATION": 0,
+    "OUT_OF_CATALOG_HALLUCINATION": 0,
     "REFUSED": 0,
-    "WRONG_SPEC": 0,
+    "WRONG_SPEC": 1,
     "ERROR": 0
   },
   "source_breakdown": {
-    "manufacturer": 1,
-    "distributor": 3,
+    "manufacturer": 3,
+    "distributor": 1,
     "marketplace": 0,
     "other": 1,
     "none": 0
   },
   "rows": [
     {
-      "query": "We need to procure standard iglidur G sleeve bearings with a 6mm inner diameter, 8mm outer diameter, and 6mm length. What is the exact igus part number we should use on the PO to avoid receiving the wrong size?",
+      "query": "I need a flanged plain bearing made of iglidur G material with a 10mm inner diameter, 12mm outer diameter, and 12mm length from igus.de. Give me the part number.",
       "agent": {
-        "text": "The exact igus part number you should use on your purchase order is **GSM-0608-06**. \n\nHere is the breakdown of the manufacturer's standard catalog nomenclature to confirm it matches your specifications exactly:\n* **G** = Material: iglidur\u00ae G\n* **S** = Shape: Straight sleeve bearing (cylindrical)\n* **M** = Metric dimensions\n* **06** = 6 mm inner diameter (d1)\n* **08** = 8 mm outer diameter (d2)\n* **06** = 6 mm length (b1)\n\n*Note:* If your assembly actually requires a bearing with a flange (a lip on one end to handle axial loads), the part number changes slightly to **GFM-0608-06** (where the \"F\" stands for Flange). Otherwise, use **GSM-0608-06** for a standard straight sleeve.",
+        "text": "The part number you need from igus.de is **GFM-1012-12**. \n\nHere is the breakdown of the part number:\n*   **G:** iglidur® G material \n*   **F:** Flanged plain bearing (Flanschlager)\n*   **M:** Metric dimensions\n*   **10:** 10mm inner diameter (d1)\n*   **12:** 12mm outer diameter (d2)\n*   **12:** 12mm length (b1)",
         "sources": [
           {
-            "title": "tme.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEGvGMmHOSdofkJc6yE6fExIR2ECIslvdeaSKkAYsCK-ogiJUWHEWzSniwiiYxh-fYUFOLM7lNA5vYJElAuHL64LC46aPdOD7ukR5ARfc2r9VJJkLwTsgVtxWrKBUdQlOfva8jlKiqXA_tc9sNBc_56McIB5jyv7EK3eMiSfhtZ"
+            "title": "rsdelivers.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQExrf3IoBH-zp7VCAi4VJvGmIIgWVGG1jtweNCCJyWxjaeyX9RW0lSnKSYhgrrVhma6XMqHV_gjXkOqTHGQ1h9A6XhLJExh2xC7hSpi-Pjg67By61LNvZUgDdWTOIreaRngP2y2P3dql24AtQnQndYDoamR7yD5E970vTlOZvVLD4fVJY86ir66kpT7n_b5MdaJjZOQOITV47VeJxCrJMe8sThuNnR46Ms="
           },
           {
-            "title": "igus.eu",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHwMsaFUDCUEUDL1xCFgbiObTACihWl93qWR8jtbn3DUu79YWJ0gBKB-v_G22SFRrPE9Z13c5jy2ZOkrEi9O_sn-qmgu-mynatuiUpKDaovXvN83uJJqS0A_Z9H2qXhvgKzFxwYEEWPXOTuXOMkcXOI5JGqh7VoxHaOsQD38vMyU3Npf26U"
-          },
-          {
-            "title": "igus.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG8dkyV90eupdcJinb6MpzFwzbW3xg8h5vssuekqoxQgfuGy93HF-YJ0uf4gaH_vp0OriHJi5iUruVW_MOiG15JFzOId00jtDgtEeSr3rWEkqN16kawV9qqExgaemiTkBsagroJRvoXgiFrGPuoK0ETfvHAlSQ_Lf1lNbheNmt7VaoJqBYD"
-          },
-          {
-            "title": "misumi-ec.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHLqN9Zujg4-b9IVmnTYYiwkussldi69JRKBzz-FGV6PC36f2xS__MT9NQ_EWhZGZmPDihYiISW9qVdVJ9fQxiVC76bzQqKGaVj8NL48c2s2U-fs57dmFKT4ehrRpmphY4TbAB7_GOVLw-gn87Gx4KfiCdYhyPsUl9m3omXgcspkJ-LeQ=="
-          },
-          {
-            "title": "rapidonline.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHaJAqDibkNMh8BrTTBRFeLL7pKAfIVWRKrKJPecTulwAwgCf6x4guhURdBtHqV7lq5e3u5xfP1hRMrrH_WS7p_x0tdtvU43chAglU7G38RG25q3wsipFXvO_ekUaPtXAFq9Kvjfkx_Cn-0unbA67mwlY9Jm1tC1r4mv_RtRqdvid1EVUpRKyhiDLKRatGmVq_7uUbcXKdNigpiIgZWsAM4_SBVC3kP"
-          },
-          {
-            "title": "tme.eu",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFqY7WPvujaLq3xC3G6AAF1wBZWXccLBKfys_bNIyaDVMBMFeA14D0ugVur58_i3gc1chdduMY0GSqbuGcwLZyGHXeESWh0VIPKSlDGtEZ9GnniMyvPIRRpxdCKZc4Z77qH6xAvYYTHScpSA1gGzEpsWNWQadcWr_s="
+            "title": "abf.store",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFKN5IhQIpWQNc3ML7OLhGONbMSCxtG7nOwKFYQsG-LUJUkiu7G-m23ny751xTPCqqBv7Lj7BY9fj01Mn9LpJ6zwtkMpOy0Ym8ayMt7LkmeZzl9xN9EbV0SavMexuu8MBUA0y2uIOs75CIQQ3uj8eUqBQJL9eUbMyrGZ48="
           }
         ],
         "error": null
@@ -57,339 +42,163 @@
       "attribution": {
         "domains": [
           {
-            "host": "www.tme.eu",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFqY7WPvujaLq3xC3G6AAF1wBZWXccLBKfys_bNIyaDVMBMFeA14D0ugVur58_i3gc1chdduMY0GSqbuGcwLZyGHXeESWh0VIPKSlDGtEZ9GnniMyvPIRRpxdCKZc4Z77qH6xAvYYTHScpSA1gGzEpsWNWQadcWr_s=",
-            "title": "tme.eu",
+            "host": "sa.rsdelivers.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQExrf3IoBH-zp7VCAi4VJvGmIIgWVGG1jtweNCCJyWxjaeyX9RW0lSnKSYhgrrVhma6XMqHV_gjXkOqTHGQ1h9A6XhLJExh2xC7hSpi-Pjg67By61LNvZUgDdWTOIreaRngP2y2P3dql24AtQnQndYDoamR7yD5E970vTlOZvVLD4fVJY86ir66kpT7n_b5MdaJjZOQOITV47VeJxCrJMe8sThuNnR46Ms=",
+            "title": "rsdelivers.com",
             "class": "distributor"
           },
           {
+            "host": "www.abf.store",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFKN5IhQIpWQNc3ML7OLhGONbMSCxtG7nOwKFYQsG-LUJUkiu7G-m23ny751xTPCqqBv7Lj7BY9fj01Mn9LpJ6zwtkMpOy0Ym8ayMt7LkmeZzl9xN9EbV0SavMexuu8MBUA0y2uIOs75CIQQ3uj8eUqBQJL9eUbMyrGZ48=",
+            "title": "abf.store",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 1,
+          "marketplace": 0,
+          "other": 1
+        },
+        "primary": "distributor",
+        "total_sources": 2
+      },
+      "category": "CORRECT",
+      "rationale": "Google Search confirms via authoritative distributors like RS Components and Misumi that the Igus part number GFM-1012-12 corresponds exactly to a flanged plain bearing made of Iglidur G with a 10mm inner diameter, 12mm outer diameter, and 12mm length."
+    },
+    {
+      "query": "What categories of products does igus.de offer? List the main product families with one example each.",
+      "agent": {
+        "text": "igus specializes in \"Motion Plastics,\" offering components designed for continuous movement without the need for external lubrication. The main product families available on igus.de include:\n\n1. **Energy Chains (e-chain®)**: Polymer cable and hose carrier systems designed to guide and protect moving cables in machinery.\n*Example SKU:* `E4.32.10.150.0` (E4.32 series standard snap-open cable chain).\n\n2. **Flexible Cables (chainflex®)**: Control, motor, data, and servo cables engineered specifically to withstand millions of bending cycles inside moving energy chains.\n*Example SKU:* `CF5.05.18` (chainflex® CF5 PVC unscreened 18-core control cable).\n\n3. **Polymer Bearings (iglidur®)**: Self-lubricating, maintenance-free plain, flanged, and sleeve bearings. \n*Example SKU:* `ASM-0103-02` (iglidur® A200 FDA-compliant sleeve bearing).\n\n4. **Linear Technology (drylin®)**: Linear guides, slide tables, and actuators that run completely dry on polymer sliding elements rather than recirculating ball bearings.\n*Example SKU:* `WS-10-40` (drylin® W hard-anodized aluminum round single rail).\n\nAdditionally, igus offers related product lines like **igubal®** (spherical/rod end bearings) and **Low-Cost Automation** (robotics, multi-axis gantries, and gearboxes).",
+        "sources": [
+          {
+            "title": "misumi-ec.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFAQoB1fCTLNbzh5JaDucTmYnudR8Xo5Yd7a3Adhjrm9loTeHqJywebQpwHk_2TUWmtkKSkTerNEFn58fjezj3uF5n1g8sM0dHlkKiMKQjA55QKD7XjQsHORKKcdCP_ng2juH-bZQ=="
+          },
+          {
+            "title": "igus.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHAbIZW9tlEJ8Ly5h_DW9bzyP6Dwp7HUvha61XK1kc_lXFBSt_s8XQbXBTMwIuVlimYjwmxRmfi4TmfnS4kBNS-42xQwZqNOq-xp9qGNCbp3p3rs_lbSbU="
+          },
+          {
+            "title": "tme.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELTPB0DPAE2QzbDTIKJIu2wRa5XAFTSXl552JQzIxsTkzwkei1hhMkTnVl5A5N_gbLX0V2zGoXwLOUE0wMvKENM-uIQ7488YN7N2DB1dZAwNKChHkrUSjsA6Lu7YbxqZbrRFQzb5DUQlhrsHK0h0m8JOW-zqoij4ifek-S4Yilwgo="
+          },
+          {
+            "title": "rs-online.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWk2kzsWjx4E2vLmVDDJIIeNhlVcz6bZuteFApoKNPTPyO7SKaMNi44h3HNjKg3UXrRy3fsoTtid3VnWDzGydu4TiVRCGZ-2b79j6KJjIQoiKO3gTt-g0_I2Bt3OMEGfcVlsML-6P8pCG5URsLK7mFSg=="
+          },
+          {
+            "title": "igus.eu",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFlL3Bn-wkfEpMktZCpd8vopX2D_Yn4X54zQPTyVBwRwj4VAFAHJZM47vTzouLaEK4jXMwnkQUMafgnzuJQZfleAsPV8wfEUIeOVIi7ldH4yiYdLn7jRIiWju4is6CAqke8dkBwZbGBjD7nTr7EgHDR5hCWhj2TxvkusQBC-pZnte2HO8Veitl6pw=="
+          },
+          {
+            "title": "igus.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHkWIh1T9F612dYBCc_RCFS9Wnb-c3cPamwcB-FcVGZoB1Jr1Vq9Y0Lqcy9UuaiVVQGL3tk1OumDBBnCAwECWIr7cVLmhmV8BuG92B6P_sy5Wjyhlc8KQmUztbMlGp3KpRATkAy_XYgGjdFuNiXd0KxoFZRdo4E-VpkE6Kl2_xzco7vvrPVSG0="
+          },
+          {
+            "title": "igus.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFIliIgHPWbL9FDt5DgFOpQ2_0TbAmV_NEvXPPY2pW45P-MEGKqpAQuTqmaw6IarhkiXyPYDyqM-4zBaZ8FjSS4mMWa8fzqIgsN-bNCWSbIlr8PLExM4cGYZaKB"
+          },
+          {
+            "title": "igus.ca",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGXZs8L0_OjB7kcDG1hjfd5h9wThdUidwCgwuxfiwdQAI3c7fM5u3xxUl5phYyfiElngr4sy93yRS6450KbXLuuwixzTjVAvG14qlRJGvOj71tn5RBEI0RKDFPporBSLe3ZjpWy1flyP_r4f-Cq9wrj"
+          },
+          {
+            "title": "igus.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHxpVAmNQ5yj98mYgOpNh_jevOU5BJ06zlbItY-agp78MqQblrhyjyoGnV77AiSd4Uom6JsJr8kIS_CtBYkfXD3NnRPOKtSJadeXHx0ISdAAOjfK2Aw4SaCkYwr-8V_DU0_gghO"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.igus.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHAbIZW9tlEJ8Ly5h_DW9bzyP6Dwp7HUvha61XK1kc_lXFBSt_s8XQbXBTMwIuVlimYjwmxRmfi4TmfnS4kBNS-42xQwZqNOq-xp9qGNCbp3p3rs_lbSbU=",
+            "title": "igus.com",
+            "class": "manufacturer"
+          },
+          {
             "host": "www.tme.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEGvGMmHOSdofkJc6yE6fExIR2ECIslvdeaSKkAYsCK-ogiJUWHEWzSniwiiYxh-fYUFOLM7lNA5vYJElAuHL64LC46aPdOD7ukR5ARfc2r9VJJkLwTsgVtxWrKBUdQlOfva8jlKiqXA_tc9sNBc_56McIB5jyv7EK3eMiSfhtZ",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELTPB0DPAE2QzbDTIKJIu2wRa5XAFTSXl552JQzIxsTkzwkei1hhMkTnVl5A5N_gbLX0V2zGoXwLOUE0wMvKENM-uIQ7488YN7N2DB1dZAwNKChHkrUSjsA6Lu7YbxqZbrRFQzb5DUQlhrsHK0h0m8JOW-zqoij4ifek-S4Yilwgo=",
             "title": "tme.com",
             "class": "distributor"
           },
           {
-            "host": "www.rapidonline.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHaJAqDibkNMh8BrTTBRFeLL7pKAfIVWRKrKJPecTulwAwgCf6x4guhURdBtHqV7lq5e3u5xfP1hRMrrH_WS7p_x0tdtvU43chAglU7G38RG25q3wsipFXvO_ekUaPtXAFq9Kvjfkx_Cn-0unbA67mwlY9Jm1tC1r4mv_RtRqdvid1EVUpRKyhiDLKRatGmVq_7uUbcXKdNigpiIgZWsAM4_SBVC3kP",
-            "title": "rapidonline.com",
-            "class": "other"
-          },
-          {
             "host": "us.misumi-ec.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHLqN9Zujg4-b9IVmnTYYiwkussldi69JRKBzz-FGV6PC36f2xS__MT9NQ_EWhZGZmPDihYiISW9qVdVJ9fQxiVC76bzQqKGaVj8NL48c2s2U-fs57dmFKT4ehrRpmphY4TbAB7_GOVLw-gn87Gx4KfiCdYhyPsUl9m3omXgcspkJ-LeQ==",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFAQoB1fCTLNbzh5JaDucTmYnudR8Xo5Yd7a3Adhjrm9loTeHqJywebQpwHk_2TUWmtkKSkTerNEFn58fjezj3uF5n1g8sM0dHlkKiMKQjA55QKD7XjQsHORKKcdCP_ng2juH-bZQ==",
             "title": "misumi-ec.com",
             "class": "distributor"
           },
           {
+            "host": "www.igus.ca",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGXZs8L0_OjB7kcDG1hjfd5h9wThdUidwCgwuxfiwdQAI3c7fM5u3xxUl5phYyfiElngr4sy93yRS6450KbXLuuwixzTjVAvG14qlRJGvOj71tn5RBEI0RKDFPporBSLe3ZjpWy1flyP_r4f-Cq9wrj",
+            "title": "igus.ca",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.igus.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFIliIgHPWbL9FDt5DgFOpQ2_0TbAmV_NEvXPPY2pW45P-MEGKqpAQuTqmaw6IarhkiXyPYDyqM-4zBaZ8FjSS4mMWa8fzqIgsN-bNCWSbIlr8PLExM4cGYZaKB",
+            "title": "igus.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.igus.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHxpVAmNQ5yj98mYgOpNh_jevOU5BJ06zlbItY-agp78MqQblrhyjyoGnV77AiSd4Uom6JsJr8kIS_CtBYkfXD3NnRPOKtSJadeXHx0ISdAAOjfK2Aw4SaCkYwr-8V_DU0_gghO",
+            "title": "igus.com",
+            "class": "manufacturer"
+          },
+          {
             "host": "www.igus.eu",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHwMsaFUDCUEUDL1xCFgbiObTACihWl93qWR8jtbn3DUu79YWJ0gBKB-v_G22SFRrPE9Z13c5jy2ZOkrEi9O_sn-qmgu-mynatuiUpKDaovXvN83uJJqS0A_Z9H2qXhvgKzFxwYEEWPXOTuXOMkcXOI5JGqh7VoxHaOsQD38vMyU3Npf26U",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFlL3Bn-wkfEpMktZCpd8vopX2D_Yn4X54zQPTyVBwRwj4VAFAHJZM47vTzouLaEK4jXMwnkQUMafgnzuJQZfleAsPV8wfEUIeOVIi7ldH4yiYdLn7jRIiWju4is6CAqke8dkBwZbGBjD7nTr7EgHDR5hCWhj2TxvkusQBC-pZnte2HO8Veitl6pw==",
             "title": "igus.eu",
             "class": "manufacturer"
           },
           {
             "host": "www.igus.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG8dkyV90eupdcJinb6MpzFwzbW3xg8h5vssuekqoxQgfuGy93HF-YJ0uf4gaH_vp0OriHJi5iUruVW_MOiG15JFzOId00jtDgtEeSr3rWEkqN16kawV9qqExgaemiTkBsagroJRvoXgiFrGPuoK0ETfvHAlSQ_Lf1lNbheNmt7VaoJqBYD",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHkWIh1T9F612dYBCc_RCFS9Wnb-c3cPamwcB-FcVGZoB1Jr1Vq9Y0Lqcy9UuaiVVQGL3tk1OumDBBnCAwECWIr7cVLmhmV8BuG92B6P_sy5Wjyhlc8KQmUztbMlGp3KpRATkAy_XYgGjdFuNiXd0KxoFZRdo4E-VpkE6Kl2_xzco7vvrPVSG0=",
             "title": "igus.com",
             "class": "manufacturer"
+          },
+          {
+            "host": "twen.rs-online.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWk2kzsWjx4E2vLmVDDJIIeNhlVcz6bZuteFApoKNPTPyO7SKaMNi44h3HNjKg3UXrRy3fsoTtid3VnWDzGydu4TiVRCGZ-2b79j6KJjIQoiKO3gTt-g0_I2Bt3OMEGfcVlsML-6P8pCG5URsLK7mFSg==",
+            "title": "rs-online.com",
+            "class": "distributor"
           }
         ],
         "counts": {
-          "manufacturer": 2,
+          "manufacturer": 6,
           "distributor": 3,
           "marketplace": 0,
-          "other": 1
-        },
-        "primary": "distributor",
-        "total_sources": 6
-      },
-      "category": "CORRECT",
-      "rationale": "Google Search confirms across multiple authoritative distributors like MISUMI, RS Components, and TME that GSM-0608-06 is a valid, orderable igus part number for an iglidur G straight sleeve bearing with a 6mm inner diameter, 8mm outer diameter, and 6mm length."
-    },
-    {
-      "query": "Our maintenance team needs a replacement section for an E2 series energy chain with a 30mm inner width and a 38mm bending radius. What is the complete top-level igus part number we need to order so the production line isn't delayed by incompatible links?",
-      "agent": {
-        "text": "To ensure complete compatibility with your existing links and avoid production delays, you must verify whether your current chain opens along the inner or outer radius. \n\nFor an igus E2 series (specifically the modern E2.1 generation) with a 30mm inner width ($Bi$) and a 38mm bending radius ($R$), the exact orderable part numbers are:\n\n*   **E2.15.30.038.0** \u2013 Crossbars snap open along the **outer** radius.\n*   **E2i.15.30.038.0** \u2013 Crossbars snap open along the **inner** radius.\n\n**Part Number Breakdown:**\n*   **E2 / E2i:** E2.1 series (outer-opening vs. inner-opening).\n*   **15:** Series size index (~14.4mm inner height).\n*   **30:** 30mm inner width. \n*   **038:** 38mm bending radius.\n*   **0:** Standard black color.\n\n*Note on Legacy Chains:* If your equipment uses the older, classic \"E2 micro\" non-opening chains, the legacy SKU format is **10.030.038.0**. If it uses the classic \"zipper\" style, the SKU is **15.030.038.0** or **09.30.038.0**. Verify your exact series generation (E2.1 vs. Classic) before ordering to guarantee link-to-link compatibility.",
-        "sources": [
-          {
-            "title": "tme.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEXnfOMvup_yBoYUdAiZr9s-W0Bqxsj-x-BtsEQahlLSAXVnL9s4kpe9Z2Yy-SqnMQ9e75EuvBZiv3AxpRz3SwmC4CkqtuasrdSTNgVliIPeTzLU9NH9IM9Z9u3UBrQ-1tMn41Nr5E9EbdHlQjZnM532v4oyFENCB3zelR_irGebvZd"
-          },
-          {
-            "title": "tme.eu",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFuQNfQNqH0ttG7pNRZqw_Fw-ZcHywD4_GNZ2_rGMNSa0_6DlQgj4oE95uxfA5QRaqxDkxv_mCsCzzHFYnpqjUdszDSLcENE0i6z4LhFqoDvrQ9FuQiTbEj-WaBjYeWUWnbmk4l5ua-iurc--nhxGj6L6AfpRr8GA-MlA=="
-          },
-          {
-            "title": "igus.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHACv9ESUs6xrnE7T0KFxHObA0BRjboZBvnYzvMV6rDzcUJ5qdRW7SQVLpn4f2uoN1uF2oCraaKwYD7gxZc58VaNZ0lz8SFKW3wheQsYlVKyiCrw_F-lGMeCxBprKIpucNM2rC6DO6mxQQN_nbJLtquxBP6o33FwTFSSTI="
-          },
-          {
-            "title": "motionusa.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFPbQsjNjJc8mYaIj0aQXBVAa1AeSurDiz_HrNDlR6nSYXvJBuLXe9O0JKERjEgVeVCZEBWMH4xtnwkP7zkfJNRQrQsTb2KD3Z5N_gchtXtP3HBrYKbHmm1uTEVtGXxAS4_7tWwWx9JQ7k8kqiMF1_Faw=="
-          }
-        ],
-        "error": null
-      },
-      "attribution": {
-        "domains": [
-          {
-            "host": "www.tme.eu",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFuQNfQNqH0ttG7pNRZqw_Fw-ZcHywD4_GNZ2_rGMNSa0_6DlQgj4oE95uxfA5QRaqxDkxv_mCsCzzHFYnpqjUdszDSLcENE0i6z4LhFqoDvrQ9FuQiTbEj-WaBjYeWUWnbmk4l5ua-iurc--nhxGj6L6AfpRr8GA-MlA==",
-            "title": "tme.eu",
-            "class": "distributor"
-          },
-          {
-            "host": "www.igus.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHACv9ESUs6xrnE7T0KFxHObA0BRjboZBvnYzvMV6rDzcUJ5qdRW7SQVLpn4f2uoN1uF2oCraaKwYD7gxZc58VaNZ0lz8SFKW3wheQsYlVKyiCrw_F-lGMeCxBprKIpucNM2rC6DO6mxQQN_nbJLtquxBP6o33FwTFSSTI=",
-            "title": "igus.com",
-            "class": "manufacturer"
-          },
-          {
-            "host": "www.tme.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEXnfOMvup_yBoYUdAiZr9s-W0Bqxsj-x-BtsEQahlLSAXVnL9s4kpe9Z2Yy-SqnMQ9e75EuvBZiv3AxpRz3SwmC4CkqtuasrdSTNgVliIPeTzLU9NH9IM9Z9u3UBrQ-1tMn41Nr5E9EbdHlQjZnM532v4oyFENCB3zelR_irGebvZd",
-            "title": "tme.com",
-            "class": "distributor"
-          },
-          {
-            "host": "motionusa.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFPbQsjNjJc8mYaIj0aQXBVAa1AeSurDiz_HrNDlR6nSYXvJBuLXe9O0JKERjEgVeVCZEBWMH4xtnwkP7zkfJNRQrQsTb2KD3Z5N_gchtXtP3HBrYKbHmm1uTEVtGXxAS4_7tWwWx9JQ7k8kqiMF1_Faw==",
-            "title": "motionusa.com",
-            "class": "other"
-          }
-        ],
-        "counts": {
-          "manufacturer": 1,
-          "distributor": 2,
-          "marketplace": 0,
-          "other": 1
-        },
-        "primary": "distributor",
-        "total_sources": 4
-      },
-      "category": "CORRECT",
-      "rationale": "The agent provided accurate, orderable SKUs (E2.15.30.038.0 and E2i.15.30.038.0) for the requested 30mm inner width and 38mm bending radius, which were confirmed via authoritative distributors like TME and RS Components. The distinction between inner- and outer-opening variants, as well as the classic series part numbers, are also entirely factual."
-    },
-    {
-      "query": "I am verifying a bill of materials that specifies an igus chainflex CF5 PVC control cable with 18 cores at 1.5mm\u00b2 cross-section. What is the specific orderable SKU for this cable to prevent purchasing from buying a cable with the wrong continuous flex rating?",
-      "agent": {
-        "text": "The specific orderable manufacturer SKU from igus for the chainflex\u00ae CF5 PVC control cable with 18 cores and a 1.5 mm\u00b2 cross-section is **CF5.15.18**. \n\nIgus structures its part numbers systematically:\n*   **CF5**: The cable series representing an unshielded, continuous-flex PVC control cable for heavy-duty applications.\n*   **15**: The conductor cross-section code denoting 1.5 mm\u00b2.\n*   **18**: The core count denoting 18 cores.\n\nUsing the exact base part number **CF5.15.18** prevents procurement from inadvertently sourcing standard tray cables or rigid alternatives that lack the proper dynamic continuous-flex rating and bend radius. \n\n*Procurement note: While CF5.15.18 is the global manufacturer base SKU, some industrial distributors append internal codes or length markers to the end of the part number depending on how it is spooled. For instance, Misumi lists variations like CF5.15.18-1.5SQ-18-1. Purchasing will simply need to quote the base SKU and specify the required reel or cut length in meters.*",
-        "sources": [
-          {
-            "title": "tme.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGwuKHgRNDF8nsFus1AD-q4T_U6ZzsVfcKMxtfq5ryZ3YQPs3VujUa_rA8KPL8GWlg9X4FCDbEKJq8EkLrshHiInYSU6k5Iw7UPKQEuszcc3lAn396eY3Js5ywz-Ocz2vLUtLmuK3IOEWomJUhv1OV5x_rZibeB_kLfa5d_0UbqKtv2tHkbbG-pQgxB1KtHjgEOxw=="
-          },
-          {
-            "title": "scribd.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE93CqOs_orfkxwWlH9xb1UDZUd7PalLOa_70fheI_Vpbuk17tTbpXtVKC6xOUOmJTw2E6lIhQoVOMl5Ast4cOn21rvzfrZ3FHlaIYg2_PRVbpKGhx5fWhCEhafVumn5CqaftIre8SlI64v68dghcMK8Y41ptqb6CNYg3LfmLmTJc8y6L4="
-          },
-          {
-            "title": "misumi-ec.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEephoru4V8w4lafq73WW3Ul8oB0X9xf19uqpF2lUQeAkRL83pU45yJKLY3ptRtLuzGYKt4HI96YrzbxbRrVYo7qZZ5RuwzCxj-dis9W-ucJXC-Ar-x86tUSPv5cCbx5Cw4FBi-RJlV4c1kJ5g-zCbCow_teRE3EbIDuIv_DXwQJxicBTeoZPOg8xJa2fZvHQ=="
-          },
-          {
-            "title": "igus.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDSHcz5kckPsRq1gsWB6jsbLgiwMN76UyGjjUiZbtr3YIkacWJuoIMaYdK1XGwzse9bmAlfvwoF4NQfH93NX2zv6B8j6Eo3cZHXosQsgYVOruZ3n266VBVEpkNihGTdHVEgNegTQ=="
-          },
-          {
-            "title": "igus.eu",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHaU4zrGOTLPjmZRAsnAtTwLgxtdaV_1J7CVXedzeNSE6twC4Pq92xjht103m_755lndk5dt2mHmdlciZ4RQAhc7_v1mpp6et_o7OZ0trleMYgqoWWQlPQ_lUE="
-          },
-          {
-            "title": "rs-online.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG6SN5vi4NkD7qgNy81060qCI5hQ7jG_DpXTGiPiXjd5WMMiTHFZ_m_nvrJi2WOqyoO6YViUGUNQdPaLSli6Z5g8L1x4x2QZ5tBvIAWmvrCkpF6AOCedLpq-1zXARiE7Ovnd4VWfMczZgz5JC97aps="
-          },
-          {
-            "title": "rs-online.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHo2GTHOAdx6ch-rqsiu4TRyKeJ0DOKD6lcBowu03GoFMjbxX3X6adGIq7WBAsQoSNWZ763CU0lB7k34_WW-8PADefqiOrgBgBOSVUliIPh6z6zLV9edi3ZA2oRLkiQXxTryIKac375YkhtnDeo6An2aw=="
-          },
-          {
-            "title": "misumi-ec.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQECcwoDFIi0Mwz_MknZLKySfLD27aaPoDdLDq8t2rkKNjBSOasEQKNqGR8Mok8veog04jL_tOUcLWStUc6P4eymfJImM6GWr-Hwq2OLVU_fP0U6TOycjenkO_PAuQz_0xtvmj3J5RPH-yq_UrlKQS_VJY-i0PP3Kqyc71iyI2pb6Bn9tGpaw5HBgIchI00="
-          },
-          {
-            "title": "misumi-ec.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQvvu_eQvuZoq0-fBBEsPBRZe93rZQAPLiw4EdmM8I0KsPa1ipOyn9HIdkZLiV-8I9_JlPd0x-xB8ipdr3LEbRQeAIYswz8QjL0iAAuxRfrAHmV6J2sLtQVhN1wpqGtIXtJ6KODkXtqJuyG-sBZDYnP5H3O6P8Lx-EjXkoQT-qD82lc0Q1cjCFfqO42Gn6"
-          }
-        ],
-        "error": null
-      },
-      "attribution": {
-        "domains": [
-          {
-            "host": "www.igus.eu",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHaU4zrGOTLPjmZRAsnAtTwLgxtdaV_1J7CVXedzeNSE6twC4Pq92xjht103m_755lndk5dt2mHmdlciZ4RQAhc7_v1mpp6et_o7OZ0trleMYgqoWWQlPQ_lUE=",
-            "title": "igus.eu",
-            "class": "manufacturer"
-          },
-          {
-            "host": "www.scribd.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE93CqOs_orfkxwWlH9xb1UDZUd7PalLOa_70fheI_Vpbuk17tTbpXtVKC6xOUOmJTw2E6lIhQoVOMl5Ast4cOn21rvzfrZ3FHlaIYg2_PRVbpKGhx5fWhCEhafVumn5CqaftIre8SlI64v68dghcMK8Y41ptqb6CNYg3LfmLmTJc8y6L4=",
-            "title": "scribd.com",
-            "class": "other"
-          },
-          {
-            "host": "www.tme.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGwuKHgRNDF8nsFus1AD-q4T_U6ZzsVfcKMxtfq5ryZ3YQPs3VujUa_rA8KPL8GWlg9X4FCDbEKJq8EkLrshHiInYSU6k5Iw7UPKQEuszcc3lAn396eY3Js5ywz-Ocz2vLUtLmuK3IOEWomJUhv1OV5x_rZibeB_kLfa5d_0UbqKtv2tHkbbG-pQgxB1KtHjgEOxw==",
-            "title": "tme.com",
-            "class": "distributor"
-          },
-          {
-            "host": "us.misumi-ec.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEephoru4V8w4lafq73WW3Ul8oB0X9xf19uqpF2lUQeAkRL83pU45yJKLY3ptRtLuzGYKt4HI96YrzbxbRrVYo7qZZ5RuwzCxj-dis9W-ucJXC-Ar-x86tUSPv5cCbx5Cw4FBi-RJlV4c1kJ5g-zCbCow_teRE3EbIDuIv_DXwQJxicBTeoZPOg8xJa2fZvHQ==",
-            "title": "misumi-ec.com",
-            "class": "distributor"
-          },
-          {
-            "host": "us.misumi-ec.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQECcwoDFIi0Mwz_MknZLKySfLD27aaPoDdLDq8t2rkKNjBSOasEQKNqGR8Mok8veog04jL_tOUcLWStUc6P4eymfJImM6GWr-Hwq2OLVU_fP0U6TOycjenkO_PAuQz_0xtvmj3J5RPH-yq_UrlKQS_VJY-i0PP3Kqyc71iyI2pb6Bn9tGpaw5HBgIchI00=",
-            "title": "misumi-ec.com",
-            "class": "distributor"
-          },
-          {
-            "host": "www.igus.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDSHcz5kckPsRq1gsWB6jsbLgiwMN76UyGjjUiZbtr3YIkacWJuoIMaYdK1XGwzse9bmAlfvwoF4NQfH93NX2zv6B8j6Eo3cZHXosQsgYVOruZ3n266VBVEpkNihGTdHVEgNegTQ==",
-            "title": "igus.com",
-            "class": "manufacturer"
-          },
-          {
-            "host": "my.misumi-ec.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQvvu_eQvuZoq0-fBBEsPBRZe93rZQAPLiw4EdmM8I0KsPa1ipOyn9HIdkZLiV-8I9_JlPd0x-xB8ipdr3LEbRQeAIYswz8QjL0iAAuxRfrAHmV6J2sLtQVhN1wpqGtIXtJ6KODkXtqJuyG-sBZDYnP5H3O6P8Lx-EjXkoQT-qD82lc0Q1cjCFfqO42Gn6",
-            "title": "misumi-ec.com",
-            "class": "distributor"
-          },
-          {
-            "host": "twen.rs-online.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHo2GTHOAdx6ch-rqsiu4TRyKeJ0DOKD6lcBowu03GoFMjbxX3X6adGIq7WBAsQoSNWZ763CU0lB7k34_WW-8PADefqiOrgBgBOSVUliIPh6z6zLV9edi3ZA2oRLkiQXxTryIKac375YkhtnDeo6An2aw==",
-            "title": "rs-online.com",
-            "class": "distributor"
-          },
-          {
-            "host": "my.rs-online.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG6SN5vi4NkD7qgNy81060qCI5hQ7jG_DpXTGiPiXjd5WMMiTHFZ_m_nvrJi2WOqyoO6YViUGUNQdPaLSli6Z5g8L1x4x2QZ5tBvIAWmvrCkpF6AOCedLpq-1zXARiE7Ovnd4VWfMczZgz5JC97aps=",
-            "title": "rs-online.com",
-            "class": "distributor"
-          }
-        ],
-        "counts": {
-          "manufacturer": 2,
-          "distributor": 6,
-          "marketplace": 0,
-          "other": 1
-        },
-        "primary": "distributor",
-        "total_sources": 9
-      },
-      "category": "CORRECT",
-      "rationale": "The agent provided the exact base SKU 'CF5.15.18', which is verifiable in the igus manufacturer catalog and across authoritative distributors like TME, Mouser, and Misumi. The datasheet confirms this part number represents the chainflex CF5 PVC control cable with 18 cores and a 1.5 mm\u00b2 cross-section."
-    },
-    {
-      "query": "We are sourcing components for a linear guide system and need the die-cast zinc drylin W pillow block carriage with iglide J200 liners to match a size 10 single round rail. Can you provide the exact WJ200UM series part number so we do not accidentally order the aluminum housing?",
-      "agent": {
-        "text": "The exact part number you need to order is **WJ200UM-01-10**. \n\nIn the igus drylin W catalog:\n* **WJ200UM** designates the pillow block carriage series outfitted with the iglide J200 sliding liner. \n* **-01** designates the standard housing style.\n* **-10** designates the size 10 profile (to match your single round rail).\n\nBy default, the standard `WJ200UM-01-10` is manufactured with the die-cast zinc housing. \n\nTo ensure you do not accidentally receive the aluminum version, ensure your vendor does not add the \"-AL\" suffix. The part number **WJ200UM-01-10-AL** specifically denotes the black hard-anodized aluminum housing.",
-        "sources": [
-          {
-            "title": "misumi-ec.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGclO5ewgGz7MJ0VsT-Qki3_TRwgSKX0fJx2SELH_mRxZRKVGsR_nQwf7_HUiYaJ5Svz3UT0osFw6PZmkpHf6EmrnjQKId6If-jTjL-Vq4vRcRk8LYIifbTQYuOzR3V-0EGQUHxpzWGtRiNDE-Zcg06jbcBciZgAqokfm96hslF6UvEzBVyHA=="
-          },
-          {
-            "title": "igus.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGmDppFwL59WzCj_AIUwEBxRP21j_myumiNM94JTerfgqHuT7oU1t5HiVv_PHDLVYItI0Gj65DEivtFSuCMZQW6e3ZuWX4LRC3FYOUW23oBF1UASMAuPeabjvjb7Q=="
-          },
-          {
-            "title": "igus.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFlmH5yryo5fFf3BxkKnXYqPhBt4_dlvZZgdTMErYaKZVMbEJPYszW2m20IjoxiwlvuZ4djGNH_ty_xbs9NdANfcNAf-H5JYU1KD3wS6WGaiQq7Q0j3Kt-Y29z2Bg0="
-          },
-          {
-            "title": "rs-online.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGrkjVVdPdrKyOW6Zf3gDn3jxrnkE25cup22eJZZ0k2FOLOFmtmL2SJHxnfcVPp8Li6LKL90o3OVD2tFb97EO67Sl_Fngca3LUq8zDOm6L54_gy8mJ621lnWvqr61ML9kpDMbtcYuQiRB-WXWPKI2oLawW-lF9Tvw=="
-          },
-          {
-            "title": "ebay.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_w8eylAtLrff5tl3Ka2Rhkbw5nY2y7U2YeHfTsz6PDCIY_eUg3vzZOkh26ISuBAyclbN58fWG9ICe-wsRJgBOZpTpJNNX7uGZeJiH5QAKOgr7N4kkzubV9E4wtZU7tzo="
-          }
-        ],
-        "error": null
-      },
-      "attribution": {
-        "domains": [
-          {
-            "host": "us.misumi-ec.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGclO5ewgGz7MJ0VsT-Qki3_TRwgSKX0fJx2SELH_mRxZRKVGsR_nQwf7_HUiYaJ5Svz3UT0osFw6PZmkpHf6EmrnjQKId6If-jTjL-Vq4vRcRk8LYIifbTQYuOzR3V-0EGQUHxpzWGtRiNDE-Zcg06jbcBciZgAqokfm96hslF6UvEzBVyHA==",
-            "title": "misumi-ec.com",
-            "class": "distributor"
-          },
-          {
-            "host": "www.igus.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFlmH5yryo5fFf3BxkKnXYqPhBt4_dlvZZgdTMErYaKZVMbEJPYszW2m20IjoxiwlvuZ4djGNH_ty_xbs9NdANfcNAf-H5JYU1KD3wS6WGaiQq7Q0j3Kt-Y29z2Bg0=",
-            "title": "igus.com",
-            "class": "manufacturer"
-          },
-          {
-            "host": "www.igus.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGmDppFwL59WzCj_AIUwEBxRP21j_myumiNM94JTerfgqHuT7oU1t5HiVv_PHDLVYItI0Gj65DEivtFSuCMZQW6e3ZuWX4LRC3FYOUW23oBF1UASMAuPeabjvjb7Q==",
-            "title": "igus.com",
-            "class": "manufacturer"
-          },
-          {
-            "host": "www.ebay.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_w8eylAtLrff5tl3Ka2Rhkbw5nY2y7U2YeHfTsz6PDCIY_eUg3vzZOkh26ISuBAyclbN58fWG9ICe-wsRJgBOZpTpJNNX7uGZeJiH5QAKOgr7N4kkzubV9E4wtZU7tzo=",
-            "title": "ebay.com",
-            "class": "marketplace"
-          },
-          {
-            "host": "twen.rs-online.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGrkjVVdPdrKyOW6Zf3gDn3jxrnkE25cup22eJZZ0k2FOLOFmtmL2SJHxnfcVPp8Li6LKL90o3OVD2tFb97EO67Sl_Fngca3LUq8zDOm6L54_gy8mJ621lnWvqr61ML9kpDMbtcYuQiRB-WXWPKI2oLawW-lF9Tvw==",
-            "title": "rs-online.com",
-            "class": "distributor"
-          }
-        ],
-        "counts": {
-          "manufacturer": 2,
-          "distributor": 2,
-          "marketplace": 1,
           "other": 0
         },
         "primary": "manufacturer",
-        "total_sources": 5
+        "total_sources": 9
       },
-      "category": "CORRECT",
-      "rationale": "The igus catalog confirms WJ200UM-01-10 is the correct part number for a size 10 die-cast zinc drylin W pillow block carriage with iglide J200 liners, and that the -AL suffix designates the aluminum housing version."
+      "category": "WRONG_SPEC",
+      "rationale": "The agent correctly identified igus' main product families and provided real SKUs for most items (E4.32.10.150.0, CF5.05.18, ASM-0103-02). However, it provided a wrong product attribute for the drylin WS-10-40 SKU. The agent described it as a 'single rail', but according to the igus catalog, the WS-10-40 is a 'double rail' (the '40' specifically denotes the 40mm distance between the two parallel rails), whereas the actual single rail version is simply the WS-10."
     },
     {
-      "query": "Engineering specified a metric igubal rod end bearing with a female right-hand thread for a 10mm inner diameter spherical ball. What is the correct K-series part number to ensure we receive the standard version and not the fine-thread or high-temperature variant?",
+      "query": "What is the exact maximum continuous operating temperature for the iglidur G plain bearing product line from igus.de?",
       "agent": {
-        "text": "The correct Igus part number for your specified igubal\u00ae rod end bearing is **KBRM-10**. \n\nHere is the breakdown of the manufacturer's nomenclature:\n*   **K**: K-series dimensional standard (DIN ISO 12240)\n*   **B**: Female (internal) thread housing\n*   **R**: Right-hand thread direction\n*   **M**: Metric sizing\n*   **-10**: 10mm inner diameter of the spherical ball\n\nBy ordering `KBRM-10`, you will receive the standard lightweight polymer version with the standard M10 coarse thread pitch (1.5mm). \n\nTo ensure you do not accidentally receive a specialty variant, make sure the part number does **not** contain any of the following suffixes:\n*   **F** (e.g., KBRM-10 F): Designates the fine-thread variant (1.25mm pitch).\n*   **HT** (e.g., KBRM-10 HT): Designates the high-temperature material variant.\n*   **MH** (e.g., KBRM-10 MH): Designates a version with a stainless steel sleeve insert in the ball for higher tightening torque.",
+        "text": "The exact maximum continuous operating temperature for the iglidur® G plain bearing product line from igus is **+130°C**. \n\nBecause your question asks for a material specification rather than a specific physical component, I cannot answer with a specific SKU as the direct answer. However, this +130°C maximum continuous temperature rating applies universally across the entire iglidur® G catalog. This line includes real, orderable SKUs such as the **GSM-0810-10** (8mm bore) or **GSM-1012-10** (10mm bore) sleeve bearings. \n\nIf your application continuously exceeds this +130°C limit, igus recommends selecting a different high-temperature bearing material instead.",
         "sources": [
           {
-            "title": "misumi-ec.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGzWxwHkoQJ3GPxN5qmzIEPyeeGBGOpowTg-AmK9BZoC5xhAqG67i9cX32GzJXvAViRep5__SKvnzLm5ub7-UqBMniGyHKkXUDVKuTc3GynHMWTOvmpfSCmb0dr-31TDQ0oR1IAOAiN37bnQxI6Qyh_oiYJwt5ZITwFxVbRD_BJXg=="
+            "title": "igus.eu",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGmVKYQ93QTcDmDjQNbfeTUhAcHqi8zKeiUhKTtQyFdSyA0-pMLW1fF9l7OlvaRkYf5fxtDHSFsiQjgJ4yixZOmBmoJqy4N4qMr-mI_gmZvPALRJ9WZhkmdu2nVfttU-4_P8lrJLaMmLBdF_CgwczGVKoQP8_ltXEj-ctv-6woJLY06x3ChHCZfLa2tzj8now=="
           },
           {
-            "title": "rs-online.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH7ky6YTR182co0PeyZzVR1ByXhpoet3cQNhaE6wgQRpvdpQ0EQ5N1omhVEXFQ_o-Cn3u8pMOO68b02L1Nk0sgirVrS5MzdogfkHjuBkiEiw3_TEByiIwPjKb1OWy__vlTZ4Ee22s_QT3rzBB9A6ZzCXD4="
+            "title": "igus.fi",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGX49sLT4MBxWaFG5g6WEYGSdg41Uc9VnqFDCgQwr5M7o5IzMdCKX4NVxiyuG6JdBBLMwPsi58AIKLBLzyqubEUwhZ-KP_GPZyljznBORmAtCnnUylle9jBENrMTOWKcA4hpjVL1FJOi8AMDrOlyhuJYCrhgNNeClRQ-ETLbrHemggvcIqvKA=="
           },
           {
-            "title": "hvhindustrial.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH3_EntrqupcNNm9siZkt6chBvSA6dk7hB1gUEsf-0YltOcgJR_SestGLHYpC-Hkl9YTq7tB2zhBchzGbHjy_6CJ4YBLoPe3G_9opxWluICagPWhIKpafGCxYrgCdWnGo-Cgg3s79TVirfjas9ZKq4S1A=="
+            "title": "rsdelivers.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGtBhL1T1ki0FytDH4NqTH5eyziojSKmaHwElI6zdPeXGQehXCdI9fexzgppoXXPKNUzdMGblKaLBeFS0MVgrhjwI-sC4oaLQ9PPFNiuwpSjtmFctzvWw6lxQ5Exn89rwN0W8zKwH4962doHhhFv1Ugn4w5ZUNPbS9Mk56NX7GJNEFNtXibLuZsg-ftkTAnEaQDamYpDUrLjYnSeFHbmUseHVvjLlXt"
           },
           {
-            "title": "hennlich.cz",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEO_ZBJc4EuBPRVllyca9xUWqeMHv-xWpg3YbFRFo0P4iVZjXEJZKpfhdkBzIP2_3HSS_td4LIJ8AcSzxMFriUhk67tvTtxS6eL1tuQI1YUU0CyR1GdKnhQXfPcLyCn5OfRXc1hSeU-a96k-k87oL2_qhg1Y6WnxVyOSWcOdw=="
-          },
-          {
-            "title": "tme.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSXHIIFuRiLNhPEwsuhInzNjDQd32uEk-x_xktM6A4a8NLchyFxs7VAP7aAnopeOGBZLXANwRyFuvcolW4qNa0pfyQUSTNNk0CoYiu5O19H-k2ALJ6CHzzpHbr6pt4tA_bk4XbL6RSNdSuquPM3zY_nVrxwA=="
-          },
-          {
-            "title": "albeco.com.pl",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELjxs6eH4vmwf22oE7tkwSr3G4VFVv6b9HjhJHARzWVK7Me1LcXomQ9i4wr7CTg-M-evGbkhOtYDUsHevmWVwtyKG7qhZ6h9Y8tWnnENGdH9j9sd8QrxgWHx13LBeHe9PqQLG78DMRMeMSJvsbkUKUaVK6BpRdxWcXY3xMk5AWvS8="
-          },
-          {
-            "title": "simplybearings.co.uk",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDqObRRhhcWmpRkHVfClNxeYw5P8ItoXcYejLQFSg2NCTDe1Fi0L5NysgMxnMeEIhvh5BUimfPxabUyXKkb16JY702oamXkqnOpINDJNIZGK45DIIdZmTonyaab-N_kEWZVbKSMne_oKwgZkLyfhnNGVBu9avvfEmxu3vRNZ8mNji-bLItkETC-inber5a6V7ZjOHCS_CAkX-XVjGkrcIuyw7welJh3rkPoGN6cTK_CMjiigpzaiiyPKePLLSOzK6m4YvIf59G_Tx-xp6teXni"
-          },
-          {
-            "title": "igus.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEgIcoEE6gYyde8oaKhNsUmWFcFDH_QbNQRYFu_Z_CIs6EC18uRmQZuH4yKdcg5GBGfxXt3-hCtI0o7LbTWRXz9pT0wyiZ_RljMzrdnOuTADbZKR30DxTTXVdop"
+            "title": "rsdelivers.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEkC0UYI5w9GlP5UR5DUo1_gjFE240Glm0hA77MZtSPoiSAZogQqDbMj4qZSi648kf-y37B1fT7hLmO6pnXt--HXtaWtAkjc29i8P8p5iesfTFCsDcOfj0W7nu0JekC4oyvxyYqkjZ9N6VR03tpKmykEX9nb_Ny2m3z1Es0zXvasYa6kSEOddVVAyHy84Qqpm4ouRAh7CrMXUi07g=="
           }
         ],
         "error": null
@@ -397,77 +206,279 @@
       "attribution": {
         "domains": [
           {
-            "host": "us.rs-online.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH7ky6YTR182co0PeyZzVR1ByXhpoet3cQNhaE6wgQRpvdpQ0EQ5N1omhVEXFQ_o-Cn3u8pMOO68b02L1Nk0sgirVrS5MzdogfkHjuBkiEiw3_TEByiIwPjKb1OWy__vlTZ4Ee22s_QT3rzBB9A6ZzCXD4=",
-            "title": "rs-online.com",
+            "host": "mt.rsdelivers.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGtBhL1T1ki0FytDH4NqTH5eyziojSKmaHwElI6zdPeXGQehXCdI9fexzgppoXXPKNUzdMGblKaLBeFS0MVgrhjwI-sC4oaLQ9PPFNiuwpSjtmFctzvWw6lxQ5Exn89rwN0W8zKwH4962doHhhFv1Ugn4w5ZUNPbS9Mk56NX7GJNEFNtXibLuZsg-ftkTAnEaQDamYpDUrLjYnSeFHbmUseHVvjLlXt",
+            "title": "rsdelivers.com",
             "class": "distributor"
           },
           {
-            "host": "www.tme.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSXHIIFuRiLNhPEwsuhInzNjDQd32uEk-x_xktM6A4a8NLchyFxs7VAP7aAnopeOGBZLXANwRyFuvcolW4qNa0pfyQUSTNNk0CoYiu5O19H-k2ALJ6CHzzpHbr6pt4tA_bk4XbL6RSNdSuquPM3zY_nVrxwA==",
-            "title": "tme.com",
+            "host": "mt.rsdelivers.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEkC0UYI5w9GlP5UR5DUo1_gjFE240Glm0hA77MZtSPoiSAZogQqDbMj4qZSi648kf-y37B1fT7hLmO6pnXt--HXtaWtAkjc29i8P8p5iesfTFCsDcOfj0W7nu0JekC4oyvxyYqkjZ9N6VR03tpKmykEX9nb_Ny2m3z1Es0zXvasYa6kSEOddVVAyHy84Qqpm4ouRAh7CrMXUi07g==",
+            "title": "rsdelivers.com",
             "class": "distributor"
           },
           {
-            "host": "us.misumi-ec.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGzWxwHkoQJ3GPxN5qmzIEPyeeGBGOpowTg-AmK9BZoC5xhAqG67i9cX32GzJXvAViRep5__SKvnzLm5ub7-UqBMniGyHKkXUDVKuTc3GynHMWTOvmpfSCmb0dr-31TDQ0oR1IAOAiN37bnQxI6Qyh_oiYJwt5ZITwFxVbRD_BJXg==",
-            "title": "misumi-ec.com",
-            "class": "distributor"
+            "host": "www.igus.eu",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGmVKYQ93QTcDmDjQNbfeTUhAcHqi8zKeiUhKTtQyFdSyA0-pMLW1fF9l7OlvaRkYf5fxtDHSFsiQjgJ4yixZOmBmoJqy4N4qMr-mI_gmZvPALRJ9WZhkmdu2nVfttU-4_P8lrJLaMmLBdF_CgwczGVKoQP8_ltXEj-ctv-6woJLY06x3ChHCZfLa2tzj8now==",
+            "title": "igus.eu",
+            "class": "manufacturer"
           },
           {
-            "host": "www.albeco.com.pl",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELjxs6eH4vmwf22oE7tkwSr3G4VFVv6b9HjhJHARzWVK7Me1LcXomQ9i4wr7CTg-M-evGbkhOtYDUsHevmWVwtyKG7qhZ6h9Y8tWnnENGdH9j9sd8QrxgWHx13LBeHe9PqQLG78DMRMeMSJvsbkUKUaVK6BpRdxWcXY3xMk5AWvS8=",
-            "title": "albeco.com.pl",
-            "class": "other"
+            "host": "www.igus.fi",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGX49sLT4MBxWaFG5g6WEYGSdg41Uc9VnqFDCgQwr5M7o5IzMdCKX4NVxiyuG6JdBBLMwPsi58AIKLBLzyqubEUwhZ-KP_GPZyljznBORmAtCnnUylle9jBENrMTOWKcA4hpjVL1FJOi8AMDrOlyhuJYCrhgNNeClRQ-ETLbrHemggvcIqvKA==",
+            "title": "igus.fi",
+            "class": "manufacturer"
+          }
+        ],
+        "counts": {
+          "manufacturer": 2,
+          "distributor": 2,
+          "marketplace": 0,
+          "other": 0
+        },
+        "primary": "manufacturer",
+        "total_sources": 4
+      },
+      "category": "CORRECT",
+      "rationale": "Verified via the manufacturer's catalog and distributors (TME, RS, Misumi) that the maximum continuous (long-term) operating temperature for the iglidur® G product line is indeed +130°C. The provided example SKUs (GSM-0810-10 and GSM-1012-10) are also real, orderable plain bearings with the specified bore dimensions."
+    },
+    {
+      "query": "Does igus.de sell standard steel roller chains for mechanical power transmission? If yes, give me a part number; if no, say so plainly.",
+      "agent": {
+        "text": "No, igus.de does not sell standard steel roller chains for mechanical power transmission. \n\nIgus specializes in \"motion plastics\" and is globally known for manufacturing plastic energy chains (cable carriers), flexible cables (chainflex), and polymer plain bearings. While their catalog does feature a product line called the \"rol e-chain\"—which incorporates small rollers (sometimes made of stainless steel) into the plastic carrier links to reduce friction over long travel distances—these systems are exclusively designed for guiding and protecting cables and hoses. They are not designed to engage with drive sprockets or transmit mechanical power like an ANSI or DIN 8187 standard drive chain.\n\nIf you are looking to procure standard steel power transmission chains, you will need to consult traditional drive chain manufacturers such as Tsubaki, Renold, Wippermann, or Iwis.",
+        "sources": [
+          {
+            "title": "igus.in",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0L9OxLnW92O08p4Avg6ojl2CrX6lcZOhmxTUNahXpEubS2B9npZZ9IY-oEPbxQ3HEEbYNKYjPMRWtcDkQBnh2X2KkNjatFUYVg_OJZPKUzTFTbv9j8KNt3aqWemeqa-eoIUHlRS3QlrG4mvENdUvY"
           },
           {
-            "host": "hvhindustrial.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH3_EntrqupcNNm9siZkt6chBvSA6dk7hB1gUEsf-0YltOcgJR_SestGLHYpC-Hkl9YTq7tB2zhBchzGbHjy_6CJ4YBLoPe3G_9opxWluICagPWhIKpafGCxYrgCdWnGo-Cgg3s79TVirfjas9ZKq4S1A==",
-            "title": "hvhindustrial.com",
+            "title": "igus.eu",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHltHY2Te4IcbqtWdcsBBEHLljSxtMVUTqsBURt2ppX_lT5TFxzxECAHBPaPma0qHJuQXYKYIOc1mOe4YCvXAVQRhqpGse34Qesed2FPvQmrwtrNdb1VIoSxjG7RnMyV_-RQ1VPHsskGEXazPMFGTy31R7kJoD-RqC0lN8eqKOgKzIRVM3hjRhsp9oL2iXkFDV3B-sBggrUw-4="
+          },
+          {
+            "title": "igus.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGj5Mw_YiHERyFf7OrsxtqW82nEciX5yObRvYxp5APQ9ctNLF8sQdS4OQGWyPwEurq2hNvpVcu14ddIfB6eJwRkoFqGLoxj1Uab_GzvhtmiPBC-gzeAsGN7D6o8yaxR1NVsZmmq6GpnCyBs4NDGXh4E1NEdWbgFfSx4GJj5l3nfYTcuxMi8tE5PGw39P7qI5MkXnMYUN84dRmjZ1-a8mW_G"
+          },
+          {
+            "title": "igus.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHan4QF555JXp9HnQMrcR0YophMv_-kalCiruUkEklLT8YCMvGiGcnq3Ro5Y56qZ6mSQtRwJPvCdcXGlVCY7Dqf6jo3XSICx4t8SVMyzwnLt9HeHHUmMMkZNx6OPFyvt1Lg06EdwH5ozgG5Jcq54AKkXuh9WPY0iBBk8Q3bSQ=="
+          },
+          {
+            "title": "wikipedia.org",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGxtj8oONwEeMN5AMmt_KQi7Val2ppWsf8I0D1vlY5VqKnu0dFO-52_IzEblWZiA51Ui61RGSZUsAkdcB_DQ-Qd296LmFANYR9I15rY7klWoUg4zeshh7KOx1HUwL_IIccMhgSc"
+          },
+          {
+            "title": "z24.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_I4iihsqSkxrenwvzxdeueoZOS_SorIeJo5s_wu5-Rf0KO-U7CWT_fLY6sqGCKQDeey0vVsjWFWebbovCMKcM6FcELTdzx7wY8Ed4MF5607b3I-uE-1rVwqA7KSUisC5plapHb8ktI0cPTQg="
+          },
+          {
+            "title": "wippermann.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHri0Sl_ZdhOXFSL0qsgqCt4VetZ36ykpPpxZjRDI9RZvpVpK7xe5RjUm5GcFAsgb4uO-alZ5FzEFf9FIuEmVgxSx82zyvVEJpcIQdD-NAUfZqBX-1LdEcC9sWXeE2dWAhBwutfNCTI3V9OmYp9BTh701wBcSzYW7LF_YY="
+          },
+          {
+            "title": "ustsubaki.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE_WLYwxgEQSvyIcCvX-vHx6cpPWgcb-mF7lFqWLmtbPvUZU86aSNvxNUQL53cQRvilJrCIjrI2vxp6iaCmrmPQMAF5qG-YgVyg7Sb0TjqGB6OTFtOtHuUT9VEBYDgk5fMR2gtI6IIMRmjmQQ=="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "en.wikipedia.org",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGxtj8oONwEeMN5AMmt_KQi7Val2ppWsf8I0D1vlY5VqKnu0dFO-52_IzEblWZiA51Ui61RGSZUsAkdcB_DQ-Qd296LmFANYR9I15rY7klWoUg4zeshh7KOx1HUwL_IIccMhgSc",
+            "title": "wikipedia.org",
             "class": "other"
           },
           {
             "host": "www.igus.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEgIcoEE6gYyde8oaKhNsUmWFcFDH_QbNQRYFu_Z_CIs6EC18uRmQZuH4yKdcg5GBGfxXt3-hCtI0o7LbTWRXz9pT0wyiZ_RljMzrdnOuTADbZKR30DxTTXVdop",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGj5Mw_YiHERyFf7OrsxtqW82nEciX5yObRvYxp5APQ9ctNLF8sQdS4OQGWyPwEurq2hNvpVcu14ddIfB6eJwRkoFqGLoxj1Uab_GzvhtmiPBC-gzeAsGN7D6o8yaxR1NVsZmmq6GpnCyBs4NDGXh4E1NEdWbgFfSx4GJj5l3nfYTcuxMi8tE5PGw39P7qI5MkXnMYUN84dRmjZ1-a8mW_G",
             "title": "igus.com",
             "class": "manufacturer"
           },
           {
-            "host": "www.hennlich.cz",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEO_ZBJc4EuBPRVllyca9xUWqeMHv-xWpg3YbFRFo0P4iVZjXEJZKpfhdkBzIP2_3HSS_td4LIJ8AcSzxMFriUhk67tvTtxS6eL1tuQI1YUU0CyR1GdKnhQXfPcLyCn5OfRXc1hSeU-a96k-k87oL2_qhg1Y6WnxVyOSWcOdw==",
-            "title": "hennlich.cz",
+            "host": "www.igus.eu",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHltHY2Te4IcbqtWdcsBBEHLljSxtMVUTqsBURt2ppX_lT5TFxzxECAHBPaPma0qHJuQXYKYIOc1mOe4YCvXAVQRhqpGse34Qesed2FPvQmrwtrNdb1VIoSxjG7RnMyV_-RQ1VPHsskGEXazPMFGTy31R7kJoD-RqC0lN8eqKOgKzIRVM3hjRhsp9oL2iXkFDV3B-sBggrUw-4=",
+            "title": "igus.eu",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.z24.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_I4iihsqSkxrenwvzxdeueoZOS_SorIeJo5s_wu5-Rf0KO-U7CWT_fLY6sqGCKQDeey0vVsjWFWebbovCMKcM6FcELTdzx7wY8Ed4MF5607b3I-uE-1rVwqA7KSUisC5plapHb8ktI0cPTQg=",
+            "title": "z24.de",
             "class": "other"
           },
           {
-            "host": "vertexaisearch.cloud.google.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDqObRRhhcWmpRkHVfClNxeYw5P8ItoXcYejLQFSg2NCTDe1Fi0L5NysgMxnMeEIhvh5BUimfPxabUyXKkb16JY702oamXkqnOpINDJNIZGK45DIIdZmTonyaab-N_kEWZVbKSMne_oKwgZkLyfhnNGVBu9avvfEmxu3vRNZ8mNji-bLItkETC-inber5a6V7ZjOHCS_CAkX-XVjGkrcIuyw7welJh3rkPoGN6cTK_CMjiigpzaiiyPKePLLSOzK6m4YvIf59G_Tx-xp6teXni",
-            "title": "simplybearings.co.uk",
+            "host": "wippermann.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHri0Sl_ZdhOXFSL0qsgqCt4VetZ36ykpPpxZjRDI9RZvpVpK7xe5RjUm5GcFAsgb4uO-alZ5FzEFf9FIuEmVgxSx82zyvVEJpcIQdD-NAUfZqBX-1LdEcC9sWXeE2dWAhBwutfNCTI3V9OmYp9BTh701wBcSzYW7LF_YY=",
+            "title": "wippermann.com",
+            "class": "other"
+          },
+          {
+            "host": "www.igus.in",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0L9OxLnW92O08p4Avg6ojl2CrX6lcZOhmxTUNahXpEubS2B9npZZ9IY-oEPbxQ3HEEbYNKYjPMRWtcDkQBnh2X2KkNjatFUYVg_OJZPKUzTFTbv9j8KNt3aqWemeqa-eoIUHlRS3QlrG4mvENdUvY",
+            "title": "igus.in",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.igus.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHan4QF555JXp9HnQMrcR0YophMv_-kalCiruUkEklLT8YCMvGiGcnq3Ro5Y56qZ6mSQtRwJPvCdcXGlVCY7Dqf6jo3XSICx4t8SVMyzwnLt9HeHHUmMMkZNx6OPFyvt1Lg06EdwH5ozgG5Jcq54AKkXuh9WPY0iBBk8Q3bSQ==",
+            "title": "igus.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.ustsubaki.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE_WLYwxgEQSvyIcCvX-vHx6cpPWgcb-mF7lFqWLmtbPvUZU86aSNvxNUQL53cQRvilJrCIjrI2vxp6iaCmrmPQMAF5qG-YgVyg7Sb0TjqGB6OTFtOtHuUT9VEBYDgk5fMR2gtI6IIMRmjmQQ==",
+            "title": "ustsubaki.com",
             "class": "other"
           }
         ],
         "counts": {
-          "manufacturer": 1,
-          "distributor": 3,
+          "manufacturer": 4,
+          "distributor": 0,
           "marketplace": 0,
           "other": 4
         },
-        "primary": "other",
+        "primary": "manufacturer",
         "total_sources": 8
       },
       "category": "CORRECT",
-      "rationale": "Verified via authorized distributors like TME and Misumi that Igus KBRM-10 is the standard K-series metric rod end bearing with a 10mm bore and M10 right-hand female thread. The agent correctly identified the base SKU and accurately warned about the specific suffixes (F, HT, MH) to avoid non-standard variants."
+      "rationale": "Verified via Google Search that igus.de specializes in 'motion plastics', cable carriers (e-chains), and polymer bearings. They do not manufacture or sell standard steel roller chains for mechanical power transmission, making the agent's clear denial fully accurate."
+    },
+    {
+      "query": "I'm comparing igus.de's drylin linear guides vs. THK's recirculating ball linear guides. What are the key differentiators and which one is recommended for a highly dusty woodworking environment?",
+      "agent": {
+        "text": "**Key Differentiators:**\n* **igus drylin:** Uses sliding contact with self-lubricating polymer liners. It operates completely dry without grease or oil, making it maintenance-free and highly resistant to dirt and dust. \n* **THK:** Uses recirculating ball bearings (rolling contact). They offer superior precision, rigidity, and load capacity but require continuous lubrication. In dusty settings, debris can mix with the grease and jam the bearing unless specialized contamination protection (like THK's LaCS scrapers) is utilized.\n\n**Recommendation for Woodworking:**\n**igus drylin** is highly recommended for a dusty woodworking environment. Because it runs completely dry, sawdust and wood chips cannot stick to the rails or clump into an abrasive paste. The polymer liners simply wipe the dust away, ensuring reliable operation without the heavy maintenance overhead of recirculating ball guides.\n\n**Orderable Part Examples (igus drylin W series):**\n* **Guide Rail:** `WS-10-40-1000` (1000mm Double Guide Rail, 10mm shaft diameter)\n* **Carriage Block:** `WJ200UM-01` (Standard pillow block carriage with iglide® J200 sliding elements)",
+        "sources": [
+          {
+            "title": "igus.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQElcmXz5AS88rHfsZuj8a4uaVF3POAZUybqvdFDMN1r9kaeZVhW08zoIPFybfSYIVUdZ31jRwMEbb6iZeFyZuZk_D5nPIm8IsD4GKOPSLDmd9v7cAvoXuZEHmAVYO-s_As5LT15onZD-3LK2e09torJwfQ="
+          },
+          {
+            "title": "youtube.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG3gLXQESDuGdKpfQzGvNOjnjuA9b2KM6kf55DnzmJKbnLIcCDSgD4kr_RpmLtAs7tu1LaQ9uiaomuwhhmHRV9LquBB13Ox3c0WMb8x1ssHA_p78DR7odOFZrzEh8CnlTs7UlxcdQ=="
+          },
+          {
+            "title": "igus.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGQzto6hvkcW_jezhF2eZ-Nl_qqDKnaoMzxyPD5ldO8PeCU8reJw5OCYjxypdIilAc6lMqHzqtypBTZ7Z85jSLcTgD75EXoUxUdRBvbE4_4Fjdwxmydu3uQBXnVuZld66PtoA=="
+          },
+          {
+            "title": "rs-online.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHEsYMLxqpoc07qwinHN8i-jQN9JjLmgOJfRujh6AwjRD7QKd-AG5JL5AsJQlDOF-HnuoBnfsJggYbUtsgf7BVagkkPeojqoYJLE7frg0GUOS-VcSiVLVupNZnEPakkxGdp-TY0K0s6AvkotJSZnw=="
+          },
+          {
+            "title": "thk.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGtVfEtnLsLsBVYtdKvn1sMgL7AuGLlNGowxhTybu8b--DIgItuyAXaJ-FjHOJmj3suaHtnMFqXG-sIx-qCY54uZDJDar9kMJ-umdF1HIyH1qlq5coLsurECjTwTRyQVD_ybmgHvAGCpkEKCjGgDA=="
+          },
+          {
+            "title": "thk.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEflQW6dxJpm9P14M2oKdJMsSSXIwWlWRfAbH8qM28GQ6T5ZtnMJrKxpaoO39atsV45VP8hVfD7YCURy1Jw-ua3lvi2Z2F93H13CQFJMnLtGqCY5va3rU9lvDPcH5ARq_8B5yyJWbjexjx4zJPw_Y7Frdt-E_w="
+          },
+          {
+            "title": "thk.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHFdzewWjpF8iZrPoeQRDkpoXgXePjt5kmWm1KmBhFYHzH8hz7WL-bkWHBF89N0n5-5p-gLJCoymEtMP0gCXpd0tw9t0_Y4mSn-1n9twO3MSvonXN72xYWEMdmxxTRd899dS-THIFvhyNpNxUgs"
+          },
+          {
+            "title": "igus.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCIUtEehTRtAKKFQbIOCmvQMnlksXZlkL_pRgTb6SPs53Zgi8fWY_ZZ9O7zYw3QzT_nJISLwTUzBT9ebZKNWIhzhFuVQHDh4vMb6JWpZeX04hKykT73oLURyVKzm3A1FB0"
+          },
+          {
+            "title": "globalindustrial.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG7IfcJo5MtmABpy4TMoLn2FWceYLdf_cKFjzFZnruTg-RaUlNagFYdwX_XZr1j_P-BZiFNl7UvlhVrD5sNXU4JLNw1hCGRJLIGbICQnEguFWWWnjVKr8O7ifmgFLePH03tKeLGVcCYhPnn8shBw-K24mjGPb7wPbRlUySDhKEWHFjJj32ZJ7E="
+          },
+          {
+            "title": "misumi-ec.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG7K84ev16HmOAYAjAb94ZedXyKTKmofSoFOumWenHSeHnjmAjab-sAZKCCJuTV1kHMgzm1utrD1kGb-O4c1KqZxfnxvkCtZftGcU-LUCCxehjvhz2ilblSvsOCdMpuk3uVQ7KS3lLiPL2srRbZ"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.igus.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCIUtEehTRtAKKFQbIOCmvQMnlksXZlkL_pRgTb6SPs53Zgi8fWY_ZZ9O7zYw3QzT_nJISLwTUzBT9ebZKNWIhzhFuVQHDh4vMb6JWpZeX04hKykT73oLURyVKzm3A1FB0",
+            "title": "igus.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.igus.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGQzto6hvkcW_jezhF2eZ-Nl_qqDKnaoMzxyPD5ldO8PeCU8reJw5OCYjxypdIilAc6lMqHzqtypBTZ7Z85jSLcTgD75EXoUxUdRBvbE4_4Fjdwxmydu3uQBXnVuZld66PtoA==",
+            "title": "igus.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.igus.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQElcmXz5AS88rHfsZuj8a4uaVF3POAZUybqvdFDMN1r9kaeZVhW08zoIPFybfSYIVUdZ31jRwMEbb6iZeFyZuZk_D5nPIm8IsD4GKOPSLDmd9v7cAvoXuZEHmAVYO-s_As5LT15onZD-3LK2e09torJwfQ=",
+            "title": "igus.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.youtube.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG3gLXQESDuGdKpfQzGvNOjnjuA9b2KM6kf55DnzmJKbnLIcCDSgD4kr_RpmLtAs7tu1LaQ9uiaomuwhhmHRV9LquBB13Ox3c0WMb8x1ssHA_p78DR7odOFZrzEh8CnlTs7UlxcdQ==",
+            "title": "youtube.com",
+            "class": "other"
+          },
+          {
+            "host": "us.misumi-ec.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG7K84ev16HmOAYAjAb94ZedXyKTKmofSoFOumWenHSeHnjmAjab-sAZKCCJuTV1kHMgzm1utrD1kGb-O4c1KqZxfnxvkCtZftGcU-LUCCxehjvhz2ilblSvsOCdMpuk3uVQ7KS3lLiPL2srRbZ",
+            "title": "misumi-ec.com",
+            "class": "distributor"
+          },
+          {
+            "host": "tech.thk.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHFdzewWjpF8iZrPoeQRDkpoXgXePjt5kmWm1KmBhFYHzH8hz7WL-bkWHBF89N0n5-5p-gLJCoymEtMP0gCXpd0tw9t0_Y4mSn-1n9twO3MSvonXN72xYWEMdmxxTRd899dS-THIFvhyNpNxUgs",
+            "title": "thk.com",
+            "class": "other"
+          },
+          {
+            "host": "www.thk.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEflQW6dxJpm9P14M2oKdJMsSSXIwWlWRfAbH8qM28GQ6T5ZtnMJrKxpaoO39atsV45VP8hVfD7YCURy1Jw-ua3lvi2Z2F93H13CQFJMnLtGqCY5va3rU9lvDPcH5ARq_8B5yyJWbjexjx4zJPw_Y7Frdt-E_w=",
+            "title": "thk.com",
+            "class": "other"
+          },
+          {
+            "host": "www.globalindustrial.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG7IfcJo5MtmABpy4TMoLn2FWceYLdf_cKFjzFZnruTg-RaUlNagFYdwX_XZr1j_P-BZiFNl7UvlhVrD5sNXU4JLNw1hCGRJLIGbICQnEguFWWWnjVKr8O7ifmgFLePH03tKeLGVcCYhPnn8shBw-K24mjGPb7wPbRlUySDhKEWHFjJj32ZJ7E=",
+            "title": "globalindustrial.com",
+            "class": "other"
+          },
+          {
+            "host": "www.thk.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGtVfEtnLsLsBVYtdKvn1sMgL7AuGLlNGowxhTybu8b--DIgItuyAXaJ-FjHOJmj3suaHtnMFqXG-sIx-qCY54uZDJDar9kMJ-umdF1HIyH1qlq5coLsurECjTwTRyQVD_ybmgHvAGCpkEKCjGgDA==",
+            "title": "thk.com",
+            "class": "other"
+          },
+          {
+            "host": "docs.rs-online.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHEsYMLxqpoc07qwinHN8i-jQN9JjLmgOJfRujh6AwjRD7QKd-AG5JL5AsJQlDOF-HnuoBnfsJggYbUtsgf7BVagkkPeojqoYJLE7frg0GUOS-VcSiVLVupNZnEPakkxGdp-TY0K0s6AvkotJSZnw==",
+            "title": "rs-online.com",
+            "class": "distributor"
+          }
+        ],
+        "counts": {
+          "manufacturer": 3,
+          "distributor": 2,
+          "marketplace": 0,
+          "other": 5
+        },
+        "primary": "other",
+        "total_sources": 10
+      },
+      "category": "CORRECT",
+      "rationale": "Google search confirms that WS-10-40-1000 is a valid 1000mm DryLin W double guide rail with 10mm shafts, and WJ200UM-01 is a genuine igus pillow block carriage featuring iglide J200 sliding elements. The technical comparison regarding dry-running sliding contacts versus lubricated recirculating ball bearings in dusty environments is also highly accurate."
     }
   ],
   "log": [
     "[  0.0s] Stage 0: validated igus.de (brand=igus)",
     "[  0.0s] Stage 1: generating queries (grounded against igus.de)",
-    "[ 32.9s]   Generated 5 queries",
-    "[ 32.9s] Stage 2: running 5 grounded queries against Gemini Pro",
-    "[ 83.7s] Stage 3: source attribution complete",
-    "[ 83.7s] Stage 4: categorizing answers",
-    "[109.2s] Stage 5: visibility=100 (5/5), source_authority=20 (1/5 manufacturer-sourced) in 109.2s"
+    "[ 30.0s]   Generated 5 queries",
+    "[ 30.0s] Stage 2: running 5 grounded queries against Gemini Pro",
+    "[ 61.0s] Stage 3: source attribution complete",
+    "[ 61.0s] Stage 4: categorizing answers",
+    "[ 95.0s] Stage 5: visibility=80 (4/5), source_authority=50 (2/4 manufacturer-sourced) in 95.0s"
   ],
-  "elapsed_seconds": 109.2,
+  "elapsed_seconds": 95.0,
   "slug": "igus",
   "display_name": "igus"
 }
