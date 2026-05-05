@@ -1,26 +1,28 @@
 """
-UltraRelevant Visibility Tool — v2 (URL input, Gemini-grounded, source-attributed)
+UltraRelevant Visibility Tool — v3 (3-dimension scoring: Found / Honest / Sourced)
 
-Honest engine: ONE agent (Gemini 3 Pro with Google Search grounding). No multi-agent
-matrix dressing. The wedge is source attribution — when an AI gets the answer right,
-who did it cite? The manufacturer's own site, or a distributor / marketplace?
+Three failure modes this engine measures:
+  1. Products not found — AI doesn't know the catalog (Found score)
+  2. Data hallucinated — AI invents specs or SKUs (Honest score)
+  3. Not used as source — distributor speaks for the manufacturer (Sourced score)
 
 Pipeline:
   1. URL in (e.g. https://igus.de). Extract canonical manufacturer domain.
-  2. Discover the company's products via grounded Gemini visiting the URL.
-  3. Generate 5 procurement-style queries.
-  4. Run each query through Gemini Pro WITH google_search grounding. Capture answer
+  2. Generate 10 hard procurement queries across 3 failure modes (4 Found + 4 Hallucinated + 2 Sourced).
+  3. Run each query through Gemini Pro WITH google_search grounding. Capture answer
      text + grounding source URLs.
-  5. Source attribution per query: classify each source URL as
+  4. Source attribution per query: classify each source URL as
      manufacturer / distributor / marketplace / other (against the input domain
      and a maintained distributor list).
-  6. Categorize each answer: CORRECT / HALLUCINATION / REFUSED / WRONG_SPEC.
+  5. Categorize each answer: CORRECT / HALLUCINATION / WRONG_SPEC / REFUSED / OUT_OF_CATALOG / ERROR.
      Judge is Gemini Pro grounded — uses search to verify the answer independently.
-  7. Score:
-       Visibility Score        = % of queries with CORRECT answers
-       Source Authority Score  = % of CORRECT answers where ALL/MAJORITY sources
-                                 were the manufacturer's own domain (not distributor /
-                                 marketplace).
+  6. Score 3 dimensions:
+       Found   = % of queries where AI gave a confident answer (didn't refuse / punt)
+       Honest  = % of confident answers that were CORRECT (not hallucinated/wrong)
+       Sourced = % of CORRECT answers where source was the manufacturer's own domain
+       Trust   = Found * Honest * Sourced / 10000  (multiplicative composite)
+
+  Legacy fields visibility_score + source_authority_score are kept for cache compatibility.
 
 Async polling protocol:
   POST /analyze     -> {job_id, status: "pending"}
@@ -303,67 +305,41 @@ def validate_url(url: str) -> dict:
 # and gives an artificially clean Visibility score). Real procurement is messier:
 # AI doesn't know the full catalog, hallucinates specs, invents products the
 # vendor doesn't make, and falls back to distributor/marketplace summaries.
-QUERY_GEN_PROMPT = """You are a B2B procurement engineer evaluating how reliably
-AI assistants answer real buyer questions about a single manufacturer.
+QUERY_GEN_PROMPT = """You are a B2B procurement engineer using AI assistants for hard-to-google requirements about products from "{company}". Your queries must be SPECIFIC enough that wrong answers cost real money.
 
-Manufacturer: {host}
-Use Google Search to learn what {host} actually sells — product families, catalog
-structure, flagship product lines, typical part-number formats, AND what they do
-NOT sell (adjacent categories that look like theirs but aren't in their catalog).
-Also note who their main competitor(s) are.
+Generate 10 queries split across 3 failure modes. The queries must be HARD — easy queries Gemini grounding nails every time and don't reveal anything interesting.
 
-Generate EXACTLY 5 queries, ONE per category below, IN THIS ORDER. Each query is
-a single procurement-style question (1-2 sentences, plain language, no markdown,
-no preamble) — written as if a buyer were typing it into Claude / GPT / Gemini.
+Use Google Search first to verify what {company} actually makes, their real product lines, real part-number formats, real competitors, and what they do NOT sell.
 
-CATEGORIES (one query each, in this exact order):
+A) FOUND (4 queries) — does AI know they make it?
+   - One ASKING for an obscure / regional / sub-brand product line (e.g. older catalog, eastern european market, OEM-only) that the company DOES make.
+   - One asking for a NEWER product (released in the last 18 months) — does AI know it exists?
+   - One asking for a SPECIFIC product variant by full model name (not just the family).
+   - One open-ended catalog question demanding a complete list of sub-brands the company owns.
 
-1. PRECISION_SKU — "I need a {{specific product type with real constraints}} from
-   {host}. Give me the part number." Tight enough that the correct answer is one
-   real, orderable SKU from {host}. This measures whether AI can pull the right
-   part number under constraints.
+B) HALLUCINATED (4 queries) — does AI invent specs/SKUs?
+   - One trap: a product type ADJACENT to the catalog but NOT in it. Phrase as if confident it exists.
+   - One asking for an EXACT spec that's only on the datasheet PDF, not the marketing page (e.g. coefficient of friction at 60°C, MTBF in cycles, IP rating in salt spray).
+   - One asking for a COMPLETE part number with three constraints: size + color/RAL + packaging.
+   - One asking for a CONFIGURATION not sold (e.g. "120V version of a 230V product", or "imperial-thread variant" of a metric one).
 
-2. CATALOG_DISCOVERY — "What categories of products does {host} offer? List the
-   main product families with one example each." This measures whether AI knows
-   the full breadth of the catalog (not just the famous flagship SKU).
+C) SOURCED (2 queries) — manufacturer or third-party as source?
+   - One asking for current pricing or lead time for bulk quantity.
+   - One asking for a head-to-head comparison vs a top competitor.
 
-3. SPEC_DEEP — "What is the exact {{maximum operating pressure / temperature /
-   load / IP rating / accuracy / etc., pick a realistic one for a flagship
-   product line of {host}}}?" Ask for a precise number on a specific named
-   product or product line. This measures whether AI hallucinates specs vs.
-   cites real datasheets.
+Each query: 1-2 sentences, sounds like a real procurement engineer in a hurry, no preamble.
 
-4. OUT_OF_CATALOG — "Does {host} sell {{a product category close to but NOT in
-   their catalog — choose something a non-expert buyer might plausibly assume
-   they make, but they don't}}? If yes, give me a part number; if no, say so
-   plainly." THIS IS THE KILLER QUERY: it exposes whether AI fabricates a SKU
-   for something the manufacturer does not make. The right answer is "no" with
-   no SKU. A confident SKU here is a real procurement risk.
-
-5. COMPETITIVE — "I'm comparing {host}'s {{flagship product line}} vs.
-   {{a real competitor's equivalent}}. What are the key differentiators and
-   which one is recommended for {{a specific use case}}?" This measures whether
-   AI defaults to distributor / marketplace summaries vs. the manufacturer's
-   own positioning.
-
-Rules:
-- Use real product families, real flagship lines, real competitors that you
-  verified via search. Do NOT invent product categories.
-- Each query must be answerable (or honestly refusable) by an AI assistant —
-  not a riddle.
-- Plain procurement language only. No preamble. No category labels in the query
-  text. No markdown.
-
-Return ONLY a JSON array of 5 strings in the order above (PRECISION_SKU first,
-COMPETITIVE last), no commentary:
-["query 1", "query 2", "query 3", "query 4", "query 5"]
+Return ONLY a JSON object:
+{{"found": ["q1","q2","q3","q4"], "hallucinated": ["q1","q2","q3","q4"], "sourced": ["q1","q2"]}}
+No commentary, no markdown.
 """
 
 
-def generate_queries(host: str) -> list[str]:
-    url = f"https://{host}/"
+def generate_queries(host: str) -> tuple[list[str], list[str]]:
+    """Returns (queries, categories) where categories are parallel lists of
+    'found' | 'hallucinated' | 'sourced' for each query."""
     raw = call_gemini_pro(
-        QUERY_GEN_PROMPT.format(host=host, url=url),
+        QUERY_GEN_PROMPT.format(company=host),
         grounded=True,
         timeout=180,
     )["text"]
@@ -373,15 +349,23 @@ def generate_queries(host: str) -> list[str]:
         if txt.startswith("json"):
             txt = txt[4:]
         txt = txt.strip()
-    # Pull the first JSON array out of the text in case of preamble.
-    start = txt.find("[")
-    end = txt.rfind("]")
+    # Pull the first JSON object out of the text in case of preamble.
+    start = txt.find("{")
+    end = txt.rfind("}")
     if start >= 0 and end > start:
         txt = txt[start : end + 1]
-    queries = json.loads(txt)
-    if not isinstance(queries, list) or len(queries) < 1:
-        raise ValueError("Bad query list from Gemini")
-    return [str(q).strip() for q in queries[:5] if str(q).strip()]
+    d = json.loads(txt)
+    if not isinstance(d, dict):
+        raise ValueError("Bad query object from Gemini")
+    found = [str(q).strip() for q in d.get("found", []) if str(q).strip()]
+    hallucinated = [str(q).strip() for q in d.get("hallucinated", []) if str(q).strip()]
+    sourced = [str(q).strip() for q in d.get("sourced", []) if str(q).strip()]
+    # Build parallel lists
+    queries = found + hallucinated + sourced
+    categories = (["found"] * len(found)) + (["hallucinated"] * len(hallucinated)) + (["sourced"] * len(sourced))
+    if not queries:
+        raise ValueError("Empty query list from Gemini")
+    return queries, categories
 
 
 # ---------- Stage 2: Run grounded query ----------
@@ -447,7 +431,7 @@ def attribute_sources(sources: list[dict], manufacturer_brand: str) -> dict:
 
 
 # ---------- Stage 4: Categorize ----------
-CATEGORIES = ["CORRECT", "HALLUCINATION", "OUT_OF_CATALOG_HALLUCINATION", "REFUSED", "WRONG_SPEC", "ERROR"]
+CATEGORIES = ["CORRECT", "HALLUCINATION", "OUT_OF_CATALOG", "REFUSED", "WRONG_SPEC", "ERROR"]
 
 JUDGE_SYSTEM = """You are a strict procurement judge with Google Search access. Given a query and an agent's response about a specific manufacturer, independently verify whether the answer is correct.
 
@@ -455,18 +439,18 @@ Use Google Search to check the manufacturer's catalog and authoritative distribu
 
 - CORRECT: The agent gave a verifiable, real, orderable answer (SKU, product family list, spec, or accurate comparison) that you confirmed against the manufacturer's catalog or an authoritative distributor. For "does company X sell Y?" questions, a correct honest "no, they don't sell Y" — with no fabricated SKU — is also CORRECT.
 - HALLUCINATION: The agent gave a confident specific SKU / part number / model name that you cannot verify exists in the manufacturer's catalog (wrong format, invalid concatenation, no search hits, or matches a different manufacturer).
-- OUT_OF_CATALOG_HALLUCINATION: The query asked whether the manufacturer sells a product category they do NOT actually make, and the agent confidently said yes and/or invented a SKU. This is a sub-class of hallucination specific to fabricating coverage of an out-of-catalog category. Use this category ONLY when the underlying product category is genuinely outside the manufacturer's catalog AND the agent claimed otherwise.
+- OUT_OF_CATALOG: The query asked whether the manufacturer sells a product category they do NOT actually make, and the agent confidently said yes and/or invented a SKU. This is a sub-class of hallucination specific to fabricating coverage of an out-of-catalog category. Use this category ONLY when the underlying product category is genuinely outside the manufacturer's catalog AND the agent claimed otherwise.
 - REFUSED: The agent declined to answer, deflected to "check the website", or gave only generic advice with no specific information when specific information was both available and asked for.
 - WRONG_SPEC: The agent gave a number / spec / fact that contradicts the catalog datasheet (off by 25%+, wrong unit, wrong product attribute) — not just a missing SKU.
 
 Tie-breakers:
-- If the query is OUT_OF_CATALOG style and the agent invents a SKU → OUT_OF_CATALOG_HALLUCINATION.
+- If the query is OUT_OF_CATALOG style and the agent invents a SKU → OUT_OF_CATALOG.
 - If the query is OUT_OF_CATALOG style and the agent says "no, they don't sell that" and the manufacturer indeed doesn't → CORRECT.
 - If the query is precision-SKU and the agent gave a vague non-answer → REFUSED.
 - If the agent gave a real SKU but with a wrong spec attribute → WRONG_SPEC.
 
 Return ONLY a JSON object:
-{"category": "CORRECT|HALLUCINATION|OUT_OF_CATALOG_HALLUCINATION|REFUSED|WRONG_SPEC", "rationale": "1-2 sentences citing what you verified via search"}"""
+{"category": "CORRECT|HALLUCINATION|OUT_OF_CATALOG|REFUSED|WRONG_SPEC", "rationale": "1-2 sentences citing what you verified via search"}"""
 
 JUDGE_PROMPT_TEMPLATE = """Manufacturer: {host}
 
@@ -526,8 +510,8 @@ def analyze_pipeline(url_input: str, progress_cb=None) -> dict:
 
     # Stage 1: generate queries
     step(f"Stage 1: generating queries (grounded against {host})")
-    queries = generate_queries(host)
-    step(f"  Generated {len(queries)} queries")
+    queries, query_categories = generate_queries(host)
+    step(f"  Generated {len(queries)} queries ({len([c for c in query_categories if c=='found'])} found / {len([c for c in query_categories if c=='hallucinated'])} hallucinated / {len([c for c in query_categories if c=='sourced'])} sourced)")
 
     # Stage 2 + 3: run grounded query, attribute sources (parallel across queries)
     step(f"Stage 2: running {len(queries)} grounded queries against Gemini Pro")
@@ -540,6 +524,7 @@ def analyze_pipeline(url_input: str, progress_cb=None) -> dict:
             attribution = attribute_sources(agent_resp.get("sources", []), brand)
             rows[i] = {
                 "query": q,
+                "query_category": query_categories[i],
                 "agent": agent_resp,
                 "attribution": attribution,
             }
@@ -562,18 +547,33 @@ def analyze_pipeline(url_input: str, progress_cb=None) -> dict:
             rows[i]["category"] = res["category"]
             rows[i]["rationale"] = res["rationale"]
 
-    # Stage 5: scores
+    # Stage 5: 3-dimension scores
     total = len(rows)
     correct_rows = [r for r in rows if r["category"] == "CORRECT"]
     correct = len(correct_rows)
+
+    # Legacy: visibility_score = % correct (kept for cache compatibility)
     visibility = round((correct / total) * 100) if total else 0
 
-    # Source authority: of the CORRECT rows, what % had primary=manufacturer?
+    # Source authority: of CORRECT rows, what % had primary=manufacturer?
     manufacturer_correct = sum(1 for r in correct_rows if r["attribution"]["primary"] == "manufacturer")
     if correct == 0:
         source_authority = 0
     else:
         source_authority = round((manufacturer_correct / correct) * 100)
+
+    # 3-dimension scoring
+    refused = sum(1 for r in rows if r["category"] == "REFUSED")
+    hallucinated_or_wrong = sum(
+        1 for r in rows
+        if r["category"] in ("HALLUCINATION", "WRONG_SPEC", "OUT_OF_CATALOG")
+    )
+    confident_answers = total - refused  # AI gave a specific answer, didn't punt
+
+    found_score = round(confident_answers / total * 100) if total else 0
+    honest_score = round(correct / confident_answers * 100) if confident_answers else 100
+    sourced_score = round(manufacturer_correct / correct * 100) if correct else 0
+    trust_score = round(found_score * honest_score * sourced_score / 10000)
 
     breakdown = {c: 0 for c in CATEGORIES}
     source_breakdown = {"manufacturer": 0, "distributor": 0, "marketplace": 0, "other": 0, "none": 0}
@@ -584,8 +584,8 @@ def analyze_pipeline(url_input: str, progress_cb=None) -> dict:
 
     elapsed = round(time.time() - started, 1)
     step(
-        f"Stage 5: visibility={visibility} ({correct}/{total}), "
-        f"source_authority={source_authority} ({manufacturer_correct}/{correct} manufacturer-sourced) "
+        f"Stage 5: found={found_score} honest={honest_score} sourced={sourced_score} trust={trust_score} "
+        f"(correct={correct}/{total}, mfg_sourced={manufacturer_correct}/{correct}) "
         f"in {elapsed}s"
     )
 
@@ -593,6 +593,12 @@ def analyze_pipeline(url_input: str, progress_cb=None) -> dict:
         "input": url_input,
         "host": host,
         "brand": brand,
+        # 3-dimension scores (new)
+        "found_score": found_score,
+        "honest_score": honest_score,
+        "sourced_score": sourced_score,
+        "trust_score": trust_score,
+        # Legacy scores (kept for cache compatibility)
         "visibility_score": visibility,
         "source_authority_score": source_authority,
         "total_queries": total,
@@ -746,6 +752,10 @@ def api_list() -> dict:
                     "host": d.get("host", ""),
                     "visibility_score": d.get("visibility_score", 0),
                     "source_authority_score": d.get("source_authority_score", 0),
+                    "found_score": d.get("found_score", d.get("visibility_score", 0)),
+                    "honest_score": d.get("honest_score", 0),
+                    "sourced_score": d.get("sourced_score", d.get("source_authority_score", 0)),
+                    "trust_score": d.get("trust_score", 0),
                 })
             except Exception:
                 pass

@@ -174,6 +174,7 @@
   .chip-score {
     font-size: 11px; font-weight: 600; padding: 1px 6px; border-radius: 999px;
   }
+  .chip-score.trust { background: #dbeafe; color: #1e40af; }
   .chip-score.vis { background: #dbeafe; color: #1e40af; }
   .chip-score.sa { background: #d1f5e4; color: #0a6b48; }
   .chips-loading { font-size: 13px; color: var(--muted); }
@@ -197,10 +198,11 @@
   .results { margin-top: 56px; }
 
   .scores-row {
-    display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
+    display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;
     margin-bottom: 28px;
   }
-  @media (max-width: 720px) { .scores-row { grid-template-columns: 1fr; } }
+  @media (max-width: 900px) { .scores-row { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 640px) { .scores-row { grid-template-columns: 1fr; } }
 
   /* ---- Mobile: 768px tablet ---- */
   @media (max-width: 768px) {
@@ -370,9 +372,18 @@
   }
   .cell-tag.correct { background: #d1f5e4; color: #0a6b48; }
   .cell-tag.hallucination { background: #ffe4ec; color: #9f1239; }
+  .cell-tag.out_of_catalog { background: #ffe4ec; color: #9f1239; }
   .cell-tag.refused { background: #eaf0fb; color: #4a5878; }
   .cell-tag.wrong_spec { background: #fef0d4; color: #8a4a07; }
   .cell-tag.error { background: #eaf0fb; color: #5b6685; }
+
+  .dim-tag {
+    display: inline-block; padding: 2px 8px; border-radius: 999px;
+    font-size: 10px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase;
+  }
+  .dim-tag.found { background: #eff6ff; color: #1d4ed8; }
+  .dim-tag.hallucinated { background: #fff7ed; color: #c2410c; }
+  .dim-tag.sourced { background: #f0fdf4; color: #15803d; }
 
   .source-badges { display: flex; gap: 6px; flex-wrap: wrap; }
   .source-badge {
@@ -438,7 +449,7 @@
 <section class="hero">
   <span class="badge"><span class="dot"></span> Live demo</span>
   <h1>AI is the new buyer. Are you the source?</h1>
-  <p class="subtitle">Paste your URL. We ask AI five real procurement questions about your products and check who AI cites: your site, a distributor, or a marketplace. Most manufacturers find their own site invisible.</p>
+  <p class="subtitle">Paste your URL. We ask AI 10 hard procurement questions about your products and measure three things: did AI find them, did it get the data right, and did it cite your site?</p>
 
   <div class="input-row">
     <input id="company" type="text" placeholder="https://igus.de  or  daw.de  or any manufacturer URL" autocomplete="off" />
@@ -461,7 +472,7 @@
 <div id="results" class="results" style="display:none"></div>
 
 <footer>
-  <div>5 procurement queries per run. Grounded Gemini. Real citations.</div>
+  <div>10 hard procurement queries per run. 3 dimensions: Found, Honest, Sourced. Grounded Gemini. Real citations.</div>
   <div style="margin-top:6px"><a href="https://ultrarelevant.com" target="_blank" rel="noopener">UltraRelevant</a></div>
 </footer>
 </div>
@@ -546,94 +557,112 @@ function fmtCounts(counts) {
 
 function render(result) {
   lastResult = result;
-  const vis = result.visibility_score != null ? result.visibility_score : (result.score || 0);
-  const sa = result.source_authority_score != null ? result.source_authority_score : 0;
-  const visCls = colorClass(vis);
-  const saCls = colorClass(sa);
+  // 3-dimension scores (v3) with fallback to legacy
+  const foundScore = result.found_score != null ? result.found_score : (result.visibility_score != null ? result.visibility_score : 0);
+  const honestScore = result.honest_score != null ? result.honest_score : 0;
+  const sourcedScore = result.sourced_score != null ? result.sourced_score : (result.source_authority_score != null ? result.source_authority_score : 0);
+  const trustScore = result.trust_score != null ? result.trust_score : 0;
 
   const rows = result.rows || [];
   const total = result.total_queries || rows.length;
   const correct = result.correct_queries != null ? result.correct_queries : (result.correct_cells || 0);
   const mfgCorrect = result.manufacturer_correct != null ? result.manufacturer_correct : 0;
+  const refused = (result.breakdown && result.breakdown.REFUSED) ? result.breakdown.REFUSED : 0;
+  const confidentAnswers = total - refused;
+  const wrongAnswers = confidentAnswers - correct;
 
   const host = result.host || result.company || "(unknown)";
 
   let rowsHtml = "";
   rows.forEach(function(row, ri){
-    // Support both v2 schema (single agent) and legacy v1 (multi-agent matrix)
-    let cat, badges, summary;
+    let cat, badges, dimTag;
     if (row.category) {
-      // v2
       cat = (row.category || "ERROR").toUpperCase();
       const counts = row.attribution ? row.attribution.counts : {};
-      badges = fmtCounts(counts) || '<span class="source-badge none">no sources</span>';
-      summary = (row.rationale || "").slice(0, 160);
+      badges = fmtCounts(counts) || ‘<span class="source-badge none">no sources</span>’;
+      const qc = row.query_category || "";
+      dimTag = qc ? ‘<span class="dim-tag ‘ + escapeHtml(qc) + ‘">’ + escapeHtml(qc) + ‘</span> ‘ : ‘’;
     } else {
-      // v1 legacy: aggregate
+      // v1 legacy
       const agentObj = row.agents || {};
       const agentNames = Object.keys(agentObj);
       const cats = agentNames.map(function(n){ return (agentObj[n].category || "ERROR").toUpperCase(); });
       const correctCount = cats.filter(function(c){ return c === "CORRECT"; }).length;
       cat = correctCount > 0 ? "CORRECT" : (cats.indexOf("HALLUCINATION") >= 0 ? "HALLUCINATION" : (cats[0] || "ERROR"));
-      badges = '<span class="source-badge other">' + correctCount + '/' + cats.length + ' agents</span>';
-      summary = "";
+      badges = ‘<span class="source-badge other">’ + correctCount + ‘/’ + cats.length + ‘ agents</span>’;
+      dimTag = ‘’;
     }
 
     rowsHtml +=
-      '<tr class="row" data-ri="' + ri + '" tabindex="0" role="button" aria-label="Open details for query ' + (ri + 1) + '">' +
-        '<td class="q">' + escapeHtml(row.query) + '</td>' +
-        '<td><span class="cell-tag ' + tagClass(cat) + '">' + cat.toLowerCase().replace("_"," ") + '</span></td>' +
-        '<td><div class="source-badges">' + badges + '</div></td>' +
-      '</tr>';
+      ‘<tr class="row" data-ri="’ + ri + ‘" tabindex="0" role="button" aria-label="Open details for query ‘ + (ri + 1) + ‘">’ +
+        ‘<td class="q">’ + dimTag + escapeHtml(row.query) + ‘</td>’ +
+        ‘<td><span class="cell-tag ‘ + tagClass(cat) + ‘">’ + cat.toLowerCase().replace(/_/g," ") + ‘</span></td>’ +
+        ‘<td><div class="source-badges">’ + badges + ‘</div></td>’ +
+      ‘</tr>’;
   });
 
-  const otherCorrect = correct - mfgCorrect;
-  const faviconUrl = 'https://www.google.com/s2/favicons?domain=' + encodeURIComponent(host) + '&sz=64';
+  const faviconUrl = ‘https://www.google.com/s2/favicons?domain=’ + encodeURIComponent(host) + ‘&sz=64’;
 
-  const soWhatPositive = sa >= 60;
-  const soWhatClass = soWhatPositive ? 'so-what-box positive' : 'so-what-box';
-  const soWhatHeadline = soWhatPositive
-    ? escapeHtml(host) + ' is mostly the source AI uses for its own products. That\'s rare.'
-    : escapeHtml(host) + ' doesn\'t control how AI describes its own products.';
-  const soWhatBody = soWhatPositive
-    ? 'Most manufacturers we test are at 0–20% — meaning third-parties speak for them to AI buyers. ' + escapeHtml(host) + ' stands out.'
-    : 'When AI answers buyer questions, it pulls from distributor catalogs, marketplaces, and third-party reviews. Those sites decide pricing, spec accuracy, and which competitors show up next to ' + escapeHtml(host) + '’s products.';
+  // So-what callout: surface worst dimension
+  const worst = Math.min(foundScore, honestScore, sourcedScore);
+  let soWhatClass, soWhatHeadline, soWhatBody;
+  if (worst === foundScore && foundScore < 80) {
+    soWhatClass = ‘so-what-box’;
+    soWhatHeadline = escapeHtml(host) + "’s products are partially invisible to AI buyers.";
+    soWhatBody = ‘AI couldn\’t confidently answer ‘ + (total - confidentAnswers) + ‘ of ‘ + total + ‘ real procurement questions about your products.’;
+  } else if (worst === honestScore && honestScore < 70) {
+    soWhatClass = ‘so-what-box’;
+    soWhatHeadline = ‘AI is making up specs for ‘ + escapeHtml(host) + "’s products.";
+    soWhatBody = ‘Of ‘ + confidentAnswers + ‘ confident answers, ‘ + wrongAnswers + ‘ were hallucinated, fabricated, or wrong-spec.’;
+  } else if (worst === sourcedScore && sourcedScore < 30) {
+    soWhatClass = ‘so-what-box’;
+    soWhatHeadline = escapeHtml(host) + ‘ is not the source AI uses for its own products.’;
+    soWhatBody = ‘AI got the answers right, but cited ‘ + (correct - mfgCorrect) + ‘ of ‘ + correct + ‘ from distributors and third-party sites instead of ‘ + escapeHtml(host) + ‘.’;
+  } else {
+    soWhatClass = ‘so-what-box positive’;
+    soWhatHeadline = escapeHtml(host) + ‘ is more visible than most. That\’s rare.’;
+    soWhatBody = "Most manufacturers we test fail at least one of the three dimensions. " + escapeHtml(host) + " stands out.";
+  }
 
   const html =
-    '<div class="result-header">' +
-      '<img class="result-header-favicon" src="' + escapeHtml(faviconUrl) + '" alt="" />' +
-      '<span class="result-header-host">' + escapeHtml(host) + '</span>' +
-    '</div>' +
-    '<div class="scores-row">' +
-      '<div class="score-card primary">' +
-        '<div class="score-label">Source Authority</div>' +
-        '<div class="score-num ' + saCls + '">' + sa + '<span class="denom">/100</span></div>' +
-        '<div class="score-fraction">' + mfgCorrect + ' of ' + correct + ' correct answers cited the manufacturer\'s own domain.</div>' +
-        '<div class="score-explainer">Of those correct answers, ' + mfgCorrect + ' cited ' + escapeHtml(host) + '. ' + otherCorrect + ' came from distributors, marketplaces, or somewhere else.</div>' +
-        '<div class="score-explainer-sub">When this is low, third-party sites are the source AI uses for ' + escapeHtml(host) + '’s products.</div>' +
-      '</div>' +
-      '<div class="score-card">' +
-        '<div class="score-label">Visibility</div>' +
-        '<div class="score-num ' + visCls + '">' + vis + '<span class="denom">/100</span></div>' +
-        '<div class="score-fraction">' + correct + ' of ' + total + ' procurement queries got a verifiable correct answer.</div>' +
-        '<div class="score-explainer">When buyers asked AI about ' + escapeHtml(host) + '’s products, AI got ' + correct + ' of ' + total + ' correct.</div>' +
-        '<div class="score-explainer-sub">100% means AI nailed every product question. Below 80% means buyers are getting wrong specs or made-up parts.</div>' +
-      '</div>' +
-    '</div>' +
-    '<div class="' + soWhatClass + '">' +
-      '<p class="so-what-headline">' + soWhatHeadline + '</p>' +
-      '<p class="so-what-body">' + soWhatBody + '</p>' +
-    '</div>' +
-    '<div class="methodology-note"><strong>Methodology note:</strong> Source Authority counts your exact corporate domain. Sister brands and subsidiaries (e.g. DAW\'s Caparol, Disbon) count as "other" — they\'re not the corporate site even though they share an owner.</div>' +
-    '<div class="meta-row">' +
-      '<span><strong>Domain:</strong> ' + escapeHtml(host) + '</span>' +
-      (result.elapsed_seconds ? '<span><strong>Run:</strong> ' + result.elapsed_seconds + 's</span>' : '') +
-      '<span style="margin-left:auto">Click any row for the agent\'s full response and source URLs</span>' +
-    '</div>' +
-    '<table class="matrix">' +
-      '<thead><tr><th>Procurement query</th><th>Verdict</th><th>Sources cited</th></tr></thead>' +
-      '<tbody>' + rowsHtml + '</tbody>' +
-    '</table>';
+    ‘<div class="result-header">’ +
+      ‘<img class="result-header-favicon" src="’ + escapeHtml(faviconUrl) + ‘" alt="" />’ +
+      ‘<span class="result-header-host">’ + escapeHtml(host) + ‘</span>’ +
+    ‘</div>’ +
+    ‘<div class="scores-row">’ +
+      ‘<div class="score-card primary">’ +
+        ‘<div class="score-label">Found</div>’ +
+        ‘<div class="score-num ‘ + colorClass(foundScore) + ‘">’ + foundScore + ‘<span class="denom">/100</span></div>’ +
+        ‘<div class="score-fraction">When buyers asked about ‘ + escapeHtml(host) + "’s products, AI gave a confident answer " + confidentAnswers + ‘ of ‘ + total + ‘ times.</div>’ +
+        ‘<div class="score-explainer-sub">Below 80% means AI doesn\’t know enough about your catalog.</div>’ +
+      ‘</div>’ +
+      ‘<div class="score-card">’ +
+        ‘<div class="score-label">Honest</div>’ +
+        ‘<div class="score-num ‘ + colorClass(honestScore) + ‘">’ + honestScore + ‘<span class="denom">/100</span></div>’ +
+        ‘<div class="score-fraction">Of those confident answers, ‘ + correct + ‘ of ‘ + confidentAnswers + " matched the real catalog. The rest were hallucinations or wrong specs.</div>" +
+        ‘<div class="score-explainer-sub">Below 80% means AI invents specs for your products.</div>’ +
+      ‘</div>’ +
+      ‘<div class="score-card">’ +
+        ‘<div class="score-label">Sourced</div>’ +
+        ‘<div class="score-num ‘ + colorClass(sourcedScore) + ‘">’ + sourcedScore + ‘<span class="denom">/100</span></div>’ +
+        ‘<div class="score-fraction">Of those correct answers, ‘ + mfgCorrect + ‘ cited ‘ + escapeHtml(host) + ‘. The rest came from distributors or third-party sites.</div>’ +
+        ‘<div class="score-explainer-sub">Below 30% means third-parties speak for you to AI buyers.</div>’ +
+      ‘</div>’ +
+    ‘</div>’ +
+    ‘<div class="’ + soWhatClass + ‘">’ +
+      ‘<p class="so-what-headline">’ + soWhatHeadline + ‘</p>’ +
+      ‘<p class="so-what-body">’ + soWhatBody + ‘</p>’ +
+    ‘</div>’ +
+    ‘<div class="methodology-note"><strong>Methodology note:</strong> Each query is judged independently. Scores reflect 10 queries per run. Source authority counts your exact corporate domain — sister brands and subsidiaries count as "other" even if they share an owner.</div>’ +
+    ‘<div class="meta-row">’ +
+      ‘<span><strong>Domain:</strong> ‘ + escapeHtml(host) + ‘</span>’ +
+      (result.elapsed_seconds ? ‘<span><strong>Run:</strong> ‘ + result.elapsed_seconds + ‘s</span>’ : ‘’) +
+      ‘<span style="margin-left:auto">Click any row for the agent\’s full response and source URLs</span>’ +
+    ‘</div>’ +
+    ‘<table class="matrix">’ +
+      ‘<thead><tr><th>Procurement query</th><th>Verdict</th><th>Sources cited</th></tr></thead>’ +
+      ‘<tbody>’ + rowsHtml + ‘</tbody>’ +
+    ‘</table>’;
 
   $("results").innerHTML = html;
   $("results").style.display = "block";
@@ -860,13 +889,14 @@ $("company").addEventListener("keydown", function(e){ if (e.key === "Enter") run
       if (!companies.length) return;
       const chipsEl = $("chips");
       chipsEl.innerHTML = companies.map(function(c){
-        const visClass = c.visibility_score >= 70 ? "vis" : (c.visibility_score >= 30 ? "vis" : "vis");
-        const saClass = c.source_authority_score >= 70 ? "sa" : "sa";
-        return '<button class="chip" data-slug="' + escapeHtml(c.slug) + '" aria-label="' + escapeHtml(c.display_name) + '">' +
+        const trust = c.trust_score != null ? c.trust_score : 0;
+        const found = c.found_score != null ? c.found_score : c.visibility_score;
+        const honest = c.honest_score != null ? c.honest_score : 0;
+        const sourced = c.sourced_score != null ? c.sourced_score : c.source_authority_score;
+        return '<button class="chip" data-slug="' + escapeHtml(c.slug) + '" aria-label="' + escapeHtml(c.display_name) + ' trust score ' + trust + '">' +
           '<span>' + escapeHtml(c.display_name) + '</span>' +
           '<span class="chip-scores">' +
-            '<span class="chip-score vis" title="Visibility score">' + c.visibility_score + '%</span>' +
-            '<span class="chip-score sa" title="Source authority score">' + c.source_authority_score + '%</span>' +
+            '<span class="chip-score trust" title="Trust score (Found \xd7 Honest \xd7 Sourced)">' + trust + '/100</span>' +
           '</span>' +
         '</button>';
       }).join("");
