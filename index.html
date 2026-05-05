@@ -298,7 +298,7 @@
   .score-num.green { color: var(--green); }
   .score-num.amber { color: var(--amber); }
   .score-num.red { color: var(--red); }
-  .score-num .denom { font-size: 24px; font-weight: 400; color: var(--muted); margin-left: 4px; }
+  .score-num .denom { font-size: 24px; font-weight: 400; color: var(--muted); margin-left: 6px; }
   .score-fraction { color: var(--muted); font-size: 13px; margin: 8px 0 0; }
   .score-explainer { color: var(--fg); font-size: 14px; line-height: 1.5; margin: 14px 0 0; }
   .score-explainer-sub { color: var(--muted); font-size: 12px; line-height: 1.5; margin: 6px 0 0; }
@@ -323,6 +323,12 @@
   .so-what-box.positive {
     background: #f0faf5; border-color: #b7e8d0;
   }
+
+  .methodology-note {
+    font-size: 12px; color: var(--muted); line-height: 1.55;
+    margin: -16px 0 28px; padding: 0 4px;
+  }
+  .methodology-note strong { font-weight: 600; }
   .so-what-headline {
     font-size: 15px; font-weight: 600; color: var(--fg); margin: 0 0 6px;
     letter-spacing: -0.01em;
@@ -355,6 +361,7 @@
   table.matrix tr:last-child td { border-bottom: none; }
   table.matrix tr.row { cursor: pointer; transition: background 0.1s; }
   table.matrix tr.row:hover { background: #f8faff; }
+  table.matrix tr.row:focus-visible { outline: 2px solid var(--secondary); outline-offset: -2px; background: #f8faff; }
   table.matrix td.q { width: 50%; color: var(--fg); font-weight: 500; }
 
   .cell-tag {
@@ -573,7 +580,7 @@ function render(result) {
     }
 
     rowsHtml +=
-      '<tr class="row" data-ri="' + ri + '">' +
+      '<tr class="row" data-ri="' + ri + '" tabindex="0" role="button" aria-label="Open details for query ' + (ri + 1) + '">' +
         '<td class="q">' + escapeHtml(row.query) + '</td>' +
         '<td><span class="cell-tag ' + tagClass(cat) + '">' + cat.toLowerCase().replace("_"," ") + '</span></td>' +
         '<td><div class="source-badges">' + badges + '</div></td>' +
@@ -617,6 +624,7 @@ function render(result) {
       '<p class="so-what-headline">' + soWhatHeadline + '</p>' +
       '<p class="so-what-body">' + soWhatBody + '</p>' +
     '</div>' +
+    '<div class="methodology-note"><strong>Methodology note:</strong> Source Authority counts your exact corporate domain. Sister brands and subsidiaries (e.g. DAW\'s Caparol, Disbon) count as "other" — they\'re not the corporate site even though they share an owner.</div>' +
     '<div class="meta-row">' +
       '<span><strong>Domain:</strong> ' + escapeHtml(host) + '</span>' +
       (result.elapsed_seconds ? '<span><strong>Run:</strong> ' + result.elapsed_seconds + 's</span>' : '') +
@@ -629,9 +637,21 @@ function render(result) {
 
   $("results").innerHTML = html;
   $("results").style.display = "block";
-  document.querySelectorAll("table.matrix tr.row").forEach(function(tr){
-    tr.addEventListener("click", function(){ openModal(parseInt(tr.dataset.ri)); });
-  });
+  // Event delegation: click and keyboard (Enter/Space) on any .row
+  var tbody = $("results").querySelector("table.matrix tbody");
+  if (tbody) {
+    tbody.addEventListener("click", function(e){
+      var row = e.target.closest(".row");
+      if (row) openModal(parseInt(row.dataset.ri));
+    });
+    tbody.addEventListener("keydown", function(e){
+      if (e.key !== "Enter" && e.key !== " ") return;
+      var row = e.target.closest(".row");
+      if (!row) return;
+      e.preventDefault();
+      openModal(parseInt(row.dataset.ri));
+    });
+  }
 }
 
 function openModal(ri) {
