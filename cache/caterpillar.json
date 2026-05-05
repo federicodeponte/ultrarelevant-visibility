@@ -1,0 +1,693 @@
+{
+  "slug": "caterpillar",
+  "display_name": "Caterpillar",
+  "input": "https://caterpillar.com",
+  "host": "caterpillar.com",
+  "brand": "caterpillar",
+  "found_score": 100,
+  "honest_score": 90,
+  "sourced_score": 0,
+  "trust_score": 0,
+  "visibility_score": 90,
+  "source_authority_score": 0,
+  "total_queries": 10,
+  "correct_queries": 9,
+  "manufacturer_correct": 0,
+  "breakdown": {
+    "CORRECT": 9,
+    "HALLUCINATION": 0,
+    "OUT_OF_CATALOG": 0,
+    "REFUSED": 0,
+    "WRONG_SPEC": 1,
+    "ERROR": 0
+  },
+  "source_breakdown": {
+    "manufacturer": 0,
+    "distributor": 0,
+    "marketplace": 1,
+    "other": 9,
+    "none": 0
+  },
+  "rows": [
+    {
+      "query": "We're building custom water pulls and need to source four Wheel Tractor Scraper tractor-only power units from Caterpillar OEM Solutions. Do these bare frontless power units ship with the APECS transmission controls pre-installed?",
+      "query_category": "found",
+      "agent": {
+        "text": "Yes, Caterpillar's Wheel Tractor-Scraper (WTS) tractor-only power units ship with the Advanced Productivity Electronic Control System (APECS) pre-installed. The APECS software and transmission controls are standard powertrain components on these partial machines, designed to optimize engine power, torque, and fuel efficiency.\n\nI cannot provide a specific orderable catalog SKU. Caterpillar's bare frontless power units\u2014available in the 621, 631, and 651 Partial Scraper model classes\u2014are highly customizable major capital equipment intended for specialty integrations like water pulls, elevating scrapers, and tow tractors. Because they are built-to-order based on specific customer requirements (such as regional engine emissions tiers, hitch interfaces, and safety accessories), they do not utilize a universal, single part number. \n\nTo procure these units, you must define the base model size (e.g., 621, 631, or 651 Partial Scraper) and finalize the configuration quote directly through your local Cat dealer or Caterpillar OEM Solutions.",
+        "sources": [
+          {
+            "title": "cat.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRqFrutHebdygXOXDIeMSdsUAdytuUTX7YTWTV4u9nuPCGi2sw1HSdWosHEottdyVIxtGa84IKqFFoJFFe7JQPNzVEPEI-eFIT6spLOGKc6e4zGNdFcTD90ePBrBkCnuq7ttGNNF6HREIf44nANtmRSkVIuwS3FWT64p7PWPmZ01H55f_cEWoRPYU="
+          },
+          {
+            "title": "zieglercat.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGqAm2ZnkvRa-JDYGV_l57Em5qBUuh6rruRYMOM4Ms6knimKCxVOeFVUtRw7EXTPWVjD8PsF3C-HFCHtmeWl5QZBa11pPOd2LTuxHhB1Ct2C5gAWDR4X_0DMTNbbSw5X_Jl2bE4KfSUN3pye4JnxE0QpD8krXQwzVedYB3hjUUA8PjqgrlUQ62aJn8mXTw2Wtl9qVhI0KKnQ2kfyQnkfgM="
+          },
+          {
+            "title": "cat.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGdvTo-TG8V8OCKx3VKZw_aCzmCym9Ghax3GThHvrO2tHse7HXzCKerg9Q1H-e3yVDBoJRqLMgnG9Ac24D92BwYGKZ6eU7i_5Uv6AAwi9bOfVEJR7ZsUVLSpimXGjkpC3UyIa3Eo5F4v2isWEx47xTMSIdd8C3TfgiKgfsfl1FBB5GluRkBtNS9XzmCMRhbhNE9OBZNy9JGIe12p1lIDg=="
+          },
+          {
+            "title": "scene7.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH9q87Or2TT6_e5NUGa0HQiW7PxvInQ-MhfjXlEvsAojYVglKFcszkt6DOoGAvn3dr2gFhoTgQUlYoM5fx0l05rTqT0sWrT_3qD4Q1nQJyMuluvHG5GhBqhHox70tSrcYPibjiJzx9JM8tV6hZPOc_fIZbN3SB53GwS2w4YmPagEUR9YxpUJg=="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.zieglercat.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGqAm2ZnkvRa-JDYGV_l57Em5qBUuh6rruRYMOM4Ms6knimKCxVOeFVUtRw7EXTPWVjD8PsF3C-HFCHtmeWl5QZBa11pPOd2LTuxHhB1Ct2C5gAWDR4X_0DMTNbbSw5X_Jl2bE4KfSUN3pye4JnxE0QpD8krXQwzVedYB3hjUUA8PjqgrlUQ62aJn8mXTw2Wtl9qVhI0KKnQ2kfyQnkfgM=",
+            "title": "zieglercat.com",
+            "class": "other"
+          },
+          {
+            "host": "caterpillar.scene7.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH9q87Or2TT6_e5NUGa0HQiW7PxvInQ-MhfjXlEvsAojYVglKFcszkt6DOoGAvn3dr2gFhoTgQUlYoM5fx0l05rTqT0sWrT_3qD4Q1nQJyMuluvHG5GhBqhHox70tSrcYPibjiJzx9JM8tV6hZPOc_fIZbN3SB53GwS2w4YmPagEUR9YxpUJg==",
+            "title": "scene7.com",
+            "class": "other"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGdvTo-TG8V8OCKx3VKZw_aCzmCym9Ghax3GThHvrO2tHse7HXzCKerg9Q1H-e3yVDBoJRqLMgnG9Ac24D92BwYGKZ6eU7i_5Uv6AAwi9bOfVEJR7ZsUVLSpimXGjkpC3UyIa3Eo5F4v2isWEx47xTMSIdd8C3TfgiKgfsfl1FBB5GluRkBtNS9XzmCMRhbhNE9OBZNy9JGIe12p1lIDg==",
+            "title": "cat.com",
+            "class": "other"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRqFrutHebdygXOXDIeMSdsUAdytuUTX7YTWTV4u9nuPCGi2sw1HSdWosHEottdyVIxtGa84IKqFFoJFFe7JQPNzVEPEI-eFIT6spLOGKc6e4zGNdFcTD90ePBrBkCnuq7ttGNNF6HREIf44nANtmRSkVIuwS3FWT64p7PWPmZ01H55f_cEWoRPYU=",
+            "title": "cat.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 4
+        },
+        "primary": "other",
+        "total_sources": 4
+      },
+      "category": "CORRECT",
+      "rationale": "Search results confirm that Caterpillar OEM Solutions offers 621, 631, and 651 Partial Scraper power units for custom integrations like water pulls. Official specifications for these machines explicitly list the Advanced Productivity Electronic Control System (APECS) as a standard integrated powertrain feature. The agent correctly identified the available models and accurately explained the built-to-order dealer procurement process."
+    },
+    {
+      "query": "My team is evaluating the newly released Cat 285 XE compact track loader for heavy forestry work. Can you confirm its rated operating capacity and whether it competes in the new larger size class?",
+      "query_category": "found",
+      "agent": {
+        "text": "Yes, the Cat 285 XE competes in a newly created, larger size class. It is Caterpillar's largest compact track loader ever produced, built specifically to tackle heavy-duty applications like heavy excavation and forestry mulching. \n\nHere is the confirmed capability data:\n* **Rated Operating Capacity (ROC):** 4,520 lbs at 35% tipping load, which increases to 4,816 lbs when equipped with counterweights. At a 50% tipping load, the ROC reaches 6,457 lbs.\n* **Size & Power:** The machine operates with 134 gross horsepower, a 146-inch lift height, and 13,920 lbs of tilt breakout force.\n\n**SKU/Part Number details:** I cannot answer with a specific orderable SKU. Heavy machinery like the Cat 285 XE does not use single catalog part numbers because units are built to order. \"285 XE\" serves as the base model designation. Because your team is evaluating this for heavy forestry work, procurement will need to configure the machine directly through a Cat dealer, likely adding specialized factory configurations like the Land Management package (which includes heavy-duty guarding, specialized sealing, and high-flow hydraulics).",
+        "sources": [
+          {
+            "title": "auctiontime.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEuxpfRcJ5RQ3wXPuemtnlfnX1_YmKykXW6hBVahq5WEiFeAN2oawtRr0QxZ9QjWHhBClXk8KNRBIjUKRZHmEhzUX2h6mQcnGqP6NQYYYb1qZWwAjfreGRC3dKLkRoPMidQ86BZWNr-WPxbk376tS50b-nqz3jXfMPgUNrhO9Pj_8YiCv7YlIB9Ez9YYO2nL5BBYFWdG-DsEbsLZ49v1iJogDWqRQPjD5WGtwy7vKpEIOFu92_FPYncWdAKo_5B9zF1_FNzapoEKZeu3VMkBXj4h5TJ"
+          },
+          {
+            "title": "miltoncat.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5d2obTnyp0vdULNDs6eA244NihE9XX6S17idWtLQZTlKJpJc7kDh5v8rbm45v7F1il5Wx0e2s_tzVYz_JXv6IVeeMAjsjywtn_y_De5zyvrsgXt_-GKBZifW-MQkITQ8IX5lKjSFVH_DHSr6U"
+          },
+          {
+            "title": "skidsteers.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHSpHQwo1bKYE8yy98OatG3YafhyJRJsh_ZNkBHhhxGo4xDeDKckXE9MSfvhueCZFcAtY0lvT8U-REoOclfbpFuy89GHV7nhbqGyytvXBIC7mSoJFw74uVQflAtacItNpNc1AWukw6zqrgp1uEOsrmT"
+          },
+          {
+            "title": "macallister.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFt1KGHEtTpAdqVx883udK_U3kB-y3395wa8wT5YnTHiouTjBma3FDDS9C0Ez96ITtZinTa-q7ByDi4sf-HkgnRm0V4gxd_ny60felQFPcc1V9FeV-SbFcdSEvuMbUkEyjXYVLwjWEsFzSy-nefNfXThXcfrghYwszZLcDGH9Y9XwvCXgzNYnGD0IKodNQS82Z0eCrvbKb7vCxqExnfMDM="
+          },
+          {
+            "title": "gregorypoole.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHjrTXcYJZhZkzKzTAVsq-vMePJIenFP-snYc44bbpOJGuoA8r5t-tRj-ftcKf7FnXCSf8l7DnfcCzv0rxVo3RWz6Z3ECU4GNUvxru24O4Xxv0ViIdQ65AmOzx43Sv--v_ne6wDyRG8JfDDTLzN28IZP00DyWqN"
+          },
+          {
+            "title": "cat.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFeaGr0SD59Zk5igahn-5UWZxVMnRdYipzBAZs1RpBlAdBpYG_OghjONTKz2cC-2JO1otGOpfnJDWXSVRdOo67BgZaxTpeXyGtrrJey6-0USaaUTN9cJTfAQJcUNjPIkBaanwV9qlCmVNEth6xvMa5a75frpWW_VW-1sLSA-2Ba6Li-gRCgd3i7JF47xlr42S_fxe2EAzCv0upMzPI9cHtYtgFScwENMJ2YsRYhycgFX1mtjY4j3X4tMCM2QvoNihc5CYqlpgi90Puc64KNbCOEiTSGDJWxiG2qjV9LHf4VaA5Uz5sRS3cTZkX0qaQGEWsYrQLUS7QoJ1MQV3kH"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.skidsteers.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHSpHQwo1bKYE8yy98OatG3YafhyJRJsh_ZNkBHhhxGo4xDeDKckXE9MSfvhueCZFcAtY0lvT8U-REoOclfbpFuy89GHV7nhbqGyytvXBIC7mSoJFw74uVQflAtacItNpNc1AWukw6zqrgp1uEOsrmT",
+            "title": "skidsteers.com",
+            "class": "other"
+          },
+          {
+            "host": "www.auctiontime.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEuxpfRcJ5RQ3wXPuemtnlfnX1_YmKykXW6hBVahq5WEiFeAN2oawtRr0QxZ9QjWHhBClXk8KNRBIjUKRZHmEhzUX2h6mQcnGqP6NQYYYb1qZWwAjfreGRC3dKLkRoPMidQ86BZWNr-WPxbk376tS50b-nqz3jXfMPgUNrhO9Pj_8YiCv7YlIB9Ez9YYO2nL5BBYFWdG-DsEbsLZ49v1iJogDWqRQPjD5WGtwy7vKpEIOFu92_FPYncWdAKo_5B9zF1_FNzapoEKZeu3VMkBXj4h5TJ",
+            "title": "auctiontime.com",
+            "class": "other"
+          },
+          {
+            "host": "compact.miltoncat.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5d2obTnyp0vdULNDs6eA244NihE9XX6S17idWtLQZTlKJpJc7kDh5v8rbm45v7F1il5Wx0e2s_tzVYz_JXv6IVeeMAjsjywtn_y_De5zyvrsgXt_-GKBZifW-MQkITQ8IX5lKjSFVH_DHSr6U",
+            "title": "miltoncat.com",
+            "class": "other"
+          },
+          {
+            "host": "www.gregorypoole.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHjrTXcYJZhZkzKzTAVsq-vMePJIenFP-snYc44bbpOJGuoA8r5t-tRj-ftcKf7FnXCSf8l7DnfcCzv0rxVo3RWz6Z3ECU4GNUvxru24O4Xxv0ViIdQ65AmOzx43Sv--v_ne6wDyRG8JfDDTLzN28IZP00DyWqN",
+            "title": "gregorypoole.com",
+            "class": "other"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFeaGr0SD59Zk5igahn-5UWZxVMnRdYipzBAZs1RpBlAdBpYG_OghjONTKz2cC-2JO1otGOpfnJDWXSVRdOo67BgZaxTpeXyGtrrJey6-0USaaUTN9cJTfAQJcUNjPIkBaanwV9qlCmVNEth6xvMa5a75frpWW_VW-1sLSA-2Ba6Li-gRCgd3i7JF47xlr42S_fxe2EAzCv0upMzPI9cHtYtgFScwENMJ2YsRYhycgFX1mtjY4j3X4tMCM2QvoNihc5CYqlpgi90Puc64KNbCOEiTSGDJWxiG2qjV9LHf4VaA5Uz5sRS3cTZkX0qaQGEWsYrQLUS7QoJ1MQV3kH",
+            "title": "cat.com",
+            "class": "other"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFt1KGHEtTpAdqVx883udK_U3kB-y3395wa8wT5YnTHiouTjBma3FDDS9C0Ez96ITtZinTa-q7ByDi4sf-HkgnRm0V4gxd_ny60felQFPcc1V9FeV-SbFcdSEvuMbUkEyjXYVLwjWEsFzSy-nefNfXThXcfrghYwszZLcDGH9Y9XwvCXgzNYnGD0IKodNQS82Z0eCrvbKb7vCxqExnfMDM=",
+            "title": "macallister.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 6
+        },
+        "primary": "other",
+        "total_sources": 6
+      },
+      "category": "CORRECT",
+      "rationale": "Search results confirm the Cat 285 XE specifications provided by the agent: 4,520 lbs ROC at 35% tipping load (which increases to 4,816 lbs with the 296 lb counterweight addition), 6,457 lbs at 50%, 13,920 lbs tilt breakout force, 134 maximum horsepower, and an approximate 146-inch lift height. The agent also accurately noted that heavy equipment uses base model designations rather than a single catalog SKU."
+    },
+    {
+      "query": "I need the exact high-altitude derating curve and ambient temperature tolerances for the Cat G3500K series natural gas generator set. We're installing this prime power unit at a 2,000-meter elevation facility.",
+      "query_category": "found",
+      "agent": {
+        "text": "I cannot answer with a specific SKU, as high-altitude derating curves and ambient temperature tolerances are engineering performance data, not physically orderable part numbers.\n\nThe Cat G3500K series natural gas generators (currently featuring the 2.5 MW G3520K HR) are specifically designed for improved, reliable performance at high altitudes and elevated ambient temperatures compared to previous generations. However, Caterpillar does not publish a single, universal derating curve for these units. The exact power deration and temperature tolerance for a 2,000-meter elevation facility heavily depend on site-specific variables, including your exact gas fuel's methane number, humidity, and your aftercooler system configurations. \n\nTo obtain the precise derating curve and ambient tolerances for your prime power installation, your project parameters must be processed through Caterpillar\u2019s GERP (Gas Engine Rating Pro) software. This data is also detailed in Caterpillar's proprietary Gas Engine Performance \"Blue Book\" (e.g., document LEBQ6169). You will need to contact your local Caterpillar dealership's engineering team to run a customized GERP analysis and provide the official performance data sheet for your 2,000-meter site.",
+        "sources": [
+          {
+            "title": "oemoffhighway.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHPrecW2Vavt52lraaqUsSLRgGiAypAh-hmRQWOzfpJXjMLaoeM6tayGhDNkMUNNkmeS4O2GOGX4wug3KOsl-hggJkTKeIfLJ2ffRjpwKqZ6HBadqW0ZHpcStYEhcPYQIKLTjsv-SLiTFX01gSx_db21_jZyVN7C3-0TVCssQNhLRjsJLzCg6fVubYQadutQRvahclnpVTjD4rM5Y3UoDCrBw4pemgCEtFlpni5ylnXHh7aQ9irsZiy7fuuu3BjAYN6c3bcKCD740jT4BeNe2tF8w=="
+          },
+          {
+            "title": "cat.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFgHucZcvsQJfzH-QaGSHyZKr8spPwfrIrbhKdYJQT021Dui5h4g9TkP3UJFP0d3MyWGYB5LKfmcLzt-ER2n665eyYbbyXhuZOjeUwMfyk_yy0zCsvvqlNZlnMu0BJaQdyqauZ31dN4rp39LF7N3o_jr21SC_I0UisLQGtoJEyjrCvH09fBPExHXAITSrxeNQCm_J2M6w_RdQ79q_UQU60JqdIuhJwPsfkWRYJs"
+          },
+          {
+            "title": "bs-weigelt.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEO2jLk18PpOA4elFw82UL8_ppCQfSV2F56Fl5yyykPLN2Silubg3nTmN4uti4E6nBwBduxDjHol4xM5OrLQmWg2BjIQQt1RNdaJ5u1Y2A9AtZnbDz8NGUcm0uu8UkMdgF8f9NkFOFlRuFA6F6lixAGiDN2bVuCTzcjOzhoEwcVep7H9tUdgky-"
+          },
+          {
+            "title": "slideshare.net",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFOPI2VGKPcLF_Q4eY-r2J0H934Ihf2Fgo6kHlx4KmodIFU2wiQ7rwbZvwusFoJHOSIWop4GkBmeL4FPbPOTVP6ehsksQkxbOdLtAnOn7-HkIJ5BaKmEK8fdMkl20LL0zGhlThMCtxD5eOBvCSARkjyEoEZXg=="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.slideshare.net",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFOPI2VGKPcLF_Q4eY-r2J0H934Ihf2Fgo6kHlx4KmodIFU2wiQ7rwbZvwusFoJHOSIWop4GkBmeL4FPbPOTVP6ehsksQkxbOdLtAnOn7-HkIJ5BaKmEK8fdMkl20LL0zGhlThMCtxD5eOBvCSARkjyEoEZXg==",
+            "title": "slideshare.net",
+            "class": "other"
+          },
+          {
+            "host": "www.bs-weigelt.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEO2jLk18PpOA4elFw82UL8_ppCQfSV2F56Fl5yyykPLN2Silubg3nTmN4uti4E6nBwBduxDjHol4xM5OrLQmWg2BjIQQt1RNdaJ5u1Y2A9AtZnbDz8NGUcm0uu8UkMdgF8f9NkFOFlRuFA6F6lixAGiDN2bVuCTzcjOzhoEwcVep7H9tUdgky-",
+            "title": "bs-weigelt.de",
+            "class": "other"
+          },
+          {
+            "host": "www.oemoffhighway.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHPrecW2Vavt52lraaqUsSLRgGiAypAh-hmRQWOzfpJXjMLaoeM6tayGhDNkMUNNkmeS4O2GOGX4wug3KOsl-hggJkTKeIfLJ2ffRjpwKqZ6HBadqW0ZHpcStYEhcPYQIKLTjsv-SLiTFX01gSx_db21_jZyVN7C3-0TVCssQNhLRjsJLzCg6fVubYQadutQRvahclnpVTjD4rM5Y3UoDCrBw4pemgCEtFlpni5ylnXHh7aQ9irsZiy7fuuu3BjAYN6c3bcKCD740jT4BeNe2tF8w==",
+            "title": "oemoffhighway.com",
+            "class": "other"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFgHucZcvsQJfzH-QaGSHyZKr8spPwfrIrbhKdYJQT021Dui5h4g9TkP3UJFP0d3MyWGYB5LKfmcLzt-ER2n665eyYbbyXhuZOjeUwMfyk_yy0zCsvvqlNZlnMu0BJaQdyqauZ31dN4rp39LF7N3o_jr21SC_I0UisLQGtoJEyjrCvH09fBPExHXAITSrxeNQCm_J2M6w_RdQ79q_UQU60JqdIuhJwPsfkWRYJs",
+            "title": "cat.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 4
+        },
+        "primary": "other",
+        "total_sources": 4
+      },
+      "category": "CORRECT",
+      "rationale": "Search results confirm that Caterpillar does not provide a single universal derating curve, but rather uses their Gas Engine Rating Pro (GERP) software to calculate site-specific altitude and temperature derations based on variables like methane number. The agent accurately identified this process, correctly referenced the 2.5 MW G3520K HR model, and cited the verified Caterpillar G3500 Engine Performance document (LEBQ6169)."
+    },
+    {
+      "query": "We are mapping out our global supplier matrix and need a complete list of Caterpillar's industrial sub-brands. Make sure to include all rail, turbine, and engine divisions such as Progress Rail, Solar Turbines, MWM, and SEM.",
+      "query_category": "found",
+      "agent": {
+        "text": "I cannot answer with a specific SKU, as your question requires a corporate brand list rather than a specific orderable part number.\n\nTo help you map your global supplier matrix, here is the complete list of Caterpillar's recognized industrial, rail, turbine, and engine sub-brands based on their official corporate portfolio:\n\n**Engine, Turbine, and Rail Divisions**\n*   **Progress Rail:** Rolling stock and infrastructure (includes Electro-Motive Diesel / EMD)\n*   **Solar Turbines:** Industrial gas turbines for power generation and oil & gas\n*   **MWM:** Sustainable gas engines and generator sets\n*   **Perkins:** Diesel and gas engines\n*   **MaK:** Medium-speed marine engines\n*   **FG Wilson:** Generator sets\n*   **Turner Powertrain Systems:** Heavy-duty transmissions\n\n**Machinery, Oil & Gas, and Component Brands**\n*   **SEM:** Earthmoving equipment (loaders, compactors, graders)\n*   **SPM Oil & Gas:** Oilfield surface production and flow control equipment\n*   **Hindustan:** Wheel loaders and off-highway trucks\n*   **AsiaTrak:** Undercarriage components\n*   **Anchor:** Hydraulic hoses and steel couplings\n\n**Core Equipment & Services**\n*   **Cat** (Flagship brand)\n*   **Cat Financial, Cat Lift Trucks, Cat Reman, and Cat Rentals**",
+        "sources": [
+          {
+            "title": "caterpillar.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEGeKe6q8sOuMnFXtLsz1pV7BT_c4Gi_h8716hM58_nUSe177aPJx8G4yjerJ0-lAcYJ3LRo_39YGcnip4ZQV9QgUqVyuL7IMM73tx0GfkRd03Mt_x8ClUwLQXZVOsuAQaJzYcnNv6ZCPfKKDJ-nyPp3w95asxddnyMdYZsMwXmds6N1A4SKktt23EgpdTiokxS"
+          },
+          {
+            "title": "caterpillar.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEbTwt8XkVbcyfoCc9UR4akae8Dv2jnMGX0iOHUyw6stzr_97HxEZqoBPHvnrk3dLXkpBDAB60G7oILj3jbkgj15C8BpP8-SRMj8DDoIENCgtkvBde_aKALgCHSKhGXiJWNYx41pR5X-tnN73ke_uxtyy94e8NIDGOmb-mbl9tuB4b-zTezSRoCFAsOErrlAADIGpzGGX8V8pTrVPX5sGEzXdcrVGUkQ4t7EAw="
+          },
+          {
+            "title": "caterpillar.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjg0wtZFH4EnG5b2unNwr_xEWf8b0NS3iHDtp4oEFsphPKs5qEWAYZr6vuKRAAZQYKV1aIKlzQyGP-fz114OMAdIiOdHkojycGY3QPp7G_su22aZUILNyOvE0HwCcLPMUrXdbQdbZE3ElU-SWY_Le6WWMyRgwWh3m5dM6tJmqxN7_-hB0sMbRMTqmVt7aTt25APFcT5w=="
+          },
+          {
+            "title": "medium.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHiA7-TPtx7Y5yStK0UWwLIsazwfPsO4CZvSlpk-RAaMOAlI9EaGwvx5iS3ql-ADesqLyZcQpOneayZhCpV4v2hl39qekLdY-R9jbTP6v2QPbauATIrNeGw9TbONk-L2DwUKp_0ShebcckuhYKYNSstCd3chrIvuoLC7gwmNC_aWRHtFyTZfSsueD2m2KLIDz15b9-gmAhm5ZP54MhMhu_K9baFPvOQQiEEwponuipy2LrGBMuP9Vp_CoIUNaLAXMf23J88thb8dF2ROm7B6Q=="
+          },
+          {
+            "title": "caterpillar.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFS18_F2KvhSPaXKyIQ9mkN3lwRIuZUPeJpzZF97QVfvY6xviLlbZPPB4MMoZGRGfeJW7DESYtL2e6_pt6s0n0S3ZdsKCC7PQxq538jwGRsDNEWlD0KXfi5hVCcC48jQ2-bsvPD2Q=="
+          },
+          {
+            "title": "caterpillar.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHMYxJzPiCatP1PGiOHUT5nZFKb9VHSHORIsga7HcZJ4NW3oYKo1RC4-ShLPqZTGW5v6Fe9vAeiAHqW02xuDPBedpq0ZC4R0TKYhXaulE0jF3A4KfqU0pM="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "abhijeetpratap.medium.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHiA7-TPtx7Y5yStK0UWwLIsazwfPsO4CZvSlpk-RAaMOAlI9EaGwvx5iS3ql-ADesqLyZcQpOneayZhCpV4v2hl39qekLdY-R9jbTP6v2QPbauATIrNeGw9TbONk-L2DwUKp_0ShebcckuhYKYNSstCd3chrIvuoLC7gwmNC_aWRHtFyTZfSsueD2m2KLIDz15b9-gmAhm5ZP54MhMhu_K9baFPvOQQiEEwponuipy2LrGBMuP9Vp_CoIUNaLAXMf23J88thb8dF2ROm7B6Q==",
+            "title": "medium.com",
+            "class": "other"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHMYxJzPiCatP1PGiOHUT5nZFKb9VHSHORIsga7HcZJ4NW3oYKo1RC4-ShLPqZTGW5v6Fe9vAeiAHqW02xuDPBedpq0ZC4R0TKYhXaulE0jF3A4KfqU0pM=",
+            "title": "caterpillar.com",
+            "class": "other"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFS18_F2KvhSPaXKyIQ9mkN3lwRIuZUPeJpzZF97QVfvY6xviLlbZPPB4MMoZGRGfeJW7DESYtL2e6_pt6s0n0S3ZdsKCC7PQxq538jwGRsDNEWlD0KXfi5hVCcC48jQ2-bsvPD2Q==",
+            "title": "caterpillar.com",
+            "class": "other"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEbTwt8XkVbcyfoCc9UR4akae8Dv2jnMGX0iOHUyw6stzr_97HxEZqoBPHvnrk3dLXkpBDAB60G7oILj3jbkgj15C8BpP8-SRMj8DDoIENCgtkvBde_aKALgCHSKhGXiJWNYx41pR5X-tnN73ke_uxtyy94e8NIDGOmb-mbl9tuB4b-zTezSRoCFAsOErrlAADIGpzGGX8V8pTrVPX5sGEzXdcrVGUkQ4t7EAw=",
+            "title": "caterpillar.com",
+            "class": "other"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEGeKe6q8sOuMnFXtLsz1pV7BT_c4Gi_h8716hM58_nUSe177aPJx8G4yjerJ0-lAcYJ3LRo_39YGcnip4ZQV9QgUqVyuL7IMM73tx0GfkRd03Mt_x8ClUwLQXZVOsuAQaJzYcnNv6ZCPfKKDJ-nyPp3w95asxddnyMdYZsMwXmds6N1A4SKktt23EgpdTiokxS",
+            "title": "caterpillar.com",
+            "class": "other"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjg0wtZFH4EnG5b2unNwr_xEWf8b0NS3iHDtp4oEFsphPKs5qEWAYZr6vuKRAAZQYKV1aIKlzQyGP-fz114OMAdIiOdHkojycGY3QPp7G_su22aZUILNyOvE0HwCcLPMUrXdbQdbZE3ElU-SWY_Le6WWMyRgwWh3m5dM6tJmqxN7_-hB0sMbRMTqmVt7aTt25APFcT5w==",
+            "title": "caterpillar.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 6
+        },
+        "primary": "other",
+        "total_sources": 6
+      },
+      "category": "CORRECT",
+      "rationale": "The agent correctly provided a comprehensive and accurate list of Caterpillar's official sub-brands (including Progress Rail, Solar Turbines, MWM, Perkins, SEM, SPM Oil & Gas, and others), which matches Caterpillar's current corporate brand portfolio."
+    },
+    {
+      "query": "Our fleet manager requested three Cat 940 GC wheel loaders to bridge the gap between our 938 and 950 models. What are the standard bucket capacity options for the 940 GC?",
+      "query_category": "hallucinated",
+      "agent": {
+        "text": "I cannot provide a specific SKU or bucket capacity because **Caterpillar does not manufacture a \"940 GC\" wheel loader**. \n\nIn Caterpillar's wheel loader lineup, the size classes jump directly from the 938 (the largest of the small wheel loaders) to the 950 series (the start of the medium wheel loaders). There is no 940 or 940 GC model produced to bridge this gap. \n\nIt is highly likely your fleet manager is referring to the **Cat 950 GC**, which is specifically marketed as a reliable, lower-cost \"GC\" tier alternative in that exact size class. If your team actually needs the 950 GC, its standard bucket capacities typically range from 2.5 to 4.4 yd\u00b3 (1.9 to 3.3 m\u00b3). \n\nPlease verify the requested model with your fleet manager. Once confirmed (e.g., 950 GC or 938M), I can provide the exact, orderable bucket part numbers for your application.",
+        "sources": [
+          {
+            "title": "empire-cat.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHHEq1fGo4ryghOAcidb-1MvDCQVGZW6CkxfWHWLKXKMimFq5KXKGX9U1R8LKtFl2lFmPZhViV9dhgEDE7M3-M70c2tbF5Sv-VO4QOdx_lih7e-FWsIx6CVboQwS1D4SZBZmhco9FBQeBHiVkr2y8pvERAZEC14cJ0Wlf4pUl5GIteRQbR-1i8LIvvoN7pBraHNRl__OCOD"
+          },
+          {
+            "title": "teknoxgroup.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGWioIwMuxJhmd6dGknIRM9tGuALdo3j_E_xFvvBjrkAMoB-6rKRqfEpLhnv7dTGiTbUtgWQ5tSR-6audlT0Unf6QMC0y9iSnYbWfbw6--j9JTDsCRYWwkCuuHIWHyH9D0el5bLmF6pVKJgGt4ZJje5139P1CUfl_fgeqLwc3lPGTuC"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.teknoxgroup.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGWioIwMuxJhmd6dGknIRM9tGuALdo3j_E_xFvvBjrkAMoB-6rKRqfEpLhnv7dTGiTbUtgWQ5tSR-6audlT0Unf6QMC0y9iSnYbWfbw6--j9JTDsCRYWwkCuuHIWHyH9D0el5bLmF6pVKJgGt4ZJje5139P1CUfl_fgeqLwc3lPGTuC",
+            "title": "teknoxgroup.com",
+            "class": "other"
+          },
+          {
+            "host": "www.empire-cat.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHHEq1fGo4ryghOAcidb-1MvDCQVGZW6CkxfWHWLKXKMimFq5KXKGX9U1R8LKtFl2lFmPZhViV9dhgEDE7M3-M70c2tbF5Sv-VO4QOdx_lih7e-FWsIx6CVboQwS1D4SZBZmhco9FBQeBHiVkr2y8pvERAZEC14cJ0Wlf4pUl5GIteRQbR-1i8LIvvoN7pBraHNRl__OCOD",
+            "title": "empire-cat.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 2
+        },
+        "primary": "other",
+        "total_sources": 2
+      },
+      "category": "WRONG_SPEC",
+      "rationale": "The agent correctly identified that Caterpillar does not manufacture a '940 GC' wheel loader and logically suggested the real 950 GC model instead. However, the agent provided an incorrect bucket capacity for the 950 GC, stating 2.5 to 4.4 yd\u00b3 (1.9 to 3.3 m\u00b3). According to the official Caterpillar catalog, the 950 GC's actual bucket capacities range from 2.5 to 4.4 m\u00b3 (3.3 to 5.75 yd\u00b3); the agent erroneously swapped the metric and imperial units, resulting in a specification that is off by over 25%."
+    },
+    {
+      "query": "I'm looking at the OEM spec sheet for the Cat 1R-0716 spin-on filter housing and need the exact figures. What is its Mean Time Between Failures (MTBF) in cycles and its specific IP rating for 500-hour salt spray exposure?",
+      "query_category": "hallucinated",
+      "agent": {
+        "text": "The Caterpillar **1R-0716** is a real, orderable part number for a standard-efficiency spin-on engine oil filter. \n\nHowever, neither a Mean Time Between Failures (MTBF) nor an Ingress Protection (IP) rating applies to this component, and you will not find these exact figures on its spec sheet. \n\n*   **MTBF in cycles:** The 1R-0716 is a passive, consumable filter with a cellulose media. It is designed to be discarded and replaced at regular preventative maintenance intervals (based on engine operating hours or mileage). Because it is a disposable wear item rather than a mechanical or electronic assembly, it is not rated using MTBF cycles.\n*   **IP Rating:** IP (Ingress Protection) ratings specifically apply to electrical enclosures to categorize their defense against dust and water intrusion. As a disposable mechanical fluid filter, it does not have an IP rating. While Cat filter housings are painted to resist corrosion, they do not carry IP ratings for salt spray exposure.\n\nIf you need to replace this item, the exact manufacturer SKU to order is simply **1R-0716**.",
+        "sources": [
+          {
+            "title": "industrialstop.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH29c-ykzrChsJLFTDOAfEcfVj-r4-UMps75XhTvMpHpZ_VFt6LYheE58EDEsSlasyMlZCCxirdEDwWa6M25iT9QjngUtS1p-tkAH-mUaeM2Vw4HZL_yD6SmEMdtZNkGviMtuY-CNMNuYyO1Q0qdBRajBuA-loQv1bF8w8F0BVl9eR5tlCpbx2uTcfWCotnzBnWzPxcQXFFdjgr"
+          },
+          {
+            "title": "ebay.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHxjb44zSKx71A_unbMW8JZgjvgdw3W1dwb13QbKnmINFRqW5efQQYICtTPy8b_BbdHsNkAxN5ImaFopkZenHnDd8Dr0E-oJyO8NyQ9qdsl3JUumiWsv_Kdlod451vLI6c="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.industrialstop.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH29c-ykzrChsJLFTDOAfEcfVj-r4-UMps75XhTvMpHpZ_VFt6LYheE58EDEsSlasyMlZCCxirdEDwWa6M25iT9QjngUtS1p-tkAH-mUaeM2Vw4HZL_yD6SmEMdtZNkGviMtuY-CNMNuYyO1Q0qdBRajBuA-loQv1bF8w8F0BVl9eR5tlCpbx2uTcfWCotnzBnWzPxcQXFFdjgr",
+            "title": "industrialstop.com",
+            "class": "other"
+          },
+          {
+            "host": "www.ebay.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHxjb44zSKx71A_unbMW8JZgjvgdw3W1dwb13QbKnmINFRqW5efQQYICtTPy8b_BbdHsNkAxN5ImaFopkZenHnDd8Dr0E-oJyO8NyQ9qdsl3JUumiWsv_Kdlod451vLI6c=",
+            "title": "ebay.com",
+            "class": "marketplace"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 1,
+          "other": 1
+        },
+        "primary": "marketplace",
+        "total_sources": 2
+      },
+      "category": "CORRECT",
+      "rationale": "Verified via Caterpillar distributor catalogs that the 1R-0716 is a real, orderable standard-efficiency spin-on engine oil filter. The agent correctly identified the part and accurately explained that electrical IP ratings and MTBF cycle counts do not apply to passive, disposable fluid filters."
+    },
+    {
+      "query": "We need to reorder Cat part number 782-4419 for our maintenance depot. Please quote the M14 imperial-thread variant, painted in RAL 1028 Yellow, packaged in the 50-unit bulk shrink-wrap.",
+      "query_category": "hallucinated",
+      "agent": {
+        "text": "We cannot provide a quote or a specific SKU for your request, as **782-4419 is not a valid, recognized Caterpillar part number**. \n\nFurthermore, the specifications provided contain engineering and branding contradictions that prevent us from identifying a valid off-the-shelf component:\n* **Thread Mismatch:** \"M14\" designates a 14-millimeter metric thread. It is physically impossible to have an \"M14 imperial-thread\" variant. \n* **Color Mismatch:** OEM Caterpillar parts are painted in their proprietary \"Cat Yellow.\" RAL 1028 (Melon Yellow) is a European standard color not typically used for standard Cat catalog parts. \n\nWe do not invent part numbers for items that do not exist in the manufacturer's catalog. If you have an updated, correct part number\u2014or if this is a custom aftermarket component rather than an OEM Cat part\u2014please provide the corrected details or dimensions so we can assist you properly.",
+        "sources": [
+          {
+            "title": "indonetwork.co.id",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH41VcE9djrqpq8zmMmooGdVcwo5lb0poSGXPny4fd_dlLnGWOXdf0KHKz_0V92Rl2d2TbzdVFyXvmWGr1QEJM7HxqmnQIgA0XhvgU4azu3I8nzVSOE-IKJzKhN11_CW7tm_SHyE2Ch0DRCBGR8CUzf1bT_ka8qke5klwI_v1j-0IS9T6RdKYTxeGFwulis1_M396JtHzAXTQCp"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "en.indonetwork.co.id",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH41VcE9djrqpq8zmMmooGdVcwo5lb0poSGXPny4fd_dlLnGWOXdf0KHKz_0V92Rl2d2TbzdVFyXvmWGr1QEJM7HxqmnQIgA0XhvgU4azu3I8nzVSOE-IKJzKhN11_CW7tm_SHyE2Ch0DRCBGR8CUzf1bT_ka8qke5klwI_v1j-0IS9T6RdKYTxeGFwulis1_M396JtHzAXTQCp",
+            "title": "indonetwork.co.id",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 1
+        },
+        "primary": "other",
+        "total_sources": 1
+      },
+      "category": "CORRECT",
+      "rationale": "Verified via search that 782-4419 is not a valid Caterpillar part number. The agent accurately identified the fabricated SKU, correctly noted the physical impossibility of an 'M14 imperial' thread (since M designates metric), and rightly stated that OEM Cat parts use proprietary Cat Yellow rather than RAL 1028."
+    },
+    {
+      "query": "Due to zero-emissions indoor mining requirements, we need the factory-built 480V tethered electric configuration of the Cat 305 CR mini excavator. Can you provide the specs for the tether management system on this 305 CR variant?",
+      "query_category": "hallucinated",
+      "agent": {
+        "text": "Caterpillar does not manufacture a factory-built 480V tethered electric configuration for the Cat 305 CR mini excavator. Because this specific variant does not exist in Caterpillar's catalog, I cannot provide an orderable part number (SKU) or specifications for a tether management system. \n\nWhile Caterpillar has introduced zero-emissions equipment for indoor and underground requirements, the 305 CR is currently only offered with a standard diesel engine. If you require factory-built electric compact equipment from Cat, the current catalog includes:\n\n*   **Cat 300.9D VPS (Versatile Power System):** A micro excavator that pairs with a standalone 480V tethered hydraulic power unit for indoor emissions-free operation.\n*   **Cat 301.9 Electric:** A fully battery-electric mini excavator (not 480V tethered).\n\nTo fulfill your zero-emissions requirement for a 5-ton class excavator, you will need to either explore third-party aftermarket electric conversions for the 305 CR or look to alternative manufacturers that offer tethered or battery-electric machines in this specific weight class.",
+        "sources": [
+          {
+            "title": "constructionequipmentguide.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQr42AedHkSUdAKoTUrSxiQtrOwz7t09c9f8CHD__qmCZQSgQXx3g0AEToYq9Mbh5dPHxCqbFVqRf0TbHWvBstypPOlH329mQ8lwtt6jA9sw_wKmTK-SXHpG3R_yfTPcCFwvQcVRzwy88LAOh45VmTKG6RkEMtdFSojcNvNpiCJNXGkmwL8LE10jkTpEFpaaP_y9T8stfc"
+          },
+          {
+            "title": "scene7.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5f0zXKKFVpU8rI1jiDcYy51qco6yzJAoMCLlTSKAArZbyjJcu3EsF2ka0ho8rqt0g7-_L9Ofr8lm0w5EPB7oPy_8AjBLKMtsZ4COjNQvvxUPlECb_KTZqOszdcR1Zg7GTTxI50cv6DVS9xlwrLgGDi-z45oePYs_QptVPKuxw"
+          },
+          {
+            "title": "westrac.com.au",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQErgCId_9Z-DJ40eYE8etShRQ6Fg1DD5DEfCrdO8Ku8dLli0EatN2GC62hKPbLXC5Z-6ssqh08-tnOxgDt2Jx0SSvnSr15pjZjYWpEcgpCxdf7JtFCccx0r81BRvF9omqm-qL8Fo5oPkGlJ_yBKg6H6i1g1MHHJAbMnruNYURGbQGsVyc_djics4zBXp8xq7pc="
+          },
+          {
+            "title": "compactequip.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEfIE2bjRAWW9QfwBx5KuziaiIgsj_J0LpH_SNSSrryV-bFLZH0PzqRBI2y95dYDIHDi-RiGkdrLHPf3vf0Il--ygK2cWnqZ5L_xl5RsgpZMinV7SoNWp6t3XrRpGO7hL44vY1iQ6ZxdunUxtJweXEH6NdoBST9J4CyBdRVoktJii49fkzkXbQvKMIFxPQWMhf8Rfp3B3qmh6cv9kK8jOiWPmmPB2BA9QY1K56gKvNl6lkXmqadp3OcfsXXov6g"
+          },
+          {
+            "title": "youtube.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHUbC7gDW0TeLMSMTl6a_h3-GXm8CnsnwDR6BP3FVlgvrM9_QEkzMhy0pySyivS1rpaPCxfoCLuyc4TnaooOJs_fTvGpwhnQq_R2qCw3q6d08Zmnsvtw6bp9mBGfpLUtywZo_3O5rs="
+          },
+          {
+            "title": "cat.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE1s4hKf61zaUmQb4geSKxDBXhjyuMVUDfOrJXf_fd7lIZIchy5OJV9nkm-iNagGsfNoetljSpopzqW7OkXeIaFxHxKrzfdlwSx2jGcG5TzPVNYwmf9yMl0NCAASHqxf_yP4wA91E-7bdNjLWccK0ZY7b8FplE7IYzwpV_k9Qt-ANI68zk="
+          },
+          {
+            "title": "electrek.co",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEm_JeMhMkDB-qKUCpp461LW9mACPyodlIYwpJwSZNdLdedyUjO7Z_6Fk0nLKA4zTw9wxteoQMAhQE7AFhhSHD5OcvsvVsrZfsMGHf0CXYbElI_J_IuUkJ41MKejftmhrDOmJDtDgMQAEF8OgAYSs9W01CgXfR6g8slQn8nNc14Qj0fLQLO6gsIPL1P3uFrQWd24A0ygQ=="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.constructionequipmentguide.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQr42AedHkSUdAKoTUrSxiQtrOwz7t09c9f8CHD__qmCZQSgQXx3g0AEToYq9Mbh5dPHxCqbFVqRf0TbHWvBstypPOlH329mQ8lwtt6jA9sw_wKmTK-SXHpG3R_yfTPcCFwvQcVRzwy88LAOh45VmTKG6RkEMtdFSojcNvNpiCJNXGkmwL8LE10jkTpEFpaaP_y9T8stfc",
+            "title": "constructionequipmentguide.com",
+            "class": "other"
+          },
+          {
+            "host": "s7d2.scene7.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5f0zXKKFVpU8rI1jiDcYy51qco6yzJAoMCLlTSKAArZbyjJcu3EsF2ka0ho8rqt0g7-_L9Ofr8lm0w5EPB7oPy_8AjBLKMtsZ4COjNQvvxUPlECb_KTZqOszdcR1Zg7GTTxI50cv6DVS9xlwrLgGDi-z45oePYs_QptVPKuxw",
+            "title": "scene7.com",
+            "class": "other"
+          },
+          {
+            "host": "www.youtube.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHUbC7gDW0TeLMSMTl6a_h3-GXm8CnsnwDR6BP3FVlgvrM9_QEkzMhy0pySyivS1rpaPCxfoCLuyc4TnaooOJs_fTvGpwhnQq_R2qCw3q6d08Zmnsvtw6bp9mBGfpLUtywZo_3O5rs=",
+            "title": "youtube.com",
+            "class": "other"
+          },
+          {
+            "host": "electrek.co",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEm_JeMhMkDB-qKUCpp461LW9mACPyodlIYwpJwSZNdLdedyUjO7Z_6Fk0nLKA4zTw9wxteoQMAhQE7AFhhSHD5OcvsvVsrZfsMGHf0CXYbElI_J_IuUkJ41MKejftmhrDOmJDtDgMQAEF8OgAYSs9W01CgXfR6g8slQn8nNc14Qj0fLQLO6gsIPL1P3uFrQWd24A0ygQ==",
+            "title": "electrek.co",
+            "class": "other"
+          },
+          {
+            "host": "compactequip.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEfIE2bjRAWW9QfwBx5KuziaiIgsj_J0LpH_SNSSrryV-bFLZH0PzqRBI2y95dYDIHDi-RiGkdrLHPf3vf0Il--ygK2cWnqZ5L_xl5RsgpZMinV7SoNWp6t3XrRpGO7hL44vY1iQ6ZxdunUxtJweXEH6NdoBST9J4CyBdRVoktJii49fkzkXbQvKMIFxPQWMhf8Rfp3B3qmh6cv9kK8jOiWPmmPB2BA9QY1K56gKvNl6lkXmqadp3OcfsXXov6g",
+            "title": "compactequip.com",
+            "class": "other"
+          },
+          {
+            "host": "www.westrac.com.au",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQErgCId_9Z-DJ40eYE8etShRQ6Fg1DD5DEfCrdO8Ku8dLli0EatN2GC62hKPbLXC5Z-6ssqh08-tnOxgDt2Jx0SSvnSr15pjZjYWpEcgpCxdf7JtFCccx0r81BRvF9omqm-qL8Fo5oPkGlJ_yBKg6H6i1g1MHHJAbMnruNYURGbQGsVyc_djics4zBXp8xq7pc=",
+            "title": "westrac.com.au",
+            "class": "other"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE1s4hKf61zaUmQb4geSKxDBXhjyuMVUDfOrJXf_fd7lIZIchy5OJV9nkm-iNagGsfNoetljSpopzqW7OkXeIaFxHxKrzfdlwSx2jGcG5TzPVNYwmf9yMl0NCAASHqxf_yP4wA91E-7bdNjLWccK0ZY7b8FplE7IYzwpV_k9Qt-ANI68zk=",
+            "title": "cat.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 7
+        },
+        "primary": "other",
+        "total_sources": 7
+      },
+      "category": "CORRECT",
+      "rationale": "Google Search confirms that Caterpillar does not produce a factory-built 480V tethered electric version of the 305 CR mini excavator, which is currently only offered with a diesel engine. The agent accurately denied the existence of this variant and correctly identified the 300.9D VPS and 301.9 Electric as the actual electric mini excavators available in Cat's catalog."
+    },
+    {
+      "query": "What is the estimated factory lead time and expected unit pricing if we order a bulk quantity of fifteen Cat 301 CR micro mini excavators for our European rental fleet?",
+      "query_category": "sourced",
+      "agent": {
+        "text": "Caterpillar does not use standard, universal orderable SKUs for heavy machinery. The Cat 301 CR micro mini excavator is configured-to-order based on cab, track, and attachment options. I cannot provide a specific SKU; you must request a custom build configuration through your authorized European dealer (e.g., Zeppelin Baumaschinen).\n\n**Estimated Factory Lead Time**\nThe newest Cat 301 CR model was previewed at CONEXPO in March 2026, with official commercial availability scheduled for Q1 2027. If you place a 15-unit bulk order today, factory lead times will extend into at least early 2027, heavily dependent on your local dealer's regional allocation.\n\n**Expected Unit Pricing**\nCaterpillar does not publish flat factory pricing or direct-to-buyer bulk rates. Unit prices are determined exclusively by the dealer and will fluctuate based on the machine's exact build (e.g., auxiliary hydraulics, folding ROPS), regional logistics, and the specific volume discount negotiated for your 15-unit rental fleet. You must request a formal B2B quote directly from your dealer to get accurate pricing.",
+        "sources": [
+          {
+            "title": "cat.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHIvBJJh8717WE2Caxok8hbA_he2uA1SBXnDQgavUy1fjeUnuUmgAQQgbSE0ZoDxrgPJlwOXOJpbUEmh0CJpoAlz0eKgBWKGe0o0k1Knx-_vTz5jxp2PNhln-gEnKeSKqg0x7IW0HovntXgNhIsKG1_9po8RnPG7IZe7m0AE-NPxDwDKFV21Cbyg0KHwZQCTFRj3AMDZ5w0kH2IRsZ3zYxA6pUHy4T_7CBTNY5Q-PUkfrR0x9PvQvp1s-niXuqt8_2p"
+          },
+          {
+            "title": "youtube.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFoftCaL2KDhZ_koYiPXNxIXG-X7uyu-gnm9YSwRIa3-8yivWVqsgPLMJC20Sf5A-qW45syuSboWQJLugi0XdD5jW91Nl-iE4fx4m61mfaQa_H7xXbrwiZcVExWGSAe5cd1mHOB0oM="
+          },
+          {
+            "title": "cat.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGymJ11ZmK0Nkh6M7qcYkfCbXPXLKyA-JKMAfrcNKKvkvgkhv5HEoPYqgVg1Od59C6sbKjj2mH31qsXCPqQkdapVL5AkfncitIeZ3PsXG0D4EhmsGhW4WceOlYXPXFc4R03NiroFbTIQw816x3sMxYuavvuwqGdvQqZ8irEXm2365jtw4tC7jm4AnYwJ_kk8OscYTLCuE3qFYEojq3AK5hnQ60fvYfG0ys1BGLVN1nAWYDUdn0PUQ3cbypylGIIrrI="
+          },
+          {
+            "title": "cat.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEqjd9iaEvT6srN4TVE4D-IFtVGmFnJFhqFc1fj5iy9c6q9zIfzLykJ7rSMPwHnGoQtvsp4dKyy-Fcijg824zRYfVpFc-VXX4BxsJQCbDotDcusLRUJZ-yGm5QGAho9bCFKqId2DSjg7CN_qpXhhJiUGBUm3ymKVYeGjcpAUK5rCnAJpw5e0xj7LpOprFq7WIu9ssiOZQ=="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.youtube.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFoftCaL2KDhZ_koYiPXNxIXG-X7uyu-gnm9YSwRIa3-8yivWVqsgPLMJC20Sf5A-qW45syuSboWQJLugi0XdD5jW91Nl-iE4fx4m61mfaQa_H7xXbrwiZcVExWGSAe5cd1mHOB0oM=",
+            "title": "youtube.com",
+            "class": "other"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHIvBJJh8717WE2Caxok8hbA_he2uA1SBXnDQgavUy1fjeUnuUmgAQQgbSE0ZoDxrgPJlwOXOJpbUEmh0CJpoAlz0eKgBWKGe0o0k1Knx-_vTz5jxp2PNhln-gEnKeSKqg0x7IW0HovntXgNhIsKG1_9po8RnPG7IZe7m0AE-NPxDwDKFV21Cbyg0KHwZQCTFRj3AMDZ5w0kH2IRsZ3zYxA6pUHy4T_7CBTNY5Q-PUkfrR0x9PvQvp1s-niXuqt8_2p",
+            "title": "cat.com",
+            "class": "other"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGymJ11ZmK0Nkh6M7qcYkfCbXPXLKyA-JKMAfrcNKKvkvgkhv5HEoPYqgVg1Od59C6sbKjj2mH31qsXCPqQkdapVL5AkfncitIeZ3PsXG0D4EhmsGhW4WceOlYXPXFc4R03NiroFbTIQw816x3sMxYuavvuwqGdvQqZ8irEXm2365jtw4tC7jm4AnYwJ_kk8OscYTLCuE3qFYEojq3AK5hnQ60fvYfG0ys1BGLVN1nAWYDUdn0PUQ3cbypylGIIrrI=",
+            "title": "cat.com",
+            "class": "other"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEqjd9iaEvT6srN4TVE4D-IFtVGmFnJFhqFc1fj5iy9c6q9zIfzLykJ7rSMPwHnGoQtvsp4dKyy-Fcijg824zRYfVpFc-VXX4BxsJQCbDotDcusLRUJZ-yGm5QGAho9bCFKqId2DSjg7CN_qpXhhJiUGBUm3ymKVYeGjcpAUK5rCnAJpw5e0xj7LpOprFq7WIu9ssiOZQ==",
+            "title": "cat.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 4
+        },
+        "primary": "other",
+        "total_sources": 4
+      },
+      "category": "CORRECT",
+      "rationale": "Search confirms the Cat 301 CR micro mini excavator was previewed at CONEXPO in March 2026 with commercial availability slated for early 2027. The agent correctly identified this timeline to answer the lead time query and accurately explained Caterpillar's dealer-based pricing and configuration model."
+    },
+    {
+      "query": "We are torn between the newly launched Cat 285 XE and the Bobcat T86 for our large-scale paving projects. Provide a head-to-head comparison focusing purely on rated operating capacity, auxiliary hydraulic flow, and undercarriage design.",
+      "query_category": "sourced",
+      "agent": {
+        "text": "I cannot answer with a specific SKU; complete compact track loaders like the Cat 285 XE and Bobcat T86 are configured-to-order base models rather than single-SKU catalog parts. \n\nHere is your head-to-head comparison:\n\n**Rated Operating Capacity (ROC)**\n*   **Cat 285 XE:** 4,520 lbs (at 35% tipping load), expandable to 4,816 lbs with counterweights.\n*   **Bobcat T86:** 3,800 lbs (at 35% tipping load).\n\n**Auxiliary Hydraulic Flow**\n*   **Cat 285 XE:** Standard (23 gpm @ 3,500 psi), High Flow XPS (34 gpm @ 4,061 psi), and High Flow XE (40 gpm @ 4,496 psi).\n*   **Bobcat T86:** Standard (23.6 gpm @ 3,500 psi), High Flow (36.6 gpm @ 3,500 psi), and Super Flow (42 gpm @ 4,061 psi).\n\n**Undercarriage Design**\n*   **Cat 285 XE:** Features a dozer-style Equalizer Bar (E-bar) rigid undercarriage, maximizing stability and grading capability during heavy lifting.\n*   **Bobcat T86:** Features a standard solid undercarriage, with an optional 5-Link Torsion Suspension system to reduce vibration and improve ride quality.\n\n**Summary:** The Cat 285 XE offers superior ROC and a grading-focused rigid undercarriage, whereas the Bobcat T86 provides slightly higher peak hydraulic flow and optional suspension.",
+        "sources": [
+          {
+            "title": "cat.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGYehd3_0FZbT5KQYx5UaqkR9WzahfdWKn04d1RaiwW_tNJBOiXEuoaIh1FbTUwLUk6qhF8keYfRr9i8OiDLR-NkoS-8wGEF2a2GdNNLUlGaiHksja3Q-hLKb4_QALS87708stx0Nnj61qqA4jj5j07flH1YYJEQDXyIuMJBv4oRBkZCGrSfpwqJWsypIl19QGwPbwQvpl2Cbb3Yu6oP02oUw=="
+          },
+          {
+            "title": "compactequip.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEAylkeCB4zx1RpQW5TmtWTfsJwsBeoIG74A96L1IwFxDZ8qbhlVfd37bKdrEJn8D03M7zp2KEIQXDSAOVMlGCoVpc7REBfGF1cvjrmHSS2hcJh5wk74ME0kiJDbu2zcP-FdliEC7fQOkegWbZkW_swmKrfxfWOw9iCTrvZs_ViJAMF1z_IM-0P5lRVIZmS-gIYUrh9xIyagHwLUdCqbgSP4AeugoXWZRMxJAybqow3xE0="
+          },
+          {
+            "title": "kcbobcat.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFaXjYyN5gpOo_0T7mlP04CgiyqV2j810OkqPAXJkJ46vHwLz7uqVt0SdooNqLsGruu9RC0QVPvPiqiluBFOnEkiL19AC3caZ6j3nJ6NYQo2lquXyA8UWjz3bzQp7DDxQGbkFW07tqtxgLuos-RAIHoyhd8uhGueVUtY6KbulYktEI="
+          },
+          {
+            "title": "empire-cat.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFzfdPkNrw_OSpqJ3fE_ON5CYjPfxIadrHZ1j-K9uIpwJAc4MV9QzEXr3GDlkcysn6ewOycnPryoEArJmmyZIuFzjTwvZBC6OzEE979d0lmt2nSwOYezgePAMiJySKoF9yvm2y_T3ipi0DBStRvetXppjDo7vHov5ZffNTX0AdJDQD5SDZ-PC91ellqacLxnCCnEh-DIKw="
+          },
+          {
+            "title": "bobcat.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQESFuXvu3vARAsTXuIVfBVwMuixPVMFv7TRXSsJ4OqoBEqUwE3soXZ09PaLLH8prbTSelNhmHhZULbzVwiFlCCbNimrW-1oeCuyMD_R_sv9cddyUuS267VuL9U_H7Vlot6HHNWACYBZaGZauKakfDpTkstdzT8sT8sXxETU7hUHa4b8"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.bobcat.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQESFuXvu3vARAsTXuIVfBVwMuixPVMFv7TRXSsJ4OqoBEqUwE3soXZ09PaLLH8prbTSelNhmHhZULbzVwiFlCCbNimrW-1oeCuyMD_R_sv9cddyUuS267VuL9U_H7Vlot6HHNWACYBZaGZauKakfDpTkstdzT8sT8sXxETU7hUHa4b8",
+            "title": "bobcat.com",
+            "class": "other"
+          },
+          {
+            "host": "h-cpc.cat.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGYehd3_0FZbT5KQYx5UaqkR9WzahfdWKn04d1RaiwW_tNJBOiXEuoaIh1FbTUwLUk6qhF8keYfRr9i8OiDLR-NkoS-8wGEF2a2GdNNLUlGaiHksja3Q-hLKb4_QALS87708stx0Nnj61qqA4jj5j07flH1YYJEQDXyIuMJBv4oRBkZCGrSfpwqJWsypIl19QGwPbwQvpl2Cbb3Yu6oP02oUw==",
+            "title": "cat.com",
+            "class": "other"
+          },
+          {
+            "host": "kcbobcat.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFaXjYyN5gpOo_0T7mlP04CgiyqV2j810OkqPAXJkJ46vHwLz7uqVt0SdooNqLsGruu9RC0QVPvPiqiluBFOnEkiL19AC3caZ6j3nJ6NYQo2lquXyA8UWjz3bzQp7DDxQGbkFW07tqtxgLuos-RAIHoyhd8uhGueVUtY6KbulYktEI=",
+            "title": "kcbobcat.com",
+            "class": "other"
+          },
+          {
+            "host": "compactequip.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEAylkeCB4zx1RpQW5TmtWTfsJwsBeoIG74A96L1IwFxDZ8qbhlVfd37bKdrEJn8D03M7zp2KEIQXDSAOVMlGCoVpc7REBfGF1cvjrmHSS2hcJh5wk74ME0kiJDbu2zcP-FdliEC7fQOkegWbZkW_swmKrfxfWOw9iCTrvZs_ViJAMF1z_IM-0P5lRVIZmS-gIYUrh9xIyagHwLUdCqbgSP4AeugoXWZRMxJAybqow3xE0=",
+            "title": "compactequip.com",
+            "class": "other"
+          },
+          {
+            "host": "www.empire-cat.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFzfdPkNrw_OSpqJ3fE_ON5CYjPfxIadrHZ1j-K9uIpwJAc4MV9QzEXr3GDlkcysn6ewOycnPryoEArJmmyZIuFzjTwvZBC6OzEE979d0lmt2nSwOYezgePAMiJySKoF9yvm2y_T3ipi0DBStRvetXppjDo7vHov5ZffNTX0AdJDQD5SDZ-PC91ellqacLxnCCnEh-DIKw=",
+            "title": "empire-cat.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 5
+        },
+        "primary": "other",
+        "total_sources": 5
+      },
+      "category": "CORRECT",
+      "rationale": "Verified via Caterpillar and Bobcat spec sheets and official press releases that all specifications provided are accurate. The Cat 285 XE indeed features a 4,520 lb ROC (4,816 lb with counterweights), an E-bar undercarriage, and up to 40 gpm @ 4,496 psi hydraulic flow, while the Bobcat T86 matches the stated 3,800 lb ROC, up to 42 gpm @ 4,061 psi Super Flow, and optional 5-Link Torsion suspension."
+    }
+  ],
+  "log": [
+    "[  0.0s] Stage 0: validated caterpillar.com (brand=caterpillar)",
+    "[  0.0s] Stage 1: generating queries (grounded against caterpillar.com)",
+    "[ 35.5s]   Generated 10 queries (4 found / 4 hallucinated / 2 sourced)",
+    "[ 35.5s] Stage 2: running 10 grounded queries against Gemini Pro",
+    "[127.8s] Stage 3: source attribution complete",
+    "[127.8s] Stage 4: categorizing answers",
+    "[172.2s] Stage 5: found=100 honest=90 sourced=0 trust=0 (correct=9/10, mfg_sourced=0/9) in 172.2s"
+  ],
+  "elapsed_seconds": 172.2
+}

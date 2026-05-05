@@ -1,0 +1,803 @@
+{
+  "slug": "parker-hannifin",
+  "display_name": "Parker Hannifin",
+  "input": "https://parker.com",
+  "host": "parker.com",
+  "brand": "parker",
+  "found_score": 100,
+  "honest_score": 90,
+  "sourced_score": 0,
+  "trust_score": 0,
+  "visibility_score": 90,
+  "source_authority_score": 0,
+  "total_queries": 10,
+  "correct_queries": 9,
+  "manufacturer_correct": 0,
+  "breakdown": {
+    "CORRECT": 9,
+    "HALLUCINATION": 1,
+    "OUT_OF_CATALOG": 0,
+    "REFUSED": 0,
+    "WRONG_SPEC": 0,
+    "ERROR": 0
+  },
+  "source_breakdown": {
+    "manufacturer": 0,
+    "distributor": 0,
+    "marketplace": 1,
+    "other": 9,
+    "none": 0
+  },
+  "rows": [
+    {
+      "query": "Checking if Parker still supports the Veriflo line. Need to know the minimum flow capacity (Cv) and wetted body material options for the Veriflo ABP1 Series back pressure regulator.",
+      "query_category": "found",
+      "agent": {
+        "text": "Yes, Parker's Veriflo Division still actively supports the ABP1 Series back pressure regulator. \n\n**Minimum Flow Capacity (Cv):**\nWhile the standard flow capacity is 0.3 Cv, Parker offers optional flow capacities of 0.1 Cv and **0.06 Cv**. Therefore, the minimum available Cv is 0.06.\n\n**Wetted Body Material Options:**\nThe ABP1 Series can be machined from three wetted body materials to handle various corrosive media:\n*   316L Stainless Steel\n*   Monel\u00ae\n*   Hastelloy C-22\u00ae\n\n*(Note: A convoluted Hastelloy C-22 diaphragm comes standard regardless of the body material chosen.)*\n\n**Orderable Part Number Example:**\nIf you need a standard stainless steel configuration, **ABP1ST22BP4** is a real, orderable Parker SKU. This specifies an ABP1 regulator configured with:\n*   316L Stainless Steel Body\n*   PTFE (Teflon) Seat\n*   Hastelloy C-22 Diaphragm\n*   2 to 50 PSIG Control Range\n*   2-Port Configuration\n*   1/4\" Female NPT Connections \n\nYou can order this exact SKU or adjust the part number matrix in the Parker 4510 catalog based on your required control range and porting.",
+        "sources": [
+          {
+            "title": "gommer.nl",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWWRTeqvBVhVMWkPgAXINWjgRoTna0Z2i0jUHUxvETdJEWA4mtauD3NGRNW6I18kHUWtPjrXbowCkOnqIfKtyo1fbgRGfNURuIVg55xy8TIfsUOxD9G7an93ylyXoVpKL4ST43NCTTxQFnxWZr3fGXXfF2KtulvB8GkZnRLVOWNnzqoqU856GyNF6dpDQa"
+          },
+          {
+            "title": "bigcommerce.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFKepYJngnQsLG8jn1Fi6uDpBIOGiWNhF_J6Ml3TbIgHqxTZ3-sOhMYvOswq9R8QrZ0x0cBLOMrGzicoPW7ROJn8yuvZwY5Q2kpuND0u5PP1FFBi-HmC24nGonzKi0xkSGH0rKSy26HaJ7ioDEHl_nU2UPfnpOvE1VlMQL0XeAwL2Mc18c="
+          },
+          {
+            "title": "ventile.cz",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEYyyVBBT5B-TaTHAyIhrfNVqjKRJBVpt5Hzm1Q-PEcwvfbuWWmC-tXLMvgr1e8nRqCy6GSG0594PAZ_AZu23pFwQq3zpm1kvpNy4UEqIW2W8qXdzi_np3QV7LmoMDO8jxVToiDWPeCmdFzeYEgX8C8P0HRrMzwG3sRcJ9vb9gI02RMJA=="
+          },
+          {
+            "title": "valinonline.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF_A4ajdHNEw24mtuEL5i9y6JeaR0D496Omd_HQ5DbVNfbyha9ky3FemKfIwBLCcLHdKnN7qz1_OQcPZ-8RBJCvf0CB1fcPpcRLdrqzEFvtOQBUOAX368DEHrkEbsaPreupl2l1u8I="
+          },
+          {
+            "title": "valinonline.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF46JnXmtSJI_OBb_jZPPgcTUMM35mPecT-iuNBq2K1jIu6V7ipuc9FZSzjtUR-3vFK9QT3eiEtgU3hC2SGAvV7kIDjFis6Quzskx1CG7EgGIDF0Amv0YB8-EaHJR2ipU4UdOnkZw_u"
+          },
+          {
+            "title": "2m-bg.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGx0Q0Hk3WtWGA_i5p_AaajM8bqCZOvC70rYUu_kOWWXN8XVmwA3-MIJPY3yW8raNzrV6DL9Uhf-5zXbB8FvYm7sR-0gQ2cNlVRsRdIbrLuD73BHk7mwLNlt5JON1rd4-P-1MYgWxKuAwIYFN_MtbibaAukbf0="
+          },
+          {
+            "title": "bigcommerce.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRGqKUpiHW8yB0NxW9AvPFt9nkz1Xf6vSLJO2lIRbjHO4CZCFR-1jKOB3v3W31IH2xJl72Ja3okTO4sQAsX_p_rFaeVPaMTYkBZPQyYQVvKdRusfyG1nYQJo1ov45ReAnKvjSoPLerFoFNk9BS4BaMX38bhgoeehBHTYA_m7NDQLvWKy4R0YwVE5HOz5j4lxLRjVjjpTZLu5UmP0dpjw=="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.gommer.nl",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWWRTeqvBVhVMWkPgAXINWjgRoTna0Z2i0jUHUxvETdJEWA4mtauD3NGRNW6I18kHUWtPjrXbowCkOnqIfKtyo1fbgRGfNURuIVg55xy8TIfsUOxD9G7an93ylyXoVpKL4ST43NCTTxQFnxWZr3fGXXfF2KtulvB8GkZnRLVOWNnzqoqU856GyNF6dpDQa",
+            "title": "gommer.nl",
+            "class": "other"
+          },
+          {
+            "host": "2m-bg.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGx0Q0Hk3WtWGA_i5p_AaajM8bqCZOvC70rYUu_kOWWXN8XVmwA3-MIJPY3yW8raNzrV6DL9Uhf-5zXbB8FvYm7sR-0gQ2cNlVRsRdIbrLuD73BHk7mwLNlt5JON1rd4-P-1MYgWxKuAwIYFN_MtbibaAukbf0=",
+            "title": "2m-bg.com",
+            "class": "other"
+          },
+          {
+            "host": "cdn11.bigcommerce.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFKepYJngnQsLG8jn1Fi6uDpBIOGiWNhF_J6Ml3TbIgHqxTZ3-sOhMYvOswq9R8QrZ0x0cBLOMrGzicoPW7ROJn8yuvZwY5Q2kpuND0u5PP1FFBi-HmC24nGonzKi0xkSGH0rKSy26HaJ7ioDEHl_nU2UPfnpOvE1VlMQL0XeAwL2Mc18c=",
+            "title": "bigcommerce.com",
+            "class": "other"
+          },
+          {
+            "host": "www.ventile.cz",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEYyyVBBT5B-TaTHAyIhrfNVqjKRJBVpt5Hzm1Q-PEcwvfbuWWmC-tXLMvgr1e8nRqCy6GSG0594PAZ_AZu23pFwQq3zpm1kvpNy4UEqIW2W8qXdzi_np3QV7LmoMDO8jxVToiDWPeCmdFzeYEgX8C8P0HRrMzwG3sRcJ9vb9gI02RMJA==",
+            "title": "ventile.cz",
+            "class": "other"
+          },
+          {
+            "host": "cdn11.bigcommerce.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRGqKUpiHW8yB0NxW9AvPFt9nkz1Xf6vSLJO2lIRbjHO4CZCFR-1jKOB3v3W31IH2xJl72Ja3okTO4sQAsX_p_rFaeVPaMTYkBZPQyYQVvKdRusfyG1nYQJo1ov45ReAnKvjSoPLerFoFNk9BS4BaMX38bhgoeehBHTYA_m7NDQLvWKy4R0YwVE5HOz5j4lxLRjVjjpTZLu5UmP0dpjw==",
+            "title": "bigcommerce.com",
+            "class": "other"
+          },
+          {
+            "host": "valinonline.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF_A4ajdHNEw24mtuEL5i9y6JeaR0D496Omd_HQ5DbVNfbyha9ky3FemKfIwBLCcLHdKnN7qz1_OQcPZ-8RBJCvf0CB1fcPpcRLdrqzEFvtOQBUOAX368DEHrkEbsaPreupl2l1u8I=",
+            "title": "valinonline.com",
+            "class": "other"
+          },
+          {
+            "host": "valinonline.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF46JnXmtSJI_OBb_jZPPgcTUMM35mPecT-iuNBq2K1jIu6V7ipuc9FZSzjtUR-3vFK9QT3eiEtgU3hC2SGAvV7kIDjFis6Quzskx1CG7EgGIDF0Amv0YB8-EaHJR2ipU4UdOnkZw_u",
+            "title": "valinonline.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 7
+        },
+        "primary": "other",
+        "total_sources": 7
+      },
+      "category": "CORRECT",
+      "rationale": "Verified via Parker's ABP1 Series catalog and distributor listings (e.g., Valin) that the minimum flow capacity is indeed 0.06 Cv and the wetted body materials are 316L SS, Monel, or Hastelloy C-22. Furthermore, ABP1ST22BP4 is a genuine, orderable SKU that matches the exact configuration described by the agent."
+    },
+    {
+      "query": "Looking for the technical specs on Parker's new BFR5K Series UHP bulk gas regulators for semiconductor fabs. Does it support 5000 slpm flow rates with the 316L poppet?",
+      "query_category": "found",
+      "agent": {
+        "text": "**Yes**, Parker's BFR5K Series UHP bulk gas regulator supports flow rates up to 5,000 slpm and features a balanced 316L Stainless Steel poppet (paired with a 321 Stainless Steel bellows). Engineered by Parker's Veriflo Division specifically for semiconductor processing, its patented design minimizes outlet pressure fluctuations regardless of changes in supply pressure. \n\nI cannot provide a single, specific orderable SKU because \"BFR5K\" designates a configurable series rather than a final part number. To generate a complete, valid SKU from Parker's catalog, you must specify additional configuration options for your exact system, including:\n*   Inlet/outlet fitting types and sizes (e.g., face seals or tube welds)\n*   Pressure ranges\n*   Manual vs. dome-loaded actuation\n\nHowever, you can confidently use the **BFR5K Series** as your base procurement model, as the 5,000 slpm high-flow capacity and 316L stainless steel poppet are standard technical features across this line.",
+        "sources": [
+          {
+            "title": "abb-sis.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH230yzeay1Ku-uk3GOMnz9kys2kaQI6gIB4xLMM1G0gOjC7lu1SAxex5_IrGid4WMxRz3The_C8LNqnwB0fALcqbXywDDXQq_ISiZQZW8dcPij_p-AGqO4I4bFrq0wTO6gxwDCQHVV1z9tlY8SsBko"
+          },
+          {
+            "title": "parkersnap-tite.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFhWyT4qKH6uVT6kb8RtMASK6RaAzLoPxuKf59sh-Nqjbsg6Db0BBNMLiErOLO9xvJIMceDs9q-AMZ5uSPFJBDIkHhXz4hwMSoJB3vdg3Sll_PUguN_8nI9-BghHDmcc3T5oLVzxJhsGj5Oo31eeUu4tTpY18tB2_AemCrm"
+          },
+          {
+            "title": "parker.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpdi1sSjsXDmsivGlVfC-3A8x7aJ8UaJ6BKr4Gp9sfhbti-fNcQSqOVsBhvCld2e5V7X1krvsOG9X2nZQ-Sq3Db71Kqm6T_qhp7ycbbOI88SyBmDPptdGPiblQyvJ8qUQpdqiV2CiA68x9o5OJqJp4BYqNI6vZUDSKmAo7K6FS3LqoSxip81EMiW8U5pS9647GPEwNJ7C5Hcr9i0vvPohWVWrPFMzfEzKkQJ9H"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "ph.parker.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpdi1sSjsXDmsivGlVfC-3A8x7aJ8UaJ6BKr4Gp9sfhbti-fNcQSqOVsBhvCld2e5V7X1krvsOG9X2nZQ-Sq3Db71Kqm6T_qhp7ycbbOI88SyBmDPptdGPiblQyvJ8qUQpdqiV2CiA68x9o5OJqJp4BYqNI6vZUDSKmAo7K6FS3LqoSxip81EMiW8U5pS9647GPEwNJ7C5Hcr9i0vvPohWVWrPFMzfEzKkQJ9H",
+            "title": "parker.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.parkersnap-tite.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFhWyT4qKH6uVT6kb8RtMASK6RaAzLoPxuKf59sh-Nqjbsg6Db0BBNMLiErOLO9xvJIMceDs9q-AMZ5uSPFJBDIkHhXz4hwMSoJB3vdg3Sll_PUguN_8nI9-BghHDmcc3T5oLVzxJhsGj5Oo31eeUu4tTpY18tB2_AemCrm",
+            "title": "parkersnap-tite.com",
+            "class": "other"
+          },
+          {
+            "host": "www.abb-sis.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH230yzeay1Ku-uk3GOMnz9kys2kaQI6gIB4xLMM1G0gOjC7lu1SAxex5_IrGid4WMxRz3The_C8LNqnwB0fALcqbXywDDXQq_ISiZQZW8dcPij_p-AGqO4I4bFrq0wTO6gxwDCQHVV1z9tlY8SsBko",
+            "title": "abb-sis.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 1,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 2
+        },
+        "primary": "other",
+        "total_sources": 3
+      },
+      "category": "CORRECT",
+      "rationale": "Google Search verifies that Parker's Veriflo Division manufactures the BFR5K Series UHP bulk gas regulators. The official product specifications confirm it is designed for semiconductor processing, supports flow rates up to 5,000 slpm, and features a balanced 316L stainless steel poppet paired with a 321 stainless steel bellows."
+    },
+    {
+      "query": "Trying to source a replacement SC423XL low flow controller for an older analyzer rig. Can you verify if Parker Hannifin still manufactures this exact model with the self-correcting downstream pressure feature?",
+      "query_category": "found",
+      "agent": {
+        "text": "Yes, Parker Hannifin (through its Veriflo Division) still manufactures the **SC423XL Series** flow controller. Catalog data confirms it is designed for air and analyzer sampling systems and features the exact self-correcting action you mentioned to maintain constant flow despite downstream vacuum/pressure changes.\n\nHowever, **I cannot answer with a single specific SKU.** The SC423XL is a configurable base series, not a single off-the-shelf part number. \n\nTo source your exact replacement, you must build the part number based on your older rig's specifications. A fully orderable Parker SKU requires suffix codes for:\n* **Body Material:** Brass (B) or 316L Stainless Steel (S)\n* **Metering:** Fine (F) or Extra Fine (XF)\n* **Options:** Panel Mount (PM), Tamper Proof (T), etc.\n* **Port Connections:** e.g., 1/4\u201d NPT\n\nAn example of a fully configured catalog number is `SC423XLS244T4TS`, but you will need to check the data plate on your current controller for its exact configuration string. Third-party scientific suppliers (like Restek) also distribute pre-configured stainless steel versions of this model specifically for chromatography and air sampling.",
+        "sources": [
+          {
+            "title": "rometec.it",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGzEpzvcgy7c9c4lZAIYD_4LY5af9tzNO7bnTHNd_sufS-Adr6bZRp_41XFmicWQ3jDHeoI5nd3ncqsapr1rTD5cfclUmDb0hDSd4lr9Lsihgpa2OBvT5W2Y4_WnddteypLzPKPK3rbTgV-Ovzylh-OZFtmEiGotbVhnkZWmyF9WSq_FE_wslM7Jhn_nUHVkTGtemAA1VS2"
+          },
+          {
+            "title": "vikinginstrument.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEquWrrS63kZbbLVNnMx76lOgS3ypkg8Si6WtpQTwA_Fn4g9DS10dSFldIqHRYvNchxffiwaU1dcWWImJ78UCeWDIXwGV0v90q3qbvnKXnvv-xWcTvQ47yvSgUQkoVW3XWTN7PyKmOd0QLT1gr46SVSI2rERXMp46Q26x5pP_waX4YwQnt50NuDdR-kxC-xOjaC"
+          },
+          {
+            "title": "parkerstorethailand.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGA17XqRRRf0oQlqjUXW7wNWfZNNn-6DKRdGeoItyhs-DLCqI3xBfbU8iYGkIBgoj3RB9Xuzbyu0nEikQix0dkQ5Xmbx8-lpM9LBElNwmq6UINhgFVvQfOEgKlfFyT17gdP6binKXwYdn6q146jxKbuBCY="
+          },
+          {
+            "title": "restek.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGu6u7o70doZQx2txjcvjoIz1esVo-1JjzQ_RCuW_r1I_-VZIbGN86mWo2BtK6IPtOHYm4rL9mZO9Rbwa1v0_8djjXREPj2Rp_15BFPmG_QNSaDXAqCcoPQlQ=="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.rometec.it",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGzEpzvcgy7c9c4lZAIYD_4LY5af9tzNO7bnTHNd_sufS-Adr6bZRp_41XFmicWQ3jDHeoI5nd3ncqsapr1rTD5cfclUmDb0hDSd4lr9Lsihgpa2OBvT5W2Y4_WnddteypLzPKPK3rbTgV-Ovzylh-OZFtmEiGotbVhnkZWmyF9WSq_FE_wslM7Jhn_nUHVkTGtemAA1VS2",
+            "title": "rometec.it",
+            "class": "other"
+          },
+          {
+            "host": "www.restek.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGu6u7o70doZQx2txjcvjoIz1esVo-1JjzQ_RCuW_r1I_-VZIbGN86mWo2BtK6IPtOHYm4rL9mZO9Rbwa1v0_8djjXREPj2Rp_15BFPmG_QNSaDXAqCcoPQlQ==",
+            "title": "restek.com",
+            "class": "other"
+          },
+          {
+            "host": "vikinginstrument.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEquWrrS63kZbbLVNnMx76lOgS3ypkg8Si6WtpQTwA_Fn4g9DS10dSFldIqHRYvNchxffiwaU1dcWWImJ78UCeWDIXwGV0v90q3qbvnKXnvv-xWcTvQ47yvSgUQkoVW3XWTN7PyKmOd0QLT1gr46SVSI2rERXMp46Q26x5pP_waX4YwQnt50NuDdR-kxC-xOjaC",
+            "title": "vikinginstrument.com",
+            "class": "other"
+          },
+          {
+            "host": "parkerstorethailand.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGA17XqRRRf0oQlqjUXW7wNWfZNNn-6DKRdGeoItyhs-DLCqI3xBfbU8iYGkIBgoj3RB9Xuzbyu0nEikQix0dkQ5Xmbx8-lpM9LBElNwmq6UINhgFVvQfOEgKlfFyT17gdP6binKXwYdn6q146jxKbuBCY=",
+            "title": "parkerstorethailand.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 4
+        },
+        "primary": "other",
+        "total_sources": 4
+      },
+      "category": "CORRECT",
+      "rationale": "Search confirms that Parker Hannifin's Veriflo Division manufactures the SC423XL series flow controller with a self-correcting downstream pressure feature. The agent correctly provided the catalog structure and a valid example SKU (SC423XLS244T4TS), as well as accurately noting Restek as a distributor of pre-configured versions."
+    },
+    {
+      "query": "Procurement audit requires a mapping of our vendors. Give me a complete list of all the fluid power, instrumentation, and filtration sub-brands currently owned by Parker Hannifin, including legacy ones like Olaer and Veriflo.",
+      "query_category": "found",
+      "agent": {
+        "text": "Because you requested a corporate brand mapping rather than a specific component, I cannot answer with a specific SKU. \n\nParker Hannifin has acquired hundreds of companies over its history. While providing a literally \"complete\" list of every sunsetted brand is impossible due to constant catalog consolidations, here is a highly comprehensive mapping of their major active and legacy sub-brands by category:\n\n**Fluid Power (Hydraulics, Pneumatics, Connectors):**\nAtlas Cylinders, Calzoni, Chelsea, Commercial Intertech, Denison, Ermeto, Gold Ring, Greer, Gresen, Helac, Legris, Mead, Miller Fluid Power, Oildyne, Olaer, Origa, Pioneer, Rectus, Schrader Bellows, Snap-tite, Taiyo, Tema, and Voac.\n\n**Instrumentation:**\nAutoclave Engineers, Bestobell, Conflow, Lucifer, Pneutronics, Porter, Skinner, Sporlan, and Veriflo.\n\n**Filtration:**\nAirtek, Baldwin Filters, Balston, BHA, Clarcor, domnick hunter, Filtration Group (acquired late 2025), Finite, Kittiwake, PECOFacet, Purolator FAC, Racor, Sea Recovery, SmogHog, UCC, Velcon, and Zander.\n\n*Procurement Note:* Most legacy products retain their original catalog part numbers but are now officially ordered under the Parker master brand (e.g., a legacy Balston filter is procured as \"Parker Balston\").",
+        "sources": [
+          {
+            "title": "mfcp.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF55REoGzd5G1J5xvossssV2yQ-s6_yPflMLFxugXHcI0GMjJLZB2UwUjEMyuQNEQSrTWr5tbTZ4rBGhUrIXDYcfFY3jRBNnKhGsEju9pKGALgBNw1J"
+          },
+          {
+            "title": "tracxn.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGG-RXib_Q3HdIlohHYxUrOaHbpftFyjz3EUGjhEo3ry5hVAuwtp07bCm7bzwsc_gSITdnXQvxqX1mdLDxQU5bILAUBJ6rqe8wJQ2X-lXliUYiZptpc7b10mNWw4PXBInmjWQ1LcCmQNWfPa8xMUPj23gIGXpEG_tyhY6CfLJiJJw48KqIwOB060HQuBKl4TR1IPv_hPYn1NeqdSmNvpG81JA=="
+          },
+          {
+            "title": "custom.com.au",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHgAQ5qYZoLkAYMqxYLsw9DYayqeUPaq1sl9Q05UeomfUJa0IJJctTdpIJU9IBS3GoJAb7B7Wypdatmtl0j5OuM6Rth2Yz6R70cl8JcxdjF6OiF69mRubfmssv_9YtlEnBrB4vTMqC6HmL0bFNH"
+          },
+          {
+            "title": "filterelementstore.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5wLTtPozOiP3olcg10lfuwWbU4fslCgXdCOKXlDes7O9gcvttJz94kOjH1DxWRQUIAzH37JmovhqnwNV40VXH0Kq9NjBtV0ElkJH_z8C6GkINA3ReB1-1rLTTbodRx6Cp_PmfPKnHS4L9hivFqZ51B8Q-zeN8ztFC"
+          },
+          {
+            "title": "rg-group.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE0yya2W1t3GsWrrPDLYWRpbph9flsX_1LkHrFIqa5sYDE4S_mkl07m6r4qAAoJXCME6qkO-3jW3Hnu0h8tJ_VppikV5cX2Hejyf2iMviqNg96rXa0Nt1XcxQ3Pf3kGWN9y5vWmCNvWNLNm0RqD"
+          },
+          {
+            "title": "marklines.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFEHh3LpQ2rWaAtjFVYCSMXxauJb171WzDBH4eLZp0mH6afLYi5RAAvHvl_H499RBkSzs-5dYag_uWp-UQ7hUoypKNiKO-jUeXrBqvsHljwP1aX_Z2sErIc28fy5EUCscC3wNZXUh1COF5ScHVcnQ=="
+          },
+          {
+            "title": "wikipedia.org",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHns8gkqo2M--WiGsNkqXsAl87lUTyc35tXKDY6sJp3u5sWkzUHiHE8BnmJ1JKaxup1sTPqAYszhsQGn9haUeoEVPtA1NnNbtRrmWKoRm_aXEhi-8tIOaHOq6qjW_HT1B6v8o496zss_w=="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "en.wikipedia.org",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHns8gkqo2M--WiGsNkqXsAl87lUTyc35tXKDY6sJp3u5sWkzUHiHE8BnmJ1JKaxup1sTPqAYszhsQGn9haUeoEVPtA1NnNbtRrmWKoRm_aXEhi-8tIOaHOq6qjW_HT1B6v8o496zss_w==",
+            "title": "wikipedia.org",
+            "class": "other"
+          },
+          {
+            "host": "tracxn.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGG-RXib_Q3HdIlohHYxUrOaHbpftFyjz3EUGjhEo3ry5hVAuwtp07bCm7bzwsc_gSITdnXQvxqX1mdLDxQU5bILAUBJ6rqe8wJQ2X-lXliUYiZptpc7b10mNWw4PXBInmjWQ1LcCmQNWfPa8xMUPj23gIGXpEG_tyhY6CfLJiJJw48KqIwOB060HQuBKl4TR1IPv_hPYn1NeqdSmNvpG81JA==",
+            "title": "tracxn.com",
+            "class": "other"
+          },
+          {
+            "host": "www.mfcp.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF55REoGzd5G1J5xvossssV2yQ-s6_yPflMLFxugXHcI0GMjJLZB2UwUjEMyuQNEQSrTWr5tbTZ4rBGhUrIXDYcfFY3jRBNnKhGsEju9pKGALgBNw1J",
+            "title": "mfcp.com",
+            "class": "other"
+          },
+          {
+            "host": "filterelementstore.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5wLTtPozOiP3olcg10lfuwWbU4fslCgXdCOKXlDes7O9gcvttJz94kOjH1DxWRQUIAzH37JmovhqnwNV40VXH0Kq9NjBtV0ElkJH_z8C6GkINA3ReB1-1rLTTbodRx6Cp_PmfPKnHS4L9hivFqZ51B8Q-zeN8ztFC",
+            "title": "filterelementstore.com",
+            "class": "other"
+          },
+          {
+            "host": "www.rg-group.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE0yya2W1t3GsWrrPDLYWRpbph9flsX_1LkHrFIqa5sYDE4S_mkl07m6r4qAAoJXCME6qkO-3jW3Hnu0h8tJ_VppikV5cX2Hejyf2iMviqNg96rXa0Nt1XcxQ3Pf3kGWN9y5vWmCNvWNLNm0RqD",
+            "title": "rg-group.com",
+            "class": "other"
+          },
+          {
+            "host": "www.marklines.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFEHh3LpQ2rWaAtjFVYCSMXxauJb171WzDBH4eLZp0mH6afLYi5RAAvHvl_H499RBkSzs-5dYag_uWp-UQ7hUoypKNiKO-jUeXrBqvsHljwP1aX_Z2sErIc28fy5EUCscC3wNZXUh1COF5ScHVcnQ==",
+            "title": "marklines.com",
+            "class": "other"
+          },
+          {
+            "host": "www.custom.com.au",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHgAQ5qYZoLkAYMqxYLsw9DYayqeUPaq1sl9Q05UeomfUJa0IJJctTdpIJU9IBS3GoJAb7B7Wypdatmtl0j5OuM6Rth2Yz6R70cl8JcxdjF6OiF69mRubfmssv_9YtlEnBrB4vTMqC6HmL0bFNH",
+            "title": "custom.com.au",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 7
+        },
+        "primary": "other",
+        "total_sources": 7
+      },
+      "category": "HALLUCINATION",
+      "rationale": "While most of the listed sub-brands are accurate, the agent incorrectly claimed Parker currently owns 'PECOFacet' and 'Mead'. Parker divested the Facet business in 2018 (which was explicitly excluded from Parker's late 2025 acquisition of Filtration Group, remaining with Madison Industries), and the 'Mead' pneumatics brand is currently owned by Bimba/IMI Precision Engineering."
+    },
+    {
+      "query": "We are standardizing our automation controls to reduce vendor sprawl. Send me the Parker Hannifin part numbers for their standalone rack-mounted PLCs and their proprietary SCADA software suite.",
+      "query_category": "hallucinated",
+      "agent": {
+        "text": "Regarding your standardization effort:\n\n**1. Rack-Mounted PLCs**\nParker Hannifin **does not manufacture** traditional standalone rack-mounted PLCs. I cannot provide a specific SKU for this because it does not exist in their catalog. Instead, their flagship programmable logic and motion platform is the Parker Automation Controller (PAC) series, which is strictly **DIN-rail mounted** (for example, part number **PAC320-CWB21-3A**). If a rack-mounted form factor is a hard requirement for your infrastructure, you will need to evaluate alternative vendors.\n\n**2. Proprietary SCADA Software Suite**\nParker\u2019s supervisory HMI/SCADA software suite is called **InteractX**. It provides data aggregation, historical trending, and seamless integration with their machine-level HMIs. The software can be ordered as standalone licenses. The active part numbers for the current 4.1 version are:\n\n*   **INTX-7041**: InteractX 4.1 Development Software\n*   **INTX-7141**: InteractX 4.1 Runtime Software License\n\n*(Note: If you require the older 4.0 version for legacy matching, the development part number is **INTX-7040** and the runtime is **INTX-7140**).* \n\nIf your enclosures can accommodate DIN-rail mounting, the PAC320 controller paired with an InteractX software license provides their standard centralized control solution.",
+        "sources": [
+          {
+            "title": "automate.org",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFOwr2F0guDJHYC02Wr0xbw7e1BJuLHXhrjSgJ6mpaOMCQNJVVTPYxqyPBGQsIUDS4xi-BDi-4j-cgiRvWUkVKL5vjztIMwMGFr7xGJwdMTjCjY6UttEc-nKIv4jMuqRhqeDwvGWMw4i_oZg7IctC5PWVmeLgyXAdhwyPyWsSeimsbGzuzwulMqZWGSIr66RE65NVIoQu0x6A9dkXTfvTmXKg=="
+          },
+          {
+            "title": "parkermotion.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQExoDrpA6yJXnWLOC68tPTG_1UCllpgy16P_DL7456s258DwcgjQSKY2tiqVxZ0fA6uh9xdWscFUr63c30h_62PlKe7wgstP_hIonq5uUX1h8z7JUwhu4L-Y9L1iyXInVBTdm4CQ4vredqtsaFVkVo27HR_ZHPA-vzWANvRdjT_g01a1ssPXtI="
+          },
+          {
+            "title": "tidyco.co.uk",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQExHk70aEtgTx-9msaXApkGvjNhGDrU3vRYoc0W3M6cbVvpBXw38NXLPmL4PRwRZk4ZESuuBS-dtQZBjUUwElQaDWYjqrBXD7dHMFiDRQypanTcDE8SCz8y2XtuqfCccQ7yGRgx3u7l-7uiWcYRhhaEeR8LkRUTYk6s6ERgAmzIA0nbbUXVUms3LLJn1MwQ_D8k"
+          },
+          {
+            "title": "parkermotion.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEiP29cdahavwuY2nxQATvY2W91EE1iD_p08sDsPj-cZuNDEtTSy6LL7jCxbmc9Gd42fCk7JVQl2_3v0Ne-uACtXzdYvVnPX5hFii2RRZ-B6HFwAr4kwcYPHW6L4IX5lSnzMjbQEx77THLwes6_5h_nvbxI_WiTLL8xNqTUUHNPJ8sXWVJ-ro8="
+          },
+          {
+            "title": "atlassian.net",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHBGuhA09JHPAdbnOmYK84fnWHzyphfE4sL0mLiumXjRXXKMY0ZaY88_ubuHUgkPWPF8v6o00S3qGG_Vx6LxpYLOMf30RlslBvUkmIISM2R5lZ2ZVnl8ua8mGFrP4IesT8Ti25gj6WAS1yQ0H7gp-MTAVUCmZIOKf9TrFf_7RVUCWoR3uZbQpDbqHsEgNLSxNOHbKE_Y-KhcVGXQICrxI4k_M6BRzyKTA=="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.tidyco.co.uk",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQExHk70aEtgTx-9msaXApkGvjNhGDrU3vRYoc0W3M6cbVvpBXw38NXLPmL4PRwRZk4ZESuuBS-dtQZBjUUwElQaDWYjqrBXD7dHMFiDRQypanTcDE8SCz8y2XtuqfCccQ7yGRgx3u7l-7uiWcYRhhaEeR8LkRUTYk6s6ERgAmzIA0nbbUXVUms3LLJn1MwQ_D8k",
+            "title": "tidyco.co.uk",
+            "class": "other"
+          },
+          {
+            "host": "www.automate.org",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFOwr2F0guDJHYC02Wr0xbw7e1BJuLHXhrjSgJ6mpaOMCQNJVVTPYxqyPBGQsIUDS4xi-BDi-4j-cgiRvWUkVKL5vjztIMwMGFr7xGJwdMTjCjY6UttEc-nKIv4jMuqRhqeDwvGWMw4i_oZg7IctC5PWVmeLgyXAdhwyPyWsSeimsbGzuzwulMqZWGSIr66RE65NVIoQu0x6A9dkXTfvTmXKg==",
+            "title": "automate.org",
+            "class": "other"
+          },
+          {
+            "host": "parkermotion.atlassian.net",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHBGuhA09JHPAdbnOmYK84fnWHzyphfE4sL0mLiumXjRXXKMY0ZaY88_ubuHUgkPWPF8v6o00S3qGG_Vx6LxpYLOMf30RlslBvUkmIISM2R5lZ2ZVnl8ua8mGFrP4IesT8Ti25gj6WAS1yQ0H7gp-MTAVUCmZIOKf9TrFf_7RVUCWoR3uZbQpDbqHsEgNLSxNOHbKE_Y-KhcVGXQICrxI4k_M6BRzyKTA==",
+            "title": "atlassian.net",
+            "class": "other"
+          },
+          {
+            "host": "www.parkermotion.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEiP29cdahavwuY2nxQATvY2W91EE1iD_p08sDsPj-cZuNDEtTSy6LL7jCxbmc9Gd42fCk7JVQl2_3v0Ne-uACtXzdYvVnPX5hFii2RRZ-B6HFwAr4kwcYPHW6L4IX5lSnzMjbQEx77THLwes6_5h_nvbxI_WiTLL8xNqTUUHNPJ8sXWVJ-ro8=",
+            "title": "parkermotion.com",
+            "class": "other"
+          },
+          {
+            "host": "www.parkermotion.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQExoDrpA6yJXnWLOC68tPTG_1UCllpgy16P_DL7456s258DwcgjQSKY2tiqVxZ0fA6uh9xdWscFUr63c30h_62PlKe7wgstP_hIonq5uUX1h8z7JUwhu4L-Y9L1iyXInVBTdm4CQ4vredqtsaFVkVo27HR_ZHPA-vzWANvRdjT_g01a1ssPXtI=",
+            "title": "parkermotion.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 5
+        },
+        "primary": "other",
+        "total_sources": 5
+      },
+      "category": "CORRECT",
+      "rationale": "Verified via Parker Hannifin documentation and distributor catalogs that Parker does not manufacture rack-mounted PLCs, instead offering DIN-rail mounted controllers like the valid SKU PAC320-CWB21-3A. Furthermore, the agent correctly identified their SCADA suite as InteractX and provided the exact, valid part numbers for the development (INTX-7041) and runtime (INTX-7141) software licenses."
+    },
+    {
+      "query": "Pulling data for a safety review on the Parker Veriflo ABP1 Series regulator. I need the exact design burst pressure in psig and the specific inboard design leak rate listed on the factory datasheet.",
+      "query_category": "hallucinated",
+      "agent": {
+        "text": "Since you are asking for technical specifications rather than a product to purchase, I cannot answer with a specific SKU. A complete orderable part number (such as ABP1ST22BP4) would depend on your exact requirements for seat material, control range, and porting.\n\nBased on the Parker Veriflo ABP1 Series factory datasheets, the specifications for your safety review are:\n\n* **Design Burst Pressure:** 1,500 psig. *(Note: While standard current documentation lists a flat 1,500 psig, older 2003-era catalogs scaled the burst pressure from 75 psig to 1,500 psig depending on the specific control pressure range).*\n* **Maximum Inboard Design Leak Rate:** < 2 x 10\u207b\u2078 scc/sec He. \n\n*(Note: While general distributor listings sometimes simplify the leak rate as \"Bubble Tight\", the exact inboard design leak rate on the factory spec sheet is < 2 x 10\u207b\u2078 scc/sec Helium).*",
+        "sources": [
+          {
+            "title": "valinonline.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHrGoaoLwqSfKebanJzPWK3xQD-dVmmjqzfBF9Gsl4eFscIza7cIofC9-OBfMwjwEiXw44tkWWsqcEwWxpylb1TIlmwtlQA_Vqzw2WOH0iNpdfYgerSAoC7ZBYsjkeIk0BxUTmEcSI2"
+          },
+          {
+            "title": "ventile.cz",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGVwWrmrg_O1e49ZA7BYGjE7ZVlnVDejMBJTn4Lir9ETMbboHviMjBFADVDm21G8pFD0i8o-m4dlBWBeR27zca3H4Ji_UpTqr5dKDAj0CDYaNLptQ61NBPIdXktV7sxpxBvXQ1Hd_ufy_bMCFNMd8pBLZ_0_B_hXBHkj9FTR3zvJWYqYNw="
+          },
+          {
+            "title": "artisantg.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEu6G7dQ_-CjwrUPqryhNs2VwuijQE4zT5FF_UzTVvEZRaunYVvelfQ5d-1ZjbqG4t-Hp3MAqAT750U1f1Qzjg76TiqZahta1NeEsfkEsYCu_ilEYBbeJQiT1Vd81fDZf6QLa3O5NgxGsFaRf6Sk-8vyOjqfg30qpbhJ1dYF0oPnm8nOLmn9q-GtL9bVwfT_rIheQ=="
+          },
+          {
+            "title": "crescent.tw",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHypmbINjFQetXzxD3a8UkbMlqmCUZGSYA18rIEpRFIFeS5MJvNB9ECUQYM20qWS2sUKicjMOmrOifrrAK9gIeDn3M54kUYERi7ZCYY1rS_VshzAZOz-Br517kdMPPcoj86TF1CqFWTRr5XWosGOkF91h1tq_PR8sLlesOpxOnh5HwO-OHImWR7bCYTsxbSkZQr7S7XZpWGHGBSXM5u9_6anfdjFece4No9tm5VJkwCRMEYb9eLbyx3iyYJMY3Is8J4_cpGQWqkx1Nzk1ig7qL7dWdTC2zY5-bkzti7D3LAzwV9yypJt9g="
+          },
+          {
+            "title": "bigcommerce.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG1x5V554E8ayhAjov4ayPRh3XknXyXlX96Q2wcXmleBteVUaYJLJ-mej8K4oHngAdGondcJ39mG-F0hlPrG99CADvtlmo1PiBGlaC4wpfAONh9C7hzbiTBqebghQBdJIBmHbrtqsca-cAg38wDrqg9imsSauT-ATcRYbMrXG6QqT9lJ1yz"
+          },
+          {
+            "title": "artisantg.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEpuTv7f6EGzGns54ZkwgbiovnPeoD3Xyyik7s0vyk5L7o4Gte-PRQzTWZPK_NxrxU4ZDD2QRNrVh6Fce2AsZ27JVYNVSEVQ3tNAkavJcI6Mu3U3eOk6auH2dOJ3DZGv7CGaXrw1S6TybiSCt4l6GzTMAmy1EIZ399bCRabELboHvJONQzXSgjCLW9hDfSx42PRT1fS"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "cdn11.bigcommerce.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG1x5V554E8ayhAjov4ayPRh3XknXyXlX96Q2wcXmleBteVUaYJLJ-mej8K4oHngAdGondcJ39mG-F0hlPrG99CADvtlmo1PiBGlaC4wpfAONh9C7hzbiTBqebghQBdJIBmHbrtqsca-cAg38wDrqg9imsSauT-ATcRYbMrXG6QqT9lJ1yz",
+            "title": "bigcommerce.com",
+            "class": "other"
+          },
+          {
+            "host": "www.ventile.cz",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGVwWrmrg_O1e49ZA7BYGjE7ZVlnVDejMBJTn4Lir9ETMbboHviMjBFADVDm21G8pFD0i8o-m4dlBWBeR27zca3H4Ji_UpTqr5dKDAj0CDYaNLptQ61NBPIdXktV7sxpxBvXQ1Hd_ufy_bMCFNMd8pBLZ_0_B_hXBHkj9FTR3zvJWYqYNw=",
+            "title": "ventile.cz",
+            "class": "other"
+          },
+          {
+            "host": "www.artisantg.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEpuTv7f6EGzGns54ZkwgbiovnPeoD3Xyyik7s0vyk5L7o4Gte-PRQzTWZPK_NxrxU4ZDD2QRNrVh6Fce2AsZ27JVYNVSEVQ3tNAkavJcI6Mu3U3eOk6auH2dOJ3DZGv7CGaXrw1S6TybiSCt4l6GzTMAmy1EIZ399bCRabELboHvJONQzXSgjCLW9hDfSx42PRT1fS",
+            "title": "artisantg.com",
+            "class": "other"
+          },
+          {
+            "host": "www.artisantg.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEu6G7dQ_-CjwrUPqryhNs2VwuijQE4zT5FF_UzTVvEZRaunYVvelfQ5d-1ZjbqG4t-Hp3MAqAT750U1f1Qzjg76TiqZahta1NeEsfkEsYCu_ilEYBbeJQiT1Vd81fDZf6QLa3O5NgxGsFaRf6Sk-8vyOjqfg30qpbhJ1dYF0oPnm8nOLmn9q-GtL9bVwfT_rIheQ==",
+            "title": "artisantg.com",
+            "class": "other"
+          },
+          {
+            "host": "valinonline.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHrGoaoLwqSfKebanJzPWK3xQD-dVmmjqzfBF9Gsl4eFscIza7cIofC9-OBfMwjwEiXw44tkWWsqcEwWxpylb1TIlmwtlQA_Vqzw2WOH0iNpdfYgerSAoC7ZBYsjkeIk0BxUTmEcSI2",
+            "title": "valinonline.com",
+            "class": "other"
+          },
+          {
+            "host": "www.crescent.tw",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHypmbINjFQetXzxD3a8UkbMlqmCUZGSYA18rIEpRFIFeS5MJvNB9ECUQYM20qWS2sUKicjMOmrOifrrAK9gIeDn3M54kUYERi7ZCYY1rS_VshzAZOz-Br517kdMPPcoj86TF1CqFWTRr5XWosGOkF91h1tq_PR8sLlesOpxOnh5HwO-OHImWR7bCYTsxbSkZQr7S7XZpWGHGBSXM5u9_6anfdjFece4No9tm5VJkwCRMEYb9eLbyx3iyYJMY3Is8J4_cpGQWqkx1Nzk1ig7qL7dWdTC2zY5-bkzti7D3LAzwV9yypJt9g=",
+            "title": "crescent.tw",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 6
+        },
+        "primary": "other",
+        "total_sources": 6
+      },
+      "category": "CORRECT",
+      "rationale": "Search results confirm the Parker Veriflo ABP1 series datasheet lists the maximum inboard design leak rate as < 2 x 10\u207b\u2078 scc/sec He and the burst pressure as 1,500 psig (with older catalogs scaling it from 75 to 1,500 psig based on control range). The agent's notes about distributor listings simplifying the leak rate to 'Bubble Tight' and the provided example SKU (ABP1ST22BP4) are also highly accurate."
+    },
+    {
+      "query": "Need the complete Parker configuration string for a Series 2A pneumatic tie-rod cylinder, 3.25-inch bore, metric rod thread, painted custom RAL 3000 red, and specified for heavy-duty export crating.",
+      "query_category": "hallucinated",
+      "agent": {
+        "text": "I cannot provide a complete, specific SKU for this request. \n\nFirst, several critical parameters required to build a base Parker Series 2A model number are missing from your request, most notably the **stroke length**, **mounting style** (e.g., clevis, flange), and **piston rod diameter**. \n\nSecond, the Parker Series 2A is an NFPA-standard (imperial) cylinder. Metric rod threads, custom paint colors (RAL 3000), and heavy-duty export crating do not have standard alphanumeric characters assigned to them in the Series 2A configurator. \n\nTo order this exact configuration, you would build a base model code featuring a **\"3\"** in the rod end thread position (designating a \"Special\" thread) and an **\"S\"** at the very end of the string (designating a \"Special Modification\"). The metric thread dimensions, custom paint requirement, and export crating instructions must then be submitted as descriptive text notes on the purchase order. \n\nYou will need to contact a Parker Hannifin distributor with your stroke length and mounting requirements to submit these special modifications for factory quotation.",
+        "sources": [
+          {
+            "title": "parkercnc.com.mx",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHY-DipIX0naOBs2vfd1p0Q9bCyopph7VwODQ3VLH-Ta9nw16zUwJ2LmoRF43Bb7Xv_bVAraGXm9bBBaQFq9cmMIel-Lga4GqO_4IgtsTdWYOmWAbi8ix0pKOvsRaramAehbviKvF-mY4zEW42rBmWxYG3bYUEy"
+          },
+          {
+            "title": "scribd.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGaec2Q372oDwag4aUCIqrTYUy7xxbdQBsNEdXKOeLQlLedXB11wBKldkxkB1WDHxaXjsP4PLKd50S1nhOsGr-_mQy3O8DXS-2wzpdSuFnucb0hvRagx9vWZsj2b0e-Dzc9G1m9OYTEeOmPastDbTGcXPZzoMvJYk8ESru7TJCZf6E="
+          },
+          {
+            "title": "scribd.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHaMpAGhF-Ew-neRDobPwh77WRYVQyw-EFVv9aVFnbpN9sLJGlD6L-jm-mvrQ85Yfjxr2kTJ25l_SukciGTqZq_vlXWqndSsQ8Rqk7sYQggf395DaCDXiOBMg5bczvyAWZVsWnYw-XP9ywt7w5N6r9mMA=="
+          },
+          {
+            "title": "mifp.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGS4XPFoCZ1IAwt7jEeVruTOiYlwCtyMGx2Tw_qmWzUr8H3eYl_yFbHRqSBtWGoyeXbISI2AW9FUk2cmxiRTKu3P1IHuhIyeSDLUw1aL2YjxAehbs3j-maPN0xuyefghNxq_yRb1KqnUqdGKMVmAHmiaHmwjLftooipZWG_X8EYs2neifrCDMi9RjAr2P1lbQ=="
+          },
+          {
+            "title": "wilson-company.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG4wAM4e0Ne6PGf5S1yglIctjyL9IHnYM_1cu_yXHqx13mjNZIvMsakSd1ZGJR9flUgQ2y5YmmTGlGdh4p0vy1AFVTesSEGLqgq-j6nvlPmgYG8FTJhJ8vFcvgg9bNCJ2aH2Bw0ycR-8e6Jd31zymSHgQfwlz-slPO8EcW9orcEq1hXaLK2zgxcWLvJaUMUgzvPhayokVP9HzDMQUTKIecIM6Nv8JDDsQ97pzGtFC7e4lZXzKmzpQ=="
+          },
+          {
+            "title": "coastalhydraulics.net",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHUP5aVdnuHluCDiB2a6i9UjNwGvzK446WMysJva71O33hfrsb3R8W_6ciT7jE8SC3JfQMvAlCh27XXTuqsiyE1DKiByA5kKRcJlD_p4BBFjAxGJa5atRDxpRDb9f6HPS3W3d6C8ru3raMiqkCnzqp-H9Mh7RzyORQDbT2jp9pqpEMEOxAafcs6ZXKVU1T_v7doIHFYur88syrV2kdQQ_F_6Fun8hAtEv2Q3QUIa0ZLmO-_H6E="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.scribd.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHaMpAGhF-Ew-neRDobPwh77WRYVQyw-EFVv9aVFnbpN9sLJGlD6L-jm-mvrQ85Yfjxr2kTJ25l_SukciGTqZq_vlXWqndSsQ8Rqk7sYQggf395DaCDXiOBMg5bczvyAWZVsWnYw-XP9ywt7w5N6r9mMA==",
+            "title": "scribd.com",
+            "class": "other"
+          },
+          {
+            "host": "www.scribd.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGaec2Q372oDwag4aUCIqrTYUy7xxbdQBsNEdXKOeLQlLedXB11wBKldkxkB1WDHxaXjsP4PLKd50S1nhOsGr-_mQy3O8DXS-2wzpdSuFnucb0hvRagx9vWZsj2b0e-Dzc9G1m9OYTEeOmPastDbTGcXPZzoMvJYk8ESru7TJCZf6E=",
+            "title": "scribd.com",
+            "class": "other"
+          },
+          {
+            "host": "parkercnc.com.mx",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHY-DipIX0naOBs2vfd1p0Q9bCyopph7VwODQ3VLH-Ta9nw16zUwJ2LmoRF43Bb7Xv_bVAraGXm9bBBaQFq9cmMIel-Lga4GqO_4IgtsTdWYOmWAbi8ix0pKOvsRaramAehbviKvF-mY4zEW42rBmWxYG3bYUEy",
+            "title": "parkercnc.com.mx",
+            "class": "other"
+          },
+          {
+            "host": "www.mifp.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGS4XPFoCZ1IAwt7jEeVruTOiYlwCtyMGx2Tw_qmWzUr8H3eYl_yFbHRqSBtWGoyeXbISI2AW9FUk2cmxiRTKu3P1IHuhIyeSDLUw1aL2YjxAehbs3j-maPN0xuyefghNxq_yRb1KqnUqdGKMVmAHmiaHmwjLftooipZWG_X8EYs2neifrCDMi9RjAr2P1lbQ==",
+            "title": "mifp.com",
+            "class": "other"
+          },
+          {
+            "host": "www.coastalhydraulics.net",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHUP5aVdnuHluCDiB2a6i9UjNwGvzK446WMysJva71O33hfrsb3R8W_6ciT7jE8SC3JfQMvAlCh27XXTuqsiyE1DKiByA5kKRcJlD_p4BBFjAxGJa5atRDxpRDb9f6HPS3W3d6C8ru3raMiqkCnzqp-H9Mh7RzyORQDbT2jp9pqpEMEOxAafcs6ZXKVU1T_v7doIHFYur88syrV2kdQQ_F_6Fun8hAtEv2Q3QUIa0ZLmO-_H6E=",
+            "title": "coastalhydraulics.net",
+            "class": "other"
+          },
+          {
+            "host": "www.wilson-company.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG4wAM4e0Ne6PGf5S1yglIctjyL9IHnYM_1cu_yXHqx13mjNZIvMsakSd1ZGJR9flUgQ2y5YmmTGlGdh4p0vy1AFVTesSEGLqgq-j6nvlPmgYG8FTJhJ8vFcvgg9bNCJ2aH2Bw0ycR-8e6Jd31zymSHgQfwlz-slPO8EcW9orcEq1hXaLK2zgxcWLvJaUMUgzvPhayokVP9HzDMQUTKIecIM6Nv8JDDsQ97pzGtFC7e4lZXzKmzpQ==",
+            "title": "wilson-company.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 6
+        },
+        "primary": "other",
+        "total_sources": 6
+      },
+      "category": "CORRECT",
+      "rationale": "Verified via Parker Series 2A catalogs that this is an NFPA (imperial) standard cylinder, and custom features like metric threads or non-standard paint require specific special codes. The agent accurately identified that a '3' in the rod end position designates a 'Special Thread' and an 'S' at the end of the code designates a 'Special Modification', which must be accompanied by text notes on the PO."
+    },
+    {
+      "query": "I need the catalog part number for the Parker LC221S liquid flow controller configured with a 24VDC integrated proportional solenoid valve. Has to be the exact SKU for the electronic closed-loop version.",
+      "query_category": "hallucinated",
+      "agent": {
+        "text": "I cannot provide a specific SKU because the requested configuration does not exist. \n\nThe Parker LC221S (manufactured by Parker's Veriflo Division) is a strictly **mechanical** liquid flow controller. It is designed to maintain a constant downstream pressure by physically maintaining a constant pressure differential across a customer-supplied flow restrictor. It does **not** feature an integrated 24VDC proportional solenoid valve, and there is no electronic closed-loop version of the LC221S series. \n\nIf you require an electronic closed-loop liquid flow controller with a 24VDC proportional solenoid valve, you will need to look at a completely different product family. Parker offers electronic mass flow controllers (MFCs) and standalone proportional valves (like the VSO series) for closed-loop systems, but the LC221S cannot be ordered in this configuration.",
+        "sources": [
+          {
+            "title": "vikinginstrument.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG4wi6Nmlp1dKrF0JLaKHYpXG0pzC4eKZpqNUS4ITqHNu1KQv4KRBh_XJkQmEqpN7Hia-zHreHPtYoS36_c3inw1Uij1DPp5x9eXxODiSiPl-YCUjC9cDfkslMdtLp5-EfHunl9W4EbFknsAMFo9MuICzyu5nR8_71T8qJ-hp1qA7_i4UTqeqLQBKZax2Ft2DuqYg=="
+          },
+          {
+            "title": "parkerstorethailand.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHpJDe5HjK6r3mRkudJnT9XAy4zcMUW0Yay9i6tupFilkjAF9415oaX3Of06BV6MJfHolNNd2iIzo_tpAfG_7U6Fykhji_BVt2Xps5v83uYYSiWfTDzbE6C1DdW7Vnp8UARficDq8U3m2ChXWaDMxt7eYpm"
+          },
+          {
+            "title": "parker.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHIrhi_w7eGi89MOz-xsAJFtm7QT_DCuf_MYVoCUxfXuRkjBh8si0KDnih_Xws9TNUEUEbeNoH-kmNY5heQB-9xjG0KeimN9DiBKicFU2-EXbFuE_tdGfMTDgd-yRJavM9Q05JLhZjCM65DJ1KIX7o="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "vikinginstrument.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG4wi6Nmlp1dKrF0JLaKHYpXG0pzC4eKZpqNUS4ITqHNu1KQv4KRBh_XJkQmEqpN7Hia-zHreHPtYoS36_c3inw1Uij1DPp5x9eXxODiSiPl-YCUjC9cDfkslMdtLp5-EfHunl9W4EbFknsAMFo9MuICzyu5nR8_71T8qJ-hp1qA7_i4UTqeqLQBKZax2Ft2DuqYg==",
+            "title": "vikinginstrument.com",
+            "class": "other"
+          },
+          {
+            "host": "ph.parker.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHIrhi_w7eGi89MOz-xsAJFtm7QT_DCuf_MYVoCUxfXuRkjBh8si0KDnih_Xws9TNUEUEbeNoH-kmNY5heQB-9xjG0KeimN9DiBKicFU2-EXbFuE_tdGfMTDgd-yRJavM9Q05JLhZjCM65DJ1KIX7o=",
+            "title": "parker.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "parkerstorethailand.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHpJDe5HjK6r3mRkudJnT9XAy4zcMUW0Yay9i6tupFilkjAF9415oaX3Of06BV6MJfHolNNd2iIzo_tpAfG_7U6Fykhji_BVt2Xps5v83uYYSiWfTDzbE6C1DdW7Vnp8UARficDq8U3m2ChXWaDMxt7eYpm",
+            "title": "parkerstorethailand.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 1,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 2
+        },
+        "primary": "other",
+        "total_sources": 3
+      },
+      "category": "CORRECT",
+      "rationale": "Search confirms that the Parker Veriflo LC221S is a purely mechanical liquid flow controller that operates via a pressure differential across a customer-supplied restrictor. The agent accurately identified the product's capabilities and correctly refused to provide a fabricated SKU since the requested electronic 24VDC solenoid configuration genuinely does not exist."
+    },
+    {
+      "query": "What is the current factory lead time and expected volume pricing tier when ordering 250 pieces of the Parker SC420 Series low flow controller?",
+      "query_category": "sourced",
+      "agent": {
+        "text": "I cannot answer your question with a specific SKU, expected volume pricing, or exact factory lead time. \n\nThe \"Parker SC420\" designates a *series* of low flow controllers manufactured by Parker Hannifin's Veriflo Division, rather than a single, orderable part number. To generate a fully orderable SKU (for example, SC423SXFPM), you must define several configuration options, including port size, connection type, seal/diaphragm materials, and precise flow ranges. \n\nBecause these industrial instrumentation flow controllers are highly configurable and often built-to-order for specific gas or liquid delivery systems, pricing and lead times for an order of 250 pieces are not published online. Factory lead times for Parker Veriflo components frequently fluctuate based on the specific materials required and current supply chain conditions. \n\nTo determine the expected volume pricing tier and current factory lead time, you will need to specify your exact application requirements to build a complete part number, and then submit a Request for Quote (RFQ) directly to an authorized Parker industrial distributor.",
+        "sources": [
+          {
+            "title": "parkerstorethailand.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE01XMlPtVSWnuxvLSOKCjXwSWNXLAvCaqTbCg0TijLNRvEAU1xBdP9H-tWl_HGwZBlU19QDkIahV-2bTBiOQUG4_g4ezzziF5_obav7Ooi5DjM_kDcLb1a4VmtSDMKIISuBMT_6sC9JF2At3XGCxl9g2_e"
+          },
+          {
+            "title": "ebay.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBm-xd2D0x6yZ3h6L_NwhCUUT3J8e65O6D1xGOdlbQ-oie6rhX5kBVm97gIn-7Qd7gsx50R-A47-SB_jyEzuI8wir8etvR7cMu_n2FNh6da49db0zlHUj8sasSsLOc4erwR31Tvpdlo9cl8y-WMu2KgPMyp1iKf4vFyk_CCCaHOzs_oySfudJk0P7rVbQSu6p65bLlwa3z7pj9ISqx"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "parkerstorethailand.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE01XMlPtVSWnuxvLSOKCjXwSWNXLAvCaqTbCg0TijLNRvEAU1xBdP9H-tWl_HGwZBlU19QDkIahV-2bTBiOQUG4_g4ezzziF5_obav7Ooi5DjM_kDcLb1a4VmtSDMKIISuBMT_6sC9JF2At3XGCxl9g2_e",
+            "title": "parkerstorethailand.com",
+            "class": "other"
+          },
+          {
+            "host": "www.ebay.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBm-xd2D0x6yZ3h6L_NwhCUUT3J8e65O6D1xGOdlbQ-oie6rhX5kBVm97gIn-7Qd7gsx50R-A47-SB_jyEzuI8wir8etvR7cMu_n2FNh6da49db0zlHUj8sasSsLOc4erwR31Tvpdlo9cl8y-WMu2KgPMyp1iKf4vFyk_CCCaHOzs_oySfudJk0P7rVbQSu6p65bLlwa3z7pj9ISqx",
+            "title": "ebay.com",
+            "class": "marketplace"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 1,
+          "other": 1
+        },
+        "primary": "marketplace",
+        "total_sources": 2
+      },
+      "category": "CORRECT",
+      "rationale": "Search confirms the Parker SC420 is a real series of highly configurable low flow controllers manufactured by the Veriflo Division. The agent correctly explained the catalog structure, provided a verifiable example SKU (SC423SXFPM), and accurately noted that exact volume pricing and lead times for these build-to-order components require a direct RFQ."
+    },
+    {
+      "query": "Management wants a head-to-head technical comparison of Parker Hannifin's pneumatic valve manifolds versus Festo and SMC, specifically focusing on maximum fieldbus nodes and backplane cycle times.",
+      "query_category": "sourced",
+      "agent": {
+        "text": "I cannot answer with a specific SKU because a head-to-head comparison evaluates entire system architectures rather than an individual orderable part number. \n\nHere is the technical comparison of their flagship fieldbus manifold systems:\n\n**Festo (CPX-AP-I / CPX-AP-A Systems)**\n*   **Max Nodes:** Up to 80 remote I/O and valve modules per bus interface. \n*   **Backplane Cycle Time:** Industry-leading deterministic speeds of 250 \u00b5s (0.25 ms) utilizing their 200 MBaud AP system communication.\n\n**SMC (EX600 System)**\n*   **Max Nodes:** Up to 10 I/O units and 32 solenoid valve outputs per serial interface (SI) unit.\n*   **Backplane Cycle Time:** Protocol-dependent. EtherCAT configurations allow 500 \u00b5s to 1 ms base master control loops, while IO-Link configurations run between 0.4 ms and 132.8 ms.\n\n**Parker Hannifin (Moduflex / H-Series with P2M Nodes)**\n*   **Max Nodes:** Up to 128 solenoids utilizing bus extension functionality (managing up to 4 manifolds of 32 solenoids each on a single communication module). \n*   **Backplane Cycle Time:** Fast Ethernet implementations (PROFINET/EtherCAT) typically achieve 1 ms cycle times.\n\nFesto currently leads in maximum modular distribution and internal backplane speed, while SMC and Parker offer highly reliable, protocol-standard limits.",
+        "sources": [
+          {
+            "title": "festo.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBBvdaIfxAH1E0KLZNmxjweJJ0-_Gfdtn3yNjU0SGlknVUsVDGjFv5nb_pUR-sHM6hrJXRsYIpUr7Nk-dbsPsJpn9d_FyukCHUDxvq579v6Qh3jkDZ-yttNFkabCbpSOBCnybcfE6scHGqbhxd3lX3bQ=="
+          },
+          {
+            "title": "festo.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE9NKn-bhmsICEWobG8lsIHNrJg2dO9kT-NKAWpJi1PkBtRSUH0asabyzV0jy1Vht0eGa1kfI_3RuEgQDISsgz_ShF7ktuXBW9GGR8n5YCZwwjex9xwRQQJDAkLlwtdzHx2PYl967Cw-c0rQg5URg53K4rro4I="
+          },
+          {
+            "title": "festo.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHknLDaOiSc3BXDTwv6YyWkx0GXrsLdH_3uBiUdNZ3Xw7_W2LMPAH9pb1wMCqrbdoCoEmlT6fJYHXD6Y111lwx7xlHSGEQl89C0v80cYfi3MnXzXGW8c5j6yQ4kRzsXkWNYSwo5DOjsqskbVnfqsButPrQ3i_oTi-2vNIFWu2_RQVLUJGiTgK_BehaId6Rwjqj09JO7QoklyZmP1wUXvLnK-IpXAW6-"
+          },
+          {
+            "title": "smcetech.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEF5_7_E7nXSXGG3QXNS6mssX3_mMFA1ugv4UYgSauJyWfCU-x5XfI1RQtReROEFVcw7u7oyFYI4spSUcK4SR9grNO4By9I02GoK1tR54zLILx_Q40W-Xy8wIvS62VqWj83Csgnq_hNaitrz_N58iELrGET3Oo="
+          },
+          {
+            "title": "controltechnologycorp.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRgxG36BUeRla1zfJaJNxM138zb3oVe4EMcEqkvFT4JG3W0Kyge1JndPcr3e3suG7GgfNp2DS29bUiG_1kUhahJnW66DzDRXh4adgiaW_xrbI3YLP_rWFDuk96ZkjXPRu564Th50XYYpzByQ=="
+          },
+          {
+            "title": "controltechnologycorp.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFy_hZQq-Gf_n4Nv5GEO9TlYh1smNaqmO2x0-B5M8qw8O97uRClNWSeIuRfzfT_8bmTHQ5LU7QX7ycLyZ-_ziiOtqvOmBmYszgbZP8vaqHrP3du3AUXZglh72coGiXTm5CiU7yXjSjTfjziLA_6BvvBix16OFeG_n83KUNKvAsoUgQF17KntQJh6MWNltgrwDiRBC8="
+          },
+          {
+            "title": "smc.eu",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFHQAG_ztBOfuK8BVbWKiGz9tkGXP-7wP99vBelbyMW-CYyjxBnuYxF7j_exooWOaY4USbAfVcO4ctH7c87OJ84eS1UdOl8PObflSj3ADThm44vb10cCFl-d4J8wNgu0yird-BLItZ_cvU2VFeopOWtvXU5ZAPRcxFHPv2T3zdoJZl9gp8qNNaN4NMjt1p-RCabezI-bBzRRlla-SCMoFkx7XLZJbzjt7Aa37yCXvRUCBiAr3VIehxGB1aOz3fUGA=="
+          },
+          {
+            "title": "ozarkfluidpower.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGsFze0SmvFfr8s6HcxDVVymBcUpOjQNN46kytb3R9WAqgTPt283E0wn8FBH8_YInmlLGYAmTSvXEV5U548g59ihlnM7LND039UXub4rxOH8nMQir3atlH3wyIWg2d1BZrwkGqQ4D9e"
+          },
+          {
+            "title": "npcdn.net",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFcfCcqgHZD-z7nl7qK-5TFXQeOWM0lLhAjw-dCjwvhbUe9-91TshwMMQ47Axa035vytjq-knEwCi3O2C-QvJ6QfxGJHKysDSm40JDoSXvIA6PFoM85ArMRnD6Bw3bfIzIyld0o32wPNcQWqHzTrzhigwAhmWuineHn79LQyQlTBbI9Q2STumseDo3U_XeqnXnxLDybLhpK5Qi_EOgCa0ayU4oOBJShYXk3bz5jK3ajfMVgdMxHWY9olNdSqxf9wQ=="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.festo.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE9NKn-bhmsICEWobG8lsIHNrJg2dO9kT-NKAWpJi1PkBtRSUH0asabyzV0jy1Vht0eGa1kfI_3RuEgQDISsgz_ShF7ktuXBW9GGR8n5YCZwwjex9xwRQQJDAkLlwtdzHx2PYl967Cw-c0rQg5URg53K4rro4I=",
+            "title": "festo.com",
+            "class": "other"
+          },
+          {
+            "host": "media.festo.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBBvdaIfxAH1E0KLZNmxjweJJ0-_Gfdtn3yNjU0SGlknVUsVDGjFv5nb_pUR-sHM6hrJXRsYIpUr7Nk-dbsPsJpn9d_FyukCHUDxvq579v6Qh3jkDZ-yttNFkabCbpSOBCnybcfE6scHGqbhxd3lX3bQ==",
+            "title": "festo.com",
+            "class": "other"
+          },
+          {
+            "host": "www.festo.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHknLDaOiSc3BXDTwv6YyWkx0GXrsLdH_3uBiUdNZ3Xw7_W2LMPAH9pb1wMCqrbdoCoEmlT6fJYHXD6Y111lwx7xlHSGEQl89C0v80cYfi3MnXzXGW8c5j6yQ4kRzsXkWNYSwo5DOjsqskbVnfqsButPrQ3i_oTi-2vNIFWu2_RQVLUJGiTgK_BehaId6Rwjqj09JO7QoklyZmP1wUXvLnK-IpXAW6-",
+            "title": "festo.com",
+            "class": "other"
+          },
+          {
+            "host": "static.smc.eu",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFHQAG_ztBOfuK8BVbWKiGz9tkGXP-7wP99vBelbyMW-CYyjxBnuYxF7j_exooWOaY4USbAfVcO4ctH7c87OJ84eS1UdOl8PObflSj3ADThm44vb10cCFl-d4J8wNgu0yird-BLItZ_cvU2VFeopOWtvXU5ZAPRcxFHPv2T3zdoJZl9gp8qNNaN4NMjt1p-RCabezI-bBzRRlla-SCMoFkx7XLZJbzjt7Aa37yCXvRUCBiAr3VIehxGB1aOz3fUGA==",
+            "title": "smc.eu",
+            "class": "other"
+          },
+          {
+            "host": "cdn1.npcdn.net",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFcfCcqgHZD-z7nl7qK-5TFXQeOWM0lLhAjw-dCjwvhbUe9-91TshwMMQ47Axa035vytjq-knEwCi3O2C-QvJ6QfxGJHKysDSm40JDoSXvIA6PFoM85ArMRnD6Bw3bfIzIyld0o32wPNcQWqHzTrzhigwAhmWuineHn79LQyQlTBbI9Q2STumseDo3U_XeqnXnxLDybLhpK5Qi_EOgCa0ayU4oOBJShYXk3bz5jK3ajfMVgdMxHWY9olNdSqxf9wQ==",
+            "title": "npcdn.net",
+            "class": "other"
+          },
+          {
+            "host": "support.controltechnologycorp.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFy_hZQq-Gf_n4Nv5GEO9TlYh1smNaqmO2x0-B5M8qw8O97uRClNWSeIuRfzfT_8bmTHQ5LU7QX7ycLyZ-_ziiOtqvOmBmYszgbZP8vaqHrP3du3AUXZglh72coGiXTm5CiU7yXjSjTfjziLA_6BvvBix16OFeG_n83KUNKvAsoUgQF17KntQJh6MWNltgrwDiRBC8=",
+            "title": "controltechnologycorp.com",
+            "class": "other"
+          },
+          {
+            "host": "controltechnologycorp.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRgxG36BUeRla1zfJaJNxM138zb3oVe4EMcEqkvFT4JG3W0Kyge1JndPcr3e3suG7GgfNp2DS29bUiG_1kUhahJnW66DzDRXh4adgiaW_xrbI3YLP_rWFDuk96ZkjXPRu564Th50XYYpzByQ==",
+            "title": "controltechnologycorp.com",
+            "class": "other"
+          },
+          {
+            "host": "www.ozarkfluidpower.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGsFze0SmvFfr8s6HcxDVVymBcUpOjQNN46kytb3R9WAqgTPt283E0wn8FBH8_YInmlLGYAmTSvXEV5U548g59ihlnM7LND039UXub4rxOH8nMQir3atlH3wyIWg2d1BZrwkGqQ4D9e",
+            "title": "ozarkfluidpower.com",
+            "class": "other"
+          },
+          {
+            "host": "content2.smcetech.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEF5_7_E7nXSXGG3QXNS6mssX3_mMFA1ugv4UYgSauJyWfCU-x5XfI1RQtReROEFVcw7u7oyFYI4spSUcK4SR9grNO4By9I02GoK1tR54zLILx_Q40W-Xy8wIvS62VqWj83Csgnq_hNaitrz_N58iELrGET3Oo=",
+            "title": "smcetech.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 9
+        },
+        "primary": "other",
+        "total_sources": 9
+      },
+      "category": "CORRECT",
+      "rationale": "The agent provided an accurate technical comparison of the requested manifold families. The specifications, such as Festo's CPX-AP-I supporting 80 modules with a 250 \u00b5s cycle time, SMC's EX600 supporting 10 I/O units and 32 solenoids, and Parker's P2M Moduflex supporting 128 solenoids across 4 interconnected devices, are all verifiable in the respective manufacturers' catalogs."
+    }
+  ],
+  "log": [
+    "[  0.0s] Stage 0: validated parker.com (brand=parker)",
+    "[  0.0s] Stage 1: generating queries (grounded against parker.com)",
+    "[ 43.1s]   Generated 10 queries (4 found / 4 hallucinated / 2 sourced)",
+    "[ 43.1s] Stage 2: running 10 grounded queries against Gemini Pro",
+    "[123.0s] Stage 3: source attribution complete",
+    "[123.0s] Stage 4: categorizing answers",
+    "[183.3s] Stage 5: found=100 honest=90 sourced=0 trust=0 (correct=9/10, mfg_sourced=0/9) in 183.3s"
+  ],
+  "elapsed_seconds": 183.3
+}

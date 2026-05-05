@@ -1,0 +1,723 @@
+{
+  "slug": "lincoln-electric",
+  "display_name": "Lincoln Electric",
+  "input": "https://lincolnelectric.com",
+  "host": "lincolnelectric.com",
+  "brand": "lincolnelectric",
+  "found_score": 100,
+  "honest_score": 90,
+  "sourced_score": 11,
+  "trust_score": 10,
+  "visibility_score": 90,
+  "source_authority_score": 11,
+  "total_queries": 10,
+  "correct_queries": 9,
+  "manufacturer_correct": 1,
+  "breakdown": {
+    "CORRECT": 9,
+    "HALLUCINATION": 0,
+    "OUT_OF_CATALOG": 0,
+    "REFUSED": 0,
+    "WRONG_SPEC": 1,
+    "ERROR": 0
+  },
+  "source_breakdown": {
+    "manufacturer": 1,
+    "distributor": 0,
+    "marketplace": 0,
+    "other": 9,
+    "none": 0
+  },
+  "rows": [
+    {
+      "query": "We are sourcing specialty consumables for P92 steel pipe welding and need to know if Lincoln Electric still manufactures the Metrode Supercore F92 flux-cored wire, and if it has been rebranded.",
+      "query_category": "found",
+      "agent": {
+        "text": "Yes, Lincoln Electric still manufactures the specialty flux-cored wire originally known as Metrode Supercore F92. Following their acquisition of Metrode, Lincoln Electric integrated this consumable into their Special Alloys portfolio and rebranded it as **TECHCORE B92** (often cross-referenced in their catalogs as `SUPERCORE F92 (TECHCORE B92)`). \n\nIt remains an all-positional flux-cored wire designed for welding P92 creep-resistant steels and meets the AWS A5.29: E91T1-G classification. \n\nWhile the exact formulation is fully available, **there is no universally published, direct-order SKU** (such as a standard Lincoln ED-series part number) available in public online catalogs. Because it is a specialty alloy, the exact item number depends heavily on your required wire diameter (e.g., 1.2mm) and spool/packaging format. \n\nTo procure this item, you will need to contact a Lincoln Electric Special Alloys distributor and request a quote for **TECHCORE B92**, specifying your required wire size, to generate the exact orderable part number for your ERP system.",
+        "sources": [
+          {
+            "title": "diceltro.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBkejkSsosb8Dihor1eYO8NC2l-cfvTZyn4OPfxIuS_OUnxcWz6VN9klYfv_PuP6FtuqG0nkrvEfvqME4FzFbctPyDmq-a669g63eYfbsFjZpBVhi5g6hMoKkaKrUjNVH1o3HIbjMmDAz456lrtl6dfvig3INmwEwIX_iC_r-wLpWL9lurprrx"
+          },
+          {
+            "title": "scribd.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFf7NSUoRXnx1cWQORTtsNPvMMoEcWAnsQtt0wGrRsMCg2oJmRfYcriSpnQfyhE1D-qdf5d-8p1EUl3GtsTTxFNk6MOST9N2FabDzNecEZlPcxBKYMQspWqRpVXdlEQDojILG3l_hOhtRapyqt7uL8rJGFUY53VFuXDvjRZE-KFLbhCDzk="
+          },
+          {
+            "title": "schweissen-deutschland.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHJVHulfgGFVaHObi-NtaURNbvndbwYX8TAkDQuWm-mirRG3Z9JTLsVZ8sTKBafxbkI6r0GUn9oVk2piHryIAprldw970WpkQtunonhzZDuaJRCbW8How13TxfnZEAmkUjYtAMblsY96v_p3mEWpJ4401IZx1--4FiEBujNixYODzh0ZPgdWZj_Yr6l2q9V863xJstzY8aF"
+          },
+          {
+            "title": "soldaelectric.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE0pmccvBnUnAw_VJJAVQP9n71hQXHyyXFONHme957NObc4UUgbwyUBvwLI892w8SJEC2walP_zwGqg0dmdN5XrstVmQe6rOTSFzVJeUS9RN-pD2NtpIGBwuAsSOV0i8jstlbWVvT8AE0fRGDeaB4UuqfNa"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.scribd.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFf7NSUoRXnx1cWQORTtsNPvMMoEcWAnsQtt0wGrRsMCg2oJmRfYcriSpnQfyhE1D-qdf5d-8p1EUl3GtsTTxFNk6MOST9N2FabDzNecEZlPcxBKYMQspWqRpVXdlEQDojILG3l_hOhtRapyqt7uL8rJGFUY53VFuXDvjRZE-KFLbhCDzk=",
+            "title": "scribd.com",
+            "class": "other"
+          },
+          {
+            "host": "schweissen-deutschland.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHJVHulfgGFVaHObi-NtaURNbvndbwYX8TAkDQuWm-mirRG3Z9JTLsVZ8sTKBafxbkI6r0GUn9oVk2piHryIAprldw970WpkQtunonhzZDuaJRCbW8How13TxfnZEAmkUjYtAMblsY96v_p3mEWpJ4401IZx1--4FiEBujNixYODzh0ZPgdWZj_Yr6l2q9V863xJstzY8aF",
+            "title": "schweissen-deutschland.de",
+            "class": "other"
+          },
+          {
+            "host": "www.diceltro.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBkejkSsosb8Dihor1eYO8NC2l-cfvTZyn4OPfxIuS_OUnxcWz6VN9klYfv_PuP6FtuqG0nkrvEfvqME4FzFbctPyDmq-a669g63eYfbsFjZpBVhi5g6hMoKkaKrUjNVH1o3HIbjMmDAz456lrtl6dfvig3INmwEwIX_iC_r-wLpWL9lurprrx",
+            "title": "diceltro.com",
+            "class": "other"
+          },
+          {
+            "host": "www.soldaelectric.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE0pmccvBnUnAw_VJJAVQP9n71hQXHyyXFONHme957NObc4UUgbwyUBvwLI892w8SJEC2walP_zwGqg0dmdN5XrstVmQe6rOTSFzVJeUS9RN-pD2NtpIGBwuAsSOV0i8jstlbWVvT8AE0fRGDeaB4UuqfNa",
+            "title": "soldaelectric.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 4
+        },
+        "primary": "other",
+        "total_sources": 4
+      },
+      "category": "CORRECT",
+      "rationale": "Google Search confirms that following Lincoln Electric's acquisition of Metrode, the Supercore F92 flux-cored wire for P92 steel was integrated into their Special Alloys portfolio and cross-referenced/rebranded as TECHCORE B92. The agent also accurately provided the correct AWS A5.29: E91T1-G classification found in the manufacturer's literature."
+    },
+    {
+      "query": "Is the Ranger Air 330MPX multi-process welder currently in active production by Lincoln Electric, and does this specific unit feature a built-in rotary screw air compressor?",
+      "query_category": "found",
+      "agent": {
+        "text": "Yes, the Lincoln Electric Ranger Air 330MPX multi-process welder is currently in active production. \n\nThis specific 5-in-1 unit **does** feature a built-in industrial-grade Vanair rotary screw air compressor, which delivers 40 CFM at 150 PSI. In addition to the multi-process welder and air compressor, the system also functions as a 10kW continuous AC generator, a battery jump assist, and a battery charger. \n\nFor your procurement records, the exact orderable manufacturer part number (SKU) for the Ranger Air 330MPX is **K5239-1**.",
+        "sources": [
+          {
+            "title": "harrisweldingsupplies.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHqEQGtpaXNImVyD69qYJor7zfrg-c-Ea2Tph1I5EnHow-rrnDJc4F4SjdOUri98NZANdy2t8T3ZTKwJsZT82zCUG9AbE9UgiSAFUP-yu76VDUIFr9WcGuH7tevSQq74xutdyh8UQjoMEUfsCyxzFgBi37DNuGRttcYM89LS-Lqdu7LpQnxaYAS_tYpVYTodHo3XncMxJ6eW6NIeQ=="
+          },
+          {
+            "title": "vanair.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHO2UXmV9ljQMdYuFG9p2yoV_j_AOpcEFge7E7nb7SGWlUdAi2TE-_rNCA6hKhKrdEz9YAAp6zZ4I2f49nTMWK7f7lkZOcV1XjTRCJWBIMhb1rXro2D1EJXp06k2b9qlkLTNOHUijPRsc9TIwigWno10YemFCxEKRYxbDnjxkyGG_dwu3yMAMM8"
+          },
+          {
+            "title": "weldingmart.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFCcqS7KKdKozakKPjs_YBn27kcvBreH8uioZ8wycCDjx--vBX1nvoLoEzE9hn9an4pumfQmVm_hrxTNAgafHgI-xLNNrs7e2ACp2Uq1i6CSZ9ydonDvHo-hXfeK2IirJfx_OLZ-7SbDyGD8Okn1u3GKW7OHKsC-3lIkCiMUZZEqetJaOVKuG-gr00VzpR9DwhJ3vHAnIUKwc0="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "weldingmart.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFCcqS7KKdKozakKPjs_YBn27kcvBreH8uioZ8wycCDjx--vBX1nvoLoEzE9hn9an4pumfQmVm_hrxTNAgafHgI-xLNNrs7e2ACp2Uq1i6CSZ9ydonDvHo-hXfeK2IirJfx_OLZ-7SbDyGD8Okn1u3GKW7OHKsC-3lIkCiMUZZEqetJaOVKuG-gr00VzpR9DwhJ3vHAnIUKwc0=",
+            "title": "weldingmart.com",
+            "class": "other"
+          },
+          {
+            "host": "harrisweldingsupplies.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHqEQGtpaXNImVyD69qYJor7zfrg-c-Ea2Tph1I5EnHow-rrnDJc4F4SjdOUri98NZANdy2t8T3ZTKwJsZT82zCUG9AbE9UgiSAFUP-yu76VDUIFr9WcGuH7tevSQq74xutdyh8UQjoMEUfsCyxzFgBi37DNuGRttcYM89LS-Lqdu7LpQnxaYAS_tYpVYTodHo3XncMxJ6eW6NIeQ==",
+            "title": "harrisweldingsupplies.com",
+            "class": "other"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHO2UXmV9ljQMdYuFG9p2yoV_j_AOpcEFge7E7nb7SGWlUdAi2TE-_rNCA6hKhKrdEz9YAAp6zZ4I2f49nTMWK7f7lkZOcV1XjTRCJWBIMhb1rXro2D1EJXp06k2b9qlkLTNOHUijPRsc9TIwigWno10YemFCxEKRYxbDnjxkyGG_dwu3yMAMM8",
+            "title": "vanair.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 3
+        },
+        "primary": "other",
+        "total_sources": 3
+      },
+      "category": "CORRECT",
+      "rationale": "Verified via Lincoln Electric's catalog and authorized distributors (like Cyberweld and Baker's Gas) that the Ranger Air 330MPX is an active 5-in-1 unit with the SKU K5239-1. It correctly features a built-in Vanair rotary screw air compressor delivering 40 CFM at 150 PSI, along with a 10kW generator, jump assist, and battery charger."
+    },
+    {
+      "query": "I am updating our internal vendor database; does Lincoln Electric still manufacture the K1053-9 specific variant of the Idealarc 250 welder that includes factory-installed power factor capacitors?",
+      "query_category": "found",
+      "agent": {
+        "text": "Yes, Lincoln Electric still manufactures the Idealarc 250 stick welder variant that includes factory-installed power factor capacitors (PFC). \n\nThe correct and current orderable part number (SKU) for this specific machine is **K1053-9**. \n\nThis model is an industrial AC/DC stick and TIG power source that produces up to 300 amps AC and 250 amps DC. The factory-installed power factor capacitors help compensate for unstable input power, reduce current draw, and enhance overall electrical efficiency. It remains an active workhorse product in Lincoln Electric's catalog and is readily available for order through major authorized B2B industrial and welding distributors.",
+        "sources": [
+          {
+            "title": "cyberweld.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH0NqRUziSkrsBWJz998m-5ZRCYNBpaIc42vozNoAEafziV_h7Tg4x1krAl6Y4xrqYxy4ZzbK_AJzjLCvunG3ibV1SxsnO44UR7U52tMrxLjzj4a7YCB-x_-02XBVD998efK54ltmLHvfMn56KIITaEmJBCId1UobN__7lRMyp700zPkT_vxSmrd20vElW1oWt6Yw=="
+          },
+          {
+            "title": "lincolnelectric.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF2HWQ3Q_TvnCf6tetJ9lVlejoqVIQjANz5qoC8Mfu1gVFXvRncO0tqbVTD53V_Fu9kVqR1scBsPG-Xo832azMMYSqka-F-DFXtLYrIppFre9tFtCYB67Zt61b4xoKOm1XUqMC9TPiOvEBWPI9Vug=="
+          },
+          {
+            "title": "weldingmart.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF3zIu4W0-ot7cOuI_TlZQHPRILl7b8XfzRJMdSt6bYDei_QHt78i2kBiiT9hYz31J8mymLlNabUhbPjo8HHQh4hx0vcMoBjaOjm7Vs4kTVLzEW-CdynVnxW9pxYXGotiL6_92dgWEfwvzGHdGdFjCgwSf7Sw5QYHrqA0EoIuwI8R8MOcvvzyEzgP25BoOf"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.lincolnelectric.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF2HWQ3Q_TvnCf6tetJ9lVlejoqVIQjANz5qoC8Mfu1gVFXvRncO0tqbVTD53V_Fu9kVqR1scBsPG-Xo832azMMYSqka-F-DFXtLYrIppFre9tFtCYB67Zt61b4xoKOm1XUqMC9TPiOvEBWPI9Vug==",
+            "title": "lincolnelectric.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "weldingmart.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF3zIu4W0-ot7cOuI_TlZQHPRILl7b8XfzRJMdSt6bYDei_QHt78i2kBiiT9hYz31J8mymLlNabUhbPjo8HHQh4hx0vcMoBjaOjm7Vs4kTVLzEW-CdynVnxW9pxYXGotiL6_92dgWEfwvzGHdGdFjCgwSf7Sw5QYHrqA0EoIuwI8R8MOcvvzyEzgP25BoOf",
+            "title": "weldingmart.com",
+            "class": "other"
+          },
+          {
+            "host": "store.cyberweld.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH0NqRUziSkrsBWJz998m-5ZRCYNBpaIc42vozNoAEafziV_h7Tg4x1krAl6Y4xrqYxy4ZzbK_AJzjLCvunG3ibV1SxsnO44UR7U52tMrxLjzj4a7YCB-x_-02XBVD998efK54ltmLHvfMn56KIITaEmJBCId1UobN__7lRMyp700zPkT_vxSmrd20vElW1oWt6Yw==",
+            "title": "cyberweld.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 1,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 2
+        },
+        "primary": "other",
+        "total_sources": 3
+      },
+      "category": "CORRECT",
+      "rationale": "Search results from authorized welding distributors confirm that Lincoln Electric manufactures the Idealarc 250 stick welder with factory-installed power factor capacitors (PFC) under the exact SKU K1053-9. The specifications provided by the agent, including the 300 amps AC and 250 amps DC output, accurately match the product datasheet."
+    },
+    {
+      "query": "For supplier consolidation purposes, provide a complete and exhaustive list of all the specialty alloy and gas equipment sub-brands fully owned by Lincoln Electric as of 2026.",
+      "query_category": "found",
+      "agent": {
+        "text": "Because you are asking for a corporate list of sub-brands and subsidiaries rather than a single product, I cannot answer with a specific SKU. \n\nFor supplier consolidation, Lincoln Electric fully owns the following specialty alloy and gas equipment sub-brands as of 2026:\n\n*   **The Harris Products Group**: Lincoln's primary global division for industrial and specialty gas equipment (regulators, flowmeters, torches) as well as brazing and soldering alloys.\n*   **Metrode**: A UK-based manufacturer specializing in high-integrity specialty alloy consumables (nickel and stainless) for the offshore, petrochemical, and power generation industries.\n*   **Techalloy**: A dedicated sub-brand for premium nickel, stainless, and high-temperature specialty alloy wires and electrodes.\n*   **Weartech**: A manufacturer of cobalt-, nickel-, and iron-based wear-resistant specialty alloys.\n*   **Alloy Steel Australia**: A provider of specialty alloy wear plates and repair solutions. Lincoln Electric expanded its maintenance and repair portfolio by acquiring the remaining 65% stake for 100% full ownership in August 2025.\n*   **Indalco**: A subsidiary focused exclusively on premium aluminum alloy welding consumables. \n\nThis represents Lincoln Electric's exhaustive portfolio for specialty metals and gas distribution equipment.",
+        "sources": [
+          {
+            "title": "gawdamedia.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEL1Q9hJUuCOO4BtXs8Rg4GM42SCdG84NXvmejhOHt55ZXy3nMK0EIwOF3tVZzbd24yyA1-8lWSpk3AdawpGCz-g7bgLACQg9wpyttJYlSKyU4vIfeIdcbe-TCaC-7p5WCSOvCneWtiC-cBL5fQOaU3FCIz"
+          },
+          {
+            "title": "lincolnelectric.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF331Q3wcB8eTRSCJgm6_mm4Zi_SnldRuLNM2KTuHxU1tNvq3sorX_ZtQ1jGWkGsMCWLw4r8sqS8fuNMd7R3FUMOmIEHz8RHFXG53HT4fB-daD-P1l9fIdNDXXi2zE4dsuJEHt_Z0mxTkdZDhHPkteHk80rhKIJcppzXMFOJIKdf46I5Q=="
+          },
+          {
+            "title": "diceltro.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFHEO3hZXUzByA7-CBYsHeNpPv6u10oMZjXzFMnb0llB6BZBT_BIIVl6nJI_9mC4bZlYX3tma0UMvxXnXv4gppbmDO1pOBu3RohnS6Gsw7pYGLsivNS8SL4R1vr_Er266YuiwqPGRHpgk12JAiTQ_4DUwt1f8OZ5rq2aCCXpBOZr_UcFag2uuBQ"
+          },
+          {
+            "title": "lincolnelectric.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEziZ1LubpOILM5DG8OmIObLQ3kkAjpfLzz0VwKeIk_PbuGQzvlXrQ8UIGT9KhE-JaBNdCI6qAhsj9jiC4-EWMFPsa0dSboplQsXh_tJjw2DtMNsUOEwvyTuVDYiEZmv3YLU61t9Bn76f1EUQg9PZEaa-H30Eqb0NE="
+          },
+          {
+            "title": "weldingmart.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVk4xLC7KEDdeM3czYxYcvxoQQFk4TbPkMKm0CYeuFv014zk0MVMIiW-5wFmQnJ39p916HPOg5doIzWrjD4K3sDXBozXT205nw7tbJZkzNyYVhvgyF-YC-Z5VlEgykZ2cOMA325LmPlw6YfgQDbE7tARMOku4ya6P7SYR8ToYBEDY6sLnfsaMZDhvldP-cvGAF-IJ4VIOCiqqCCe7_pTv5-fy9EN2XpHw="
+          },
+          {
+            "title": "lincolnelectric.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEKyVcSI_6C1F5uyPVYSvfrN4RvUjCxdKtlGJAF3gyJtNXk96T0fIb8weGmqYLYQk2SV9Q4q05D_xjBsEymUg4zqzW6HsUPSyVTrXL9oF_Cg48Mt2lg0nXGuSVlS-ogXv6Dgx7L1EXTR5nagFzuOQV-"
+          },
+          {
+            "title": "aist.org",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGYzg-PVqP1bFgghcd3-m2y_rCyrBfZifrs27ZDfjL_yzXLeLvoIJjNHdRDHKepv5kSUQmYgG29AADVHc01g6pwtvbf51pK_Ph0Mwsb6wuCHLmmr4RF7VKhS8YtDGcSrpR9gR378KCbBI_GU_COh-6yhoexUzeXWF4XZi4EU4zAPUybTdLaXSeKqQ=="
+          },
+          {
+            "title": "lincolnelectric.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEoPEs1L2WcTyQ_CpHRnLAq-f6gQGX3o-5WAxbUlD64wSKPgFvDzMQzoWx4FRkHuNWhDltcdBNM2e8vMQAKjDmJE2ArT2dx9-UmqZV8CmeVxEUJ-rnsT1OyioFfX9CtHhP1mZ0C2TxdEZvTto3KKW0B"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "gawdamedia.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEL1Q9hJUuCOO4BtXs8Rg4GM42SCdG84NXvmejhOHt55ZXy3nMK0EIwOF3tVZzbd24yyA1-8lWSpk3AdawpGCz-g7bgLACQg9wpyttJYlSKyU4vIfeIdcbe-TCaC-7p5WCSOvCneWtiC-cBL5fQOaU3FCIz",
+            "title": "gawdamedia.com",
+            "class": "other"
+          },
+          {
+            "host": "www.lincolnelectric.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF331Q3wcB8eTRSCJgm6_mm4Zi_SnldRuLNM2KTuHxU1tNvq3sorX_ZtQ1jGWkGsMCWLw4r8sqS8fuNMd7R3FUMOmIEHz8RHFXG53HT4fB-daD-P1l9fIdNDXXi2zE4dsuJEHt_Z0mxTkdZDhHPkteHk80rhKIJcppzXMFOJIKdf46I5Q==",
+            "title": "lincolnelectric.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.lincolnelectric.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEoPEs1L2WcTyQ_CpHRnLAq-f6gQGX3o-5WAxbUlD64wSKPgFvDzMQzoWx4FRkHuNWhDltcdBNM2e8vMQAKjDmJE2ArT2dx9-UmqZV8CmeVxEUJ-rnsT1OyioFfX9CtHhP1mZ0C2TxdEZvTto3KKW0B",
+            "title": "lincolnelectric.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.diceltro.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFHEO3hZXUzByA7-CBYsHeNpPv6u10oMZjXzFMnb0llB6BZBT_BIIVl6nJI_9mC4bZlYX3tma0UMvxXnXv4gppbmDO1pOBu3RohnS6Gsw7pYGLsivNS8SL4R1vr_Er266YuiwqPGRHpgk12JAiTQ_4DUwt1f8OZ5rq2aCCXpBOZr_UcFag2uuBQ",
+            "title": "diceltro.com",
+            "class": "other"
+          },
+          {
+            "host": "www.lincolnelectric.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEziZ1LubpOILM5DG8OmIObLQ3kkAjpfLzz0VwKeIk_PbuGQzvlXrQ8UIGT9KhE-JaBNdCI6qAhsj9jiC4-EWMFPsa0dSboplQsXh_tJjw2DtMNsUOEwvyTuVDYiEZmv3YLU61t9Bn76f1EUQg9PZEaa-H30Eqb0NE=",
+            "title": "lincolnelectric.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.lincolnelectric.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEKyVcSI_6C1F5uyPVYSvfrN4RvUjCxdKtlGJAF3gyJtNXk96T0fIb8weGmqYLYQk2SV9Q4q05D_xjBsEymUg4zqzW6HsUPSyVTrXL9oF_Cg48Mt2lg0nXGuSVlS-ogXv6Dgx7L1EXTR5nagFzuOQV-",
+            "title": "lincolnelectric.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "weldingmart.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVk4xLC7KEDdeM3czYxYcvxoQQFk4TbPkMKm0CYeuFv014zk0MVMIiW-5wFmQnJ39p916HPOg5doIzWrjD4K3sDXBozXT205nw7tbJZkzNyYVhvgyF-YC-Z5VlEgykZ2cOMA325LmPlw6YfgQDbE7tARMOku4ya6P7SYR8ToYBEDY6sLnfsaMZDhvldP-cvGAF-IJ4VIOCiqqCCe7_pTv5-fy9EN2XpHw=",
+            "title": "weldingmart.com",
+            "class": "other"
+          },
+          {
+            "host": "www.aist.org",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGYzg-PVqP1bFgghcd3-m2y_rCyrBfZifrs27ZDfjL_yzXLeLvoIJjNHdRDHKepv5kSUQmYgG29AADVHc01g6pwtvbf51pK_Ph0Mwsb6wuCHLmmr4RF7VKhS8YtDGcSrpR9gR378KCbBI_GU_COh-6yhoexUzeXWF4XZi4EU4zAPUybTdLaXSeKqQ==",
+            "title": "aist.org",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 4,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 4
+        },
+        "primary": "manufacturer",
+        "total_sources": 8
+      },
+      "category": "CORRECT",
+      "rationale": "I verified via Google Search that Lincoln Electric owns all the listed sub-brands (The Harris Products Group, Metrode, Techalloy, Weartech, Indalco). Furthermore, corporate news confirms Lincoln Electric acquired the remaining 65% stake to take 100% full ownership of Alloy Steel Australia in August 2025."
+    },
+    {
+      "query": "Our ironworkers need new mag drills to match our red welding fleet; please provide the exact Lincoln Electric part number for their 120V Heavy-Duty Magnetic Drill Press with a 2-inch depth capacity.",
+      "query_category": "hallucinated",
+      "agent": {
+        "text": "I cannot provide a specific SKU because **Lincoln Electric does not manufacture or sell magnetic drill presses**. While Lincoln Electric is famous for its red welding fleet, their product catalog exclusively focuses on welders, plasma cutters, automated welding systems, fume extractors, and consumables\u2014not hole-making power tools. \n\nIf your ironworkers specifically want a heavy-duty 120V mag drill with a 2-inch depth capacity that visually matches your red welding equipment, you should look into **Milwaukee Tool**. Milwaukee manufactures heavy-duty red magnetic drill presses (such as their 1-5/8\" and 2\" Electromagnetic Drill lines) that meet those exact industrial specifications. \n\nOther top-tier B2B brands that manufacture 2-inch capacity mag drills include Hougen, Fein (Jancy), Evolution, and Champion Cutting Tool, though they feature different brand color schemes. \n\nPlease consult your industrial supplier for a non-Lincoln alternative to fulfill this tooling request.",
+        "sources": [
+          {
+            "title": "ramweldingsupply.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE9WFsNMLVaqGdLyoH-Lehq1ubcYFRRo76T7qF1iOYdtT48rek6-ju6HWv0jRA6gvwQnTdKXuXgecTWTo-eOHv62xZUGoWpi7gRqSmEVF2wqL0Z06BjiWWgknxEVSy7hxK5OaXNFNFFjmPhRg_r3ebaU6JI"
+          },
+          {
+            "title": "hougenmagdrills.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfDALAztzSeYT7iW0QitYPGL4jqsJDVrY6ZRpOBE9Teowu1mt1B6jeFgknv3Do3bRlT8S8HKHlHZoXc5jUsiwIdI5oui_QLVg--15TNKqMyot-6W8WEjNJQvyC-4z2Lmihe-kdrq5buYjirmFtnaAKjoY="
+          },
+          {
+            "title": "homedepot.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEAEUcHHlfierRHNS_tLgoA64Y_OTuoyfw8LrxWGpxOFjBUkfYwtZ7_-UjqZzIS4uTttl5CNy3-aHyzCsnrqDqPhwkKRQu5bsyN4IDB5tdMCRFuU0jre0EsDR9FW6JBJeg7t3_5dLV5EP2Kdh8OkKAbGhhb93Xg2yWYYIhMuOG6DMKatDB-EfR_bwUh8j_q3jy9tZNa8NXJ4rQ="
+          },
+          {
+            "title": "championcuttingtool.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGdyS-_w2SutW38lLHiG3kGRXXe-ELV2jLjSkpFC4-sEaoxm9YqsMo45SWeE4JzbRkm91YS9ueUAkvVlk9MZCgEqceQ3dx_neg5wojhXuO_5eRD4J_VuSWwktjSdxURrkiK-ih6pk7GCc58ow_qJeBVmwAMErRRzz16f7PU"
+          },
+          {
+            "title": "evolutionpowertools.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGOsr7WqioJQuyUtokBDoEtOiqay33eyfmGD1DUAhXuk2qPdDV14XrxZ9CgxYtBu5KggTn3YzbeqsU7oWKrWTAwBBZ3dmwlNLoVGaa-JgbDbkhe24LT-PgBMfQRLxB8T8MBj6R7Psekc9guajiFiy472s6Ld-UyWPcane4="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.homedepot.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEAEUcHHlfierRHNS_tLgoA64Y_OTuoyfw8LrxWGpxOFjBUkfYwtZ7_-UjqZzIS4uTttl5CNy3-aHyzCsnrqDqPhwkKRQu5bsyN4IDB5tdMCRFuU0jre0EsDR9FW6JBJeg7t3_5dLV5EP2Kdh8OkKAbGhhb93Xg2yWYYIhMuOG6DMKatDB-EfR_bwUh8j_q3jy9tZNa8NXJ4rQ=",
+            "title": "homedepot.com",
+            "class": "other"
+          },
+          {
+            "host": "store.evolutionpowertools.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGOsr7WqioJQuyUtokBDoEtOiqay33eyfmGD1DUAhXuk2qPdDV14XrxZ9CgxYtBu5KggTn3YzbeqsU7oWKrWTAwBBZ3dmwlNLoVGaa-JgbDbkhe24LT-PgBMfQRLxB8T8MBj6R7Psekc9guajiFiy472s6Ld-UyWPcane4=",
+            "title": "evolutionpowertools.com",
+            "class": "other"
+          },
+          {
+            "host": "hougenmagdrills.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfDALAztzSeYT7iW0QitYPGL4jqsJDVrY6ZRpOBE9Teowu1mt1B6jeFgknv3Do3bRlT8S8HKHlHZoXc5jUsiwIdI5oui_QLVg--15TNKqMyot-6W8WEjNJQvyC-4z2Lmihe-kdrq5buYjirmFtnaAKjoY=",
+            "title": "hougenmagdrills.com",
+            "class": "other"
+          },
+          {
+            "host": "ramweldingsupply.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE9WFsNMLVaqGdLyoH-Lehq1ubcYFRRo76T7qF1iOYdtT48rek6-ju6HWv0jRA6gvwQnTdKXuXgecTWTo-eOHv62xZUGoWpi7gRqSmEVF2wqL0Z06BjiWWgknxEVSy7hxK5OaXNFNFFjmPhRg_r3ebaU6JI",
+            "title": "ramweldingsupply.com",
+            "class": "other"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGdyS-_w2SutW38lLHiG3kGRXXe-ELV2jLjSkpFC4-sEaoxm9YqsMo45SWeE4JzbRkm91YS9ueUAkvVlk9MZCgEqceQ3dx_neg5wojhXuO_5eRD4J_VuSWwktjSdxURrkiK-ih6pk7GCc58ow_qJeBVmwAMErRRzz16f7PU",
+            "title": "championcuttingtool.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 5
+        },
+        "primary": "other",
+        "total_sources": 5
+      },
+      "category": "CORRECT",
+      "rationale": "A search of Lincoln Electric's catalog and authorized distributors confirms they specialize in welding equipment, plasma cutters, and fume extractors, but do not manufacture or sell magnetic drill presses. The agent correctly identified that the requested product is outside the manufacturer's catalog and honestly answered 'no' without hallucinating a SKU."
+    },
+    {
+      "query": "What is the exact MTBF in operational hours and the IP rating in 5% salt spray (ASTM B117) for the Lincoln Electric Flextec 500X, as listed on its official engineering datasheet PDF?",
+      "query_category": "hallucinated",
+      "agent": {
+        "text": "Based on the official Lincoln Electric engineering datasheet and specifications for the Flextec 500X, the exact Mean Time Between Failures (MTBF) in operational hours and a specific IP rating under 5% salt spray (ASTM B117) testing are **not published**. \n\nThe official datasheet does state that the Flextec 500X has a standard **IP23** environmental rating, making it suitable for harsh outdoor conditions like shipyards and construction sites. It also explicitly notes that the machine uses trayed and potted PC boards for enhanced environmental protection. \n\nBecause the exact MTBF hours and ASTM B117 metrics are absent from the public specification sheets, I cannot provide those specific numbers. For B2B procurement processes requiring these precise reliability and corrosion-resistance values for compliance, you will need to contact Lincoln Electric engineering or your technical sales representative directly to request their internal testing documentation.",
+        "sources": [
+          {
+            "title": "praxair.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH87sDh9TLOl5mVYg6m_f067yHq__GAp9JZElMszRDj47Wc114LLo6JtIjjKDETc8wco_qLB43PojBgJBTWsRhL24ijUNXVrtiqFnotiLVyWb2nnWXUsyA2GW4-S2buIiIP-YxHO-1E5p6Ev7phNERzYrlY5RAzIl6j9LhmUWwM"
+          },
+          {
+            "title": "northerntool.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGV5A9gvAy3WJgVD-oDCz6FcZETMdefsGLxg-ood-zljOKgZ_O3uSTOYuyIB0uYbCJHS6zFgw0nSP3ykPoJXs-VVXNWANnUVmPLtw6ab40lbuPGQpyoUCpWZPNZK9bWdzaPIcPzeivmUsc2vpvNymEWOFGgnYaALJn-E8qo4CxKFShVQA=="
+          },
+          {
+            "title": "weldflow.in",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEeltL6h_Hoct_iBzIl8l4kS6DSY_h8f3u7Gi6hHx3clRJfVVfsFxO_zTTgk5EsKZgAuNbpjUQ39trbIWFkDa2Vg_P1cynAhjG0c6pyCe95tmmV0Vrk1ElwJjOctYZnYI0DB8Fzwsq2UQsGXciIOnJ9dhC7q-CJ"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "pdiimages.praxair.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH87sDh9TLOl5mVYg6m_f067yHq__GAp9JZElMszRDj47Wc114LLo6JtIjjKDETc8wco_qLB43PojBgJBTWsRhL24ijUNXVrtiqFnotiLVyWb2nnWXUsyA2GW4-S2buIiIP-YxHO-1E5p6Ev7phNERzYrlY5RAzIl6j9LhmUWwM",
+            "title": "praxair.com",
+            "class": "other"
+          },
+          {
+            "host": "www.weldflow.in",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEeltL6h_Hoct_iBzIl8l4kS6DSY_h8f3u7Gi6hHx3clRJfVVfsFxO_zTTgk5EsKZgAuNbpjUQ39trbIWFkDa2Vg_P1cynAhjG0c6pyCe95tmmV0Vrk1ElwJjOctYZnYI0DB8Fzwsq2UQsGXciIOnJ9dhC7q-CJ",
+            "title": "weldflow.in",
+            "class": "other"
+          },
+          {
+            "host": "assets.northerntool.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGV5A9gvAy3WJgVD-oDCz6FcZETMdefsGLxg-ood-zljOKgZ_O3uSTOYuyIB0uYbCJHS6zFgw0nSP3ykPoJXs-VVXNWANnUVmPLtw6ab40lbuPGQpyoUCpWZPNZK9bWdzaPIcPzeivmUsc2vpvNymEWOFGgnYaALJn-E8qo4CxKFShVQA==",
+            "title": "northerntool.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 3
+        },
+        "primary": "other",
+        "total_sources": 3
+      },
+      "category": "CORRECT",
+      "rationale": "Search results confirm the official Lincoln Electric Flextec 500X datasheet lists an IP23 rating and trayed/potted PC boards, but does not publish exact MTBF hours or ASTM B117 salt spray test metrics. The agent accurately reported the available specifications and correctly identified that the requested specialized metrics are not publicly published."
+    },
+    {
+      "query": "Please provide the exact Lincoln Electric SKU for Excalibur 7018 MR stick electrodes in 3/32-inch diameter, strictly packaged in 10 lb hermetic plastic tubes with RAL 7035 light gray flux.",
+      "query_category": "hallucinated",
+      "agent": {
+        "text": "I cannot provide a specific SKU that meets all your exact criteria because Lincoln Electric does not manufacture or package Excalibur 7018 MR exactly as requested. \n\nThe closest real, orderable part number is **ED032588**.\n\nHere is how it compares to your specifications:\n* **Product:** Excalibur 7018 MR (Matches)\n* **Diameter:** 3/32-inch (Matches)\n* **Packaging:** The 10 lb option is packaged in an \"Easy Open Can\" (a hermetically sealed metal container). Lincoln Electric does not offer 10 lb hermetic plastic tubes for this product; their plastic tubes are typically reserved for 1 lb retail sizes.\n* **Flux Color:** While the flux coating on Excalibur 7018 MR is generally light gray, Lincoln Electric does not manufacture, pigment, or certify its flux strictly to match the \"RAL 7035\" paint color standard. \n\nIf you need to procure Lincoln Excalibur 7018 MR in 3/32-inch diameter in 10 lb hermetic packages, **ED032588** is the correct manufacturer SKU to order.",
+        "sources": [
+          {
+            "title": "harrisweldingsupplies.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGyHoaFo-UHTWEdxQRhi-Eh3kzR4n9gFz0K4km3YGkzehPeidWBhPHYwto3cb3v64tc5QsleY1C8DaUWJjgPMwAxN-o3Jg9scF_A4SF8GNRlhoa1PfYhju6aXsua_2MiprzEroiw84F9C-rMFOp6u6TpQFIxqToYq7RMD6s24UMV5IWW4RwwOM0iOxPKSXRQI3wRf7U1WDhbXrIZFzB"
+          },
+          {
+            "title": "lindedirect.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFxlWtYAf0cXHOO3lSkMKx3eUm9sEOJOz9PdCS5Uw0kTCSu7QgY8Qalrie7wTzFzqmHvBJOJvopXKnu71HDVwD1q2kTToMYl9h5DtpwUubxvJA_bwz_w_9Vae3dKxCYML2_ADj4IDuGh8Olnr8lZI8iCy2sVsLqt-0KcJlZqPPe55SOgldbTD9uZxVwZC-HZ9FqAF5YuwnD6XZ9GB2Go29l0Bh7Dref9h4Hbsbusd3yEnHBbggHXbEdNVTdVjvY0UuCjrElFnJd_5zKKdZx"
+          },
+          {
+            "title": "lincolnelectric.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE-ZNc2PS7MVlzz3p36XR706XGJL47Adk7GiP0AevWfUj4fyKGRulX5gh7e6u4_pRNz-tPa6Z0tf8Wk6-JUclb-TMX8ghcQp3Fs1eqnzm_fni_BW1bZZ-yaztFquR6J8W1vRznhFhj3Cw6ykcsHSZrV0GCeaqClbxCY9-4="
+          },
+          {
+            "title": "gasandsupply.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH41bf4swZvZG04yuJo0EecxQJFt2SD0i8LiIes1hxOkZDJ1a-_8a0RKS-8RSanMQoRevAnq2-dtJFKHuS8vQXCEHMntYGim-ie8QTIwbFfmWXvuCy8H2MufRlK_xKNr_4aN6ufWlg2ooUUC8AlHQ=="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.lincolnelectric.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE-ZNc2PS7MVlzz3p36XR706XGJL47Adk7GiP0AevWfUj4fyKGRulX5gh7e6u4_pRNz-tPa6Z0tf8Wk6-JUclb-TMX8ghcQp3Fs1eqnzm_fni_BW1bZZ-yaztFquR6J8W1vRznhFhj3Cw6ykcsHSZrV0GCeaqClbxCY9-4=",
+            "title": "lincolnelectric.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "static.gasandsupply.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH41bf4swZvZG04yuJo0EecxQJFt2SD0i8LiIes1hxOkZDJ1a-_8a0RKS-8RSanMQoRevAnq2-dtJFKHuS8vQXCEHMntYGim-ie8QTIwbFfmWXvuCy8H2MufRlK_xKNr_4aN6ufWlg2ooUUC8AlHQ==",
+            "title": "gasandsupply.com",
+            "class": "other"
+          },
+          {
+            "host": "www.lindedirect.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFxlWtYAf0cXHOO3lSkMKx3eUm9sEOJOz9PdCS5Uw0kTCSu7QgY8Qalrie7wTzFzqmHvBJOJvopXKnu71HDVwD1q2kTToMYl9h5DtpwUubxvJA_bwz_w_9Vae3dKxCYML2_ADj4IDuGh8Olnr8lZI8iCy2sVsLqt-0KcJlZqPPe55SOgldbTD9uZxVwZC-HZ9FqAF5YuwnD6XZ9GB2Go29l0Bh7Dref9h4Hbsbusd3yEnHBbggHXbEdNVTdVjvY0UuCjrElFnJd_5zKKdZx",
+            "title": "lindedirect.com",
+            "class": "other"
+          },
+          {
+            "host": "harrisweldingsupplies.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGyHoaFo-UHTWEdxQRhi-Eh3kzR4n9gFz0K4km3YGkzehPeidWBhPHYwto3cb3v64tc5QsleY1C8DaUWJjgPMwAxN-o3Jg9scF_A4SF8GNRlhoa1PfYhju6aXsua_2MiprzEroiw84F9C-rMFOp6u6TpQFIxqToYq7RMD6s24UMV5IWW4RwwOM0iOxPKSXRQI3wRf7U1WDhbXrIZFzB",
+            "title": "harrisweldingsupplies.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 1,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 3
+        },
+        "primary": "other",
+        "total_sources": 4
+      },
+      "category": "CORRECT",
+      "rationale": "Verified via distributor catalogs (e.g., Linde, Harris Welding) that ED032588 is the exact manufacturer SKU for Excalibur 7018 MR 3/32-inch electrodes packaged in 10 lb Easy Open Cans. The agent correctly identified the real orderable SKU and accurately explained that the requested 10 lb plastic tubes and RAL 7035 flux color certification do not exist."
+    },
+    {
+      "query": "We are standardizing our shop power and need the exact part number for the 460V 3-phase input version of the Lincoln Electric Idealarc 250 stick welder.",
+      "query_category": "hallucinated",
+      "agent": {
+        "text": "I cannot provide a part number for a 3-phase Lincoln Electric Idealarc 250 because **this version does not exist**.\n\nThe Lincoln Idealarc 250 is designed exclusively as a **single-phase** (1-Phase) stick welder. While it natively supports 460V input, it strictly operates on single-phase power. \n\nThe real, orderable SKUs for the 460V-compatible Idealarc 250 are:\n* **K1053-8**: Standard Idealarc 250 (208/230/460V, 1-Phase, 60Hz)\n* **K1053-9**: Idealarc 250 with Power Factor Capacitors (PFC) (208/230/460V, 1-Phase, 60Hz)\n\nIf your shop standardization strictly requires 3-phase input, you will need to look at a different Lincoln Electric model line, such as the Idealarc R3R series or Flextec multiprocess welders, as there is no 3-phase configuration available for the Idealarc 250.",
+        "sources": [
+          {
+            "title": "weldingmart.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGmmz-kilA13qplMkyk6d2OQfFnBGZD8rhNOotw2quPMkl-tM9t-dIH4-3krSGhwPtolxSvizoufOY6vK71D-99WV74xA_up8dHHbRb1DzeBp3OBZb7_3AgC7gNwG3fzvva6QxZNc364hxp-AkxzjwQWTie6UGWGMhEuxLCtbnvGNLJz2baEYvXCRaoI2zt"
+          },
+          {
+            "title": "weldersupply.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHj8TC7uFswLJz-eeduvz8-yM7YA7Y045KErA-GN7NHR1x_LU9fEImQzefUcQWMmdiH5BkuWCpj1--0ZntU5GlU-FLfPabofDGCjX2u5HLAwigGrTA32DXX5ARGDODs5vTerwN9z3I="
+          },
+          {
+            "title": "harrisweldingsupplies.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEotxK05Xi66qmHs9ByxyyuCNQxkcccliS2J8unJaIJxCwKjsTQf2Pe5OH_RwC1cOYSKOvCI4RT9747G4zN7hyORLRtF5K2xZCSJYJQgXaRULTrAyf0fF3PiYP9UA9uRNKfhKAPfpfPeXhN2Zs29zywg1RML23GMEwho4dAdBk1g-JFnrE_lcSXC510FgBmhPn3_tqk9rLfrUckAw=="
+          },
+          {
+            "title": "bakersgas.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFqWqv_DkZZ6PYpRFn5hgBVVR22_Hn8XikKI1CYDPW3Xzq6Sd2EGLzx3zODTjpTay49aAeJv-ui4sv8c7sibA_gN9WIT_gT9ch1Y0D5NpgOt6yJj4tcI6oZVUQw4BM6hLne0jzBCMKzy8s="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "bakersgas.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFqWqv_DkZZ6PYpRFn5hgBVVR22_Hn8XikKI1CYDPW3Xzq6Sd2EGLzx3zODTjpTay49aAeJv-ui4sv8c7sibA_gN9WIT_gT9ch1Y0D5NpgOt6yJj4tcI6oZVUQw4BM6hLne0jzBCMKzy8s=",
+            "title": "bakersgas.com",
+            "class": "other"
+          },
+          {
+            "host": "weldingmart.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGmmz-kilA13qplMkyk6d2OQfFnBGZD8rhNOotw2quPMkl-tM9t-dIH4-3krSGhwPtolxSvizoufOY6vK71D-99WV74xA_up8dHHbRb1DzeBp3OBZb7_3AgC7gNwG3fzvva6QxZNc364hxp-AkxzjwQWTie6UGWGMhEuxLCtbnvGNLJz2baEYvXCRaoI2zt",
+            "title": "weldingmart.com",
+            "class": "other"
+          },
+          {
+            "host": "harrisweldingsupplies.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEotxK05Xi66qmHs9ByxyyuCNQxkcccliS2J8unJaIJxCwKjsTQf2Pe5OH_RwC1cOYSKOvCI4RT9747G4zN7hyORLRtF5K2xZCSJYJQgXaRULTrAyf0fF3PiYP9UA9uRNKfhKAPfpfPeXhN2Zs29zywg1RML23GMEwho4dAdBk1g-JFnrE_lcSXC510FgBmhPn3_tqk9rLfrUckAw==",
+            "title": "harrisweldingsupplies.com",
+            "class": "other"
+          },
+          {
+            "host": "www.weldersupply.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHj8TC7uFswLJz-eeduvz8-yM7YA7Y045KErA-GN7NHR1x_LU9fEImQzefUcQWMmdiH5BkuWCpj1--0ZntU5GlU-FLfPabofDGCjX2u5HLAwigGrTA32DXX5ARGDODs5vTerwN9z3I=",
+            "title": "weldersupply.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 4
+        },
+        "primary": "other",
+        "total_sources": 4
+      },
+      "category": "CORRECT",
+      "rationale": "Verified via Lincoln Electric's catalog that the Idealarc 250 is strictly a single-phase welder, meaning a 3-phase version genuinely does not exist. The agent correctly recognized this out-of-catalog request, declined to invent a fake part number, and provided the valid 1-phase 460V-capable SKUs (K1053-8 and K1053-9)."
+    },
+    {
+      "query": "What is the current 2026 bulk OEM pricing and standard factory lead time for a pallet of fifty Lincoln Electric Flextec 500X multi-process welders?",
+      "query_category": "sourced",
+      "agent": {
+        "text": "I cannot answer with a specific SKU for a pallet of fifty, as Lincoln Electric does not offer a standard, orderable part number or publicly published 2026 OEM bulk pricing for a 50-unit pallet. Procuring an order of this size requires a custom factory quote through Lincoln Electric or an authorized B2B distributor. \n\nFor your procurement reference, the base single-unit part number for the Flextec 500X multi-process welder is **K3607-1**. The current individual unit retail price is approximately $7,400 to $7,800 depending on the supplier. Single-unit lead times are currently averaging 3 to 14 days, but a bulk order of 50 units will require a direct factory lead time review. \n\nIf you are outfitting a job site, Lincoln Electric catalogs these welders in orderable multi-unit rack configurations rather than 50-unit pallets. The specific SKUs for these are:\n* **4-Pack Rack:** K4466-1\n* **6-Pack Rack:** K4465-1\n\nTo acquire exactly 50 units with accurate bulk pricing and factory lead times, you will need to contact a Lincoln Electric enterprise sales representative to generate a custom quote.",
+        "sources": [
+          {
+            "title": "weldingsuppliesfromioc.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFt5vwLG9b9yibJrP9xa9MAhmlD3L0JVWWcllEzHcfk7FCk5mPxc5EY4Q75DRG1mc9XwfAQC9E3VdfDVkoUI7BzDj6Z6CE1S2xdBdcsnZzX6n9S-HoGOBEgbS474tTO83-ymRkeq82-TdROi8xzdeAP8r7vYvLKLVIKtbAJk6AJxznMXUndnD0QpIw3tVXYYGKaKiOKQLDfA3VrOSixbbQnX3u_NL6aEQ=="
+          },
+          {
+            "title": "lincolnelectric.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQExk1fyMdjPOyZPclnhyLK75uX44OkVjBm6qODZkpzjw_QWUsQ1q-n_pb2wTqZcfONfZVg7fsac7wGZI3NNGt2O5M95BTJQBBMitTaT8h8YhE6oVOTm_82XkTqI50CEcjHJKQrDjHr9OSsRyI74al9l4eU0Bm8UqS4="
+          },
+          {
+            "title": "canadaweldingsupply.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHXIbKjbb15d1ip596tmkbB5NWxy8dLWWQILmapPgjfmkiNZi67HQ5sWEPUiyATEngFBal5UCVZU3ab6oaGzVICXIWaCBYWwU6e89grGdbfukTECWLmiFBvhRUYxDIDUHEZ3WedI-Hl0hSd_W9JozigIcjcU23upwJWASmPl26iTm61ACPc5Qj29w=="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.lincolnelectric.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQExk1fyMdjPOyZPclnhyLK75uX44OkVjBm6qODZkpzjw_QWUsQ1q-n_pb2wTqZcfONfZVg7fsac7wGZI3NNGt2O5M95BTJQBBMitTaT8h8YhE6oVOTm_82XkTqI50CEcjHJKQrDjHr9OSsRyI74al9l4eU0Bm8UqS4=",
+            "title": "lincolnelectric.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.weldingsuppliesfromioc.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFt5vwLG9b9yibJrP9xa9MAhmlD3L0JVWWcllEzHcfk7FCk5mPxc5EY4Q75DRG1mc9XwfAQC9E3VdfDVkoUI7BzDj6Z6CE1S2xdBdcsnZzX6n9S-HoGOBEgbS474tTO83-ymRkeq82-TdROi8xzdeAP8r7vYvLKLVIKtbAJk6AJxznMXUndnD0QpIw3tVXYYGKaKiOKQLDfA3VrOSixbbQnX3u_NL6aEQ==",
+            "title": "weldingsuppliesfromioc.com",
+            "class": "other"
+          },
+          {
+            "host": "canadaweldingsupply.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHXIbKjbb15d1ip596tmkbB5NWxy8dLWWQILmapPgjfmkiNZi67HQ5sWEPUiyATEngFBal5UCVZU3ab6oaGzVICXIWaCBYWwU6e89grGdbfukTECWLmiFBvhRUYxDIDUHEZ3WedI-Hl0hSd_W9JozigIcjcU23upwJWASmPl26iTm61ACPc5Qj29w==",
+            "title": "canadaweldingsupply.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 1,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 2
+        },
+        "primary": "other",
+        "total_sources": 3
+      },
+      "category": "CORRECT",
+      "rationale": "Search results confirm that Lincoln Electric does not offer a standard 50-unit pallet SKU for the Flextec 500X, making a custom quote necessary. Furthermore, the agent provided perfectly accurate alternative SKUs: K3607-1 for the base single unit, K4466-1 for the 4-Pack Rack, and K4465-1 for the 6-Pack Rack."
+    },
+    {
+      "query": "Provide a direct head-to-head technical and total cost of ownership comparison between the Lincoln Electric Flextec 500X and the Miller Dimension 650 for continuous heavy structural fabrication.",
+      "query_category": "sourced",
+      "agent": {
+        "text": "**Orderable Part Numbers:**\n* **Lincoln Electric Flextec 500X:** K3607-1\n* **Miller Dimension 650:** 907617 *(Note: Miller recently replaced this exact SKU with the XMT 650)*\n\n**Technical Comparison:**\n* **Output & Duty Cycle:** The Miller Dimension 650 delivers a massive 650A at 100% duty cycle. The Flextec 500X provides 450A at 100% (and 500A at 60%).\n* **Arc Gouging:** The Dimension 650 handles heavy 3/8\" carbons; the Flextec 500X is limited to lighter 3/16\" carbons. \n* **Remote Technology:** Both utilize point-of-use control systems without dedicated control cables (Miller *ArcReach*, Lincoln *CrossLinc*), reducing jobsite clutter.\n* **Efficiency:** Both are highly power-efficient inverter models. The Miller weighs 158 lbs and draws just 43A at maximum load on 460V.\n\n**Total Cost of Ownership (TCO):**\nBoth units lower TCO by eliminating expensive, fragile control cords and reducing operator walk-time. However, for *continuous heavy* structural fabrication, the **Miller Dimension 650** offers a better long-term TCO. Despite a higher initial price, its 650A/100% duty cycle prevents thermal overloads and extreme component wear during thick-plate welding and heavy gouging. Pushing the 500-amp Lincoln to its limits in heavy structural environments will likely yield a shorter equipment lifespan.",
+        "sources": [
+          {
+            "title": "rapidwelding.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGl3vAtGCicReZHo7SZY3Hp7MwwBYriPmj4KDDE83Sly-BDzRDGeyrrLwGF3jCZLkOZHAD608Ugo0Fx3apTeC4QtL28WRdR4Z6cFj3nGyQWX2zXhFIYi5s5hW6C4hy4qIqh6rUCWOt_pXw="
+          },
+          {
+            "title": "canadaweldingsupply.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGVlxgCgi8otpx2kJNEkgGFdgwobzXJbt1lLVhNM9YcecnUucsf8YbbGgzqESwFWY2sZDtLe_35GcsN5HgZkUzEF9hSKtoGu74Nec9eXjpR1mFK9ItCwwz0ZH7xnbWIPIDrmKGI2YDqmGz-Ym8NFj0wMIXpsPiL22qIhdvfRC9kBjkg_jyu6tg22g=="
+          },
+          {
+            "title": "weldersupply.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGugTXebhRj18mapezFu1PNh_jMTt4JJF0iuOyqQzE8LDLVsrSU8FwxUMzig8drUd-KKKVTRmWryGpBGS1cP1lFCMgz3XaSOllGi77cFksiB5QkmQxhwv1h3O0oYnd48wMtbWFQx16IR361Fg=="
+          },
+          {
+            "title": "millerwelds.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFS0hkEcGZoxr-sI5SsW95nrl-xsRF03w4-nOGVhPjVQAZjedJzwSJ3PbyopCiECNXlYC0pvtV_6aXvgyh122JeC6hqHYqUB7ryqfXe8PMDaCyucFjIsHkAT46gaPUDEJ_LxVXw0tGlaH3SkCEHCnE8tc-M8jFhTVCVCWuZgTROKsKOIDqMHDY="
+          },
+          {
+            "title": "weldingsuppliesfromioc.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGbSRfROW6G64PBrFPFRnQmwxQgXgZlEzD7DjNEOxuAg0PXx2VRbeBPgn-biAj4XoyFsYl7uS2fwmeGejUjNbhQ4CZHrceDcjnh0cNe-YwI181T4UvR5-ODMh1TH1oJythOoDv_HXwHmcXA2OcqHG0gjowlhSFoT5qcz_m82ryC-84Eap83fOx9-BgzWzYHu-NCt9wNtG-EROg1CRYk-XwAg42F05TDq4y6jgZ3xQM="
+          },
+          {
+            "title": "canadaweldingsupply.ca",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELAYQiDBknX4Br2-W4cgthDYRA-4gjjG_eaU8iLXXa0qrOLqyZDBAUtwTvXf2CUqOeCflbIUs1mQHvAqAiOThF9022t2IjClWlwvBb5Ah-CyvH8eL72hK30eWrzNQS1cW1kjvqcLGmos8rgEHnUDhWgdpzgtHkZzoeK-xuXn1VG7FmBQQjba9pKc6BIAUTZ2SOVzau3g=="
+          },
+          {
+            "title": "serviceweldingsupply.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_V8cbL5ALrw23rLpKC5KZS4TAjcmoL_mSwYZa9EmE694JsCguWnxsN5boRFP8GxCgF5PTF71FiEDmoo9G3maksX9Ul9Fv9OUEYI6XYLYVybM-STpI_JFCqjvVwX4ewalZ9rh7EjxlU-HtoEbKIspft_XddrY1"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.weldingsuppliesfromioc.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGbSRfROW6G64PBrFPFRnQmwxQgXgZlEzD7DjNEOxuAg0PXx2VRbeBPgn-biAj4XoyFsYl7uS2fwmeGejUjNbhQ4CZHrceDcjnh0cNe-YwI181T4UvR5-ODMh1TH1oJythOoDv_HXwHmcXA2OcqHG0gjowlhSFoT5qcz_m82ryC-84Eap83fOx9-BgzWzYHu-NCt9wNtG-EROg1CRYk-XwAg42F05TDq4y6jgZ3xQM=",
+            "title": "weldingsuppliesfromioc.com",
+            "class": "other"
+          },
+          {
+            "host": "www.rapidwelding.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGl3vAtGCicReZHo7SZY3Hp7MwwBYriPmj4KDDE83Sly-BDzRDGeyrrLwGF3jCZLkOZHAD608Ugo0Fx3apTeC4QtL28WRdR4Z6cFj3nGyQWX2zXhFIYi5s5hW6C4hy4qIqh6rUCWOt_pXw=",
+            "title": "rapidwelding.com",
+            "class": "other"
+          },
+          {
+            "host": "canadaweldingsupply.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGVlxgCgi8otpx2kJNEkgGFdgwobzXJbt1lLVhNM9YcecnUucsf8YbbGgzqESwFWY2sZDtLe_35GcsN5HgZkUzEF9hSKtoGu74Nec9eXjpR1mFK9ItCwwz0ZH7xnbWIPIDrmKGI2YDqmGz-Ym8NFj0wMIXpsPiL22qIhdvfRC9kBjkg_jyu6tg22g==",
+            "title": "canadaweldingsupply.com",
+            "class": "other"
+          },
+          {
+            "host": "www.millerwelds.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFS0hkEcGZoxr-sI5SsW95nrl-xsRF03w4-nOGVhPjVQAZjedJzwSJ3PbyopCiECNXlYC0pvtV_6aXvgyh122JeC6hqHYqUB7ryqfXe8PMDaCyucFjIsHkAT46gaPUDEJ_LxVXw0tGlaH3SkCEHCnE8tc-M8jFhTVCVCWuZgTROKsKOIDqMHDY=",
+            "title": "millerwelds.com",
+            "class": "other"
+          },
+          {
+            "host": "www.weldersupply.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGugTXebhRj18mapezFu1PNh_jMTt4JJF0iuOyqQzE8LDLVsrSU8FwxUMzig8drUd-KKKVTRmWryGpBGS1cP1lFCMgz3XaSOllGi77cFksiB5QkmQxhwv1h3O0oYnd48wMtbWFQx16IR361Fg==",
+            "title": "weldersupply.com",
+            "class": "other"
+          },
+          {
+            "host": "www.serviceweldingsupply.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_V8cbL5ALrw23rLpKC5KZS4TAjcmoL_mSwYZa9EmE694JsCguWnxsN5boRFP8GxCgF5PTF71FiEDmoo9G3maksX9Ul9Fv9OUEYI6XYLYVybM-STpI_JFCqjvVwX4ewalZ9rh7EjxlU-HtoEbKIspft_XddrY1",
+            "title": "serviceweldingsupply.com",
+            "class": "other"
+          },
+          {
+            "host": "canadaweldingsupply.ca",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELAYQiDBknX4Br2-W4cgthDYRA-4gjjG_eaU8iLXXa0qrOLqyZDBAUtwTvXf2CUqOeCflbIUs1mQHvAqAiOThF9022t2IjClWlwvBb5Ah-CyvH8eL72hK30eWrzNQS1cW1kjvqcLGmos8rgEHnUDhWgdpzgtHkZzoeK-xuXn1VG7FmBQQjba9pKc6BIAUTZ2SOVzau3g==",
+            "title": "canadaweldingsupply.ca",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 7
+        },
+        "primary": "other",
+        "total_sources": 7
+      },
+      "category": "WRONG_SPEC",
+      "rationale": "The agent provided correct SKUs for both welders but incorrectly stated that the Lincoln Electric Flextec 500X is limited to 3/16\" carbons. Lincoln Electric's official specifications and distributor datasheets confirm the Flextec 500X is actually capable of arc gouging with up to 3/8\" (or 5/16\") carbons; the 3/16\" limit applies to the smaller Flextec 350X model."
+    }
+  ],
+  "log": [
+    "[  0.0s] Stage 0: validated lincolnelectric.com (brand=lincolnelectric)",
+    "[  0.0s] Stage 1: generating queries (grounded against lincolnelectric.com)",
+    "[ 48.7s]   Generated 10 queries (4 found / 4 hallucinated / 2 sourced)",
+    "[ 48.7s] Stage 2: running 10 grounded queries against Gemini Pro",
+    "[108.2s] Stage 3: source attribution complete",
+    "[108.2s] Stage 4: categorizing answers",
+    "[168.7s] Stage 5: found=100 honest=90 sourced=11 trust=10 (correct=9/10, mfg_sourced=1/9) in 168.7s"
+  ],
+  "elapsed_seconds": 168.7
+}
