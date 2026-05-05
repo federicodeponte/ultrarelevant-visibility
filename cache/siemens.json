@@ -2,43 +2,72 @@
   "input": "https://siemens.com",
   "host": "siemens.com",
   "brand": "siemens",
-  "visibility_score": 100,
-  "source_authority_score": 20,
-  "total_queries": 5,
-  "correct_queries": 5,
-  "manufacturer_correct": 1,
+  "found_score": 100,
+  "honest_score": 90,
+  "sourced_score": 44,
+  "trust_score": 40,
+  "visibility_score": 90,
+  "source_authority_score": 44,
+  "total_queries": 10,
+  "correct_queries": 9,
+  "manufacturer_correct": 4,
   "breakdown": {
-    "CORRECT": 5,
-    "HALLUCINATION": 0,
-    "OUT_OF_CATALOG_HALLUCINATION": 0,
+    "CORRECT": 9,
+    "HALLUCINATION": 1,
+    "OUT_OF_CATALOG": 0,
     "REFUSED": 0,
     "WRONG_SPEC": 0,
     "ERROR": 0
   },
   "source_breakdown": {
-    "manufacturer": 1,
-    "distributor": 1,
+    "manufacturer": 4,
+    "distributor": 0,
     "marketplace": 0,
-    "other": 3,
+    "other": 6,
     "none": 0
   },
   "rows": [
     {
-      "query": "I need a SIMATIC S7-1200 CPU 1214C compact controller with DC/DC/DC power and I/O from siemens.com. Give me the part number.",
+      "query": "I need a replacement for a 48V Simotics E-1EV1 brushless outrunner from the newly integrated ebm-papst line. Can you confirm if Siemens still actively sells this or if it's reached PM400 status yet?",
+      "query_category": "found",
       "agent": {
-        "text": "The exact, orderable Siemens part number for the SIMATIC S7-1200 CPU 1214C compact controller with a DC/DC/DC configuration is:\n\n**6ES7214-1AG40-0XB0**\n\n**Key specifications for this SKU:**\n* **Power Supply:** 20.4 – 28.8 V DC\n* **Onboard I/O:** 14 Digital Inputs (24 V DC), 10 Digital Outputs (24 V DC), and 2 Analog Inputs (0-10 V DC)\n* **Memory:** 150 KB program/data memory\n\n*(Note: Siemens also recently launched the next-generation S7-1200 G2 series. If you are upgrading to the newer G2 equivalent for the CPU 1214C DC/DC/DC, that part number is **6ES7214-1AH50-0XB0**.)*",
+        "text": "Siemens still actively sells the 48V Simotics E-1EV1 brushless outrunners. It has **not** reached PM400 status (which marks a product phase-out announcement). In fact, this line is a brand-new addition to the Siemens Mechatronic Systems portfolio, resulting from the mid-2025 integration of ebm-papst's Industrial Drive Technology division. \n\nI cannot answer with a specific, orderable SKU for your 48V replacement. Siemens treats the Simotics E-1EV1 line as highly modular. To get an orderable part number (MLFB, which typically starts with `1EV1`), the motor must be specced through the Siemens Product Configurator based on your exact requirements, including:\n* Power output rating (up to 135W for the 1EV1)\n* Physical dimensions/shaft height\n* Integrated vs. external control electronics\n* Optional planetary/angled gearboxes, encoders, or brakes\n\nYou will need to consult the original equipment's data plate or use the Siemens Industry Mall configurator with your required specs to generate the exact replacement part number.",
         "sources": [
           {
-            "title": "automation24.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFp4BvmuTUazSesr31C5j0cpV9dzEclrYhpgInwXCrQBQuQIYaE6u-epchZLv0qC1c5auQNHGGYOyeZsFVCwbsxBJMKA9x56FuF-Sto2TbNTUN90gtWhI2fwJZ0hJZXXcz7OBX1id8bS8cjFqAK3Ci4w_c67dDbCPu6FVg7"
+            "title": "drivesncontrols.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEDHLsaPzr8a-qqWcW6hr-5_OYLIEO4ob-vecrxUYz5KNQRGuAxUJJzShVO45q9K-duTWnDa71n-gYT8lSWGo3jdm5z-z5vRoBfCWq6ygq5oMTNN31IDsqiXkP4MrBKWARWBNPMeD0fYV6LZnY_7X1zaPUlThjJPUofJhOla_sfIE8gTbegSpK99NTu1RRAv-rVu54="
+          },
+          {
+            "title": "evertiq.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFg8cwrno7iex08K2-2iABKRm0V3O8TUJtnj9UhDU_amkj4C1VjQMalrcuXgGfvLcJ6J6Hylyz2v4jxlEftd9WaaljI4bfCN05-8qbyJqVw63W-oO22nUzuGozfdMeKNld4RwUml5mCTYq3DLmrQxMydT4MD1UWQGEGzbOQZ-2tCTZU9VWUOZD7va-_XpDcYeyUfUWAWmSbgDTNtjYyOrmPgKGMEnfsHYg="
+          },
+          {
+            "title": "eichler-service.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVjAdKVgZCCXVIAf-ZAKAV-iGxSlcEKR_KtcDanrBzv2sFR1-5sj5Y7J3LdbxjbF-_SuIOl6C6b4YRwy_y0A8VRE1kYqRBv7rybCW4rALHaV02MkVGW8y2qgFzyJZn9rvmCwxnRGt6Kwxuwq5BYlSV905z8dLtX9ayHHryhQMMdaC0Qf08M033SFAPAcLxPCr5hq69_DystMO--c5EnJQ5PGCnxq3oUYpHPh7EHjjk29CP50goSok5N6hIjNCRxy7TPbUXRw=="
+          },
+          {
+            "title": "franklandautomation.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFMwe4Reh4DazoYHqbQ20k-E5_Veg0XCjdqwfwzkpjlr0NQ-KrZHSKZpQazaPiotBXxZ87ONzjYbjz7YESU1Enpbrhgzo8-RMDHvyqsKKLVxKXWxjm7H6-xgEKhJvKShRL-1PjP8raGOnOxTN3zRi0kEMkUVpQaHhaIEKFOoBEneZa1kX1Rkgiwk8asRQ=="
           },
           {
             "title": "siemens.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHkNvS3BgvDnF0PeWL6JjAmOoiusNCDLDccxcy4XkGryZJNjrSBJk6zhalgiPxdvbKVfmFRclUSyGcsDJxtEhRKqJS2Yo2RL6rL1sjbqi6va0llNlr3xnI4Feg2zxePALdHqhB7B7O1kkOyZih1NzVIdQFH_dJstUC0M4sztnOpAuuNMlzbtPZfDFAXOBYlgEmbynJKDOjMrukVMzk="
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZB1BviKoY9LWMh4aYOznzkU774GOp0ge0NkfovOMC3416b8vtBmyDLrosYScpsgvscvuIQ1J9I1bAyeHg4VNaiGbF9psPIZOJ3Q8SMRXyt15LgcfYEqwCwbblu_4yXCzGC5gk38w-X2YAVPpLzdGH0FVU-8Fyt8neG2NTsr4FaEXONZd9TqK6NMb3G55aIGEOZQlckavofIilZFnA3QXTs8wFAVoGjwIm0kXDPDU-VuOK5g9LwpWCM2s9Ss4z8tS2iqbA2jYVOD2K3wTpTdR2FJOItfUS-04h8HG-5xT6_jE="
           },
           {
-            "title": "rs-online.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFXNDTrrZn1bS-HukInFFH3r8w5R_f65RCUHq4gFkWPVSd3uALT6WwyEvSBJ1pAuN6ZFfE4J10WRjdYL_vJaVL2qLgfsVzpZGjAHI3Dyn89xlRyM4SenQtCbU7Ls_ot7h647gzb_9BNXRW3_YtOYxaVNfClZ0CgFK1BXxgjb2g="
+            "title": "siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF76Ap1bIcL16gmBZADpbdmcpgxDWdmB_8FLIUIyKakSrAuh2skl2z2ulJ4SDPuOcsXNiX0IGP58cMjobq2_YDNlPse8R_YwnKBjN_bWPx744Z9bxHF0Wd4uebVl7Xmf6_QRBNq85VEMOS0WVImWifDxxC-PA50GwvaKG1dFCTu-3JRzvo_-03TD5T-WyRiuwSK3nmXaTyVaRz0ZogZxyl0CXEk6soWaJTIfucKt8cL2B3pFqDdpGu3ZMVDqN-oQoAQejaNXrtulXabOMbf-aee"
+          },
+          {
+            "title": "siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGIjBWLdgK7sXBlFNEZRhYOYPIycizRqeC0XhrF_48hHPtFB6FWOxbz8d5Tg-WCVJjNxpB32JWnBO4GjSGutS2i5gQq8mK7JcmrogpxyFvyWSAwpFz8O6Qwf6XUq7pumNqi-3TxXGj5KsCprRq2x-4WYrTyUbQ_YgFoDrjB8mldu8F6"
+          },
+          {
+            "title": "siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGTwRLYoXiJ3CJHPNEWWTlAMgTR4SxowJnV2_FkAjTyD9gli0iOrvWDw3Zc-x8Ow3lh551VbYeUKdg6m3qlsfqQgdqV_2UVcb72wzzwVL8oiPHLj53D_gfcEGOJQQ8Cb2GOyx2wAwN84nGIMnsGLCC4hkLQPQLIlwUUtwUGekFhOCAh4TeI3Te-aWu_q0lTWRCTWw1CuXmcEquNu1PBvz-oC9pqC4w5amy27EEG4UaIEZB89vfJBq7iQPc6h0KnqGuacWYtmOvzESYwIzdmmc0o4aqdZxIjRqv879kmRvU8d4ArvwMGhuB9WgI-rBca"
+          },
+          {
+            "title": "siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGr_jukoiaAr58y0vq4Bmom03pujdKYOI5sPza1UZrnQ24EkkY1a3GXiL4QmKz_L6jr7SlfjMexqZrZr3PSnjuk6iUA9-nwFHk2Cf7xtPiPOUHuEhytCMsAboQwgBQaMMBVt8blqEsccUxZitc9xDtjK7Inp8Po5SWLENzcsXVaLijVH5i5buFqjsM9dWzYvx3KHvP5dBRWgRJXlgwV6yjXs3Q7O0LF2IBdiIyqdkZ0hRTsFoWcShahW1WJED4Ly6oN30Aw-nmXOqZCH4AHZIn6gHK0msXudbxtU1odT3U0-Ql4ah62uF77K4llZvbp"
           }
         ],
         "error": null
@@ -46,56 +75,101 @@
       "attribution": {
         "domains": [
           {
-            "host": "us.rs-online.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFXNDTrrZn1bS-HukInFFH3r8w5R_f65RCUHq4gFkWPVSd3uALT6WwyEvSBJ1pAuN6ZFfE4J10WRjdYL_vJaVL2qLgfsVzpZGjAHI3Dyn89xlRyM4SenQtCbU7Ls_ot7h647gzb_9BNXRW3_YtOYxaVNfClZ0CgFK1BXxgjb2g=",
-            "title": "rs-online.com",
-            "class": "distributor"
-          },
-          {
-            "host": "www.automation24.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFp4BvmuTUazSesr31C5j0cpV9dzEclrYhpgInwXCrQBQuQIYaE6u-epchZLv0qC1c5auQNHGGYOyeZsFVCwbsxBJMKA9x56FuF-Sto2TbNTUN90gtWhI2fwJZ0hJZXXcz7OBX1id8bS8cjFqAK3Ci4w_c67dDbCPu6FVg7",
-            "title": "automation24.com",
-            "class": "distributor"
-          },
-          {
             "host": "mall.industry.siemens.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHkNvS3BgvDnF0PeWL6JjAmOoiusNCDLDccxcy4XkGryZJNjrSBJk6zhalgiPxdvbKVfmFRclUSyGcsDJxtEhRKqJS2Yo2RL6rL1sjbqi6va0llNlr3xnI4Feg2zxePALdHqhB7B7O1kkOyZih1NzVIdQFH_dJstUC0M4sztnOpAuuNMlzbtPZfDFAXOBYlgEmbynJKDOjMrukVMzk=",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZB1BviKoY9LWMh4aYOznzkU774GOp0ge0NkfovOMC3416b8vtBmyDLrosYScpsgvscvuIQ1J9I1bAyeHg4VNaiGbF9psPIZOJ3Q8SMRXyt15LgcfYEqwCwbblu_4yXCzGC5gk38w-X2YAVPpLzdGH0FVU-8Fyt8neG2NTsr4FaEXONZd9TqK6NMb3G55aIGEOZQlckavofIilZFnA3QXTs8wFAVoGjwIm0kXDPDU-VuOK5g9LwpWCM2s9Ss4z8tS2iqbA2jYVOD2K3wTpTdR2FJOItfUS-04h8HG-5xT6_jE=",
             "title": "siemens.com",
             "class": "manufacturer"
+          },
+          {
+            "host": "evertiq.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFg8cwrno7iex08K2-2iABKRm0V3O8TUJtnj9UhDU_amkj4C1VjQMalrcuXgGfvLcJ6J6Hylyz2v4jxlEftd9WaaljI4bfCN05-8qbyJqVw63W-oO22nUzuGozfdMeKNld4RwUml5mCTYq3DLmrQxMydT4MD1UWQGEGzbOQZ-2tCTZU9VWUOZD7va-_XpDcYeyUfUWAWmSbgDTNtjYyOrmPgKGMEnfsHYg=",
+            "title": "evertiq.com",
+            "class": "other"
+          },
+          {
+            "host": "assets.new.siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGTwRLYoXiJ3CJHPNEWWTlAMgTR4SxowJnV2_FkAjTyD9gli0iOrvWDw3Zc-x8Ow3lh551VbYeUKdg6m3qlsfqQgdqV_2UVcb72wzzwVL8oiPHLj53D_gfcEGOJQQ8Cb2GOyx2wAwN84nGIMnsGLCC4hkLQPQLIlwUUtwUGekFhOCAh4TeI3Te-aWu_q0lTWRCTWw1CuXmcEquNu1PBvz-oC9pqC4w5amy27EEG4UaIEZB89vfJBq7iQPc6h0KnqGuacWYtmOvzESYwIzdmmc0o4aqdZxIjRqv879kmRvU8d4ArvwMGhuB9WgI-rBca",
+            "title": "siemens.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "assets.new.siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF76Ap1bIcL16gmBZADpbdmcpgxDWdmB_8FLIUIyKakSrAuh2skl2z2ulJ4SDPuOcsXNiX0IGP58cMjobq2_YDNlPse8R_YwnKBjN_bWPx744Z9bxHF0Wd4uebVl7Xmf6_QRBNq85VEMOS0WVImWifDxxC-PA50GwvaKG1dFCTu-3JRzvo_-03TD5T-WyRiuwSK3nmXaTyVaRz0ZogZxyl0CXEk6soWaJTIfucKt8cL2B3pFqDdpGu3ZMVDqN-oQoAQejaNXrtulXabOMbf-aee",
+            "title": "siemens.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGIjBWLdgK7sXBlFNEZRhYOYPIycizRqeC0XhrF_48hHPtFB6FWOxbz8d5Tg-WCVJjNxpB32JWnBO4GjSGutS2i5gQq8mK7JcmrogpxyFvyWSAwpFz8O6Qwf6XUq7pumNqi-3TxXGj5KsCprRq2x-4WYrTyUbQ_YgFoDrjB8mldu8F6",
+            "title": "siemens.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.eichler-service.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVjAdKVgZCCXVIAf-ZAKAV-iGxSlcEKR_KtcDanrBzv2sFR1-5sj5Y7J3LdbxjbF-_SuIOl6C6b4YRwy_y0A8VRE1kYqRBv7rybCW4rALHaV02MkVGW8y2qgFzyJZn9rvmCwxnRGt6Kwxuwq5BYlSV905z8dLtX9ayHHryhQMMdaC0Qf08M033SFAPAcLxPCr5hq69_DystMO--c5EnJQ5PGCnxq3oUYpHPh7EHjjk29CP50goSok5N6hIjNCRxy7TPbUXRw==",
+            "title": "eichler-service.com",
+            "class": "other"
+          },
+          {
+            "host": "drivesncontrols.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEDHLsaPzr8a-qqWcW6hr-5_OYLIEO4ob-vecrxUYz5KNQRGuAxUJJzShVO45q9K-duTWnDa71n-gYT8lSWGo3jdm5z-z5vRoBfCWq6ygq5oMTNN31IDsqiXkP4MrBKWARWBNPMeD0fYV6LZnY_7X1zaPUlThjJPUofJhOla_sfIE8gTbegSpK99NTu1RRAv-rVu54=",
+            "title": "drivesncontrols.com",
+            "class": "other"
+          },
+          {
+            "host": "assets.new.siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGr_jukoiaAr58y0vq4Bmom03pujdKYOI5sPza1UZrnQ24EkkY1a3GXiL4QmKz_L6jr7SlfjMexqZrZr3PSnjuk6iUA9-nwFHk2Cf7xtPiPOUHuEhytCMsAboQwgBQaMMBVt8blqEsccUxZitc9xDtjK7Inp8Po5SWLENzcsXVaLijVH5i5buFqjsM9dWzYvx3KHvP5dBRWgRJXlgwV6yjXs3Q7O0LF2IBdiIyqdkZ0hRTsFoWcShahW1WJED4Ly6oN30Aw-nmXOqZCH4AHZIn6gHK0msXudbxtU1odT3U0-Ql4ah62uF77K4llZvbp",
+            "title": "siemens.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "franklandautomation.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFMwe4Reh4DazoYHqbQ20k-E5_Veg0XCjdqwfwzkpjlr0NQ-KrZHSKZpQazaPiotBXxZ87ONzjYbjz7YESU1Enpbrhgzo8-RMDHvyqsKKLVxKXWxjm7H6-xgEKhJvKShRL-1PjP8raGOnOxTN3zRi0kEMkUVpQaHhaIEKFOoBEneZa1kX1Rkgiwk8asRQ==",
+            "title": "franklandautomation.com",
+            "class": "other"
           }
         ],
         "counts": {
-          "manufacturer": 1,
-          "distributor": 2,
+          "manufacturer": 5,
+          "distributor": 0,
           "marketplace": 0,
-          "other": 0
+          "other": 4
         },
-        "primary": "distributor",
-        "total_sources": 3
+        "primary": "manufacturer",
+        "total_sources": 9
       },
       "category": "CORRECT",
-      "rationale": "Google Search confirms that 6ES7214-1AG40-0XB0 is the valid Siemens part number for the SIMATIC S7-1200 CPU 1214C DC/DC/DC with 14 DI, 10 DO, 2 AI, and 150 KB memory. The agent also correctly identified 6ES7214-1AH50-0XB0 as the next-generation S7-1200 G2 equivalent."
+      "rationale": "Verified via Siemens press releases and catalogs that Siemens completed the acquisition of ebm-papst's Industrial Drive Technology division in mid-2025 and integrated the products as the 'Simotics E' line. The Simotics E-1EV1 is an actively sold modular brushless outrunner (external rotor) motor available in 48V with power ratings up to 135W, which requires configuration to generate a specific 1EV1-prefix part number."
     },
     {
-      "query": "What categories of products does siemens.com offer? List the main product families with one example each.",
+      "query": "Do you have the exact licensing model and lead time for the new Siemens Operations Copilot for Insights Hub that was released in 2025? Need to know if we can run it on-prem.",
+      "query_category": "found",
       "agent": {
-        "text": "Siemens offers a massive portfolio of industrial, electrical, and automation products for B2B procurement. The main product categories and families include:\n\n**1. Industrial Automation**\n*   **Family:** SIMATIC S7-1200 Programmable Logic Controllers (PLCs) used for machine control and process automation.\n*   **Example SKU:** `6ES7215-1HG40-0XB0` (SIMATIC CPU 1215C Compact Controller).\n\n**2. Low-Voltage Controls**\n*   **Family:** SIRIUS 3RT Contactors used for switching and protecting industrial motors.\n*   **Example SKU:** `3RT2024-1AL20` (SIRIUS Contactor, Size S0, 12A, 3-pole, 230VAC coil).\n\n**3. Power Distribution**\n*   **Family:** SENTRON Molded Case Circuit Breakers (MCCB) used for industrial power protection and load management.\n*   **Example SKU:** `3VA5112-5GC41-0AA0` (SENTRON 3VA51 Frame, 125A, 4-Pole Circuit Breaker).\n\n*(Note: Siemens also offers Drive Technology, such as the SINAMICS VFD family, and Building Technologies, but the three categories above represent their highest-volume B2B electrical procurement segments.)*",
+        "text": "There is no single, public orderable part number (SKU) for the Siemens Operations Copilot for Insights Hub. Because it is a modular, AI-driven software solution, Siemens handles quoting and licensing dynamically through the Siemens Xcelerator Marketplace. \n\n**Licensing Model:** \nIt utilizes a subscription-based (SaaS) model. Pricing is tiered based on your existing Insights Hub footprint, the number of connected asset attributes, and the specific AI agents required. It operates as a premium add-on to an Insights Hub or Industrial Operations X environment. \n\n**Lead Time:** \nAs a digital platform, the technical lead time for software provisioning is minimal once licensed. However, functional deployment depends on how quickly your existing machine telemetry can be connected and mapped to the AI system.\n\n**On-Premise Capabilities:** \nYes, it can be deployed on-premise. Siemens specifically integrated the 2025 release of Operations Copilot with its Industrial Edge ecosystem and \"Insights Hub for Local Private Cloud\". This allows the generative AI agents to process queries directly at the machine level on the shop floor, ensuring your proprietary production data remains strictly isolated and is not used to train public LLMs.",
         "sources": [
           {
-            "title": "yuja.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJ7fsa9y659eTW84R_H7WSMPcSAOlG44pLqjyg2UKCfPLBrab39R6xQzIdBsHIYQeMWjd1uAT3Y3_VHvQUMWmsShJ7w2GsiTjJGQa_kaioClsU_Djk8dwLBR1altVj6i8NFA6qR6yGJdUIUsDrw0Uwrn59gsmkAuQhq9AJGPDUurVwQJzEFmZy5qX7IDOa6ZaBNMrxXwgv7DygtfH4FoPVg5DW"
+            "title": "siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEX4tFv7F1bMAcpBfnXkSll_sloL-rbTfbiCgxk-1ej_63XquB-orXZCXnZnHt-2pZt-Vz801oJEbFdzU06r6oz-Yy9235Eo1sDubCpTEAbySnSftHGcoZo3uNhqA5pUMqxIzsHbfb4lf3LNVdbbdXEjaHf1ziQHw=="
           },
           {
-            "title": "standardelectricsupply.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGxeeeCLESyYy2nV4i9TRkJ5ix4RNAyHbnS9u4d7GCj2WDoFSpSzB71SRkCeNhEolyFPUokLidBpPk3GrI9rvINhYGtJLnV_zGWdaH3fm6zDpOu9wa-uHcODvCocjd4JuNEMMmW0NOoa0mpdnLzPPrco6QQ7XZAsGromv_8Kzh3B_GMz8RJUw=="
+            "title": "youtube.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEJawHGjJLVvmguK7xSXrv0R8xW4aNjQvSrfc_cwSxTr06CfTgPiCXdy0Rqe4YTHPA2a3OtmZ7_SnTz8OCmKokQOdA7M04TTyETKolPbHoji9nf_lWjDKiOGvHeLINNCy8upW1IiTk="
           },
           {
-            "title": "standardelectricsupply.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFsAbrBUkagbpLvEz21olm4oXLzDvfADEoGRz8wGL-hvvwGcpyhspqS0yTP7C12m5hA1UbSG0uZVxDWTBkWuRng6fgv7J6vKgmiX_NOVXdVyadJUGBdizJd2aFjRnpBtyWeOf8JEh--iAmZN4U2B_55pPpFKBqZ_0H_ZgPOFDxU-otnvS2j1V5BHHsqRA0zeNUepLw="
+            "title": "mindsphere.io",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF_K9W4RWrT3xT4hIBZuHM3hk2kQeuH2iomLsAREXzgwsZF7fvMtkMsR_FfISKrCeSrup2q4FuUWYOlJBnB_o_2AOLqoJPkevQxv6S9DhlnANvt8WkL3-VIXIY8IRMXs1Im9tJiq8G5vv0TSeXZJmm4PuFIi2qcQDecu8Q0q4_89_kJ6tch4zKbLt807tFZC00="
           },
           {
             "title": "siemens.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGgXwB_VpxHFB_c7MdiFqX64q5C3q7Jn1Fhfzn02HtDPmWGyuYdqotmujHQPkRcXgMiP30q2j2lWRaKsOJtxiAUIafRNO5QePUemo_dwLmFRfL7BDifGhcNc60Tn8EZMnfwBLZ-dKUYEE250vrTL1o="
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF5igMbuSxrMHVByibSC4Dv4-LdqE2wBualBjMWW9vcjiVa8GHSO1PVderiwc5cR5gmwXljKY4u39FNlGI8xykGNseQiOjNYOdYGb_zhCBj3fgpNw8prq7qqU7jlYE8Z8lWqFwIDsYYe39O1LA-MY4="
+          },
+          {
+            "title": "siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFcqK4AeXUu85rRiRrEDK3kcSuJR1U5QM9ad8pDHcDi9QR3lKRw-vCxtTmk5-G-0CsuDXpuKeQV0CpfJdo9FvJKSgYaUSZ4kodY5nc0ohY92kdYn10zVHswlVpudXd2iKTLvSySHFy9tElS"
+          },
+          {
+            "title": "siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG2cPgKk-jQ4oAp0Pxn5O7MW7SOyB89Oa-GyCX6Wukq6yvmXHlgs_UGzPZpm6kU8aENKovs7QJu5mDR1rz--0N8rE_FKpU9iGItX4U3w60BIutANR4KIB93oNM1cP6jsaWfZ2gK37yAW-TWrryB3aBPBD4nG4SMZL-3LD4_tg=="
           }
         ],
         "error": null
@@ -103,27 +177,103 @@
       "attribution": {
         "domains": [
           {
+            "host": "documentation.mindsphere.io",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF_K9W4RWrT3xT4hIBZuHM3hk2kQeuH2iomLsAREXzgwsZF7fvMtkMsR_FfISKrCeSrup2q4FuUWYOlJBnB_o_2AOLqoJPkevQxv6S9DhlnANvt8WkL3-VIXIY8IRMXs1Im9tJiq8G5vv0TSeXZJmm4PuFIi2qcQDecu8Q0q4_89_kJ6tch4zKbLt807tFZC00=",
+            "title": "mindsphere.io",
+            "class": "other"
+          },
+          {
             "host": "www.siemens.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGgXwB_VpxHFB_c7MdiFqX64q5C3q7Jn1Fhfzn02HtDPmWGyuYdqotmujHQPkRcXgMiP30q2j2lWRaKsOJtxiAUIafRNO5QePUemo_dwLmFRfL7BDifGhcNc60Tn8EZMnfwBLZ-dKUYEE250vrTL1o=",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEX4tFv7F1bMAcpBfnXkSll_sloL-rbTfbiCgxk-1ej_63XquB-orXZCXnZnHt-2pZt-Vz801oJEbFdzU06r6oz-Yy9235Eo1sDubCpTEAbySnSftHGcoZo3uNhqA5pUMqxIzsHbfb4lf3LNVdbbdXEjaHf1ziQHw==",
             "title": "siemens.com",
             "class": "manufacturer"
           },
           {
-            "host": "ucr.yuja.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJ7fsa9y659eTW84R_H7WSMPcSAOlG44pLqjyg2UKCfPLBrab39R6xQzIdBsHIYQeMWjd1uAT3Y3_VHvQUMWmsShJ7w2GsiTjJGQa_kaioClsU_Djk8dwLBR1altVj6i8NFA6qR6yGJdUIUsDrw0Uwrn59gsmkAuQhq9AJGPDUurVwQJzEFmZy5qX7IDOa6ZaBNMrxXwgv7DygtfH4FoPVg5DW",
-            "title": "yuja.com",
+            "host": "www.siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF5igMbuSxrMHVByibSC4Dv4-LdqE2wBualBjMWW9vcjiVa8GHSO1PVderiwc5cR5gmwXljKY4u39FNlGI8xykGNseQiOjNYOdYGb_zhCBj3fgpNw8prq7qqU7jlYE8Z8lWqFwIDsYYe39O1LA-MY4=",
+            "title": "siemens.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG2cPgKk-jQ4oAp0Pxn5O7MW7SOyB89Oa-GyCX6Wukq6yvmXHlgs_UGzPZpm6kU8aENKovs7QJu5mDR1rz--0N8rE_FKpU9iGItX4U3w60BIutANR4KIB93oNM1cP6jsaWfZ2gK37yAW-TWrryB3aBPBD4nG4SMZL-3LD4_tg==",
+            "title": "siemens.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "news.siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFcqK4AeXUu85rRiRrEDK3kcSuJR1U5QM9ad8pDHcDi9QR3lKRw-vCxtTmk5-G-0CsuDXpuKeQV0CpfJdo9FvJKSgYaUSZ4kodY5nc0ohY92kdYn10zVHswlVpudXd2iKTLvSySHFy9tElS",
+            "title": "siemens.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.youtube.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEJawHGjJLVvmguK7xSXrv0R8xW4aNjQvSrfc_cwSxTr06CfTgPiCXdy0Rqe4YTHPA2a3OtmZ7_SnTz8OCmKokQOdA7M04TTyETKolPbHoji9nf_lWjDKiOGvHeLINNCy8upW1IiTk=",
+            "title": "youtube.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 4,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 2
+        },
+        "primary": "manufacturer",
+        "total_sources": 6
+      },
+      "category": "CORRECT",
+      "rationale": "Search confirms that the Siemens Operations Copilot for Insights Hub was announced in 2025 as a modular AI solution without a single public SKU, licensed dynamically via the Siemens Xcelerator Marketplace. The agent also accurately verified its on-premise capabilities by correctly citing its integration with Siemens Industrial Edge and Insights Hub for Local Private Cloud."
+    },
+    {
+      "query": "Quote me the lead time for a Siemens SIPROTEC 5 Compact relay, specifically MLFB 7SX8000-3BA50-1CA0. We need the exact universal protection unit, no substitutes.",
+      "query_category": "found",
+      "agent": {
+        "text": "For the Siemens SIPROTEC 5 Compact universal protection relay (MLFB: **7SX8000-3BA50-1CA0**), the standard factory lead time is currently quoted at **40 days** (ex-works) according to Siemens catalog data. \n\nBecause this is an active, highly configurable product in the SIPROTEC portfolio, the 40-day window represents the manufacturer's standard build-to-order timeframe. Please note that exact delivery times can fluctuate based on supply chain conditions at the moment your purchase order is processed. \n\nIf expedited fulfillment is required, you may want to contact authorized Siemens distributors or electrical wholesalers, as some partners may hold immediate stock of this exact configuration. Otherwise, expect a 40-day turnaround direct from the factory.",
+        "sources": [
+          {
+            "title": "siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF2cy6JdTgLCOpVOFo0yetg9_2E3g5DMJFGLsuL8-HyJVBz5tCvJCyEyNAjtXX7mtdLXwyGqVbQ2O9g88Nkdy6TuwkqCz-eJvT5fIuSxjqAA4KnNHIGhk2LIaR4vm31fTy4gQcNZXEiSTnQDAKqCZqpxm98doHmzl5kYwEdtlgmNoOaTFlUPb7mgNY="
+          },
+          {
+            "title": "siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEI9xp4OfS_sOAlksSsKg8dZfFOALZPTcrgyB1DbsmnD2V8P6Y6ivAdTVmx9xErsAnA83mfg0zu7SJ-U3jEzOM11COKtPxFvYtydf1QduoMkozzLyLiAoC13mJsE4HltSYaEKURh6G6_I9Whn4mS3RblLoj1gWoaOox8Fj1IX3ZSJZ4qnuRw4eH"
+          },
+          {
+            "title": "siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQECGGFNjhs951bmmTQpW4qiv9lT63v4xwqPjj0ZD5pPgeQHggSTkFlW9VSIm2F7EJcxeaLQcZjD4CKTmV4Ap_agwgmcpGDxOhPRVbtmgK2NB0SJxoSikiXVs9VvaOAfP0fRN1rzACc_3wq9An77QnximWVepApz63FFnPPLkG8t-KspTiKmMWNvR4hyuAvYyLkMZZY18pymP83GvkWzSAQ5ea6ybNaMjsIZf2C3hfFBhgRIussLhr0A1ZPgQQ=="
+          },
+          {
+            "title": "wiautomation.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHW_9iaawy5Mae1Q9Jl31VW7ShP-neq_sLyfUdBOIDu0TnnlkOwxsewdY6r7eh8WlvyiQ-fDKw3MztBFakYAJVKPTkNIYCG6RPe9jagWq0-29lKhfhVoDuyEGeLNvf4TGdqOs4XNAh0ma9J6M-ITYm42Vii37YDs9mLeF0kLqOfgbS6_vDZLNmb4Wp_7g2SLcvKy_lMMhSQzQgAaoRNJg=="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "ar.wiautomation.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHW_9iaawy5Mae1Q9Jl31VW7ShP-neq_sLyfUdBOIDu0TnnlkOwxsewdY6r7eh8WlvyiQ-fDKw3MztBFakYAJVKPTkNIYCG6RPe9jagWq0-29lKhfhVoDuyEGeLNvf4TGdqOs4XNAh0ma9J6M-ITYm42Vii37YDs9mLeF0kLqOfgbS6_vDZLNmb4Wp_7g2SLcvKy_lMMhSQzQgAaoRNJg==",
+            "title": "wiautomation.com",
             "class": "other"
           },
           {
-            "host": "www.standardelectricsupply.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGxeeeCLESyYy2nV4i9TRkJ5ix4RNAyHbnS9u4d7GCj2WDoFSpSzB71SRkCeNhEolyFPUokLidBpPk3GrI9rvINhYGtJLnV_zGWdaH3fm6zDpOu9wa-uHcODvCocjd4JuNEMMmW0NOoa0mpdnLzPPrco6QQ7XZAsGromv_8Kzh3B_GMz8RJUw==",
-            "title": "standardelectricsupply.com",
+            "host": "mall.industry.siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQECGGFNjhs951bmmTQpW4qiv9lT63v4xwqPjj0ZD5pPgeQHggSTkFlW9VSIm2F7EJcxeaLQcZjD4CKTmV4Ap_agwgmcpGDxOhPRVbtmgK2NB0SJxoSikiXVs9VvaOAfP0fRN1rzACc_3wq9An77QnximWVepApz63FFnPPLkG8t-KspTiKmMWNvR4hyuAvYyLkMZZY18pymP83GvkWzSAQ5ea6ybNaMjsIZf2C3hfFBhgRIussLhr0A1ZPgQQ==",
+            "title": "siemens.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF2cy6JdTgLCOpVOFo0yetg9_2E3g5DMJFGLsuL8-HyJVBz5tCvJCyEyNAjtXX7mtdLXwyGqVbQ2O9g88Nkdy6TuwkqCz-eJvT5fIuSxjqAA4KnNHIGhk2LIaR4vm31fTy4gQcNZXEiSTnQDAKqCZqpxm98doHmzl5kYwEdtlgmNoOaTFlUPb7mgNY=",
+            "title": "siemens.com",
             "class": "other"
           },
           {
-            "host": "www.standardelectricsupply.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFsAbrBUkagbpLvEz21olm4oXLzDvfADEoGRz8wGL-hvvwGcpyhspqS0yTP7C12m5hA1UbSG0uZVxDWTBkWuRng6fgv7J6vKgmiX_NOVXdVyadJUGBdizJd2aFjRnpBtyWeOf8JEh--iAmZN4U2B_55pPpFKBqZ_0H_ZgPOFDxU-otnvS2j1V5BHHsqRA0zeNUepLw=",
-            "title": "standardelectricsupply.com",
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEI9xp4OfS_sOAlksSsKg8dZfFOALZPTcrgyB1DbsmnD2V8P6Y6ivAdTVmx9xErsAnA83mfg0zu7SJ-U3jEzOM11COKtPxFvYtydf1QduoMkozzLyLiAoC13mJsE4HltSYaEKURh6G6_I9Whn4mS3RblLoj1gWoaOox8Fj1IX3ZSJZ4qnuRw4eH",
+            "title": "siemens.com",
             "class": "other"
           }
         ],
@@ -137,28 +287,45 @@
         "total_sources": 4
       },
       "category": "CORRECT",
-      "rationale": "Searches confirmed all three SKUs provided by the agent are authentic Siemens products. 6ES7215-1HG40-0XB0 is indeed a SIMATIC S7-1200 CPU 1215C, 3RT2024-1AL20 is a SIRIUS Size S0 12A contactor with a 230VAC coil, and 3VA5112-5GC41-0AA0 is a SENTRON 3VA51 125A 4-Pole molded case circuit breaker."
+      "rationale": "Verified via the Siemens SiePortal (Industry Mall) that MLFB 7SX8000-3BA50-1CA0 is a valid SIPROTEC 5 Compact (7SX800) universal protection relay, and its standard factory lead time is exactly 40 days."
     },
     {
-      "query": "What is the exact maximum ambient operating temperature for a Siemens SIMATIC S7-1500 CPU 1516-3 PN/DP when mounted horizontally?",
+      "query": "List every software and automation company Siemens acquired and rolled into their Digital Industries portfolio between 2021 and 2025, including Trayer and Altair. I need the exact current sub-brand names.",
+      "query_category": "found",
       "agent": {
-        "text": "For the Siemens SIMATIC S7-1500 CPU 1516-3 PN/DP (current orderable part number **6ES7516-3AP03-0AB0**), the exact maximum ambient operating temperature when mounted horizontally is **60 °C**. \n\nPlease note a minor operational constraint regarding the screen: while the CPU itself continues to operate flawlessly up to 60 °C, the integrated display will automatically switch off when the ambient temperature reaches 50 °C to prevent thermal damage to the screen. \n\nIf your facility is using legacy versions of this exact CPU model (such as part numbers **6ES7516-3AN02-0AB0** or **6ES7516-3AN01-0AB0**), the maximum horizontal operating temperature remains the same at 60 °C, with the identical 50 °C shutoff behavior for the display.",
+        "text": "I cannot answer with a specific SKU for this question, as you are asking for a corporate acquisition list rather than an orderable product. \n\nHere are the primary software and automation companies Siemens acquired and rolled into its Digital Industries (DI) portfolio between 2021 and 2025, along with their current brand integration:\n\n*   **Altair Engineering** (2025): Integrated into Siemens Digital Industries Software / Siemens Xcelerator\n*   **Supplyframe** (2021): Operates as Supplyframe, a Siemens Business (also includes **Wevolver**, acquired in 2025)\n*   **OneSpin Solutions** & **Fractal Technologies** (2021): Integrated into Siemens EDA\n*   **Nextflow Software** (2021): Integrated into Simcenter\n*   **Avery Design Systems** (2022): Integrated into Siemens EDA\n*   **Radica Software** (2022): Integrated into Siemens Digital Industries Software\n*   **Senseye** (2022): Operates as Senseye, a Siemens Business\n*   **Inspekto** (2024): Integrated into Siemens Digital Industries\n*   **ebm-papst** (Industrial Drives, 2024): Integrated into Siemens DI Motion Control\n\n*Clarification regarding Trayer:* **Trayer Engineering Corporation** was acquired in 2024 and currently operates as **Trayer, a Siemens Business**. However, it provides medium-voltage switchgear and was rolled into the **Siemens Smart Infrastructure** division (Electrification and Automation), *not* Digital Industries.",
         "sources": [
           {
-            "title": "manualslib.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGbnXI44wy4zj57DU3t3w-OXcLLjUA2NZwkz8Zv63LpfwSF0jzAMTcNOPxFTOQW5tA2oU49BKNZ72XBjPktAwr4l6W7pd_ezWwobL9Hn8jFFnC5vYh-SfLiXznRK5916wp2QZM1pQCZgEnAk7q07XXKiWKOs7fZSlt1ROk_gMak5A=="
+            "title": "siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHJ5fYclRui6vde2xLwTm8qSJkL7kSeBr_s9DiKpFzdmqapWmMHTc-DqGB2wrR2Y3pPRCZjMxKRhe_zf6VatQiBwonyrthjPNyyRF0XGx_83NtiunXeE8_VP2fTkhdNz__0ydAA9Dnt8qR9TC14uD9ZSi175HlJnw=="
           },
           {
             "title": "siemens.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEkS9OdM1kTjOEvWqLru9Q1La45Ai3qI4IcjtqVXnmoWxHEKur4ESivwnsLzwfCXWIINcbIE68dASmOieLPhSarm8GdLwGvNhuE__n0fMZpIW9xQ5e-3sJbjZTuPlZx3pbIrxgZ44uWEmJ2RtTcGssGvwQOJOx1E7wyTqopX_WuAPBXS4l-dydJ2Q=="
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF00ilaU7zFlry3gihCAAF_Oq4eQX99kWhwTDzm0NL24-2HP-byyV62sEdAM-UNgrAj1ooZHnE_kDnrikOM-wBfzPwBecPXHoz-4RG3twPjvFN3flvT37qunFpvdt5-GramlXa3DIOzYt04hkDIjFcFcz1oGOEZYSN0hPDfKZpRKCP3o5I0_D2RHWl7BKnR3zHK8fvL3LPQYTJxpg=="
           },
           {
-            "title": "plcskit.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE1EVT6VIlN5wEjm6mh9WetQNB2uZZosYIjVR5QbTR4PdG1G-tRBbZvJuNCUApyyW4ILYJ4u1NZd-YGfzIE64geYKpEv4OcArtILwlWZ7b-xy6QFD7KHgTYi3dfe371H2G908zAmYyXivSoqb_PPVCYDWOrf45pJLqRoeNj7lDYsnIMRzxeKagNiyHXs1YAxYGZJa6hBHMLmjC-4GOAMNs5R8P26KQQI3l80gOwt8n_LRs="
+            "title": "iot-now.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEtrtvww3FpTE4bvTrdDjeOUKLWAmVNwZBQb0e1dpZoOYFNZ2xbKkRtdUtBjSIsuZV_Y8-kde9unP_ytesaYBmuV-jgWCr3n1kS3CuVAjdjewxWUPBqL-Fk6TNhY8w6ydWScTX2EEbb7Hyqig8ZqQLEmsAB6z2ADadv7n9UHTwq59QizPre5AOLveIJZSaioI_T9W7NVZMUpaVwRRMR19BFIPcfmkF_siqCvNQbIU5gN0WW1xDtMYoe"
           },
           {
-            "title": "electricautomationnetwork.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEMShH_LrnphpsZhe146P96Zyr1Ri_Ou4AnwU4Y8w5-k2WlLy-JwLAeHc9Wan2WRnGeIpjr7OJUVB6Sfwikdsf7TYccPYEg5W7Cw6NDh7JRo23i_FqWjNNgbItTHivIWkDKJHSdenuajA6NBO4s4gZoYJrhSa6e84PkX46peovRJcc8Vuwe8iQkLVhMH56k7FSheVObJC3DdLGrQdJspeQWzVHQohP-z0XHEa5zN_lCbvmQlsOQXKo-aMIH_wQnLN7yT7AvqjzIv3V5gJQk6laVg4U="
+            "title": "siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHAaeEkzXBhrtZQaZ72Yz_LjprFRic8GD_RJR-1UbQNBs_l12KUuxbuJLoeMrP2q92H0kNeleftwg_quF8F_c9792MrKlzujnPnYZsBuGRfcfHr6XAJEp_XwyKYKrYdL4cBp9L9sDnrfYdubfEude9jZqtYdYZi1MCdzBunMtapBZuQTm4vwWFMvARNumeueo4EoDEQeUx0OBbTi_rA3WqkDYcL-fS6CXwmAsEr2kXIZz12mg2Xix7BUp73oqqXyWwdVg=="
+          },
+          {
+            "title": "privsource.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFhZ_aL0dot-kxmdpOiQk6ba0iYArUULDFSq0SY6gNSINCyAKDniljptwU1DwZqoiACxLJXwsCdEtCAtFFdz9_9IDQ3X73A7A7l87SSxMz1ehKvPt7_ScxbUBx86Rr37p4UM5Vxn9EcYRSRVsnhsRTraIessZB2-T1YNrFwST1Jf3REgmymL1tgKS0i_lLrkTP7gO5kVpO_4XtWP30ZFfA2yAy2YCKV_WnGHfJsiGNi-Q=="
+          },
+          {
+            "title": "wikipedia.org",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEcAsMm2OsERb2hawEUQ4L7gIN7Bo62UlkGbimPvdRuzT6AyaeJt0vcM2TgcX1CNt7J-hKy4Q9jzaG-xrzoVbuVQHdvp4ujLRXXPVoMnFewn_oBAHxiBaLIj-Ta7ic2ymJvPA3h9pYOLAFLtCgv9defQ9ThXif8gochXgpC"
+          },
+          {
+            "title": "automation.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFpDiowZrY3Me58kF0sN2K5-OPgRYjHUBHHEmontfricnUSo-GdqysQxqX_u4MowIFnNf1utQkNOcRYGGdYkNglt6hou1FYFYpSI3Q_CjUEcj-JEUgBDzfa3SrqGNdECrEs6YLXD-sJLk1Hxcjct4t9gKyJnMnSZmRYQFkmgrsF0A=="
+          },
+          {
+            "title": "enlit.world",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG2jrZNrTBX_ouLkNKk4bEN75gTk90HjgMmDJDM7f9wchYBs38Ovqe2XzikMFJFhJ4NGLi3MAfg_Ws9xiATNh1uI5wk4wfGHidKYoHzWyKcun05BPBwSU-kO9RiOlotbgpUAJ46fAbPENI1LkqCwG-Q1AhsBmvauQ3jtKjNfsH_Dtr5ttjHgfnBjBE2_VgR1ATza8NF53zg8oWqTY7RdGe2"
           }
         ],
         "error": null
@@ -166,58 +333,83 @@
       "attribution": {
         "domains": [
           {
-            "host": "www.electricautomationnetwork.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEMShH_LrnphpsZhe146P96Zyr1Ri_Ou4AnwU4Y8w5-k2WlLy-JwLAeHc9Wan2WRnGeIpjr7OJUVB6Sfwikdsf7TYccPYEg5W7Cw6NDh7JRo23i_FqWjNNgbItTHivIWkDKJHSdenuajA6NBO4s4gZoYJrhSa6e84PkX46peovRJcc8Vuwe8iQkLVhMH56k7FSheVObJC3DdLGrQdJspeQWzVHQohP-z0XHEa5zN_lCbvmQlsOQXKo-aMIH_wQnLN7yT7AvqjzIv3V5gJQk6laVg4U=",
-            "title": "electricautomationnetwork.com",
+            "host": "en.wikipedia.org",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEcAsMm2OsERb2hawEUQ4L7gIN7Bo62UlkGbimPvdRuzT6AyaeJt0vcM2TgcX1CNt7J-hKy4Q9jzaG-xrzoVbuVQHdvp4ujLRXXPVoMnFewn_oBAHxiBaLIj-Ta7ic2ymJvPA3h9pYOLAFLtCgv9defQ9ThXif8gochXgpC",
+            "title": "wikipedia.org",
             "class": "other"
           },
           {
-            "host": "www.manualslib.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGbnXI44wy4zj57DU3t3w-OXcLLjUA2NZwkz8Zv63LpfwSF0jzAMTcNOPxFTOQW5tA2oU49BKNZ72XBjPktAwr4l6W7pd_ezWwobL9Hn8jFFnC5vYh-SfLiXznRK5916wp2QZM1pQCZgEnAk7q07XXKiWKOs7fZSlt1ROk_gMak5A==",
-            "title": "manualslib.com",
+            "host": "www.automation.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFpDiowZrY3Me58kF0sN2K5-OPgRYjHUBHHEmontfricnUSo-GdqysQxqX_u4MowIFnNf1utQkNOcRYGGdYkNglt6hou1FYFYpSI3Q_CjUEcj-JEUgBDzfa3SrqGNdECrEs6YLXD-sJLk1Hxcjct4t9gKyJnMnSZmRYQFkmgrsF0A==",
+            "title": "automation.com",
             "class": "other"
           },
           {
-            "host": "www.plcskit.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE1EVT6VIlN5wEjm6mh9WetQNB2uZZosYIjVR5QbTR4PdG1G-tRBbZvJuNCUApyyW4ILYJ4u1NZd-YGfzIE64geYKpEv4OcArtILwlWZ7b-xy6QFD7KHgTYi3dfe371H2G908zAmYyXivSoqb_PPVCYDWOrf45pJLqRoeNj7lDYsnIMRzxeKagNiyHXs1YAxYGZJa6hBHMLmjC-4GOAMNs5R8P26KQQI3l80gOwt8n_LRs=",
-            "title": "plcskit.com",
+            "host": "www.enlit.world",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG2jrZNrTBX_ouLkNKk4bEN75gTk90HjgMmDJDM7f9wchYBs38Ovqe2XzikMFJFhJ4NGLi3MAfg_Ws9xiATNh1uI5wk4wfGHidKYoHzWyKcun05BPBwSU-kO9RiOlotbgpUAJ46fAbPENI1LkqCwG-Q1AhsBmvauQ3jtKjNfsH_Dtr5ttjHgfnBjBE2_VgR1ATza8NF53zg8oWqTY7RdGe2",
+            "title": "enlit.world",
             "class": "other"
           },
           {
-            "host": "vertexaisearch.cloud.google.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEkS9OdM1kTjOEvWqLru9Q1La45Ai3qI4IcjtqVXnmoWxHEKur4ESivwnsLzwfCXWIINcbIE68dASmOieLPhSarm8GdLwGvNhuE__n0fMZpIW9xQ5e-3sJbjZTuPlZx3pbIrxgZ44uWEmJ2RtTcGssGvwQOJOx1E7wyTqopX_WuAPBXS4l-dydJ2Q==",
+            "host": "iot-now.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEtrtvww3FpTE4bvTrdDjeOUKLWAmVNwZBQb0e1dpZoOYFNZ2xbKkRtdUtBjSIsuZV_Y8-kde9unP_ytesaYBmuV-jgWCr3n1kS3CuVAjdjewxWUPBqL-Fk6TNhY8w6ydWScTX2EEbb7Hyqig8ZqQLEmsAB6z2ADadv7n9UHTwq59QizPre5AOLveIJZSaioI_T9W7NVZMUpaVwRRMR19BFIPcfmkF_siqCvNQbIU5gN0WW1xDtMYoe",
+            "title": "iot-now.com",
+            "class": "other"
+          },
+          {
+            "host": "news.siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHJ5fYclRui6vde2xLwTm8qSJkL7kSeBr_s9DiKpFzdmqapWmMHTc-DqGB2wrR2Y3pPRCZjMxKRhe_zf6VatQiBwonyrthjPNyyRF0XGx_83NtiunXeE8_VP2fTkhdNz__0ydAA9Dnt8qR9TC14uD9ZSi175HlJnw==",
             "title": "siemens.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "news.siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF00ilaU7zFlry3gihCAAF_Oq4eQX99kWhwTDzm0NL24-2HP-byyV62sEdAM-UNgrAj1ooZHnE_kDnrikOM-wBfzPwBecPXHoz-4RG3twPjvFN3flvT37qunFpvdt5-GramlXa3DIOzYt04hkDIjFcFcz1oGOEZYSN0hPDfKZpRKCP3o5I0_D2RHWl7BKnR3zHK8fvL3LPQYTJxpg==",
+            "title": "siemens.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.privsource.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFhZ_aL0dot-kxmdpOiQk6ba0iYArUULDFSq0SY6gNSINCyAKDniljptwU1DwZqoiACxLJXwsCdEtCAtFFdz9_9IDQ3X73A7A7l87SSxMz1ehKvPt7_ScxbUBx86Rr37p4UM5Vxn9EcYRSRVsnhsRTraIessZB2-T1YNrFwST1Jf3REgmymL1tgKS0i_lLrkTP7gO5kVpO_4XtWP30ZFfA2yAy2YCKV_WnGHfJsiGNi-Q==",
+            "title": "privsource.com",
             "class": "other"
+          },
+          {
+            "host": "press.siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHAaeEkzXBhrtZQaZ72Yz_LjprFRic8GD_RJR-1UbQNBs_l12KUuxbuJLoeMrP2q92H0kNeleftwg_quF8F_c9792MrKlzujnPnYZsBuGRfcfHr6XAJEp_XwyKYKrYdL4cBp9L9sDnrfYdubfEude9jZqtYdYZi1MCdzBunMtapBZuQTm4vwWFMvARNumeueo4EoDEQeUx0OBbTi_rA3WqkDYcL-fS6CXwmAsEr2kXIZz12mg2Xix7BUp73oqqXyWwdVg==",
+            "title": "siemens.com",
+            "class": "manufacturer"
           }
         ],
         "counts": {
-          "manufacturer": 0,
+          "manufacturer": 3,
           "distributor": 0,
           "marketplace": 0,
-          "other": 4
+          "other": 5
         },
         "primary": "other",
-        "total_sources": 4
+        "total_sources": 8
       },
       "category": "CORRECT",
-      "rationale": "Verified via Siemens datasheets that the SIMATIC S7-1500 CPU 1516-3 PN/DP (current part 6ES7516-3AP03-0AB0 and legacy parts 6ES7516-3AN02-0AB0 / 6ES7516-3AN01-0AB0) has a maximum horizontal operating temperature of 60 °C, and that the display automatically switches off at 50 °C."
+      "rationale": "Search results confirm the agent correctly identified the companies Siemens acquired between 2021 and 2025 and their respective portfolio integrations (e.g., Altair to Xcelerator, OneSpin to EDA, Supplyframe/Wevolver). It also correctly clarified that Trayer Engineering was rolled into Smart Infrastructure, not Digital Industries."
     },
     {
-      "query": "Does siemens.com sell 6-axis articulated industrial robot arms? If yes, give me a part number; if no, say so plainly.",
+      "query": "We are upgrading our switchgear and need to procure the new SIPROTEC 6 Compact 8SX900 series relays. What's the direct MLFB upgrade path from the 7SX800?",
+      "query_category": "hallucinated",
       "agent": {
-        "text": "No, Siemens does not manufacture or sell its own branded 6-axis articulated industrial robot arms. Therefore, there is no orderable part number for a Siemens robot arm.\n\nInstead, Siemens focuses on the control systems, software, and automation technology that drive industrial robotics. They provide platforms like the SIMATIC Robot Integrator and SINUMERIK CNC systems, which are used to control, simulate, and integrate robots from major third-party robotics manufacturers (such as KUKA, Yaskawa, Stäubli, and Comau). While Siemens occasionally partners with robotics companies (like a recent collaboration with Humanoid to test AI-driven robots in their own factories), they do not sell the mechanical arms directly to customers. \n\nIf you are looking to purchase a 6-axis industrial robot arm, you will need to source the mechanical arm directly from a dedicated robotics manufacturer. You can then seamlessly integrate that third-party arm into a Siemens PLC or CNC automation environment.",
+        "text": "I cannot provide a specific MLFB (part number) because the \"SIPROTEC 6 Compact 8SX900\" series does not exist in the Siemens catalog. \n\nCurrently, the **SIPROTEC 5 Compact 7SX800** is the latest generation of universal protection relays offered by Siemens for medium-voltage applications. There is no announced \"SIPROTEC 6\" platform or \"8SX900\" direct upgrade path. \n\nIf you are looking to upgrade from older legacy devices (like the SIPROTEC 4 or SIPROTEC Compact 7SJ80 series), the 7SX800 *is* the modern upgrade path. If you actually need an MLFB configured for a specific 7SX800 variant, please provide your exact protection, communication, and I/O requirements, and I can help you build the correct SIPROTEC 5 Compact order number.",
         "sources": [
           {
             "title": "siemens.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJw7J7ShiEjJtUcs730RToa3Nx3l79to5YhhQk5_pDMkQFHQAPXuKCsdE3BQLZNR8-Dv8a0e9ORPOzwoze51K5rVwohq9LX_HbSIKSuviNfUvTlo-9Yxbk24Oh8zH8g7yJ7qpab7W5P3KtINdSKCqMV0mHcJdtGT5kAiZ5ZQfhRkgO4iMcM733"
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHD5D5hjCvR7ESsZCHIuRigCYBIoV9TTViCFBH_VJpo8DsXwwf1pCliTmFBtbCCvdPA4jYiqRkx-Yl6YoUu0aHla11oEwUeARKdOg898HRge5faJ1sI0zvSWyC6jBw3mFKC3nKyqpNCYaLVy3k819DC4v0="
+          },
+          {
+            "title": "pacw.org",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEg6Oy7VgoJz8qbcgA2DZ_8L4o-6mmD8lPCtYpQEjMa8FjFtvfYA7-gqCOJzDlqaYmvHKoTEaxrNiuCvB2TpcK2ZOC3NhrE8B4aOF9QzKPOSPgKRMSPQHaYPCNzVbMXNNfA0cgymhvYd9g="
           },
           {
             "title": "siemens.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGyyjIY_Mfd2OYk7cVPlQHFMxL4d0Plc4tpcCml945Sh61Ij5Cmd68GgW5fu_ljjuf9CHGW3XJwDHXfsMok2AiEjA66OwMYOldv80r1r8-IpnVo85vizy-QLnT1v6FqatkZYHqfpNR3uT8ER-ODY3vKEwbwSIAbAIg57j1hMupLhgO6Tjv4lRr46sjXZ6f2Zk9Gw3WNYjrapsA1s05NtsWYVA=="
-          },
-          {
-            "title": "manufacturingdigital.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-pjFX4gFo8PUluryx_ul1WrYNfy0h5nKSrbrk0KiK1JaZob1LVMHjAfbpyC1yKb7ETknNGehp2SqtGfpjG0O0fAmI17-ieaoYVwZhtFJW_5oNt2OwIin3nwcnX135AqEUtmHTG9tYc3tcxwUz7756uWMxyCR2KhKzM6DltPGecUws1bwpvnYuVsIAstlKmajzr1tDDq8="
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGucOXJz1hBDbqfqPq0fr8E8VWa-bjAIc7Vs22jz2TkcUn9cs7kVaP70ayxrdeUtMItyuoR7QZtOtd2waRNYv7WRMveeswmsLXTxtMPHaLs2ZfRQcp50ATXD77dfJrWcc7T3ODVSnqTMrO9Jyje7t1aAX3xk_LqL0WBhE0b_yYoYrOfXISZtYvUFgbBD2ekH5QelRd7sRTqA_9TqbSeutyqlP_g0dEYXQf9FlTsDP_eBitIv_zM"
           }
         ],
         "error": null
@@ -225,22 +417,22 @@
       "attribution": {
         "domains": [
           {
-            "host": "manufacturingdigital.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-pjFX4gFo8PUluryx_ul1WrYNfy0h5nKSrbrk0KiK1JaZob1LVMHjAfbpyC1yKb7ETknNGehp2SqtGfpjG0O0fAmI17-ieaoYVwZhtFJW_5oNt2OwIin3nwcnX135AqEUtmHTG9tYc3tcxwUz7756uWMxyCR2KhKzM6DltPGecUws1bwpvnYuVsIAstlKmajzr1tDDq8=",
-            "title": "manufacturingdigital.com",
+            "host": "www.siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHD5D5hjCvR7ESsZCHIuRigCYBIoV9TTViCFBH_VJpo8DsXwwf1pCliTmFBtbCCvdPA4jYiqRkx-Yl6YoUu0aHla11oEwUeARKdOg898HRge5faJ1sI0zvSWyC6jBw3mFKC3nKyqpNCYaLVy3k819DC4v0=",
+            "title": "siemens.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "assets.new.siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGucOXJz1hBDbqfqPq0fr8E8VWa-bjAIc7Vs22jz2TkcUn9cs7kVaP70ayxrdeUtMItyuoR7QZtOtd2waRNYv7WRMveeswmsLXTxtMPHaLs2ZfRQcp50ATXD77dfJrWcc7T3ODVSnqTMrO9Jyje7t1aAX3xk_LqL0WBhE0b_yYoYrOfXISZtYvUFgbBD2ekH5QelRd7sRTqA_9TqbSeutyqlP_g0dEYXQf9FlTsDP_eBitIv_zM",
+            "title": "siemens.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.pacw.org",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEg6Oy7VgoJz8qbcgA2DZ_8L4o-6mmD8lPCtYpQEjMa8FjFtvfYA7-gqCOJzDlqaYmvHKoTEaxrNiuCvB2TpcK2ZOC3NhrE8B4aOF9QzKPOSPgKRMSPQHaYPCNzVbMXNNfA0cgymhvYd9g=",
+            "title": "pacw.org",
             "class": "other"
-          },
-          {
-            "host": "www.siemens.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGyyjIY_Mfd2OYk7cVPlQHFMxL4d0Plc4tpcCml945Sh61Ij5Cmd68GgW5fu_ljjuf9CHGW3XJwDHXfsMok2AiEjA66OwMYOldv80r1r8-IpnVo85vizy-QLnT1v6FqatkZYHqfpNR3uT8ER-ODY3vKEwbwSIAbAIg57j1hMupLhgO6Tjv4lRr46sjXZ6f2Zk9Gw3WNYjrapsA1s05NtsWYVA==",
-            "title": "siemens.com",
-            "class": "manufacturer"
-          },
-          {
-            "host": "www.siemens.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJw7J7ShiEjJtUcs730RToa3Nx3l79to5YhhQk5_pDMkQFHQAPXuKCsdE3BQLZNR8-Dv8a0e9ORPOzwoze51K5rVwohq9LX_HbSIKSuviNfUvTlo-9Yxbk24Oh8zH8g7yJ7qpab7W5P3KtINdSKCqMV0mHcJdtGT5kAiZ5ZQfhRkgO4iMcM733",
-            "title": "siemens.com",
-            "class": "manufacturer"
           }
         ],
         "counts": {
@@ -253,32 +445,37 @@
         "total_sources": 3
       },
       "category": "CORRECT",
-      "rationale": "Verified via search that Siemens does not manufacture or sell its own 6-axis articulated industrial robot arms. They supply automation and CNC control systems (like SINUMERIK and SIMATIC) to integrate and control third-party robotic arms, exactly as the agent correctly explained."
+      "rationale": "Verified via Google Search that Siemens produces the SIPROTEC 5 Compact 7SX800 as its current generation protection relay, and there is no official 'SIPROTEC 6 Compact 8SX900' platform in the catalog. The agent accurately identified that the queried product does not exist and correctly presented the 7SX800 as the actual modern upgrade path."
     },
     {
-      "query": "I'm comparing siemens.com's SIMATIC S7-1500 PLCs vs. Allen-Bradley's ControlLogix 5580 series. What are the key differentiators and which one is recommended for a large-scale automotive manufacturing plant?",
+      "query": "Pull the datasheet for the SIPROTEC 5 Compact 7SX800 and give me the exact MTBF in hours at 60\u00b0C ambient, plus the salt-spray IP69K test duration.",
+      "query_category": "hallucinated",
       "agent": {
-        "text": "When comparing **Siemens SIMATIC S7-1500** and **Allen-Bradley ControlLogix 5580**, both are elite programmable automation controllers (PACs), but they differ in ecosystem and regional adoption:\n\n*   **Network & Ecosystem:** Siemens utilizes the TIA Portal environment and PROFINET standards. Allen-Bradley uses Studio 5000 and is built heavily around EtherNet/IP.\n*   **Key Differentiators:** The S7-1500 features a built-in CPU diagnostic display and an exceptionally fast backplane. The ControlLogix 5580 series boasts a built-in 1-gigabit Ethernet port and world-class integration with Kinetix motion systems.\n\n**Recommendation:**\nFor a large-scale automotive manufacturing plant, your decision should follow regional supply chains and existing infrastructure. Given that you are in Germany, **Siemens is the definitive recommendation**. It is the overwhelming standard in the European automotive sector, meaning localized integration, workforce familiarity, and support will be highly optimized.\n\n**Orderable High-End Part Numbers:**\n*   **Siemens:** SKU **6ES7518-4AP00-0AB0** (SIMATIC S7-1500 CPU 1518-4 PN/DP with 6MB program memory / 60MB data memory).\n*   **Allen-Bradley:** SKU **1756-L85E** (ControlLogix 5580 Controller with 40MB user memory and 1GB Ethernet port).",
+        "text": "I cannot provide the exact MTBF in hours at 60\u00b0C ambient or an IP69K salt-spray test duration for the SIPROTEC 5 Compact 7SX800, as these specifications are neither published in the standard datasheet nor applicable to this device.\n\n*   **MTBF:** While Siemens generally states an overall MTBF of >400 to 600 years for the SIPROTEC family, exact hourly reliability figures derated specifically for 60\u00b0C ambient are not published in the standard 7SX800 literature. \n*   **IP Rating:** The 7SX800 is a medium-voltage protection relay and is **not** rated IP69K. The IP69K rating is meant for high-pressure, high-temperature washdowns (commonly found on industrial pushbuttons). Panel-mounted SIPROTEC relays typically feature an IP54 front and IP20 rear protection rating.\n\nIf you need a real, orderable part number to reference for this product line, a standard catalog SKU is **7SX8000-3AA50-1BA0** (Universal protection device configured with 4 current inputs, 4 voltage inputs, 4 binary inputs, and 5 binary outputs). \n\nPlease contact Siemens technical support if you require a custom reliability calculation (FIT/MTBF) for a specific thermal profile.",
         "sources": [
           {
-            "title": "codale.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEsJq9A3Zz3Uea2RmTLBCodThonVocOXFZoWewiZPi0yATZGZ7p_svfrY3kbsMx2CMhh9YJaVksHPirEah5nqQciso8Ou_L-h5--BhqQxY8bl14R4RokQroDGUcCBlCovns8W9LQ3opLRlt8M8oVvWdxkqu7bjjrimPJ71Jb-1m3-FRMn-eRjD5"
+            "title": "siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGrnfZsXXQmp62SAmpCQCxdfGq1mqVZBndA9CsTP739_uktV_opH5oITY2lk08HtFHb9U2HPbNRnnAoae2cAp6OwZ5a2KmRSyDZYWJkpxRmxetQI-kg8Kj7DssM91lo-CWdWhewbR7Y4s4hkZYsdLIkfqBCmHetcDhkFbfWTupA82iki5DeLIMjafP2sRoMmdwQSAb_igfOx2jwwsMiMSRz6zeMaUjN"
+          },
+          {
+            "title": "ips.us",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGs2UQu35BisZ8kV-MdBlb6WF6mUmaEdOKJbvzvChjDNO9XI6VqRYu4l8-ggCRe32EAUh6bxAfXrwQeg-RvVqvUh0M8opV1yZPI2lj4lZBE4RAediyeW1UjfiqW6-M7MZ0="
           },
           {
             "title": "siemens-info.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHib_nHedVXEsLJKvHCWH4cTQaEbkIqYd3lQp0RQ288sVvt1ZW_yhaX_pYSiqX9Lrws-6YCMCUrzgQMjEIPugXlKAtFjBMeCmKA4gxsAG2-4DOMQDcl5P7q7yVDJ7rfCd7YHON2dJs4bBowZLnlUbtAXABTqn-GcLPsL6FDOZ7djhN_TcFeiGMkPw6GfQ=="
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFR514LYqJGeCcdWn1mT-746Zs2n_uM34KgllFKOE4rTRpBp2xlxFQD_WK7b1gI40egMO7_dD8Oy3sySiGQ73hIjmgbZBLbL4_NaLIlscm0XBky-odSu4xa9f3XALrlMCr3nbKlvXOoX58wXJmxIqXcbblsG7b2oGt6EhoKwLqh7kmY5tG8_so30g=="
           },
           {
-            "title": "ebay.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFzgt7keNA5IT7mhLZOoCuEguNYb0VXSh0qOc8tf4IhjIyU92P0XhnVsybgq9-Wqv7r1pmjxcBhJRtcaA8YW8EFWlPqg83W_5HeQD2Ni2DSmow8eT_p0xwNwl5NMmpTzA=="
+            "title": "siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEdhqtK53LZaN1bJdnOdtJC3P9QY9BYaPPXUlhHhRQ9UR0BoAnEgRd0lnIVa_802wtTw0vOAyOowP-XxAVvsXo24uX7xhb2y5D4erqjuEXCYKMsrSafDDrP4liZQjZjJ_NIGDR_93VzMw-Me9_HVv0YaUR0m6lIwKfVfhvEdlGo1kQa8dAbs3-TkO4PBH8kXxNo1WtaAmP-TV031aHY-8KJa2faSz2Dl8fUpQzFDvE_6_11EYAZEjUxvKH2"
           },
           {
-            "title": "reynoldsonline.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG1yOJxSUVn1RaQ-U5FdDO_XP_HGqnJi0jTsTSvfrr1hnW_5Zqzo-QNwZfaUBgCHk3dGlILNYEfBj0qzFDzKnwdjHuioDqwk8k2UIuaLTl-MiiKi6aBNvj9H4VzkQb97k7df-zMvg6aUOvuRa11LQHScHNuq0_S3N0="
+            "title": "vataelektrik.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGs_ZQctuLlSIGgdab5_ApN2lcWMhPQgJaeiNDOBdMdTnD8UtqfdeRPbRFtplhwbfMTMwsuZ3eWKxaZ-g7AIHTVxfswU8itXVEffLMHJ5JNMh6IXxOZlaVgIMPQpRKQlSv97rpEwsjraxEJNaaIqWWCBYyUujVws8l6"
           },
           {
-            "title": "crawfordelectricsupply.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGaE5bXOaZ3vh4iKlAv-X9PEJTYQqEvFIaG-XDPoS4XLsGzEt3wQPWbOIf3rB4R2GnYhAle-MzbScOGFsZWTIDYrAlcwWnsLCVcvgSjfxl4GPCCETvQ0TZkBcC3YMr-Gms5P9jrrixhgCloiNkCiGZDjMYNK-aSYdbWr1wEVmHeTV6WY5uLeU7HNqgYX5EoSfW8TFLWYw=="
+            "title": "rs-online.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQElJsSkzS7vAmO_tdweLJ6GvlsjMkdyNRzmu1aW98Y-LSsmrmnsXuk75Y5NpsXtVpOwA43htTte_PMfa4RysdSuL89517YPYKyFCGGtSeapvVinszyGOSd-a4lchdU_O8FIZu2zoskSuQiVtPv5HaAJcHQ8BA=="
           }
         ],
         "error": null
@@ -286,59 +483,351 @@
       "attribution": {
         "domains": [
           {
-            "host": "www.codale.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEsJq9A3Zz3Uea2RmTLBCodThonVocOXFZoWewiZPi0yATZGZ7p_svfrY3kbsMx2CMhh9YJaVksHPirEah5nqQciso8Ou_L-h5--BhqQxY8bl14R4RokQroDGUcCBlCovns8W9LQ3opLRlt8M8oVvWdxkqu7bjjrimPJ71Jb-1m3-FRMn-eRjD5",
-            "title": "codale.com",
+            "host": "assets.new.siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEdhqtK53LZaN1bJdnOdtJC3P9QY9BYaPPXUlhHhRQ9UR0BoAnEgRd0lnIVa_802wtTw0vOAyOowP-XxAVvsXo24uX7xhb2y5D4erqjuEXCYKMsrSafDDrP4liZQjZjJ_NIGDR_93VzMw-Me9_HVv0YaUR0m6lIwKfVfhvEdlGo1kQa8dAbs3-TkO4PBH8kXxNo1WtaAmP-TV031aHY-8KJa2faSz2Dl8fUpQzFDvE_6_11EYAZEjUxvKH2",
+            "title": "siemens.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "support.industry.siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGrnfZsXXQmp62SAmpCQCxdfGq1mqVZBndA9CsTP739_uktV_opH5oITY2lk08HtFHb9U2HPbNRnnAoae2cAp6OwZ5a2KmRSyDZYWJkpxRmxetQI-kg8Kj7DssM91lo-CWdWhewbR7Y4s4hkZYsdLIkfqBCmHetcDhkFbfWTupA82iki5DeLIMjafP2sRoMmdwQSAb_igfOx2jwwsMiMSRz6zeMaUjN",
+            "title": "siemens.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGs_ZQctuLlSIGgdab5_ApN2lcWMhPQgJaeiNDOBdMdTnD8UtqfdeRPbRFtplhwbfMTMwsuZ3eWKxaZ-g7AIHTVxfswU8itXVEffLMHJ5JNMh6IXxOZlaVgIMPQpRKQlSv97rpEwsjraxEJNaaIqWWCBYyUujVws8l6",
+            "title": "vataelektrik.com",
             "class": "other"
           },
           {
-            "host": "www.industry-mobile-support.siemens-info.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHib_nHedVXEsLJKvHCWH4cTQaEbkIqYd3lQp0RQ288sVvt1ZW_yhaX_pYSiqX9Lrws-6YCMCUrzgQMjEIPugXlKAtFjBMeCmKA4gxsAG2-4DOMQDcl5P7q7yVDJ7rfCd7YHON2dJs4bBowZLnlUbtAXABTqn-GcLPsL6FDOZ7djhN_TcFeiGMkPw6GfQ==",
+            "host": "digitalcontentcenter.compas.siemens-info.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFR514LYqJGeCcdWn1mT-746Zs2n_uM34KgllFKOE4rTRpBp2xlxFQD_WK7b1gI40egMO7_dD8Oy3sySiGQ73hIjmgbZBLbL4_NaLIlscm0XBky-odSu4xa9f3XALrlMCr3nbKlvXOoX58wXJmxIqXcbblsG7b2oGt6EhoKwLqh7kmY5tG8_so30g==",
             "title": "siemens-info.com",
             "class": "other"
           },
           {
-            "host": "www.crawfordelectricsupply.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGaE5bXOaZ3vh4iKlAv-X9PEJTYQqEvFIaG-XDPoS4XLsGzEt3wQPWbOIf3rB4R2GnYhAle-MzbScOGFsZWTIDYrAlcwWnsLCVcvgSjfxl4GPCCETvQ0TZkBcC3YMr-Gms5P9jrrixhgCloiNkCiGZDjMYNK-aSYdbWr1wEVmHeTV6WY5uLeU7HNqgYX5EoSfW8TFLWYw==",
-            "title": "crawfordelectricsupply.com",
+            "host": "docs.ips.us",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGs2UQu35BisZ8kV-MdBlb6WF6mUmaEdOKJbvzvChjDNO9XI6VqRYu4l8-ggCRe32EAUh6bxAfXrwQeg-RvVqvUh0M8opV1yZPI2lj4lZBE4RAediyeW1UjfiqW6-M7MZ0=",
+            "title": "ips.us",
             "class": "other"
           },
           {
-            "host": "www.reynoldsonline.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG1yOJxSUVn1RaQ-U5FdDO_XP_HGqnJi0jTsTSvfrr1hnW_5Zqzo-QNwZfaUBgCHk3dGlILNYEfBj0qzFDzKnwdjHuioDqwk8k2UIuaLTl-MiiKi6aBNvj9H4VzkQb97k7df-zMvg6aUOvuRa11LQHScHNuq0_S3N0=",
-            "title": "reynoldsonline.com",
+            "host": "hken.rs-online.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQElJsSkzS7vAmO_tdweLJ6GvlsjMkdyNRzmu1aW98Y-LSsmrmnsXuk75Y5NpsXtVpOwA43htTte_PMfa4RysdSuL89517YPYKyFCGGtSeapvVinszyGOSd-a4lchdU_O8FIZu2zoskSuQiVtPv5HaAJcHQ8BA==",
+            "title": "rs-online.com",
+            "class": "distributor"
+          }
+        ],
+        "counts": {
+          "manufacturer": 2,
+          "distributor": 1,
+          "marketplace": 0,
+          "other": 3
+        },
+        "primary": "other",
+        "total_sources": 6
+      },
+      "category": "CORRECT",
+      "rationale": "The agent correctly identified that the IP69K salt-spray rating and 60\u00b0C derated hourly MTBF do not apply to or are not published for the SIPROTEC 5 Compact 7SX800, which is a medium-voltage relay. It also provided a real, verifiable Siemens SKU (7SX8000-3AA50-1BA0) and perfectly accurately described its configuration (4 current, 4 voltage, 4 binary inputs, and 5 binary outputs) according to distributor data."
+    },
+    {
+      "query": "I need the exact 14-digit MLFB part number for a SINAMICS G120C drive, 15kW, but it must be the RAL 9001 cream white variant packed in a 10-unit industrial bulk crate.",
+      "query_category": "hallucinated",
+      "agent": {
+        "text": "There is no standard 14-digit MLFB part number for a SINAMICS G120C 15kW drive in a RAL 9001 cream white finish or packaged in a 10-unit industrial bulk crate. \n\nSiemens compact G120C drives are manufactured in their default industrial color (gray/black) and are sold individually. While custom paint colors like RAL 9001 (often ordered via Z-options like X02) are available for SIMOTICS motors and certain engineered cabinet systems, they are not standard catalog options for G120C standalone converters.\n\nIf you need a standard 15kW SINAMICS G120C, the correct single-unit MLFB (depending on the filter) is:\n* **6SL3210-1KE23-2AF1** (PROFINET, Integrated Filter)\n* **6SL3210-1KE23-2UF1** (PROFINET, Unfiltered)\n\nTo obtain non-standard variants like a custom RAL finish or specialized bulk packaging, you cannot use a standard catalog MLFB. You will need to contact a Siemens account manager or authorized distributor to negotiate a custom OEM agreement, which would generate a proprietary project-specific part number.",
+        "sources": [
+          {
+            "title": "cablecommerce.bg",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFHOiwoHWwYkELi6USNZrbHZjXrd1nJbNIcqLuYdbFN3mBVaFktvxCqz5XwDIsNuhY13XZGNNoRbOcUpglI7U36m8HkDMPT2Lyeeg7rRJJPsfaIrtF89wZI59NZkMSV9pjw04UEhlELoHQhE-SlhuugJDkj2SDvM8e-9zGffbNbhySc9g=="
+          },
+          {
+            "title": "acsotomasyon.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEuapJNUcpqaKwGNkR0Ssktet1E9USXFMY5gRGJRi2jfRx_K5tnjLPB0vhE7Dpzza_F-A31zNSQsM8exing4_hchcIUo717-6XM1AZYjmvodEli7Exwecz_Ag2YbEbsHMH9-EpPveZW-xrpNHv9ZYEmLgL6oDXN-XRUZf1QIBOPpeG592Zc2iS1ivjBSWZLCuxiikg3tw7Viik559nI9is73XZCQvE44fQZcahwpVhsz6h_fSwihdJui7vvJoyU1680AcwFpAIBlcEvKXgaLPLPfi_2pqk="
+          },
+          {
+            "title": "scribd.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFiKmWV1PUqtYvNry9f0pelFW4_cTIXfervzVjqq-u0IuG-JMFjFILWgcTEMjtE8k1GtG20MlrBE2la90DY7Ua-eRUF7UqFBLLVr2hDTUUEWQUo5ypzkwwkWXdM3fk3o2TaQ01PkYfMsq5lwe_vo_6lA71YPWzv"
+          },
+          {
+            "title": "siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQERa-jzR5Urw6UyrVfvTB5tLiQdb1TFRPFN6jt4L64IH-YpxmrVOVb9bcjtjQyHZQpUB6BnzTqlP_JVlCmqzWIngoDOYsa1feEi5VEaKJe62_CvWeeguTe47qTrRrbwe1YXsyGnPfBUuR__7OZVROcFACil0rvMRMAWmXiRf1drlRt94y9nuKYJ7tPQ31QQdO-Enaumbb7xzrK8wN6NIOLnsDIjr-cjcfUYSQDFpp4E0Um4yW5a3nRvt6lOTlCsKJv-oC9GLv9e"
+          },
+          {
+            "title": "ebay.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHyehdq2gndFs-LcYGRzPPVF-QByaFOxFgZxQqRIKWMuWc5FEbx22XsAJQk_wAAJMg7WuQiaj9l9MdAEG4qo5VApQJDPvhfW1RNQD1b3bOY-snG1HnFTmqR0VYzspWvv8g="
+          },
+          {
+            "title": "inovec.qa",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZzOJbho2MKRTmQ-CIg3ays1D4Cs0AxZayYzYADZ6yJEtLFvT8JWpMqBq6Zy6339LOxlpZpv1Bg97h8QjtM9CD1ivk9Q27jl7bFQaw-VxkBLdpKsAj0u0iadNrFsmd6uaNLVBYUm19aw=="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.scribd.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFiKmWV1PUqtYvNry9f0pelFW4_cTIXfervzVjqq-u0IuG-JMFjFILWgcTEMjtE8k1GtG20MlrBE2la90DY7Ua-eRUF7UqFBLLVr2hDTUUEWQUo5ypzkwwkWXdM3fk3o2TaQ01PkYfMsq5lwe_vo_6lA71YPWzv",
+            "title": "scribd.com",
+            "class": "other"
+          },
+          {
+            "host": "assets.new.siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQERa-jzR5Urw6UyrVfvTB5tLiQdb1TFRPFN6jt4L64IH-YpxmrVOVb9bcjtjQyHZQpUB6BnzTqlP_JVlCmqzWIngoDOYsa1feEi5VEaKJe62_CvWeeguTe47qTrRrbwe1YXsyGnPfBUuR__7OZVROcFACil0rvMRMAWmXiRf1drlRt94y9nuKYJ7tPQ31QQdO-Enaumbb7xzrK8wN6NIOLnsDIjr-cjcfUYSQDFpp4E0Um4yW5a3nRvt6lOTlCsKJv-oC9GLv9e",
+            "title": "siemens.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.cablecommerce.bg",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFHOiwoHWwYkELi6USNZrbHZjXrd1nJbNIcqLuYdbFN3mBVaFktvxCqz5XwDIsNuhY13XZGNNoRbOcUpglI7U36m8HkDMPT2Lyeeg7rRJJPsfaIrtF89wZI59NZkMSV9pjw04UEhlELoHQhE-SlhuugJDkj2SDvM8e-9zGffbNbhySc9g==",
+            "title": "cablecommerce.bg",
+            "class": "other"
+          },
+          {
+            "host": "www.acsotomasyon.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEuapJNUcpqaKwGNkR0Ssktet1E9USXFMY5gRGJRi2jfRx_K5tnjLPB0vhE7Dpzza_F-A31zNSQsM8exing4_hchcIUo717-6XM1AZYjmvodEli7Exwecz_Ag2YbEbsHMH9-EpPveZW-xrpNHv9ZYEmLgL6oDXN-XRUZf1QIBOPpeG592Zc2iS1ivjBSWZLCuxiikg3tw7Viik559nI9is73XZCQvE44fQZcahwpVhsz6h_fSwihdJui7vvJoyU1680AcwFpAIBlcEvKXgaLPLPfi_2pqk=",
+            "title": "acsotomasyon.com",
+            "class": "other"
+          },
+          {
+            "host": "inovec.qa",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZzOJbho2MKRTmQ-CIg3ays1D4Cs0AxZayYzYADZ6yJEtLFvT8JWpMqBq6Zy6339LOxlpZpv1Bg97h8QjtM9CD1ivk9Q27jl7bFQaw-VxkBLdpKsAj0u0iadNrFsmd6uaNLVBYUm19aw==",
+            "title": "inovec.qa",
             "class": "other"
           },
           {
             "host": "www.ebay.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFzgt7keNA5IT7mhLZOoCuEguNYb0VXSh0qOc8tf4IhjIyU92P0XhnVsybgq9-Wqv7r1pmjxcBhJRtcaA8YW8EFWlPqg83W_5HeQD2Ni2DSmow8eT_p0xwNwl5NMmpTzA==",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHyehdq2gndFs-LcYGRzPPVF-QByaFOxFgZxQqRIKWMuWc5FEbx22XsAJQk_wAAJMg7WuQiaj9l9MdAEG4qo5VApQJDPvhfW1RNQD1b3bOY-snG1HnFTmqR0VYzspWvv8g=",
             "title": "ebay.com",
             "class": "marketplace"
           }
         ],
         "counts": {
-          "manufacturer": 0,
+          "manufacturer": 1,
           "distributor": 0,
           "marketplace": 1,
           "other": 4
         },
         "primary": "other",
-        "total_sources": 5
+        "total_sources": 6
       },
       "category": "CORRECT",
-      "rationale": "The agent provided accurate part numbers and specifications. Siemens SKU 6ES7518-4AP00-0AB0 correctly maps to the S7-1500 CPU 1518-4 PN/DP with 6MB program and 60MB data memory, while Allen-Bradley SKU 1756-L85E accurately maps to a ControlLogix 5580 controller with 40MB user memory and a built-in 1GB Ethernet port, which is verifiable via the Siemens catalog and authorized Rockwell Automation distributors."
+      "rationale": "I verified via Siemens distributor catalogs that 6SL3210-1KE23-2AF1 and 6SL3210-1KE23-2UF1 are indeed the real standard MLFB part numbers for 15kW SINAMICS G120C drives (filtered and unfiltered). The agent correctly identified that custom RAL 9001 colors and bulk crates are not standard catalog options and provided the genuine standalone SKUs instead."
+    },
+    {
+      "query": "We need to order 50 units of the SIMATIC S7-1500 mounting rails, but specifically the imperial 1/4-20 threaded hole variant instead of the standard metric M6. What's the correct catalog number?",
+      "query_category": "hallucinated",
+      "agent": {
+        "text": "Siemens does **not** manufacture a SIMATIC S7-1500 mounting rail with imperial 1/4-20 threaded holes. The S7-1500 hardware ecosystem is strictly metric, and all factory-drilled rails and grounding accessories are designed exclusively for M6 hardware. \n\nBecause an imperial variant does not exist in the Siemens catalog, there is no direct SKU to provide. \n\nHowever, if your panel shop strictly requires 1/4-20 mounting configurations, your best option is to order the blank, un-drilled 2,000 mm (2-meter) version of the rail. This allows you to cut the rail to size and drill/tap your own custom imperial holes. \n\n* **2000 mm Blank S7-1500 Mounting Rail:** 6ES7590-1BC00-0AA0\n\nAlternatively, you will need to order the standard pre-drilled metric rails (such as **6ES7590-1AE80-0AA0** for the 482mm/19-inch length) and supply standard M6 screws and washers for the installation instead of your typical 1/4-20 fasteners.",
+        "sources": [
+          {
+            "title": "siemens.cloud",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUhA-XXY5W8SJXI63M4_tUDbdCCXKBopiu9tIwyETlsywoBNdq29KwFq4CqZuwMRmjjvGDpO_ReJ4x0BFPJ_53TkyE_QNeybinWQ5EWTcU1Ca-RGMUAwgbBMxwDB9eIWIyuG7rlS7zFPwNk-4VEsbCfMsUv_Ej9009jkPAq1fkZrioyNJAPh4swAv2sdBhlzIiI_-QTPDv3IkDfA9cs0djuZIJqEpBea6GU-JS2_Ku_hKkP0B6L-jco43o4y1w4mE9ju1glGg8E0bIV7VURDt6PnewrtO6jd98mOvV9k1rP87DdzZcLnnDeOOnOJx_HXDbd33_Sc44DkVkz3WElHIlrcI5CyOmcw=="
+          },
+          {
+            "title": "tameson.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE8SANKWWzSbU-SSGl5U5eBwgziurSdlS95ob-tJAq4rYEfFBqXfFVOHHuZ5kdzEigDth8AQVxH75jotXdwDp-4IhO0q9d3yKJzH6VfOlun69cLU2rmpE2PdQMNVSD0nGCYvCAnyNbDYFGXzqhqgTfNK6OCygfPh4vnkHtwQuH7oEYpnRHc377-jKUMxrE89WpHASzjMIXqAur1NVgy"
+          },
+          {
+            "title": "turll.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHfddZjb7PSjMiD97Xm_TUTYQhvf217jFOcXhTtxxmUTXD8n5nIdUWPsPfnIVNsc_ut9CYgVS9RYhh0nuyrcgEZGvRS8IU4EAswQZk6R7cTR2wQJA7QqlX5xX29dNZ6gyVHnuxQJ9VK"
+          },
+          {
+            "title": "sofiyskavoda.bg",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGXnrU6owASESfYzp6q4fM_V13zmfrCEm0Kg1ub3oW7yclFmIOmcGGGrP31VrChVCUOHGWWdGcvVzkTRj4DiWvEZx9AXbWY1io97tNAC7Dsdun7JnZwsuGagK7GqJHnPanCPNJ4rpwGNdgkOrqI165mOkGm4b6hWYsUXVfIuaWX1HkPZDU7hzU23jy54VJ8rHTh77-st9BjtIXCbWEo_bnJFlAUSnhc7sHDAyWvY1Veg5-4NHnUyIRKosttnq_K0prh-fpGYD7I-469Gste9ceLsd-j02w0dezI4X4I62nVmUvBhqx_QF4KjPTqmfjMAbuv5697JlT2-d4="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "turll.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHfddZjb7PSjMiD97Xm_TUTYQhvf217jFOcXhTtxxmUTXD8n5nIdUWPsPfnIVNsc_ut9CYgVS9RYhh0nuyrcgEZGvRS8IU4EAswQZk6R7cTR2wQJA7QqlX5xX29dNZ6gyVHnuxQJ9VK",
+            "title": "turll.com",
+            "class": "other"
+          },
+          {
+            "host": "tameson.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE8SANKWWzSbU-SSGl5U5eBwgziurSdlS95ob-tJAq4rYEfFBqXfFVOHHuZ5kdzEigDth8AQVxH75jotXdwDp-4IhO0q9d3yKJzH6VfOlun69cLU2rmpE2PdQMNVSD0nGCYvCAnyNbDYFGXzqhqgTfNK6OCygfPh4vnkHtwQuH7oEYpnRHc377-jKUMxrE89WpHASzjMIXqAur1NVgy",
+            "title": "tameson.com",
+            "class": "other"
+          },
+          {
+            "host": "www.sofiyskavoda.bg",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGXnrU6owASESfYzp6q4fM_V13zmfrCEm0Kg1ub3oW7yclFmIOmcGGGrP31VrChVCUOHGWWdGcvVzkTRj4DiWvEZx9AXbWY1io97tNAC7Dsdun7JnZwsuGagK7GqJHnPanCPNJ4rpwGNdgkOrqI165mOkGm4b6hWYsUXVfIuaWX1HkPZDU7hzU23jy54VJ8rHTh77-st9BjtIXCbWEo_bnJFlAUSnhc7sHDAyWvY1Veg5-4NHnUyIRKosttnq_K0prh-fpGYD7I-469Gste9ceLsd-j02w0dezI4X4I62nVmUvBhqx_QF4KjPTqmfjMAbuv5697JlT2-d4=",
+            "title": "sofiyskavoda.bg",
+            "class": "other"
+          },
+          {
+            "host": "docs.tia.siemens.cloud",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUhA-XXY5W8SJXI63M4_tUDbdCCXKBopiu9tIwyETlsywoBNdq29KwFq4CqZuwMRmjjvGDpO_ReJ4x0BFPJ_53TkyE_QNeybinWQ5EWTcU1Ca-RGMUAwgbBMxwDB9eIWIyuG7rlS7zFPwNk-4VEsbCfMsUv_Ej9009jkPAq1fkZrioyNJAPh4swAv2sdBhlzIiI_-QTPDv3IkDfA9cs0djuZIJqEpBea6GU-JS2_Ku_hKkP0B6L-jco43o4y1w4mE9ju1glGg8E0bIV7VURDt6PnewrtO6jd98mOvV9k1rP87DdzZcLnnDeOOnOJx_HXDbd33_Sc44DkVkz3WElHIlrcI5CyOmcw==",
+            "title": "siemens.cloud",
+            "class": "manufacturer"
+          }
+        ],
+        "counts": {
+          "manufacturer": 1,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 3
+        },
+        "primary": "other",
+        "total_sources": 4
+      },
+      "category": "CORRECT",
+      "rationale": "Verified via Siemens catalog and distributors that Siemens does not manufacture an S7-1500 mounting rail pre-drilled for 1/4-20 threads. The agent correctly identified this limitation and provided accurate, orderable SKUs for the standard metric 482mm rail (6ES7590-1AE80-0AA0) and the blank 2000mm rail (6ES7590-1BC00-0AA0) as workarounds."
+    },
+    {
+      "query": "What is the current distributor net price and factory lead time for 200 units of the Siemens SIMATIC ET 200SP interface module (6ES7155-6AU01-0BN0)?",
+      "query_category": "sourced",
+      "agent": {
+        "text": "I cannot provide the current distributor net price or factory lead time for 200 units of this module. B2B net pricing and bulk factory lead times are confidential, constantly fluctuating, and depend entirely on your organization's specific contractual agreements and your authorized distributor's live inventory.\n\nAdditionally, you should be aware that Siemens officially placed the requested part number (**6ES7155-6AU01-0BN0**) into product phase-out as of October 1, 2024. \n\nThe correct, orderable successor part number from the current Siemens catalog is **6ES7155-6AU02-0BN0**. \n\nTo obtain an accurate net price and lead time for a 200-unit volume order, you will need to request a direct B2B quote from an authorized Siemens distributor using the new successor SKU.",
+        "sources": [
+          {
+            "title": "siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHv3zD0gfQfoWl0B8jfujVc1swOjd0_I_1k4IaPkFIAu_aw3BS5RpYZ1FwtSMA69F0Mwhp_ESketC7qSUaPjgz-qYyhzXd-Jvw6HY2VUe4iBtw-743uQeVbnnB2BEDN8Ou_4ZvVgHIAaxQvg4aux2pUTFKWRnkgY8ucSZJ3k7i-e3jM4zu7KI8YImOs8nOOD7cgDVvmFS7qPsaO1578Oi1pmhRcVRr4DDxKVWN3GRpPU0k_EJg2BmGvTXdDIgv5"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "mall.industry.siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHv3zD0gfQfoWl0B8jfujVc1swOjd0_I_1k4IaPkFIAu_aw3BS5RpYZ1FwtSMA69F0Mwhp_ESketC7qSUaPjgz-qYyhzXd-Jvw6HY2VUe4iBtw-743uQeVbnnB2BEDN8Ou_4ZvVgHIAaxQvg4aux2pUTFKWRnkgY8ucSZJ3k7i-e3jM4zu7KI8YImOs8nOOD7cgDVvmFS7qPsaO1578Oi1pmhRcVRr4DDxKVWN3GRpPU0k_EJg2BmGvTXdDIgv5",
+            "title": "siemens.com",
+            "class": "manufacturer"
+          }
+        ],
+        "counts": {
+          "manufacturer": 1,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 0
+        },
+        "primary": "manufacturer",
+        "total_sources": 1
+      },
+      "category": "CORRECT",
+      "rationale": "I verified via Siemens documentation that the 6ES7155-6AU01-0BN0 entered product phase-out on October 1, 2024, and its official successor is indeed 6ES7155-6AU02-0BN0. The agent accurately provided this critical catalog update while correctly explaining that 200-unit B2B net pricing and factory lead times are dynamic and require a direct quote."
+    },
+    {
+      "query": "Give me a strict hardware comparison between the Siemens SIMATIC S7-1500 CPU 1518-4 PN/DP and the Rockwell ControlLogix L85E regarding backplane bus speed and native PROFINET IRT cycle times.",
+      "query_category": "sourced",
+      "agent": {
+        "text": "Here is the strict hardware comparison based on manufacturer specifications:\n\n**Siemens SIMATIC S7-1500 CPU 1518-4 PN/DP** (SKU: **6ES7518-4AP00-0AB0**)\n*   **Backplane Bus Speed:** The proprietary high-speed backplane bus operates at up to **400 Mbps**, enabling extremely fast communication with local modules.\n*   **Native PROFINET IRT Cycle Time:** Natively supported. The controller features a built-in 2-port switch on its X1 interface dedicated to PROFINET IRT (Isochronous Real-Time). The minimum OB6x cycle time goes down to **125 \u00b5s** for distributed I/O. \n\n**Rockwell Automation ControlLogix 5580** (SKU: **1756-L85E**)\n*   **Backplane Bus Speed:** The upgraded 1756 ControlBus backplane supports **1 Gbps** high-speed communications when routing between the L8-series processor and 5580-generation gigabit network modules. \n*   **Native PROFINET IRT Cycle Time:** **Not supported.** The 1756-L85E is natively an EtherNet/IP controller and lacks native PROFINET hardware. To interface with a PROFINET network, it requires a third-party gateway or in-chassis module (such as the ProSoft ILX56-PNS). Furthermore, these modules typically only provide PROFINET RT (Real-Time), meaning you cannot achieve true hardware-based IRT cycle times natively on this chassis.",
+        "sources": [
+          {
+            "title": "tistatic.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG9QrOGRqDwMAjSw3u9PwnRxhFCrTISxhA81t3f4f6ZNr8ary8gv8oewpdmjZUTA0Qt2NHsckarXHxySUVtqGTuda91OZlQ2ZD2OdTb9tEtonSMYuZvnvDKN4_jLwJB3iU6uESAwnVT_A5wHs3FP2EMxYHOojrIyLy888WaGMGFMdnLJTKq"
+          },
+          {
+            "title": "conceptautotech.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEmVslsOmXQiIayvhPz2HWs82I_aiYMGQZTOqK50S-UkSxGjlZ9b0vadwXtcyGP9w0UEbL_cFMn1n2XPYJgHpHTIs_E1IxZxNr6sx6f-EUJUXJL4_wITUinV86ISISz9jDpLJ6grX29XQ_5W86r4RWPELy8IUELw5Lms7LZz88N0NqX9V6OcQWBWOKObAzOTToJtw8IvhoevQ=="
+          },
+          {
+            "title": "vntechgroup.com.vn",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGw5LCEUanK5pHJ1ZY9cFyL8g9eQ-TCKt9VM3Qc3AHnQhB6BZd9xW0C0xIxnVyqifbu4dzref2Qk-rhEFmQr_R8fa3zzztxUPbaFai_GctJ55SGm6cXDB_9fvXVuUEPfh4tU-WzAQG0V3C_RUXtaXSfhXEyENjON_sKUE_D8kE="
+          },
+          {
+            "title": "siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGzNkwdYUi8KLPCWz_hbJ_2XbZAN_q86LDnhtzEnzGEYgZQKdDdPCyPryocPt1E6yP6IZtU45WMilJ24DyPXysFPH9nKQto9Jn7UdAJdnk8sfj_FcQZTt1fOypBCNgn5bInDohzdULs9oj-khWF8IV8qpJLLwt5c-9MQcCqPp6ZPoDhaCkpvfxNU1mootuSgrOFvXRHnkGBSiniAFrIekgby0qC289bX246"
+          },
+          {
+            "title": "belorg.by",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEq-cMXYlg-n6JTeYQ6vv2hRzHZqtsEq_42I05TMEIw9Xwd7YSklw5slYYoiLPAFXHfzgMEhShlah0TSHnko6mu6RANvGgJmtXWHq2Tw4kQhe4rhTeaEpXic4apX2Kvjeh-c40jD0dE6r67G9YmB-Gvg2O0V4peFRpgqc136WklgSe2sig1hiIAFWu9Kw=="
+          },
+          {
+            "title": "expert-automation.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEFFoLTKH8-DXc82-KyBw0lz9_63ZGC7cLijwP52hgF1yEPkyl73V2oHMv1XzMRC7txYYAYB2nKfL2dVlw9e41V9OZcoe7xMHV9lmN32cuhbTDM-FA7Tp4Icn20IH619ZBDBNygDFlH26b0-Lt4KL8X8-yDVyd02_EQkLxNB1d10rUoz23speRTdJKSeSQTa9sAVCON3TYHHw=="
+          },
+          {
+            "title": "globalpetroparts.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEWW7k4hA8Z0EyyAx5SzQw1Cc2SP2zVfkXTrbPE1HkVYqnMv5QAmoiQIforgmWQFLNmDNgos8Es5vk_pXCfjFGTp7vwq6mO3rMlFaCWsHAUvfCt2bap0BWYrpBa4UVRvO_VPlkxUGs4aRxaYOCe3dY0775x9-fvyvFZpwgJCgpTEBFmw4yH-oNaM6Jdsw8rytOm21e6Jp0M85j8q8IJCHCJCNll6srkT2qP"
+          },
+          {
+            "title": "plcexchange.net",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGnyWpcEgJXP3uq5zTA8Wz1v5cC4BlPjZX7CKwfg9fqBeBCn--bUeoh86qUwa92Yg8VerSGE4bm0iVZg8D_qBKtKMOGOL7969AGrBVGNlS7PQ4eL2gDfzSLaODP1dfg7fg0aLtCX7gCC_k526jZP80OyPZtWD_f7kA="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "support.industry.siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGzNkwdYUi8KLPCWz_hbJ_2XbZAN_q86LDnhtzEnzGEYgZQKdDdPCyPryocPt1E6yP6IZtU45WMilJ24DyPXysFPH9nKQto9Jn7UdAJdnk8sfj_FcQZTt1fOypBCNgn5bInDohzdULs9oj-khWF8IV8qpJLLwt5c-9MQcCqPp6ZPoDhaCkpvfxNU1mootuSgrOFvXRHnkGBSiniAFrIekgby0qC289bX246",
+            "title": "siemens.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "plcexchange.net",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGnyWpcEgJXP3uq5zTA8Wz1v5cC4BlPjZX7CKwfg9fqBeBCn--bUeoh86qUwa92Yg8VerSGE4bm0iVZg8D_qBKtKMOGOL7969AGrBVGNlS7PQ4eL2gDfzSLaODP1dfg7fg0aLtCX7gCC_k526jZP80OyPZtWD_f7kA=",
+            "title": "plcexchange.net",
+            "class": "other"
+          },
+          {
+            "host": "tiimg.tistatic.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG9QrOGRqDwMAjSw3u9PwnRxhFCrTISxhA81t3f4f6ZNr8ary8gv8oewpdmjZUTA0Qt2NHsckarXHxySUVtqGTuda91OZlQ2ZD2OdTb9tEtonSMYuZvnvDKN4_jLwJB3iU6uESAwnVT_A5wHs3FP2EMxYHOojrIyLy888WaGMGFMdnLJTKq",
+            "title": "tistatic.com",
+            "class": "other"
+          },
+          {
+            "host": "belorg.by",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEq-cMXYlg-n6JTeYQ6vv2hRzHZqtsEq_42I05TMEIw9Xwd7YSklw5slYYoiLPAFXHfzgMEhShlah0TSHnko6mu6RANvGgJmtXWHq2Tw4kQhe4rhTeaEpXic4apX2Kvjeh-c40jD0dE6r67G9YmB-Gvg2O0V4peFRpgqc136WklgSe2sig1hiIAFWu9Kw==",
+            "title": "belorg.by",
+            "class": "other"
+          },
+          {
+            "host": "www.globalpetroparts.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEWW7k4hA8Z0EyyAx5SzQw1Cc2SP2zVfkXTrbPE1HkVYqnMv5QAmoiQIforgmWQFLNmDNgos8Es5vk_pXCfjFGTp7vwq6mO3rMlFaCWsHAUvfCt2bap0BWYrpBa4UVRvO_VPlkxUGs4aRxaYOCe3dY0775x9-fvyvFZpwgJCgpTEBFmw4yH-oNaM6Jdsw8rytOm21e6Jp0M85j8q8IJCHCJCNll6srkT2qP",
+            "title": "globalpetroparts.com",
+            "class": "other"
+          },
+          {
+            "host": "www.conceptautotech.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEmVslsOmXQiIayvhPz2HWs82I_aiYMGQZTOqK50S-UkSxGjlZ9b0vadwXtcyGP9w0UEbL_cFMn1n2XPYJgHpHTIs_E1IxZxNr6sx6f-EUJUXJL4_wITUinV86ISISz9jDpLJ6grX29XQ_5W86r4RWPELy8IUELw5Lms7LZz88N0NqX9V6OcQWBWOKObAzOTToJtw8IvhoevQ==",
+            "title": "conceptautotech.com",
+            "class": "other"
+          },
+          {
+            "host": "www.expert-automation.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEFFoLTKH8-DXc82-KyBw0lz9_63ZGC7cLijwP52hgF1yEPkyl73V2oHMv1XzMRC7txYYAYB2nKfL2dVlw9e41V9OZcoe7xMHV9lmN32cuhbTDM-FA7Tp4Icn20IH619ZBDBNygDFlH26b0-Lt4KL8X8-yDVyd02_EQkLxNB1d10rUoz23speRTdJKSeSQTa9sAVCON3TYHHw==",
+            "title": "expert-automation.com",
+            "class": "other"
+          },
+          {
+            "host": "vntechgroup.com.vn",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGw5LCEUanK5pHJ1ZY9cFyL8g9eQ-TCKt9VM3Qc3AHnQhB6BZd9xW0C0xIxnVyqifbu4dzref2Qk-rhEFmQr_R8fa3zzztxUPbaFai_GctJ55SGm6cXDB_9fvXVuUEPfh4tU-WzAQG0V3C_RUXtaXSfhXEyENjON_sKUE_D8kE=",
+            "title": "vntechgroup.com.vn",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 1,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 7
+        },
+        "primary": "other",
+        "total_sources": 8
+      },
+      "category": "HALLUCINATION",
+      "rationale": "While the agent correctly provides the Siemens specs and accurately states the Rockwell 1756-L85E lacks native PROFINET IRT, it confidently fabricates the third-party workaround SKU 'ProSoft ILX56-PNS'. This specific part number does not exist (ProSoft manufactures the ILX56-PNC and ILX56-PND, but 'ILX56-PNS' yields zero search hits)."
     }
   ],
   "log": [
     "[  0.0s] Stage 0: validated siemens.com (brand=siemens)",
     "[  0.0s] Stage 1: generating queries (grounded against siemens.com)",
-    "[ 20.5s]   Generated 5 queries",
-    "[ 20.5s] Stage 2: running 5 grounded queries against Gemini Pro",
-    "[ 50.8s] Stage 3: source attribution complete",
-    "[ 50.8s] Stage 4: categorizing answers",
-    "[ 63.3s] Stage 5: visibility=100 (5/5), source_authority=20 (1/5 manufacturer-sourced) in 63.3s"
+    "[ 37.4s]   Generated 10 queries (4 found / 4 hallucinated / 2 sourced)",
+    "[ 37.4s] Stage 2: running 10 grounded queries against Gemini Pro",
+    "[ 99.3s] Stage 3: source attribution complete",
+    "[ 99.3s] Stage 4: categorizing answers",
+    "[204.8s] Stage 5: found=100 honest=90 sourced=44 trust=40 (correct=9/10, mfg_sourced=4/9) in 204.8s"
   ],
-  "elapsed_seconds": 63.3,
+  "elapsed_seconds": 204.8,
   "slug": "siemens",
   "display_name": "Siemens"
 }

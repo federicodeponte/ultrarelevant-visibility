@@ -1,16 +1,20 @@
 {
-  "input": "https://se.com",
-  "host": "se.com",
-  "brand": "se",
+  "input": "https://schneider-electric.com",
+  "host": "schneider-electric.com",
+  "brand": "schneider-electric",
+  "found_score": 100,
+  "honest_score": 100,
+  "sourced_score": 10,
+  "trust_score": 10,
   "visibility_score": 100,
-  "source_authority_score": 20,
-  "total_queries": 5,
-  "correct_queries": 5,
+  "source_authority_score": 10,
+  "total_queries": 10,
+  "correct_queries": 10,
   "manufacturer_correct": 1,
   "breakdown": {
-    "CORRECT": 5,
+    "CORRECT": 10,
     "HALLUCINATION": 0,
-    "OUT_OF_CATALOG_HALLUCINATION": 0,
+    "OUT_OF_CATALOG": 0,
     "REFUSED": 0,
     "WRONG_SPEC": 0,
     "ERROR": 0
@@ -19,30 +23,31 @@
     "manufacturer": 1,
     "distributor": 0,
     "marketplace": 0,
-    "other": 4,
+    "other": 9,
     "none": 0
   },
   "rows": [
     {
-      "query": "I need a 3-pole non-reversing IEC contactor rated for 9A with a 230V AC 50/60Hz coil from se.com. Give me the part number.",
+      "query": "Can we source the Clipsal Solis series light switches and power points directly for our commercial projects in Germany, or is this sub-brand strictly limited to the Australian and New Zealand markets?",
+      "query_category": "found",
       "agent": {
-        "text": "The exact part number for your requirements from Schneider Electric (se.com) is **LC1D09P7**. \n\nThis is a TeSys Deca (formerly TeSys D) IEC non-reversing contactor. Its specifications precisely match your request:\n* **Poles:** 3-pole (3 NO)\n* **Current Rating:** 9A (AC-3)\n* **Coil Voltage:** 230V AC 50/60Hz\n* **Auxiliary Contacts:** 1 NO + 1 NC built-in\n\nIf you prefer spring terminals instead of the standard screw clamp terminals, the alternate part number is **LC1D093P7**. Both are real, standard SKUs available through Schneider Electric distributors.",
+        "text": "You cannot source the Clipsal Solis or Solis T Series directly for commercial projects in Germany. \n\nThe Clipsal Solis line is exclusively designed for the Australian and New Zealand (ANZ) markets. These products are engineered with standard ANZ Type I socket configurations and are sized for standard ANZ rectangular mounting brackets. They do not feature the Schuko (Type F) sockets required in Germany, nor are they designed to fit the standard 68mm round flush-mount wall boxes used in European construction.\n\nBecause this sub-brand is strictly limited to the ANZ region's specifications and compliance standards, **there are no orderable Clipsal Solis SKUs available or certified for the German market**. \n\nIf you are looking for similar high-end, minimalist switchgear from the same parent company (Schneider Electric) that complies with German standards, you should look into their European-specific lines, such as the **Merten D-Life** series, which uses standard Schuko sockets and is CE/VDE certified.",
         "sources": [
           {
-            "title": "se.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEWFN788JsVynEcwLgo-lmzM_ST8ZvLlCfrZ9LMvLKFm5KV7ETMe1V_c-4ycWdlNHI27alq43U7Uet33KSGUAvPq501EvaWZjkQsd2DGdsFmXpD-ymW_RNgNxfGWI6TCY0fTl0SOf87W2aNupymUtCPifQIqQLkkEZDH2VVvqEtC7poPxEl82feeQtFYc6HNlACeK-aN4DygeQ="
+            "title": "thelocalproject.com.au",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFu4hTfqCDMEmdN6vqE_KaXwIA1IkCbZZukKUjop6HI66Oc-EFw4zePDWQNgR-68X6Cex8g5cYS-zgk93L0KtCA2Td5uCRASogkJUEmfdu7qQ5G2xiT0wAHRVD17ZnUTcH8-LxHfsMyoGjScBfEOwPHQnp4PRCBXpMclIOIkDtS197aTNv-g1KBhN1GmM7nFquFaGlje1_aFrZeS3GEE8HhEfe7"
           },
           {
-            "title": "gabbyelectric.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQElkhKtxZwMjYiJrQxmvfBgkbDbWFiWaVpMIQAlMStVOhiF6n4gwuWf6-a0TGTcBG2cyQdz-1JkLkXinlF4Nhwukuas453phbDndVz4eveODCjnJAgnezYvc5Nxz25k1V6x1vG_l8uU-7fte9jLqE8UbUxGalGkQlXvFKxcHhbpprketd6bFtvNxBwGdDkPpPqd0h5ukNEqcET9jdmS"
+            "title": "powerpointsandswitches.com.au",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQENg0kg2f3kdkJ2jxrzGMqJVnWqecLszciwufEhD9QhwixD4IVYNhgNjiuSJjx2OiVwMa9hbTiovljJFXyUz_mpqeiXpbJfqVb2RlTy7sGiSKgnt-TYMGH50hCYi3XD45T_iW5DJgmREf29voERkWeEpywmg_6v2-k0_Wk1rRw="
           },
           {
-            "title": "se.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHoVQQgn8wMCv-MSJ3INaX-JZRmuLs0ZHb5gGNKCHQkPOG5NpvydS7moUPYSGgAjio0OkeXcwtxwYkrg81IzYGobr6guvrF_gMmKsFeOwb9659ApEPx1lBEeleQbId3SbK7X2RQ_qvEA9Vwpx3EZy5lrMQ_Pp2-yr-b5eyIjoXqTCWUJDJKKU3Wlq1pXMMa1j_W_DFdrBRaaqU="
+            "title": "clipsal.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZTiEODz_v9roOeZ560orq1CeKilWctD99w-EaO82tvzYvufIHPq518ruUw1sSL2JwhyvMur2NYG0zVk9enU8lOTCB8noVwmdnG1WnooI6mKs5WQ=="
           },
           {
-            "title": "refconelectrical.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEh5dlRo72n9IVvjUYI3jyi5H9mB3ueGkPlb9TBG6yg9NYg0Q7ZBx8-7zapt8RhLo7vuELc-6czrpgDBYyt3qoP9RVjeUKLrUM8BCiM_2cdwI56NrRFxEmsXBYcC5ekK05h0WM_rAA4LAMHofqbBAuaOgg3uEc8d_RnP1n_vqwWSwVr5H3ViQKe57sasoRFvhRvbznQyA=="
+            "title": "clipsal.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZy4s2v9DT_4bmG_flM578_nukdtx9mKucfq67N3G_rCjU18QWrzRorvrglBzFsLOmxzKzqyRcIz4hziFqxkagGjoh7IUxeADLpgekt4wfRBWqNy5yI1VYq8cAWsbbFToNa0jGTxeGQgegN_91mallO8dGup6DdAC6YT1jS7MGu0YU-xA="
           }
         ],
         "error": null
@@ -50,33 +55,491 @@
       "attribution": {
         "domains": [
           {
-            "host": "gabbyelectric.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQElkhKtxZwMjYiJrQxmvfBgkbDbWFiWaVpMIQAlMStVOhiF6n4gwuWf6-a0TGTcBG2cyQdz-1JkLkXinlF4Nhwukuas453phbDndVz4eveODCjnJAgnezYvc5Nxz25k1V6x1vG_l8uU-7fte9jLqE8UbUxGalGkQlXvFKxcHhbpprketd6bFtvNxBwGdDkPpPqd0h5ukNEqcET9jdmS",
-            "title": "gabbyelectric.com",
+            "host": "www.clipsal.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZTiEODz_v9roOeZ560orq1CeKilWctD99w-EaO82tvzYvufIHPq518ruUw1sSL2JwhyvMur2NYG0zVk9enU8lOTCB8noVwmdnG1WnooI6mKs5WQ==",
+            "title": "clipsal.com",
             "class": "other"
           },
           {
-            "host": "www.se.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHoVQQgn8wMCv-MSJ3INaX-JZRmuLs0ZHb5gGNKCHQkPOG5NpvydS7moUPYSGgAjio0OkeXcwtxwYkrg81IzYGobr6guvrF_gMmKsFeOwb9659ApEPx1lBEeleQbId3SbK7X2RQ_qvEA9Vwpx3EZy5lrMQ_Pp2-yr-b5eyIjoXqTCWUJDJKKU3Wlq1pXMMa1j_W_DFdrBRaaqU=",
-            "title": "se.com",
-            "class": "manufacturer"
+            "host": "www.clipsal.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZy4s2v9DT_4bmG_flM578_nukdtx9mKucfq67N3G_rCjU18QWrzRorvrglBzFsLOmxzKzqyRcIz4hziFqxkagGjoh7IUxeADLpgekt4wfRBWqNy5yI1VYq8cAWsbbFToNa0jGTxeGQgegN_91mallO8dGup6DdAC6YT1jS7MGu0YU-xA=",
+            "title": "clipsal.com",
+            "class": "other"
           },
           {
-            "host": "refconelectrical.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEh5dlRo72n9IVvjUYI3jyi5H9mB3ueGkPlb9TBG6yg9NYg0Q7ZBx8-7zapt8RhLo7vuELc-6czrpgDBYyt3qoP9RVjeUKLrUM8BCiM_2cdwI56NrRFxEmsXBYcC5ekK05h0WM_rAA4LAMHofqbBAuaOgg3uEc8d_RnP1n_vqwWSwVr5H3ViQKe57sasoRFvhRvbznQyA==",
-            "title": "refconelectrical.com",
+            "host": "thelocalproject.com.au",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFu4hTfqCDMEmdN6vqE_KaXwIA1IkCbZZukKUjop6HI66Oc-EFw4zePDWQNgR-68X6Cex8g5cYS-zgk93L0KtCA2Td5uCRASogkJUEmfdu7qQ5G2xiT0wAHRVD17ZnUTcH8-LxHfsMyoGjScBfEOwPHQnp4PRCBXpMclIOIkDtS197aTNv-g1KBhN1GmM7nFquFaGlje1_aFrZeS3GEE8HhEfe7",
+            "title": "thelocalproject.com.au",
+            "class": "other"
+          },
+          {
+            "host": "www.powerpointsandswitches.com.au",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQENg0kg2f3kdkJ2jxrzGMqJVnWqecLszciwufEhD9QhwixD4IVYNhgNjiuSJjx2OiVwMa9hbTiovljJFXyUz_mpqeiXpbJfqVb2RlTy7sGiSKgnt-TYMGH50hCYi3XD45T_iW5DJgmREf29voERkWeEpywmg_6v2-k0_Wk1rRw=",
+            "title": "powerpointsandswitches.com.au",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 4
+        },
+        "primary": "other",
+        "total_sources": 4
+      },
+      "category": "CORRECT",
+      "rationale": "Verified via Clipsal and Schneider Electric catalogs that the Clipsal Solis series is indeed an Australia/New Zealand exclusive product line incompatible with German standards. The agent correctly stated it cannot be sourced for Germany and accurately recommended the European-equivalent Merten D-Life series by Schneider Electric."
+    },
+    {
+      "query": "We are looking into the newly released Galaxy VXL modular UPS for a high-density AI data center build. What is the maximum MW capacity if we parallel these units in a single footprint?",
+      "query_category": "found",
+      "agent": {
+        "text": "The Schneider Electric Galaxy VXL supports record-breaking power densities designed specifically for high-density AI data centers. \n\nIf you are asking about the maximum capacity within a **single physical footprint (one frame)**, the system scales up to **1.25 MW** (in a 1.2m\u00b2 footprint) by paralleling up to ten 125 kW power modules internally. \n\nIf you intend to parallel multiple complete UPS frames together on the same bus, you can parallel up to 4 units to achieve a maximum total capacity of **5 MW** (which requires a 4.8m\u00b2 footprint).\n\nTo order and configure this modular system, the primary catalog part numbers are:\n* **GVXL0K1250HS**: Galaxy VXL UPS Base Frame (0 to 1250 kW, 400V, includes 5x8 Start-up)\n* **GVPM125KH**: Galaxy VXL 125 kW Power Module (400V)\n\nBy purchasing the base 1250 kW frame and populating it with the individual 125 kW power modules, you can deploy a scalable, \"pay-as-you-grow\" architecture that maximizes your MW capacity per square meter.",
+        "sources": [
+          {
+            "title": "comtecpower.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGxYtKoTTmxXDi8_BRhy4tZzcEveq0Ebl3OOxI4KXJhUxmejvAMwC-ekLJFQMMB2FQS-82RFdwsXlIKcNmkTyklqFPC-zgZdrA5WpgT656FzePx6vLcWI8ORrjA_-IRLGt1ZP6MQOKtiYPGppiNqJ8_xJCW4uCew2S8uwyfnHW7bXZYHls="
+          },
+          {
+            "title": "se.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHgc5q4hLhTehZZ7uDuaUOUjH-0H5ObaY2hW7fEtUvymU2afi3Ts6SAr0So0JgJpNCSVAdfOHrNIfrR0Ip1fP8lyK-1GhNpNr_JAmAlyFBvB5zVFoNQJS90xLrrFP4lJCAVwEgWTH-oZb0piSeT_xacenKHca7Cxj7FnPXOHNrffcnsNcuqmLuVGSpwxxjlVFMov_3kaw=="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.comtecpower.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGxYtKoTTmxXDi8_BRhy4tZzcEveq0Ebl3OOxI4KXJhUxmejvAMwC-ekLJFQMMB2FQS-82RFdwsXlIKcNmkTyklqFPC-zgZdrA5WpgT656FzePx6vLcWI8ORrjA_-IRLGt1ZP6MQOKtiYPGppiNqJ8_xJCW4uCew2S8uwyfnHW7bXZYHls=",
+            "title": "comtecpower.com",
             "class": "other"
           },
           {
             "host": "vertexaisearch.cloud.google.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEWFN788JsVynEcwLgo-lmzM_ST8ZvLlCfrZ9LMvLKFm5KV7ETMe1V_c-4ycWdlNHI27alq43U7Uet33KSGUAvPq501EvaWZjkQsd2DGdsFmXpD-ymW_RNgNxfGWI6TCY0fTl0SOf87W2aNupymUtCPifQIqQLkkEZDH2VVvqEtC7poPxEl82feeQtFYc6HNlACeK-aN4DygeQ=",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHgc5q4hLhTehZZ7uDuaUOUjH-0H5ObaY2hW7fEtUvymU2afi3Ts6SAr0So0JgJpNCSVAdfOHrNIfrR0Ip1fP8lyK-1GhNpNr_JAmAlyFBvB5zVFoNQJS90xLrrFP4lJCAVwEgWTH-oZb0piSeT_xacenKHca7Cxj7FnPXOHNrffcnsNcuqmLuVGSpwxxjlVFMov_3kaw==",
             "title": "se.com",
             "class": "other"
           }
         ],
         "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 2
+        },
+        "primary": "other",
+        "total_sources": 2
+      },
+      "category": "CORRECT",
+      "rationale": "Verified via Schneider Electric's March 2025 press release and product catalog that the Galaxy VXL scales to 1.25 MW per frame (1.2m\u00b2 footprint) and 5 MW in parallel (4 units) using 125 kW power modules. The provided SKUs GVXL0K1250HS (Base Frame) and GVPM125KH (125 kW Power Module) exactly match the manufacturer's catalog."
+    },
+    {
+      "query": "We need the exact dimensions and default switching frequency for the Altivar Machine ATV320 drive, specifically the compact form factor part number ATV320U15N4C. Does this specific 1.5kW variant include an integrated Class C2 EMC filter?",
+      "query_category": "found",
+      "agent": {
+        "text": "Yes, the exact 1.5kW drive you are looking for can be ordered under the manufacturer part number **ATV320U15N4C** (Schneider Electric Altivar Machine ATV320).\n\nHere are the requested specifications for this compact drive based on the manufacturer's catalog data:\n*   **Dimensions:** 105 mm (Width) x 142 mm (Height) x 158 mm (Depth). *(Note: The overall height extends to 188 mm when the included EMC plate is attached.)*\n*   **Default Switching Frequency:** 4 kHz (user-adjustable). \n*   **EMC Filter:** Yes, the ATV320U15N4C features an integrated Class C2 EMC filter. \n\nThis specific SKU perfectly matches your requirement for a 1.5kW, 3-phase (380\u2013500V) drive in the compact form factor.",
+        "sources": [
+          {
+            "title": "alldatasheet.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGy-KoPyy2qbjV-J2QrJPMvjArmBJgTJP-F-ae92ktS84yVO7OSz7ZgJECsJDmytf6a8nORCXCEqgqy33s-rWy6EVazgiDPUr1wn-gobeud6hR0xnCysV_qp1dDSmVlpILVHHNc4AmgqzMi0M5EHKTyumn-pZ76r9cgUxGYkVhw8agbPSh_i3c5Ij-Sk6o="
+          },
+          {
+            "title": "mouser.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEAU59dL3ImgGBD3iMRbd7Z4bbmF5866L5OdSOdo5M0lbeYmujl3mKNctiQMF79EACfKSaDGNN7Q9ic5GCorIV1sigl-LS_6yKYLn1yX3pSjPjieH-Vm5-As7CXrCYF4o3zNSEH39zDllJOGdLWAaUWDcrryfJ_sgOxtjjWIaD2L1HRg6YVhF9xw9xhV_U5NvsojpPq-n2Smdg7UhU9GggDZPpD"
+          },
+          {
+            "title": "mroelectric.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTWq0CS9KqkCtwZXS7Xzl2yQYOjl7g6CcNLIBm68l07zf_xNPrIuiNV5MI0-4Mage9Dl0EfHMvbZmrAB3G1OQvl2afVKid1Kz0117Cwn2ya1UDvcDhMoMe_y8lVHHgibcG2e0hsMoBUKJLCA=="
+          },
+          {
+            "title": "se.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHNsGT8OlFMllIbIeJAecIzJGKzANelGECVEI0ML4wnldTT6zY8ijURuLBXZdufMCbHbHr71VbB6gVIoURYb0cxXsdf-L0zCaGF-FDvL0ghc4kAAf0DbDN5J4o6zlpHV2JqttEpT9Okfi_vzzzfwsGNAG3cIxodnQgDxCKGH_igSDU="
+          },
+          {
+            "title": "farnell.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZ1lMeuf9Kyqxs5DagzafP_Za9Yvc78weSEtp6tVQKIxjl2yfMfBD2NbulNn5E9EKWeJhMzY9lA4meyCu8NvuJyW4jraX2_uy0Y4I8Eo0T6XKfbCiANpjk4mzW83gRAPYKuk1Y4BCvhi8="
+          },
+          {
+            "title": "plcpartssolution.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE53_u-zfTcnj4DXbuYVZKiEitT5OIB72vfAFGL9VrCMAHoPCIt_sYGGxDMXlURYxLjhcDfgV-v3FHdT7vrjkcaYSf10lcBudiJdzwDxR9z3_RGYZKT5ryZiSA4yQUjlAqGw_HsgND0Mf7bWpxGVrYj6_FMtTWYK3i5BGyQ0PduoxqZQJlO0SFW5Fq9nAcN"
+          },
+          {
+            "title": "wsu-industrials.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNkk6KnrOKN0uHTM84O1N9uRmqadjOwBHKneqyxHRLxay3F1VyvYGDZRjgMkfwARlEZRviaqLyRumM2A3RbUgz17BLvTonvTn0QZDFXBnAON1jxUdtjhe3ofwAVuxIAop6orJLHbz9rnQsope2tKpOZmGXIG3VTkyfe9V5OkStgd1Tqgj70ijPRfhfXxYcmf5GOQQVudcx-1e0wm8FXTDyFKtCGxS-IWq04I5BNhXfqe59"
+          },
+          {
+            "title": "rs-online.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6Ef8Xlv8hvAIAc9LvcD1KWJxeJpnF1Im2JX1s5szWd-kEpnkMY659gFrzzjKPiHcByFxvqhlLXCKWUJnOZpWpOBmjeIquSIZL4NMJg9DqpBz2_wS3-_xVCPL6_eZ6IyaP2M01VyqhcVlxdPau-HQ="
+          },
+          {
+            "title": "iqelectro.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFdzvwQln6uH11ImR7s_T14AX_ymdWfMWAibS83ofduHO5Tlu6X42pMkhuiLvwfcyyPuzcChSW32LT1jgFgru8oVw38lXBSkTsecPZQacJG6J-Y7QXOL7ktBT7IUPCWQg9hWT24FJluEmcbxlAi5WSSNDCuyKD5nIM_62LoylBvJu_WcgkoMUIyBCQamJmE"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "wsu-industrials.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNkk6KnrOKN0uHTM84O1N9uRmqadjOwBHKneqyxHRLxay3F1VyvYGDZRjgMkfwARlEZRviaqLyRumM2A3RbUgz17BLvTonvTn0QZDFXBnAON1jxUdtjhe3ofwAVuxIAop6orJLHbz9rnQsope2tKpOZmGXIG3VTkyfe9V5OkStgd1Tqgj70ijPRfhfXxYcmf5GOQQVudcx-1e0wm8FXTDyFKtCGxS-IWq04I5BNhXfqe59",
+            "title": "wsu-industrials.com",
+            "class": "other"
+          },
+          {
+            "host": "www.farnell.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZ1lMeuf9Kyqxs5DagzafP_Za9Yvc78weSEtp6tVQKIxjl2yfMfBD2NbulNn5E9EKWeJhMzY9lA4meyCu8NvuJyW4jraX2_uy0Y4I8Eo0T6XKfbCiANpjk4mzW83gRAPYKuk1Y4BCvhi8=",
+            "title": "farnell.com",
+            "class": "distributor"
+          },
+          {
+            "host": "www.mroelectric.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTWq0CS9KqkCtwZXS7Xzl2yQYOjl7g6CcNLIBm68l07zf_xNPrIuiNV5MI0-4Mage9Dl0EfHMvbZmrAB3G1OQvl2afVKid1Kz0117Cwn2ya1UDvcDhMoMe_y8lVHHgibcG2e0hsMoBUKJLCA==",
+            "title": "mroelectric.com",
+            "class": "other"
+          },
+          {
+            "host": "plcpartssolution.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE53_u-zfTcnj4DXbuYVZKiEitT5OIB72vfAFGL9VrCMAHoPCIt_sYGGxDMXlURYxLjhcDfgV-v3FHdT7vrjkcaYSf10lcBudiJdzwDxR9z3_RGYZKT5ryZiSA4yQUjlAqGw_HsgND0Mf7bWpxGVrYj6_FMtTWYK3i5BGyQ0PduoxqZQJlO0SFW5Fq9nAcN",
+            "title": "plcpartssolution.com",
+            "class": "other"
+          },
+          {
+            "host": "iportal.se.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHNsGT8OlFMllIbIeJAecIzJGKzANelGECVEI0ML4wnldTT6zY8ijURuLBXZdufMCbHbHr71VbB6gVIoURYb0cxXsdf-L0zCaGF-FDvL0ghc4kAAf0DbDN5J4o6zlpHV2JqttEpT9Okfi_vzzzfwsGNAG3cIxodnQgDxCKGH_igSDU=",
+            "title": "se.com",
+            "class": "other"
+          },
+          {
+            "host": "iqelectro.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFdzvwQln6uH11ImR7s_T14AX_ymdWfMWAibS83ofduHO5Tlu6X42pMkhuiLvwfcyyPuzcChSW32LT1jgFgru8oVw38lXBSkTsecPZQacJG6J-Y7QXOL7ktBT7IUPCWQg9hWT24FJluEmcbxlAi5WSSNDCuyKD5nIM_62LoylBvJu_WcgkoMUIyBCQamJmE",
+            "title": "iqelectro.com",
+            "class": "other"
+          },
+          {
+            "host": "docs.rs-online.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6Ef8Xlv8hvAIAc9LvcD1KWJxeJpnF1Im2JX1s5szWd-kEpnkMY659gFrzzjKPiHcByFxvqhlLXCKWUJnOZpWpOBmjeIquSIZL4NMJg9DqpBz2_wS3-_xVCPL6_eZ6IyaP2M01VyqhcVlxdPau-HQ=",
+            "title": "rs-online.com",
+            "class": "distributor"
+          },
+          {
+            "host": "www.alldatasheet.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGy-KoPyy2qbjV-J2QrJPMvjArmBJgTJP-F-ae92ktS84yVO7OSz7ZgJECsJDmytf6a8nORCXCEqgqy33s-rWy6EVazgiDPUr1wn-gobeud6hR0xnCysV_qp1dDSmVlpILVHHNc4AmgqzMi0M5EHKTyumn-pZ76r9cgUxGYkVhw8agbPSh_i3c5Ij-Sk6o=",
+            "title": "alldatasheet.com",
+            "class": "other"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEAU59dL3ImgGBD3iMRbd7Z4bbmF5866L5OdSOdo5M0lbeYmujl3mKNctiQMF79EACfKSaDGNN7Q9ic5GCorIV1sigl-LS_6yKYLn1yX3pSjPjieH-Vm5-As7CXrCYF4o3zNSEH39zDllJOGdLWAaUWDcrryfJ_sgOxtjjWIaD2L1HRg6YVhF9xw9xhV_U5NvsojpPq-n2Smdg7UhU9GggDZPpD",
+            "title": "mouser.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 2,
+          "marketplace": 0,
+          "other": 7
+        },
+        "primary": "other",
+        "total_sources": 9
+      },
+      "category": "CORRECT",
+      "rationale": "Verified via Schneider Electric catalog and authoritative distributors (RS Components, Farnell) that ATV320U15N4C is a 1.5kW, 3-phase, compact drive with an integrated Class C2 EMC filter, a default 4 kHz switching frequency, and dimensions of 105 x 142 x 158 mm (188 mm height with EMC plate)."
+    },
+    {
+      "query": "Please provide a complete and exhaustive list of all current regional and specialty sub-brands owned by Schneider Electric, specifically highlighting legacy acquisitions like Gutor, Clipsal, and Merten.",
+      "query_category": "found",
+      "agent": {
+        "text": "I cannot answer with a specific SKU, as you are asking for a list of corporate sub-brands rather than an orderable product. \n\nSchneider Electric has acquired dozens of companies over the years. While many are absorbed into the core brand, several operate as active regional or specialty sub-brands. \n\n**Highlighted Legacy Acquisitions:**\n* **Gutor:** Industrial-grade uninterruptible power supplies (UPS) engineered for harsh environments (oil & gas, mining).\n* **Clipsal:** Market-leading electrical accessories and smart home automation, primarily serving Australia and the Asia-Pacific region.\n* **Merten:** Premium wiring devices, switches, and smart home technology, predominantly serving Germany and Europe.\n\n**Other Prominent Sub-Brands & Legacy Acquisitions:**\n* **APC:** UPS systems and data center infrastructure.\n* **Square D:** Electrical power distribution and control, primarily in North America.\n* **AVEVA:** Industrial and engineering software (fully acquired in 2023).\n* **Lauritz Knudsen:** Switchgear and automation (formerly L&T Electrical & Automation in India).\n* **ProLeiT:** Industrial control and MES software.\n* **Modicon:** Programmable logic controllers (PLCs).\n* **Merlin Gerin & Telemecanique:** Legacy electrical and automation brands (largely integrated into the core Schneider Electric brand).\n* **Invensys & TAC:** Legacy building automation brands (now integrated into the EcoStruxure platform).",
+        "sources": [
+          {
+            "title": "se.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHAdJ38364Fuv-WaOImfLaRxPcnE6g8jlr7b9sP1n15J3FJwI6TzVZmXuBxuHDpElZBjBMTH74NzIVFaAFRB4OFwF2Z1UVVRl-nHYbSqhFzA9hpvSh25wo9-XYaLZk-MfLirIYKdIJNLJP0MPNpuOxandhDJQ=="
+          },
+          {
+            "title": "wikipedia.org",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGx3u2Vuhqa-LjGbFxgwNhV4YLyIxGYbZA-kg9rbeYvS7733fCQFdCOV_CPWYF6YY48HI9Lm_WxAGFwtC-1mS6EbWl9SVCEpR71mKwXd-B1FXnTkMusGrEuLhycK6ivlNBfx0c5ParENBYf0Q=="
+          },
+          {
+            "title": "upssolutions.com.au",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8Wc6mo1unrT4btHD41TyZOk_9QY1XggQuj21wD4y_pwOqDRWYrLCe7Us3yz9xDJD5axx8Ag0oGCdQayiU7pR_1UklLqku5nkKjbqErl3YBkVYGNm1-cBIwHUyvBDo693dI8scPaPLVr7Gpk12juGOlCa1llmrADDV59v9VQzTn_5x9uA0BvDonoah1HYx-DRYhdQG"
+          },
+          {
+            "title": "se.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFL9vtE4JQNAYxpuNwe35hSWBt4hBxeJZfVPAubG3XdU9-L9Fwdbhrtfh-n6Ww6oXx9nSFtXZ8FxT7fA5kCuf47CqaDSsCGlD8JQ6VzpWHwT9w9ehF4seB0vEmlkj9Daxcf"
+          },
+          {
+            "title": "innovationsoftheworld.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFLLIpnp9wOLWGOwWrO01bV05TePbiWY2UQvOeVd0oo71MqvyJzA2jH3TgrLs4vBFwjHGCcf_yAlzsmvbJVak-AjVVBEAScb16Xexol88_SvqLBIzaZ_IDh1RhxKEQ2BflzfUN08ctokTvlC0g3PUtLN9a0zWwJzjHJZ7AG4n5Os_RXqPlaFHrgCFURgvQRxn0Yniv79iY4a3w0oYDqa-iqAWOaKFxU9u3SEiIaCjIOH17ggPnFyV-6iI-k1D4V"
+          },
+          {
+            "title": "athenaengineering.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHvSHSApmnq2R8y3L3Qt3qXUGp8SH59CaiId5xpxJmSPLC4SxyCJYIRrPWwo_b3-88MsS6dED3nuk80R7QJV3qNUg_2ViTKeTH7VShRrElNqcWINuF2AfD58Tfi0ozNCohLrF3uZzEQ_wp2KuV2ggCaagy5KdZmr3rwEg7hn0urgy1T10dRkSQsJg=="
+          },
+          {
+            "title": "se.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEtmFVF9vfFUx2lI_xEfsl7aoo_X4h95iNUlonIA8W4idT1hJHh0bybmGmFnHTknlGhqxlYe28soOgc4c4c_UsS5Lt9_PI3-FaoGtgUyQ9egc7DLWRK21_HuvgZ9mal0ghaVFVJyuN9rSFHGxW59xaSSQaSbIpW1M7yO-Crc44FK0PCCVUPxaldD44EzUnBsnA="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.se.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEtmFVF9vfFUx2lI_xEfsl7aoo_X4h95iNUlonIA8W4idT1hJHh0bybmGmFnHTknlGhqxlYe28soOgc4c4c_UsS5Lt9_PI3-FaoGtgUyQ9egc7DLWRK21_HuvgZ9mal0ghaVFVJyuN9rSFHGxW59xaSSQaSbIpW1M7yO-Crc44FK0PCCVUPxaldD44EzUnBsnA=",
+            "title": "se.com",
+            "class": "other"
+          },
+          {
+            "host": "www.se.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFL9vtE4JQNAYxpuNwe35hSWBt4hBxeJZfVPAubG3XdU9-L9Fwdbhrtfh-n6Ww6oXx9nSFtXZ8FxT7fA5kCuf47CqaDSsCGlD8JQ6VzpWHwT9w9ehF4seB0vEmlkj9Daxcf",
+            "title": "se.com",
+            "class": "other"
+          },
+          {
+            "host": "en.wikipedia.org",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGx3u2Vuhqa-LjGbFxgwNhV4YLyIxGYbZA-kg9rbeYvS7733fCQFdCOV_CPWYF6YY48HI9Lm_WxAGFwtC-1mS6EbWl9SVCEpR71mKwXd-B1FXnTkMusGrEuLhycK6ivlNBfx0c5ParENBYf0Q==",
+            "title": "wikipedia.org",
+            "class": "other"
+          },
+          {
+            "host": "www.se.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHAdJ38364Fuv-WaOImfLaRxPcnE6g8jlr7b9sP1n15J3FJwI6TzVZmXuBxuHDpElZBjBMTH74NzIVFaAFRB4OFwF2Z1UVVRl-nHYbSqhFzA9hpvSh25wo9-XYaLZk-MfLirIYKdIJNLJP0MPNpuOxandhDJQ==",
+            "title": "se.com",
+            "class": "other"
+          },
+          {
+            "host": "upssolutions.com.au",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8Wc6mo1unrT4btHD41TyZOk_9QY1XggQuj21wD4y_pwOqDRWYrLCe7Us3yz9xDJD5axx8Ag0oGCdQayiU7pR_1UklLqku5nkKjbqErl3YBkVYGNm1-cBIwHUyvBDo693dI8scPaPLVr7Gpk12juGOlCa1llmrADDV59v9VQzTn_5x9uA0BvDonoah1HYx-DRYhdQG",
+            "title": "upssolutions.com.au",
+            "class": "other"
+          },
+          {
+            "host": "athenaengineering.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHvSHSApmnq2R8y3L3Qt3qXUGp8SH59CaiId5xpxJmSPLC4SxyCJYIRrPWwo_b3-88MsS6dED3nuk80R7QJV3qNUg_2ViTKeTH7VShRrElNqcWINuF2AfD58Tfi0ozNCohLrF3uZzEQ_wp2KuV2ggCaagy5KdZmr3rwEg7hn0urgy1T10dRkSQsJg==",
+            "title": "athenaengineering.com",
+            "class": "other"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFLLIpnp9wOLWGOwWrO01bV05TePbiWY2UQvOeVd0oo71MqvyJzA2jH3TgrLs4vBFwjHGCcf_yAlzsmvbJVak-AjVVBEAScb16Xexol88_SvqLBIzaZ_IDh1RhxKEQ2BflzfUN08ctokTvlC0g3PUtLN9a0zWwJzjHJZ7AG4n5Os_RXqPlaFHrgCFURgvQRxn0Yniv79iY4a3w0oYDqa-iqAWOaKFxU9u3SEiIaCjIOH17ggPnFyV-6iI-k1D4V",
+            "title": "innovationsoftheworld.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 7
+        },
+        "primary": "other",
+        "total_sources": 7
+      },
+      "category": "CORRECT",
+      "rationale": "Verified via Google Search that the agent accurately listed Schneider Electric's regional and specialty brands (Clipsal, Merten, APC, Square D, AVEVA, Lauritz Knudsen, ProLeiT, Modicon, Telemecanique, Invensys, TAC) and correctly described their product domains. It also properly highlighted Gutor as a legacy acquisition for industrial UPS systems, as requested by the prompt."
+    },
+    {
+      "query": "We are designing a new high-capacity switchgear and need to spec the MasterPacT MTZ4 air circuit breaker for an 8000A application. Can you provide the datasheet for the MTZ4 drawout version with the MicroLogic X control unit?",
+      "query_category": "hallucinated",
+      "agent": {
+        "text": "I cannot provide a specific SKU or datasheet because the **MasterPacT MTZ4** does not exist. \n\nWithin Schneider Electric's catalog, the MasterPacT MTZ air circuit breaker line maxes out at the **MTZ3** frame size, which has a maximum continuous current rating of **6300A**. There is no 8000A version of the MasterPacT breaker available.\n\nFor an 8000A switchgear application, a single standard air circuit breaker cannot be sourced. You will need to adjust your switchgear design topology. Standard industry practice for 8000A capacities is to split the load and parallel multiple breakers\u2014such as using two 4000A MasterPacT MTZ3 drawout breakers (which can be configured with MicroLogic X control units) in a main-tie-main or paralleled-bus configuration. \n\nIf your design can be revised down to a 6300A maximum, we can specify a MasterPacT MTZ3 drawout breaker. Otherwise, please consult with your switchgear engineering team to design a multi-breaker or parallel-bus solution.",
+        "sources": [
+          {
+            "title": "schneider-electric.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFdm0Q1D8RHoty8ifOk71t2bxq-FO961phDYeatwuhFHEKa_GaZuifJhpRl0DGI4Hb-49aiXkT6bQ36ojzRxUmy5CfuPJimGfOJsjg3EAIflrEpOJQon52bbRAhJN86uJTo5_TWx2JBPkhj4DcAl9apX9M7NI9DR9m9K5T5_GnExro8yGsLuD08_pyoW-xtXtEzUcDEQRU9vyMm6h7qGkrULR_Zgf-V_ikUYDMyiIwPniVNCsKggsjJFwLwYR5GnXQajH0Gk3dFvSGlO7urZ_BhoizI9QVzFH74BFjvMDG01IPTfVMonniIs96ZhmPjDq2BszryXxk="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.productinfo.schneider-electric.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFdm0Q1D8RHoty8ifOk71t2bxq-FO961phDYeatwuhFHEKa_GaZuifJhpRl0DGI4Hb-49aiXkT6bQ36ojzRxUmy5CfuPJimGfOJsjg3EAIflrEpOJQon52bbRAhJN86uJTo5_TWx2JBPkhj4DcAl9apX9M7NI9DR9m9K5T5_GnExro8yGsLuD08_pyoW-xtXtEzUcDEQRU9vyMm6h7qGkrULR_Zgf-V_ikUYDMyiIwPniVNCsKggsjJFwLwYR5GnXQajH0Gk3dFvSGlO7urZ_BhoizI9QVzFH74BFjvMDG01IPTfVMonniIs96ZhmPjDq2BszryXxk=",
+            "title": "schneider-electric.com",
+            "class": "manufacturer"
+          }
+        ],
+        "counts": {
           "manufacturer": 1,
           "distributor": 0,
+          "marketplace": 0,
+          "other": 0
+        },
+        "primary": "manufacturer",
+        "total_sources": 1
+      },
+      "category": "CORRECT",
+      "rationale": "Verified via Schneider Electric catalog that the MasterPacT MTZ line maxes out at the MTZ3 frame size with a maximum continuous current of 6300A, confirming the agent's claim that MTZ4 and 8000A versions do not exist."
+    },
+    {
+      "query": "What is the exact MTBF in power-on hours and the continuous salt spray withstand duration in hours for the Altivar Process ATV900 series IP55 drives according to their environmental testing datasheet?",
+      "query_category": "hallucinated",
+      "agent": {
+        "text": "I cannot answer with a specific SKU because your question asks for technical specifications that apply across a product series rather than an orderable part number. \n\nBased on Schneider Electric\u2019s catalog data and environmental testing documentation for the Altivar Process ATV900 series (which includes IP55 models), here are the requested specifications:\n\n1. **Exact MTBF in power-on hours:** Schneider Electric formally states the Mean Time Between Failures (MTBF) for the ATV600 and ATV900 series as **> 47 years**. Based on continuous 24/7/365 operation (8,760 hours per year), this equates to a guaranteed MTBF of over **411,720 power-on hours**. \n\n2. **Continuous Salt Spray Withstand:** The environmental data for these drives lists a continuous salt spray withstand duration of **250 hours** (tested specifically for the standard 400 V / 50 Hz range).\n\nPlease consult the manufacturer's specific environmental datasheets for your exact target enclosure size or voltage rating, as some customized marine-grade versions may feature additional conformal coating (e.g., 3C3/3S3).",
+        "sources": [
+          {
+            "title": "se.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGwgo_xVtGztWoztJDbqNuu_PYLLBnYqy4QRTuCi1XAXcxldaQYkAfJ51HiJI-WOX3UqqALQI-0mrrU6b8J7VVQolLhg6XYDkBUJR2eYKhjW9WeaMveWFEt5RhyyK1yNKWdZZ2Hd7Wd3yyXNnK6ASF7OwpEXQ76RZVLVHSGlyIxJU2WMi1F1-tB6rp25Ku8Lf26x0i6fN8cDJRD"
+          },
+          {
+            "title": "rmsonline.co.za",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEVzBxmUKVH9BdHxcerNYUqkPfBUSpvukwq5CS0XpolL8j8aezUWgSPSSWDZwDFmKPrQHr6l8vEaOfpk1lFL3RRLXew-JTlNOazZAdOcsh3pO-Fgrjn97sgxw1Q1EvDoAQL509xmqfBL0YQMwXsvcH73VzaJZjc2_yrbazLmcyMu9su6ITDO_wzAOKG6mGZvUrAYuDWCXgvZQ3SqEdV4b372A=="
+          },
+          {
+            "title": "rmsonline.co.za",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHPCw_RPEx3bXFuFPfHQKYAN6QcbhFhQdPwFxZj8eNgVt5GHSGs6UbI-mM08L-Unj6LbrmJPstg6D8VrJ5BKOmi8oBtOrUMzCfc7-THRUzpDS3oab5lg8ivG3W58qVFL-9QxGuqqI0h-UKlGH8154NW3D2Bm0WjD0-JJBQdYuslWqu9Cq7pxPJr7RFH4SxhmxydukoD_NoWGM0Nl2_a3TMjnw=="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "ckm-content.se.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGwgo_xVtGztWoztJDbqNuu_PYLLBnYqy4QRTuCi1XAXcxldaQYkAfJ51HiJI-WOX3UqqALQI-0mrrU6b8J7VVQolLhg6XYDkBUJR2eYKhjW9WeaMveWFEt5RhyyK1yNKWdZZ2Hd7Wd3yyXNnK6ASF7OwpEXQ76RZVLVHSGlyIxJU2WMi1F1-tB6rp25Ku8Lf26x0i6fN8cDJRD",
+            "title": "se.com",
+            "class": "other"
+          },
+          {
+            "host": "rmsonline.co.za",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHPCw_RPEx3bXFuFPfHQKYAN6QcbhFhQdPwFxZj8eNgVt5GHSGs6UbI-mM08L-Unj6LbrmJPstg6D8VrJ5BKOmi8oBtOrUMzCfc7-THRUzpDS3oab5lg8ivG3W58qVFL-9QxGuqqI0h-UKlGH8154NW3D2Bm0WjD0-JJBQdYuslWqu9Cq7pxPJr7RFH4SxhmxydukoD_NoWGM0Nl2_a3TMjnw==",
+            "title": "rmsonline.co.za",
+            "class": "other"
+          },
+          {
+            "host": "rmsonline.co.za",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEVzBxmUKVH9BdHxcerNYUqkPfBUSpvukwq5CS0XpolL8j8aezUWgSPSSWDZwDFmKPrQHr6l8vEaOfpk1lFL3RRLXew-JTlNOazZAdOcsh3pO-Fgrjn97sgxw1Q1EvDoAQL509xmqfBL0YQMwXsvcH73VzaJZjc2_yrbazLmcyMu9su6ITDO_wzAOKG6mGZvUrAYuDWCXgvZQ3SqEdV4b372A==",
+            "title": "rmsonline.co.za",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 3
+        },
+        "primary": "other",
+        "total_sources": 3
+      },
+      "category": "CORRECT",
+      "rationale": "Verified via Schneider Electric documentation that the MTBF for the ATV600 and ATV900 series is indeed >47 years (over 411,720 hours) and the continuous salt spray withstand duration is exactly 250 hours for the 400 V - 50 Hz range."
+    },
+    {
+      "query": "Please provide the exact complete Schneider Electric part number for a Harmony XB4 metal pushbutton with the following three constraints: flush profile, RAL 5015 light blue color, and 24V DC LED ring illumination.",
+      "query_category": "hallucinated",
+      "agent": {
+        "text": "I cannot provide a specific SKU because a standard Schneider Electric Harmony XB4 part number meeting all three of these exact constraints does not exist in their catalog. \n\nHere is why:\n1. **Color constraint (RAL 5015):** Schneider Electric\u2019s standard Harmony XB4 line uses a generic \"Blue\" for its buttons. They do not manufacture an off-the-shelf XB4 button explicitly designated as RAL 5015 (Sky Blue).\n2. **Illumination constraint (Ring Illumination):** Standard XB4 flush illuminated pushbuttons feature full-face lens illumination (the entire cap lights up). While Schneider offers LED ring accessories for Emergency Stops (like the ZBY9W series), an integrated LED ring on a standard flush momentary pushbutton is not an off-the-shelf XB4 configuration.\n\nIf you can accept standard blue with full-face 24V DC LED illumination, the closest standard, orderable part numbers are **XB4BW36B5** (standard 22mm flush) or **XB4FW36B5** (30.5mm flush-mounted). \n\nIf RAL 5015 and ring illumination are strict requirements, you will need to either source a custom configuration directly from Schneider Electric or look at specialized switch lines from other manufacturers (such as EAO, which explicitly offers RAL 5015 ring-illuminated buttons).",
+        "sources": [
+          {
+            "title": "se.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGDEkveIZEwuHmEw_lQVXB-DIt6NKaPB9ZPgcZunuG4OM_OVzTSsBnbp4e-56ijvWlXQiuAbtd5CEkxCQfiQBHTl71RLckxrzNEiu23ZcVxYC9BmGnFmky1ctKkDppMa0Ws1D69FylhOKuYYYGj4y4QTufasuPlNZXiWI4rbKNQFYBHO3Z7Or93xk3pidxkXEGk_Sx31s8cNhvhrVfkJeOIrh0AASsBIGdV7GUsYGV0lQW5o0sjWnSXi635MNJijbluU29qnBj-nVqajCVibT90Pdd0yxDB"
+          },
+          {
+            "title": "ajhurst.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGq-zPD_hjMqHDlDMc44zaiPeRfB-Fa2GkI-WwEfCZcrWi4-Wb0Yltog3OaVYWF7I3TghRUOGUBxrXLmc01TpoL9ot0yPuPufqeVT9ucPtRpWX31nv9YeeNswz-_ZEvpmA2bggab6gtJSHXkIQPHsYp3n1qcsAxzW_f7eX3OeLd3IuBZ3D3WQv8Ga_XOuU9c8IcXJKfeI9OSlla-O17u8NWeWEAMR819-wOfdgs5SQjuoSj_6gbcwfsZfj5_ecHdjxcjNGnsckIEpXsszHOhBpW-Gi69KJ4tt2QD5Zh6iDiKG9r7g=="
+          },
+          {
+            "title": "directindustry.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRDPddCQ5Wkh_YxfI_s2a1SenvuwjaA1c2uNcxHvI5FeLSrvtlOenbKVe9oRgh-YWhXWpceqlKJqOIzijvzGXhYxyd5b8-ndANLPaEf15__V64TLq5_WpSemflChrX60qpq99SDr6WLEFP2DE4OmMtg1Eb9cNft_RvFhe4tpj5EtO7A6J6QNjnEWKLJ9XUInbz23UekSsoFtrN"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "pdf.directindustry.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRDPddCQ5Wkh_YxfI_s2a1SenvuwjaA1c2uNcxHvI5FeLSrvtlOenbKVe9oRgh-YWhXWpceqlKJqOIzijvzGXhYxyd5b8-ndANLPaEf15__V64TLq5_WpSemflChrX60qpq99SDr6WLEFP2DE4OmMtg1Eb9cNft_RvFhe4tpj5EtO7A6J6QNjnEWKLJ9XUInbz23UekSsoFtrN",
+            "title": "directindustry.com",
+            "class": "other"
+          },
+          {
+            "host": "ajhurst.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGq-zPD_hjMqHDlDMc44zaiPeRfB-Fa2GkI-WwEfCZcrWi4-Wb0Yltog3OaVYWF7I3TghRUOGUBxrXLmc01TpoL9ot0yPuPufqeVT9ucPtRpWX31nv9YeeNswz-_ZEvpmA2bggab6gtJSHXkIQPHsYp3n1qcsAxzW_f7eX3OeLd3IuBZ3D3WQv8Ga_XOuU9c8IcXJKfeI9OSlla-O17u8NWeWEAMR819-wOfdgs5SQjuoSj_6gbcwfsZfj5_ecHdjxcjNGnsckIEpXsszHOhBpW-Gi69KJ4tt2QD5Zh6iDiKG9r7g==",
+            "title": "ajhurst.com",
+            "class": "other"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGDEkveIZEwuHmEw_lQVXB-DIt6NKaPB9ZPgcZunuG4OM_OVzTSsBnbp4e-56ijvWlXQiuAbtd5CEkxCQfiQBHTl71RLckxrzNEiu23ZcVxYC9BmGnFmky1ctKkDppMa0Ws1D69FylhOKuYYYGj4y4QTufasuPlNZXiWI4rbKNQFYBHO3Z7Or93xk3pidxkXEGk_Sx31s8cNhvhrVfkJeOIrh0AASsBIGdV7GUsYGV0lQW5o0sjWnSXi635MNJijbluU29qnBj-nVqajCVibT90Pdd0yxDB",
+            "title": "se.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 3
+        },
+        "primary": "other",
+        "total_sources": 3
+      },
+      "category": "CORRECT",
+      "rationale": "Search confirms that Schneider Electric's Harmony XB4 standard flush illuminated pushbuttons feature full-face illumination, use a generic blue rather than explicit RAL 5015, and typically relegate LED ring illumination to Emergency Stop accessories (ZBY9W series). The agent correctly stated the exact combination does not exist and provided verified alternative standard SKUs (XB4BW36B5 and XB4FW36B5)."
+    },
+    {
+      "query": "We need to order the 120V AC input version of the Altivar 320 variable speed drive at a 1.5kW rating for a North American retrofit project. What is the specific ATV320 part number for this 120V single-phase model?",
+      "query_category": "hallucinated",
+      "agent": {
+        "text": "We cannot provide a specific part number because a 120V AC input version of the Altivar 320 (ATV320) at a 1.5kW (2 HP) rating does not exist. \n\nSchneider Electric does not manufacture the Altivar 320 series with a 120V single-phase input option. The lowest input voltage class available for the ATV320 line is 200\u2013240V. \n\nAdditionally, 1.5kW (2 HP) is generally too large for standard 120V variable speed drives. Even in Schneider's product lines that *do* support 120V inputs (such as the Altivar 12 series), the power rating is capped at 0.75 kW (1 HP) because of the very high input amperage required at 120V.\n\n**Your Retrofit Options:**\n* **Upgrade the supply voltage:** Provide a 200\u2013240V single-phase circuit to the panel. You can then order part number **ATV320U15M2C** (Compact format) or **ATV320U15M2B** (Book format), which are the exact 1.5kW models designed for 200\u2013240V single-phase input.\n* **Use a step-up transformer:** Step your 120V source up to 240V before the drive to utilize the SKUs above, provided your 120V circuit has sufficient ampacity for a 1.5kW motor load.",
+        "sources": [
+          {
+            "title": "farnell.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDJ2-7WdJ0qZbHFBRJWb_ORBwAh1htFYeJtSN8pCMyqv_FWiJwy9gVlASw_Ee6UZgsI70rQpbsnzymKraY8RoTIbee3hb9KPKWw84BjgZle9ge3rCfd7xbLH0x_tSBgdj_5SZ-uXy1R-M="
+          },
+          {
+            "title": "se.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG_LMmtbFyYO6znTjhzVI0VSEHiHXOKgxkDh1x5rpOmdtjU93MYmh2YmlHIG1hDqp8rJvHvLhdqTrTsluAAB134WmaQ1c-BwRNJYzAoOHXVY9Rsjk9QSmsE1BKTuksP1rRM6K3wS_kpPvJQKAyS4mc07PD19JX0rfguBzq3YpayFLcnes8nR1hIrndZToDcBazeBDKiACnvGDkYrNuGiF7CsPumXiFdbZ08Gg=="
+          },
+          {
+            "title": "se.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE65_dstjEmN48zKX1u6Sf08tFJMMqcG2xPcmtXTLGmMs7LcbUkFGq6Vg56UH4CliXy1cuxyCdphyZMig-vSO_xfjHFuAJTVKrm-jLUwMnyq8LphHP1R64AmxegFTRRkJ3xmUXPCleU3p7bwQa8pKBu1Azk8ZfP-6bx7B8TOLSSiPu1U4A-b9kxrMjeUOeddEihv-ILpC2BnvmgmzLbdjMYxw2utG3VJ7CD3iOWwno3VUc9ozVaR8QwLWnzwQ=="
+          },
+          {
+            "title": "watertecna.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHnjCufrrdXgRtlloDIuzujXjh6cPGDoSqjDiqpwRdt9qYafssXlb4qN-fLvt1tgfZ5yp7i8-qTz-8e001iu1U-P4pwRGXl47M6s5Q4csXCWPIUvm2cO0KgpfWdqbiFC0PN2e8TkHDCUP-0obPKaoTvxB20dlH-2L6BZKfbpJSLvUnUF37dS8PUmZ1HKu-Vht11"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.farnell.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDJ2-7WdJ0qZbHFBRJWb_ORBwAh1htFYeJtSN8pCMyqv_FWiJwy9gVlASw_Ee6UZgsI70rQpbsnzymKraY8RoTIbee3hb9KPKWw84BjgZle9ge3rCfd7xbLH0x_tSBgdj_5SZ-uXy1R-M=",
+            "title": "farnell.com",
+            "class": "distributor"
+          },
+          {
+            "host": "www.watertecna.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHnjCufrrdXgRtlloDIuzujXjh6cPGDoSqjDiqpwRdt9qYafssXlb4qN-fLvt1tgfZ5yp7i8-qTz-8e001iu1U-P4pwRGXl47M6s5Q4csXCWPIUvm2cO0KgpfWdqbiFC0PN2e8TkHDCUP-0obPKaoTvxB20dlH-2L6BZKfbpJSLvUnUF37dS8PUmZ1HKu-Vht11",
+            "title": "watertecna.com",
+            "class": "other"
+          },
+          {
+            "host": "www.se.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE65_dstjEmN48zKX1u6Sf08tFJMMqcG2xPcmtXTLGmMs7LcbUkFGq6Vg56UH4CliXy1cuxyCdphyZMig-vSO_xfjHFuAJTVKrm-jLUwMnyq8LphHP1R64AmxegFTRRkJ3xmUXPCleU3p7bwQa8pKBu1Azk8ZfP-6bx7B8TOLSSiPu1U4A-b9kxrMjeUOeddEihv-ILpC2BnvmgmzLbdjMYxw2utG3VJ7CD3iOWwno3VUc9ozVaR8QwLWnzwQ==",
+            "title": "se.com",
+            "class": "other"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG_LMmtbFyYO6znTjhzVI0VSEHiHXOKgxkDh1x5rpOmdtjU93MYmh2YmlHIG1hDqp8rJvHvLhdqTrTsluAAB134WmaQ1c-BwRNJYzAoOHXVY9Rsjk9QSmsE1BKTuksP1rRM6K3wS_kpPvJQKAyS4mc07PD19JX0rfguBzq3YpayFLcnes8nR1hIrndZToDcBazeBDKiACnvGDkYrNuGiF7CsPumXiFdbZ08Gg==",
+            "title": "se.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 1,
           "marketplace": 0,
           "other": 3
         },
@@ -84,44 +547,29 @@
         "total_sources": 4
       },
       "category": "CORRECT",
-      "rationale": "Verified via the Schneider Electric (se.com) catalog that LC1D09P7 is an exact match for a 3-pole, non-reversing, 9A (AC-3) TeSys D IEC contactor with a 230V AC 50/60Hz coil. The alternate part number LC1D093P7 was also successfully verified as the spring-terminal equivalent."
+      "rationale": "Verified via Schneider Electric catalogs that the ATV320 series does not offer a 120V input model (they start at 200V) and the 120V ATV12 line maxes out at 0.75kW. The agent correctly identified that the requested configuration does not exist and provided genuine, orderable 200-240V 1.5kW alternatives (ATV320U15M2C and ATV320U15M2B) for the retrofit."
     },
     {
-      "query": "What categories of products does se.com offer? List the main product families with one example each.",
+      "query": "What is the current estimated factory lead time and standard bulk pricing tier for an order of 300 units of the Acti9 iC60N miniature circuit breaker (part A9F74216) shipped to Germany?",
+      "query_category": "sourced",
       "agent": {
-        "text": "Schneider Electric (se.com) offers energy management and automation solutions across several core product families:\n\n1. **Low Voltage Products & Systems**: Commercial and industrial electrical distribution, including breakers and switches.\n*Example SKU*: **A9F74220** (Acti9 iC60N Miniature Circuit Breaker, 2-Pole, 20A).\n\n2. **Industrial Automation & Control**: Motor controls, contactors, PLCs, and drives.\n*Example SKU*: **LC1D09M7** (TeSys D Contactor, 3-Pole, 9A, 220VAC coil).\n\n3. **Power Protection & IT Infrastructure**: Uninterruptible power supplies (UPS) and data center solutions, often under the APC brand.\n*Example SKU*: **SMT1500C** (APC Smart-UPS 1500VA, 120V).\n\n4. **Residential & Small Business**: Consumer load centers and wiring devices, widely sold under the Square D brand.\n*Example SKU*: **QO120** (Square D QO Miniature Circuit Breaker, 1-Pole, 20A).\n\n5. **Medium Voltage Distribution & Grid Automation**: Large-scale transformers, switchgear, and grid controllers.\n*Example*: Because medium-voltage equipment (like Premset or MasterPact components) is heavily engineered and customized to specific facility requirements, **there is no single, off-the-shelf orderable SKU for this category**.",
+        "text": "The Schneider Electric Acti9 iC60N miniature circuit breaker (SKU: **A9F74216**) is a real, orderable part number. However, I cannot provide a specific factory lead time or standard bulk pricing tier for an order of 300 units shipped to Germany.\n\nSchneider Electric and its authorized industrial distributors in Germany (such as RS Components, Conrad B2B, or specialized wholesalers) do not publicly list live factory backlog lead times or 300-unit bulk discounting tiers without a registered B2B account or a direct Request for Quote (RFQ). \n\nWhile single-unit retail prices generally range from \u20ac16 to \u20ac20, bulk B2B pricing is highly dependent on your specific distributor agreement. To obtain accurate availability\u2014whether the 300 units are currently stocked in a regional European warehouse or require a factory lead time\u2014you will need to request a direct volume quote from your preferred authorized distributor.",
         "sources": [
           {
             "title": "se.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEyadLTgFNvJmVZwGXppLR63bm-2pe5dkJrgmpTKj9ysU4QU13InvyuMsegI_TmyFqx1OoYsVYleUSe6MdB_6W8TdwRQdbThXjrYR_8tC0RuOd6TdAypTQuUDHxPZOfhxhSaX02gUrE4CW3ufzJQJ2GN_c_q48zYFAWUIhODkTcLbgvKHJ5TxSljg-5kllcbwXpnpiIxETVIGhHUgBuDPCaSa0Z"
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFDi1fMBTnFOwyFkUgS3XlV2gHEBgu1fFGAjik9L0oicu7o-519IgC5n2kpTFQKI1yDb38iuu5T27fs31ZGUNxeoljhZXeoD4Cx5vPST4TNVvqso4uDV6zABtKCg8qhal3w1Av336EiCTbgbv97z8uJFwqpB7FTB7ui-UGO8h_JM0AAN6nJpmbJ6mNl6_thIwTKiAHDPn_TH01prlBgbvVkGrVU7vJcN9zKxOlezOITkwhrn32vJy89NUSXlLo_"
           },
           {
-            "title": "se.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEA9EID-BegRTisR9Civ6_5KDZx_kR5AEIBNQRzc8mzpteV4hppyfRILWFgxio19lbPbOBXQeTqw2__Q_QTasyTyRc70MnNXKt2Kjd7TsmMzkDqsgQl6T9RdSJ_j7TH4hoE5sOerEQo7J3ZIhaO76XOUNE576KVSpK6DVLVj1RnpOELlyQKZe41GU5Vlbfp5ah61Bo="
+            "title": "bankoflamps.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFPAGNAbFluQlzU4BUBp80ghXLrQGOzoirsmlAGryPPyZFU2B9LpYyAr6n4_1r_Wi2Ome5HzNqTDhkqAhiDAeFBATdIv83QSexT7QCPswL-KSwh8zlh-2fDP1uA7E-9yWpv2dj_MA=="
           },
           {
-            "title": "superbreakers.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHmFrxXpyuD9mrSTF4J_28WPYQBREZdew7inlQKCRJRUwJurtUCS5Cxo7o_bt8pAOhzujRv-KtzJUiD51_62duEBn6uuzjqzVfR0yQlA8hW6alOAI8w0xtneG0wSdKJ_a5qPyd8YHYSOAz1oYq_cbab75IQ5MmPB-s="
+            "title": "automationparts.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGuE-057xiCzaKfcBeVecxAv3h6sM4tnZanpxv96u97_eB9quVwu9nIgcjpoQjHar0w474FJvYjYQGjWpA0l3cNSC6AqY6uAzKQJO3UALH-BKyWluiNra0zzpPzwM7f--lr-c4mR4DvTiqAWHD61HgrIuHB04fd1QxiusQquy7PLZAfhDGXv_ueS-5KlziJffdWCtXAuNAayGeE475AJIh4Cl0PNRcmd9BPKcY="
           },
           {
-            "title": "kentstore.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFBHra4AXfePQME84LUpR9eZzl0ttwxw5BB8bkztvBXynTw522dfep_weO6y6imrDF3dpCkuqRrbCDOe5L0KIV0Tr4B9mRPSLm_n4EKqUAC4x9jvToapiNpgQ=="
-          },
-          {
-            "title": "se.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGK42gpsx-Wub42qsXSqVoyUiYyoW-GRSpFQC2ySfNTSEkcLqU8Ems_R7mhT2PjsQ9Lg0ZvfNDSxuVS_Pd2FAjXCXLKgayHbGfB2PEzo_9b6fwKUyns2ZUziywhPvfuIDcM5iTFOmXzxi83V9tOonytLzt5udX_wA7nSi4lKtWgMHq-nk6PkEwzvuVsJzuixFZ1vVCc_WX_yb6c5EW_xTm5nqcTspQx8zuz8Dq0StkzPUyvy17Mwy4vHTPMQSXNexF2YLaXEafjhmZIAVKmxQ=="
-          },
-          {
-            "title": "graybar.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHQnHhvIwjhenbYrDBffk58SF0eOY8Hsb4ssBz2oVZVnLpoAs3tL_z9EPiUnqD_8DGRbIIycxeD7JBHH-pYIXnYspa74AFpmNS-A6ZzlI8SBxtDP4gfHfmLEFn1f0q6Vrf7FncfJN1bGn-H4UReVp9WcvfpfQcuavOrSrW4_KANV9MksFZsiwXEAicbcFIZ9ngC1bBbMLn3yYmkAstkH-QvijdlII1RycZg-6koZwIYYcA4RBM_"
-          },
-          {
-            "title": "se.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQExxaZr5e7PmpgHUAcmqz_y1gtkimc_GQmZ1nwotLHg7XnWBeQmSy3UF6jqUuuScX1YtmMYdHk9WQ4dEPrH7lRXteGC0XFHoRuIEBJdY48ggx4Du0VFNLWqO74aaEbX8pqrnQkwx94ZapgeJ_xhsLtAtAcX0zKKKt0EyqYeuYYbcdnIleRDjxMEe2dyIswef9FcO_kt0VXI-yqrpCM="
-          },
-          {
-            "title": "butlersupply.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEX7DFudC5v9VMYNZLRg8srHQLSFOhlhSZytKaf7rf3O4SKYxouvizXdk1EYkS9o0CfnW7m8OTgDJ-yMAoKQumq5UGGx3tCcEUkWJ1l5HxIUZYUL8BA_fPf5cYUj5QgQr_cYNCWrwkFa03GiY_Mw37e3NicsmwYCdGlFUfg4qLw7M4Wez9h98KV2NGGiU15N_Ne4TFsFijkfmYGSIo="
+            "title": "electgo.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHMTplBpb23F-szQQ2OyHMh_3_HsW4PT1Z52ik7NfnN3J9zs3PRNs24PDpUykBsNHW-DCiKg9Nhgpc3TIwUXS8Gj1nGyr15r66BHuw-As8iv9547htKI0off_0rdS7kW8tP"
           }
         ],
         "error": null
@@ -129,50 +577,90 @@
       "attribution": {
         "domains": [
           {
-            "host": "www.butlersupply.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEX7DFudC5v9VMYNZLRg8srHQLSFOhlhSZytKaf7rf3O4SKYxouvizXdk1EYkS9o0CfnW7m8OTgDJ-yMAoKQumq5UGGx3tCcEUkWJ1l5HxIUZYUL8BA_fPf5cYUj5QgQr_cYNCWrwkFa03GiY_Mw37e3NicsmwYCdGlFUfg4qLw7M4Wez9h98KV2NGGiU15N_Ne4TFsFijkfmYGSIo=",
-            "title": "butlersupply.com",
+            "host": "www.se.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFDi1fMBTnFOwyFkUgS3XlV2gHEBgu1fFGAjik9L0oicu7o-519IgC5n2kpTFQKI1yDb38iuu5T27fs31ZGUNxeoljhZXeoD4Cx5vPST4TNVvqso4uDV6zABtKCg8qhal3w1Av336EiCTbgbv97z8uJFwqpB7FTB7ui-UGO8h_JM0AAN6nJpmbJ6mNl6_thIwTKiAHDPn_TH01prlBgbvVkGrVU7vJcN9zKxOlezOITkwhrn32vJy89NUSXlLo_",
+            "title": "se.com",
+            "class": "other"
+          },
+          {
+            "host": "electgo.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHMTplBpb23F-szQQ2OyHMh_3_HsW4PT1Z52ik7NfnN3J9zs3PRNs24PDpUykBsNHW-DCiKg9Nhgpc3TIwUXS8Gj1nGyr15r66BHuw-As8iv9547htKI0off_0rdS7kW8tP",
+            "title": "electgo.com",
+            "class": "other"
+          },
+          {
+            "host": "bankoflamps.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFPAGNAbFluQlzU4BUBp80ghXLrQGOzoirsmlAGryPPyZFU2B9LpYyAr6n4_1r_Wi2Ome5HzNqTDhkqAhiDAeFBATdIv83QSexT7QCPswL-KSwh8zlh-2fDP1uA7E-9yWpv2dj_MA==",
+            "title": "bankoflamps.com",
+            "class": "other"
+          },
+          {
+            "host": "nl.automationparts.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGuE-057xiCzaKfcBeVecxAv3h6sM4tnZanpxv96u97_eB9quVwu9nIgcjpoQjHar0w474FJvYjYQGjWpA0l3cNSC6AqY6uAzKQJO3UALH-BKyWluiNra0zzpPzwM7f--lr-c4mR4DvTiqAWHD61HgrIuHB04fd1QxiusQquy7PLZAfhDGXv_ueS-5KlziJffdWCtXAuNAayGeE475AJIh4Cl0PNRcmd9BPKcY=",
+            "title": "automationparts.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 4
+        },
+        "primary": "other",
+        "total_sources": 4
+      },
+      "category": "CORRECT",
+      "rationale": "The agent correctly identified A9F74216 as a valid Schneider Electric Acti9 iC60N miniature circuit breaker and accurately provided the single-unit price range (~\u20ac16-\u20ac20). It also correctly explained that live factory backlog lead times and 300-unit bulk pricing tiers are not publicly listed by distributors without a B2B login or direct RFQ, making this an accurate and highly specific procurement answer."
+    },
+    {
+      "query": "How does the Schneider TeSys island motor control system directly compare against the Siemens SIMOCODE pro series in terms of Profinet integration and object-oriented programming overhead?",
+      "query_category": "sourced",
+      "agent": {
+        "text": "When comparing Schneider's TeSys island and Siemens' SIMOCODE pro for motor control:\n\n**Profinet Integration**\n*   **Siemens SIMOCODE pro V PN** (e.g., SKU **3UF7011-1AB00-0** for 24VDC or **3UF7011-1AU00-0** for 110-240V) provides native, seamless integration into TIA Portal. It utilizes Hardware Support Packages (HSP) to eliminate the need for third-party configuration files, granting deep, native system diagnostics.\n*   **Schneider TeSys island** connects to PROFINET networks via a dedicated bus coupler (SKU: **TPRBCPFN**). Integration into automation networks requires importing GSDML files and utilizing specific function blocks or AML (AutomationML) imports.\n\n**Object-Oriented Programming (OOP) Overhead**\n*   **Schneider TeSys island** centers on an OOP approach using \"TeSys avatars\"\u2014digital twins representing functional loads. This drastically reduces initial programming overhead by abstracting complex motor logic; the avatar automatically handles the underlying parameters and control behaviors.\n*   **Siemens SIMOCODE pro** relies on traditional, parameter-based function blocks. While heavily optimized and natively integrated within the Siemens TIA ecosystem, it lacks the abstracted \"avatar\" concept. This generally results in more granular manual configuration and slightly higher initial programming overhead when building logic from scratch.",
+        "sources": [
+          {
+            "title": "siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGx_E5vgWQcW0DH5EZ8B4j5I8UuTVmKhlWqTpnCOeAMIvhKsQfFKWmyKW8HUMoxUpaby8rspe1wvAaLDIsCnAcuaCaq8Ypzm-FPaCMrgLr1Uy8xIvEqfnVZcy1_MAUSXKO_aF-6xjMARwHpPymN4rZEsk4Kq3c4hUyioCeIS3db3f4wP0m-9VJ-BgAl_4HEhBbMCXNMS9oYjkI1vg7_S5D6nfqmkEJw57iStb5AGkUJoFvJ8pLqrDJ614-4nrRL3-zUzIAhzKUXzG9R"
+          },
+          {
+            "title": "graybar.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFA5xGxdOh1lWeoPSh3ftXgK4jEI9tmXJpasB3VzRn4I9TXIjxRR4cmC5QqhBnzX2oGQcFAqvXzgk0HRl0mNle_5Bo3naGNF59_OddHs4HSP5eiwORMNZfeLzKACR2ogAwk8xpetEBhan2PEmMRiXGAuhw0rcC9CLDVmqeOJSJ7"
+          },
+          {
+            "title": "se.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHYlTz7wPMSJE6c-mN-KglKXnR8BL2HXNrwP4riiHd-Jin8aVubo5UuKZL0LpA2PCRyLYNInGjjT-SZd3dIkbQ1VRBy28l-Nb8eh5DnbuRjvGGg2wug50UrxVYvtW6ILYmuHAgCfCjzjzMUE2MqCrNGrF_ANl7EjxpbSEWusXc6CnfDN6ujUq4ZISSNpPLjxxwK5_E="
+          },
+          {
+            "title": "scribd.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEW97VEU9gvtUgpiieJmSAWReneYZHOAX6e7vPF4J3qdYJ_DCvBy6yD4bgy04MjFk9qL3bNGow6t4l6zeAWcrJqLZ7ST6BCpLSkgtr0C0KHndCMP5wLui_1l7rXrSGRvV_I5dcAjN8Fr7GBJeAy0eCgdi6VnfjIbxr662nuqWasoh0="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "support.industry.siemens.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGx_E5vgWQcW0DH5EZ8B4j5I8UuTVmKhlWqTpnCOeAMIvhKsQfFKWmyKW8HUMoxUpaby8rspe1wvAaLDIsCnAcuaCaq8Ypzm-FPaCMrgLr1Uy8xIvEqfnVZcy1_MAUSXKO_aF-6xjMARwHpPymN4rZEsk4Kq3c4hUyioCeIS3db3f4wP0m-9VJ-BgAl_4HEhBbMCXNMS9oYjkI1vg7_S5D6nfqmkEJw57iStb5AGkUJoFvJ8pLqrDJ614-4nrRL3-zUzIAhzKUXzG9R",
+            "title": "siemens.com",
+            "class": "other"
+          },
+          {
+            "host": "www.scribd.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEW97VEU9gvtUgpiieJmSAWReneYZHOAX6e7vPF4J3qdYJ_DCvBy6yD4bgy04MjFk9qL3bNGow6t4l6zeAWcrJqLZ7ST6BCpLSkgtr0C0KHndCMP5wLui_1l7rXrSGRvV_I5dcAjN8Fr7GBJeAy0eCgdi6VnfjIbxr662nuqWasoh0=",
+            "title": "scribd.com",
             "class": "other"
           },
           {
             "host": "www.graybar.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHQnHhvIwjhenbYrDBffk58SF0eOY8Hsb4ssBz2oVZVnLpoAs3tL_z9EPiUnqD_8DGRbIIycxeD7JBHH-pYIXnYspa74AFpmNS-A6ZzlI8SBxtDP4gfHfmLEFn1f0q6Vrf7FncfJN1bGn-H4UReVp9WcvfpfQcuavOrSrW4_KANV9MksFZsiwXEAicbcFIZ9ngC1bBbMLn3yYmkAstkH-QvijdlII1RycZg-6koZwIYYcA4RBM_",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFA5xGxdOh1lWeoPSh3ftXgK4jEI9tmXJpasB3VzRn4I9TXIjxRR4cmC5QqhBnzX2oGQcFAqvXzgk0HRl0mNle_5Bo3naGNF59_OddHs4HSP5eiwORMNZfeLzKACR2ogAwk8xpetEBhan2PEmMRiXGAuhw0rcC9CLDVmqeOJSJ7",
             "title": "graybar.com",
             "class": "other"
           },
           {
-            "host": "superbreakers.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHmFrxXpyuD9mrSTF4J_28WPYQBREZdew7inlQKCRJRUwJurtUCS5Cxo7o_bt8pAOhzujRv-KtzJUiD51_62duEBn6uuzjqzVfR0yQlA8hW6alOAI8w0xtneG0wSdKJ_a5qPyd8YHYSOAz1oYq_cbab75IQ5MmPB-s=",
-            "title": "superbreakers.com",
-            "class": "other"
-          },
-          {
-            "host": "kentstore.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFBHra4AXfePQME84LUpR9eZzl0ttwxw5BB8bkztvBXynTw522dfep_weO6y6imrDF3dpCkuqRrbCDOe5L0KIV0Tr4B9mRPSLm_n4EKqUAC4x9jvToapiNpgQ==",
-            "title": "kentstore.com",
-            "class": "other"
-          },
-          {
             "host": "vertexaisearch.cloud.google.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEyadLTgFNvJmVZwGXppLR63bm-2pe5dkJrgmpTKj9ysU4QU13InvyuMsegI_TmyFqx1OoYsVYleUSe6MdB_6W8TdwRQdbThXjrYR_8tC0RuOd6TdAypTQuUDHxPZOfhxhSaX02gUrE4CW3ufzJQJ2GN_c_q48zYFAWUIhODkTcLbgvKHJ5TxSljg-5kllcbwXpnpiIxETVIGhHUgBuDPCaSa0Z",
-            "title": "se.com",
-            "class": "other"
-          },
-          {
-            "host": "vertexaisearch.cloud.google.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGK42gpsx-Wub42qsXSqVoyUiYyoW-GRSpFQC2ySfNTSEkcLqU8Ems_R7mhT2PjsQ9Lg0ZvfNDSxuVS_Pd2FAjXCXLKgayHbGfB2PEzo_9b6fwKUyns2ZUziywhPvfuIDcM5iTFOmXzxi83V9tOonytLzt5udX_wA7nSi4lKtWgMHq-nk6PkEwzvuVsJzuixFZ1vVCc_WX_yb6c5EW_xTm5nqcTspQx8zuz8Dq0StkzPUyvy17Mwy4vHTPMQSXNexF2YLaXEafjhmZIAVKmxQ==",
-            "title": "se.com",
-            "class": "other"
-          },
-          {
-            "host": "vertexaisearch.cloud.google.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEA9EID-BegRTisR9Civ6_5KDZx_kR5AEIBNQRzc8mzpteV4hppyfRILWFgxio19lbPbOBXQeTqw2__Q_QTasyTyRc70MnNXKt2Kjd7TsmMzkDqsgQl6T9RdSJ_j7TH4hoE5sOerEQo7J3ZIhaO76XOUNE576KVSpK6DVLVj1RnpOELlyQKZe41GU5Vlbfp5ah61Bo=",
-            "title": "se.com",
-            "class": "other"
-          },
-          {
-            "host": "vertexaisearch.cloud.google.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQExxaZr5e7PmpgHUAcmqz_y1gtkimc_GQmZ1nwotLHg7XnWBeQmSy3UF6jqUuuScX1YtmMYdHk9WQ4dEPrH7lRXteGC0XFHoRuIEBJdY48ggx4Du0VFNLWqO74aaEbX8pqrnQkwx94ZapgeJ_xhsLtAtAcX0zKKKt0EyqYeuYYbcdnIleRDjxMEe2dyIswef9FcO_kt0VXI-yqrpCM=",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHYlTz7wPMSJE6c-mN-KglKXnR8BL2HXNrwP4riiHd-Jin8aVubo5UuKZL0LpA2PCRyLYNInGjjT-SZd3dIkbQ1VRBy28l-Nb8eh5DnbuRjvGGg2wug50UrxVYvtW6ILYmuHAgCfCjzjzMUE2MqCrNGrF_ANl7EjxpbSEWusXc6CnfDN6ujUq4ZISSNpPLjxxwK5_E=",
             "title": "se.com",
             "class": "other"
           }
@@ -181,214 +669,25 @@
           "manufacturer": 0,
           "distributor": 0,
           "marketplace": 0,
-          "other": 8
+          "other": 4
         },
         "primary": "other",
-        "total_sources": 8
+        "total_sources": 4
       },
       "category": "CORRECT",
-      "rationale": "Google Search verifies that all four provided SKUs (A9F74220, LC1D09M7, SMT1500C, QO120) are real Schneider Electric / APC / Square D parts, and their specifications exactly match the agent's descriptions. The agent's statement that engineered medium voltage equipment typically lacks a single off-the-shelf orderable SKU is also practically accurate."
-    },
-    {
-      "query": "What is the exact maximum ambient air temperature for operation without derating for an se.com Altivar 320 variable speed drive?",
-      "agent": {
-        "text": "I cannot answer with a specific SKU, as your question asks for a performance specification rather than an orderable part number.\n\nBased on Schneider Electric's official catalog and documentation, the exact maximum ambient air temperature for operation without derating for an Altivar 320 (ATV320) variable speed drive is **50 °C (122 °F)**. \n\nPlease note this standard specification applies provided the switching frequency is set to 4 kHz or less. The drive can operate in ambient temperatures between 50 °C and 60 °C (140 °F), but this requires applying a current derating factor.",
-        "sources": [
-          {
-            "title": "se.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEtXuTj5kw-ZibkvFl28nN336clTjkOhC08xjdALddGbAcAE6F_mYIiyiTa5Fzi6NITyzkhll8lEiZWspodliWY56r8-kjVriKxi6HH7eRbZBfEtE-l7JuRh6olJTJ5yzrUFZVkjE7qhNU6r1glKWLM7S0bLAl1KlGY9lKH"
-          },
-          {
-            "title": "se.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG1lHZ-dIlJw8gFADIDBsfDF47OUYI5AY5Imxj1xYcbnwaqPUccbaaGpgGL6Ags4BUFzrcZCfAwMUcWdRqsoRygXZxZIMv4krZcjLviy1yf1J9wcQ0BR53JKskYGo_Zx-qD"
-          },
-          {
-            "title": "rs-online.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFaG_JV6Kd1vJH4YAY6BqNhRZsJ1D8FVcAF8hCF0kKSPQPXzA7Ar2b6Ocxf1ay2iHXSm_UpyeZS0PzUruVuW-tE_W2r6wxif8wI6A6Gh1dHlOBdCgWWhXIOKM4_giSBkhxHil0PY5ShoMja5Ww55w=="
-          }
-        ],
-        "error": null
-      },
-      "attribution": {
-        "domains": [
-          {
-            "host": "iportal.se.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEtXuTj5kw-ZibkvFl28nN336clTjkOhC08xjdALddGbAcAE6F_mYIiyiTa5Fzi6NITyzkhll8lEiZWspodliWY56r8-kjVriKxi6HH7eRbZBfEtE-l7JuRh6olJTJ5yzrUFZVkjE7qhNU6r1glKWLM7S0bLAl1KlGY9lKH",
-            "title": "se.com",
-            "class": "manufacturer"
-          },
-          {
-            "host": "docs.rs-online.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFaG_JV6Kd1vJH4YAY6BqNhRZsJ1D8FVcAF8hCF0kKSPQPXzA7Ar2b6Ocxf1ay2iHXSm_UpyeZS0PzUruVuW-tE_W2r6wxif8wI6A6Gh1dHlOBdCgWWhXIOKM4_giSBkhxHil0PY5ShoMja5Ww55w==",
-            "title": "rs-online.com",
-            "class": "distributor"
-          },
-          {
-            "host": "www.se.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG1lHZ-dIlJw8gFADIDBsfDF47OUYI5AY5Imxj1xYcbnwaqPUccbaaGpgGL6Ags4BUFzrcZCfAwMUcWdRqsoRygXZxZIMv4krZcjLviy1yf1J9wcQ0BR53JKskYGo_Zx-qD",
-            "title": "se.com",
-            "class": "manufacturer"
-          }
-        ],
-        "counts": {
-          "manufacturer": 2,
-          "distributor": 1,
-          "marketplace": 0,
-          "other": 0
-        },
-        "primary": "manufacturer",
-        "total_sources": 3
-      },
-      "category": "CORRECT",
-      "rationale": "Verified via Schneider Electric datasheets (e.g., ATV320U75N4B) and documentation that the maximum ambient air temperature for operation without derating is exactly 50 °C (122 °F) at a switching frequency of 4 kHz, and up to 60 °C requires a derating factor."
-    },
-    {
-      "query": "Does se.com sell double-acting pneumatic cylinders for industrial automation? If yes, give me a part number; if no, say so plainly.",
-      "agent": {
-        "text": "No, se.com (Schneider Electric) does not sell pneumatic cylinders. \n\nWhile Schneider Electric is a major provider of industrial automation systems, they specialize in electrical components, motor control, and logic (such as PLCs, HMIs, and sensors). They provide the electronic controls that command pneumatic systems, but they do not manufacture or sell the physical pneumatic actuators, single-acting cylinders, or double-acting cylinders themselves.\n\nTo procure double-acting pneumatic cylinders for industrial automation, you will need to source them from manufacturers that specialize in fluid power and pneumatics, such as:\n*   **Festo**\n*   **SMC**\n*   **Emerson (Aventics)**\n*   **Parker Hannifin**\n\nBecause Schneider Electric does not offer these products in their catalog, there is no orderable part number available from se.com.",
-        "sources": [
-          {
-            "title": "smcusa.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQESvy4PF1nbo4O9d83N_wqXU8Z2daZ34h81MQnxM_-CqzhyGBJJeVpUpIm_d1HMzWuEXT1UsDrMOm_7191N0YkdRPshj2TSsfGxEj9KUgrvXFQuFk8BIMo-Qeq8D61yNUtD-J-2goLIeAxzsTb7-q-WlD5jvrDSnCQyNcg="
-          },
-          {
-            "title": "festo.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGeR7rpvbDvgav4iTPr2_h3kW5_DUlESUJdzwhKTy2TEIBipTiADpQXpEr2nS_XSjXAmZ07bWXyrFa0A0aFBphPpcRoLga3oxk0UggYLVtNUuo7ACqEEKZ6Dd_vxWE2CHL2uPtzuvxnI9jtjOngaCM_DpHfMQIAqbGCmypgMzRGf0LTxlc2kXWoqrUIAlAFe37jsST6"
-          },
-          {
-            "title": "emerson.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHHT3wIbipuDc4vDEVXkq3VSO7yhg5BVzoYQKTDKlz0J_K_xvPm7sGCQDfVvqCAVeZ7UGxkBtGl-p_2YTh5yscWuKLkG5IfAesbAdGkOzMz34fX4fhig7gTSSpYNK1E8qQYq05RIvPFkeJI-NTkxsf-y14sx-Pd1kR74A3q"
-          }
-        ],
-        "error": null
-      },
-      "attribution": {
-        "domains": [
-          {
-            "host": "www.festo.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGeR7rpvbDvgav4iTPr2_h3kW5_DUlESUJdzwhKTy2TEIBipTiADpQXpEr2nS_XSjXAmZ07bWXyrFa0A0aFBphPpcRoLga3oxk0UggYLVtNUuo7ACqEEKZ6Dd_vxWE2CHL2uPtzuvxnI9jtjOngaCM_DpHfMQIAqbGCmypgMzRGf0LTxlc2kXWoqrUIAlAFe37jsST6",
-            "title": "festo.com",
-            "class": "other"
-          },
-          {
-            "host": "discreteautomation.emerson.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHHT3wIbipuDc4vDEVXkq3VSO7yhg5BVzoYQKTDKlz0J_K_xvPm7sGCQDfVvqCAVeZ7UGxkBtGl-p_2YTh5yscWuKLkG5IfAesbAdGkOzMz34fX4fhig7gTSSpYNK1E8qQYq05RIvPFkeJI-NTkxsf-y14sx-Pd1kR74A3q",
-            "title": "emerson.com",
-            "class": "other"
-          },
-          {
-            "host": "www.smcusa.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQESvy4PF1nbo4O9d83N_wqXU8Z2daZ34h81MQnxM_-CqzhyGBJJeVpUpIm_d1HMzWuEXT1UsDrMOm_7191N0YkdRPshj2TSsfGxEj9KUgrvXFQuFk8BIMo-Qeq8D61yNUtD-J-2goLIeAxzsTb7-q-WlD5jvrDSnCQyNcg=",
-            "title": "smcusa.com",
-            "class": "other"
-          }
-        ],
-        "counts": {
-          "manufacturer": 0,
-          "distributor": 0,
-          "marketplace": 0,
-          "other": 3
-        },
-        "primary": "other",
-        "total_sources": 3
-      },
-      "category": "CORRECT",
-      "rationale": "I verified through Google Search that Schneider Electric (se.com) focuses on electrical and automation controls and does not manufacture or sell pneumatic cylinders. The agent correctly answered 'no' and did not fabricate a part number, accurately reflecting the boundaries of the manufacturer's catalog."
-    },
-    {
-      "query": "I'm comparing se.com's Modicon M580 PLC vs. Allen-Bradley's ControlLogix. What are the key differentiators and which one is recommended for a large-scale discrete manufacturing plant?",
-      "agent": {
-        "text": "When comparing Schneider Electric's Modicon M580 and Allen-Bradley's ControlLogix, the core differentiators are their target architectures:\n\n* **Modicon M580:** Marketed as an \"ePAC\" built entirely on a native Ethernet backplane. It excels in process-heavy industries, offering out-of-the-box Achilles Level 2 cybersecurity and deep integration for energy optimization.\n* **ControlLogix:** The standard in North America. It is highly optimized for deterministic, high-speed motion control over EtherNet/IP and features a massive ecosystem of third-party integration partners. \n\n**Recommendation:**\nFor a **large-scale discrete manufacturing plant**, the **Allen-Bradley ControlLogix 5580** series is widely recommended. Discrete manufacturing relies on high-speed precision, multi-axis motion synchronization, and rapid robotic integration—areas where ControlLogix dominates.\n\n**Part Numbers:**\nWhile a functional system requires a chassis, power supply, and specific I/O modules, a representative flagship processor SKU to anchor a large-scale discrete BOM is the **1756-L84E** (Allen-Bradley ControlLogix 5580 Controller, 20MB memory, embedded gigabit EtherNet/IP port). \n\nIf you choose the Schneider ecosystem instead, a comparable processor SKU is the **BMEP584040** (Modicon M580 Standalone Processor, 16MB memory).",
-        "sources": [
-          {
-            "title": "pteinc.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE03JsXTyGyqCwDNabwizTaeizkWnpak3kJr0PgEGjiXWvE34feK-8pGEFLPxaODOsDUwdKBMef-vIqyWqCLhpKzbOQA0Wj_z2iPPN_FUMzVgFqfoWpigM1cWC3MGVX4EL9bQ60TW3XPEOXwfmk3AtPhr_ODuSpzw=="
-          },
-          {
-            "title": "ifactoryapp.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFsppK8L27Zrg8piDOL6ngm-8GUwDpEWEr-422-g6KljjhxiV9IJyBxKMYu4fIUyU3iNp8anR2D-fWYnWv3NlosHjWQAg3g9bKnzVF2QFDP2_1GHNbeLhYHYG4c8XAsLyhC5_YBjmGmomKt6LX_Sh9Cp0B3aVTzelyu77LXECcFBi9Ct58eNjmp16xFuxS2TOoUGXQ="
-          },
-          {
-            "title": "dosupply.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEv5hsPoNC-XMxi3On1G5GY5-bkJKmWM5GLYQtIO3-dil7IhPmDqW4FvWqkMIMJUzMdGw2TGO7XX1O_RXobd8nbFWfnCCLE5Eff_BDwPZOACcr_PGNTHr0-sm7tFkeINNKKAz5sUjO6GKUp3-q_mTAK5nOAxGKVp8zJTSibkj--3Bu44h-VqUhBMUhFlyA6RYGZkLseL7S-BXZACrrb7lEijJLnhLlh"
-          },
-          {
-            "title": "dosupply.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGYyamYtisEIn17c4jc0p5bjsslWrUxwFP7bEgczQY--26MOZWmwSNbWTB0IIHHgG1rF0106RihUGdp1mZ5eXUmk4lmBK5Gl0Fb1g4t4n1y944CEkdSbSes_zIP-DtzaTAehh19mRgNLDwfnxOx_JNdpYUdmS1DK8qcHDV1p3MLshcN7Ga2KznZPYEJsIu69Mo5AYfUxqpPVYbypEM="
-          },
-          {
-            "title": "smcelectric.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBHCMRvm5YnnzQNxryeBQpADGBWyDE4X474wJwLonhDEY7L_zZpapVCY3cyhk5cwt-mPwNI6XBn48Gs99iXZw5UivSsmSBTijRdtb0QNdLlNE5U0fufWe8YgdAwyrXpIFEAqPMY7IyXvENEymheVTWu7V4zisHmRs="
-          },
-          {
-            "title": "se.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGd2lvdtf1C-e7c1vF1mWMXkm8F_A2LRTQpYx-oapmXdsbEb4EDdwGHTDTkYs1ugQdTPgckfIpY38W2lsn-k034i8b9lxPzWz1bpidIKChkGwgCfSccYKDEo-pFxBouI3d0FqUR_HISyXZeuvU1fSvMkozjySl2GesqQ_Jhi2NjiltE9UNCMYuKS0CtmagVVPQgcUrLHmV_3qJ0LNbxE0W-ySEGfLP5xZIb287n9W2MSqMaUaJj8kXKgJkCp5opGrLBopBRR9sDh2O3ZLo="
-          }
-        ],
-        "error": null
-      },
-      "attribution": {
-        "domains": [
-          {
-            "host": "www.dosupply.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEv5hsPoNC-XMxi3On1G5GY5-bkJKmWM5GLYQtIO3-dil7IhPmDqW4FvWqkMIMJUzMdGw2TGO7XX1O_RXobd8nbFWfnCCLE5Eff_BDwPZOACcr_PGNTHr0-sm7tFkeINNKKAz5sUjO6GKUp3-q_mTAK5nOAxGKVp8zJTSibkj--3Bu44h-VqUhBMUhFlyA6RYGZkLseL7S-BXZACrrb7lEijJLnhLlh",
-            "title": "dosupply.com",
-            "class": "other"
-          },
-          {
-            "host": "www.dosupply.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGYyamYtisEIn17c4jc0p5bjsslWrUxwFP7bEgczQY--26MOZWmwSNbWTB0IIHHgG1rF0106RihUGdp1mZ5eXUmk4lmBK5Gl0Fb1g4t4n1y944CEkdSbSes_zIP-DtzaTAehh19mRgNLDwfnxOx_JNdpYUdmS1DK8qcHDV1p3MLshcN7Ga2KznZPYEJsIu69Mo5AYfUxqpPVYbypEM=",
-            "title": "dosupply.com",
-            "class": "other"
-          },
-          {
-            "host": "www.smcelectric.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBHCMRvm5YnnzQNxryeBQpADGBWyDE4X474wJwLonhDEY7L_zZpapVCY3cyhk5cwt-mPwNI6XBn48Gs99iXZw5UivSsmSBTijRdtb0QNdLlNE5U0fufWe8YgdAwyrXpIFEAqPMY7IyXvENEymheVTWu7V4zisHmRs=",
-            "title": "smcelectric.com",
-            "class": "other"
-          },
-          {
-            "host": "ifactoryapp.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFsppK8L27Zrg8piDOL6ngm-8GUwDpEWEr-422-g6KljjhxiV9IJyBxKMYu4fIUyU3iNp8anR2D-fWYnWv3NlosHjWQAg3g9bKnzVF2QFDP2_1GHNbeLhYHYG4c8XAsLyhC5_YBjmGmomKt6LX_Sh9Cp0B3aVTzelyu77LXECcFBi9Ct58eNjmp16xFuxS2TOoUGXQ=",
-            "title": "ifactoryapp.com",
-            "class": "other"
-          },
-          {
-            "host": "www.pteinc.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE03JsXTyGyqCwDNabwizTaeizkWnpak3kJr0PgEGjiXWvE34feK-8pGEFLPxaODOsDUwdKBMef-vIqyWqCLhpKzbOQA0Wj_z2iPPN_FUMzVgFqfoWpigM1cWC3MGVX4EL9bQ60TW3XPEOXwfmk3AtPhr_ODuSpzw==",
-            "title": "pteinc.com",
-            "class": "other"
-          },
-          {
-            "host": "vertexaisearch.cloud.google.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGd2lvdtf1C-e7c1vF1mWMXkm8F_A2LRTQpYx-oapmXdsbEb4EDdwGHTDTkYs1ugQdTPgckfIpY38W2lsn-k034i8b9lxPzWz1bpidIKChkGwgCfSccYKDEo-pFxBouI3d0FqUR_HISyXZeuvU1fSvMkozjySl2GesqQ_Jhi2NjiltE9UNCMYuKS0CtmagVVPQgcUrLHmV_3qJ0LNbxE0W-ySEGfLP5xZIb287n9W2MSqMaUaJj8kXKgJkCp5opGrLBopBRR9sDh2O3ZLo=",
-            "title": "se.com",
-            "class": "other"
-          }
-        ],
-        "counts": {
-          "manufacturer": 0,
-          "distributor": 0,
-          "marketplace": 0,
-          "other": 6
-        },
-        "primary": "other",
-        "total_sources": 6
-      },
-      "category": "CORRECT",
-      "rationale": "Verified via search that the Modicon M580 is marketed as an ePAC with a native Ethernet backplane and Achilles Level 2 cybersecurity. The provided part numbers are both accurate: 1756-L84E is a real Allen-Bradley ControlLogix 5580 controller with 20MB memory and an embedded gigabit Ethernet port, and BMEP584040 is a valid Schneider Electric Modicon M580 standalone processor with 16MB memory."
+      "rationale": "Verified via Siemens and Schneider Electric documentation that the provided SKUs (3UF7011-1AB00-0 for 24VDC and 3UF7011-1AU00-0 for 110-240V) are valid SIMOCODE pro V PN base units. Furthermore, verified that TPRBCPFN is the genuine PROFINET bus coupler for Schneider's TeSys island, which distinctly utilizes the 'TeSys avatar' object-oriented concept for motor control abstraction."
     }
   ],
   "log": [
-    "[  0.0s] Stage 0: validated se.com (brand=se)",
-    "[  0.0s] Stage 1: generating queries (grounded against se.com)",
-    "[ 25.0s]   Generated 5 queries",
-    "[ 25.0s] Stage 2: running 5 grounded queries against Gemini Pro",
-    "[ 71.2s] Stage 3: source attribution complete",
-    "[ 71.2s] Stage 4: categorizing answers",
-    "[ 89.0s] Stage 5: visibility=100 (5/5), source_authority=20 (1/5 manufacturer-sourced) in 89.0s"
+    "[  0.0s] Stage 0: validated schneider-electric.com (brand=schneider-electric)",
+    "[  0.0s] Stage 1: generating queries (grounded against schneider-electric.com)",
+    "[ 54.9s]   Generated 10 queries (4 found / 4 hallucinated / 2 sourced)",
+    "[ 54.9s] Stage 2: running 10 grounded queries against Gemini Pro",
+    "[137.4s] Stage 3: source attribution complete",
+    "[137.4s] Stage 4: categorizing answers",
+    "[215.6s] Stage 5: found=100 honest=100 sourced=10 trust=10 (correct=10/10, mfg_sourced=1/10) in 215.6s"
   ],
-  "elapsed_seconds": 89.0,
+  "elapsed_seconds": 215.6,
   "slug": "schneider-electric",
   "display_name": "Schneider Electric"
 }

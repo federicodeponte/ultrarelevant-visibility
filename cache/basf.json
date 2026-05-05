@@ -2,59 +2,44 @@
   "input": "https://basf.com",
   "host": "basf.com",
   "brand": "basf",
-  "visibility_score": 100,
-  "source_authority_score": 20,
-  "total_queries": 5,
-  "correct_queries": 5,
-  "manufacturer_correct": 1,
+  "found_score": 100,
+  "honest_score": 90,
+  "sourced_score": 44,
+  "trust_score": 40,
+  "visibility_score": 90,
+  "source_authority_score": 44,
+  "total_queries": 10,
+  "correct_queries": 9,
+  "manufacturer_correct": 4,
   "breakdown": {
-    "CORRECT": 5,
-    "HALLUCINATION": 0,
-    "OUT_OF_CATALOG_HALLUCINATION": 0,
+    "CORRECT": 9,
+    "HALLUCINATION": 1,
+    "OUT_OF_CATALOG": 0,
     "REFUSED": 0,
     "WRONG_SPEC": 0,
     "ERROR": 0
   },
   "source_breakdown": {
-    "manufacturer": 1,
+    "manufacturer": 4,
     "distributor": 0,
     "marketplace": 0,
-    "other": 4,
+    "other": 6,
     "none": 0
   },
   "rows": [
     {
-      "query": "I need a 30% glass fiber reinforced PA66 injection molding resin with enhanced resistance to hydrolysis for automotive cooling circuits from basf.com. Give me the exact Ultramid part number.",
+      "query": "Can you confirm if the LIMCO Supreme PLUS basecoat system is still actively manufactured and supported by BASF for the North American collision repair market?",
+      "query_category": "found",
       "agent": {
-        "text": "The exact BASF part numbers that meet your specifications for a 30% glass fiber-reinforced PA66 with enhanced hydrolysis resistance for automotive cooling circuits are:\n\n* **Ultramid® A3HG6 HR** (Commonly ordered in black as SKU: **A3HG6 HR BK23591**)\n* **Ultramid® A3WG6 HRX** (Commonly ordered in black as SKU: **A3WG6 HRX BK23591**)\n\n**Breakdown of the nomenclature:**\n* **A:** Polyamide 66 (PA66) base resin\n* **3:** Medium viscosity (Standard injection molding grade) \n* **H / W:** Heat stabilized\n* **G6:** 30% glass fiber reinforced\n* **HR / HRX:** Hydrolysis Resistant / Enhanced Hydrolysis Resistance\n\nBoth grades are explicitly designed by BASF for high-stress applications in vehicle cooling systems, such as radiator end caps, thermostats, and water containers. The **HRX** variant is often preferred for newer platforms as it offers the highest tier of optimized long-term performance against heat aging and aggressive water/glycol mixtures.",
+        "text": "Yes, the **LIMCO Supreme PLUS** basecoat system is still actively manufactured and supported by BASF for the North American collision repair market. It is positioned as BASF\u2019s value-tier/economical refinish line, engineered for simplicity, fast drying times, and reliable color matching for production shops. \n\nBecause LIMCO Supreme PLUS is a complete intermix color system, there is **no single orderable part number or SKU** for the \"system\" itself. Instead, procurement involves purchasing individual mixing bank components, including bases, concentrated mica/pearl pigments (\"Illumibases\"), mixing clears, and reducers. \n\nThe system is highly versatile and allows painters to use the same core toners to create several compliant finishes depending on your local VOC regulations. Orderable configurations include:\n* Supreme PLUS Basecoat (U.S. National Rule + Low VOC)\n* Supreme PLUS Acrylic 1K & 2K Single Stage\n* Supreme PLUS Urethane Single Stage\n* Supreme PLUS 2K Direct-to-Metal\n\nTo purchase, you must contact an authorized BASF Refinish or PBE (Paint, Body, & Equipment) distributor to order the specific toners, hardeners, and clears tailored to your collision center's volume and compliance needs.",
         "sources": [
           {
-            "title": "lookpolymers.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQENElnoGxPhYUtKtK2tS6n5XvNMHLNNBmvLnkcvwIUAhGoOnQsvnQEK4DSmj8qfVkd1hb4Ue3VcRXHCAldgRckAozJeIkuVbV8EvcD3vm47pekVpHU8JWhBjhNllxSnUZFTxcQggVHMOHc3fSJoo-FbXwoOo7woayUezuztnBY1N-f35gEmHFdOUEUcVOWt6Cq6b1cQnHiajCCxAdU="
+            "title": "basf.us",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZOuZ7wgJP5k-RM-yGfkeoqWnfPbGs6FgKf3Pte1x1zCbxlUkeI_iJdCsxjtNW8G0Aq305DMw9BV_XIIEX5a4FojygWjisSUItsvaIwczwp711a8ZyjLsTU0slZ-7qeog="
           },
           {
-            "title": "basf.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEzT5a4Qr_YEUeE17zHjtC1h8N4kvt2oSUshWzst5xAuXjb4C4Iv4Ew30-CdxPeaCBHR-U9zDiGp4anCVix6iz2lIoIbVGwioHyRzPB0k4ftEw9AbM7MGpwVm6IyqkMdo5M56hn2pxwF-RaP19AKr_NNCv-pu71mZ1GhwmHh3HYvPgRexK_eBvB2e6AIJGuuPbLKiwlTZXddF81-0fuwIpgex9nn2xmYlldnEtBxw9BoFlQYRjQttpKsjdENPdY7A=="
-          },
-          {
-            "title": "specialchem.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHsNmJxcgrxLCfoKUlluP1EcSuFrNLSAb8Wobevk3NSdMSR6AVjsXP2rmNwgCQVShQSSEUBPDz1OxD6AguuT6q_H5jwAarEcqYrjmKEheNuDxSK6LHt1sWAhF945eYgeBP_h2i2emtHrAedK_qkqGhqkJ2Kd3_j"
-          },
-          {
-            "title": "scribd.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGgBRhKmnQaGMD5hYXuQsDabBfPC1DkxVdjhIVIc7Ri48jv8tN2_maGXOVdHcSAdXVmjRVEM8fu7aO04YA074PHcMXIk6N7cCSi-JRz0_pZthspp21k6Xo1jisiGnuOR3d0OgPp6AZdLVOtc85kdklakKDkwN441_kNojST4xDiTynFRqn6ATQW1wRnKdHLu8ztOAFPn_UzuI1IYW1t1C8="
-          },
-          {
-            "title": "ajieng.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG9TYDmwwrv95aJcXl16HdNnXRQKxi0_599jJJYO852fvHzfT3akEu7iTISo2ny5vJFuYn2rcx1O_VHF43Qeq6PVaRuZmFxahcVuG2MZVBNqFEwHC5U_SH1CZac70fex_cmy0PmBmB3kX9pyQ=="
-          },
-          {
-            "title": "ulprospector.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFMBe8WbiwO-QhTr_XSsXNyOwAEGS-cUTUdv1fcaauWxfuVrbEZhDvTGBtFj2khSvaOPYMWAvvPxncolncI3yOTXLnCgvl8YF_KT0IO7Gp_BytaK7Vm8R0PiJJbPIg2HD-sMviUUsG0RhM_JpPwWIQC3PMIo2os4Mrv70Gev_oQzZHzHheK6r4I"
-          },
-          {
-            "title": "comitalplastspa.it",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFP4Yb8qu2ImWmXo7Be93pWPnIhKH2hFgP82gFPYdqJvGMLS-5MNdLa5rE4JMcRPI5dlSqnJzOhgtnIWCHCrIboINbIHMvge9866p-aFi-mUgzV7Bwed1d6nJADFhKm7SmVP0aXrNIAqYLWj_sy5rxU6pUU5CU-HDGC8qquHnEzkQa4wAHDJqxDwQcDRQ2XAq3TUAhB91D6Jeu7ktXIiwbGNSKT-4VbFyJDWw4l"
+            "title": "pbedistributors.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFqVM3_WBUg2RJVKkflXv-fBTEFZyJbrijfDAgY4mTDoTeCIEtQJSAExL294D-OApKnOqiB-CLsze5636dAowJAo2oMiGwclPZGAuKxDkmuKtZfHxyCGK-rczFP45Eoz1DYJH7nCr-WZe4u8vuCZmRJ"
           }
         ],
         "error": null
@@ -62,45 +47,15 @@
       "attribution": {
         "domains": [
           {
-            "host": "www.scribd.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGgBRhKmnQaGMD5hYXuQsDabBfPC1DkxVdjhIVIc7Ri48jv8tN2_maGXOVdHcSAdXVmjRVEM8fu7aO04YA074PHcMXIk6N7cCSi-JRz0_pZthspp21k6Xo1jisiGnuOR3d0OgPp6AZdLVOtc85kdklakKDkwN441_kNojST4xDiTynFRqn6ATQW1wRnKdHLu8ztOAFPn_UzuI1IYW1t1C8=",
-            "title": "scribd.com",
-            "class": "other"
-          },
-          {
-            "host": "www.ulprospector.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFMBe8WbiwO-QhTr_XSsXNyOwAEGS-cUTUdv1fcaauWxfuVrbEZhDvTGBtFj2khSvaOPYMWAvvPxncolncI3yOTXLnCgvl8YF_KT0IO7Gp_BytaK7Vm8R0PiJJbPIg2HD-sMviUUsG0RhM_JpPwWIQC3PMIo2os4Mrv70Gev_oQzZHzHheK6r4I",
-            "title": "ulprospector.com",
-            "class": "other"
-          },
-          {
-            "host": "www.specialchem.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHsNmJxcgrxLCfoKUlluP1EcSuFrNLSAb8Wobevk3NSdMSR6AVjsXP2rmNwgCQVShQSSEUBPDz1OxD6AguuT6q_H5jwAarEcqYrjmKEheNuDxSK6LHt1sWAhF945eYgeBP_h2i2emtHrAedK_qkqGhqkJ2Kd3_j",
-            "title": "specialchem.com",
-            "class": "other"
-          },
-          {
-            "host": "www.comitalplastspa.it",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFP4Yb8qu2ImWmXo7Be93pWPnIhKH2hFgP82gFPYdqJvGMLS-5MNdLa5rE4JMcRPI5dlSqnJzOhgtnIWCHCrIboINbIHMvge9866p-aFi-mUgzV7Bwed1d6nJADFhKm7SmVP0aXrNIAqYLWj_sy5rxU6pUU5CU-HDGC8qquHnEzkQa4wAHDJqxDwQcDRQ2XAq3TUAhB91D6Jeu7ktXIiwbGNSKT-4VbFyJDWw4l",
-            "title": "comitalplastspa.it",
-            "class": "other"
-          },
-          {
-            "host": "download.basf.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEzT5a4Qr_YEUeE17zHjtC1h8N4kvt2oSUshWzst5xAuXjb4C4Iv4Ew30-CdxPeaCBHR-U9zDiGp4anCVix6iz2lIoIbVGwioHyRzPB0k4ftEw9AbM7MGpwVm6IyqkMdo5M56hn2pxwF-RaP19AKr_NNCv-pu71mZ1GhwmHh3HYvPgRexK_eBvB2e6AIJGuuPbLKiwlTZXddF81-0fuwIpgex9nn2xmYlldnEtBxw9BoFlQYRjQttpKsjdENPdY7A==",
-            "title": "basf.com",
+            "host": "refinish.basf.us",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZOuZ7wgJP5k-RM-yGfkeoqWnfPbGs6FgKf3Pte1x1zCbxlUkeI_iJdCsxjtNW8G0Aq305DMw9BV_XIIEX5a4FojygWjisSUItsvaIwczwp711a8ZyjLsTU0slZ-7qeog=",
+            "title": "basf.us",
             "class": "manufacturer"
           },
           {
-            "host": "www.lookpolymers.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQENElnoGxPhYUtKtK2tS6n5XvNMHLNNBmvLnkcvwIUAhGoOnQsvnQEK4DSmj8qfVkd1hb4Ue3VcRXHCAldgRckAozJeIkuVbV8EvcD3vm47pekVpHU8JWhBjhNllxSnUZFTxcQggVHMOHc3fSJoo-FbXwoOo7woayUezuztnBY1N-f35gEmHFdOUEUcVOWt6Cq6b1cQnHiajCCxAdU=",
-            "title": "lookpolymers.com",
-            "class": "other"
-          },
-          {
-            "host": "www.ajieng.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG9TYDmwwrv95aJcXl16HdNnXRQKxi0_599jJJYO852fvHzfT3akEu7iTISo2ny5vJFuYn2rcx1O_VHF43Qeq6PVaRuZmFxahcVuG2MZVBNqFEwHC5U_SH1CZac70fex_cmy0PmBmB3kX9pyQ==",
-            "title": "ajieng.com",
+            "host": "www.pbedistributors.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFqVM3_WBUg2RJVKkflXv-fBTEFZyJbrijfDAgY4mTDoTeCIEtQJSAExL294D-OApKnOqiB-CLsze5636dAowJAo2oMiGwclPZGAuKxDkmuKtZfHxyCGK-rczFP45Eoz1DYJH7nCr-WZe4u8vuCZmRJ",
+            "title": "pbedistributors.com",
             "class": "other"
           }
         ],
@@ -108,127 +63,39 @@
           "manufacturer": 1,
           "distributor": 0,
           "marketplace": 0,
-          "other": 6
-        },
-        "primary": "other",
-        "total_sources": 7
-      },
-      "category": "CORRECT",
-      "rationale": "Google search confirms that BASF manufactures both Ultramid A3HG6 HR BK23591 and A3WG6 HRX BK23591. Datasheets verify that these are 30% glass fiber-reinforced PA66 injection molding grades specifically formulated with enhanced hydrolysis resistance for applications in automotive cooling circuits."
-    },
-    {
-      "query": "What categories of products does basf.com offer? List the main product families with one example each.",
-      "agent": {
-        "text": "BASF organizes its B2B portfolio into six main segments. Because it deals in bulk manufacturing, BASF generally uses Internal Product Numbers (PRDs) and Article Numbers (ARTs) for ordering rather than traditional B2C SKUs. \n\nThe main categories and real catalog examples include:\n\n1. **Chemicals**: Petrochemicals, intermediates, and active pharmaceutical ingredients. \n   * *Example*: Ibuprofen 50 (PRD: 30076166)\n2. **Nutrition & Care**: Ingredients for human and animal nutrition, home care, and personal hygiene.\n   * *Example*: DL-alpha-Tocopherol [Vitamin E] (PRD: 30054571; ART: 55434224 for a 25kg drum)\n3. **Materials**: Performance plastics, polyamides, and block copolymer surfactants.\n   * *Example*: Pluronic® P 104 (PRD: 30085862)\n4. **Industrial Solutions**: Dispersions, resins, and performance chemicals used in manufacturing.\n   * *Example*: Joncryl® 1532 (Acrylic polymer dispersion)\n5. **Surface Technologies**: Automotive OEM coatings, battery materials, and chemical catalysts. \n6. **Agricultural Solutions**: Crop protection (fungicides, herbicides, insecticides) and seed treatments. \n\nIf you are procuring materials, you will typically need to search the **BASF Care 360° Portal** or contact a regional distributor with the specific PRD number, as B2B pricing and minimum order quantities vary by packaging size (e.g., totes, drums, or tankers).",
-        "sources": [
-          {
-            "title": "basf.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHq0di1lOF0wTx4-TENV4fuXWDSYC8aZS333iBoP2YzFTU0fWQAFYyhU1Jl3due7cIit_T5xCM5T4VsTtNyxMk-hJPF-QTH7bkcsRVqcakgoIFYGcionc8at0GqCPRte6GRKv1HAAlpswZl1MJLmq8tV0MSOyUsz2igPRmETzHq_UEOWx3_w3QkKAPSS5WSF-0WlYq-63ACX3YrSttssw65vQga-w_i9ZQpZr6VzAgUib0="
-          },
-          {
-            "title": "basf.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE3uSKdJnz-_tNwkGhCaXJRqDJljFyXPNSvPP40iWOLQ5lwdUKyLoopSJlXSbygEKAB7XlNUcLSCncAmYRK8LdlyYzThHELOHGf4_52EEwrdMysASw0m_cCj7pX6TctFkePgXkch5a8eHAOHTp65jxoCOLzL7PBMaFfGa37pBgEaCEYzC3FsAajt4eAsCcp76bdpsWtXWPgpLutsvHaLByZh30HiLGH-aqs_EJ8PIQhOZyOcyslscuhNm3YXXM9yCYC7M9I3Hd-QXVgE2KGHg=="
-          },
-          {
-            "title": "basf.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUNNA9p3Lp5Vt9PbD7qiuBZfnsfpoB-ZqVCvx67udgRLa2U6Q_TX_JClqBLPO8OB-o1SPBVt-1FtkwONyNZd-RVBZNf9zLwz0kio84V-oxY5jqFOy4QFCDc77Dp9z99dTEWpKDDbvfy6ifo25EYaKzQlxmOf01puGbhSkzivBjV93YEF8ZMb4GiNnhMEt6ZA6N5aw7MbQM1FGQMU_9Al_DXU41oOEgsuv37ADqW9xP-YdCOsV7XOhP4Up1d9dkYv42BbLn7pExD7DJaP9zO0h8LgULC9Cghj4="
-          },
-          {
-            "title": "basf.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFAAFDSi3ZkeY66Ot6dA2GgtADHB9Vg8VUJJ7_3AIVYoN-smpn1tr-Lj3XZHDB3eVquTqGlgrjR7N6jpUW4LEWrACJjkcvCdSyz27Ezxz5jCjZIqnC_RDO5alwjSWAxBltMBRV4mKJ6Cb7G67Uzrt3wtR70K5I="
-          },
-          {
-            "title": "basf.us",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF036xhGwWfYhQuY9ygispS2xX9nU8-CpwsbKiOSdjj2BbfXv9ZlFxX5EahkJJB-LNgeEBd-vSYFapZqb6ZL1fYq7ieGuVZCo2gRicYyVuGk53C0FrkFXlDPJXrFxRkzcVfhg6QIffjyf1RnQTNRHLMGR8M4JXA4eIFUZH9"
-          },
-          {
-            "title": "wikipedia.org",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvIlcTGbSJLbE5q8AvVvESDucmpA_K7eI2EqcUoUoFeDLPovCcCiqYH0cQv_9R1tGlDgo59lm7MKgWJ-PeuuQ_Ye0urO7prgpZ9ccEDJxO6WLx1OaJyVvODOGxcDg="
-          },
-          {
-            "title": "basf.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGAX0M_zWfQk3mpXHrdkiV8vJHMT4PcRiZ7i0pnK5QRrU_SHmWi1SZGYCoOraIwe2OGfx8E__dNC5XvZ9NprV4OErG4bNPtOXen4mPLGfwQfqySsl8H8BSU5Jl69B6x"
-          }
-        ],
-        "error": null
-      },
-      "attribution": {
-        "domains": [
-          {
-            "host": "en.wikipedia.org",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvIlcTGbSJLbE5q8AvVvESDucmpA_K7eI2EqcUoUoFeDLPovCcCiqYH0cQv_9R1tGlDgo59lm7MKgWJ-PeuuQ_Ye0urO7prgpZ9ccEDJxO6WLx1OaJyVvODOGxcDg=",
-            "title": "wikipedia.org",
-            "class": "other"
-          },
-          {
-            "host": "download.basf.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHq0di1lOF0wTx4-TENV4fuXWDSYC8aZS333iBoP2YzFTU0fWQAFYyhU1Jl3due7cIit_T5xCM5T4VsTtNyxMk-hJPF-QTH7bkcsRVqcakgoIFYGcionc8at0GqCPRte6GRKv1HAAlpswZl1MJLmq8tV0MSOyUsz2igPRmETzHq_UEOWx3_w3QkKAPSS5WSF-0WlYq-63ACX3YrSttssw65vQga-w_i9ZQpZr6VzAgUib0=",
-            "title": "basf.com",
-            "class": "manufacturer"
-          },
-          {
-            "host": "download.basf.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUNNA9p3Lp5Vt9PbD7qiuBZfnsfpoB-ZqVCvx67udgRLa2U6Q_TX_JClqBLPO8OB-o1SPBVt-1FtkwONyNZd-RVBZNf9zLwz0kio84V-oxY5jqFOy4QFCDc77Dp9z99dTEWpKDDbvfy6ifo25EYaKzQlxmOf01puGbhSkzivBjV93YEF8ZMb4GiNnhMEt6ZA6N5aw7MbQM1FGQMU_9Al_DXU41oOEgsuv37ADqW9xP-YdCOsV7XOhP4Up1d9dkYv42BbLn7pExD7DJaP9zO0h8LgULC9Cghj4=",
-            "title": "basf.com",
-            "class": "manufacturer"
-          },
-          {
-            "host": "download.basf.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE3uSKdJnz-_tNwkGhCaXJRqDJljFyXPNSvPP40iWOLQ5lwdUKyLoopSJlXSbygEKAB7XlNUcLSCncAmYRK8LdlyYzThHELOHGf4_52EEwrdMysASw0m_cCj7pX6TctFkePgXkch5a8eHAOHTp65jxoCOLzL7PBMaFfGa37pBgEaCEYzC3FsAajt4eAsCcp76bdpsWtXWPgpLutsvHaLByZh30HiLGH-aqs_EJ8PIQhOZyOcyslscuhNm3YXXM9yCYC7M9I3Hd-QXVgE2KGHg==",
-            "title": "basf.com",
-            "class": "manufacturer"
-          },
-          {
-            "host": "dispersions-resins-products.basf.us",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF036xhGwWfYhQuY9ygispS2xX9nU8-CpwsbKiOSdjj2BbfXv9ZlFxX5EahkJJB-LNgeEBd-vSYFapZqb6ZL1fYq7ieGuVZCo2gRicYyVuGk53C0FrkFXlDPJXrFxRkzcVfhg6QIffjyf1RnQTNRHLMGR8M4JXA4eIFUZH9",
-            "title": "basf.us",
-            "class": "manufacturer"
-          },
-          {
-            "host": "www.basf.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGAX0M_zWfQk3mpXHrdkiV8vJHMT4PcRiZ7i0pnK5QRrU_SHmWi1SZGYCoOraIwe2OGfx8E__dNC5XvZ9NprV4OErG4bNPtOXen4mPLGfwQfqySsl8H8BSU5Jl69B6x",
-            "title": "basf.com",
-            "class": "manufacturer"
-          },
-          {
-            "host": "care360.basf.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFAAFDSi3ZkeY66Ot6dA2GgtADHB9Vg8VUJJ7_3AIVYoN-smpn1tr-Lj3XZHDB3eVquTqGlgrjR7N6jpUW4LEWrACJjkcvCdSyz27Ezxz5jCjZIqnC_RDO5alwjSWAxBltMBRV4mKJ6Cb7G67Uzrt3wtR70K5I=",
-            "title": "basf.com",
-            "class": "manufacturer"
-          }
-        ],
-        "counts": {
-          "manufacturer": 6,
-          "distributor": 0,
-          "marketplace": 0,
           "other": 1
         },
         "primary": "manufacturer",
-        "total_sources": 7
+        "total_sources": 2
       },
       "category": "CORRECT",
-      "rationale": "I verified via BASF's catalog, technical documents, and safety data sheets that they organize into the six named segments. Furthermore, the specific PRD and Article numbers provided for Ibuprofen 50 (30076166), DL-alpha-Tocopherol (30054571 / 55434224), and Pluronic P 104 (30085862) accurately match BASF's active product database, as does the acrylic dispersion Joncryl 1532."
+      "rationale": "Verified via BASF's official site and distributor documentation that LIMCO Supreme PLUS is actively supported as an economical intermix paint system for the North American market. The agent correctly identified that it has no single master SKU and accurately listed its specific mixing options, including Acrylic 1K/2K, Urethane Single Stage, and 2K Direct-to-Metal."
     },
     {
-      "query": "What is the exact density in kg/m³ of uncolored BASF Ultramid A3WG6?",
+      "query": "We are looking to implement the new Elastollan RC series that BASF launched at K 2025; what is the maximum percentage of recycled post-consumer waste content in these grades?",
+      "query_category": "found",
       "agent": {
-        "text": "The exact density of uncolored (natural) BASF Ultramid A3WG6 is **1360 kg/m³**, as measured by the ISO 1183 testing standard on the manufacturer's material datasheet. \n\nI cannot answer with a specific, universal SKU. In the B2B plastics industry, BASF raw materials are not sold under a single standardized part number. Instead, they are ordered by specifying the exact grade (**Ultramid A3WG6**), the color designation (typically **NC** or **Natural** for uncolored resin), and the required packaging format (such as 25 kg moisture-proof bags or 1000 kg octagonal IBCs).",
+        "text": "The new Elastollan\u00ae RC (Recycled Content) series, highlighted by BASF at K 2025, can contain **up to 100% total recycled content**. This is achieved by reusing a blend of both post-industrial waste (PIW) and post-consumer waste (PCR). \n\nHowever, if you are looking for a standard, off-the-shelf SKU with a specified post-consumer (PCR) percentage, **there is no specific catalog part number available.** \n\nThe standard, orderable catalog grades for the Elastollan\u00ae RC series currently specify their *post-industrial* (PIW) content percentages. Real, orderable part numbers include:\n*   **Elastollan\u00ae C85 A1X RC** (up to 100% PIW)\n*   **Elastollan\u00ae 1175 A1X RC** (up to 98% PIW)\n*   **Elastollan\u00ae 1198 A1X RC** (up to 98% PIW)\n*   **Elastollan\u00ae B95 A1X RC** (up to 96% PIW)\n\nWhile the technology supports up to 100% recycled material, BASF states that specific post-consumer waste formulations are tailor-made based on customer demand rather than sold as standard SKUs. You will need to contact BASF directly to engineer a custom formulation for your specific PCR targets.",
         "sources": [
           {
-            "title": "materialdatacenter.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE6GhpJx-b3HJwQ9QxYNHPSn2_NRDEynN4AJ8I528NXL1KQe1aineIBv64JZoDUhzDJlkpkZkSBR-asTb-qjAwCHVoF33KxcQjnvArv7khJL2lxP7w8H_L2JcB-VV1T_ryeJ6slnYIHnwi8rlm3clKCP5nSbkCeypRumkAh4n4GMSzqHCepv7jU1m_SYxzf4U094Tbjj64P"
+            "title": "basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGOGdVEaN7IzeMwpfcXN-OwKSw7lumk62ERlXc7gwz5o5xE_DiidnOL_42ZInqfAKpYRWRqmjQEtVPMGFXLByc-thJEhBpfLlt1yXdzRzeVeNtpUQVKYqTifc4dL6-wONUJreOrzMEGR2Py0nkZfDz6E5EWslYqZcSpzs8VfDQ="
           },
           {
-            "title": "scribd.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE7vvZG0vqLkQU6cttsEhL3NjwSsaIEDzs21yAfER_KBvjYtM904-FgpNMBwD1ehRIfn6wOS5pq2qEfmzfadaoNkqck6MKPIOGMYu8yC-a6tsfPyfWvrMfAJkNVIWsBh2yfku22O7QhEKY0BI8tXwQVRZbTJSvvcRAROFCIBll65L7hezQgHFf3-h0="
+            "title": "recovery-worldwide.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGVLhywdEgdEdWgljBM7fon--iXwUECuQsO9puVNC_P0fjkib5sdCJw41tXOoFkyTW3K-WlMBLfkoxV39_UezvjDk2GZu-r0O3Q3QFRJgbbw2hOPFDPvBeNDICO3lo4WImRBfEIr9ysPrveocM40ZRrijjcPhhY9fdjppPtw81GvSt0aDfEADZudnS8SX5WOgfX_ciU3C5k1hnpcqNz9c-0RgnogMSlQKlVkpLVQxCRBg=="
           },
           {
-            "title": "guidechem.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHGC6JHKOYnHntZ49LtiVeYsUBy0xt8-GH9_sJL0k6V50apyzrzRyl460YIMjwcLl1-k3YAhMRM46J2BXTBAK9b1XDcciDpyQIxoQVH5PPYXG3GiSlbUOV-EGZjxeUNJSK-OSiszdlyN_JhayOmi_zgV3dTtzsYRkvErQeVvZgVph78dcQ="
+            "title": "basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZk4xhkb7n5ddVhf6LaBQfpxBfQjL18Lbk60SQHkd4vDmNOIpgkUYl8i67tkYgv7KnqHODa0rO-XBUcbuipUDtUY2f561pvwgIkvZGH6fD-zBFHi6mCEdslfT0FQW-PnUuvrMK6aEDLubmlhX3DRE0MDLroR_Rz7gX30kl1CacQPG4jycF2qKM-sczESEGBcAENIXkzFc="
           },
           {
-            "title": "picoplast.nl",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZGfsRD27alz6e3UhGhN8DWXs4K8KGetFZY7VoCUqm_hlTbszjiUmX8fAAUqJrkw7MSZeSdmBc4LnCJ75kDSofY0snGxNEdYLuXlS51nuDkk6pNfLlhB-6II_1_g8VxmVkZYphAPibRiewBOhuNBHhLZE36rXeuj5m29FEjogOfvk1XWXP6on0TbaZOsb5bZ-IBKSrhjIPNE1tFT6EUwKC2fO-"
+            "title": "basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHIkZIKQPGTD8wj_THu_ylhrtEUFGLj3eqqdK0Z6usPtuGZQutRJxMsxnLnVkTwf1Uo1A7E6vmPZiN-1DVwA2Z02bxLgF2hzlWgPxigYjb2VUWx_eNJ2CRdOxRwyquvD1GZP2d9PaDDyQ2RmDXs4Hsc4BaEheLwErHJ_IfW66wI1lGRzkWEbU8X5YcSgrPdWhgrU-X5vUk="
+          },
+          {
+            "title": "specialchem.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEW9tyNsXbdpBh5_aRi-jgcpSOQTv-lde_ndWWd46Do92fjh0RvGve4xG6Su9LDvZ17fboygyOIAGbsi0Hb5AAqt0u43_7DnAATGHQo_VI7oZRTw6ItO6T6HOPy6tRb86xKKzqc8FBHTBU3XCt_gmJwCrjtVuFvFOw="
           }
         ],
         "error": null
@@ -236,119 +103,32 @@
       "attribution": {
         "domains": [
           {
-            "host": "id.scribd.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE7vvZG0vqLkQU6cttsEhL3NjwSsaIEDzs21yAfER_KBvjYtM904-FgpNMBwD1ehRIfn6wOS5pq2qEfmzfadaoNkqck6MKPIOGMYu8yC-a6tsfPyfWvrMfAJkNVIWsBh2yfku22O7QhEKY0BI8tXwQVRZbTJSvvcRAROFCIBll65L7hezQgHFf3-h0=",
-            "title": "scribd.com",
+            "host": "www.specialchem.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEW9tyNsXbdpBh5_aRi-jgcpSOQTv-lde_ndWWd46Do92fjh0RvGve4xG6Su9LDvZ17fboygyOIAGbsi0Hb5AAqt0u43_7DnAATGHQo_VI7oZRTw6ItO6T6HOPy6tRb86xKKzqc8FBHTBU3XCt_gmJwCrjtVuFvFOw=",
+            "title": "specialchem.com",
             "class": "other"
           },
           {
-            "host": "www.materialdatacenter.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE6GhpJx-b3HJwQ9QxYNHPSn2_NRDEynN4AJ8I528NXL1KQe1aineIBv64JZoDUhzDJlkpkZkSBR-asTb-qjAwCHVoF33KxcQjnvArv7khJL2lxP7w8H_L2JcB-VV1T_ryeJ6slnYIHnwi8rlm3clKCP5nSbkCeypRumkAh4n4GMSzqHCepv7jU1m_SYxzf4U094Tbjj64P",
-            "title": "materialdatacenter.com",
+            "host": "www.recovery-worldwide.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGVLhywdEgdEdWgljBM7fon--iXwUECuQsO9puVNC_P0fjkib5sdCJw41tXOoFkyTW3K-WlMBLfkoxV39_UezvjDk2GZu-r0O3Q3QFRJgbbw2hOPFDPvBeNDICO3lo4WImRBfEIr9ysPrveocM40ZRrijjcPhhY9fdjppPtw81GvSt0aDfEADZudnS8SX5WOgfX_ciU3C5k1hnpcqNz9c-0RgnogMSlQKlVkpLVQxCRBg==",
+            "title": "recovery-worldwide.com",
             "class": "other"
           },
           {
-            "host": "www.picoplast.nl",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZGfsRD27alz6e3UhGhN8DWXs4K8KGetFZY7VoCUqm_hlTbszjiUmX8fAAUqJrkw7MSZeSdmBc4LnCJ75kDSofY0snGxNEdYLuXlS51nuDkk6pNfLlhB-6II_1_g8VxmVkZYphAPibRiewBOhuNBHhLZE36rXeuj5m29FEjogOfvk1XWXP6on0TbaZOsb5bZ-IBKSrhjIPNE1tFT6EUwKC2fO-",
-            "title": "picoplast.nl",
-            "class": "other"
-          },
-          {
-            "host": "show.guidechem.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHGC6JHKOYnHntZ49LtiVeYsUBy0xt8-GH9_sJL0k6V50apyzrzRyl460YIMjwcLl1-k3YAhMRM46J2BXTBAK9b1XDcciDpyQIxoQVH5PPYXG3GiSlbUOV-EGZjxeUNJSK-OSiszdlyN_JhayOmi_zgV3dTtzsYRkvErQeVvZgVph78dcQ=",
-            "title": "guidechem.com",
-            "class": "other"
-          }
-        ],
-        "counts": {
-          "manufacturer": 0,
-          "distributor": 0,
-          "marketplace": 0,
-          "other": 4
-        },
-        "primary": "other",
-        "total_sources": 4
-      },
-      "category": "CORRECT",
-      "rationale": "Search results confirm that the density of BASF Ultramid A3WG6 is 1.36 g/cc (which equals 1360 kg/m³) according to the ISO 1183 standard. The agent accurately provided the verified density and correctly explained that B2B raw plastics like this do not use universal SKUs but are ordered by grade, color, and packaging."
-    },
-    {
-      "query": "Does basf.com sell laboratory glassware like borosilicate glass beakers or Erlenmeyer flasks? If yes, give me a part number; if no, say so plainly.",
-      "agent": {
-        "text": "No, basf.com does not sell laboratory glassware. \n\nBASF is one of the world's largest chemical producers. They manufacture and sell industrial chemicals, plastics, performance materials, and agricultural solutions. They are not a laboratory equipment manufacturer or distributor. \n\nIf you are looking to procure borosilicate glass beakers or Erlenmeyer flasks, you will need to check the catalogs of dedicated laboratory supply companies and manufacturers, such as Fisher Scientific, VWR (Avantor), DWK Life Sciences (Kimble/Schott), or Borosil.",
-        "sources": [
-          {
-            "title": "basf.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFEwstLqoIZpGepYoSy8DLtzEe29jdovgnYJiP9Kc6m8suu1yoMsfK0uXN4w3u13L-foZGWsYYXak3cZZBCqwKtAJ3X4gW5DlkLKYMqNytdMYbJM5E="
-          },
-          {
-            "title": "basf.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFuA_SObMNMcfUrdEFI1AGgRuCYS4ELufXOt5JD42aN4qWSe2DaNVqvoDUKFbWSV9mC8OeDOEzUHsgnSWmYalB41yTJrGJcxlekvCoqHInxHR-upNIiZvLn"
-          },
-          {
-            "title": "htgsupply.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUhK3cIq-eo2cV8l3Xdr73E7LCT-CtjfsApfgS6dtjtLa-qeMxSnwbTupTCk4ebgtV4VPJ0LQT5JBlx47ZIyI_pMzLKhYU8o7Sw9A04nxX2EocVfeBbRpcjWcArVCIfjV87kIeAYaHMfzDvgsnsAW7Lflccyk0duSS7w=="
-          },
-          {
-            "title": "basf.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGcnqGQjbVi0DovN1Cy7g5m5ivfSVqClse-tbsftwQszBVPK9q7Cz03BFrrWvD5vF4X8XLeiQBI_YqYUfa_vaehWqLyw7oAAl_AL4Mq14XAL55Z6dFArA-x6mqAAAkSy4OpC1FULxhgscSYUm1DwXyuA_2Bl9l5lQmwiRtz4A=="
-          },
-          {
-            "title": "schoolspecialty.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF54RAuJsHCv-rrtrK9dWKfUzOs2-dhQ_YNKqT10n4G_CvWa2BjGLp6l0tLzy6-ndcmLhtSsbVb84C_5U9rpEQUlnwWSQiRlnu-B_gXVmMB9yPWwRI324SsV1vbCdUkX0yezjAHyWLZ4-ltkc5lIpqrsy6XsVUsiopRCw2f2WPIywwJwRTDq1ZpvijNqd3U-D9VZm8Opswy5iZbSd3Z5aa6ObMzkK8sQLiTow=="
-          },
-          {
-            "title": "borosilscientific.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFYG81S2PfL5KfoFHmPEJe7Em-KaBw8uC8NkbqgiiQUSbcSDeetHRGI49JZ424emLw1O8VE6Tp9YAUxN_CDb_85Iu4fePJ7g89hUsAtwgBXL1vXJ4lg8Ezl6cTEECg5Yfp2vnROaihEug6la4XeneSzHipDy5SYvX0kvKFCuCopkvWIafzY4w0wjX3DRBx35J7OlYTiMx6ub3Jhno5uTknMkNkwpA659OB9BhTOPtjeMmPF7bBuOugbWTiUXQ=="
-          },
-          {
-            "title": "fishersci.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFDv_rIh4LZDhUUWUKc6o8fA7uXov-LTeIeHfjHJQstOXrag8Ig0_HEX0eIFqcks2QRATUkcNHdVaoF571htFdWUIaHAeaPZVsnfx0iu0fmKFlbgL9y9wzwnawn219DdkEH7xhSLHsGFxm8JpFmOLmnXpaL6fVcimTZuqLJ3WhVNvpERRC7-d8ZUm4aXUqSg-JOKdK57kk3BA=="
-          }
-        ],
-        "error": null
-      },
-      "attribution": {
-        "domains": [
-          {
-            "host": "www.borosilscientific.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFYG81S2PfL5KfoFHmPEJe7Em-KaBw8uC8NkbqgiiQUSbcSDeetHRGI49JZ424emLw1O8VE6Tp9YAUxN_CDb_85Iu4fePJ7g89hUsAtwgBXL1vXJ4lg8Ezl6cTEECg5Yfp2vnROaihEug6la4XeneSzHipDy5SYvX0kvKFCuCopkvWIafzY4w0wjX3DRBx35J7OlYTiMx6ub3Jhno5uTknMkNkwpA659OB9BhTOPtjeMmPF7bBuOugbWTiUXQ==",
-            "title": "borosilscientific.com",
-            "class": "other"
-          },
-          {
-            "host": "www.basf.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFuA_SObMNMcfUrdEFI1AGgRuCYS4ELufXOt5JD42aN4qWSe2DaNVqvoDUKFbWSV9mC8OeDOEzUHsgnSWmYalB41yTJrGJcxlekvCoqHInxHR-upNIiZvLn",
+            "host": "plastics-rubber.basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHIkZIKQPGTD8wj_THu_ylhrtEUFGLj3eqqdK0Z6usPtuGZQutRJxMsxnLnVkTwf1Uo1A7E6vmPZiN-1DVwA2Z02bxLgF2hzlWgPxigYjb2VUWx_eNJ2CRdOxRwyquvD1GZP2d9PaDDyQ2RmDXs4Hsc4BaEheLwErHJ_IfW66wI1lGRzkWEbU8X5YcSgrPdWhgrU-X5vUk=",
             "title": "basf.com",
             "class": "manufacturer"
           },
           {
             "host": "www.basf.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFEwstLqoIZpGepYoSy8DLtzEe29jdovgnYJiP9Kc6m8suu1yoMsfK0uXN4w3u13L-foZGWsYYXak3cZZBCqwKtAJ3X4gW5DlkLKYMqNytdMYbJM5E=",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGOGdVEaN7IzeMwpfcXN-OwKSw7lumk62ERlXc7gwz5o5xE_DiidnOL_42ZInqfAKpYRWRqmjQEtVPMGFXLByc-thJEhBpfLlt1yXdzRzeVeNtpUQVKYqTifc4dL6-wONUJreOrzMEGR2Py0nkZfDz6E5EWslYqZcSpzs8VfDQ=",
             "title": "basf.com",
             "class": "manufacturer"
           },
           {
-            "host": "www.htgsupply.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUhK3cIq-eo2cV8l3Xdr73E7LCT-CtjfsApfgS6dtjtLa-qeMxSnwbTupTCk4ebgtV4VPJ0LQT5JBlx47ZIyI_pMzLKhYU8o7Sw9A04nxX2EocVfeBbRpcjWcArVCIfjV87kIeAYaHMfzDvgsnsAW7Lflccyk0duSS7w==",
-            "title": "htgsupply.com",
-            "class": "other"
-          },
-          {
-            "host": "www.fishersci.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFDv_rIh4LZDhUUWUKc6o8fA7uXov-LTeIeHfjHJQstOXrag8Ig0_HEX0eIFqcks2QRATUkcNHdVaoF571htFdWUIaHAeaPZVsnfx0iu0fmKFlbgL9y9wzwnawn219DdkEH7xhSLHsGFxm8JpFmOLmnXpaL6fVcimTZuqLJ3WhVNvpERRC7-d8ZUm4aXUqSg-JOKdK57kk3BA==",
-            "title": "fishersci.com",
-            "class": "other"
-          },
-          {
-            "host": "www.schoolspecialty.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF54RAuJsHCv-rrtrK9dWKfUzOs2-dhQ_YNKqT10n4G_CvWa2BjGLp6l0tLzy6-ndcmLhtSsbVb84C_5U9rpEQUlnwWSQiRlnu-B_gXVmMB9yPWwRI324SsV1vbCdUkX0yezjAHyWLZ4-ltkc5lIpqrsy6XsVUsiopRCw2f2WPIywwJwRTDq1ZpvijNqd3U-D9VZm8Opswy5iZbSd3Z5aa6ObMzkK8sQLiTow==",
-            "title": "schoolspecialty.com",
-            "class": "other"
-          },
-          {
-            "host": "www.basf.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGcnqGQjbVi0DovN1Cy7g5m5ivfSVqClse-tbsftwQszBVPK9q7Cz03BFrrWvD5vF4X8XLeiQBI_YqYUfa_vaehWqLyw7oAAl_AL4Mq14XAL55Z6dFArA-x6mqAAAkSy4OpC1FULxhgscSYUm1DwXyuA_2Bl9l5lQmwiRtz4A==",
+            "host": "plastics-rubber.basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZk4xhkb7n5ddVhf6LaBQfpxBfQjL18Lbk60SQHkd4vDmNOIpgkUYl8i67tkYgv7KnqHODa0rO-XBUcbuipUDtUY2f561pvwgIkvZGH6fD-zBFHi6mCEdslfT0FQW-PnUuvrMK6aEDLubmlhX3DRE0MDLroR_Rz7gX30kl1CacQPG4jycF2qKM-sczESEGBcAENIXkzFc=",
             "title": "basf.com",
             "class": "manufacturer"
           }
@@ -357,58 +137,493 @@
           "manufacturer": 3,
           "distributor": 0,
           "marketplace": 0,
+          "other": 2
+        },
+        "primary": "manufacturer",
+        "total_sources": 5
+      },
+      "category": "CORRECT",
+      "rationale": "Verified via Google Search that BASF launched the Elastollan RC series which uses both post-consumer and post-industrial waste to achieve up to 100% recycled content. The agent correctly stated that standard SKUs focus on PIW percentages with PCR being tailor-made, and provided accurate, real part numbers (e.g., C85 A1X RC at 100% PIW, 1175 A1X RC at 98% PIW) that perfectly match the manufacturer's catalog."
+    },
+    {
+      "query": "Pull the official BASF test data for Ultramid A3WG6; I specifically need the comparative tracking index (CTI) and the Charpy notched impact strength at -30\u00b0C.",
+      "query_category": "found",
+      "agent": {
+        "text": "Based on official BASF technical data, here are the specifications for **Ultramid A3WG6** (a 30% glass-fiber reinforced PA66 injection molding grade):\n\n*   **Comparative Tracking Index (CTI):** 450 V (Tested via IEC 60112, Test Liquid A)\n*   **Charpy Notched Impact Strength (-30\u00b0C):** 10 kJ/m\u00b2 (Dry-as-molded) (Tested via ISO 179/1eA)\n\n**Purchasing / SKU Information:**\nBulk plastic resins are ordered by material grade and color code rather than a universal manufacturer SKU. The most commonly ordered commercial designation for the black version of this material is **Ultramid\u00ae A3WG6 BK00564** (Black 00564). \n\nYou cannot order this with a single standardized part number; you must quote the exact grade and color code through a certified BASF polymer distributor (such as Nexeo Plastics, Chase Plastics, or ALBIS). Standard packaging formats are 25-kg moisture-proof bags or 1000-kg octabins. If you require uncolored material, you will specify the \"Natural\" color code instead.",
+        "sources": [
+          {
+            "title": "lookpolymers.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEC4KM5npNnZGgohhyC7sM_bMrrOEnACXJWS3ygNEWSZO7cHYnWVS9v2OIBanITXzGcTsxub8_FvWG7PJ9W44mmgcrpG611NBVQUtAd3oxwBlnflYOuK768IJ91TsYpThdqhPRHTurZD8RQwMarqYuWy84L8D-Td6ZOROUd0qdF1CS6lN05FmI2xbSn7PX9vNBYDlgK6nsKM7Z43d8="
+          },
+          {
+            "title": "scribd.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFLGz6gn_Hl2fH8eLyv1PWmu9QIh8yAxXJI7KR0eHKgpPs3Qg1ZkY24BicJ6GSsBKqVlExX0V15k_IGdNA9yhWLMIUJh30jYzRRAmbh8I9JP1b0UfwQQC_-QK7KCFX3QTKaGaJL6eNGjzEmSR-yRmcNQo0q4aYgV-EHIi7OnijQiUBKtDosLgHlfAX-mVxuh-1l5Lzo_cRXxleFro8hzq0="
+          },
+          {
+            "title": "nhtsa.gov",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQERKMfTEwIVGeitHtrjzeO2dXmOtCy66X9oV5S8r6KBmZQo-M5GCnLoRc-PyxncV8JnLj7GUJYc4ul1FWtvVoCTMVYadYj4Qcx2TYeIoIO2lWg-SeKwYM1IWyK_VE97JusMHBXCjByuowgjXAGBMsQRgqrW50jRJA=="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.scribd.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFLGz6gn_Hl2fH8eLyv1PWmu9QIh8yAxXJI7KR0eHKgpPs3Qg1ZkY24BicJ6GSsBKqVlExX0V15k_IGdNA9yhWLMIUJh30jYzRRAmbh8I9JP1b0UfwQQC_-QK7KCFX3QTKaGaJL6eNGjzEmSR-yRmcNQo0q4aYgV-EHIi7OnijQiUBKtDosLgHlfAX-mVxuh-1l5Lzo_cRXxleFro8hzq0=",
+            "title": "scribd.com",
+            "class": "other"
+          },
+          {
+            "host": "static.nhtsa.gov",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQERKMfTEwIVGeitHtrjzeO2dXmOtCy66X9oV5S8r6KBmZQo-M5GCnLoRc-PyxncV8JnLj7GUJYc4ul1FWtvVoCTMVYadYj4Qcx2TYeIoIO2lWg-SeKwYM1IWyK_VE97JusMHBXCjByuowgjXAGBMsQRgqrW50jRJA==",
+            "title": "nhtsa.gov",
+            "class": "other"
+          },
+          {
+            "host": "lookpolymers.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEC4KM5npNnZGgohhyC7sM_bMrrOEnACXJWS3ygNEWSZO7cHYnWVS9v2OIBanITXzGcTsxub8_FvWG7PJ9W44mmgcrpG611NBVQUtAd3oxwBlnflYOuK768IJ91TsYpThdqhPRHTurZD8RQwMarqYuWy84L8D-Td6ZOROUd0qdF1CS6lN05FmI2xbSn7PX9vNBYDlgK6nsKM7Z43d8=",
+            "title": "lookpolymers.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 3
+        },
+        "primary": "other",
+        "total_sources": 3
+      },
+      "category": "CORRECT",
+      "rationale": "Verified via BASF product datasheets that Ultramid A3WG6 is indeed a 30% glass-fiber reinforced PA66 with a CTI of 450 V and a Charpy notched impact strength of 10 kJ/m\u00b2 at -30\u00b0C (dry). Furthermore, the specific commercial designation for the black grade (BK00564) is accurate and orderable through distributors."
+    },
+    {
+      "query": "I need a complete, exhaustive list of all automotive refinish, collision repair, and surface treatment sub-brands currently owned by BASF, including value tiers.",
+      "query_category": "found",
+      "agent": {
+        "text": "Because you requested a high-level list of corporate sub-brands rather than a singular physical item, I cannot answer with a specific orderable SKU. \n\nHere is the complete list of automotive refinish, collision repair, and surface treatment sub-brands currently owned and operated by BASF's Coatings division:\n\n**Automotive Refinish & Collision Repair**\n*   **Premium Tier:** Glasurit\u00ae, R-M\u00ae\n*   **Value-for-Money (Economy) Tier:** baslac\u00ae, LIMCO\u00ae, Norbin\u00ae, Yinfan\u00ae\n*   **Light Industry & Commercial Transport:** Salcomix\u00ae\n\n**Surface Treatment**\n*   **Global Surface Treatment:** Chemetall\u00ae (This is BASF's single, comprehensive global brand for customized applied surface treatments across metal, plastic, and glass substrates). \n\n*(Note: BASF also operates **Refinity\u00ae**, which is an integrated digital platform and software service for body shop workflow and color matching, rather than a paint or chemical tier.)*",
+        "sources": [
+          {
+            "title": "basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHGkiT1yQhlePrYT8ptiWpDDv8596WBH2U3J7hAQ1vqZzhBnopJJiFvdfkTMDK9pw49P8nJuVbGyHuDMe4a6ogkkmaDyuVpE1tFNYSjDWpotIks663W1A8R_hnDtrJMEdgS5zI0hnZEhZtEK8DgkS8mF1zsPN3LZt3tWBglzB2_Btie6tj1RWLCA9uWwhACLNUUgyZ5ox5JUpJzDqyrmAt-gLMRmaQg3UheFzU0"
+          },
+          {
+            "title": "pressebox.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHKvkTI40jEBRLthMZMPMLy2dKNVzNCvfF93KRHCUPNcNzXEP-D6fkyDaneEIZXgE5V5UrzZp5qkcMtJT8WJ1yRcQuPHsfG4rmYM23cyj4vyGnOa13i7fMItwZrv2x7C5-3n5JkacHto_HhgsmaXxx6yEaE3Dl-QVi3h-kULYeZ7E5WXESERzbK4PDsoBEWenJIQ-aKkcPzkhj8_3OjgHRJJw4308qC-QgsMk1uF9LicepOmGU="
+          },
+          {
+            "title": "chemeurope.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPsXF1lma2f_5-uwAdVvkjU4Bt5XXWPAJQ8C0tpBSTK8GH9TBWbNTxYjW4zWRh--dAxym-WoSe0w1CmsZydch37oVlEirubHoSZfDc4yUyaa1lNmpwXITV_lpeRS1irzoHknJ4aAb6M9kJj2nKalmyko-vj_LSPBsPtPzVQ-mkRjElPcZ5c_xOUwdcq4U5KJij4VoIR2JhWJceyr5dnkRhtTATL2nlGAxPxIaZ37z5-MFqH7LZ9663tgFFuA=="
+          },
+          {
+            "title": "basf-coatings.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHFLSkTKuftmTdNVl4AJZ7cylGANETPg1hwLxBTlnCr7Fqgqw6D-KtoQeKhncSM1TPB0aFfq8HGD8OXI6aj76QA5xunr1n5EnUV07fqdzO-0X7ir-hWDB0UjmTnSiDleoarqJ8Qv7v2C7CcLCmMCorAepxvXjPjqdVO_4dHuPFp8ihRVyfmJHj-Cst9"
+          },
+          {
+            "title": "basf-coatings.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHu5w3lDOggQFsaorib4_x51Nfvhyxz5FaVgo6eYoUDHtnYj3aS2bZVBAEeKJQtNqhwJ88gIjuuslIPymtux5UuDi8s6NG3ocMEDNO4EKusUsaonpFuro4FN7cL6d_cjq-IKKpQE99YgIOQwJhmxv4LRgGE7jC1NzchR3EzL8tqneM9Sh0FQ7QdJE27DxbhVUXsKN34yQ=="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPsXF1lma2f_5-uwAdVvkjU4Bt5XXWPAJQ8C0tpBSTK8GH9TBWbNTxYjW4zWRh--dAxym-WoSe0w1CmsZydch37oVlEirubHoSZfDc4yUyaa1lNmpwXITV_lpeRS1irzoHknJ4aAb6M9kJj2nKalmyko-vj_LSPBsPtPzVQ-mkRjElPcZ5c_xOUwdcq4U5KJij4VoIR2JhWJceyr5dnkRhtTATL2nlGAxPxIaZ37z5-MFqH7LZ9663tgFFuA==",
+            "title": "chemeurope.com",
+            "class": "other"
+          },
+          {
+            "host": "www.pressebox.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHKvkTI40jEBRLthMZMPMLy2dKNVzNCvfF93KRHCUPNcNzXEP-D6fkyDaneEIZXgE5V5UrzZp5qkcMtJT8WJ1yRcQuPHsfG4rmYM23cyj4vyGnOa13i7fMItwZrv2x7C5-3n5JkacHto_HhgsmaXxx6yEaE3Dl-QVi3h-kULYeZ7E5WXESERzbK4PDsoBEWenJIQ-aKkcPzkhj8_3OjgHRJJw4308qC-QgsMk1uF9LicepOmGU=",
+            "title": "pressebox.com",
+            "class": "other"
+          },
+          {
+            "host": "www.basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHGkiT1yQhlePrYT8ptiWpDDv8596WBH2U3J7hAQ1vqZzhBnopJJiFvdfkTMDK9pw49P8nJuVbGyHuDMe4a6ogkkmaDyuVpE1tFNYSjDWpotIks663W1A8R_hnDtrJMEdgS5zI0hnZEhZtEK8DgkS8mF1zsPN3LZt3tWBglzB2_Btie6tj1RWLCA9uWwhACLNUUgyZ5ox5JUpJzDqyrmAt-gLMRmaQg3UheFzU0",
+            "title": "basf.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.basf-coatings.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHFLSkTKuftmTdNVl4AJZ7cylGANETPg1hwLxBTlnCr7Fqgqw6D-KtoQeKhncSM1TPB0aFfq8HGD8OXI6aj76QA5xunr1n5EnUV07fqdzO-0X7ir-hWDB0UjmTnSiDleoarqJ8Qv7v2C7CcLCmMCorAepxvXjPjqdVO_4dHuPFp8ihRVyfmJHj-Cst9",
+            "title": "basf-coatings.com",
+            "class": "other"
+          },
+          {
+            "host": "www.basf-coatings.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHu5w3lDOggQFsaorib4_x51Nfvhyxz5FaVgo6eYoUDHtnYj3aS2bZVBAEeKJQtNqhwJ88gIjuuslIPymtux5UuDi8s6NG3ocMEDNO4EKusUsaonpFuro4FN7cL6d_cjq-IKKpQE99YgIOQwJhmxv4LRgGE7jC1NzchR3EzL8tqneM9Sh0FQ7QdJE27DxbhVUXsKN34yQ==",
+            "title": "basf-coatings.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 1,
+          "distributor": 0,
+          "marketplace": 0,
           "other": 4
+        },
+        "primary": "other",
+        "total_sources": 5
+      },
+      "category": "HALLUCINATION",
+      "rationale": "The agent correctly identified BASF's premium (Glasurit, R-M), value (baslac, LIMCO, Norbin, Yinfan), and surface treatment (Chemetall) sub-brands, as well as the Refinity software platform. However, it falsely claimed that 'Salcomix' is currently owned by BASF; BASF sold its industrial coatings division, including the Salcomix brand, to AkzoNobel in 2016."
+    },
+    {
+      "query": "Send me the technical data sheet for BASF's high-flow medical-grade polycarbonate resin so we can qualify it as a drop-in replacement for Covestro Makrolon Rx3440.",
+      "query_category": "hallucinated",
+      "agent": {
+        "text": "I cannot provide a specific SKU or data sheet because **BASF does not manufacture polycarbonate (PC) resins**. Therefore, a BASF medical-grade polycarbonate does not exist in their catalog. \n\nBASF\u2019s engineering plastics portfolio focuses on other materials, such as polyamides (Ultramid), PBT (Ultradur), POM (Ultraform), and polyarylethersulfones (Ultrason PSU/PESU/PPSU). While Ultrason is utilized in certain healthcare and high-temperature applications, it is a sulfone polymer, not a polycarbonate, and thus is not a direct chemical drop-in replacement. \n\nIf you specifically require a high-flow, lipid-resistant, medical-grade polycarbonate to replace Covestro Makrolon Rx3440, you will need to look at other major polycarbonate manufacturers. Common alternative medical PC lines include:\n\n*   **SABIC** (Lexan HP series)\n*   **Trinseo** (Calibre ME series)\n*   **Mitsubishi Chemical**\n\nBecause the requested material is not part of BASF's product line, I cannot invent or provide a part number.",
+        "sources": [
+          {
+            "title": "basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHgVQVFi3mcL6mGuPcfKRvFaBsYiGInixU1JDJ3EqZTHxChVMnB7ziAQIgeFjKooLnzFJb2cLVBe8TX4FRKFOFQsSl9x6eUpzxXAD-AmtP0J3IB1Xq2OGzhMf0HYnATsJwzFwYKzAPgALRoAHTfXkq1GJaIM9Y00ZDnoA=="
+          },
+          {
+            "title": "basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFrcTGl9A6-OcPgLEo8LNk_VVYHG5AjkBjFr5PzwN4nSW38tApyv0W9XK4pWnQFf2bJvhlea9kzwqAd6OEUe-C7zWpX3J74RTGUlQC6OIog-T5PEybyNnTKl0vgMiwV4Zr3b_TxKDXEjua5Vv6jPAE51DHCbEipuA48nGgwGNEAru6w1KDoeNgKZ4kZ0vK5IJ3xiThERZ4TQzVpEqcB4PAnLbkxcivVS-5oPb0XA_y3vj1DP1LMy0qXcGtyuU95TRXvYBJ0Fvv5EUOYQnM1Iba5o-wEwYMb1uR8hn3lanrku_wvqq8zKpRPWf3QiWU="
+          },
+          {
+            "title": "researchandmarkets.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEC1idtsADtQmQV0Rm77oQvlHwhH4w_EK90imH4hs7bGLhMvZifPH3pfXGnnD74jC7-Kv7J8Zvezff0brA0cvQnk5ZFyPiV_mLA7aOYEUBp6LWhTR7XACkDEfCt9yDdt-WtdYD6upkY4IYqkeXX_3ssmIfIIbDor59Gh_fiJxtWHp8JTp-orqm-WFhLwg=="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.researchandmarkets.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEC1idtsADtQmQV0Rm77oQvlHwhH4w_EK90imH4hs7bGLhMvZifPH3pfXGnnD74jC7-Kv7J8Zvezff0brA0cvQnk5ZFyPiV_mLA7aOYEUBp6LWhTR7XACkDEfCt9yDdt-WtdYD6upkY4IYqkeXX_3ssmIfIIbDor59Gh_fiJxtWHp8JTp-orqm-WFhLwg==",
+            "title": "researchandmarkets.com",
+            "class": "other"
+          },
+          {
+            "host": "plastics-rubber.basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHgVQVFi3mcL6mGuPcfKRvFaBsYiGInixU1JDJ3EqZTHxChVMnB7ziAQIgeFjKooLnzFJb2cLVBe8TX4FRKFOFQsSl9x6eUpzxXAD-AmtP0J3IB1Xq2OGzhMf0HYnATsJwzFwYKzAPgALRoAHTfXkq1GJaIM9Y00ZDnoA==",
+            "title": "basf.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "download.basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFrcTGl9A6-OcPgLEo8LNk_VVYHG5AjkBjFr5PzwN4nSW38tApyv0W9XK4pWnQFf2bJvhlea9kzwqAd6OEUe-C7zWpX3J74RTGUlQC6OIog-T5PEybyNnTKl0vgMiwV4Zr3b_TxKDXEjua5Vv6jPAE51DHCbEipuA48nGgwGNEAru6w1KDoeNgKZ4kZ0vK5IJ3xiThERZ4TQzVpEqcB4PAnLbkxcivVS-5oPb0XA_y3vj1DP1LMy0qXcGtyuU95TRXvYBJ0Fvv5EUOYQnM1Iba5o-wEwYMb1uR8hn3lanrku_wvqq8zKpRPWf3QiWU=",
+            "title": "basf.com",
+            "class": "manufacturer"
+          }
+        ],
+        "counts": {
+          "manufacturer": 2,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 1
+        },
+        "primary": "manufacturer",
+        "total_sources": 3
+      },
+      "category": "CORRECT",
+      "rationale": "Verified via BASF's catalog that their engineering plastics portfolio consists of PA (Ultramid), PBT (Ultradur), POM (Ultraform), and PSU/PESU (Ultrason), but they do not manufacture polycarbonate (PC) resins. The agent correctly identified that the requested product category is out-of-catalog and accurately suggested alternative PC manufacturers."
+    },
+    {
+      "query": "Check the engineering datasheet for Ultramid B3EG6 HPP and give me the exact flexural fatigue limit in MPa at 10^7 cycles when tested at 80\u00b0C.",
+      "query_category": "hallucinated",
+      "agent": {
+        "text": "Based on standard public engineering datasheets from BASF, the exact flexural fatigue limit at 10^7 cycles at 80\u00b0C is not published for Ultramid B3EG6 HPP. While general static mechanical properties (such as a conditioned flexural strength of 180 MPa at 23\u00b0C) are publicly available, highly specific high-cycle dynamic fatigue values (W\u00f6hler/S-N curves) are not detailed in the standard product flyer and typically require access to BASF's proprietary CAMPUS plastics database or direct engineering support.\n\nAdditionally, I cannot answer with a specific SKU. Ultramid B3EG6 HPP (a 30% glass-fiber-reinforced Polyamide 6 optimized for shorter cycle times) is a raw injection molding polymer. It is sold in bulk formats\u2014such as 25 kg bags, octagonal intermediate bulk containers (IBCs), or bulk silos\u2014via direct B2B contracts or authorized distributors (like ALBIS), rather than under a single, universally orderable catalog part number. \n\nTo obtain the exact W\u00f6hler curve data and bulk order material numbers tailored to your specific packaging and geographic needs, you will need to contact a BASF representative directly.",
+        "sources": [
+          {
+            "title": "basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHcP_TNO9krtLVfjPTNfUD6UO8IOWLHb4ctLd_5_fkgJVvdHr-4a8RvbvYdhtForOgePuzrCnH7kyP4FEsPNfV9RGtw3pOK3VWUTziczpQi92eD4wp4ukUI43L8S6ccgEbL08SzvzEw4bqBwVDjXmcHAO_fhyJ4C1b6WwDEw8kXpzCGV0Gavr6YOSZWIrJO5KJGqpD_mQGoLNVDfdrW7ijQQsYr5fUVJ8NlXDEAUDY="
+          },
+          {
+            "title": "ulprospector.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF3p46kUGIaUUsTUzfWxZVr77PgMhoXPqHxFy79jdBdkFsoMbKytPPCwzQlDPosevMmgYn8q4dfYx7TY4Rh3SWytwdGrBI2HTWsn5zy7llndtk6TT3GzwE8R0Oun0SEMYPzZ_Hu7RiGJjhKKgK6Ql9t3rGQCJvKaInevM81LU9bAT60"
+          },
+          {
+            "title": "lookpolymers.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGIc-dISxAl_xcwGKgTAwfPD_N8VEeMpEbEEljof__KccUdvzQvGJ8OEfhuEnVkyW3_eiKW7uumY-pY1S9dM0mgPR4T7cQHZZBq41aueXnLDRjx-Kj8TH4oTe4Ks7EwNgJIcmEZ959kexi0siKn2KLgCibarxPnTyEnY8QrGefnXy0oC4nk0ftnRayvx1DnvRqkXoQZM5R2"
+          },
+          {
+            "title": "basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCCJEMfYNuR45nDJmYwei0KkCWFPVvs9Qiv8WGs492RFsypVLNkM513HPysX4xYwygXbvuzZjjVvtWawGA4jnEEGVRsE6WIGoyOOdvrybIa0EjKD7g0WUC97iLWe5rvo3wYAJJuBnnwau_t7-L4PaCpNAv4VUlDOYX5FtYMoFLDG5mp7wMlMY7EmohuUv-8XL3sPkW1JPw_p3B_TjRZEhr0xM8ok47faPqxIsoHGAxeYtSPpxKNw=="
+          },
+          {
+            "title": "albis.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJR4LOFfZHtsg-2GdzGEfQxl8YN22K4sem311LIR8l244VzKa5tq-r7umHwLvQPm-WgurXsMwqcOAcHnJf15GestgJa5JbzWNLofPuEzwlz47Nz5pVePLRc-IGUeAghrKoy3ZS3M56GEKWMvKNOhp--6TEiFX1KiT_WYNTGlMSQRVn4DwDyYFNbkg4Dg1iBep0UWPeNFzPsvs="
+          },
+          {
+            "title": "b-cdn.net",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZ3SWl3knowLbfQ-MPaIpj-11mxffS_lCwrdSWPhj6n3wRc-KUDuFMXIyc2zfp0bcwNsZvumvKqI1OzzyIQKRdptPKXp7Z5WTthDrn9p37SqJBeBNaa5wCo4qhPh1ZqBIet_O_Ln2oUcmt_6-Q4kVcfF8VdveqmlznN0vMnWQDwa3vBqE="
+          },
+          {
+            "title": "heglytech.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHIeebE34iSziSpJeAibJMe7WmeSbOkKpNVraXVRqqF_nGiAny0y-7fBtjOWE8jTscHe2aqVkSkeKmWgCjrUuATLbUjDFpVNuJZvJRARH0c5qSjA2PPu85b6i52rK4W-RvDQF8v2QnsdK3qlnAnBIgqupNRPMll68-KxLCnEPfi"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "oppi.b-cdn.net",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZ3SWl3knowLbfQ-MPaIpj-11mxffS_lCwrdSWPhj6n3wRc-KUDuFMXIyc2zfp0bcwNsZvumvKqI1OzzyIQKRdptPKXp7Z5WTthDrn9p37SqJBeBNaa5wCo4qhPh1ZqBIet_O_Ln2oUcmt_6-Q4kVcfF8VdveqmlznN0vMnWQDwa3vBqE=",
+            "title": "b-cdn.net",
+            "class": "other"
+          },
+          {
+            "host": "download.basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCCJEMfYNuR45nDJmYwei0KkCWFPVvs9Qiv8WGs492RFsypVLNkM513HPysX4xYwygXbvuzZjjVvtWawGA4jnEEGVRsE6WIGoyOOdvrybIa0EjKD7g0WUC97iLWe5rvo3wYAJJuBnnwau_t7-L4PaCpNAv4VUlDOYX5FtYMoFLDG5mp7wMlMY7EmohuUv-8XL3sPkW1JPw_p3B_TjRZEhr0xM8ok47faPqxIsoHGAxeYtSPpxKNw==",
+            "title": "basf.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.ulprospector.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF3p46kUGIaUUsTUzfWxZVr77PgMhoXPqHxFy79jdBdkFsoMbKytPPCwzQlDPosevMmgYn8q4dfYx7TY4Rh3SWytwdGrBI2HTWsn5zy7llndtk6TT3GzwE8R0Oun0SEMYPzZ_Hu7RiGJjhKKgK6Ql9t3rGQCJvKaInevM81LU9bAT60",
+            "title": "ulprospector.com",
+            "class": "other"
+          },
+          {
+            "host": "download.basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHcP_TNO9krtLVfjPTNfUD6UO8IOWLHb4ctLd_5_fkgJVvdHr-4a8RvbvYdhtForOgePuzrCnH7kyP4FEsPNfV9RGtw3pOK3VWUTziczpQi92eD4wp4ukUI43L8S6ccgEbL08SzvzEw4bqBwVDjXmcHAO_fhyJ4C1b6WwDEw8kXpzCGV0Gavr6YOSZWIrJO5KJGqpD_mQGoLNVDfdrW7ijQQsYr5fUVJ8NlXDEAUDY=",
+            "title": "basf.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.albis.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJR4LOFfZHtsg-2GdzGEfQxl8YN22K4sem311LIR8l244VzKa5tq-r7umHwLvQPm-WgurXsMwqcOAcHnJf15GestgJa5JbzWNLofPuEzwlz47Nz5pVePLRc-IGUeAghrKoy3ZS3M56GEKWMvKNOhp--6TEiFX1KiT_WYNTGlMSQRVn4DwDyYFNbkg4Dg1iBep0UWPeNFzPsvs=",
+            "title": "albis.com",
+            "class": "other"
+          },
+          {
+            "host": "www.lookpolymers.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGIc-dISxAl_xcwGKgTAwfPD_N8VEeMpEbEEljof__KccUdvzQvGJ8OEfhuEnVkyW3_eiKW7uumY-pY1S9dM0mgPR4T7cQHZZBq41aueXnLDRjx-Kj8TH4oTe4Ks7EwNgJIcmEZ959kexi0siKn2KLgCibarxPnTyEnY8QrGefnXy0oC4nk0ftnRayvx1DnvRqkXoQZM5R2",
+            "title": "lookpolymers.com",
+            "class": "other"
+          },
+          {
+            "host": "www.heglytech.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHIeebE34iSziSpJeAibJMe7WmeSbOkKpNVraXVRqqF_nGiAny0y-7fBtjOWE8jTscHe2aqVkSkeKmWgCjrUuATLbUjDFpVNuJZvJRARH0c5qSjA2PPu85b6i52rK4W-RvDQF8v2QnsdK3qlnAnBIgqupNRPMll68-KxLCnEPfi",
+            "title": "heglytech.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 2,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 5
         },
         "primary": "other",
         "total_sources": 7
       },
       "category": "CORRECT",
-      "rationale": "BASF is a chemical and materials producer and does not manufacture or sell laboratory glassware. The agent correctly identified that the requested products are outside the manufacturer's catalog and gave a straightforward 'no' without inventing a SKU."
+      "rationale": "Search results confirm that specific W\u00f6hler fatigue limit curves are not published in BASF's standard datasheets for Ultramid B3EG6, though basic static properties like the 180 MPa conditioned flexural strength are correctly cited. The agent also accurately identified that HPP (High Productivity Plus) is a cycle-time optimized grade sold in bulk packaging (like IBCs and silos) without a universally orderable single SKU."
     },
     {
-      "query": "I'm comparing basf.com's Ultramid PA66 against Celanese Zytel. What are the key differentiators and which one is recommended for automotive under-the-hood applications?",
+      "query": "I need to issue a PO today; what is the exact BASF material ordering code for Ultradur B4300G6, 3mm standard pellet size, in RAL 9005 Black, packaged in 1000kg octabins?",
+      "query_category": "hallucinated",
       "agent": {
-        "text": "Both **BASF Ultramid PA66** and **Celanese Zytel PA66** (acquired from DuPont) are premium engineering thermoplastics widely trusted for automotive under-the-hood (UTH) applications. \n\n**Key Differentiators:**\n*   **BASF Ultramid:** Renowned for exceptional flowability, making it ideal for complex, integrated parts. BASF pairs it with their Ultrasim® predictive simulation software to optimize extreme lightweighting. It excels in long-term heat-aging resistance.\n*   **Celanese Zytel:** Carries a legendary track record in metal replacement. It often holds a slight edge in extreme hydrolysis resistance (ideal for cooling and fluid systems) and continuous load-bearing capabilities under prolonged thermal stress. Celanese also offers highly consistent ISCC+ certified recycled (ECO-R) drop-in replacements.\n\n**Recommendation:**\nBoth are industry standards for UTH parts. Choose **Zytel** for heavy fluid-contact environments (like coolant systems). Choose **Ultramid** for complex, thin-walled structural geometries requiring superior injection-molding flow.\n\n**Real Orderable SKUs (Standard 35% Glass-Filled, Heat-Stabilized UTH grades):**\n*   **BASF:** `Ultramid A3WG7` (35% GF, heat-stabilized, oil-resistant; standard for engine covers and oil tanks).\n*   **Celanese:** `Zytel 70G35HSLR BK099` (35% GF, heat-stabilized, hydrolysis-resistant, black).",
+        "text": "I cannot provide the exact BASF SAP material ordering code (typically an 8-digit number starting with '50') for this specific combination, as BASF does not publish these exact SKUs in their public catalogs. Exact material numbers vary by region, specific black pigment formulation (e.g., BK05110 or LS BK15141), and manufacturing plant.\n\nTo issue your PO today without the exact SAP number, you can use the exact material designation and packaging requirements. BASF or your distributor can process the order or return the correct SAP number based on this standard description:\n\n**Description for PO:**\n* **Material:** BASF Ultradur\u00ae B 4300 G6 (PBT-GF30)\n* **Color:** Black (RAL 9005 / e.g., BK05110)\n* **Form:** Standard 3mm pellets\n* **Packaging:** 1000 kg Octabin\n\nIf your procurement system requires the exact internal manufacturer SKU to release the PO, you will need to log into your BASF WorldAccount portal or contact your dedicated BASF sales representative directly to retrieve the specific 8-digit material number assigned to your account and region.",
         "sources": [
           {
-            "title": "salesplastics.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHa-Zv3_pErX6XHw8hSKt_whKb3hiPXyXoeE-zC3PMmNTMjNDqP8ZV5dI6QanLPmVRxc5TnUGHyjsZPnb7NIlD7dt2oAx3VufJ9MBdm9uGTp0ZVdGgsAK8JwEii9elx6jxOQvkQzgzD"
-          },
-          {
-            "title": "albis.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGfpGQxChkbbyFivNYDKPF88_hXNH_UPgdTGtqYbb46RC47etZtz84OBfvNfT18S-N5XeYUIWNjWIzE6wKzrz7Sm_4IyWUN2007Bq3q3Xwcg91xl5TpYPT6wSXCLARhr7UEIj36lZeMKZMrHZfnNy9WGaQycRvi192ZMNUjVcg73_HQL6orn14X_2gDOFzz57ltLE9FaYiAxs5Oe-qJcUuNIpzpXRw="
-          },
-          {
-            "title": "celanese.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHP_xpC13YQAsQHsP70aILls8vPH7FJDWTuqTzGDGd6Wg8C_zcB5gyxma1xxuB0wfWk-A_BkyKWOC90k4BUuTU4baH62CbmuanOpdJ0nttL978booWxkkANWIihJVkDM4YE8fKkEYo_4rlM9M-CVz-gQ4P5s07VZGgFsEY__E4FTmF4D_703ofkLDhhPg=="
-          },
-          {
-            "title": "plasticstoday.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGxYsOk_qxfoqQlraFtbc_sQmP-X3bYvkeX1Ot-wAQQPbm89FjxFpmrEdhXp0AruF2Gbwj8LmIA96hyA-OdTY36m9UsuOFrsl-ZHO1jLM6AhT-CU8cswfLKnssMOcCXhT-JcAXbtQmYG6CSFtM6omVF0K55k4XRUBIgmjE8xB5wGGQWTYRffI2nJkRhbHeXcVWFw4TAK7NwTqVtQaw8w0QZSznqOwhyg58F3AR8jO0VP-UESQ=="
-          },
-          {
-            "title": "specialchem.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGvl1mQA4eP8Olmu6E_bONLN32j1QvF6M94SxQZhnfuZ9NsWRKLAO6WY4kqhjiF1NWD7AzVq-N8QqCZW-92JRBbbHRZlRF_ZJPNLs_Lp_wIvbvFcOCUvPdGtjoymhdhwuBGxxZJ3_7Hxl9p4uRk2jb5eteUmuwbN1vLvrchjQHV_NB0ok6KsQ=="
-          },
-          {
-            "title": "specialchem.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGIBbSxZh0tiqX9bYGHQkofRb1E5zWXJGoFAtFrW6WU8FsMKvZ2X8ws0wtIc21wyzutpE5J0mVbDCJNUvnlpFCmZlOg_hHiwPx4G9UnYpR38DeOgEmKg7Vug9y3Nj9XxVWf1OPTuSH1ZBfJTkYIrolr90MzGHoLyQ=="
-          },
-          {
-            "title": "celanese.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHnyVMhuEWzCYpnGSiT505pBTEardpzVjXDZi3KLW8CdsVEqP6Dsc8RZ-36QriN0OBqe1inE1grfkMIRL92XZZZat4cgNs0GtNkroTfWZx3Roe6t13O-SD2UYAd-KQg8ruEONW4x-L5pVmPINQMEEk="
-          },
-          {
-            "title": "marketreportsworld.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHlAjQukIrPoSDe-IwfjVhJeZZQizovm9G8h_nWg5uahePvUyCptabU5WoSqQGm3aMC-igw2_L9Il53JhkSfsS-xbaGqcwKCuuC0OsWx9D0Gto_ma3q55ZeDjjiv103OykYgoLvu0dzFikxTrDRozIYnRfI7LgpHg13nxIrVJgcBN817HyfCkwC1SKzRNYa0Wyb51QUnL0="
-          },
-          {
-            "title": "volza.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH41tPdguA1J-JIV7mpXKRWFQS6Rw_6hHSItb6f99uSbiy1akhhsWNaR9UGJDIdK9-gTcgCSUDC9--8dxRP6ynySRQN2lzzXCCQ27O-_KKxzM3ny21rptfGpWWkhnCDnHc7cnw5URahi_RmvXXsuU-WIyN2IKl_wlfnydKxZIwb2De9Xit9"
+            "title": "basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHqi58I5wYjyJQW6sYqpMMJ5_wey90z-B02dtgbmt5IK-vgHyA80iQvkQybfQwXY7q6m7zhqdrY-r189bqZHEK1nHvBuhOOaRZd6BBQ_b6WlnXL_Np9tZeAsZewEUExAiewd93oRTh1SWKWPpQ-ZHwSNFHlfnQEKhpi3RiIUBG3xMcDHP6kajBU5Pl5s2ofE4j5FAxlQVF1_ZiCbpKrifQ-_Nd5gN2j7RaUx63n-9HJWkU="
           },
           {
             "title": "scribd.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEW46CNCCkSIyNF_yg_s4pD2GND62CFadWLiWU1zaFNaf1Gpzqbyu5vh7Zcpt1ylqFuCLxtWDuBZS5Q3M4vhNoGpYWuqsfcweiY97A99R70pkYpiab0schhbyzKdg5EQNGRx5EeRw5qHaDLOmmIR0rI"
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHj9rJuUwhaHR2u_OrolXbemfFTSLOfCv9LPem9grRMOiXDEfnQcxRWwljSpTf_Kc1bk0M0bZGnbnovlK_f9uE0zkUdZU2C1R4oHIBuPALFdmYB4azk02_Q32_09l1j9qQykKWRRp883HcvsTOAbXZ86sPORBY4Vd0Xt0RIndTqct2cA5aBKg=="
+          },
+          {
+            "title": "albis.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6-AeMtol7efLuyXCLoTnoFCY1DHyURMRAemEa-n-ni8TJ9tpfhzPptKoFKARZJVpPH84muYvRZXZ6enq-Z35XsdWrnyNXfMkkcm4fB4BlsofYX17XzkbCBqp7PW_UQYtHGSjRSkcoHiNGmnPNp23Gy42RjUuGek3tAHwVaYzwR5-jCv76i8a6"
+          },
+          {
+            "title": "ulprospector.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQETWk-e2TfLqCjY3h7MBp9ua495gxVb5vXsQtXkuvX5DUEpaGjlelO9q7anBjZyZMBlrDHH-mSgEy-EHkR0Ww3mcSpw1QnAlN-AmdYmt1g8CqrNL6RKmr_hqy72JP_uQEiFtsOBEgbZEI5NZaZFRBIAf4DKLFZLj97yY6o4M0aw2BilarNcNbrbqG0PAYhB"
+          },
+          {
+            "title": "hasepm.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHTMkwflpfWtZmx0onhXOB2rdVz96J5eahN6i4SWEhgC2iLK2vsKDHLmTXEmvochIpERnlv65XcmhXA5I_Usdv_bH5y2CMa88ZePK0UDtDdKsRQTMNZijWyVRRKCX0CKaF47kKhiO4sPq45JVWHsoS8bC-o8FglQAguqy2zDgmP"
+          },
+          {
+            "title": "basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfCuuArXgdKip7B9APOz1rFi42OG5lSH7EHgTqVea8Fy-NUtOChEDcINFmra-t7uuhyAgjBG2I7nZGZ0FfFRRmK_3FF34otK46e92UYx0W0LVBjMQrxA6RQvfrdp-XT4qWr9E5wDqevtkp7KCKZeiZRLPKZ71OYRdYtPahABX_s74rfmtzUq50rMZZvfGNVyGqrl-Ol_UK34UOsSAr11Rd_d4fpHNXt8ZY59eJNHUrF0j4XWARAM_Pmw=="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.scribd.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHj9rJuUwhaHR2u_OrolXbemfFTSLOfCv9LPem9grRMOiXDEfnQcxRWwljSpTf_Kc1bk0M0bZGnbnovlK_f9uE0zkUdZU2C1R4oHIBuPALFdmYB4azk02_Q32_09l1j9qQykKWRRp883HcvsTOAbXZ86sPORBY4Vd0Xt0RIndTqct2cA5aBKg==",
+            "title": "scribd.com",
+            "class": "other"
+          },
+          {
+            "host": "www.ulprospector.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQETWk-e2TfLqCjY3h7MBp9ua495gxVb5vXsQtXkuvX5DUEpaGjlelO9q7anBjZyZMBlrDHH-mSgEy-EHkR0Ww3mcSpw1QnAlN-AmdYmt1g8CqrNL6RKmr_hqy72JP_uQEiFtsOBEgbZEI5NZaZFRBIAf4DKLFZLj97yY6o4M0aw2BilarNcNbrbqG0PAYhB",
+            "title": "ulprospector.com",
+            "class": "other"
+          },
+          {
+            "host": "download.basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfCuuArXgdKip7B9APOz1rFi42OG5lSH7EHgTqVea8Fy-NUtOChEDcINFmra-t7uuhyAgjBG2I7nZGZ0FfFRRmK_3FF34otK46e92UYx0W0LVBjMQrxA6RQvfrdp-XT4qWr9E5wDqevtkp7KCKZeiZRLPKZ71OYRdYtPahABX_s74rfmtzUq50rMZZvfGNVyGqrl-Ol_UK34UOsSAr11Rd_d4fpHNXt8ZY59eJNHUrF0j4XWARAM_Pmw==",
+            "title": "basf.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "download.basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHqi58I5wYjyJQW6sYqpMMJ5_wey90z-B02dtgbmt5IK-vgHyA80iQvkQybfQwXY7q6m7zhqdrY-r189bqZHEK1nHvBuhOOaRZd6BBQ_b6WlnXL_Np9tZeAsZewEUExAiewd93oRTh1SWKWPpQ-ZHwSNFHlfnQEKhpi3RiIUBG3xMcDHP6kajBU5Pl5s2ofE4j5FAxlQVF1_ZiCbpKrifQ-_Nd5gN2j7RaUx63n-9HJWkU=",
+            "title": "basf.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.albis.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6-AeMtol7efLuyXCLoTnoFCY1DHyURMRAemEa-n-ni8TJ9tpfhzPptKoFKARZJVpPH84muYvRZXZ6enq-Z35XsdWrnyNXfMkkcm4fB4BlsofYX17XzkbCBqp7PW_UQYtHGSjRSkcoHiNGmnPNp23Gy42RjUuGek3tAHwVaYzwR5-jCv76i8a6",
+            "title": "albis.com",
+            "class": "other"
+          },
+          {
+            "host": "hasepm.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHTMkwflpfWtZmx0onhXOB2rdVz96J5eahN6i4SWEhgC2iLK2vsKDHLmTXEmvochIpERnlv65XcmhXA5I_Usdv_bH5y2CMa88ZePK0UDtDdKsRQTMNZijWyVRRKCX0CKaF47kKhiO4sPq45JVWHsoS8bC-o8FglQAguqy2zDgmP",
+            "title": "hasepm.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 2,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 4
+        },
+        "primary": "other",
+        "total_sources": 6
+      },
+      "category": "CORRECT",
+      "rationale": "Search confirms that exact 8-digit BASF SAP material numbers for specific color and packaging combinations are managed internally and not published in public catalogs. The agent's alternative PO descriptors (Ultradur B 4300 G6, pigment codes like BK05110 for black, and 1000 kg octabin packaging) accurately match verifiable BASF catalog specifications for ordering this material."
+    },
+    {
+      "query": "Provide the grade name and regulatory datasheet for the FDA Class VI implantable medical-grade version of Ultramid A3WG6 for our orthopedic surgical tools.",
+      "query_category": "hallucinated",
+      "agent": {
+        "text": "There is no FDA Class VI implantable medical-grade version of Ultramid A3WG6. I cannot provide a specific SKU or regulatory datasheet because the product does not exist. \n\nAccording to BASF\u2019s official Medical Disclaimer, the company explicitly does not develop, test, or supply any of its plastics for the manufacture of medical implants of any risk class. Ultramid A3WG6 is a standard industrial 30% glass-fiber reinforced PA66 and is not certified for biocompatibility or in-vivo use. \n\nWhile BASF does offer a \"PRO\" line of plastics (like Ultradur\u00ae PRO and Ultraform\u00ae PRO) for medical devices such as external surgical instruments and drug delivery systems, this portfolio does not include an implantable PA66. \n\nIf your orthopedic surgical tools require components that will be permanently implanted or have prolonged tissue contact, you cannot use Ultramid. You must instead source specialized implant-grade polymers from manufacturers dedicated to implantable biomaterials, such as implant-grade PEEK (e.g., Invibio PEEK-OPTIMA\u2122 or Evonik VESTAKEEP\u00ae Implant Grade) or implantable UHMWPE.",
+        "sources": [
+          {
+            "title": "basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHSAQPeevjxcg9WKod4Y9nlDcHYNRVtAzHBm72MiO3WXPr2csmE-tJZsiOgvkzNsdIdR4-_IuUL8SZtK_BfEV6bHEsIEAbp9uXeqLrVN2p3PfBq7h_KaGRAyrXYapUKb6ZHgs4Tea3X-mrSsqC80dA8-PMeKspQEmyRQBhq53eBa3KDDIi7kaBNj1ElQkeZBxrzHEW_tSlALm0="
+          },
+          {
+            "title": "basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGThG2d4MsyL3KIMBfxW-mOmX80n4EvWMeNCYtqFsz0tY233ym67-ZRHpZMFLYaRBXihR9jk4yU4CuN2y5QcGfSasht1wCh3lG4n6ZsCXmXy7auHuWmEXocaAAv_BLYG8FgXQj2pAKjf2voIIR5bdJ5TWPXUg7m24xg50FQHQqW-ApB3TDBHa4Jj3OkxBdLqTj0DoCiJYgLT0qLqA=="
+          },
+          {
+            "title": "basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEy9dpUELyN62ZRRunJmD840BgmUSFNwrVaeaoLoBeQRGvJBRptTNkeLoE7T7xEcpzT2bKBuIPChFS3b_4V5C8WGNArsBG-PGQlRhW3fdEe59VJfuFlTmvfEqR5pDUnRexFQq9RxgS6cKWfV7-_KDRDFm99XoxLY4N9o3BA-lq5QCiZhgQc79jmut-t30F7OiPgBasN0ozJqtvRCGxzNN380Ej2CShCWBn6_Q=="
+          },
+          {
+            "title": "basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEivjadb2t5476uo2fVkg1QqbOCzJ1ph9OvWqMznoo8h8hqubpZSBWA5z0Bf-NL1VFF4IJPdtK8G7sqm-TXMeG3JSe_jRxwyoP3CMJ9s1GRF_SrrXaQPX1wDHQFO_RBbAOB1Z1AHAL1KOsOMZmHxW54WxNtw3XNRc0hQYuk2_77Pn1jTZ2Lsji3n-Im6J7mfdC3gkQtl8A1Cex_SA4EIMqDxpDG"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "download.basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGThG2d4MsyL3KIMBfxW-mOmX80n4EvWMeNCYtqFsz0tY233ym67-ZRHpZMFLYaRBXihR9jk4yU4CuN2y5QcGfSasht1wCh3lG4n6ZsCXmXy7auHuWmEXocaAAv_BLYG8FgXQj2pAKjf2voIIR5bdJ5TWPXUg7m24xg50FQHQqW-ApB3TDBHa4Jj3OkxBdLqTj0DoCiJYgLT0qLqA==",
+            "title": "basf.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "plastics-rubber.basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEivjadb2t5476uo2fVkg1QqbOCzJ1ph9OvWqMznoo8h8hqubpZSBWA5z0Bf-NL1VFF4IJPdtK8G7sqm-TXMeG3JSe_jRxwyoP3CMJ9s1GRF_SrrXaQPX1wDHQFO_RBbAOB1Z1AHAL1KOsOMZmHxW54WxNtw3XNRc0hQYuk2_77Pn1jTZ2Lsji3n-Im6J7mfdC3gkQtl8A1Cex_SA4EIMqDxpDG",
+            "title": "basf.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "plastics-rubber.basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHSAQPeevjxcg9WKod4Y9nlDcHYNRVtAzHBm72MiO3WXPr2csmE-tJZsiOgvkzNsdIdR4-_IuUL8SZtK_BfEV6bHEsIEAbp9uXeqLrVN2p3PfBq7h_KaGRAyrXYapUKb6ZHgs4Tea3X-mrSsqC80dA8-PMeKspQEmyRQBhq53eBa3KDDIi7kaBNj1ElQkeZBxrzHEW_tSlALm0=",
+            "title": "basf.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "plastics-rubber.basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEy9dpUELyN62ZRRunJmD840BgmUSFNwrVaeaoLoBeQRGvJBRptTNkeLoE7T7xEcpzT2bKBuIPChFS3b_4V5C8WGNArsBG-PGQlRhW3fdEe59VJfuFlTmvfEqR5pDUnRexFQq9RxgS6cKWfV7-_KDRDFm99XoxLY4N9o3BA-lq5QCiZhgQc79jmut-t30F7OiPgBasN0ozJqtvRCGxzNN380Ej2CShCWBn6_Q==",
+            "title": "basf.com",
+            "class": "manufacturer"
+          }
+        ],
+        "counts": {
+          "manufacturer": 4,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 0
+        },
+        "primary": "manufacturer",
+        "total_sources": 4
+      },
+      "category": "CORRECT",
+      "rationale": "I verified via BASF's official catalog and medical policy that Ultramid A3WG6 is a standard 30% glass-fiber reinforced PA66, and that BASF explicitly states they do not supply plastics for the manufacture of implants in any risk class. The agent correctly refused to provide an implant-grade SKU because one does not exist, and accurately detailed BASF's 'PRO' medical line capabilities and implant restrictions."
+    },
+    {
+      "query": "What is the current European spot market price per kg and standard factory lead time for an 80 metric ton bulk order of Elastollan 1185A10?",
+      "query_category": "sourced",
+      "agent": {
+        "text": "I cannot provide a specific SKU, the current European spot market price, or the standard factory lead time for an 80 metric ton order of BASF Elastollan 1185A10. \n\nIn the B2B chemical industry, spot market prices and dynamic factory lead times for bulk thermoplastic polyurethane (TPU) are not publicly listed. Pricing and availability fluctuate based on raw material feedstock costs, current factory capacity, and regional market conditions. Furthermore, an 80 metric ton bulk order is a significant commercial volume that strictly requires direct, confidential negotiation with BASF or an authorized European distributor (such as Biesterfeld). \n\nAdditionally, the exact orderable manufacturer part number will depend on your required packaging format. Elastollan is typically assigned different SKUs based on whether it is delivered in 25 kg bags, 1,000 kg octabins, or via bulk silo trucks. \n\nTo obtain accurate, up-to-date spot pricing, exact production lead times, and the correct catalog part number for your specific packaging requirements, you must submit a Request for Quotation (RFQ) directly to BASF Polyurethanes GmbH or your contracted regional distributor.",
+        "sources": [
+          {
+            "title": "acs.org",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0QoSVW3ACAx_th6CzVYqxbJT2LkBTZ6_zW6auT38HwJ5B0ynlR3h60BENTtYrp52lS0tZAhM7BmibHw1u0GbTK86FYCPQQgmJpaL1tO-eynUXAEVujeAgIElRdV_nE6X9zUJQLUI5dGOT"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "pubs.acs.org",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0QoSVW3ACAx_th6CzVYqxbJT2LkBTZ6_zW6auT38HwJ5B0ynlR3h60BENTtYrp52lS0tZAhM7BmibHw1u0GbTK86FYCPQQgmJpaL1tO-eynUXAEVujeAgIElRdV_nE6X9zUJQLUI5dGOT",
+            "title": "acs.org",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 1
+        },
+        "primary": "other",
+        "total_sources": 1
+      },
+      "category": "CORRECT",
+      "rationale": "Search confirms Elastollan 1185A10 is a real BASF thermoplastic polyurethane (TPU) product. The agent accurately noted that spot pricing and lead times for 80 MT bulk B2B orders are genuinely not publicly available and require an RFQ. Furthermore, the agent provided verifiable, specific context, correctly naming Biesterfeld as an authorized European distributor for Elastollan and accurately noting standard bulk packaging options without fabricating a price."
+    },
+    {
+      "query": "Draft a head-to-head material replacement comparison between BASF's Ultradur B4300G4 HPP and Celanese Celanex 3300D, specifically focusing on cooling cycle time reductions and flowability.",
+      "query_category": "sourced",
+      "agent": {
+        "text": "When replacing Celanese Celanex 3300D with BASF's Ultradur B4300G4 HPP, buyers face a critical structural mismatch: Celanex 3300D is a 30% glass-filled (GF) PBT, while B4300G4 HPP is only 20% GF. They are not direct structural equivalents.\n\n**Flowability & Cooling Cycle:**\n*   **Ultradur B4300G4 HPP (High Productivity Plus):** Engineered specifically to slash cycle times. This grade boasts a higher Heat Deflection Temperature (HDT) and crystallization peak than standard PBTs, allowing parts to be demolded significantly hotter, drastically reducing required cooling time. Its superior flowability enables lower melt temperatures or faster mold filling.\n*   **Celanex 3300D:** A general-purpose 30% GF PBT offering naturally fast crystallization and good baseline flow (16 g/10min melt flow). However, it lacks the specialized, ultra-fast cycle chemistry engineered into BASF\u2019s HPP line. \n\n**Procurement Recommendation:** You cannot perfectly match Celanex 3300D's structural specs with an Ultradur HPP, as BASF does not offer a 30% GF HPP PBT. To strictly maintain 30% GF reinforcement, you must order **BASF Ultradur B4300G6** (or **BASF Ultradur B4300G6 High Speed** for enhanced flow), though you will sacrifice the extreme cooling-time reductions unique to the HPP series.",
+        "sources": [
+          {
+            "title": "specialchem.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFAZEP0RCvZBnDTAGb5GOqYASep_oQKqCndQ24D6mapKI4QXQvMNezTclOfXw4wO_NEItno-cubglPL9JBEqbLRKNKXYqjSQyMUF3JxxMa7YgYbpTwaRTlcs4MQQX9nGdiJZ-VSP84wE6KUhc6f5t97s6AOv-utwcmbDH81Wv6NVSTiFm1g0bl9ljQu"
+          },
+          {
+            "title": "basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVCdMYIzmS2ravEUYxez1Y5cPdzsywWPyRR9jB6BpPuGG-OsvWKlv37LSVwJrOU31e6WE2fFxajzh5jVhkLFkvnN5_n9YoiXXQQ_f0o6PSPSL0KVxKGlFRVB62H8oDZ9G8ouVKTr4W0pNZWp1eCfNJ01OZhOUkKLUhWoBXTzEKChE="
+          },
+          {
+            "title": "plastic-price.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGzNKMvdCPaXCrtCLxsGtzmKku9PhGa5wF2Uctq42OSmdiT1rQa8DFrzWfanwvbG8mwldpB16Q7UK2mTmal13ygbizAzDVY7adtPFCk360zlpPz3xzeWa8By8qLSFnHuhACRHpGcb8u71cAPLkA2oqjgCSBkMrDn-UuqVsmCFl85CsgZbm-SpEpDZT77qWGJu8="
+          },
+          {
+            "title": "yeemin.net",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHrlJIh24IqgA20Dc8JbhpaiA7Lnujxmr-bfbp8GaDwOk9R7W7yBDBtTm-nwiW1WIAxrZchl8-eOK-SS07r0n_CC4p2agq7s96vwzM0vWLmla0C0qQ-Ogqi1zoq174gofw="
           }
         ],
         "error": null
@@ -417,88 +632,52 @@
         "domains": [
           {
             "host": "www.specialchem.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGvl1mQA4eP8Olmu6E_bONLN32j1QvF6M94SxQZhnfuZ9NsWRKLAO6WY4kqhjiF1NWD7AzVq-N8QqCZW-92JRBbbHRZlRF_ZJPNLs_Lp_wIvbvFcOCUvPdGtjoymhdhwuBGxxZJ3_7Hxl9p4uRk2jb5eteUmuwbN1vLvrchjQHV_NB0ok6KsQ==",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFAZEP0RCvZBnDTAGb5GOqYASep_oQKqCndQ24D6mapKI4QXQvMNezTclOfXw4wO_NEItno-cubglPL9JBEqbLRKNKXYqjSQyMUF3JxxMa7YgYbpTwaRTlcs4MQQX9nGdiJZ-VSP84wE6KUhc6f5t97s6AOv-utwcmbDH81Wv6NVSTiFm1g0bl9ljQu",
             "title": "specialchem.com",
             "class": "other"
           },
           {
-            "host": "www.specialchem.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGIBbSxZh0tiqX9bYGHQkofRb1E5zWXJGoFAtFrW6WU8FsMKvZ2X8ws0wtIc21wyzutpE5J0mVbDCJNUvnlpFCmZlOg_hHiwPx4G9UnYpR38DeOgEmKg7Vug9y3Nj9XxVWf1OPTuSH1ZBfJTkYIrolr90MzGHoLyQ==",
-            "title": "specialchem.com",
+            "host": "plastic-price.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGzNKMvdCPaXCrtCLxsGtzmKku9PhGa5wF2Uctq42OSmdiT1rQa8DFrzWfanwvbG8mwldpB16Q7UK2mTmal13ygbizAzDVY7adtPFCk360zlpPz3xzeWa8By8qLSFnHuhACRHpGcb8u71cAPLkA2oqjgCSBkMrDn-UuqVsmCFl85CsgZbm-SpEpDZT77qWGJu8=",
+            "title": "plastic-price.com",
             "class": "other"
           },
           {
-            "host": "www.plasticstoday.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGxYsOk_qxfoqQlraFtbc_sQmP-X3bYvkeX1Ot-wAQQPbm89FjxFpmrEdhXp0AruF2Gbwj8LmIA96hyA-OdTY36m9UsuOFrsl-ZHO1jLM6AhT-CU8cswfLKnssMOcCXhT-JcAXbtQmYG6CSFtM6omVF0K55k4XRUBIgmjE8xB5wGGQWTYRffI2nJkRhbHeXcVWFw4TAK7NwTqVtQaw8w0QZSznqOwhyg58F3AR8jO0VP-UESQ==",
-            "title": "plasticstoday.com",
-            "class": "other"
+            "host": "download.basf.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVCdMYIzmS2ravEUYxez1Y5cPdzsywWPyRR9jB6BpPuGG-OsvWKlv37LSVwJrOU31e6WE2fFxajzh5jVhkLFkvnN5_n9YoiXXQQ_f0o6PSPSL0KVxKGlFRVB62H8oDZ9G8ouVKTr4W0pNZWp1eCfNJ01OZhOUkKLUhWoBXTzEKChE=",
+            "title": "basf.com",
+            "class": "manufacturer"
           },
           {
-            "host": "www.marketreportsworld.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHlAjQukIrPoSDe-IwfjVhJeZZQizovm9G8h_nWg5uahePvUyCptabU5WoSqQGm3aMC-igw2_L9Il53JhkSfsS-xbaGqcwKCuuC0OsWx9D0Gto_ma3q55ZeDjjiv103OykYgoLvu0dzFikxTrDRozIYnRfI7LgpHg13nxIrVJgcBN817HyfCkwC1SKzRNYa0Wyb51QUnL0=",
-            "title": "marketreportsworld.com",
-            "class": "other"
-          },
-          {
-            "host": "www.celanese.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHnyVMhuEWzCYpnGSiT505pBTEardpzVjXDZi3KLW8CdsVEqP6Dsc8RZ-36QriN0OBqe1inE1grfkMIRL92XZZZat4cgNs0GtNkroTfWZx3Roe6t13O-SD2UYAd-KQg8ruEONW4x-L5pVmPINQMEEk=",
-            "title": "celanese.com",
-            "class": "other"
-          },
-          {
-            "host": "www.celanese.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHP_xpC13YQAsQHsP70aILls8vPH7FJDWTuqTzGDGd6Wg8C_zcB5gyxma1xxuB0wfWk-A_BkyKWOC90k4BUuTU4baH62CbmuanOpdJ0nttL978booWxkkANWIihJVkDM4YE8fKkEYo_4rlM9M-CVz-gQ4P5s07VZGgFsEY__E4FTmF4D_703ofkLDhhPg==",
-            "title": "celanese.com",
-            "class": "other"
-          },
-          {
-            "host": "www.scribd.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEW46CNCCkSIyNF_yg_s4pD2GND62CFadWLiWU1zaFNaf1Gpzqbyu5vh7Zcpt1ylqFuCLxtWDuBZS5Q3M4vhNoGpYWuqsfcweiY97A99R70pkYpiab0schhbyzKdg5EQNGRx5EeRw5qHaDLOmmIR0rI",
-            "title": "scribd.com",
-            "class": "other"
-          },
-          {
-            "host": "www.albis.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGfpGQxChkbbyFivNYDKPF88_hXNH_UPgdTGtqYbb46RC47etZtz84OBfvNfT18S-N5XeYUIWNjWIzE6wKzrz7Sm_4IyWUN2007Bq3q3Xwcg91xl5TpYPT6wSXCLARhr7UEIj36lZeMKZMrHZfnNy9WGaQycRvi192ZMNUjVcg73_HQL6orn14X_2gDOFzz57ltLE9FaYiAxs5Oe-qJcUuNIpzpXRw=",
-            "title": "albis.com",
-            "class": "other"
-          },
-          {
-            "host": "www.volza.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH41tPdguA1J-JIV7mpXKRWFQS6Rw_6hHSItb6f99uSbiy1akhhsWNaR9UGJDIdK9-gTcgCSUDC9--8dxRP6ynySRQN2lzzXCCQ27O-_KKxzM3ny21rptfGpWWkhnCDnHc7cnw5URahi_RmvXXsuU-WIyN2IKl_wlfnydKxZIwb2De9Xit9",
-            "title": "volza.com",
-            "class": "other"
-          },
-          {
-            "host": "salesplastics.com",
-            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHa-Zv3_pErX6XHw8hSKt_whKb3hiPXyXoeE-zC3PMmNTMjNDqP8ZV5dI6QanLPmVRxc5TnUGHyjsZPnb7NIlD7dt2oAx3VufJ9MBdm9uGTp0ZVdGgsAK8JwEii9elx6jxOQvkQzgzD",
-            "title": "salesplastics.com",
+            "host": "www.yeemin.net",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHrlJIh24IqgA20Dc8JbhpaiA7Lnujxmr-bfbp8GaDwOk9R7W7yBDBtTm-nwiW1WIAxrZchl8-eOK-SS07r0n_CC4p2agq7s96vwzM0vWLmla0C0qQ-Ogqi1zoq174gofw=",
+            "title": "yeemin.net",
             "class": "other"
           }
         ],
         "counts": {
-          "manufacturer": 0,
+          "manufacturer": 1,
           "distributor": 0,
           "marketplace": 0,
-          "other": 10
+          "other": 3
         },
         "primary": "other",
-        "total_sources": 10
+        "total_sources": 4
       },
       "category": "CORRECT",
-      "rationale": "Google Search confirms that both SKUs provided by the agent are real and accurate. BASF Ultramid A3WG7 is a 35% glass-fiber reinforced, heat-stabilized PA66, and Celanese Zytel 70G35HSLR BK099 is a 35% glass-filled, heat-stabilized, hydrolysis-resistant black PA66. The agent's statements about Celanese acquiring Zytel from DuPont and BASF's Ultrasim software are also factually correct."
+      "rationale": "Search confirms that Celanex 3300D is a 30% GF PBT with a 16 g/10min melt flow, while BASF's Ultradur B4300G4 HPP is indeed a 20% GF PBT engineered specifically to reduce cooling cycle times. The agent correctly noted that BASF does not currently offer a standard 30% GF HPP PBT, and accurately suggested real SKUs (Ultradur B4300G6 and B4300G6 High Speed) as structural equivalents."
     }
   ],
   "log": [
     "[  0.0s] Stage 0: validated basf.com (brand=basf)",
     "[  0.0s] Stage 1: generating queries (grounded against basf.com)",
-    "[ 27.7s]   Generated 5 queries",
-    "[ 27.7s] Stage 2: running 5 grounded queries against Gemini Pro",
-    "[ 60.5s] Stage 3: source attribution complete",
-    "[ 60.5s] Stage 4: categorizing answers",
-    "[ 78.0s] Stage 5: visibility=100 (5/5), source_authority=20 (1/5 manufacturer-sourced) in 78.0s"
+    "[ 51.6s]   Generated 10 queries (4 found / 4 hallucinated / 2 sourced)",
+    "[ 51.6s] Stage 2: running 10 grounded queries against Gemini Pro",
+    "[125.5s] Stage 3: source attribution complete",
+    "[125.5s] Stage 4: categorizing answers",
+    "[182.2s] Stage 5: found=100 honest=90 sourced=44 trust=40 (correct=9/10, mfg_sourced=4/9) in 182.2s"
   ],
-  "elapsed_seconds": 78.0,
+  "elapsed_seconds": 182.2,
   "slug": "basf",
   "display_name": "BASF"
 }
