@@ -1,0 +1,713 @@
+{
+  "input": "https://hawe.com",
+  "host": "hawe.com",
+  "brand": "hawe",
+  "found_score": 100,
+  "honest_score": 100,
+  "sourced_score": 80,
+  "trust_score": 80,
+  "visibility_score": 100,
+  "source_authority_score": 80,
+  "total_queries": 10,
+  "correct_queries": 10,
+  "manufacturer_correct": 8,
+  "breakdown": {
+    "CORRECT": 10,
+    "HALLUCINATION": 0,
+    "OUT_OF_CATALOG": 0,
+    "REFUSED": 0,
+    "WRONG_SPEC": 0,
+    "ERROR": 0
+  },
+  "source_breakdown": {
+    "manufacturer": 8,
+    "distributor": 0,
+    "marketplace": 0,
+    "other": 2,
+    "none": 0
+  },
+  "rows": [
+    {
+      "query": "We're speccing an electric ag rover and need the integration manual for the HAWE Mattro ROVO 96-volt tracked electrification platform.",
+      "query_category": "found",
+      "agent": {
+        "text": "HAWE Mattro does not sell a distinct, orderable SKU for a physical ROVO integration manual. Technical documentation is provided directly to integrators digitally, and you will need to reference HAWE's official engineering documents for the 96-volt ROVO 3 (3rd generation) platform. \n\nThe specific document IDs you need for mechanical and electrical integration are:\n\n*   **D 6140**: ROVO Robot Platform Product Documentation (covers configurations, payload mounting, platform adapters, and hardware specifications).\n*   **B 6140**: ROVO Quick Start Guide & Operating Manual (covers electrical connection, VCU/inverter layouts, external CAN bus actuation, and commissioning).\n*   **B 6130**: Intelligent EnergyPack (IEP) User Manual (covers the 96V battery system integration, CAN bus activation, and power distribution).\n\nBecause there is no orderable part number for this literature, you cannot purchase it through standard procurement channels. You must download these documents via the HAWE Customer Portal (customerportal.hawe.com) or request them directly from HAWE Mattro technical support (info@hawe-mattro.com).",
+        "sources": [
+          {
+            "title": "hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHJjNtFJa3HnH25SwSggdhgemqvPNyETR9yorA1KUyJYNpCcVgmwb8dEQ0SNv2Tkz39ey4_SoahgVJgLfrqxFpEDKLLsrl7Dd-Qfc2Sgj3Fz36LSO94OyHVuRWXTTpdyRIGO-bV82zkLIPj6PsfFa8="
+          },
+          {
+            "title": "hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEFQLcCNRisliUNgm08qp5sTwyIBThkXZhOq7mrDVdAo8Tqz3OmLNWCyBmIErYqHrug33xjCdXEbWOkuflxIjXYkgJv27zM6ccojura-mkjf1lcyW1-X_NOLDBCLmQVrDzsY7vtq4JjO9qjJElO3H2TJc-vC-PeiEcvFoT-14Dw8_GJwAZk92RbTf7LJts="
+          },
+          {
+            "title": "hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFmyJaZA2nBsBpPsH_zMBsTdclJPaPKEb8sBKFtpzFXqstNnPuopvU4DLMoR_VGfAQ4Flg1Ks_396pc_UbeNbla1Uob3zi8OVtwjzXwTta3C8ro77ZCPmk0ssZo0oDl43g3zM-ouhKXjhG3v-11xxwvEev--DNGPWG2KpkQly7RNsg="
+          },
+          {
+            "title": "hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGiHsSvcuXiXMBM4lC50hLCGi62pm9abn37XBS0DVSSwVI_81hQR588l9WIrUdwbGafVF9KZ7bwITAlg4TUvhnYslG6CgNpLjlPm2CEoQKIYmqOe-TL1xupJDqKyEbPT-PfVLdnbqZUe9b9Qaprv21LI4o3"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "productfinder.hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHJjNtFJa3HnH25SwSggdhgemqvPNyETR9yorA1KUyJYNpCcVgmwb8dEQ0SNv2Tkz39ey4_SoahgVJgLfrqxFpEDKLLsrl7Dd-Qfc2Sgj3Fz36LSO94OyHVuRWXTTpdyRIGO-bV82zkLIPj6PsfFa8=",
+            "title": "hawe.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "productfinder.hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGiHsSvcuXiXMBM4lC50hLCGi62pm9abn37XBS0DVSSwVI_81hQR588l9WIrUdwbGafVF9KZ7bwITAlg4TUvhnYslG6CgNpLjlPm2CEoQKIYmqOe-TL1xupJDqKyEbPT-PfVLdnbqZUe9b9Qaprv21LI4o3",
+            "title": "hawe.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "productfinder.hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEFQLcCNRisliUNgm08qp5sTwyIBThkXZhOq7mrDVdAo8Tqz3OmLNWCyBmIErYqHrug33xjCdXEbWOkuflxIjXYkgJv27zM6ccojura-mkjf1lcyW1-X_NOLDBCLmQVrDzsY7vtq4JjO9qjJElO3H2TJc-vC-PeiEcvFoT-14Dw8_GJwAZk92RbTf7LJts=",
+            "title": "hawe.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "productfinder.hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFmyJaZA2nBsBpPsH_zMBsTdclJPaPKEb8sBKFtpzFXqstNnPuopvU4DLMoR_VGfAQ4Flg1Ks_396pc_UbeNbla1Uob3zi8OVtwjzXwTta3C8ro77ZCPmk0ssZo0oDl43g3zM-ouhKXjhG3v-11xxwvEev--DNGPWG2KpkQly7RNsg=",
+            "title": "hawe.com",
+            "class": "manufacturer"
+          }
+        ],
+        "counts": {
+          "manufacturer": 4,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 0
+        },
+        "primary": "manufacturer",
+        "total_sources": 4
+      },
+      "category": "CORRECT",
+      "rationale": "Search confirms that HAWE Mattro provides their ROVO platform and IEP battery documentation digitally under the exact document IDs provided by the agent (D 6140, B 6140, and B 6130). The agent also accurately provided the correct technical support email (info@hawe-mattro.com) found in the HAWE Mattro literature to request these integration manuals."
+    },
+    {
+      "query": "Send over the technical documentation and CAN-bus integration guide for the newly released HAWE VIPR intelligent valve unit.",
+      "query_category": "found",
+      "agent": {
+        "text": "I cannot provide a specific SKU, orderable part number, or technical documentation link for the HAWE VIPR intelligent valve unit because they are not yet available in HAWE's standard public catalog. \n\nAnnounced in late 2025, the HAWE VIPR is an advanced, highly customizable, software-defined control block. It utilizes an \"independent metering\" setup with four proportional seated valves, integrated pressure sensors, CAN-bus control, and machine learning algorithms. \n\nBecause the VIPR shifts control complexity from hardware to software\u2014allowing operating modes like floating positions or specific pressure controls to be configured entirely via software without altering the hardware\u2014it functions as a modular, application-specific platform rather than a single off-the-shelf SKU.\n\nTo obtain the CAN-bus integration guide, technical specifications, and the exact hardware configuration needed for your machine, you must contact HAWE Hydraulik directly or consult your regional HAWE applications engineering representative to begin the specification and commissioning process.",
+        "sources": [
+          {
+            "title": "hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHyx8SBNu1-lX_5ImjGa6QBo_42Bi4MpNb5wrOQE8Rg-EdvQALyYPmkUxYBgWHUTIIrxJrU-ERTpcG4dTKJ__o_sw8BfwJbMsGiwmYGd1po-JO-6Sxnx6bfy8hSwTXhCEWYYNtvdLSRffCerxjngjEIBpNg7Hw5Q8-NkfiHdi7MI17Iqx_pd3N79hB0i2CStthlVZX9nGbPwjQGfqUhRQs7eQGZ4n6N_OWea2fktWka90YDPKfh-4TvKn4YnOtCBgs54DEoIcHT6HJq"
+          },
+          {
+            "title": "hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH9nKPRRit1bhdHLnjOVTlGM5AApkdRTxwDl3qigXjIKAl60wZvGhPVahJG8HV_OQT-m9ikIpolfWaJxSxsySON8XASFruumhM-wK-P_6IIBD2_WZ7gFUZeqSyY5mXpwUqw4a2S4OlO5mG0GckRqwFN0qJDq_88zGOoa_qwS_pRR8CjvTurjsE3ycA-kdrpiVLTlTArCVTCCezeq7zBCjmiY1SjEtB7XwK166OJwr5qM-iLA3B_hDqUFlO3R7e8a_mrStopqf8wwA=="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH9nKPRRit1bhdHLnjOVTlGM5AApkdRTxwDl3qigXjIKAl60wZvGhPVahJG8HV_OQT-m9ikIpolfWaJxSxsySON8XASFruumhM-wK-P_6IIBD2_WZ7gFUZeqSyY5mXpwUqw4a2S4OlO5mG0GckRqwFN0qJDq_88zGOoa_qwS_pRR8CjvTurjsE3ycA-kdrpiVLTlTArCVTCCezeq7zBCjmiY1SjEtB7XwK166OJwr5qM-iLA3B_hDqUFlO3R7e8a_mrStopqf8wwA==",
+            "title": "hawe.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHyx8SBNu1-lX_5ImjGa6QBo_42Bi4MpNb5wrOQE8Rg-EdvQALyYPmkUxYBgWHUTIIrxJrU-ERTpcG4dTKJ__o_sw8BfwJbMsGiwmYGd1po-JO-6Sxnx6bfy8hSwTXhCEWYYNtvdLSRffCerxjngjEIBpNg7Hw5Q8-NkfiHdi7MI17Iqx_pd3N79hB0i2CStthlVZX9nGbPwjQGfqUhRQs7eQGZ4n6N_OWea2fktWka90YDPKfh-4TvKn4YnOtCBgs54DEoIcHT6HJq",
+            "title": "hawe.com",
+            "class": "manufacturer"
+          }
+        ],
+        "counts": {
+          "manufacturer": 2,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 0
+        },
+        "primary": "manufacturer",
+        "total_sources": 2
+      },
+      "category": "CORRECT",
+      "rationale": "Google search confirms the HAWE VIPR is a newly announced (late 2025) intelligent valve unit. The agent accurately described its technical specifications\u2014including its machine learning capabilities, four proportional seated valves, and 'independent metering' setup\u2014and correctly noted that as a highly customizable, software-defined platform, it requires direct manufacturer consultation rather than having a standard off-the-shelf SKU or public manual."
+    },
+    {
+      "query": "I need the exact flow rate curve and dimensional CAD drawings for the HAWE axial piston variable displacement pump model V60N-130 RDYV.",
+      "query_category": "found",
+      "agent": {
+        "text": "As an AI text model, I cannot directly generate or attach graphical flow rate curves or CAD drawing files. \n\nHowever, for B2B procurement, the HAWE axial piston pump model **V60N-130 RDYV** (stocked specifically as **V60N-130 RDYV-1**) is orderable under the exact HAWE SKU: **10018681**. \n\nTo obtain your engineering assets:\n* **CAD Drawings:** The exact 3D CAD files (`3D-Modell [step].zip`) are freely available for download on the HAWE Hydraulik website by searching the SKU **10018681**. \n* **Curves & Dimensions:** The full dimensional drawings, flow rate curves, and performance limits are published in **HAWE Data Sheet D 7960 N**. \n\n**Key Technical Details (SKU 10018681):**\n* **Nominal / Peak Pressure:** 400 bar / 450 bar.\n* **Displacement:** 130 cm\u00b3/rev base (Note: This specific stock SKU features a factory stroke limitation set to 110 cm\u00b3/rev).\n* **Flange / Shaft:** DIN ISO 7653 / DIN ISO 14 (designed for commercial vehicle power take-offs).\n\nPlease provide your team with HAWE order number **10018681** and reference data sheet **D 7960 N** to secure the exact STEP files and performance charts you need.",
+        "sources": [
+          {
+            "title": "hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEacqZH0Sn1LB174TW9Bdue2TpRzDg4k-ylQmUKzR1XgyzpwoTfYLpcOPVeThYm2jVLwxlK7e3fI5qdxvUDmpRo_OYZF90UvYapzNdRwp2cpWoQmdeRq3s0z8EkdgrwzVnUpXsib8hXuTiNgVAdEjfp1CofFDCzfdCXeCltli7s8MsHJp7S3623pYtbV_Wv3xOO2xcv5OZ3"
+          },
+          {
+            "title": "hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCKSuVUNIDJbXVg_s91xne3r3wiMlpsTgj6GsQ1B9TMBHM1oP6_kngNQYHmjoQkiMKNK8jf5H2kqZLQ_kCax9LWdBtd_1QC-_59RVLeZ3tr4vrzXb3tk2bORfwPUgpZWEkXteKXWcY7sga7JvYf2kKBVp8fWkoO9Moi6DkkBan-gELkR-coejdvJ2wy0-mx9Lwtipyk9myNCl_i5Aq"
+          },
+          {
+            "title": "hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHs9Lsx5nJiIqBsyJNp6FuQUFcm0NH_YAK3jBE3U0jhgUG6Z5xW07zQWK_ngcS1LZfq-3jw0JnxSjjxY5i-YVps5pqFDCrtsDHNWoG8bVrKMpoGUNMkfsLPEdDO1DrDiJzNCnSAbyIC0_kri71uRevHQ=="
+          },
+          {
+            "title": "pneumaticandhydraulic.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwg35Op6es2KEfzJw8IflUj1QCxoZq2JfSLpm6QM2f2ehkRpyUsBjfIG20xlHkvFKaBYzuDDL_q7rOCQIFQFhV7bxoezAI0nh2lRVllu-erMtDZ81oAcLFMW7dOFd6q2bTL3bVzGOoLUaptYhXgwrfjxTT6Ul0WQ8_WX2X_CRqft0N7Z4gOdhB6B8dLdIDHbsPVztRIkZIT47JQzwb8ELxZqpNw8IJqtU1-6FUW_U-5n17vhTnQzsDNuVWbsP6CYSpFA=="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "productfinder.hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHs9Lsx5nJiIqBsyJNp6FuQUFcm0NH_YAK3jBE3U0jhgUG6Z5xW07zQWK_ngcS1LZfq-3jw0JnxSjjxY5i-YVps5pqFDCrtsDHNWoG8bVrKMpoGUNMkfsLPEdDO1DrDiJzNCnSAbyIC0_kri71uRevHQ==",
+            "title": "hawe.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEacqZH0Sn1LB174TW9Bdue2TpRzDg4k-ylQmUKzR1XgyzpwoTfYLpcOPVeThYm2jVLwxlK7e3fI5qdxvUDmpRo_OYZF90UvYapzNdRwp2cpWoQmdeRq3s0z8EkdgrwzVnUpXsib8hXuTiNgVAdEjfp1CofFDCzfdCXeCltli7s8MsHJp7S3623pYtbV_Wv3xOO2xcv5OZ3",
+            "title": "hawe.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.pneumaticandhydraulic.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwg35Op6es2KEfzJw8IflUj1QCxoZq2JfSLpm6QM2f2ehkRpyUsBjfIG20xlHkvFKaBYzuDDL_q7rOCQIFQFhV7bxoezAI0nh2lRVllu-erMtDZ81oAcLFMW7dOFd6q2bTL3bVzGOoLUaptYhXgwrfjxTT6Ul0WQ8_WX2X_CRqft0N7Z4gOdhB6B8dLdIDHbsPVztRIkZIT47JQzwb8ELxZqpNw8IJqtU1-6FUW_U-5n17vhTnQzsDNuVWbsP6CYSpFA==",
+            "title": "pneumaticandhydraulic.com",
+            "class": "other"
+          },
+          {
+            "host": "www.hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCKSuVUNIDJbXVg_s91xne3r3wiMlpsTgj6GsQ1B9TMBHM1oP6_kngNQYHmjoQkiMKNK8jf5H2kqZLQ_kCax9LWdBtd_1QC-_59RVLeZ3tr4vrzXb3tk2bORfwPUgpZWEkXteKXWcY7sga7JvYf2kKBVp8fWkoO9Moi6DkkBan-gELkR-coejdvJ2wy0-mx9Lwtipyk9myNCl_i5Aq",
+            "title": "hawe.com",
+            "class": "manufacturer"
+          }
+        ],
+        "counts": {
+          "manufacturer": 3,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 1
+        },
+        "primary": "manufacturer",
+        "total_sources": 4
+      },
+      "category": "CORRECT",
+      "rationale": "Google Search verifies that the exact HAWE order number for the V60N-130 RDYV-1 pump is 10018681. The specific technical parameters provided (130 cm\u00b3/rev base displacement limited to 110 cm\u00b3/rev, 400/450 bar pressure, DIN ISO 7653 flange, and DIN ISO 14 shaft) as well as the reference to datasheet D 7960 N perfectly match HAWE's official catalog documentation."
+    },
+    {
+      "query": "Provide a complete list of the specialized sub-brands and acquired divisions operating under the HAWE Group, specifically those handling wind energy, electrification, and North American distribution.",
+      "query_category": "found",
+      "agent": {
+        "text": "Because you are asking for a list of corporate entities and business divisions rather than a specific hardware component, I cannot answer with a specific SKU. \n\nBased on HAWE Group's corporate structure, here are the specialized sub-brands and acquired divisions operating in your target sectors:\n\n**Wind Energy**\n* **HAWE Energy Solutions A/S**: Formed in 2022 following the acquisition of the Fritz Schur Energy (FSE) and Fritz Schur Teknik (FST) divisions. It focuses on wind turbine pitch systems and aftermarket services.\n\n**Electrification**\n* **HAWE Mattro**: Established after the 2019 acquisition of Mattro. This division spearheads HAWE\u2019s electrification controls and mobile battery systems.\n\n**North American Distribution**\n* **HAWE North America, Inc.**: Manages U.S. distribution, substantially strengthened by the 2013 acquisition of Portland-based Pacific Fluid Systems.\n* **HAWE Hydraulik Canada**: Officially launched in July 2023 after HAWE acquired its long-time distributor, Hydra-Fab.\n\n**Other Notable Divisions** (from the 2019 HOERBIGER automation acquisition):\n* **HAWE Altenstadt**: Specializes in machinery and mobility segments.\n* **HAWE Micro Fluid**: Handles medical technology and theme park rides.",
+        "sources": [
+          {
+            "title": "businessinfocusmagazine.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE64f1qJ5sT-X1LKyiWQDGZ5Sh9ff4wXZaTdPv4PdJ3haqcusJ9EvHeZs7wbhDA721alRRBiTf5tp1E8-l1TJ3O2flRvzsg_3NkLW0VNsQvUk6u5WKGTQlQ-ZcjTYgOLtespjYx_ar4FRI_N_fO6V3w4EFU2QCZ8IVuBuxYDmucUXv1RkJ6IZNKVgm4ueeofd08O9Z3sV00"
+          },
+          {
+            "title": "hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHGoodas_8IvZqgF3iXG0kYv6bXKgeZezsJERYoEmRrKuUpKcCbphi7I6UnYr1xlZV2t_FwCbe6PCWvveultqg10FvBJD6de5raLXcXiLgBUVWvwQhrldLR5n8YUqkC13AmsUeME_yHe8skK0mniqw="
+          },
+          {
+            "title": "hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFlH4w3-KDnrXuWMG3qCvdk6vUkHejyZk3ccTdThi164ApYtCUQL2QvY-ZUO1DnVlnzwHG1fTDSSpNmJ1rqkITo4deVYYHWROwgruokGtzl6W-yHgh-eT7CtNzDFJeMKc8n3YLuGQe0YLhL13XSdAzHYHT5HoTD512gm6qvB_3ghdVCmtnLl3c68y2g20lxekNW6Z9pk2hvvrhtiNhdruF89wfDm0FS-WbYtA=="
+          },
+          {
+            "title": "mobilehydraulictips.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-QZOZZRhOxOrlf6zcoQFEu0W6DgwU0HjKscbsNTzpi4yjwfcn7O_vkmpOb1V0iR2xrT4-SYa555BvtKgnqjHDzWMJMRx1MNxCyu4hpwTAv6tk_9G5YRA9fzl42D4l2VnMksrYKJ1_7-rN5JUM6ESl9xvAjMcfY5Y8dFP5tJoT_LMX7AkQM2Dlsn1_FW9l82Gp"
+          },
+          {
+            "title": "hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFgb1NL7UBuwgWxK_0_VxKr8FwbOBXE3bhmGOv8xiglN_N-Y88ZxlqyKKia0OjoDlzT8ByU7M7SNEWQCzjj9ZooXbenbASeAP8S2JIrJO8ZYM8qZFz-pNfbQgUyAu5IdC4Q046zXpzmD1lYURFT77lHmNvS_YOcZQeJ"
+          },
+          {
+            "title": "oemoffhighway.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFjfFadOn8nDYFg76TQxSqPPxMgk4QH6nxxNa7AyIbiNhiq0PMyyea5_PidgX1Zf3NRFYjr3Hdy9LRqOj-bU5IAtKHXO1WqRmjvh5J-vmiYZNOnf-xRZahQ1nnGrauf1JkKwLgl6VegmjIRWbkWnVGG5xfLSwi6OSooJTmfEkQRjfO6ePZh3rIU7s59_nNp_6pOAE8MO6jTz2PjxXcUAnCEW7odI8ePINijiSh2"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.oemoffhighway.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFjfFadOn8nDYFg76TQxSqPPxMgk4QH6nxxNa7AyIbiNhiq0PMyyea5_PidgX1Zf3NRFYjr3Hdy9LRqOj-bU5IAtKHXO1WqRmjvh5J-vmiYZNOnf-xRZahQ1nnGrauf1JkKwLgl6VegmjIRWbkWnVGG5xfLSwi6OSooJTmfEkQRjfO6ePZh3rIU7s59_nNp_6pOAE8MO6jTz2PjxXcUAnCEW7odI8ePINijiSh2",
+            "title": "oemoffhighway.com",
+            "class": "other"
+          },
+          {
+            "host": "www.hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHGoodas_8IvZqgF3iXG0kYv6bXKgeZezsJERYoEmRrKuUpKcCbphi7I6UnYr1xlZV2t_FwCbe6PCWvveultqg10FvBJD6de5raLXcXiLgBUVWvwQhrldLR5n8YUqkC13AmsUeME_yHe8skK0mniqw=",
+            "title": "hawe.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "businessinfocusmagazine.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE64f1qJ5sT-X1LKyiWQDGZ5Sh9ff4wXZaTdPv4PdJ3haqcusJ9EvHeZs7wbhDA721alRRBiTf5tp1E8-l1TJ3O2flRvzsg_3NkLW0VNsQvUk6u5WKGTQlQ-ZcjTYgOLtespjYx_ar4FRI_N_fO6V3w4EFU2QCZ8IVuBuxYDmucUXv1RkJ6IZNKVgm4ueeofd08O9Z3sV00",
+            "title": "businessinfocusmagazine.com",
+            "class": "other"
+          },
+          {
+            "host": "www.mobilehydraulictips.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-QZOZZRhOxOrlf6zcoQFEu0W6DgwU0HjKscbsNTzpi4yjwfcn7O_vkmpOb1V0iR2xrT4-SYa555BvtKgnqjHDzWMJMRx1MNxCyu4hpwTAv6tk_9G5YRA9fzl42D4l2VnMksrYKJ1_7-rN5JUM6ESl9xvAjMcfY5Y8dFP5tJoT_LMX7AkQM2Dlsn1_FW9l82Gp",
+            "title": "mobilehydraulictips.com",
+            "class": "other"
+          },
+          {
+            "host": "www.hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFgb1NL7UBuwgWxK_0_VxKr8FwbOBXE3bhmGOv8xiglN_N-Y88ZxlqyKKia0OjoDlzT8ByU7M7SNEWQCzjj9ZooXbenbASeAP8S2JIrJO8ZYM8qZFz-pNfbQgUyAu5IdC4Q046zXpzmD1lYURFT77lHmNvS_YOcZQeJ",
+            "title": "hawe.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFlH4w3-KDnrXuWMG3qCvdk6vUkHejyZk3ccTdThi164ApYtCUQL2QvY-ZUO1DnVlnzwHG1fTDSSpNmJ1rqkITo4deVYYHWROwgruokGtzl6W-yHgh-eT7CtNzDFJeMKc8n3YLuGQe0YLhL13XSdAzHYHT5HoTD512gm6qvB_3ghdVCmtnLl3c68y2g20lxekNW6Z9pk2hvvrhtiNhdruF89wfDm0FS-WbYtA==",
+            "title": "hawe.com",
+            "class": "manufacturer"
+          }
+        ],
+        "counts": {
+          "manufacturer": 3,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 3
+        },
+        "primary": "manufacturer",
+        "total_sources": 6
+      },
+      "category": "CORRECT",
+      "rationale": "Google Search confirms all listed divisions and acquisitions are perfectly accurate. HAWE Energy Solutions A/S was formed in 2022 from Fritz Schur Energy, HAWE Mattro was acquired in 2019, HAWE North America was formed from the 2013 Pacific Fluid Systems acquisition, HAWE Canada launched in July 2023 from Hydra-Fab, and HAWE Altenstadt/Micro Fluid were established from the 2019 HOERBIGER acquisition."
+    },
+    {
+      "query": "We're standardizing our end-of-arm tooling; please provide the mounting footprint for the HAWE PR-7 series pneumatic rotary actuators to verify compatibility.",
+      "query_category": "hallucinated",
+      "agent": {
+        "text": "I cannot provide a mounting footprint or orderable SKU for a \"HAWE PR-7 series pneumatic rotary actuator\" because this product does not exist. \n\nHAWE Hydraulik specializes exclusively in high-pressure **hydraulic** components (such as pumps, proportional valves, and hydraulic cylinders) and does not manufacture pneumatic rotary actuators. \n\nIt is highly likely there is a mix-up in the manufacturer name or part number in your tooling specifications. For example:\n* **ProtACT GmbH** and **PHD Inc.** both manufacture well-known \"PR Series\" pneumatic rotary actuators.\n* **GO Regulator** makes a \"PR-7\" series, but this is a high-flow pressure regulator, not a rotary actuator.\n\nTo ensure your end-of-arm tooling standardisation is accurate, please verify the correct manufacturer (e.g., PHD, Festo, SMC, or ProtACT) or double-check the part number. Once the correct brand and model are confirmed, we can provide the exact orderable SKU and verify its standard mounting footprint (such as ISO 5211 or VDI/VDE 3845) for your application.",
+        "sources": [
+          {
+            "title": "hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGCOop4rx3s6W_sa65d5dpUrjUskfKkoMmGhUg8k8f1ILEuiyquymK4OHZukQ9DVp2hBYCPkU2sDXhDD7NrnXnQJY88uWMfdAqkFRV7HFO0ACMOta3cpvQubQC9R0E6SegT-yz4DUyBEkkfQrfVz3tnxNkiY0DSNliXe_nBZh40aC82lMOkWRVOiCkbUILerZeYxsdsj4ZZStjvpb4PwhZYxvoCxwIj"
+          },
+          {
+            "title": "hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHSxx9S475eJxOwskulGoP3EPL0VPaFLNcbzVOBCYVlValJ_X0vBMwa5of0BC-DrjmwZ8D6YaMTY2L2JR3FCPTJa8XMiuEhvO58R0nGhR9_kMXccFz9Dibp0ea8rYc4wGgHVdYX6NOBciwnb4FNRSPZ-M-kEw=="
+          },
+          {
+            "title": "hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHOJ306YVJCjeShvZXOoJgeytCEX3mcI80UqN82y9NrHjZf1-RFOAsa1w6XxosBsCdQ3pavw1de2DKoqUFNaZ3GeHONECPyhBuMbfS7yXMBuN3RC4L_FZb8ZuaKWVwStA=="
+          },
+          {
+            "title": "protact-gmbh.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZ1cV05RUCePrCCJ893LBIju6202qZrlDhZrxf8ck-purB7EonHsLZorNSX4TLT2xXRFt5mpasaUJLHnqGrjgZLcrcw4oNAqJ_0SmIMkV8kLbKlql34IsA0ogv5n431hIABmO-M559CeYqW0DXN4rf-H3PUP4CRhq8Ogc8pzDiB4OrqitGipfR3fe4_RNfqTWz6eSCFI2TzH4G8Qnt8YWPQMg1"
+          },
+          {
+            "title": "phdinc.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHTJBQXBzClgq6euvrJzXsV_Mx-qWDljty1WDerBKPUPQxDQnPHeJJ1h8190OrmzdHm3EgKU1TT4oLf5yF2S_3JLrx-cSj4PXDf_c_4dnNxWgXTwsX93fkcu9wj0ap1EmoMWbs="
+          },
+          {
+            "title": "goreg.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGQogAfRSbStXYxmJF8Ih9NooP1JP_sHew9HH5KApvhF9NS-SgxGBYDxtb6Ujd-DD8J2qZmxAP8VUwU2izvBg6mxxnLh39UrlUJ44agYZjl6Q22w2YW0wwZpHs5"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.protact-gmbh.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZ1cV05RUCePrCCJ893LBIju6202qZrlDhZrxf8ck-purB7EonHsLZorNSX4TLT2xXRFt5mpasaUJLHnqGrjgZLcrcw4oNAqJ_0SmIMkV8kLbKlql34IsA0ogv5n431hIABmO-M559CeYqW0DXN4rf-H3PUP4CRhq8Ogc8pzDiB4OrqitGipfR3fe4_RNfqTWz6eSCFI2TzH4G8Qnt8YWPQMg1",
+            "title": "protact-gmbh.de",
+            "class": "other"
+          },
+          {
+            "host": "www.hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHOJ306YVJCjeShvZXOoJgeytCEX3mcI80UqN82y9NrHjZf1-RFOAsa1w6XxosBsCdQ3pavw1de2DKoqUFNaZ3GeHONECPyhBuMbfS7yXMBuN3RC4L_FZb8ZuaKWVwStA==",
+            "title": "hawe.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGCOop4rx3s6W_sa65d5dpUrjUskfKkoMmGhUg8k8f1ILEuiyquymK4OHZukQ9DVp2hBYCPkU2sDXhDD7NrnXnQJY88uWMfdAqkFRV7HFO0ACMOta3cpvQubQC9R0E6SegT-yz4DUyBEkkfQrfVz3tnxNkiY0DSNliXe_nBZh40aC82lMOkWRVOiCkbUILerZeYxsdsj4ZZStjvpb4PwhZYxvoCxwIj",
+            "title": "hawe.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "goreg.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGQogAfRSbStXYxmJF8Ih9NooP1JP_sHew9HH5KApvhF9NS-SgxGBYDxtb6Ujd-DD8J2qZmxAP8VUwU2izvBg6mxxnLh39UrlUJ44agYZjl6Q22w2YW0wwZpHs5",
+            "title": "goreg.com",
+            "class": "other"
+          },
+          {
+            "host": "www.phdinc.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHTJBQXBzClgq6euvrJzXsV_Mx-qWDljty1WDerBKPUPQxDQnPHeJJ1h8190OrmzdHm3EgKU1TT4oLf5yF2S_3JLrx-cSj4PXDf_c_4dnNxWgXTwsX93fkcu9wj0ap1EmoMWbs=",
+            "title": "phdinc.com",
+            "class": "other"
+          },
+          {
+            "host": "www.hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHSxx9S475eJxOwskulGoP3EPL0VPaFLNcbzVOBCYVlValJ_X0vBMwa5of0BC-DrjmwZ8D6YaMTY2L2JR3FCPTJa8XMiuEhvO58R0nGhR9_kMXccFz9Dibp0ea8rYc4wGgHVdYX6NOBciwnb4FNRSPZ-M-kEw==",
+            "title": "hawe.com",
+            "class": "manufacturer"
+          }
+        ],
+        "counts": {
+          "manufacturer": 3,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 3
+        },
+        "primary": "manufacturer",
+        "total_sources": 6
+      },
+      "category": "CORRECT",
+      "rationale": "I verified via search that HAWE Hydraulik specializes in high-pressure hydraulic components and does not manufacture pneumatic rotary actuators. The agent correctly identified that the requested 'PR-7 series pneumatic rotary actuator' is out of catalog for HAWE and accurately pointed out that 'PR-7' and 'PR series' belong to other manufacturers like GO Regulator or PHD Inc."
+    },
+    {
+      "query": "For marine deployment, what is the exact salt spray resistance rating in hours (ISO 9227) on the official datasheet for the HAWE PSL size 2 proportional directional spool valve?",
+      "query_category": "hallucinated",
+      "agent": {
+        "text": "I cannot provide a specific SKU or rating because the official HAWE datasheet for the PSL size 2 proportional directional spool valve (document D 7700-2) does not specify an exact ISO 9227 salt spray resistance rating in hours. \n\nWhile HAWE PSL series valves are widely used in marine and offshore applications and often feature zinc-nickel surface protection, the catalog documentation for the core valve block does not formally state an ISO 9227 hour rating. \n\nRelated electronic add-ons for the PSL series do have documented environmental testing, though not strictly under ISO 9227:\n*   **Integrated CAN Controls:** Rated for 500 hours of salt spray, but tested under the **DIN EN 60068-2-11** standard.\n*   **Third-Party On-Board Amplifiers (e.g., Servi SAC/ODC):** Built for HAWE marine applications and tested to **EN 60068-2-52 Level 1**.\n\nIf your procurement compliance specifically requires an exact ISO 9227 salt spray hour guarantee for the complete valve assembly, you will need to contact HAWE Hydraulik directly to request a customized marine-grade surface treatment classification.",
+        "sources": [
+          {
+            "title": "hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFpvy_vp7rlGS5b86qJp67oBCGXf9Iy9d7pBI-kR_wX0JAOcs5GYS0F3k2LhBKjqE9bAHpHxYH3wq8dvnMLsRX7omTXO1ByBX4N1L3wZu4tSHUCU5Bg9_HFYjRICVqheeERwGfNL8L9_0yZW1so4HjPmfiw"
+          },
+          {
+            "title": "hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHylnd4SQZ9dktNNP94xHgi_nigObMlTEaejf0E8-0UCDiwBrisnxRShkpWTSRyLnM3AI8jwOBYZ2Ay89UVLvJ1WNz7vhVKaKD354edQE1knzq338wNp-PtrtgNEAkb1jUk42ify_Abfv4lWI696i7Y"
+          },
+          {
+            "title": "qucosa.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEwmftgaHyRR9sq7CfH-xpNG9Cz1CbVA9qm4X2baOoDww_sU1AQay79pde8LOEbyv8fzMaslwVOnuLOKPGg8gjAmsjSx23SJHdeI4ZNv_B1-gG4KPkx5Ew8d44AhVRj03tUKb9_-vWZywVYVd52l58L6AaWCg=="
+          },
+          {
+            "title": "hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFttty7qU7BOmj04E6Cn2KB0QNCIP8toEgFFl4zRLYI87YTQYxoqP7XEjz5goZTGIgtOAwVMgj7HndJ7h0z3KR1g2giLsoL09B4mczbSpiv6eihcNgT6nQn6EDgmqkEhMkG6AQEQTc-yqyiMk7fS7-g-FHe_ZfmzHAwYA=="
+          },
+          {
+            "title": "servi.no",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFkbHwGawnVVbkbAuQ9rbNnlcpFoWAiqjN3fIQJmfj6Sl06uR0OyM0yx-kVcF-Vw-7YzxYEXWT67rzQ7AlKi_knWE7evWNP5lY0tpj75TCE0pzsPJ-ZGk2QCUNNWTldhra10_GBh9H3qbFv4fXaH3Fn1oSEPi1HCFOdv1hS2LSNNv6UlZvKBiy-hzfAaeidsHOjHIBFvTbrPx2VQ2HWHZnMwAhwb70FABuc6--IlBEOg75WIAM="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "productfinder.hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHylnd4SQZ9dktNNP94xHgi_nigObMlTEaejf0E8-0UCDiwBrisnxRShkpWTSRyLnM3AI8jwOBYZ2Ay89UVLvJ1WNz7vhVKaKD354edQE1knzq338wNp-PtrtgNEAkb1jUk42ify_Abfv4lWI696i7Y",
+            "title": "hawe.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.servi.no",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFkbHwGawnVVbkbAuQ9rbNnlcpFoWAiqjN3fIQJmfj6Sl06uR0OyM0yx-kVcF-Vw-7YzxYEXWT67rzQ7AlKi_knWE7evWNP5lY0tpj75TCE0pzsPJ-ZGk2QCUNNWTldhra10_GBh9H3qbFv4fXaH3Fn1oSEPi1HCFOdv1hS2LSNNv6UlZvKBiy-hzfAaeidsHOjHIBFvTbrPx2VQ2HWHZnMwAhwb70FABuc6--IlBEOg75WIAM=",
+            "title": "servi.no",
+            "class": "other"
+          },
+          {
+            "host": "productfinder.hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFttty7qU7BOmj04E6Cn2KB0QNCIP8toEgFFl4zRLYI87YTQYxoqP7XEjz5goZTGIgtOAwVMgj7HndJ7h0z3KR1g2giLsoL09B4mczbSpiv6eihcNgT6nQn6EDgmqkEhMkG6AQEQTc-yqyiMk7fS7-g-FHe_ZfmzHAwYA==",
+            "title": "hawe.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "productfinder.hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFpvy_vp7rlGS5b86qJp67oBCGXf9Iy9d7pBI-kR_wX0JAOcs5GYS0F3k2LhBKjqE9bAHpHxYH3wq8dvnMLsRX7omTXO1ByBX4N1L3wZu4tSHUCU5Bg9_HFYjRICVqheeERwGfNL8L9_0yZW1so4HjPmfiw",
+            "title": "hawe.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "tud.qucosa.de",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEwmftgaHyRR9sq7CfH-xpNG9Cz1CbVA9qm4X2baOoDww_sU1AQay79pde8LOEbyv8fzMaslwVOnuLOKPGg8gjAmsjSx23SJHdeI4ZNv_B1-gG4KPkx5Ew8d44AhVRj03tUKb9_-vWZywVYVd52l58L6AaWCg==",
+            "title": "qucosa.de",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 3,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 2
+        },
+        "primary": "manufacturer",
+        "total_sources": 5
+      },
+      "category": "CORRECT",
+      "rationale": "Search confirms the official HAWE D 7700-2 datasheet does not specify an exact ISO 9227 salt spray hour rating for the core valve. The agent's supplementary details are highly accurate: HAWE's integrated CAN controls are indeed rated for 500 hours under DIN EN 60068-2-11, and third-party Servi SAC/ODC onboard amplifiers explicitly designed for HAWE PSL valves are rated to EN 60068-2-52 Level 1."
+    },
+    {
+      "query": "Generate the complete ordering code for a HAWE V60N axial piston pump, size 130, factory painted in RAL 5010 blue, including the designator for export-grade wooden crate packaging.",
+      "query_category": "hallucinated",
+      "agent": {
+        "text": "I cannot provide a specific SKU or ordering code that includes these features because one does not exist in the HAWE catalog. \n\nThe HAWE V60N type code system strictly designates the technical and functional specifications of the pump. A standard ordering code for a size 130 pump will look similar to **V60N-130 RDYN-1-0-04/LSP** (specifying the 130cc displacement, rotation direction, shaft type, flange, seals, and flow/pressure controllers). \n\nCosmetic surface treatments, such as factory painting in RAL 5010 blue, and specific logistics requests, like export-grade wooden crate packaging, are **not** built into the alphanumeric type code. In B2B procurement with HAWE Hydraulik, these requirements are handled as separate commercial instructions, custom text added to the purchase order, or separate line items rather than being embedded in the pump's core SKU.\n\nTo order this exact configuration, you must select the base technical code for your specific V60N-130 application and define the paint and packaging requirements directly with your HAWE sales representative or distributor.",
+        "sources": [
+          {
+            "title": "hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFzueK6VKgfbHvuqeVnlM-rFfwgbBWPzP_YteZVb3A1HQm2uIMGjF_AAwY765TvtO3CKxWL99vZfX2f4fvzH3aD4hz2A50WtW-LeM4x28Y5IVuGdsaHtlKO4FDDGB_Gce1PRqCOHKGwD_wAxlSGxywuZ8d64hsS69ITTf7KZqG1PvbU1sYn4ecZdeZnn1C8KOMfFQ1tPfeeAg=="
+          },
+          {
+            "title": "directindustry.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHk_IZQGHylQ-n1KCMoYS66vDp9SRurbPuBonXHukSSUu1V7vlmFGvY3ViBhqkN336F4_cg0CH9dUdDgzUDFJ55GKRZfQuWKJRi5muvrwPllMtqsdVEvrqk31hInDTASe4-ze72FjjqTCUgZp2JNgstqs0oGlo1r9Oj4R-1Q9pwT-HjDf25Ig=="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "pdf.directindustry.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHk_IZQGHylQ-n1KCMoYS66vDp9SRurbPuBonXHukSSUu1V7vlmFGvY3ViBhqkN336F4_cg0CH9dUdDgzUDFJ55GKRZfQuWKJRi5muvrwPllMtqsdVEvrqk31hInDTASe4-ze72FjjqTCUgZp2JNgstqs0oGlo1r9Oj4R-1Q9pwT-HjDf25Ig==",
+            "title": "directindustry.com",
+            "class": "other"
+          },
+          {
+            "host": "www.hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFzueK6VKgfbHvuqeVnlM-rFfwgbBWPzP_YteZVb3A1HQm2uIMGjF_AAwY765TvtO3CKxWL99vZfX2f4fvzH3aD4hz2A50WtW-LeM4x28Y5IVuGdsaHtlKO4FDDGB_Gce1PRqCOHKGwD_wAxlSGxywuZ8d64hsS69ITTf7KZqG1PvbU1sYn4ecZdeZnn1C8KOMfFQ1tPfeeAg==",
+            "title": "hawe.com",
+            "class": "manufacturer"
+          }
+        ],
+        "counts": {
+          "manufacturer": 1,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 1
+        },
+        "primary": "manufacturer",
+        "total_sources": 2
+      },
+      "category": "CORRECT",
+      "rationale": "Verified via HAWE's V60N datasheet (D 7960 N) that the ordering code strictly defines technical and functional specifications (e.g., displacement, rotation, shaft, flange, and controllers). Cosmetic modifications like custom paint and specific packaging are not embedded in the alphanumeric type code, making the agent's explanation and example code correct."
+    },
+    {
+      "query": "Our rig's legacy panel only supplies AC power; what is the specific ordering part number for the 120V AC solenoid variant of the HAWE SP 3 directional plug-in seated valve?",
+      "query_category": "hallucinated",
+      "agent": {
+        "text": "There is no specific ordering part number for a 120V AC variant of the HAWE SP 3 directional seated valve because **it does not exist**. \n\nAccording to HAWE Hydraulik's official product documentation (Datasheet D 6019), the SP 3 plug-in cone-seated valves are exclusively manufactured with **12V DC or 24V DC** switching magnets (solenoids). There are no 120V AC or 115V AC coils available for this specific product line. \n\nTo operate the HAWE SP 3 valve using your legacy 120V AC panel, you cannot buy a direct AC-compatible SKU. Instead, you must specify the standard 12V DC or 24V DC valve (which utilizes an AMP Superseal connector) and install an intermediate AC-to-DC power supply or an interposing relay within your control panel. This will safely step down and convert your 120V AC control signal into the required DC output to trigger the valve.",
+        "sources": [
+          {
+            "title": "hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCI3B2qL09HeGJ_z5olwbgrGQJxbOKKSKF2lwvxcJdr0X4BBBjUWTQSuOSeQJsSpDygjsa1RdHCATT-z6WiGs1V1TkMvu3mF99hwm_ryxENzK6UcdMkpTUr0W4_LIxLyuC_YkKeUo3mmtKrXDCU5I="
+          },
+          {
+            "title": "hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGgD0d2LnXoyiWyuEbpAfYIWLB8Gd4fqRvhrdGWWPn963npUYLYasAKYX97tXIMCb-MGzxQ-jtJO1y33BcGXzN-vao8l6X8dbOpyX4HUqOUqd5HiX2F4xJnv3UXjrGnAFA7PaQOBFC4xArlREslSvbkDFr9ixyLvqlXYbCz09cdNjf7pEHKrhbo0zfTkY9FTv6jw4IoZW3tzp853JYfX67lAteOPhOHtHK2106PxNBWnZBmtQVBZjz8Gp5Y0rpM2HN0DW2d2snmtFKo3UUdkITgDoQidu7KC5BL"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "productfinder.hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCI3B2qL09HeGJ_z5olwbgrGQJxbOKKSKF2lwvxcJdr0X4BBBjUWTQSuOSeQJsSpDygjsa1RdHCATT-z6WiGs1V1TkMvu3mF99hwm_ryxENzK6UcdMkpTUr0W4_LIxLyuC_YkKeUo3mmtKrXDCU5I=",
+            "title": "hawe.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGgD0d2LnXoyiWyuEbpAfYIWLB8Gd4fqRvhrdGWWPn963npUYLYasAKYX97tXIMCb-MGzxQ-jtJO1y33BcGXzN-vao8l6X8dbOpyX4HUqOUqd5HiX2F4xJnv3UXjrGnAFA7PaQOBFC4xArlREslSvbkDFr9ixyLvqlXYbCz09cdNjf7pEHKrhbo0zfTkY9FTv6jw4IoZW3tzp853JYfX67lAteOPhOHtHK2106PxNBWnZBmtQVBZjz8Gp5Y0rpM2HN0DW2d2snmtFKo3UUdkITgDoQidu7KC5BL",
+            "title": "hawe.com",
+            "class": "manufacturer"
+          }
+        ],
+        "counts": {
+          "manufacturer": 2,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 0
+        },
+        "primary": "manufacturer",
+        "total_sources": 2
+      },
+      "category": "CORRECT",
+      "rationale": "Verified via HAWE's official D 6019 datasheet that the SP 3 directional seated valve is only manufactured with 12V DC or 24V DC switching magnets. The agent correctly stated that a 120V AC variant does not exist and provided appropriate workarounds without fabricating a SKU."
+    },
+    {
+      "query": "What is the current factory lead time and expected unit cost for a blanket order of 50 HAWE V60N-090 axial piston pumps?",
+      "query_category": "sourced",
+      "agent": {
+        "text": "Here is the procurement information for the HAWE V60N-090 axial piston pump:\n\n**Part Numbers (SKUs)**\nYou must specify the rotation and exact configuration. Real, orderable part numbers direct from HAWE include:\n*   **10018685** (Model V60N-090 LDYV-1) \u2013 Counterclockwise rotation\n*   **10018684** (Model V60N-090 RDYV-1) \u2013 Clockwise rotation\n\n**Expected Unit Cost**\nBased on current distributor catalog pricing, a single unit costs between **\u20ac2,354 (approx. $2,550 USD) and $4,230 USD**, depending on the controller and vendor. A blanket order of 50 units will likely qualify for a volume discount, but this requires a direct Request for Quote (RFQ).\n\n**Factory Lead Time**\nI cannot provide an exact factory lead time for a 50-unit blanket order through public data. While small quantities (1\u20133 units) are often available from distributor stock and ship in 1 to 14 days, an order of 50 units usually exceeds standard on-hand stock and requires factory production. General B2B estimates for high-pressure piston pumps of this scale typically range from 1 to 3 months. You must submit a formal RFQ to HAWE Hydraulik or an authorized dealer for a confirmed delivery schedule.",
+        "sources": [
+          {
+            "title": "hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGkmNdyt73FPoTJdjaid6wwzGZTqk9EaiAAyXYfrmdnLo0Z_jTflZR3HMtwOLXG4BOJsg0HgwO_3nxxjzVez8bcaQgmM1fafJ0eyZqjDvBevg7_ZvG-qU6NBmsu8tHH_NdGYItHMLmLsI6771gV-pa4SD_D6muqSiTYf71Xu73S195KTTzK1yyvpG59hSRUzgdROpy0HQayzG_EW3E8jGT5Z6cIZ-iqiv9P9m00GTWlvhsYD5F7RvQX1nROyfYGyE1JYg=="
+          },
+          {
+            "title": "hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELv2cPGgYejFPqiQ4pNz8ZvcI_GzugXgJMrpYunxsEY-0k80IBORBKLh6TTrigP5J_t1vUfkJzTxjFuT1KdFC36NoH6XmAHJz3_2-rgQpc4tgHrLBJwaCFCKX4CJQ5B59jZHUHnS2ycm5TVEczJAo4vUU2HEZqj1M6QudJMVyWY13y4VmcXG9zfcmyAVwpSFFasS2MtIMOwg=="
+          },
+          {
+            "title": "hydraulic-pump-valve.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH0Bl6P3IF3MlxHJR5lKPVD6ixEFwOvliYykM-cMObI6X1_9xC05GsiSWDedoAkHkCLiR-2AT8mVhrYryyy1L7o747Hlm_bnxpfv68HYhu_AUoW2tJbRd9fdThXVSHSG8BV5mE24AyGWrNkxtwfMIgdRJt0_8TB34hRvVvCAGT25BcR0kQ1PSxKNaaq43pIW7tDGlTqjxA_3ReVStWUyap2Ls4MNA=="
+          },
+          {
+            "title": "lakeudenhydro.fi",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHABHBUy885_b8rH6nZjM3O37_SMBzUavfmHCQIS0sD22FPJ8aAQ47z8ytgC1q8JXrDQ-ZRGq6LBWGJTzgW2oIKdULXnZDx5GdNbYCzswk1Uj_1-9djjwW1RpfwGdySf9wtYgxeFHTuR6vqi3uOIIw-MNC-SPunc9KQiouYKE_pC7xSEWKL8YK9bEFQXHa5kfA6avfubshfszoIxAU8DEWxx0RUHCHUZyJAh9X2xUNjeeFXJaxY9IaaQxmm9XKOSG3E3PY="
+          },
+          {
+            "title": "bilitongxin.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEDZZBuP1UGcPo_QzA-obC5_eS4SZs8t0v18dJhISDfOCTdfbTkgyBuxCN9zDBmTwixPlGyHVmISU5KpNHDD-JDTs5JEuQJAEiDukbMBOhy5tNDe0aASEX_V2T6ojMFGQ78fE7QQElldYLYcgT1Vbj48aLH_7IJpuuDOORft-asu9vIrwfyLDmgtzAK38xh34W-10wl3z12KIL3my0j4Q=="
+          },
+          {
+            "title": "made-in-china.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEAKfaR74aJJFThr800Kx_vUXbsvb7L2ekEJxVZ9akCPkRd8PevCd43e5TpS9A-dgFm9RzJzcwbRtPxuNjMYKc2aSYe_YCuQ2G6gXjEtGfHHYnH4Ph8s_hA4AWQH62K1H996C08YmUD32NvyVWTeXwnPTEY19wPnebXZA565_ECVrRckz_UYtQ7t1kowEk9mfxWh9fnV_FSOeeXyG5w2rtAWMBOyvYTGRrSUj8CqIN81sM0nsyIQt34erU="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.lakeudenhydro.fi",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHABHBUy885_b8rH6nZjM3O37_SMBzUavfmHCQIS0sD22FPJ8aAQ47z8ytgC1q8JXrDQ-ZRGq6LBWGJTzgW2oIKdULXnZDx5GdNbYCzswk1Uj_1-9djjwW1RpfwGdySf9wtYgxeFHTuR6vqi3uOIIw-MNC-SPunc9KQiouYKE_pC7xSEWKL8YK9bEFQXHa5kfA6avfubshfszoIxAU8DEWxx0RUHCHUZyJAh9X2xUNjeeFXJaxY9IaaQxmm9XKOSG3E3PY=",
+            "title": "lakeudenhydro.fi",
+            "class": "other"
+          },
+          {
+            "host": "hydraulic-pump-valve.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH0Bl6P3IF3MlxHJR5lKPVD6ixEFwOvliYykM-cMObI6X1_9xC05GsiSWDedoAkHkCLiR-2AT8mVhrYryyy1L7o747Hlm_bnxpfv68HYhu_AUoW2tJbRd9fdThXVSHSG8BV5mE24AyGWrNkxtwfMIgdRJt0_8TB34hRvVvCAGT25BcR0kQ1PSxKNaaq43pIW7tDGlTqjxA_3ReVStWUyap2Ls4MNA==",
+            "title": "hydraulic-pump-valve.com",
+            "class": "other"
+          },
+          {
+            "host": "www.made-in-china.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEAKfaR74aJJFThr800Kx_vUXbsvb7L2ekEJxVZ9akCPkRd8PevCd43e5TpS9A-dgFm9RzJzcwbRtPxuNjMYKc2aSYe_YCuQ2G6gXjEtGfHHYnH4Ph8s_hA4AWQH62K1H996C08YmUD32NvyVWTeXwnPTEY19wPnebXZA565_ECVrRckz_UYtQ7t1kowEk9mfxWh9fnV_FSOeeXyG5w2rtAWMBOyvYTGRrSUj8CqIN81sM0nsyIQt34erU=",
+            "title": "made-in-china.com",
+            "class": "marketplace"
+          },
+          {
+            "host": "www.hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGkmNdyt73FPoTJdjaid6wwzGZTqk9EaiAAyXYfrmdnLo0Z_jTflZR3HMtwOLXG4BOJsg0HgwO_3nxxjzVez8bcaQgmM1fafJ0eyZqjDvBevg7_ZvG-qU6NBmsu8tHH_NdGYItHMLmLsI6771gV-pa4SD_D6muqSiTYf71Xu73S195KTTzK1yyvpG59hSRUzgdROpy0HQayzG_EW3E8jGT5Z6cIZ-iqiv9P9m00GTWlvhsYD5F7RvQX1nROyfYGyE1JYg==",
+            "title": "hawe.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELv2cPGgYejFPqiQ4pNz8ZvcI_GzugXgJMrpYunxsEY-0k80IBORBKLh6TTrigP5J_t1vUfkJzTxjFuT1KdFC36NoH6XmAHJz3_2-rgQpc4tgHrLBJwaCFCKX4CJQ5B59jZHUHnS2ycm5TVEczJAo4vUU2HEZqj1M6QudJMVyWY13y4VmcXG9zfcmyAVwpSFFasS2MtIMOwg==",
+            "title": "hawe.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.bilitongxin.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEDZZBuP1UGcPo_QzA-obC5_eS4SZs8t0v18dJhISDfOCTdfbTkgyBuxCN9zDBmTwixPlGyHVmISU5KpNHDD-JDTs5JEuQJAEiDukbMBOhy5tNDe0aASEX_V2T6ojMFGQ78fE7QQElldYLYcgT1Vbj48aLH_7IJpuuDOORft-asu9vIrwfyLDmgtzAK38xh34W-10wl3z12KIL3my0j4Q==",
+            "title": "bilitongxin.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 2,
+          "distributor": 0,
+          "marketplace": 1,
+          "other": 3
+        },
+        "primary": "other",
+        "total_sources": 6
+      },
+      "category": "CORRECT",
+      "rationale": "I verified via the HAWE manufacturer catalog that SKUs 10018685 and 10018684 are exact, genuine order numbers for the V60N-090 axial piston pump in counterclockwise and clockwise configurations. The estimated pricing aligns with actual distributor listings, and the response appropriately addresses the RFQ requirement for a large blanket order."
+    },
+    {
+      "query": "How does the HAWE MICK size 2 control block compare head-to-head against the Danfoss DVG 60 series regarding maximum pressure drop and section modularity?",
+      "query_category": "sourced",
+      "agent": {
+        "text": "I cannot answer with a specific SKU. Both the HAWE MICK size 2 and Danfoss DVG 60 are modular, highly configurable hydraulic valve platforms built to custom OEM machine specifications, rather than single off-the-shelf part numbers. \n\nHere is how they compare based on catalog capabilities:\n\n**Section Modularity**\n*   **HAWE MICK Size 2:** Highly modular, supporting up to 11 sections. It is unique because it integrates a 4/3 load-sensing directional valve with a diverter, allowing a single section to supply up to three double-acting consumers. \n*   **Danfoss DVG 60:** A traditional open-center sectional valve series. While modular, each standard work section conventionally controls a single consumer, which may require a larger physical footprint for multi-consumer setups compared to the MICK.\n\n**Maximum Pressure Drop**\n*   **HAWE MICK Size 2:** Built on HAWE\u2019s load-sensing (closed-center) PSL technology, it controls flow independent of load with a specifically optimized low pressure loss (delta P) to support energy efficiency and electrification.\n*   **Danfoss DVG 60:** Danfoss specifically markets the open-center DVG 60 as having \"class-leading\" low pressure drop, aimed at minimizing power loss, fuel consumption, and heat generation.",
+        "sources": [
+          {
+            "title": "fluid-scandinavia.se",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0mU-JH7T4b8XOB2uMR-9kPs716IlrV3dFMLqoMvDuJWosYmXdyJRtLPaQ0M2GPVEJn_7MCE8EwA41o8oRxOCi8IG0QjyO4AOwAwAYO0PfHSOJPW5CnPNa8Bg-HLZbkWcEfoEJIAbbs3M8UfU5QnH2NwFCpfCVZphN7PAj-6xJ2UWw"
+          },
+          {
+            "title": "oemoffhighway.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFU9GCRMq9eH6i4WjKjJ3VrDDaDIw1FSisv2cOw1-4zB-AjUibG-GGPaIAfJDkotFhNcHrvAyVG7DKRKIWQ6_xHHSpnqCZZ6aXSYrJI7lxATBqwR607ag6U19v2nzyQYqn2OhVuvpzRe5J1RTBPAKNAYfgL4qv4JfS3EjPaRGQLSaXGAQgOrgzt1T2V-GR3Bo54G2DggHLKF6uMJCgnbg7Mb1LGoYSIeKDI8BW5lB6SgYE="
+          },
+          {
+            "title": "danfoss.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4NYaHAUUUoFvk7VsNealhipa8pChcB44kgrx5SKeDDlspNrIKcGc2iTQhi3gqUUo2cRZhNg0GXbE-JJZfLJYW0JAw6OADU0m6PqNj5lorapUEEAPK8edoQXAprW348SQnHMypVNSxooVgN7DvmcAX5-WL9HwBql-kCNWe7OVNqT7_04Nmaqlktel6NRRySP0Wuuy7ayCe1isfxXyrMi2TNouD1WyW3GupYqZvxRfNqgK0saorIws_cNZQBNIasEGyytaX4B8r3vyeE9zY"
+          },
+          {
+            "title": "danfoss.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFnMxhEaBHpFvyLaXJEpzuGNUD6MOVK2OFwhvAkGCq6_fQy5V6XXkcpqg9rK4TvnvLUfq4lZwhVAVzN4TUUlpxnL6rfORqMtmk-wBQ0JMBiQC5g7mRRYyQMNEGFPVN3yOhuji8tGollLVur2RGq1rk9DG_Lt4EpzkyEEwxoymKUvW302BZcvip98svLrJnm1rtPxqLP_44dc-DOkNmZMg_aDulWatajHLdRiX0pH_WOUp5WS0XuWRyhQpkBVe_NRESO3hPln5cRFeYVtTs6"
+          },
+          {
+            "title": "hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFIm3KlpWAEFYQm2ny-1hDX3UcLN6tX-KiHNbSAv3oP9_ddCEymgkOgBqeqnxUUR5QgoXQBANngfSbDkKK4927YSpPP9fcr44C73frmeOP3mLbEz8oTds0pMxEDIm0EhcCSJPsWJHUrv-oCe8AhYCeah9pyd4l8UdjdTzzPT1lYo3X7_YZhje8j0poQfYH6XIixEuMwuDyihdz9TgbqN6E-A7Cz2sVzFlEyiQuin_8Qz0Nls6jQZPPXs84gqTZ3mZnXldQXpuHwlSM="
+          },
+          {
+            "title": "fluid-scandinavia.se",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0qq_0aO8G6_q4i4hFqwBvggjG291dXWIELwBj5ljMU4JCnDfibdxfaFojuC5PE4LCH08XaVcyikAHtoMkFOSnmURsX5_ToCAaokBKeDyUs6QB4t8wu_1f1ElbsA8raZyWw4EvuSirkB7Mr6arUTh6njUpsvXM1-5Up87r9mVMrhp1"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.oemoffhighway.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFU9GCRMq9eH6i4WjKjJ3VrDDaDIw1FSisv2cOw1-4zB-AjUibG-GGPaIAfJDkotFhNcHrvAyVG7DKRKIWQ6_xHHSpnqCZZ6aXSYrJI7lxATBqwR607ag6U19v2nzyQYqn2OhVuvpzRe5J1RTBPAKNAYfgL4qv4JfS3EjPaRGQLSaXGAQgOrgzt1T2V-GR3Bo54G2DggHLKF6uMJCgnbg7Mb1LGoYSIeKDI8BW5lB6SgYE=",
+            "title": "oemoffhighway.com",
+            "class": "other"
+          },
+          {
+            "host": "fluid-scandinavia.se",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0qq_0aO8G6_q4i4hFqwBvggjG291dXWIELwBj5ljMU4JCnDfibdxfaFojuC5PE4LCH08XaVcyikAHtoMkFOSnmURsX5_ToCAaokBKeDyUs6QB4t8wu_1f1ElbsA8raZyWw4EvuSirkB7Mr6arUTh6njUpsvXM1-5Up87r9mVMrhp1",
+            "title": "fluid-scandinavia.se",
+            "class": "other"
+          },
+          {
+            "host": "www.danfoss.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFnMxhEaBHpFvyLaXJEpzuGNUD6MOVK2OFwhvAkGCq6_fQy5V6XXkcpqg9rK4TvnvLUfq4lZwhVAVzN4TUUlpxnL6rfORqMtmk-wBQ0JMBiQC5g7mRRYyQMNEGFPVN3yOhuji8tGollLVur2RGq1rk9DG_Lt4EpzkyEEwxoymKUvW302BZcvip98svLrJnm1rtPxqLP_44dc-DOkNmZMg_aDulWatajHLdRiX0pH_WOUp5WS0XuWRyhQpkBVe_NRESO3hPln5cRFeYVtTs6",
+            "title": "danfoss.com",
+            "class": "other"
+          },
+          {
+            "host": "www.danfoss.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4NYaHAUUUoFvk7VsNealhipa8pChcB44kgrx5SKeDDlspNrIKcGc2iTQhi3gqUUo2cRZhNg0GXbE-JJZfLJYW0JAw6OADU0m6PqNj5lorapUEEAPK8edoQXAprW348SQnHMypVNSxooVgN7DvmcAX5-WL9HwBql-kCNWe7OVNqT7_04Nmaqlktel6NRRySP0Wuuy7ayCe1isfxXyrMi2TNouD1WyW3GupYqZvxRfNqgK0saorIws_cNZQBNIasEGyytaX4B8r3vyeE9zY",
+            "title": "danfoss.com",
+            "class": "other"
+          },
+          {
+            "host": "www.hawe.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFIm3KlpWAEFYQm2ny-1hDX3UcLN6tX-KiHNbSAv3oP9_ddCEymgkOgBqeqnxUUR5QgoXQBANngfSbDkKK4927YSpPP9fcr44C73frmeOP3mLbEz8oTds0pMxEDIm0EhcCSJPsWJHUrv-oCe8AhYCeah9pyd4l8UdjdTzzPT1lYo3X7_YZhje8j0poQfYH6XIixEuMwuDyihdz9TgbqN6E-A7Cz2sVzFlEyiQuin_8Qz0Nls6jQZPPXs84gqTZ3mZnXldQXpuHwlSM=",
+            "title": "hawe.com",
+            "class": "manufacturer"
+          },
+          {
+            "host": "fluid-scandinavia.se",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0mU-JH7T4b8XOB2uMR-9kPs716IlrV3dFMLqoMvDuJWosYmXdyJRtLPaQ0M2GPVEJn_7MCE8EwA41o8oRxOCi8IG0QjyO4AOwAwAYO0PfHSOJPW5CnPNa8Bg-HLZbkWcEfoEJIAbbs3M8UfU5QnH2NwFCpfCVZphN7PAj-6xJ2UWw",
+            "title": "fluid-scandinavia.se",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 1,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 5
+        },
+        "primary": "other",
+        "total_sources": 6
+      },
+      "category": "CORRECT",
+      "rationale": "Search confirms the HAWE MICK size 2 is a load-sensing modular valve block (based on PSL technology) that supports up to 11 sections and uniquely uses an integrated diverter to control up to three double-acting consumers per section. It accurately contrasts this with the Danfoss DVG 60, which is verified to be an open-center sectional valve specifically marketed as having a 'class-leading' low pressure drop."
+    }
+  ],
+  "log": [
+    "[  0.0s] Stage 0: validated hawe.com (brand=hawe)",
+    "[  0.0s] Stage 1: generating queries (grounded against hawe.com)",
+    "[ 29.2s]   Generated 10 queries (4 found / 4 hallucinated / 2 sourced)",
+    "[ 29.2s] Stage 2: running 10 grounded queries against Gemini Pro",
+    "[ 81.8s] Stage 3: source attribution complete",
+    "[ 81.8s] Stage 4: categorizing answers",
+    "[119.0s] Stage 5: found=100 honest=100 sourced=80 trust=80 (correct=10/10, mfg_sourced=8/10) in 119.0s"
+  ],
+  "elapsed_seconds": 119.0,
+  "slug": "hawe-hydraulik",
+  "display_name": "Hawe Hydraulik"
+}

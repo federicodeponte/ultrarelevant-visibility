@@ -1,0 +1,753 @@
+{
+  "input": "https://norelem.com",
+  "host": "norelem.com",
+  "brand": "norelem",
+  "found_score": 100,
+  "honest_score": 100,
+  "sourced_score": 20,
+  "trust_score": 20,
+  "visibility_score": 100,
+  "source_authority_score": 20,
+  "total_queries": 10,
+  "correct_queries": 10,
+  "manufacturer_correct": 2,
+  "breakdown": {
+    "CORRECT": 10,
+    "HALLUCINATION": 0,
+    "OUT_OF_CATALOG": 0,
+    "REFUSED": 0,
+    "WRONG_SPEC": 0,
+    "ERROR": 0
+  },
+  "source_breakdown": {
+    "manufacturer": 2,
+    "distributor": 0,
+    "marketplace": 0,
+    "other": 8,
+    "none": 0
+  },
+  "rows": [
+    {
+      "query": "Does norelem still manufacture the '02000 inch' series of rest pads and positioning feet for older US-market fixtures, or has that regional line been discontinued?",
+      "query_category": "found",
+      "agent": {
+        "text": "No, the line has not been discontinued. Norelem still actively manufactures the \"02000 inch\" product series. \n\nHowever, \"02000 inch\" is not a single part number. It is norelem's overarching catalog product group for inch-dimensioned rest pads, positioning feet, locating pins, and self-aligning pads designed for US-market compatibility. \n\nBecause it is a whole product category rather than an individual item, there are many specific orderable SKUs within it. For example, within the current 02000 inch family, you can order steel swivel positioning feet under exact part numbers such as:\n\n* **02110-A1** (10-32 internal thread)\n* **02110-A4** (3/8-16 internal thread)\n* **02110-A7** (3/4-10 internal thread)\n\nIf you need to replace a specific rest pad or foot on an older US fixture, the replacement parts are still fully supported and available. You will just need to identify the exact SKU (like the examples above) within the active 02000 inch catalog group to place your order.",
+        "sources": [
+          {
+            "title": "norelem.se",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHImWXZNCg1K2rST2E5rt5qkJ6xCrl6EnCHWIoz_6gT50Xwq3NHT8h9trtWVtJyn1KZsERkRFAzbOT1hRx6aDeusIHlKLtMWT73IU3CeGjuVVRBjJycnZ3IfgCQHe6rMZWk35urXLNCfNa4Zybwc_rIR4eL8Ivb2b3sPRK9bb7VXoxg"
+          },
+          {
+            "title": "norelemusa.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEbgbcbae3IeqEJgC_Px9mqC-TJnRZbrgk97Nce4crEb0zOZAZjvgNuVydWXbl_5fmDmfLAvQHBdTQH4s6-9UIfPtiJGLxSXdO51QhNgs8HxVt6oMNpFmbiDNbbqPei_vbzoTN-ZfXUGT9u1hB8KzkFS1CXREN_kS65UDR4qrrUQSXljhFKmXsxqA=="
+          },
+          {
+            "title": "norelem.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEYMM72xXg9l1glzX3W4OEUJmPVTDO1BC5QSAknmpp_v_-kC3RjzOznPYzXbhD5yE68Ckc6oV3sSI2nRUTr4AMd8HUAcTNf4TW57_ouulEQb6WmNi0R2d9ayTKeUzESmUSnl_eboEDqg__ISwY_fOcAZWkVVU_s0yCF6PhLPvAFj9PqhpEVNDG3YdhOk71mgqcgdGLssV3BjTQgT7CJSDyDi3GjnOsvZQBjpVT-9NuPX_cvw_00DJFDgQRm7eXBUvg4_rgSgJwgHW_OXnA5CqRFlD4pxPfvioPhM1BgkFppOuy6MTGd2NMYjy6DftaxF2lChQGSAJoFWY4CD9iP071FZxV8P6nARhshKDpMKE_yUPcB7zOHb94ayS-0puk6pVfB4pggOSkde02xBPNTqQ=="
+          },
+          {
+            "title": "norelem.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHhUgns1eW26cK7-IPqs2LOit8Rr4SbS-V_iXWVBBImwVKUdd1YiBD4fisLWPpUTqw9bgmfosuoU-de6d7qocP8rt7A5CEaxHHXZAZq-2UzjrvLsRkzKf8QIQW-IdMLQ8-7MjLsf1jgI4ViEzAdtQXkReRGJkEMfP_fb-q8SZzMETs="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.norelemusa.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEbgbcbae3IeqEJgC_Px9mqC-TJnRZbrgk97Nce4crEb0zOZAZjvgNuVydWXbl_5fmDmfLAvQHBdTQH4s6-9UIfPtiJGLxSXdO51QhNgs8HxVt6oMNpFmbiDNbbqPei_vbzoTN-ZfXUGT9u1hB8KzkFS1CXREN_kS65UDR4qrrUQSXljhFKmXsxqA==",
+            "title": "norelemusa.com",
+            "class": "other"
+          },
+          {
+            "host": "www.norelem.se",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHImWXZNCg1K2rST2E5rt5qkJ6xCrl6EnCHWIoz_6gT50Xwq3NHT8h9trtWVtJyn1KZsERkRFAzbOT1hRx6aDeusIHlKLtMWT73IU3CeGjuVVRBjJycnZ3IfgCQHe6rMZWk35urXLNCfNa4Zybwc_rIR4eL8Ivb2b3sPRK9bb7VXoxg",
+            "title": "norelem.se",
+            "class": "manufacturer"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHhUgns1eW26cK7-IPqs2LOit8Rr4SbS-V_iXWVBBImwVKUdd1YiBD4fisLWPpUTqw9bgmfosuoU-de6d7qocP8rt7A5CEaxHHXZAZq-2UzjrvLsRkzKf8QIQW-IdMLQ8-7MjLsf1jgI4ViEzAdtQXkReRGJkEMfP_fb-q8SZzMETs=",
+            "title": "norelem.com",
+            "class": "other"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEYMM72xXg9l1glzX3W4OEUJmPVTDO1BC5QSAknmpp_v_-kC3RjzOznPYzXbhD5yE68Ckc6oV3sSI2nRUTr4AMd8HUAcTNf4TW57_ouulEQb6WmNi0R2d9ayTKeUzESmUSnl_eboEDqg__ISwY_fOcAZWkVVU_s0yCF6PhLPvAFj9PqhpEVNDG3YdhOk71mgqcgdGLssV3BjTQgT7CJSDyDi3GjnOsvZQBjpVT-9NuPX_cvw_00DJFDgQRm7eXBUvg4_rgSgJwgHW_OXnA5CqRFlD4pxPfvioPhM1BgkFppOuy6MTGd2NMYjy6DftaxF2lChQGSAJoFWY4CD9iP071FZxV8P6nARhshKDpMKE_yUPcB7zOHb94ayS-0puk6pVfB4pggOSkde02xBPNTqQ==",
+            "title": "norelem.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 1,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 3
+        },
+        "primary": "other",
+        "total_sources": 4
+      },
+      "category": "CORRECT",
+      "rationale": "The agent correctly identified that '02000 inch' is a product category rather than a specific part number. Search results confirm that Norelem's '02000 inch' category contains inch-dimensioned parts, and the provided SKUs for swivel positioning feet (02110-A1 for 10-32 thread, 02110-A4 for 3/8-16 thread, and 02110-A7 for 3/4-10 thread) are genuine and accurately specified."
+    },
+    {
+      "query": "What is the base part number for the newly released norelem Style B actuator for RFID coded safety switches, and which specific safety switch model is it designed to pair with?",
+      "query_category": "found",
+      "agent": {
+        "text": "The specific, orderable part number for the newly released norelem Style B (Form B compact) actuator for RFID coded safety switches is **83456-10-2**. This falls under the general actuator base series **83456-10**. \n\nThis actuator is designed as a direct accessory to pair with the norelem RFID coded safety switch, which has the base part number **83456**.",
+        "sources": [
+          {
+            "title": "norelem.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEuJ0hQjj7jihcnhz5Mcto6Vrntzr1mbmwV5-LLsdQBEBo8ccVhBWNIma5SSoPDNYy_JwBcurooM1XIyB51AwZzlWfQ_FR88YXd9nr57BPEJYD6-dwyWbvY_MueMy1WG2IHw-8d3tlnriS4HqOuyVAAlQ5zgw_Z9KBzy-8NH_smVOHAfifCh5og5O1ar6kisfb1vxrpEHmOPNkIi5cdxS99t55GBMH1vsphkQb4Au4="
+          },
+          {
+            "title": "misumi-ec.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGls6NP0tLu2tBanOfsB9wcvo1K70_9-faeUPeLCq_05FNq6mEe9ILpw7gEK58GMqghYK2DbtF1Cx6wbElaO4lS3q0je9rGGsphCxhhHkR3XV-Sp7WrrkA400B07WluT6CoAwNi5yaYfxKAXE7YBA=="
+          },
+          {
+            "title": "norelem.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEDmtdDg9sOtUv2o8ViAWWrbVOgxTr5QexzF8RIL5EjR3S-x0zjaxxgBwGPdaLfdPG5On-sqOwSMltU-xhgOHkBLnlcmKP_oYOAWNdYaLSgRlVO_zHGuzuxCS5_R7ZXRVmXRo9ogFWPf-s3gKYfBVLHjxD1kPI7Abu_FQqWqUEvKIj5aSPFS2cFu3jSLhevKh0JEel1t-74N5v5knmJKwPGKljtrOWye1vUJ9hGdvzW7YPZSxEww9pjyRscuRN4kIHEzxGna84Oav_ZNBV4WfNpt8iI_Cv-MFm2AleGA6HlKfznxsM5xZ0oD_Sz5b9IcBia8eZNBPOTsxnGchGPdVj9bVYOBBqTHzvMyCTzuYZuvLbzjqYhcobATmycB-do738cNW0Kh440Moln971IS5or5ZsrCOI0-05In7rDj0oWl3FhiVIapRkWjd4sjKzhJVDtFJ31-hS1ZkjBBEK-veV86w=="
+          },
+          {
+            "title": "norelemusa.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHNlSMM_r3wD-wr-N5dd1Bg_i8JnsKxEcLgVimTzldevJDdUADqqp6b84c5-V0BrGaa01dFpAu0fD37nGDl1kZgW8WvQwTYf710RNaXXZEh9wjqNbnldej7BuNeDrZ_g3hXLbtR9FPLFTQ6DXmFC2hOI1r9XEr1mAp1K2ziCbefgOoJzsZmVxsjgNkbdgf3WlS_4J2BXjvm4d2cnF4mvipdbljBZDukj9HvOd9bfW61dd-sn_D_Q2zXORAlMo3TUq66r025bVMPEC1jq0Ii8JbhD7HoyE5HgFF28_qT-B9JM9S0yztzwLMfB8Shkp2qaj--exE="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.norelemusa.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHNlSMM_r3wD-wr-N5dd1Bg_i8JnsKxEcLgVimTzldevJDdUADqqp6b84c5-V0BrGaa01dFpAu0fD37nGDl1kZgW8WvQwTYf710RNaXXZEh9wjqNbnldej7BuNeDrZ_g3hXLbtR9FPLFTQ6DXmFC2hOI1r9XEr1mAp1K2ziCbefgOoJzsZmVxsjgNkbdgf3WlS_4J2BXjvm4d2cnF4mvipdbljBZDukj9HvOd9bfW61dd-sn_D_Q2zXORAlMo3TUq66r025bVMPEC1jq0Ii8JbhD7HoyE5HgFF28_qT-B9JM9S0yztzwLMfB8Shkp2qaj--exE=",
+            "title": "norelemusa.com",
+            "class": "other"
+          },
+          {
+            "host": "uk.misumi-ec.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGls6NP0tLu2tBanOfsB9wcvo1K70_9-faeUPeLCq_05FNq6mEe9ILpw7gEK58GMqghYK2DbtF1Cx6wbElaO4lS3q0je9rGGsphCxhhHkR3XV-Sp7WrrkA400B07WluT6CoAwNi5yaYfxKAXE7YBA==",
+            "title": "misumi-ec.com",
+            "class": "distributor"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEDmtdDg9sOtUv2o8ViAWWrbVOgxTr5QexzF8RIL5EjR3S-x0zjaxxgBwGPdaLfdPG5On-sqOwSMltU-xhgOHkBLnlcmKP_oYOAWNdYaLSgRlVO_zHGuzuxCS5_R7ZXRVmXRo9ogFWPf-s3gKYfBVLHjxD1kPI7Abu_FQqWqUEvKIj5aSPFS2cFu3jSLhevKh0JEel1t-74N5v5knmJKwPGKljtrOWye1vUJ9hGdvzW7YPZSxEww9pjyRscuRN4kIHEzxGna84Oav_ZNBV4WfNpt8iI_Cv-MFm2AleGA6HlKfznxsM5xZ0oD_Sz5b9IcBia8eZNBPOTsxnGchGPdVj9bVYOBBqTHzvMyCTzuYZuvLbzjqYhcobATmycB-do738cNW0Kh440Moln971IS5or5ZsrCOI0-05In7rDj0oWl3FhiVIapRkWjd4sjKzhJVDtFJ31-hS1ZkjBBEK-veV86w==",
+            "title": "norelem.com",
+            "class": "other"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEuJ0hQjj7jihcnhz5Mcto6Vrntzr1mbmwV5-LLsdQBEBo8ccVhBWNIma5SSoPDNYy_JwBcurooM1XIyB51AwZzlWfQ_FR88YXd9nr57BPEJYD6-dwyWbvY_MueMy1WG2IHw-8d3tlnriS4HqOuyVAAlQ5zgw_Z9KBzy-8NH_smVOHAfifCh5og5O1ar6kisfb1vxrpEHmOPNkIi5cdxS99t55GBMH1vsphkQb4Au4=",
+            "title": "norelem.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 1,
+          "marketplace": 0,
+          "other": 3
+        },
+        "primary": "other",
+        "total_sources": 4
+      },
+      "category": "CORRECT",
+      "rationale": "Verified via norelem's catalog and MISUMI that 83456-10-2 is the exact part number for the Form B compact actuator for RFID coded safety switches, and that it is designed as an accessory for the 83456 RFID coded safety switch."
+    },
+    {
+      "query": "Can you confirm the exact documented operating temperature range for the norelem magnetically coded safety switch actuator in Style B, which is the accessory for switch 83455?",
+      "query_category": "found",
+      "agent": {
+        "text": "Yes, the exact documented operating temperature range for the norelem magnetically coded safety switch actuator in Style B (Form B) is **-25 \u00b0C to +70 \u00b0C**. \n\nThe specific orderable part number for the Style B actuator (where the active face is offset by 90\u00b0 to the safety switch) is **83455-10-2**. It serves as the dedicated accessory for the norelem magnetically coded safety switch series **83455**.",
+        "sources": [
+          {
+            "title": "norelemusa.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGA-4gWUFdo65oQDbpKvnrb6OEqdlgx1NIT7oZpe6oFsGYYQwEPnN5BwKplcd50L5isvX6o0FAgAYRxaS8GavEYAj6GT60O117SfUdJFj49OTY1SLcPCeMZ9TQll7rMteAvEVLYC9czDvh7k-NGf0RbpcxpQ3AhnoSM8j2uuGn_WhYiIqzmETZOcXI5XP5r6HjDOVpnHu7osvz-JpC-CH1gETJuwVMpOfVM5xM5g-U2GWYSO8PHrTOI5Nad-NuVao3qXDz_Xc3sFyRk8ZyBC6rgpbPtfCIedM9Cw9O35ChYwS6bd6ACAvt7zOIsyCITYNdQjpCTVaCTSia30MsJ3xERwWhwM8D5vwNeqLv8CXvniR-gryYvNHlfwi-xQD7LDpIWpLst"
+          },
+          {
+            "title": "norelem.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFY1tAeUGKQPB_u7pFpE1xg1ZB9x12Ti4eXU0EWFQ_QVBYHXR1igRIPFVA24986kHUzAR4KhZDumgsMqLZkTjL8JZGhFNflVEyy-0ZQdYDQWeKSqiaQcvr9QjkFQ8Zz6XTPcSVuY8VfPhkPaN_J6cCegm3c1gWo8Y44kFIDkrUkt3ozr9-9E8pDM6Ne5XSRNkBhdz71mBkeEW-FRacteHRcpGdCPVFy1vvafvQUDew-DtAg3imTkYuHUv7ydUO-sVc="
+          },
+          {
+            "title": "marek.eu",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHqUybyjxHmYr0f-8UtoEaBJHEPh5k2hmNRtBksZcrsn1pCCdbTRQNkE87I8yL8F008lQdmMzDk83WXULNIa1MdaXHD_BAxCflQxvTeAw50XcydVuL_xR6QkLifjIZ5M_Tk49jdyt4yULGE4WAApx_v0wIO4JXw6wgQSyna9e-Zi_inDv7NkoTb-rx1gul2Dtd4y0QwIcn_s1QkoK-iKBYwVff-oX_uBtlvvpsmVmN0qmdLVJgvbdhJL1uUBQV9R-ZoXDSOmQ=="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.norelemusa.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGA-4gWUFdo65oQDbpKvnrb6OEqdlgx1NIT7oZpe6oFsGYYQwEPnN5BwKplcd50L5isvX6o0FAgAYRxaS8GavEYAj6GT60O117SfUdJFj49OTY1SLcPCeMZ9TQll7rMteAvEVLYC9czDvh7k-NGf0RbpcxpQ3AhnoSM8j2uuGn_WhYiIqzmETZOcXI5XP5r6HjDOVpnHu7osvz-JpC-CH1gETJuwVMpOfVM5xM5g-U2GWYSO8PHrTOI5Nad-NuVao3qXDz_Xc3sFyRk8ZyBC6rgpbPtfCIedM9Cw9O35ChYwS6bd6ACAvt7zOIsyCITYNdQjpCTVaCTSia30MsJ3xERwWhwM8D5vwNeqLv8CXvniR-gryYvNHlfwi-xQD7LDpIWpLst",
+            "title": "norelemusa.com",
+            "class": "other"
+          },
+          {
+            "host": "www.marek.eu",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHqUybyjxHmYr0f-8UtoEaBJHEPh5k2hmNRtBksZcrsn1pCCdbTRQNkE87I8yL8F008lQdmMzDk83WXULNIa1MdaXHD_BAxCflQxvTeAw50XcydVuL_xR6QkLifjIZ5M_Tk49jdyt4yULGE4WAApx_v0wIO4JXw6wgQSyna9e-Zi_inDv7NkoTb-rx1gul2Dtd4y0QwIcn_s1QkoK-iKBYwVff-oX_uBtlvvpsmVmN0qmdLVJgvbdhJL1uUBQV9R-ZoXDSOmQ==",
+            "title": "marek.eu",
+            "class": "other"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFY1tAeUGKQPB_u7pFpE1xg1ZB9x12Ti4eXU0EWFQ_QVBYHXR1igRIPFVA24986kHUzAR4KhZDumgsMqLZkTjL8JZGhFNflVEyy-0ZQdYDQWeKSqiaQcvr9QjkFQ8Zz6XTPcSVuY8VfPhkPaN_J6cCegm3c1gWo8Y44kFIDkrUkt3ozr9-9E8pDM6Ne5XSRNkBhdz71mBkeEW-FRacteHRcpGdCPVFy1vvafvQUDew-DtAg3imTkYuHUv7ydUO-sVc=",
+            "title": "norelem.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 3
+        },
+        "primary": "other",
+        "total_sources": 3
+      },
+      "category": "CORRECT",
+      "rationale": "Verified via Norelem's official catalog and authorized distributors that part number 83455-10-2 is indeed the Form B actuator (offset by 90\u00b0) for the 83455 magnetically coded safety switch, and its documented operating temperature range is exactly -25 \u00b0C to +70 \u00b0C."
+    },
+    {
+      "query": "I am auditing our supplier hierarchy; please provide a complete and exhaustive list of all corporate sub-brands and subsidiary product families officially owned by the norelem group.",
+      "query_category": "found",
+      "agent": {
+        "text": "I cannot answer with a specific SKU, as your question asks for a broad list of corporate subsidiaries and product families rather than a single orderable part number. \n\nFurthermore, providing a perfectly exhaustive list of every minor product family is not feasible here, as norelem's catalog (\"THE BIG GREEN BOOK\") contains over 100,000 standard components across hundreds of sub-categories. However, their primary catalog families are officially structured into these core groups:\n\n*   **norelem positions** (e.g., product group 04000)\n*   **norelem clamps** (e.g., product group 07000)\n*   **norelem moves** (e.g., product group 24000)\n*   **norelem measures**\n*   **norelem assembles**\n*   **norelem transports**\n\nAt a corporate level, the group operates under the single \"norelem\" master brand (having completely absorbed its former French brand, PMP, in 2000). Its official corporate hierarchy includes the German headquarters (norelem Normelemente GmbH & Co. KG) and direct subsidiaries:\n\n*   norelem Normelemente AG (Switzerland)\n*   norelem LTD (UK)\n*   norelem AB (Sweden)\n*   norelem Ib\u00e9rica S.L. (Spain)\n*   norelem S. de R.L. de C.V. (Mexico)\n*   norelem Trading (Taicang) Co., Ltd. (China)\n*   Additional official branches in France, Poland, Austria, and the USA.",
+        "sources": [
+          {
+            "title": "norelem.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHMR3GPakJAb-2C32ajcn223lC2-lifwA2ph9-_dcqfIyO3FOOymy0i4_9wZ6tBHqeqTi5KpvYe6vceer3G4mEnhBOF8YL9zVpswq6hQUVZ-UvTvFR9sGpWq-EbQBRByaL8NGrYxoM68GgNmdxKswj8gvz1-mmgNOvejji9Zc4UfqvS-Q=="
+          },
+          {
+            "title": "designworldonline.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFs-REoBYMIN_TFQVN59vD1zClBgX00zzd_2xmOSJc2bhtHrH5ogGAlnCLUqpc5qD0vy7U6hV5OED0sNSz4V3_WS8h1O2tOpDSaJnPIH6LRhrwrdMzDgMBbELpSrY4rKFLA_1YK9B_PMDPQR2LIc9YKP-yGSKxh-xm9T8KnPCTjI_XzGp4cejWFhmuhg_HOrz3InWoHJmgbjS2Izl9cGrLdBBokB3k="
+          },
+          {
+            "title": "norelemusa.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEyhsV4oahcR6PjOVMO5KmfK1eHpT6LaZPh5Wb5pGkxkP2T48DSbitvOClqmeBtgOc2YT_lXs2CAjEtH_9xm1u5jxTnK1PqKqVm7u6h7U_-gkwIuZc3gFGcmRYVmfgmfNnQwkenEH4kSfpGZFwrBfnbAx3DpVUMvmN1m54Iw05Yvk2kP46LwigjzT0kpMvh"
+          },
+          {
+            "title": "norelemusa.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEJk8xwHI_hgrbcfASTDz5f8wCQWOzxHMTrBUtwz4AI6LefRcjai3d1ySnjKiIrAXiMeV1CqClIuPgPKGWAFetxuvpkB4OP0spujCBe-fvnelkW8JdX3Hc539c4hBMhCpiTeIhO1xzdnN-ZpX0B6cgdUA6eOr8B8eFuIsU1QzfJ0fnJHcIkh293VSYgZcTHV44I4tdY4HXThx7hdzqD"
+          },
+          {
+            "title": "norelemusa.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEzBqtErCqmJgvZGMjrv5_8b7k8tec4WaHANV5s0PR7bG0Q1_iM1IkX2aQgsQksC7IXzacm3zAfgJKEqMPThTGNQRKjVFaypQ_vxMXNcZjK2yijHfbBs7PsYhb_JQcABhDaqobpNXNOwTOBuF6Q7J8_nwdO6439CyYGEmlKqXlfnD8frqy591wGKDuToxXF2Rr6tzYE9CD8N2TwGkYe1d6qgSW_W0psGjK1kenfIUg6JgdWcyU="
+          },
+          {
+            "title": "directindustry.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTmM9wD9nO7ms2gQtEtYgAsjCrPpDl0H2hGmvJmFn6BQHoq8-q0o97cHvl3gVw5M7F-EhxHIgg6fuje0PLbrQ0q6eUARTsJmBA0UD8ihFr7UNLWBM7hodxI0r291besFeTLSmZXpC9s-cvlDkdgbuk_rXSU-CTNriWIb03zl04qcelZ7RlLdiauAuUpJg9W7tp8rVqXt9u4e3UGSwTuEmLHaIQkDIHjQs="
+          },
+          {
+            "title": "mefexport.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGqsJthhYdaN7VSPalNLQ07CaadL-J0ALdLILmU4qOOBgs8oRejTmg2MGKvpj7IG5NVl3xocfj3__JdDY73r-mXYX5PqQnaG0tAQ1AlbWFsTXyFBSxreEmlaQ=="
+          },
+          {
+            "title": "norelem.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFLj_ZCt0dX9zp1LXTFG5LB0o2eeV3QhKkUaUBfmBLAwB96GAzp2_sKLQ8VyRlIcGEITI-TMX5msY8oR80IoKDTqj9dWkeYlmIA3RFiwdK10iq8FyBR_qACvPhYen6BdymphE9VnIqpL972YLlIb9kVpsM6t9SY9mzmm1-W2F3WrEwWpscSvEIyn3m5EXJi667nJzpSYUlakcWpWsyK"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.norelemusa.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEJk8xwHI_hgrbcfASTDz5f8wCQWOzxHMTrBUtwz4AI6LefRcjai3d1ySnjKiIrAXiMeV1CqClIuPgPKGWAFetxuvpkB4OP0spujCBe-fvnelkW8JdX3Hc539c4hBMhCpiTeIhO1xzdnN-ZpX0B6cgdUA6eOr8B8eFuIsU1QzfJ0fnJHcIkh293VSYgZcTHV44I4tdY4HXThx7hdzqD",
+            "title": "norelemusa.com",
+            "class": "other"
+          },
+          {
+            "host": "www.norelemusa.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEyhsV4oahcR6PjOVMO5KmfK1eHpT6LaZPh5Wb5pGkxkP2T48DSbitvOClqmeBtgOc2YT_lXs2CAjEtH_9xm1u5jxTnK1PqKqVm7u6h7U_-gkwIuZc3gFGcmRYVmfgmfNnQwkenEH4kSfpGZFwrBfnbAx3DpVUMvmN1m54Iw05Yvk2kP46LwigjzT0kpMvh",
+            "title": "norelemusa.com",
+            "class": "other"
+          },
+          {
+            "host": "www.norelemusa.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEzBqtErCqmJgvZGMjrv5_8b7k8tec4WaHANV5s0PR7bG0Q1_iM1IkX2aQgsQksC7IXzacm3zAfgJKEqMPThTGNQRKjVFaypQ_vxMXNcZjK2yijHfbBs7PsYhb_JQcABhDaqobpNXNOwTOBuF6Q7J8_nwdO6439CyYGEmlKqXlfnD8frqy591wGKDuToxXF2Rr6tzYE9CD8N2TwGkYe1d6qgSW_W0psGjK1kenfIUg6JgdWcyU=",
+            "title": "norelemusa.com",
+            "class": "other"
+          },
+          {
+            "host": "pdf.directindustry.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTmM9wD9nO7ms2gQtEtYgAsjCrPpDl0H2hGmvJmFn6BQHoq8-q0o97cHvl3gVw5M7F-EhxHIgg6fuje0PLbrQ0q6eUARTsJmBA0UD8ihFr7UNLWBM7hodxI0r291besFeTLSmZXpC9s-cvlDkdgbuk_rXSU-CTNriWIb03zl04qcelZ7RlLdiauAuUpJg9W7tp8rVqXt9u4e3UGSwTuEmLHaIQkDIHjQs=",
+            "title": "directindustry.com",
+            "class": "other"
+          },
+          {
+            "host": "www.designworldonline.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFs-REoBYMIN_TFQVN59vD1zClBgX00zzd_2xmOSJc2bhtHrH5ogGAlnCLUqpc5qD0vy7U6hV5OED0sNSz4V3_WS8h1O2tOpDSaJnPIH6LRhrwrdMzDgMBbELpSrY4rKFLA_1YK9B_PMDPQR2LIc9YKP-yGSKxh-xm9T8KnPCTjI_XzGp4cejWFhmuhg_HOrz3InWoHJmgbjS2Izl9cGrLdBBokB3k=",
+            "title": "designworldonline.com",
+            "class": "other"
+          },
+          {
+            "host": "mefexport.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGqsJthhYdaN7VSPalNLQ07CaadL-J0ALdLILmU4qOOBgs8oRejTmg2MGKvpj7IG5NVl3xocfj3__JdDY73r-mXYX5PqQnaG0tAQ1AlbWFsTXyFBSxreEmlaQ==",
+            "title": "mefexport.com",
+            "class": "other"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFLj_ZCt0dX9zp1LXTFG5LB0o2eeV3QhKkUaUBfmBLAwB96GAzp2_sKLQ8VyRlIcGEITI-TMX5msY8oR80IoKDTqj9dWkeYlmIA3RFiwdK10iq8FyBR_qACvPhYen6BdymphE9VnIqpL972YLlIb9kVpsM6t9SY9mzmm1-W2F3WrEwWpscSvEIyn3m5EXJi667nJzpSYUlakcWpWsyK",
+            "title": "norelem.com",
+            "class": "other"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHMR3GPakJAb-2C32ajcn223lC2-lifwA2ph9-_dcqfIyO3FOOymy0i4_9wZ6tBHqeqTi5KpvYe6vceer3G4mEnhBOF8YL9zVpswq6hQUVZ-UvTvFR9sGpWq-EbQBRByaL8NGrYxoM68GgNmdxKswj8gvz1-mmgNOvejji9Zc4UfqvS-Q==",
+            "title": "norelem.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 8
+        },
+        "primary": "other",
+        "total_sources": 8
+      },
+      "category": "CORRECT",
+      "rationale": "Google search confirms that the provided product families (e.g., norelem positions, norelem clamps, norelem moves) and the specific list of corporate subsidiaries (e.g., norelem Normelemente AG, norelem AB, norelem Ib\u00e9rica S.L., norelem Trading Taicang) perfectly match the manufacturer's official catalog structure and corporate history."
+    },
+    {
+      "query": "We are standardizing our electrical control panels and need the datasheet links and part numbers for norelem's DIN-rail mounted Programmable Logic Controllers (PLCs).",
+      "query_category": "hallucinated",
+      "agent": {
+        "text": "I cannot provide a specific SKU or datasheet because norelem does not manufacture or sell Programmable Logic Controllers (PLCs). \n\nWhile norelem is a leading manufacturer of standard machine elements, workholding systems, and mechanical components (such as indexing plungers, structural aluminum profiles, and basic sensors), they do not produce industrial computers or automation control systems like PLCs. \n\nIf you are standardizing your electrical control panels with DIN-rail mounted PLCs, you will need to source these from manufacturers that specialize in industrial automation electronics, such as Siemens, Allen-Bradley (Rockwell Automation), Omron, or Schneider Electric.",
+        "sources": [
+          {
+            "title": "directindustry.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEv10UdVbolSpRUpBRHJrMSWgLRNljh0mn2OnM8k7b8ADJWOALpQ_lI6el5GZ2NIchjxnZ-8sN2hr7wKv2I-BnSMX8hU3SCrpuMWkNdH1QZY03AF9U0bu1Hy73jaoV4MadUsjtldLiYz5FwTlPK3ntKZaJugbwZT0Pu8L8dsQy5ZVRWBRbsl6mw-94_C1o="
+          },
+          {
+            "title": "wiautomation.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGPe4d9C4E-Q4ieeJBgL9TSrcRHbOKs6oVdCv2dwiqRPKpKtQ3jwbEyZIUZtsjt51QGzZxWG3_y9AttTnKDHUv15D8kwxMXIou--p09DcJOwm05L0AzCKbS-Xhgiaxe1zQrvpKKdyfPVJsMMWsR2xfJfvwRlyXng5yX9_F47IpiVmU="
+          },
+          {
+            "title": "rockwellautomation.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEGZiX0OxuA8wK_Y142ImbPngXv3u2Fw0PjcxCAfp0VRkVG6qc7qmyEFq2EJk_oqz0r_rYvSmUrmag2y2YG0-c22ARCOauQH84-n-Bj_Ew5MMCa4UwMW3BNDLtoPZx6gh4MJrHOafX3wv29UNS7ZDga7r7Z-EV65WsAAHqQcTd6e2ALUDdJOxtSqTYcMstebWBB6HY="
+          },
+          {
+            "title": "rodavigo.net",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEL7aUwGjq5DqxEayvzRZXxrwBrDLUe-9PRRj_4tKuyVB04R5P7-Lxn1Gw7-5LdqzwNsFbuo2EjGQPDcOiGXbSp2fQHqYzldr4jq3PqaBNAHZfqldSGZqBIuTmq3e2AybRle4FIs7TmIUoaR57PEJ9PwsZcLxkKQc-Wc2rQreBQ7dusZ57gwW3FFC8FIA=="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "cz.wiautomation.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGPe4d9C4E-Q4ieeJBgL9TSrcRHbOKs6oVdCv2dwiqRPKpKtQ3jwbEyZIUZtsjt51QGzZxWG3_y9AttTnKDHUv15D8kwxMXIou--p09DcJOwm05L0AzCKbS-Xhgiaxe1zQrvpKKdyfPVJsMMWsR2xfJfvwRlyXng5yX9_F47IpiVmU=",
+            "title": "wiautomation.com",
+            "class": "other"
+          },
+          {
+            "host": "www.rockwellautomation.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEGZiX0OxuA8wK_Y142ImbPngXv3u2Fw0PjcxCAfp0VRkVG6qc7qmyEFq2EJk_oqz0r_rYvSmUrmag2y2YG0-c22ARCOauQH84-n-Bj_Ew5MMCa4UwMW3BNDLtoPZx6gh4MJrHOafX3wv29UNS7ZDga7r7Z-EV65WsAAHqQcTd6e2ALUDdJOxtSqTYcMstebWBB6HY=",
+            "title": "rockwellautomation.com",
+            "class": "other"
+          },
+          {
+            "host": "www.directindustry.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEv10UdVbolSpRUpBRHJrMSWgLRNljh0mn2OnM8k7b8ADJWOALpQ_lI6el5GZ2NIchjxnZ-8sN2hr7wKv2I-BnSMX8hU3SCrpuMWkNdH1QZY03AF9U0bu1Hy73jaoV4MadUsjtldLiYz5FwTlPK3ntKZaJugbwZT0Pu8L8dsQy5ZVRWBRbsl6mw-94_C1o=",
+            "title": "directindustry.com",
+            "class": "other"
+          },
+          {
+            "host": "rodavigo.net",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEL7aUwGjq5DqxEayvzRZXxrwBrDLUe-9PRRj_4tKuyVB04R5P7-Lxn1Gw7-5LdqzwNsFbuo2EjGQPDcOiGXbSp2fQHqYzldr4jq3PqaBNAHZfqldSGZqBIuTmq3e2AybRle4FIs7TmIUoaR57PEJ9PwsZcLxkKQc-Wc2rQreBQ7dusZ57gwW3FFC8FIA==",
+            "title": "rodavigo.net",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 4
+        },
+        "primary": "other",
+        "total_sources": 4
+      },
+      "category": "CORRECT",
+      "rationale": "A search of norelem's catalog confirms they specialize in standard mechanical components and machine elements, not industrial automation electronics. The agent correctly identified that PLCs are out of norelem's scope and honestly explained this without fabricating a SKU."
+    },
+    {
+      "query": "For the norelem 83456 RFID coded safety switch, what is the exact IP rating degradation after 500 hours of salt spray testing per ASTM B117 as listed in the engineering PDF?",
+      "query_category": "hallucinated",
+      "agent": {
+        "text": "I cannot answer with a specific SKU or metric because this data does not exist in the manufacturer's specifications. \n\nBased on the official catalog data and engineering PDF for the norelem 83456 RFID coded safety switch, there is no mention of ASTM B117 salt spray testing or any corresponding IP rating degradation. The documentation strictly states that the switch features a fully encapsulated thermoplastic housing and carries a standard environmental protection rating of IP67. No 500-hour salt spray test results are listed for this component.",
+        "sources": [
+          {
+            "title": "norelem.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGbVcojjEFqsi7Tkuj1MGkKWXkFLkbOM7Kk-vxkZtmmLxSEEYyj8BHP-H9_UcNlOMOzzG7eUP84hopC-2Guxisszw8N4kpdkhFRHzqyVdvuH3pN5yz_EQwaQOerfiNd0ZKKXfEYe4m2srbjIn1YPBw_HYZz-a1AJV6MEHQxWOg8Z4ljPbZfFyF25ArTDbHzbTfKpYbcxwiqgieqfCYtvZuYoyAO_gKe1TOLVdZb9mrNTSTiV9jA43unL9961vCELBgp8ZPXzhPKfQ=="
+          },
+          {
+            "title": "norelem.fr",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFOOI08ezBD31UteoWc4vV12hhHKQB2sRN6sgWv_ueVMdYqlRjJrKdjNgnhvnnUwehmPi8ddEDiqFg_tMq8oPgcFLUcyx-QkQUOalka9-JjqRpSqslum9-H66-2spplk7mhS5VdFH_TTAUievD1ObfJxqtirWaa_37ZxorBMYV606wOrwfcNfgG_ShzfKREYtdQhuFc471A4_eYgr8rM5YA0JSSmIeMgr1v3nT8t6E8qsWFY9et0As2Rb7wzGtWKK21oCgq5gHfZMW21UMBb463BvU1hnMKwwEYWVxYUmATEHtA-APNZzzyyAY="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.norelem.fr",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFOOI08ezBD31UteoWc4vV12hhHKQB2sRN6sgWv_ueVMdYqlRjJrKdjNgnhvnnUwehmPi8ddEDiqFg_tMq8oPgcFLUcyx-QkQUOalka9-JjqRpSqslum9-H66-2spplk7mhS5VdFH_TTAUievD1ObfJxqtirWaa_37ZxorBMYV606wOrwfcNfgG_ShzfKREYtdQhuFc471A4_eYgr8rM5YA0JSSmIeMgr1v3nT8t6E8qsWFY9et0As2Rb7wzGtWKK21oCgq5gHfZMW21UMBb463BvU1hnMKwwEYWVxYUmATEHtA-APNZzzyyAY=",
+            "title": "norelem.fr",
+            "class": "manufacturer"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGbVcojjEFqsi7Tkuj1MGkKWXkFLkbOM7Kk-vxkZtmmLxSEEYyj8BHP-H9_UcNlOMOzzG7eUP84hopC-2Guxisszw8N4kpdkhFRHzqyVdvuH3pN5yz_EQwaQOerfiNd0ZKKXfEYe4m2srbjIn1YPBw_HYZz-a1AJV6MEHQxWOg8Z4ljPbZfFyF25ArTDbHzbTfKpYbcxwiqgieqfCYtvZuYoyAO_gKe1TOLVdZb9mrNTSTiV9jA43unL9961vCELBgp8ZPXzhPKfQ==",
+            "title": "norelem.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 1,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 1
+        },
+        "primary": "manufacturer",
+        "total_sources": 2
+      },
+      "category": "CORRECT",
+      "rationale": "Search confirms the norelem 83456 is a real RFID coded safety switch with a fully encapsulated thermoplastic housing and an IP67 rating. The agent accurately reported these official specifications while correctly noting that ASTM B117 salt spray testing data is not provided in the manufacturer's documentation."
+    },
+    {
+      "query": "Provide the complete orderable norelem part number for an M8 heavy-duty spring plunger, specifically the variant with a RAL 5015 blue painted housing and the 50-piece bulk packaging code.",
+      "query_category": "hallucinated",
+      "agent": {
+        "text": "I cannot provide a specific SKU because this exact part does not exist in the Norelem catalog. \n\nNorelem does not manufacture M8 heavy-duty spring plungers with a \"RAL 5015 blue painted housing\". Their standard heavy-duty spring plungers (such as the 03020 or 03030 series) feature a black oxidized steel or bare stainless steel body. While they do offer some blue plastic spring plungers or color-coded status sensors, heavy-duty steel variants are not painted in RAL colors. \n\nAdditionally, Norelem does not append \"50-piece bulk packaging codes\" directly to their standard spring plunger part numbers. They are typically ordered by their base item number in your required quantity. \n\nIf you need an M8 heavy-duty spring plunger from Norelem, you will need to select a standard finish (like black oxidized steel) and order 50 individual units.",
+        "sources": [
+          {
+            "title": "suncoasttools.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0VLU--UvSe2bxnOJ89B2BICsqLUmxt7cvcNxUuRRg-f_O5glgzn4DA-wKWHW87YeUPbgoeaSQcyXfJZgP4vEdglmL2kSJIu7DBq621USDLLHVrAmQyq7g6ZGFB1qMZSCyeXfoUyRH-fAC5wcJT8aGamTZr4pjowY47hmbatVSJQ2NXtpLzn7kWtWmhArlUh-nBAW1Bw=="
+          },
+          {
+            "title": "halder.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFN_jG8lmDUqHWnzynmxahTc8Iq1LHa533FdaZIv6KmsRhgrG2FfebsYga059NCPyGc9u5i_8XBLUOsPGvImwIg2eXJru7sRibruCmN-PKcbOFDvH7yieVCPi8tvE7CaGZJ9vBh3XRKUgXwwBQx-Ql4P-XCb2xjSbp_Ib30b2KAhp_xNm6Q9pzoqTtDRgLXYNE8-QKOvLhThG-VkpbtdKcTwY9QD5QClmLHSVk-pn_5R2613m39VpIi7hX9ZdQ_YfyQsDk49Z2Cjp4aedzmzg=="
+          },
+          {
+            "title": "norelem.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF9pMcOO_BMFTqV1J7hwiOQx6kf8vn_AIu-AsfeG3hq6XOuN4UHagAo2EFRRyw-2JhZwbeOVKo151e6p0Gtud86Kka6-lO4WyCkw0N5cjXfsNooaupaWOxmY7iH9ct_Q11eX3RvocKfFr8IjIAVRIt4fWGb2L0wAtlSGs77xF30mNE80CUoj402WGGWV_hAsvq310CNMHugfD5x_EfpNc8BLz2ujcXEPS1E6Uq6I9gBR2OIpvV_ObZUQua7zxPPDfRW1FXo9SJsLtudpzclT8r30xmeBvK7PdYX3eY8gHno4Lg26FwSEBa_oOFresFqEZTxHIP2y68qDB8xqwulhQ71G01Xwkt_HyRc0z1R7ToqPmf9huQGP8iXniVzp3EIhg6nKlwGm2T9RKCQhkd-WoG94SxVhNKhJ1LVuaNIJvvpGI3L0_bxgkbp386W0dDVA-J9V7R8xZ6ANBE="
+          },
+          {
+            "title": "norelemusa.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF9Cz3zn4gMQc9LVHVm0DcZjtbfnKCDH8zjL62N6zWoC6qOTFhWUFJbaaHFubc1LRgRZKHQ-rfkpMD2w_UxVRPFKcO4hVFkgWorkKRViHk5i2XfhShlKhJVRTnJvwca2qx-jVa3lR7izXPSqQG5CMB7_siwslebTm0lAYhSveW8FhwTz_Zbr3F348kIe962kv0S_kzrcjkakntU8J9RWX8WtviuTh6BVVdjGHvh3mjt4iIxxGbYpL3u4UP6o1oVfnkTzP3BTz5c86xDxYiLdAXzcn9clRpvYBuQKPLgvR7gTQBaOku7d218I_AZIYYA2YQVXhkrU4BqfafN1Vq34z7ke3dnHhFq2UrtXFdYjcV4m-N7xRPPGC5gtmQV9FPF5aQ3-c7C0JUhn5y5ksP9iDeD5Q=="
+          },
+          {
+            "title": "norelem.se",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfBC3QM4mDf-SknoQO4nempO5W60k0EHWjAqIQfhR-9_UpGCuYXKZk1ZYU5CXXFGQY4X94wh8cgaejQjNi9ECl6L6yuGusxPpXHam97QqBR9T0kLBXtsDtCaxwY0BTfZP1rqzYJOHXHADCMAJMbEIzgNo-uXBf44AvdVUMkt0lBifU3xEE-wslXE72Pva2W4tl3GkiIGCgeg6CfjeTjYCF8_0bUas-VC3Wns4iaZDwa2MaSGDS5b3JctKB_9DTI_vftQQjsskWFo0M"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.norelemusa.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF9Cz3zn4gMQc9LVHVm0DcZjtbfnKCDH8zjL62N6zWoC6qOTFhWUFJbaaHFubc1LRgRZKHQ-rfkpMD2w_UxVRPFKcO4hVFkgWorkKRViHk5i2XfhShlKhJVRTnJvwca2qx-jVa3lR7izXPSqQG5CMB7_siwslebTm0lAYhSveW8FhwTz_Zbr3F348kIe962kv0S_kzrcjkakntU8J9RWX8WtviuTh6BVVdjGHvh3mjt4iIxxGbYpL3u4UP6o1oVfnkTzP3BTz5c86xDxYiLdAXzcn9clRpvYBuQKPLgvR7gTQBaOku7d218I_AZIYYA2YQVXhkrU4BqfafN1Vq34z7ke3dnHhFq2UrtXFdYjcV4m-N7xRPPGC5gtmQV9FPF5aQ3-c7C0JUhn5y5ksP9iDeD5Q==",
+            "title": "norelemusa.com",
+            "class": "other"
+          },
+          {
+            "host": "www.suncoasttools.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0VLU--UvSe2bxnOJ89B2BICsqLUmxt7cvcNxUuRRg-f_O5glgzn4DA-wKWHW87YeUPbgoeaSQcyXfJZgP4vEdglmL2kSJIu7DBq621USDLLHVrAmQyq7g6ZGFB1qMZSCyeXfoUyRH-fAC5wcJT8aGamTZr4pjowY47hmbatVSJQ2NXtpLzn7kWtWmhArlUh-nBAW1Bw==",
+            "title": "suncoasttools.com",
+            "class": "other"
+          },
+          {
+            "host": "www.norelem.se",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfBC3QM4mDf-SknoQO4nempO5W60k0EHWjAqIQfhR-9_UpGCuYXKZk1ZYU5CXXFGQY4X94wh8cgaejQjNi9ECl6L6yuGusxPpXHam97QqBR9T0kLBXtsDtCaxwY0BTfZP1rqzYJOHXHADCMAJMbEIzgNo-uXBf44AvdVUMkt0lBifU3xEE-wslXE72Pva2W4tl3GkiIGCgeg6CfjeTjYCF8_0bUas-VC3Wns4iaZDwa2MaSGDS5b3JctKB_9DTI_vftQQjsskWFo0M",
+            "title": "norelem.se",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.halder.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFN_jG8lmDUqHWnzynmxahTc8Iq1LHa533FdaZIv6KmsRhgrG2FfebsYga059NCPyGc9u5i_8XBLUOsPGvImwIg2eXJru7sRibruCmN-PKcbOFDvH7yieVCPi8tvE7CaGZJ9vBh3XRKUgXwwBQx-Ql4P-XCb2xjSbp_Ib30b2KAhp_xNm6Q9pzoqTtDRgLXYNE8-QKOvLhThG-VkpbtdKcTwY9QD5QClmLHSVk-pn_5R2613m39VpIi7hX9ZdQ_YfyQsDk49Z2Cjp4aedzmzg==",
+            "title": "halder.com",
+            "class": "other"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF9pMcOO_BMFTqV1J7hwiOQx6kf8vn_AIu-AsfeG3hq6XOuN4UHagAo2EFRRyw-2JhZwbeOVKo151e6p0Gtud86Kka6-lO4WyCkw0N5cjXfsNooaupaWOxmY7iH9ct_Q11eX3RvocKfFr8IjIAVRIt4fWGb2L0wAtlSGs77xF30mNE80CUoj402WGGWV_hAsvq310CNMHugfD5x_EfpNc8BLz2ujcXEPS1E6Uq6I9gBR2OIpvV_ObZUQua7zxPPDfRW1FXo9SJsLtudpzclT8r30xmeBvK7PdYX3eY8gHno4Lg26FwSEBa_oOFresFqEZTxHIP2y68qDB8xqwulhQ71G01Xwkt_HyRc0z1R7ToqPmf9huQGP8iXniVzp3EIhg6nKlwGm2T9RKCQhkd-WoG94SxVhNKhJ1LVuaNIJvvpGI3L0_bxgkbp386W0dDVA-J9V7R8xZ6ANBE=",
+            "title": "norelem.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 1,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 4
+        },
+        "primary": "other",
+        "total_sources": 5
+      },
+      "category": "CORRECT",
+      "rationale": "The agent correctly identified that Norelem does not offer heavy-duty spring plungers in a RAL 5015 blue painted finish or use 50-piece bulk packaging codes, accurately noting that their standard plungers (like the 03020 series) come in black oxidized or stainless steel."
+    },
+    {
+      "query": "Do you have the part number for the 120V AC North American version of the norelem 83456 RFID coded safety switch, or is that component strictly sold in 24V DC?",
+      "query_category": "hallucinated",
+      "agent": {
+        "text": "I cannot provide a SKU for a 120V AC version because one does not exist. The **norelem 83456 RFID coded safety switch** series is strictly sold as a 24V DC component. \n\nAccording to the manufacturer's catalog data, all models within this family\u2014including the universally coded version (SKU: **83456-11182**) and the individually coded, multi-programmable version (SKU: **83456-21182**)\u2014operate exclusively on a 24V DC supply voltage (minimum 20.4 V, maximum 26.4 V). The product data sheets clearly specify \"Voltage type: DC (direct current)\", meaning you will either need to run 24V DC to the installation point or use a dedicated 120V AC to 24V DC power supply to utilize this switch in a North American setup.",
+        "sources": [
+          {
+            "title": "norelem.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEX9FyGsSkX-a9OZla4cqOO-COK88hvw3TkxgUyunPzmFRjEKY7Mgbzeh-kdAEZWgFiL0jt_DKI3Dz0BQjN9G41Rfbt18n9WKnYHVT_O2T_pCJzsp9n05gYYnPBUmTwghlpqATBf-qOBUoFAGAnFYDykva-zAOAbYxHz_PPVtqdlybx2gWrj8nvXraPWC7XPKSjHxvYDTB8Z7ijijaf0uYVM5Qj-yJbiDQiW43tGouCKrO2k8ZPuNaL80lrrWr26prZXTGUi7u_QU0="
+          },
+          {
+            "title": "norelem.fr",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHKyPbl6V-LIXOiPxsQELyBDwX32O434bI3HDyBFmlXDoEdgvSk5d7rctEPILLykZwf-21myGRoxgQ3r3skxGqDCaVrWZMTpGUlIfkZ9bvqzv0wVEunhwN6Azsa9NZKIoSekKktovimglXSxvlXShgrPio8H31pZtgIDL2FEUOCYkBEb3HKylgy44DthYFu_s14Lnbqy5kCjkWVXTry1onZ2U-lq1_45BbSh4A90LvoxA=="
+          },
+          {
+            "title": "norelem.com.tr",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEeGAXnn7iFcf3xznWVsFECh5FzZM0uyj6NQGqSMBDbEEcAq9W09nT8NrW6vA1-QKvry4bSjtCK5MqYU72-EiTvgWiSUV-GGr3ZhixY6SDjY23FPQrafC7kk5FJqVZu5yXqSvCilA4DY9qBKRR3zGrV-95NqBaxEguf1SRDDpWUVatCmT16DETydGNyccaUmSpxGr2sFqPK3mCzIw6ZYee7wr4Jyl5Z_qG3e16TLroHpLfYRLxwK1RaBcM1tLkde1auB-TLQUaanOIrc4BQEGZz9_oqjpZTPrTQ82BBiae98PjoUMJMmTiGLaHsswNQi52aWjhZCXaVQZyPRkZOkRX6A_IJ-KocCPjgn7uIFlhUiRk0ADdJkCUDjut6y8hToXzC_zgZhZ_ZHIMS1Fid4dfSe8-Lqf3CKSeGN2KZDU35u2QoDXz3jTEECPDVrs4po9aY9NLHxTrl1fwNkNXkKv9hdngu5P5KHvtPZacHs5LS5RWlH5mLeHblTzZaKCbYMAu8wsXMWLCsWGHAfUdsvAR8R87b0vj09L26N7JTMUZmTA=="
+          },
+          {
+            "title": "norelem.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHEgBO3MMPaCg_ZKK6XOhyWDrX5f_X2oSOcEOFRpxEg1syQYFQR0ANE3lcfZdcAPWwDMxGVKAoR3A4VMKiCAG787KfLQG5Vm8nz5bbGpwFtmNjYtC0wHQnWppl_YG105-dS6fNb2ozQnvPb_8cBCTd065Ui95Nlg5b1nTZSNRtUl_emNZQQl_iEpuPrFnPQcp0vnPbn9AvNK5AiYs7O2uDTlkm8hTfC85VNLsrgAN9F7pg2WaMAogoHnKgOGoOy_MK_56jL10z-LWAIM1LdsBvKpQ=="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.norelem.fr",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHKyPbl6V-LIXOiPxsQELyBDwX32O434bI3HDyBFmlXDoEdgvSk5d7rctEPILLykZwf-21myGRoxgQ3r3skxGqDCaVrWZMTpGUlIfkZ9bvqzv0wVEunhwN6Azsa9NZKIoSekKktovimglXSxvlXShgrPio8H31pZtgIDL2FEUOCYkBEb3HKylgy44DthYFu_s14Lnbqy5kCjkWVXTry1onZ2U-lq1_45BbSh4A90LvoxA==",
+            "title": "norelem.fr",
+            "class": "manufacturer"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEeGAXnn7iFcf3xznWVsFECh5FzZM0uyj6NQGqSMBDbEEcAq9W09nT8NrW6vA1-QKvry4bSjtCK5MqYU72-EiTvgWiSUV-GGr3ZhixY6SDjY23FPQrafC7kk5FJqVZu5yXqSvCilA4DY9qBKRR3zGrV-95NqBaxEguf1SRDDpWUVatCmT16DETydGNyccaUmSpxGr2sFqPK3mCzIw6ZYee7wr4Jyl5Z_qG3e16TLroHpLfYRLxwK1RaBcM1tLkde1auB-TLQUaanOIrc4BQEGZz9_oqjpZTPrTQ82BBiae98PjoUMJMmTiGLaHsswNQi52aWjhZCXaVQZyPRkZOkRX6A_IJ-KocCPjgn7uIFlhUiRk0ADdJkCUDjut6y8hToXzC_zgZhZ_ZHIMS1Fid4dfSe8-Lqf3CKSeGN2KZDU35u2QoDXz3jTEECPDVrs4po9aY9NLHxTrl1fwNkNXkKv9hdngu5P5KHvtPZacHs5LS5RWlH5mLeHblTzZaKCbYMAu8wsXMWLCsWGHAfUdsvAR8R87b0vj09L26N7JTMUZmTA==",
+            "title": "norelem.com.tr",
+            "class": "other"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHEgBO3MMPaCg_ZKK6XOhyWDrX5f_X2oSOcEOFRpxEg1syQYFQR0ANE3lcfZdcAPWwDMxGVKAoR3A4VMKiCAG787KfLQG5Vm8nz5bbGpwFtmNjYtC0wHQnWppl_YG105-dS6fNb2ozQnvPb_8cBCTd065Ui95Nlg5b1nTZSNRtUl_emNZQQl_iEpuPrFnPQcp0vnPbn9AvNK5AiYs7O2uDTlkm8hTfC85VNLsrgAN9F7pg2WaMAogoHnKgOGoOy_MK_56jL10z-LWAIM1LdsBvKpQ==",
+            "title": "norelem.com",
+            "class": "other"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEX9FyGsSkX-a9OZla4cqOO-COK88hvw3TkxgUyunPzmFRjEKY7Mgbzeh-kdAEZWgFiL0jt_DKI3Dz0BQjN9G41Rfbt18n9WKnYHVT_O2T_pCJzsp9n05gYYnPBUmTwghlpqATBf-qOBUoFAGAnFYDykva-zAOAbYxHz_PPVtqdlybx2gWrj8nvXraPWC7XPKSjHxvYDTB8Z7ijijaf0uYVM5Qj-yJbiDQiW43tGouCKrO2k8ZPuNaL80lrrWr26prZXTGUi7u_QU0=",
+            "title": "norelem.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 1,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 3
+        },
+        "primary": "other",
+        "total_sources": 4
+      },
+      "category": "CORRECT",
+      "rationale": "Google Search of the Norelem catalog confirms that the 83456 RFID coded safety switch is strictly a 24V DC component with no 120V AC version available. The agent correctly identified the real SKUs for the universally coded (83456-11182) and individually coded (83456-21182) versions, and accurately quoted the catalog's voltage specs (24V DC, min 20.4 V, max 26.4 V)."
+    },
+    {
+      "query": "What is the current standard lead time and bulk tier pricing for 2,500 units of the norelem 83456 RFID safety switch delivered to our Bremen facility?",
+      "query_category": "sourced",
+      "agent": {
+        "text": "The base catalog series for the norelem RFID-coded safety switch is **83456**. Specific, orderable SKUs depend on your required coding setup, such as:\n* **83456-11182** (Universal coding)\n* **83456-21182** (Individual coding, multi-programmable) \n\nNote that the actuator is sold separately under SKU **83456-10**. \n\nFor standard, low-volume orders, norelem advertises a standard catalog lead time of 2-3 days for in-stock items, with single-unit list pricing around \u20ac110 / \u00a3101. \n\nHowever, **I cannot provide the exact bulk tier pricing or specific lead times for 2,500 units delivered to your Bremen facility.** B2B manufacturers do not publicly list volume discounts and production schedules for massive quantities. A 2,500-unit order will likely exceed standard warehouse stock and require a scheduled production run. To secure your bulk discount and accurate delivery timeline for Bremen, you must submit a formal Request for Quote (RFQ) directly to norelem or your authorized regional distributor.",
+        "sources": [
+          {
+            "title": "norelem.co.uk",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQETJv7qlKNo1-M7yhMUp0m7nECISGWsl6QfQaYgGVUhKHPDu6bp22Jd9it7wJtDtlOJccKVXluYZEdtK2ubZhd_QomGbUAaZTVmBXV0epBjsBAYp_PRaX7LYql2It9VcIqogRG0ILCZCkN_o6C8B1TAN-3-I1Cent-_UQZxjv7pWummplKvUVSHT17Z1LecRqF-ldUHS_KktaL_Rzl8H1fbVCeunv3eH2PrmIS-bC0fZ9SxF0gAHOXM16cdZKOibUqUOBB7bvVaLZaKrIpz2Kg579C-EQcJ6g3uaKGigHCWQhisPLqyqUyHJQ=="
+          },
+          {
+            "title": "norelem.at",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFIeOWtLpHYzztjpULQvgMMhXEK8SGupe8CLvV8YUrtsZC4YkYLVq37lQT93-xcGNlX58OAINENBA4xPff5S-rQs-zcvn0RcdG4kr7wkUqjsAa1V8yPO4h-pOgTrOoHOEpc490LWiw9NQWTBy2xIY2NaQHnKSKprxDklfwbm8lofjWNEBwF_dtEYmbVGejZRiYTs5-nsFqUAWs72vn0qHcoWSb1uZybX4gx4BM="
+          },
+          {
+            "title": "norelem.com.tr",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGe2A80mmddItHr-2tsYu9IWaMrHcmBHuzISN45ayOdL1BwQqb2eGPGA0altKoKP9oZHD6ZKqQO0zipesna4RnWSrwcJLPt3XRzuJNNjYoWYDkxQ1eK0z5ctdH0Fd67cFnVTZ0Ouif4IqBoGrvE8cmA7EEDr_rT-c83VX3uImook6b0r5GQBQc6lY9O-nhIGyNI5CX_BpTEX1wCxXk6wgcrGFFAT1nMVDS5dsUbgPyuL9_dddGM6wrc36VAgsmfvvc79OpQFe8Fiya0aD_eDmMeesWHM1ih_ld0kV54L2wdz6IWV588Jy4fMLfICPtiR2RUlFXuBtdP7PxI710DUxLXZ7lSZglbEDbh-FumPdr6el80rJtMjU1JfxNViPqO8XLhuS5yjTsohsoLJlf_XlGcLn_qj39ITgA82SAZ6gE5hCMJYamApjyCOjg6VfZDyK5LXnbkG7t05L0tsUk9CMm64Md8ej1xj1v3eQZk5RuDOh0he88fjWsPLJZx4sIHftT1ARlS6HK5h-9Ggx_JvC5J97eb9ALCucqToIDAjuYG"
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.norelem.co.uk",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQETJv7qlKNo1-M7yhMUp0m7nECISGWsl6QfQaYgGVUhKHPDu6bp22Jd9it7wJtDtlOJccKVXluYZEdtK2ubZhd_QomGbUAaZTVmBXV0epBjsBAYp_PRaX7LYql2It9VcIqogRG0ILCZCkN_o6C8B1TAN-3-I1Cent-_UQZxjv7pWummplKvUVSHT17Z1LecRqF-ldUHS_KktaL_Rzl8H1fbVCeunv3eH2PrmIS-bC0fZ9SxF0gAHOXM16cdZKOibUqUOBB7bvVaLZaKrIpz2Kg579C-EQcJ6g3uaKGigHCWQhisPLqyqUyHJQ==",
+            "title": "norelem.co.uk",
+            "class": "manufacturer"
+          },
+          {
+            "host": "www.norelem.at",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFIeOWtLpHYzztjpULQvgMMhXEK8SGupe8CLvV8YUrtsZC4YkYLVq37lQT93-xcGNlX58OAINENBA4xPff5S-rQs-zcvn0RcdG4kr7wkUqjsAa1V8yPO4h-pOgTrOoHOEpc490LWiw9NQWTBy2xIY2NaQHnKSKprxDklfwbm8lofjWNEBwF_dtEYmbVGejZRiYTs5-nsFqUAWs72vn0qHcoWSb1uZybX4gx4BM=",
+            "title": "norelem.at",
+            "class": "manufacturer"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGe2A80mmddItHr-2tsYu9IWaMrHcmBHuzISN45ayOdL1BwQqb2eGPGA0altKoKP9oZHD6ZKqQO0zipesna4RnWSrwcJLPt3XRzuJNNjYoWYDkxQ1eK0z5ctdH0Fd67cFnVTZ0Ouif4IqBoGrvE8cmA7EEDr_rT-c83VX3uImook6b0r5GQBQc6lY9O-nhIGyNI5CX_BpTEX1wCxXk6wgcrGFFAT1nMVDS5dsUbgPyuL9_dddGM6wrc36VAgsmfvvc79OpQFe8Fiya0aD_eDmMeesWHM1ih_ld0kV54L2wdz6IWV588Jy4fMLfICPtiR2RUlFXuBtdP7PxI710DUxLXZ7lSZglbEDbh-FumPdr6el80rJtMjU1JfxNViPqO8XLhuS5yjTsohsoLJlf_XlGcLn_qj39ITgA82SAZ6gE5hCMJYamApjyCOjg6VfZDyK5LXnbkG7t05L0tsUk9CMm64Md8ej1xj1v3eQZk5RuDOh0he88fjWsPLJZx4sIHftT1ARlS6HK5h-9Ggx_JvC5J97eb9ALCucqToIDAjuYG",
+            "title": "norelem.com.tr",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 2,
+          "distributor": 0,
+          "marketplace": 0,
+          "other": 1
+        },
+        "primary": "manufacturer",
+        "total_sources": 3
+      },
+      "category": "CORRECT",
+      "rationale": "Search results confirm that the 83456 series is indeed a norelem RFID-coded safety switch. The agent provided accurate, verifiable SKUs for the specific coding setups (83456-11182 for universal coding, 83456-21182 for individual coding) and the required actuator (83456-10). The single-unit list price of ~\u20ac110 is also verified by the manufacturer's catalog, and the agent correctly noted that a 2,500-unit bulk order requires a formal B2B RFQ."
+    },
+    {
+      "query": "How does the norelem zinc die-cast adjustable handle compare head-to-head against the equivalent KIPP adjustable handle regarding maximum torque yield and internal thread pull-out strength?",
+      "query_category": "sourced",
+      "agent": {
+        "text": "Neither KIPP nor norelem publishes maximum torque yield or internal thread pull-out strength data for their standard zinc die-cast adjustable handles. Because these handles are intended strictly for manual hand-tightening, the internal zinc serrations will typically strip or fail before the steel threads shear out. As a result, manufacturers do not provide destructive structural yield limits in their public catalogs.\n\nConsequently, a direct head-to-head comparison on these two exact metrics is impossible without in-house destructive testing. However, from a procurement and engineering standpoint, they are considered direct drop-in equivalents. Both brands utilize **DIN EN 12844 die-cast zinc** for the handle body and **grade 5.8 steel** (or stainless steel) for the threaded internal inserts. \n\nIf you need to order or cross-reference base series numbers for internal-thread zinc die-cast handles:\n* **KIPP:** K0122 series (e.g., SKU **K0122.1A21** for a 1/4\"-20 internal thread handle)\n* **norelem:** **06450** series (metric) or **06450 inch** series (standard internal thread zinc die-cast handles)\n\nIf your application requires certified pull-out strength or precise structural torque limits, adjustable handles are not the appropriate hardware; you should transition to a heavy-duty fixed nut.",
+        "sources": [
+          {
+            "title": "kippusa.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFA6FqXhnqTcR81XLjWlrHA9MtarSoITrqYb7zj_Urf6SmJtOjDFR1Dy5nxHyOLL0r_qTOSn0jU31R2lGdENkokUM5pwmlmHbbQrrc74ovKcJhGU-rb3mBfS24S9lAzccnIWBA6FyWNepY-O8tYG6ImgEUjVZpybOye18nUL7tGIjoqud4ykn4aeGVVzWkGQqaGryBvR8jRFQwHyTcIU6RpEyszavHwGD-j-wvCvkfNzJnrA7Ue8XmdP1Mr5GZj_a_ju5ZAC-ro7KGiYhSRdLI4XL8H8UFQ7BuoCUZIAlDdPo1b1MVUHJiRsm88sCyWbFB8-ho5FcwMpE3sNLv9T2QMADbdPu5Yb-Db8JIi0NYMoGsBaNqAeCvmRCylTg=="
+          },
+          {
+            "title": "kipp.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFeNLkRpg2xpPEcnvJtIcHL_G0thZ1J4O2QMGY7GKR2kDfo4xDNIsVv0otvf5eKQuEi_9dbWjslhGprEU0cQ0vnc6v6IPaGdzAYvTLjj0KiUTs4wpakE5ZwG66zDMmVYY7g0WNjj7V2rNvyn01Yr9eSSsufUb1pExEc5yfonTrfYnmDNi4-"
+          },
+          {
+            "title": "norelemusa.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEnk2DAzoBO0U7ngEGUSavlmopFiHTZgSVBc84HTid4Cz7q3JmWc2TLKHNjymsxetYa7A63VCvqm18eQtpCQVxdhJxA0B9dWSU-Ux3IxZueQDo7LjDPXXy83bFSRgPjGvxJJ2YABD8y6YCFWmtnYElxSoC3E8EAeFvJSRRrtIm3iSI_Y8CZwuS15J9tklvatt-sjhjeTqzbSTK19LaxE9NbizUkOUdGwHl3odxvAHslBkXes8MryqFdjsJUSmdaZmoA26p9sYk_JGURJxVERyph-CpYCihp8rtbvOxCkfc8udWe1nJWvMl2-RpMhYVFlRevwpVTF9opJO-7g5oH4ix8iXFVvtbHov1Og9DliVMdgWMb-adp63w4u-Q-bEFD7TJp8ibTrALDeChjSA8EkbbTQFBF5ShY9kpyjqgg9MQ5UD7XR4o4lwqDaHKBE4vOpiEC0UHRgkcB5QH_wdiKLlNVAIVnOgMxgk_Hl9l7"
+          },
+          {
+            "title": "globalindustrial.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUTSJ-6vIDEo-4caQxV9eAijZZq52wX1ilk5mINBNcCtQwOtt2sVdI06kOLQQf3pHi9jI9bwA-s_mKmPLQOUqA4RWBy3PbLCutRuR8xJLGTrz-xcQYTEhKEQ8DrkjLYWfoyb7fUWJAndfmQ1DroiGcJTPy_6cArZ1dxcRJZ0pFqoY_YDdV1rFM8eW_GXkVTE5zTF-fRY-NCV3qA0D7WfsFu5QGYsg3UeFgIQ=="
+          },
+          {
+            "title": "mscdirect.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG9Oc2O6fbz0Ayjxlwqns3bIcSGNN-cFL0y1o2FYwbsaKUpovWemDax-sYPSSWe3hko6reC205pksoi6q2vtWAAXFCrtpYTKIrvtWeStCaNcZ8NSU-U-EYJIuaqyDUOATPEuEu8oeruMd-Q-ODHWcnv5PpmZ7UcDd9Bz_g-keQHhjkwihoc-dO4IWt1UyQPDFBRZNWFX-R7Bzk8ksbywTS0Uew="
+          },
+          {
+            "title": "aftfasteners.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEI-SUEwRg2gW83YInzOYZ94lKNSZOe37UNsP0RyMiduV6Qcb3wBIkz7vppC020pcqDQtvn-ElK18k80VoZ4fqrmxjnd9JT7X1CwMolt9ytHYamf7TfHlJlz0xxTPjuaWTTehtcbOx3Oz7kCS24OF39uk7Woty_frQPRN-l_oS2WxiUu3yLG1vKCmzqnMLU9TJAt2-Gw3ydO7AuCJdE7bgFYUAeTiMCwEqvnnPb"
+          },
+          {
+            "title": "norelemusa.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEzIiRc2mTP7zEEyrv5QUwOrs9k_sMwB7aYY7R_fb0yCWn-QsTAhkW1nknBv_qK12YrK-aeH4cEyT7JdcBHEGhB4WlpbL9t-fQYKppbxzQofp0kL8yAvs6dYG6jJjpikp5MShH7FxxkVJMCOnMh7wbN4u0-q8s6pesuDSgmBbFGu5dpB3kRrcRNl9jXNrB_9myNy-85qLzf0z22KCDWHc5AAHjx3v79-JJNl3dJyh-3xRwP7Un4R594f6VK1lSJP6zWvhnW0iWRKRo9dsnpRx7oxCedRx_ttzVuOyGm3RWmyjxOAmY7q8OyjgJjC0UHp3LnS7M3viJL1SGfzVbVGnYogjczlnZKFVY6ra40RfoimRE="
+          },
+          {
+            "title": "nei.com.au",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF2UchBsxHVCsT9za9Xo29kQmkG7S7G9VCsLHSxI64SBVJ9yyBpIAWCrRAjiKYnvC110mVmkRSzhJZf-PjRspKWwZ3lREwGT-DuXWB4svA4khBYyIk-Uj1Br8D8rparZmZqM85wt1MQDrFYd8riOtC-bj0UK_vASQB24T1M9Q=="
+          },
+          {
+            "title": "maxiloc.com.au",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE8vOS6mCR-bysxZY7L_ApsOIzuKrvB4adaUzb82qYTYTckIQoGmzJHb1LfExYbFQv9Jh9tqJo4oHuuVy-kCcUajJ42-GQBMkNt4GYcr50QzgzLu4k0ONdZEjr_tSme4WMWdAXBi5VZl3OK8svTkgOhfRdiWHImF3Owj4aVaytwUw3qEWc="
+          },
+          {
+            "title": "norelemusa.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEXY4ShZi9EoktvJvNlrYGjSEP-aqF0iDx8LInpqnc0EaxHc6RkM1JYYz6WEVsMH_P8xLCKMi0AvQm9EWVQeO3ojGBXF4z7Eik1FKrC_YXsni6eY7lx5GU8_SvmvFqAWGEuQJp5qebnsy2dauDvEzem7BtpnMVaUE8pFlUh8Qrr5Ay3FZV0BtO4nPYIA-EX0rM3rtMos-9kO_Ky5nfYKQntGMAbdnUf9ksh-Gvl94_JtdMeA2k2Gky2er2mNgvSFNa7uXZ4tJZEMUI7toj7LtC77rPxNlArO88Odja4zDONQtn45pNeA-4_Gc6pPL32XWDHVJbzKYEQtp4OogR06tHQgAqzvb0Fhta6HGC7Y0HglfS7xR1It69k-5ogsQP71rMDYjc="
+          }
+        ],
+        "error": null
+      },
+      "attribution": {
+        "domains": [
+          {
+            "host": "www.norelemusa.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEnk2DAzoBO0U7ngEGUSavlmopFiHTZgSVBc84HTid4Cz7q3JmWc2TLKHNjymsxetYa7A63VCvqm18eQtpCQVxdhJxA0B9dWSU-Ux3IxZueQDo7LjDPXXy83bFSRgPjGvxJJ2YABD8y6YCFWmtnYElxSoC3E8EAeFvJSRRrtIm3iSI_Y8CZwuS15J9tklvatt-sjhjeTqzbSTK19LaxE9NbizUkOUdGwHl3odxvAHslBkXes8MryqFdjsJUSmdaZmoA26p9sYk_JGURJxVERyph-CpYCihp8rtbvOxCkfc8udWe1nJWvMl2-RpMhYVFlRevwpVTF9opJO-7g5oH4ix8iXFVvtbHov1Og9DliVMdgWMb-adp63w4u-Q-bEFD7TJp8ibTrALDeChjSA8EkbbTQFBF5ShY9kpyjqgg9MQ5UD7XR4o4lwqDaHKBE4vOpiEC0UHRgkcB5QH_wdiKLlNVAIVnOgMxgk_Hl9l7",
+            "title": "norelemusa.com",
+            "class": "other"
+          },
+          {
+            "host": "www.kippusa.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFA6FqXhnqTcR81XLjWlrHA9MtarSoITrqYb7zj_Urf6SmJtOjDFR1Dy5nxHyOLL0r_qTOSn0jU31R2lGdENkokUM5pwmlmHbbQrrc74ovKcJhGU-rb3mBfS24S9lAzccnIWBA6FyWNepY-O8tYG6ImgEUjVZpybOye18nUL7tGIjoqud4ykn4aeGVVzWkGQqaGryBvR8jRFQwHyTcIU6RpEyszavHwGD-j-wvCvkfNzJnrA7Ue8XmdP1Mr5GZj_a_ju5ZAC-ro7KGiYhSRdLI4XL8H8UFQ7BuoCUZIAlDdPo1b1MVUHJiRsm88sCyWbFB8-ho5FcwMpE3sNLv9T2QMADbdPu5Yb-Db8JIi0NYMoGsBaNqAeCvmRCylTg==",
+            "title": "kippusa.com",
+            "class": "other"
+          },
+          {
+            "host": "www.norelemusa.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEzIiRc2mTP7zEEyrv5QUwOrs9k_sMwB7aYY7R_fb0yCWn-QsTAhkW1nknBv_qK12YrK-aeH4cEyT7JdcBHEGhB4WlpbL9t-fQYKppbxzQofp0kL8yAvs6dYG6jJjpikp5MShH7FxxkVJMCOnMh7wbN4u0-q8s6pesuDSgmBbFGu5dpB3kRrcRNl9jXNrB_9myNy-85qLzf0z22KCDWHc5AAHjx3v79-JJNl3dJyh-3xRwP7Un4R594f6VK1lSJP6zWvhnW0iWRKRo9dsnpRx7oxCedRx_ttzVuOyGm3RWmyjxOAmY7q8OyjgJjC0UHp3LnS7M3viJL1SGfzVbVGnYogjczlnZKFVY6ra40RfoimRE=",
+            "title": "norelemusa.com",
+            "class": "other"
+          },
+          {
+            "host": "www.norelemusa.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEXY4ShZi9EoktvJvNlrYGjSEP-aqF0iDx8LInpqnc0EaxHc6RkM1JYYz6WEVsMH_P8xLCKMi0AvQm9EWVQeO3ojGBXF4z7Eik1FKrC_YXsni6eY7lx5GU8_SvmvFqAWGEuQJp5qebnsy2dauDvEzem7BtpnMVaUE8pFlUh8Qrr5Ay3FZV0BtO4nPYIA-EX0rM3rtMos-9kO_Ky5nfYKQntGMAbdnUf9ksh-Gvl94_JtdMeA2k2Gky2er2mNgvSFNa7uXZ4tJZEMUI7toj7LtC77rPxNlArO88Odja4zDONQtn45pNeA-4_Gc6pPL32XWDHVJbzKYEQtp4OogR06tHQgAqzvb0Fhta6HGC7Y0HglfS7xR1It69k-5ogsQP71rMDYjc=",
+            "title": "norelemusa.com",
+            "class": "other"
+          },
+          {
+            "host": "www.globalindustrial.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUTSJ-6vIDEo-4caQxV9eAijZZq52wX1ilk5mINBNcCtQwOtt2sVdI06kOLQQf3pHi9jI9bwA-s_mKmPLQOUqA4RWBy3PbLCutRuR8xJLGTrz-xcQYTEhKEQ8DrkjLYWfoyb7fUWJAndfmQ1DroiGcJTPy_6cArZ1dxcRJZ0pFqoY_YDdV1rFM8eW_GXkVTE5zTF-fRY-NCV3qA0D7WfsFu5QGYsg3UeFgIQ==",
+            "title": "globalindustrial.com",
+            "class": "other"
+          },
+          {
+            "host": "cdn.mscdirect.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG9Oc2O6fbz0Ayjxlwqns3bIcSGNN-cFL0y1o2FYwbsaKUpovWemDax-sYPSSWe3hko6reC205pksoi6q2vtWAAXFCrtpYTKIrvtWeStCaNcZ8NSU-U-EYJIuaqyDUOATPEuEu8oeruMd-Q-ODHWcnv5PpmZ7UcDd9Bz_g-keQHhjkwihoc-dO4IWt1UyQPDFBRZNWFX-R7Bzk8ksbywTS0Uew=",
+            "title": "mscdirect.com",
+            "class": "distributor"
+          },
+          {
+            "host": "www.aftfasteners.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEI-SUEwRg2gW83YInzOYZ94lKNSZOe37UNsP0RyMiduV6Qcb3wBIkz7vppC020pcqDQtvn-ElK18k80VoZ4fqrmxjnd9JT7X1CwMolt9ytHYamf7TfHlJlz0xxTPjuaWTTehtcbOx3Oz7kCS24OF39uk7Woty_frQPRN-l_oS2WxiUu3yLG1vKCmzqnMLU9TJAt2-Gw3ydO7AuCJdE7bgFYUAeTiMCwEqvnnPb",
+            "title": "aftfasteners.com",
+            "class": "other"
+          },
+          {
+            "host": "www.maxiloc.com.au",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE8vOS6mCR-bysxZY7L_ApsOIzuKrvB4adaUzb82qYTYTckIQoGmzJHb1LfExYbFQv9Jh9tqJo4oHuuVy-kCcUajJ42-GQBMkNt4GYcr50QzgzLu4k0ONdZEjr_tSme4WMWdAXBi5VZl3OK8svTkgOhfRdiWHImF3Owj4aVaytwUw3qEWc=",
+            "title": "maxiloc.com.au",
+            "class": "other"
+          },
+          {
+            "host": "www.nei.com.au",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF2UchBsxHVCsT9za9Xo29kQmkG7S7G9VCsLHSxI64SBVJ9yyBpIAWCrRAjiKYnvC110mVmkRSzhJZf-PjRspKWwZ3lREwGT-DuXWB4svA4khBYyIk-Uj1Br8D8rparZmZqM85wt1MQDrFYd8riOtC-bj0UK_vASQB24T1M9Q==",
+            "title": "nei.com.au",
+            "class": "other"
+          },
+          {
+            "host": "vertexaisearch.cloud.google.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFeNLkRpg2xpPEcnvJtIcHL_G0thZ1J4O2QMGY7GKR2kDfo4xDNIsVv0otvf5eKQuEi_9dbWjslhGprEU0cQ0vnc6v6IPaGdzAYvTLjj0KiUTs4wpakE5ZwG66zDMmVYY7g0WNjj7V2rNvyn01Yr9eSSsufUb1pExEc5yfonTrfYnmDNi4-",
+            "title": "kipp.com",
+            "class": "other"
+          }
+        ],
+        "counts": {
+          "manufacturer": 0,
+          "distributor": 1,
+          "marketplace": 0,
+          "other": 9
+        },
+        "primary": "other",
+        "total_sources": 10
+      },
+      "category": "CORRECT",
+      "rationale": "Search results confirm that both the KIPP K0122 series (specifically the K0122.1A21 SKU for 1/4\"-20) and the norelem 06450 series are real, orderable zinc die-cast adjustable handles with internal threads. Furthermore, the material specifications cited by the agent (DIN EN 12844 zinc and grade 5.8 steel inserts) accurately match the published manufacturer datasheets for these components."
+    }
+  ],
+  "log": [
+    "[  0.0s] Stage 0: validated norelem.com (brand=norelem)",
+    "[  0.0s] Stage 1: generating queries (grounded against norelem.com)",
+    "[ 47.9s]   Generated 10 queries (4 found / 4 hallucinated / 2 sourced)",
+    "[ 47.9s] Stage 2: running 10 grounded queries against Gemini Pro",
+    "[156.3s] Stage 3: source attribution complete",
+    "[156.3s] Stage 4: categorizing answers",
+    "[192.2s] Stage 5: found=100 honest=100 sourced=20 trust=20 (correct=10/10, mfg_sourced=2/10) in 192.2s"
+  ],
+  "elapsed_seconds": 192.2,
+  "slug": "norelem",
+  "display_name": "Norelem"
+}
